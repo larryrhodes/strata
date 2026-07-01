@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Strata — CISA KEV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; margin: 0; padding: 2rem; background: #0d1117; color: #c9d1d9; }
+  h1 { font-size: 1.4rem; }
+  .meta { color: #8b949e; font-size: 0.85rem; margin-bottom: 1.5rem; }
+  input { width: 100%; max-width: 400px; padding: 0.5rem; margin-bottom: 1rem; background: #161b22; border: 1px solid #30363d; color: #c9d1d9; border-radius: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #30363d; vertical-align: top; }
+  th { color: #8b949e; font-weight: 600; position: sticky; top: 0; background: #0d1117; }
+  tr:hover { background: #161b22; }
+  .cve { font-family: monospace; color: #58a6ff; }
+  .ransomware-yes { color: #f85149; font-weight: 600; }
+  #status { color: #8b949e; }
+</style>
+</head>
+<body>
+  <h1>Strata <span style="color:#8b949e;font-weight:400;font-size:0.9rem;">— CISA Known Exploited Vulnerabilities</span></h1>
+  <div class="meta">Data refreshed daily via GitHub Actions. Source: CISA KEV Catalog.</div>
+  <input id="search" type="text" placeholder="Filter by CVE ID, vendor, or product...">
+  <div id="status">Loading data...</div>
+  <table id="kev-table" style="display:none">
+    <thead>
+      <tr>
+        <th>CVE</th>
+        <th>Vendor / Product</th>
+        <th>Name</th>
+        <th>Date Added</th>
+        <th>Ransomware Use</th>
+      </tr>
+    </thead>
+    <tbody id="kev-body"></tbody>
+  </table>
+
+<script>
+  // Reads the JSON file the fetch_kev.py script writes on each scheduled run.
+  // Path is relative to this HTML file's location (docs/), so it resolves to docs/data/kev/latest.json
+  // NOTE: see README for the note about data/ location relative to docs/ for GitHub Pages.
+  const DATA_URL = "./data/kev/latest.json";
+
+  let allVulns = [];
+
+  function render(vulns) {
+    const body = document.getElementById("kev-body");
+    body.innerHTML = "";
+    for (const v of vulns) {
+      const tr = document.createElement("tr");
+      const ransomware = v.knownRansomwareCampaignUse === "Known" ? "ransomware-yes" : "";
+      tr.innerHTML = `
+        <td class="cve">${v.cveID}</td>
+        <td>${v.vendorProject} / ${v.product}</td>
+        <td>${v.vulnerabilityName}</td>
+        <td>${v.dateAdded}</td>
+        <td class="${ransomware}">${v.knownRansomwareCampaignUse}</td>
+      `;
+      body.appendChild(tr);
+    }
+  }
+
+  fetch(DATA_URL)
+    .then(r => r.json())
+    .then(data => {
+      allVulns = data.vulnerabilities.sort((a, b) => b.dateAdded.localeCompare(a.dateAdded));
+      document.getElementById("status").textContent =
+        `${allVulns.length} entries • Catalog version ${data.catalogVersion} • Last updated ${data.dateReleased}`;
+      document.getElementById("kev-table").style.display = "table";
+      render(allVulns);
+    })
+    .catch(err => {
+      document.getElementById("status").textContent = "Failed to load data: " + err;
+    });
+
+  document.getElementById("search").addEventListener("input", (e) => {
+    const q = e.target.value.toLowerCase();
+    const filtered = allVulns.filter(v =>
+      v.cveID.toLowerCase().includes(q) ||
+      v.vendorProject.toLowerCase().includes(q) ||
+      v.product.toLowerCase().includes(q) ||
+      v.vulnerabilityName.toLowerCase().includes(q)
+    );
+    render(filtered);
+  });
+</script>
+</body>
+</html>

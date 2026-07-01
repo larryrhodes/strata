@@ -1,0 +1,47 @@
+name: Fetch CISA KEV
+
+on:
+  schedule:
+    # Runs daily at 13:00 UTC. Cron syntax: minute hour day month weekday.
+    # CISA typically updates KEV during US business hours, so this lands
+    # after their morning updates.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+    # Lets you trigger this manually from the GitHub Actions tab,
+    # useful for testing without waiting for the schedule.
+
+# Grants the workflow permission to commit back to the repo.
+# Default token permissions are read-only; this scopes write access
+# narrowly to just this workflow rather than changing repo-wide settings.
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run KEV fetch script
+        run: python3 scripts/fetch_kev.py
+
+      - name: Copy latest.json into docs/ for GitHub Pages
+        run: |
+          mkdir -p docs/data/kev
+          cp data/kev/latest.json docs/data/kev/latest.json
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/kev/ docs/data/kev/
+          # Only commit if there's actually something changed --
+          # avoids empty commits on days with no new KEV entries.
+          git diff --staged --quiet || git commit -m "Update KEV data $(date -u +'%Y-%m-%d')"
+          git push
