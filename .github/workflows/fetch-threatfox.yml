@@ -1,0 +1,46 @@
+name: Fetch ThreatFox
+
+on:
+  schedule:
+    # Runs daily at 13:30 UTC -- 30 min after the KEV job so the two aren't
+    # committing at the exact same moment and racing each other.
+    - cron: "30 13 * * *"
+  workflow_dispatch: {}
+    # Manual "Run workflow" button in the Actions tab, for testing on demand.
+
+# Allows the workflow to commit the fetched data back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run ThreatFox fetch script
+        env:
+          # Injects the encrypted repository secret into the environment as
+          # THREATFOX_AUTH_KEY, which is exactly the variable the script reads.
+          THREATFOX_AUTH_KEY: ${{ secrets.THREATFOX_AUTH_KEY }}
+        run: python3 scripts/fetch_threatfox.py
+
+      - name: Copy latest.json into docs/ for GitHub Pages
+        run: |
+          mkdir -p docs/data/threatfox
+          cp data/threatfox/latest.json docs/data/threatfox/latest.json
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/threatfox/ docs/data/threatfox/
+          # Only commit if something actually changed, to avoid empty commits.
+          git diff --staged --quiet || git commit -m "Update ThreatFox data $(date -u +'%Y-%m-%d')"
+          git push
