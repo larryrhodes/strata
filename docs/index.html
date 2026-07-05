@@ -16,9 +16,22 @@
   .cve { font-family: monospace; color: #58a6ff; }
   .ransomware-yes { color: #f85149; font-weight: 600; }
   #status { color: #8b949e; }
+  header { display: flex; align-items: baseline; gap: 1.5rem; padding-bottom: 1rem; margin-bottom: 1.25rem; border-bottom: 1px solid #30363d; flex-wrap: wrap; }
+  .brand { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.35em; text-transform: uppercase; }
+  nav { display: flex; gap: 1rem; font-size: 0.9rem; }
+  nav a { color: #8b949e; text-decoration: none; padding-bottom: 2px; }
+  nav a:hover { color: #c9d1d9; }
+  nav a.active { color: #58a6ff; border-bottom: 2px solid #58a6ff; }
 </style>
 </head>
 <body>
+  <header>
+    <div class="brand">Strata</div>
+    <nav>
+      <a href="./index.html" class="active" aria-current="page">KEV</a>
+      <a href="./threatfox.html">ThreatFox</a>
+    </nav>
+  </header>
   <h1>Strata <span style="color:#8b949e;font-weight:400;font-size:0.9rem;">— CISA Known Exploited Vulnerabilities</span></h1>
   <div class="meta">Data refreshed daily via GitHub Actions. Source: CISA KEV Catalog.</div>
   <input id="search" type="text" placeholder="Filter by CVE ID, vendor, or product...">
