@@ -135,6 +135,10 @@ def summarize_families(families: dict) -> list:
             None,
         )
 
+        # Malpedia family id (e.g. "win.cobalt_strike") -- ThreatFox's raw `malware`
+        # field IS the Malpedia id, so this is our clean join key for enrichment.
+        malware_id = next((i.get("malware") for i in iocs if i.get("malware")), None)
+
         # Collect any tags across this family's IOCs -- best-effort "hints" only,
         # NOT authoritative actor attribution.
         tag_hints = sorted({t for i in iocs for t in (i.get("tags") or [])})
@@ -142,6 +146,7 @@ def summarize_families(families: dict) -> list:
         summaries.append(
             {
                 "family": name,
+                "malware_id": malware_id,
                 "ioc_count": len(iocs),
                 "ioc_type_breakdown": dict(type_counts),
                 "top_iocs": top_iocs,
