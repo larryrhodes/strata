@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-07-10T16:02:59.958516+00:00",
-  "recent_window_ioc_count": 27,
+  "generated": "2026-07-11T14:39:42.557362+00:00",
+  "recent_window_ioc_count": 32,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,12 +12,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-05",
-      "latest": "2026-07-10"
+      "earliest": "2026-03-06",
+      "latest": "2026-07-11"
     },
     "ioc_type_breakdown": {
-      "domain": 236,
-      "ip:port": 230,
+      "domain": 234,
+      "ip:port": 232,
       "sha256_hash": 15,
       "md5_hash": 7,
       "sha1_hash": 6,
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-05": 4,
-      "2026-03-06": 19,
+      "2026-03-06": 18,
       "2026-03-07": 4,
       "2026-03-08": 11,
       "2026-03-09": 6,
@@ -121,7 +120,8 @@
       "2026-07-07": 11,
       "2026-07-08": 2,
       "2026-07-09": 2,
-      "2026-07-10": 3
+      "2026-07-10": 3,
+      "2026-07-11": 5
     },
     "top_ports": [
       {
@@ -129,20 +129,20 @@
         "count": 25
       },
       {
+        "port": "443",
+        "count": 16
+      },
+      {
         "port": "6000",
         "count": 15
       },
       {
-        "port": "443",
-        "count": 14
+        "port": "7007",
+        "count": 11
       },
       {
         "port": "7000",
         "count": 11
-      },
-      {
-        "port": "7007",
-        "count": 10
       },
       {
         "port": "1122",
@@ -166,6 +166,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "217.60.195.237:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:15:56 UTC"
+      },
+      {
+        "ioc": "217.60.195.213:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:15:56 UTC"
+      },
+      {
+        "ioc": "ultraportal.4nmn.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:15:51 UTC"
+      },
+      {
+        "ioc": "217.60.195.12:7006",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:10:51 UTC"
+      },
+      {
+        "ioc": "135.136.134.57:7007",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:10:51 UTC"
+      },
       {
         "ioc": "c4785f0696cae4e8630d28e545bbee207544e7e3",
         "type": "sha1_hash",
@@ -225,36 +255,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-07 17:21:23 UTC"
-      },
-      {
-        "ioc": "172.245.244.91:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-07 14:46:08 UTC"
-      },
-      {
-        "ioc": "currentpi021.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-07 14:20:55 UTC"
-      },
-      {
-        "ioc": "sourcingallproductsworldwide.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-07 13:35:45 UTC"
-      },
-      {
-        "ioc": "194.116.236.223:1717",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-07 12:20:58 UTC"
-      },
-      {
-        "ioc": "31.40.204.237:3322",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-07 12:20:30 UTC"
       }
     ]
   }

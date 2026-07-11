@@ -1,8 +1,8 @@
 {
   "malware_id": "win.dcrat",
   "family": "DCRat",
-  "generated": "2026-07-09T16:17:43.653531+00:00",
-  "recent_window_ioc_count": 27,
+  "generated": "2026-07-11T14:41:15.874474+00:00",
+  "recent_window_ioc_count": 26,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
   "description": "DCRat is a typical RAT that has been around since at least June 2019.",
   "alt_names": [
@@ -12,26 +12,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-01-31",
-      "latest": "2026-07-09"
+      "earliest": "2026-02-02",
+      "latest": "2026-07-11"
     },
     "ioc_type_breakdown": {
-      "ip:port": 306,
+      "ip:port": 309,
       "domain": 96,
       "url": 84,
-      "sha256_hash": 7,
-      "md5_hash": 4,
-      "sha1_hash": 3
+      "sha256_hash": 6,
+      "md5_hash": 3,
+      "sha1_hash": 2
     },
     "confidence_distribution": {
-      "high": 384,
-      "medium": 116,
+      "high": 385,
+      "medium": 115,
       "low": 0
     },
     "activity_timeline": {
-      "2026-01-31": 3,
-      "2026-02-01": 3,
-      "2026-02-02": 4,
+      "2026-02-02": 3,
       "2026-02-03": 6,
       "2026-02-04": 3,
       "2026-02-05": 19,
@@ -58,7 +56,7 @@
       "2026-02-27": 2,
       "2026-02-28": 6,
       "2026-03-01": 10,
-      "2026-03-02": 8,
+      "2026-03-02": 7,
       "2026-03-03": 11,
       "2026-03-04": 6,
       "2026-03-05": 2,
@@ -160,7 +158,9 @@
       "2026-07-06": 1,
       "2026-07-07": 4,
       "2026-07-08": 1,
-      "2026-07-09": 7
+      "2026-07-09": 9,
+      "2026-07-10": 5,
+      "2026-07-11": 1
     },
     "top_ports": [
       {
@@ -169,7 +169,7 @@
       },
       {
         "port": "7777",
-        "count": 21
+        "count": 22
       },
       {
         "port": "12159",
@@ -185,7 +185,7 @@
       },
       {
         "port": "8888",
-        "count": 14
+        "count": 13
       },
       {
         "port": "8080",
@@ -205,6 +205,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "172.174.154.130:1024",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 11:05:05 UTC"
+      },
+      {
+        "ioc": "176.53.159.46:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-10 21:05:07 UTC"
+      },
+      {
+        "ioc": "http://cw212153.tw1.ru/L1nc0In.php",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-10 16:20:07 UTC"
+      },
+      {
+        "ioc": "141.94.121.162:7777",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-10 07:05:08 UTC"
+      },
+      {
+        "ioc": "141.94.121.162:5555",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-10 07:05:07 UTC"
+      },
+      {
+        "ioc": "141.94.121.162:4444",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-10 06:05:06 UTC"
+      },
+      {
+        "ioc": "128.90.112.23:5202",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-09 23:05:04 UTC"
+      },
+      {
+        "ioc": "115.42.60.122:7912",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-09 19:43:21 UTC"
+      },
       {
         "ioc": "5.230.201.242:1995",
         "type": "ip:port",
@@ -246,54 +294,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-09 09:43:30 UTC"
-      },
-      {
-        "ioc": "160.20.109.47:8090",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-08 17:05:05 UTC"
-      },
-      {
-        "ioc": "178.73.192.3:8848",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-07 19:43:55 UTC"
-      },
-      {
-        "ioc": "160.20.109.47:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-07 19:05:05 UTC"
-      },
-      {
-        "ioc": "140.238.207.208:2443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-07 13:05:07 UTC"
-      },
-      {
-        "ioc": "141.94.121.162:9999",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-07 07:05:07 UTC"
-      },
-      {
-        "ioc": "193.149.180.176:2443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-06 13:05:05 UTC"
-      },
-      {
-        "ioc": "144.172.88.128:5656",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-05 19:43:30 UTC"
-      },
-      {
-        "ioc": "141.94.121.162:8888",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-05 18:05:04 UTC"
       }
     ]
   }

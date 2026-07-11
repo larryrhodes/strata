@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-07-10T15:58:07.480011+00:00",
-  "recent_window_ioc_count": 113,
+  "generated": "2026-07-11T14:36:59.248036+00:00",
+  "recent_window_ioc_count": 115,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -19,11 +19,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-08",
-      "latest": "2026-07-10"
+      "latest": "2026-07-11"
     },
     "ioc_type_breakdown": {
-      "ip:port": 479,
-      "domain": 21
+      "ip:port": 477,
+      "domain": 23
     },
     "confidence_distribution": {
       "high": 500,
@@ -31,18 +31,16 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-08": 9,
+      "2026-05-08": 3,
       "2026-05-10": 1,
-      "2026-05-11": 3,
+      "2026-05-11": 2,
       "2026-05-12": 2,
       "2026-05-13": 2,
       "2026-05-16": 1,
       "2026-05-18": 2,
-      "2026-05-19": 1,
       "2026-05-21": 1,
       "2026-05-25": 4,
       "2026-05-26": 2,
-      "2026-05-27": 1,
       "2026-05-28": 5,
       "2026-05-29": 6,
       "2026-05-30": 3,
@@ -73,7 +71,7 @@
       "2026-06-24": 14,
       "2026-06-25": 8,
       "2026-06-26": 2,
-      "2026-06-27": 14,
+      "2026-06-27": 10,
       "2026-06-28": 10,
       "2026-06-29": 9,
       "2026-06-30": 12,
@@ -86,12 +84,13 @@
       "2026-07-07": 32,
       "2026-07-08": 16,
       "2026-07-09": 21,
-      "2026-07-10": 11
+      "2026-07-10": 18,
+      "2026-07-11": 6
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 26
+        "count": 28
       },
       {
         "port": "14644",
@@ -132,6 +131,84 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "pavementmg.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-11 12:45:52 UTC"
+      },
+      {
+        "ioc": "192.236.217.94:4551",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 12:35:10 UTC"
+      },
+      {
+        "ioc": "79.141.165.55:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:15:57 UTC"
+      },
+      {
+        "ioc": "102.220.160.103:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:15:55 UTC"
+      },
+      {
+        "ioc": "fb88.style",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:15:51 UTC"
+      },
+      {
+        "ioc": "172.111.163.169:65070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 07:09:37 UTC"
+      },
+      {
+        "ioc": "addictedmenswear.myddns.me",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-10 23:55:39 UTC"
+      },
+      {
+        "ioc": "62.60.226.68:24043",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-10 22:10:05 UTC"
+      },
+      {
+        "ioc": "45.74.7.199:7312",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-10 19:45:36 UTC"
+      },
+      {
+        "ioc": "45.74.7.191:1202",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-10 19:45:35 UTC"
+      },
+      {
+        "ioc": "216.133.157.16:21935",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-10 19:45:12 UTC"
+      },
+      {
+        "ioc": "155.103.71.115:13508",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-10 19:43:41 UTC"
+      },
+      {
+        "ioc": "103.83.86.48:1818",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-10 19:43:13 UTC"
+      },
+      {
         "ioc": "94.199.45.148:443",
         "type": "ip:port",
         "confidence": 75,
@@ -142,84 +219,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-10 09:46:22 UTC"
-      },
-      {
-        "ioc": "45.74.7.195:8015",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:45:53 UTC"
-      },
-      {
-        "ioc": "20.204.61.204:21891",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:44:38 UTC"
-      },
-      {
-        "ioc": "155.103.69.30:14647",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:43:45 UTC"
-      },
-      {
-        "ioc": "13.73.107.136:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:43:27 UTC"
-      },
-      {
-        "ioc": "anubixfreedom001.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-10 03:50:26 UTC"
-      },
-      {
-        "ioc": "102.220.160.125:56793",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 03:45:07 UTC"
-      },
-      {
-        "ioc": "172.111.163.176:65070",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 03:10:17 UTC"
-      },
-      {
-        "ioc": "172.111.225.72:56090",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 03:10:14 UTC"
-      },
-      {
-        "ioc": "198.135.51.238:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 03:10:10 UTC"
-      },
-      {
-        "ioc": "216.9.225.38:14641",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 19:45:12 UTC"
-      },
-      {
-        "ioc": "155.103.71.115:13507",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 19:43:40 UTC"
-      },
-      {
-        "ioc": "13.70.174.70:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 19:43:24 UTC"
-      },
-      {
-        "ioc": "red64bk.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-09 13:35:53 UTC"
       }
     ]
   }

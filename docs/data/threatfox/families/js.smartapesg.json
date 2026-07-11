@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-07-10T16:01:47.329141+00:00",
-  "recent_window_ioc_count": 39,
+  "generated": "2026-07-11T14:39:15.064863+00:00",
+  "recent_window_ioc_count": 36,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 175,
+    "total_iocs": 167,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-07-10"
+      "latest": "2026-07-11"
     },
     "ioc_type_breakdown": {
-      "url": 105,
-      "domain": 50,
+      "url": 100,
+      "domain": 47,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 173,
+      "high": 165,
       "medium": 2,
       "low": 0
     },
@@ -31,8 +31,6 @@
       "2026-01-23": 1,
       "2026-01-30": 3,
       "2026-02-05": 2,
-      "2026-02-09": 1,
-      "2026-03-12": 1,
       "2026-03-26": 1,
       "2026-04-03": 1,
       "2026-04-08": 2,
@@ -44,7 +42,6 @@
       "2026-05-08": 1,
       "2026-05-12": 8,
       "2026-05-27": 2,
-      "2026-06-10": 7,
       "2026-06-11": 7,
       "2026-06-12": 7,
       "2026-06-13": 3,
@@ -66,7 +63,8 @@
       "2026-07-07": 11,
       "2026-07-08": 4,
       "2026-07-09": 10,
-      "2026-07-10": 7
+      "2026-07-10": 7,
+      "2026-07-11": 1
     },
     "top_ports": [
       {
@@ -79,6 +77,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://marblehaven.top/claims/refresh-cookie.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-11 05:29:51 UTC"
+      },
       {
         "ioc": "https://marblehaven.top/claims/profile-view",
         "type": "url",
@@ -162,12 +166,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-09 11:03:35 UTC"
-      },
-      {
-        "ioc": "https://cobaltjunction.top/reset/refresh-util",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-09 05:28:10 UTC"
       }
     ]
   }
