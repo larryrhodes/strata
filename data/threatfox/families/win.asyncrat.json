@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-07-11T14:39:01.601602+00:00",
-  "recent_window_ioc_count": 47,
+  "generated": "2026-07-12T14:44:23.823409+00:00",
+  "recent_window_ioc_count": 44,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,31 +10,34 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-27",
-      "latest": "2026-07-11"
+      "earliest": "2026-04-07",
+      "latest": "2026-07-12"
     },
     "ioc_type_breakdown": {
-      "ip:port": 421,
+      "ip:port": 420,
       "sha256_hash": 25,
       "md5_hash": 20,
       "sha1_hash": 20,
-      "domain": 14
+      "domain": 15
     },
     "confidence_distribution": {
-      "high": 494,
-      "medium": 6,
+      "high": 493,
+      "medium": 7,
       "low": 0
     },
     "activity_timeline": {
+      "2026-04-07": 2,
+      "2026-04-11": 1,
+      "2026-04-26": 1,
       "2026-04-27": 1,
-      "2026-05-01": 15,
+      "2026-05-01": 14,
       "2026-05-02": 3,
       "2026-05-06": 2,
       "2026-05-07": 1,
       "2026-05-08": 1,
       "2026-05-10": 2,
       "2026-05-11": 6,
-      "2026-05-12": 4,
+      "2026-05-12": 3,
       "2026-05-13": 2,
       "2026-05-14": 1,
       "2026-05-15": 6,
@@ -62,7 +65,7 @@
       "2026-06-09": 7,
       "2026-06-10": 10,
       "2026-06-11": 10,
-      "2026-06-12": 11,
+      "2026-06-12": 7,
       "2026-06-13": 12,
       "2026-06-14": 14,
       "2026-06-15": 9,
@@ -91,20 +94,21 @@
       "2026-07-08": 6,
       "2026-07-09": 10,
       "2026-07-10": 5,
-      "2026-07-11": 3
+      "2026-07-11": 4,
+      "2026-07-12": 1
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 51
+        "count": 53
+      },
+      {
+        "port": "6606",
+        "count": 40
       },
       {
         "port": "7707",
         "count": 40
-      },
-      {
-        "port": "6606",
-        "count": 39
       },
       {
         "port": "6666",
@@ -136,6 +140,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "51.68.209.36:8808",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-07-12 07:30:12 UTC"
+      },
+      {
+        "ioc": "23.106.52.176:59838",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:45:19 UTC"
+      },
       {
         "ioc": "3.127.138.57:15186",
         "type": "ip:port",
@@ -213,18 +229,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-09 10:46:03 UTC"
-      },
-      {
-        "ioc": "104.164.46.36:2026",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 10:46:02 UTC"
-      },
-      {
-        "ioc": "91.219.238.167:6745",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 09:46:36 UTC"
       }
     ]
   }

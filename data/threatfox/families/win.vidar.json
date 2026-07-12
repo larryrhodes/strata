@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-07-11T14:36:23.611436+00:00",
-  "recent_window_ioc_count": 297,
+  "generated": "2026-07-12T14:42:23.691425+00:00",
+  "recent_window_ioc_count": 259,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -11,15 +11,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-27",
-      "latest": "2026-07-11"
+      "latest": "2026-07-12"
     },
     "ioc_type_breakdown": {
-      "url": 164,
-      "domain": 102,
+      "url": 163,
+      "domain": 103,
       "sha256_hash": 68,
-      "md5_hash": 67,
       "sha1_hash": 67,
-      "ip:port": 32
+      "md5_hash": 66,
+      "ip:port": 33
     },
     "confidence_distribution": {
       "high": 499,
@@ -27,8 +27,8 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-27": 5,
-      "2026-06-28": 6,
+      "2026-06-27": 4,
+      "2026-06-28": 4,
       "2026-06-29": 80,
       "2026-06-30": 26,
       "2026-07-01": 47,
@@ -41,12 +41,13 @@
       "2026-07-08": 24,
       "2026-07-09": 27,
       "2026-07-10": 13,
-      "2026-07-11": 6
+      "2026-07-11": 8,
+      "2026-07-12": 1
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 30
+        "count": 31
       },
       {
         "port": "3308",
@@ -58,6 +59,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "gog.tb88tank.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-12 08:12:56 UTC"
+      },
+      {
+        "ioc": "https://91.98.111.49/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-11 15:02:20 UTC"
+      },
+      {
+        "ioc": "91.98.111.49:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 15:02:20 UTC"
+      },
       {
         "ioc": "https://ctkmarketplace.com/",
         "type": "url",
@@ -129,24 +148,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-07-10 09:27:03 UTC"
-      },
-      {
-        "ioc": "dup.kencangsm188.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:26:51 UTC"
-      },
-      {
-        "ioc": "https://dup.kencangsm188.top/",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:26:51 UTC"
-      },
-      {
-        "ioc": "cft.omni-signage.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-10 05:27:09 UTC"
       }
     ]
   }

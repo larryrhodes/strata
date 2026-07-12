@@ -1,8 +1,8 @@
 {
   "malware_id": "win.adaptix_c2",
   "family": "AdaptixC2",
-  "generated": "2026-07-11T14:38:22.686646+00:00",
-  "recent_window_ioc_count": 61,
+  "generated": "2026-07-12T14:43:55.399684+00:00",
+  "recent_window_ioc_count": 69,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.adaptix_c2",
   "description": "AdaptixC2 is a open-source post-exploitation and adversarial emulation framework that lets penetration testers control compromised hosts and execute system actions. While being created for red-teaming it is also used by threat actors for attacks.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-12-08",
-      "latest": "2026-07-11"
+      "earliest": "2025-12-19",
+      "latest": "2026-07-12"
     },
     "ioc_type_breakdown": {
       "ip:port": 476,
@@ -26,13 +26,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2025-12-08": 1,
-      "2025-12-11": 2,
-      "2025-12-12": 1,
-      "2025-12-13": 1,
-      "2025-12-15": 2,
-      "2025-12-16": 1,
-      "2025-12-17": 1,
       "2025-12-19": 1,
       "2025-12-30": 2,
       "2026-01-02": 1,
@@ -134,7 +127,7 @@
       "2026-06-07": 6,
       "2026-06-09": 2,
       "2026-06-10": 8,
-      "2026-06-11": 10,
+      "2026-06-11": 7,
       "2026-06-12": 14,
       "2026-06-13": 6,
       "2026-06-14": 4,
@@ -163,12 +156,13 @@
       "2026-07-08": 14,
       "2026-07-09": 18,
       "2026-07-10": 9,
-      "2026-07-11": 3
+      "2026-07-11": 12,
+      "2026-07-12": 3
     },
     "top_ports": [
       {
         "port": "4321",
-        "count": 142
+        "count": 141
       },
       {
         "port": "443",
@@ -195,19 +189,91 @@
         "count": 10
       },
       {
-        "port": "8000",
-        "count": 7
-      },
-      {
         "port": "1234",
         "count": 6
       },
       {
-        "port": "4323",
+        "port": "8000",
+        "count": 6
+      },
+      {
+        "port": "4322",
         "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "45.198.224.94:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-12 09:45:30 UTC"
+      },
+      {
+        "ioc": "38.54.8.74:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-12 09:45:25 UTC"
+      },
+      {
+        "ioc": "107.172.90.117:4322",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-12 09:43:18 UTC"
+      },
+      {
+        "ioc": "144.31.117.38:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 20:05:06 UTC"
+      },
+      {
+        "ioc": "82.158.229.30:18443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:46:05 UTC"
+      },
+      {
+        "ioc": "82.158.229.189:18443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:46:05 UTC"
+      },
+      {
+        "ioc": "82.158.229.143:18443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:46:04 UTC"
+      },
+      {
+        "ioc": "31.207.4.197:9872",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:45:23 UTC"
+      },
+      {
+        "ioc": "178.104.249.136:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:43:59 UTC"
+      },
+      {
+        "ioc": "1.14.234.68:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 19:43:03 UTC"
+      },
+      {
+        "ioc": "144.31.117.38:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 19:05:05 UTC"
+      },
+      {
+        "ioc": "144.31.117.38:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 19:05:04 UTC"
+      },
       {
         "ioc": "138.16.179.204:80",
         "type": "ip:port",
@@ -225,78 +291,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-07-11 02:05:06 UTC"
-      },
-      {
-        "ioc": "93.115.172.235:7579",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 19:46:10 UTC"
-      },
-      {
-        "ioc": "144.31.117.38:47825",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 19:43:32 UTC"
-      },
-      {
-        "ioc": "202.1.31.83:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 18:05:04 UTC"
-      },
-      {
-        "ioc": "202.1.31.83:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 17:05:05 UTC"
-      },
-      {
-        "ioc": "202.1.31.83:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 16:05:07 UTC"
-      },
-      {
-        "ioc": "156.244.11.247:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 16:05:06 UTC"
-      },
-      {
-        "ioc": "156.244.11.247:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 16:05:05 UTC"
-      },
-      {
-        "ioc": "156.244.11.247:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 15:05:09 UTC"
-      },
-      {
-        "ioc": "103.146.231.107:7771",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 09:43:12 UTC"
-      },
-      {
-        "ioc": "91.132.161.21:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-09 21:05:04 UTC"
-      },
-      {
-        "ioc": "156.244.11.247:4321",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 19:43:41 UTC"
-      },
-      {
-        "ioc": "122.114.12.155:17891",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-09 19:43:22 UTC"
       }
     ]
   }
