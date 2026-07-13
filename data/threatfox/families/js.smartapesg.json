@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-07-12T14:44:38.002614+00:00",
-  "recent_window_ioc_count": 36,
+  "generated": "2026-07-13T16:08:49.096324+00:00",
+  "recent_window_ioc_count": 37,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 160,
+    "total_iocs": 154,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-07-11"
+      "latest": "2026-07-13"
     },
     "ioc_type_breakdown": {
-      "url": 95,
-      "domain": 45,
+      "url": 91,
+      "domain": 43,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 158,
+      "high": 152,
       "medium": 2,
       "low": 0
     },
@@ -42,8 +42,7 @@
       "2026-05-08": 1,
       "2026-05-12": 8,
       "2026-05-27": 2,
-      "2026-06-12": 7,
-      "2026-06-13": 3,
+      "2026-06-13": 1,
       "2026-06-15": 4,
       "2026-06-16": 3,
       "2026-06-17": 4,
@@ -63,7 +62,8 @@
       "2026-07-08": 4,
       "2026-07-09": 10,
       "2026-07-10": 7,
-      "2026-07-11": 1
+      "2026-07-11": 1,
+      "2026-07-13": 3
     },
     "top_ports": [
       {
@@ -76,6 +76,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "jadeworkshop.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-13 13:44:34 UTC"
+      },
+      {
+        "ioc": "https://jadeworkshop.top/router/verify-build",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-13 13:44:34 UTC"
+      },
+      {
+        "ioc": "https://jadeworkshop.top/router/handler-asset.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-13 13:44:32 UTC"
+      },
       {
         "ioc": "https://marblehaven.top/claims/refresh-cookie.js",
         "type": "url",
@@ -147,24 +165,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-09 12:10:40 UTC"
-      },
-      {
-        "ioc": "https://linenregistry.top/route/callback-deploy",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-09 11:03:37 UTC"
-      },
-      {
-        "ioc": "linenregistry.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-09 11:03:36 UTC"
-      },
-      {
-        "ioc": "https://linenregistry.top/route/profile-xml.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-09 11:03:35 UTC"
       }
     ]
   }

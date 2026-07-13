@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-07-12T14:44:53.476735+00:00",
-  "recent_window_ioc_count": 34,
+  "generated": "2026-07-13T16:08:34.701328+00:00",
+  "recent_window_ioc_count": 38,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -13,15 +13,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-06",
-      "latest": "2026-07-12"
+      "latest": "2026-07-13"
     },
     "ioc_type_breakdown": {
-      "ip:port": 270,
+      "ip:port": 269,
       "domain": 97,
       "md5_hash": 41,
       "sha256_hash": 41,
       "sha1_hash": 41,
-      "url": 10
+      "url": 11
     },
     "confidence_distribution": {
       "high": 446,
@@ -29,7 +29,7 @@
       "low": 10
     },
     "activity_timeline": {
-      "2026-04-06": 9,
+      "2026-04-06": 4,
       "2026-04-07": 5,
       "2026-04-08": 74,
       "2026-04-09": 3,
@@ -103,7 +103,8 @@
       "2026-07-09": 3,
       "2026-07-10": 5,
       "2026-07-11": 7,
-      "2026-07-12": 5
+      "2026-07-12": 5,
+      "2026-07-13": 5
     },
     "top_ports": [
       {
@@ -111,11 +112,11 @@
         "count": 21
       },
       {
-        "port": "6666",
-        "count": 18
+        "port": "443",
+        "count": 19
       },
       {
-        "port": "443",
+        "port": "6666",
         "count": 17
       },
       {
@@ -148,6 +149,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "103.118.243.73:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-13 12:10:06 UTC"
+      },
+      {
+        "ioc": "http://95.40.222.37/getinstall64",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-13 01:30:12 UTC"
+      },
+      {
+        "ioc": "143.92.61.212:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-13 01:30:09 UTC"
+      },
+      {
+        "ioc": "103.12.149.93:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-13 01:30:06 UTC"
+      },
+      {
+        "ioc": "103.43.11.40:1443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-13 01:30:03 UTC"
+      },
       {
         "ioc": "202.95.8.27:8888",
         "type": "ip:port",
@@ -207,36 +238,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-11 05:46:51 UTC"
-      },
-      {
-        "ioc": "18.163.0.245:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-11 05:45:57 UTC"
-      },
-      {
-        "ioc": "qqdhq.cn",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-11 05:45:28 UTC"
-      },
-      {
-        "ioc": "103.75.46.34:10801",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-10 20:25:08 UTC"
-      },
-      {
-        "ioc": "47.243.36.18:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 16:31:04 UTC"
-      },
-      {
-        "ioc": "47.243.36.18:5252",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-10 16:31:03 UTC"
       }
     ]
   }

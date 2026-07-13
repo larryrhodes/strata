@@ -1,0 +1,286 @@
+{
+  "malware_id": "win.njrat",
+  "family": "NjRAT",
+  "generated": "2026-07-13T16:09:44.419590+00:00",
+  "recent_window_ioc_count": 23,
+  "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.njrat",
+  "description": "RedPacket Security describes NJRat as \"a remote access trojan (RAT) has capabilities to log keystrokes, access the victim's camera, steal credentials stored in browsers, open a reverse shell, upload/download files, view the victim's desktop, perform process, file, and registry manipulations, and capabilities to let the attacker update, uninstall, restart, close, disconnect the RAT and rename its campaign ID. Through the Command & Control (CnC) server software, the attacker has capabilities to create and configure the malware to spread through USB drives.\"\r\n\r\nIt is supposedly popular with actors in the Middle East. Similar to other RATs, many leaked builders may be backdoored.",
+  "alt_names": [
+    "Bladabindi",
+    "Lime-Worm"
+  ],
+  "associated_groups": [
+    "AQUATIC PANDA",
+    "Earth Lusca",
+    "Operation C-Major",
+    "The Gorgon Group"
+  ],
+  "stats": {
+    "total_iocs": 330,
+    "date_range": {
+      "earliest": "2022-02-23",
+      "latest": "2026-07-11"
+    },
+    "ioc_type_breakdown": {
+      "ip:port": 120,
+      "domain": 92,
+      "md5_hash": 39,
+      "sha1_hash": 39,
+      "sha256_hash": 39,
+      "url": 1
+    },
+    "confidence_distribution": {
+      "high": 312,
+      "medium": 18,
+      "low": 0
+    },
+    "activity_timeline": {
+      "2022-02-23": 1,
+      "2023-01-25": 1,
+      "2023-03-20": 1,
+      "2023-09-27": 7,
+      "2024-02-04": 1,
+      "2024-05-14": 1,
+      "2024-10-06": 1,
+      "2025-01-02": 1,
+      "2025-01-20": 2,
+      "2025-01-21": 1,
+      "2025-05-13": 1,
+      "2025-05-22": 1,
+      "2025-05-25": 1,
+      "2025-07-18": 1,
+      "2025-07-19": 1,
+      "2025-10-13": 1,
+      "2026-01-06": 3,
+      "2026-01-09": 1,
+      "2026-01-10": 1,
+      "2026-01-13": 3,
+      "2026-01-14": 2,
+      "2026-01-16": 2,
+      "2026-01-18": 1,
+      "2026-01-19": 1,
+      "2026-01-20": 4,
+      "2026-01-21": 1,
+      "2026-01-24": 6,
+      "2026-01-27": 1,
+      "2026-01-29": 2,
+      "2026-01-30": 1,
+      "2026-01-31": 1,
+      "2026-02-01": 2,
+      "2026-02-02": 2,
+      "2026-02-03": 13,
+      "2026-02-04": 2,
+      "2026-02-05": 2,
+      "2026-02-06": 1,
+      "2026-02-07": 16,
+      "2026-02-08": 1,
+      "2026-02-09": 2,
+      "2026-02-11": 1,
+      "2026-02-12": 6,
+      "2026-02-13": 12,
+      "2026-02-14": 1,
+      "2026-02-15": 10,
+      "2026-02-16": 3,
+      "2026-02-17": 5,
+      "2026-02-19": 1,
+      "2026-02-20": 2,
+      "2026-02-21": 10,
+      "2026-02-23": 1,
+      "2026-02-24": 3,
+      "2026-02-28": 1,
+      "2026-03-02": 1,
+      "2026-03-03": 1,
+      "2026-03-06": 4,
+      "2026-03-07": 3,
+      "2026-03-08": 2,
+      "2026-03-10": 3,
+      "2026-03-13": 1,
+      "2026-03-14": 7,
+      "2026-03-15": 1,
+      "2026-03-16": 1,
+      "2026-03-17": 2,
+      "2026-03-18": 1,
+      "2026-03-19": 1,
+      "2026-03-20": 1,
+      "2026-03-22": 2,
+      "2026-03-23": 1,
+      "2026-03-24": 2,
+      "2026-03-25": 5,
+      "2026-03-26": 1,
+      "2026-03-27": 2,
+      "2026-03-28": 1,
+      "2026-03-29": 1,
+      "2026-03-30": 1,
+      "2026-03-31": 1,
+      "2026-04-02": 5,
+      "2026-04-03": 2,
+      "2026-04-04": 1,
+      "2026-04-05": 1,
+      "2026-04-08": 1,
+      "2026-04-09": 3,
+      "2026-04-11": 4,
+      "2026-04-13": 3,
+      "2026-04-14": 4,
+      "2026-04-15": 1,
+      "2026-04-17": 1,
+      "2026-04-23": 4,
+      "2026-04-24": 1,
+      "2026-04-27": 1,
+      "2026-04-28": 1,
+      "2026-04-29": 1,
+      "2026-04-30": 2,
+      "2026-05-06": 2,
+      "2026-05-13": 7,
+      "2026-05-15": 1,
+      "2026-05-30": 1,
+      "2026-06-02": 1,
+      "2026-06-08": 19,
+      "2026-06-10": 2,
+      "2026-06-17": 6,
+      "2026-06-18": 3,
+      "2026-06-20": 9,
+      "2026-06-21": 3,
+      "2026-06-25": 1,
+      "2026-06-28": 1,
+      "2026-06-29": 17,
+      "2026-07-03": 2,
+      "2026-07-08": 16,
+      "2026-07-10": 4,
+      "2026-07-11": 3
+    },
+    "top_ports": [
+      {
+        "port": "1177",
+        "count": 16
+      },
+      {
+        "port": "18928",
+        "count": 6
+      },
+      {
+        "port": "10859",
+        "count": 6
+      },
+      {
+        "port": "5552",
+        "count": 5
+      },
+      {
+        "port": "13447",
+        "count": 5
+      },
+      {
+        "port": "14709",
+        "count": 4
+      },
+      {
+        "port": "20778",
+        "count": 3
+      },
+      {
+        "port": "5050",
+        "count": 3
+      },
+      {
+        "port": "8723",
+        "count": 2
+      },
+      {
+        "port": "8080",
+        "count": 2
+      }
+    ],
+    "sample_iocs": [
+      {
+        "ioc": "64.89.160.127:1818",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-11 09:13:20 UTC"
+      },
+      {
+        "ioc": "indigo2forjoy.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-11 09:13:17 UTC"
+      },
+      {
+        "ioc": "62.60.226.185:6000",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-11 00:00:12 UTC"
+      },
+      {
+        "ioc": "1b622c451fcc9d83aad8bf45b1c42b5f",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-10 14:54:49 UTC"
+      },
+      {
+        "ioc": "2e70ac7f1bdfc2f9912448ee2b6c2c478bef3aab",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-10 14:54:49 UTC"
+      },
+      {
+        "ioc": "df4e36252bf8a2b1dee291bcaf9e0505246cacc1d1ea9db3494f30c8506ba0cb",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-10 14:54:48 UTC"
+      },
+      {
+        "ioc": "147.93.4.228:5552",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-10 03:10:07 UTC"
+      },
+      {
+        "ioc": "75f68d369e48fba33a4d53d45f32a6c6",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-08 18:14:44 UTC"
+      },
+      {
+        "ioc": "e2ffa36e0a8661af0695eb11fe11ae21aca77367",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-08 18:14:44 UTC"
+      },
+      {
+        "ioc": "3f434324ac709227290512410977bca99eb164fc86cae6f22cd4844eb9eb9130",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-08 18:14:43 UTC"
+      },
+      {
+        "ioc": "97960cb546365a3a320fd26dac47d10e",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-08 18:14:41 UTC"
+      },
+      {
+        "ioc": "04ed410e130bba2e28e7fc5e921ee6820547c31f",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-08 18:14:41 UTC"
+      },
+      {
+        "ioc": "f5d8c56c2b66818eba0bacd35be33b2d2069ff3e28befe67dd4ca17b675b7b27",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-08 18:14:41 UTC"
+      },
+      {
+        "ioc": "158.160.75.185:43291",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-08 14:00:09 UTC"
+      },
+      {
+        "ioc": "188.48.208.56:1177",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-08 10:15:07 UTC"
+      }
+    ]
+  }
+}
