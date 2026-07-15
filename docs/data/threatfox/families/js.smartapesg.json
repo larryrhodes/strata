@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-07-14T15:12:50.377072+00:00",
-  "recent_window_ioc_count": 35,
+  "generated": "2026-07-15T15:13:33.981834+00:00",
+  "recent_window_ioc_count": 36,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 164,
+    "total_iocs": 169,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-07-14"
+      "latest": "2026-07-15"
     },
     "ioc_type_breakdown": {
-      "url": 98,
-      "domain": 46,
+      "url": 102,
+      "domain": 47,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 162,
+      "high": 167,
       "medium": 2,
       "low": 0
     },
@@ -64,7 +64,8 @@
       "2026-07-10": 7,
       "2026-07-11": 1,
       "2026-07-13": 7,
-      "2026-07-14": 6
+      "2026-07-14": 8,
+      "2026-07-15": 3
     },
     "top_ports": [
       {
@@ -77,6 +78,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://granitehearth.top/status/health-effect.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-15 09:37:11 UTC"
+      },
+      {
+        "ioc": "granitehearth.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-15 09:37:11 UTC"
+      },
+      {
+        "ioc": "https://granitehearth.top/status/status-parser",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-15 09:37:11 UTC"
+      },
+      {
+        "ioc": "https://alabastercompass.top/public/callback-stylesheet.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-14 20:48:25 UTC"
+      },
+      {
+        "ioc": "https://hazelcitadel.top/public/callback-stylesheet.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-14 16:11:51 UTC"
+      },
       {
         "ioc": "hazelcitadel.top",
         "type": "domain",
@@ -136,36 +167,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-13 16:42:19 UTC"
-      },
-      {
-        "ioc": "jadeworkshop.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-13 13:44:34 UTC"
-      },
-      {
-        "ioc": "https://jadeworkshop.top/router/verify-build",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-13 13:44:34 UTC"
-      },
-      {
-        "ioc": "https://jadeworkshop.top/router/handler-asset.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-13 13:44:32 UTC"
-      },
-      {
-        "ioc": "https://marblehaven.top/claims/refresh-cookie.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-11 05:29:51 UTC"
-      },
-      {
-        "ioc": "https://marblehaven.top/claims/profile-view",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-10 12:19:03 UTC"
       }
     ]
   }
