@@ -1,8 +1,8 @@
 {
   "malware_id": "win.pure_rat",
   "family": "PureRAT",
-  "generated": "2026-07-15T15:13:06.168813+00:00",
-  "recent_window_ioc_count": 40,
+  "generated": "2026-07-16T15:23:40.059458+00:00",
+  "recent_window_ioc_count": 38,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.pure_rat",
   "description": "According to Morphisec, this RAT combines advanced in-memory execution, API and resource resolution at runtime, and layered evasion techniques. They have named it \u2018Resolver\u2019 due to its heavy reliance on runtime resolution mechanisms and dynamic resource handling, which make static and behavioral analysis significantly more difficult.",
   "alt_names": [
@@ -11,13 +11,13 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 281,
+    "total_iocs": 282,
     "date_range": {
       "earliest": "2026-03-02",
-      "latest": "2026-07-15"
+      "latest": "2026-07-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 221,
+      "ip:port": 222,
       "sha256_hash": 17,
       "md5_hash": 12,
       "sha1_hash": 12,
@@ -25,7 +25,7 @@
       "url": 9
     },
     "confidence_distribution": {
-      "high": 281,
+      "high": 282,
       "medium": 0,
       "low": 0
     },
@@ -69,12 +69,13 @@
       "2026-07-04": 1,
       "2026-07-09": 30,
       "2026-07-14": 9,
-      "2026-07-15": 1
+      "2026-07-15": 1,
+      "2026-07-16": 1
     },
     "top_ports": [
       {
         "port": "56001",
-        "count": 75
+        "count": 76
       },
       {
         "port": "56002",
@@ -114,6 +115,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "144.31.168.100:56001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 06:44:38 UTC"
+      },
       {
         "ioc": "38.146.219.149:56001",
         "type": "ip:port",
@@ -197,12 +204,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-07-09 18:23:41 UTC"
-      },
-      {
-        "ioc": "4eec62fe481dd7e2f46101da4afa087aa7dfbc9f",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-09 18:23:40 UTC"
       }
     ]
   }

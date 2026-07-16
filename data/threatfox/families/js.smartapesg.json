@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-07-15T15:13:33.981834+00:00",
-  "recent_window_ioc_count": 36,
+  "generated": "2026-07-16T15:23:21.579519+00:00",
+  "recent_window_ioc_count": 38,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 169,
+    "total_iocs": 174,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-07-15"
+      "latest": "2026-07-16"
     },
     "ioc_type_breakdown": {
-      "url": 102,
-      "domain": 47,
+      "url": 106,
+      "domain": 48,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 167,
+      "high": 172,
       "medium": 2,
       "low": 0
     },
@@ -43,7 +43,6 @@
       "2026-05-12": 8,
       "2026-05-27": 2,
       "2026-06-13": 1,
-      "2026-06-15": 4,
       "2026-06-16": 3,
       "2026-06-17": 4,
       "2026-06-18": 11,
@@ -65,7 +64,8 @@
       "2026-07-11": 1,
       "2026-07-13": 7,
       "2026-07-14": 8,
-      "2026-07-15": 3
+      "2026-07-15": 6,
+      "2026-07-16": 6
     },
     "top_ports": [
       {
@@ -78,6 +78,60 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://emberlattice.top/claims/redirect-state.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-16 15:10:46 UTC"
+      },
+      {
+        "ioc": "https://emberlattice.top/claims/realm-fetch.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-16 15:10:45 UTC"
+      },
+      {
+        "ioc": "https://emberlattice.top/claims/metrics-bundle",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-16 15:10:45 UTC"
+      },
+      {
+        "ioc": "https://emberlattice.top/callback/signin-validator",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-16 12:07:44 UTC"
+      },
+      {
+        "ioc": "https://emberlattice.top/callback/health-sandbox.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-16 12:07:43 UTC"
+      },
+      {
+        "ioc": "emberlattice.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-16 12:07:43 UTC"
+      },
+      {
+        "ioc": "https://kblaa.com/gfont.ttf",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-15 20:21:40 UTC"
+      },
+      {
+        "ioc": "kblaa.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-15 20:21:38 UTC"
+      },
+      {
+        "ioc": "https://granitehearth.top/status/profile-runtime.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-15 17:12:28 UTC"
+      },
       {
         "ioc": "https://granitehearth.top/status/health-effect.js",
         "type": "url",
@@ -113,60 +167,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-07-14 14:11:37 UTC"
-      },
-      {
-        "ioc": "https://hazelcitadel.top/public/refresh-cookie",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-14 14:11:37 UTC"
-      },
-      {
-        "ioc": "https://hazelcitadel.top/public/throttle-sandbox.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-14 14:11:36 UTC"
-      },
-      {
-        "ioc": "https://alabastercompass.top/public/refresh-cookie",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-14 10:14:11 UTC"
-      },
-      {
-        "ioc": "https://alabastercompass.top/public/throttle-sandbox.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-14 10:14:10 UTC"
-      },
-      {
-        "ioc": "alabastercompass.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-14 10:14:10 UTC"
-      },
-      {
-        "ioc": "https://moonlitprovince.top/router/verify-build",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-13 20:49:36 UTC"
-      },
-      {
-        "ioc": "https://moonlitprovince.top/router/handler-asset.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-13 20:49:35 UTC"
-      },
-      {
-        "ioc": "moonlitprovince.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-13 20:49:34 UTC"
-      },
-      {
-        "ioc": "https://jadeworkshop.top/router/user-thread.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-13 16:42:19 UTC"
       }
     ]
   }

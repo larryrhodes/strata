@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-07-15T15:10:47.052342+00:00",
-  "recent_window_ioc_count": 123,
+  "generated": "2026-07-16T15:20:00.090105+00:00",
+  "recent_window_ioc_count": 103,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-08",
-      "latest": "2026-07-15"
+      "earliest": "2026-06-04",
+      "latest": "2026-07-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 464,
-      "domain": 36
+      "ip:port": 468,
+      "domain": 32
     },
     "confidence_distribution": {
       "high": 500,
@@ -31,7 +31,11 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-08": 2,
+      "2026-06-04": 2,
+      "2026-06-05": 4,
+      "2026-06-06": 2,
+      "2026-06-07": 4,
+      "2026-06-08": 4,
       "2026-06-09": 8,
       "2026-06-10": 13,
       "2026-06-11": 8,
@@ -55,7 +59,7 @@
       "2026-06-29": 5,
       "2026-06-30": 12,
       "2026-07-01": 12,
-      "2026-07-02": 41,
+      "2026-07-02": 17,
       "2026-07-03": 29,
       "2026-07-04": 12,
       "2026-07-05": 5,
@@ -68,12 +72,13 @@
       "2026-07-12": 6,
       "2026-07-13": 19,
       "2026-07-14": 21,
-      "2026-07-15": 17
+      "2026-07-15": 22,
+      "2026-07-16": 5
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 27
+        "count": 32
       },
       {
         "port": "14644",
@@ -85,34 +90,94 @@
       },
       {
         "port": "14641",
-        "count": 13
+        "count": 14
       },
       {
         "port": "14645",
         "count": 12
       },
       {
+        "port": "14642",
+        "count": 10
+      },
+      {
         "port": "14643",
         "count": 10
       },
       {
-        "port": "14642",
+        "port": "14649",
+        "count": 9
+      },
+      {
+        "port": "14648",
         "count": 9
       },
       {
         "port": "4509",
         "count": 9
-      },
-      {
-        "port": "14649",
-        "count": 8
-      },
-      {
-        "port": "14647",
-        "count": 8
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "102.220.160.105:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 14:20:56 UTC"
+      },
+      {
+        "ioc": "204.44.93.75:14642",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 09:44:56 UTC"
+      },
+      {
+        "ioc": "204.44.93.75:14641",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 09:44:56 UTC"
+      },
+      {
+        "ioc": "103.186.64.138:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 07:16:13 UTC"
+      },
+      {
+        "ioc": "64.89.161.94:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 07:11:05 UTC"
+      },
+      {
+        "ioc": "204.44.93.75:14649",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-15 19:44:38 UTC"
+      },
+      {
+        "ioc": "204.44.93.75:14648",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-15 19:44:38 UTC"
+      },
+      {
+        "ioc": "185.115.164.59:7723",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-15 19:44:13 UTC"
+      },
+      {
+        "ioc": "103.83.86.48:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-15 19:43:14 UTC"
+      },
+      {
+        "ioc": "103.11.41.10:17328",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-15 19:43:06 UTC"
+      },
       {
         "ioc": "204.44.69.214:14646",
         "type": "ip:port",
@@ -142,66 +207,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-15 09:43:06 UTC"
-      },
-      {
-        "ioc": "pajp.oragh8kaso1.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:40:45 UTC"
-      },
-      {
-        "ioc": "metromachine.4nmn.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:40:44 UTC"
-      },
-      {
-        "ioc": "gros59kalmso2.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:40:44 UTC"
-      },
-      {
-        "ioc": "gros59kalmso1.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:40:44 UTC"
-      },
-      {
-        "ioc": "armcobarriersuppliersbk.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:35:46 UTC"
-      },
-      {
-        "ioc": "armcobarriersuppliers.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:35:46 UTC"
-      },
-      {
-        "ioc": "161.248.179.182:37171",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:30:58 UTC"
-      },
-      {
-        "ioc": "102.220.160.104:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:30:58 UTC"
-      },
-      {
-        "ioc": "194.59.31.232:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:25:46 UTC"
-      },
-      {
-        "ioc": "130.12.182.47:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 07:25:46 UTC"
       }
     ]
   }
