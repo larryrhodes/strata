@@ -1,7 +1,7 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-07-16T15:21:48.656046+00:00",
+  "generated": "2026-07-17T15:01:46.916865+00:00",
   "recent_window_ioc_count": 66,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
@@ -10,28 +10,32 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-11",
+      "earliest": "2026-05-02",
       "latest": "2026-07-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 416,
+      "ip:port": 415,
       "sha256_hash": 25,
       "md5_hash": 20,
       "sha1_hash": 20,
-      "domain": 19
+      "domain": 20
     },
     "confidence_distribution": {
-      "high": 494,
-      "medium": 6,
+      "high": 493,
+      "medium": 7,
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-11": 3,
+      "2026-05-02": 1,
+      "2026-05-06": 2,
+      "2026-05-08": 1,
+      "2026-05-10": 1,
+      "2026-05-11": 4,
       "2026-05-12": 2,
       "2026-05-14": 1,
       "2026-05-15": 2,
       "2026-05-16": 3,
-      "2026-05-17": 2,
+      "2026-05-17": 1,
       "2026-05-18": 7,
       "2026-05-19": 5,
       "2026-05-21": 1,
@@ -57,9 +61,9 @@
       "2026-06-12": 7,
       "2026-06-13": 7,
       "2026-06-14": 10,
-      "2026-06-15": 9,
-      "2026-06-16": 19,
-      "2026-06-17": 21,
+      "2026-06-15": 8,
+      "2026-06-16": 14,
+      "2026-06-17": 15,
       "2026-06-18": 13,
       "2026-06-19": 17,
       "2026-06-20": 20,
@@ -88,16 +92,16 @@
       "2026-07-13": 10,
       "2026-07-14": 16,
       "2026-07-15": 12,
-      "2026-07-16": 12
+      "2026-07-16": 19
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 56
+        "count": 58
       },
       {
         "port": "7707",
-        "count": 44
+        "count": 46
       },
       {
         "port": "6606",
@@ -133,6 +137,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "45.32.90.122:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 19:46:15 UTC"
+      },
+      {
+        "ioc": "43.225.157.146:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 19:46:09 UTC"
+      },
+      {
+        "ioc": "217.60.241.10:8808",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-16 19:45:50 UTC"
+      },
+      {
+        "ioc": "2b46ed6e01f2baae933707d06704d14c",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-16 19:26:25 UTC"
+      },
+      {
+        "ioc": "9b225681a471b474fde2cca61ff61498a7c7f9e8",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-16 19:26:25 UTC"
+      },
+      {
+        "ioc": "e6d51d45edea7591b826b2d703c20a426fffa27a022c0156916ae9c35245bd07",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-16 19:26:24 UTC"
+      },
+      {
+        "ioc": "orthodontie-ge.ch",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-16 19:01:09 UTC"
+      },
       {
         "ioc": "64.89.161.190:6606",
         "type": "ip:port",
@@ -180,48 +226,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-16 09:43:47 UTC"
-      },
-      {
-        "ioc": "104.168.134.25:6606",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-16 09:43:19 UTC"
-      },
-      {
-        "ioc": "5.56.25.178:7019",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-16 07:40:04 UTC"
-      },
-      {
-        "ioc": "hardydiagnostics.cam",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-16 02:35:50 UTC"
-      },
-      {
-        "ioc": "5.56.25.183:7033",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-16 02:20:04 UTC"
-      },
-      {
-        "ioc": "64.89.160.127:2026",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 19:46:03 UTC"
-      },
-      {
-        "ioc": "5.56.25.238:8808",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 19:45:56 UTC"
-      },
-      {
-        "ioc": "216.250.249.83:8808",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-15 19:45:24 UTC"
       }
     ]
   }
