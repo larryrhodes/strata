@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-07-18T14:38:16.618907+00:00",
-  "recent_window_ioc_count": 77,
+  "generated": "2026-07-19T14:41:20.390745+00:00",
+  "recent_window_ioc_count": 76,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,23 +10,25 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-06",
+      "earliest": "2026-05-01",
       "latest": "2026-07-18"
     },
     "ioc_type_breakdown": {
-      "ip:port": 416,
+      "ip:port": 421,
       "sha256_hash": 24,
-      "domain": 22,
       "md5_hash": 19,
-      "sha1_hash": 19
+      "sha1_hash": 19,
+      "domain": 17
     },
     "confidence_distribution": {
-      "high": 494,
-      "medium": 6,
+      "high": 493,
+      "medium": 7,
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-06": 1,
+      "2026-05-01": 1,
+      "2026-05-02": 3,
+      "2026-05-06": 2,
       "2026-05-08": 1,
       "2026-05-10": 1,
       "2026-05-11": 4,
@@ -36,12 +38,12 @@
       "2026-05-16": 3,
       "2026-05-17": 1,
       "2026-05-18": 3,
-      "2026-05-19": 5,
+      "2026-05-19": 3,
       "2026-05-21": 1,
       "2026-05-22": 12,
       "2026-05-23": 5,
       "2026-05-24": 7,
-      "2026-05-25": 7,
+      "2026-05-25": 8,
       "2026-05-26": 7,
       "2026-05-27": 4,
       "2026-05-28": 3,
@@ -64,7 +66,7 @@
       "2026-06-16": 14,
       "2026-06-17": 7,
       "2026-06-18": 13,
-      "2026-06-19": 17,
+      "2026-06-19": 12,
       "2026-06-20": 20,
       "2026-06-21": 19,
       "2026-06-22": 17,
@@ -91,22 +93,22 @@
       "2026-07-13": 10,
       "2026-07-14": 16,
       "2026-07-15": 12,
-      "2026-07-16": 19,
+      "2026-07-16": 18,
       "2026-07-17": 9,
-      "2026-07-18": 5
+      "2026-07-18": 7
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 55
+        "count": 54
       },
       {
         "port": "7707",
-        "count": 46
+        "count": 48
       },
       {
         "port": "6606",
-        "count": 44
+        "count": 45
       },
       {
         "port": "6666",
@@ -129,32 +131,44 @@
         "count": 5
       },
       {
-        "port": "2026",
+        "port": "8888",
         "count": 4
       },
       {
-        "port": "5000",
+        "port": "20100",
         "count": 4
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "xoso66edu.com",
-        "type": "domain",
+        "ioc": "64.89.161.190:7707",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-18 10:40:47 UTC"
+        "first_seen": "2026-07-18 19:45:54 UTC"
+      },
+      {
+        "ioc": "198.23.185.95:8888",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-18 19:44:24 UTC"
+      },
+      {
+        "ioc": "198.23.185.95:20100",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-18 19:44:24 UTC"
+      },
+      {
+        "ioc": "147.93.191.75:20100",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-18 19:43:34 UTC"
       },
       {
         "ioc": "46.246.12.19:2703",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-18 09:46:23 UTC"
-      },
-      {
-        "ioc": "vxoso66.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-18 09:45:50 UTC"
       },
       {
         "ioc": "2.59.132.84:7434",
@@ -215,18 +229,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-17 19:43:39 UTC"
-      },
-      {
-        "ioc": "104.168.0.147:1989",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-17 19:43:15 UTC"
-      },
-      {
-        "ioc": "45.32.90.122:6606",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-16 19:46:15 UTC"
       }
     ]
   }

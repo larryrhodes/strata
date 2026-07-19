@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-07-18T14:36:54.195109+00:00",
-  "recent_window_ioc_count": 162,
+  "generated": "2026-07-19T14:40:09.451501+00:00",
+  "recent_window_ioc_count": 176,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,15 +10,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-24",
-      "latest": "2026-07-18"
+      "earliest": "2026-04-03",
+      "latest": "2026-07-19"
     },
     "ioc_type_breakdown": {
-      "url": 160,
-      "domain": 126,
-      "md5_hash": 62,
-      "sha1_hash": 62,
-      "sha256_hash": 62,
+      "url": 177,
+      "domain": 139,
+      "md5_hash": 52,
+      "sha1_hash": 52,
+      "sha256_hash": 52,
       "ip:port": 28
     },
     "confidence_distribution": {
@@ -27,7 +27,15 @@
       "low": 1
     },
     "activity_timeline": {
-      "2026-04-24": 1,
+      "2026-04-03": 2,
+      "2026-04-07": 2,
+      "2026-04-13": 2,
+      "2026-04-14": 6,
+      "2026-04-15": 3,
+      "2026-04-16": 4,
+      "2026-04-17": 2,
+      "2026-04-22": 2,
+      "2026-04-24": 2,
       "2026-04-26": 2,
       "2026-05-01": 2,
       "2026-05-11": 2,
@@ -46,8 +54,7 @@
       "2026-06-30": 1,
       "2026-07-01": 1,
       "2026-07-03": 4,
-      "2026-07-04": 37,
-      "2026-07-05": 108,
+      "2026-07-05": 107,
       "2026-07-06": 66,
       "2026-07-07": 14,
       "2026-07-08": 24,
@@ -60,7 +67,8 @@
       "2026-07-15": 90,
       "2026-07-16": 23,
       "2026-07-17": 33,
-      "2026-07-18": 2
+      "2026-07-18": 9,
+      "2026-07-19": 7
     },
     "top_ports": [
       {
@@ -74,94 +82,94 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "htk.arizonafamilylawfirm.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-19 14:27:28 UTC"
+      },
+      {
+        "ioc": "https://htk.arizonafamilylawfirm.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-19 14:27:28 UTC"
+      },
+      {
+        "ioc": "fsc.arizonafamilylawfirm.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-07-19 13:27:13 UTC"
+      },
+      {
+        "ioc": "https://fsc.arizonafamilylawfirm.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-19 13:27:13 UTC"
+      },
+      {
+        "ioc": "https://rgb.arizonafamilylawfirm.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-19 11:27:04 UTC"
+      },
+      {
+        "ioc": "https://afsd.net/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-19 08:15:04 UTC"
+      },
+      {
+        "ioc": "https://kayhector.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-19 06:15:03 UTC"
+      },
+      {
+        "ioc": "906010fce0c7b37b29ee13a78b6e130f",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-18 19:41:28 UTC"
+      },
+      {
+        "ioc": "0a07b70b37919c01cfddd5e4b4260b144e138ac5",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-18 19:41:28 UTC"
+      },
+      {
+        "ioc": "555fd5790046add4e994dfe655efe0ced7b31b73849793bd81bcff983f022013",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-18 19:41:28 UTC"
+      },
+      {
+        "ioc": "f86db3e1c8635ecc820ef308302524bc",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-18 19:41:28 UTC"
+      },
+      {
+        "ioc": "90657841d1dab058acc5292711047d2999b05df5",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-18 19:41:27 UTC"
+      },
+      {
+        "ioc": "b473b09292b0e9ed4d4089344f77a12465242cf69db10768c93ba6cd40cfe770",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-18 19:41:27 UTC"
+      },
+      {
+        "ioc": "auth-id-browser.info",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-18 17:33:05 UTC"
+      },
+      {
         "ioc": "https://targe.in/",
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-07-18 06:15:02 UTC"
-      },
-      {
-        "ioc": "https://pressurewashingsacramento.net/",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-07-18 04:15:03 UTC"
-      },
-      {
-        "ioc": "https://sei.ambiltogel.net/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-17 22:55:07 UTC"
-      },
-      {
-        "ioc": "sei.ambiltogel.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-17 22:55:07 UTC"
-      },
-      {
-        "ioc": "c45f291fda8740a843202a77180a15a1",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:04 UTC"
-      },
-      {
-        "ioc": "915456ad1037056f7b542db11a97011da74d710f",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:04 UTC"
-      },
-      {
-        "ioc": "7073018596b174f584299d5152cf90f89a1f4e3bf072b778fc3342fda5c82f4f",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:04 UTC"
-      },
-      {
-        "ioc": "240861bb6ee7723f0a7449ec501c466b",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:03 UTC"
-      },
-      {
-        "ioc": "f6d6bf43990bde77af73d24f237c86889adacbfd",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:03 UTC"
-      },
-      {
-        "ioc": "8ca5069041a3de3536f0be3b8f1b9044a0dfffd0295d7495cbd57d6a312af0b5",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:02 UTC"
-      },
-      {
-        "ioc": "cf4866e9f6c60a4b253de4bb85f4da90",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:02 UTC"
-      },
-      {
-        "ioc": "3ec44d141f4d08ada015759eb2c5c79d76b53c54",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:02 UTC"
-      },
-      {
-        "ioc": "2fdcac512cef51c5b0d8a4fb23c278b973d20978aab5d463abbe131dd04879a0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:01 UTC"
-      },
-      {
-        "ioc": "0a9a59c9e53e6d9f218fc6c307016b44",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:01 UTC"
-      },
-      {
-        "ioc": "904eed155444a8ba021d2f6b1c1bb6c89cb739e7",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-17 22:51:01 UTC"
       }
     ]
   }

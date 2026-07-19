@@ -1,7 +1,7 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-07-18T14:37:44.723205+00:00",
+  "generated": "2026-07-19T14:41:05.629508+00:00",
   "recent_window_ioc_count": 83,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
@@ -14,11 +14,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-15",
-      "latest": "2026-07-17"
+      "latest": "2026-07-18"
     },
     "ioc_type_breakdown": {
-      "url": 270,
-      "domain": 214,
+      "url": 268,
+      "domain": 216,
       "sha256_hash": 10,
       "ip:port": 6
     },
@@ -28,7 +28,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-15": 63,
+      "2026-04-15": 68,
       "2026-04-18": 4,
       "2026-04-21": 1,
       "2026-04-22": 1,
@@ -47,7 +47,6 @@
       "2026-06-08": 2,
       "2026-06-09": 2,
       "2026-06-15": 1,
-      "2026-06-18": 9,
       "2026-06-20": 2,
       "2026-06-21": 2,
       "2026-06-22": 5,
@@ -71,7 +70,8 @@
       "2026-07-14": 30,
       "2026-07-15": 24,
       "2026-07-16": 13,
-      "2026-07-17": 7
+      "2026-07-17": 7,
+      "2026-07-18": 4
     },
     "top_ports": [
       {
@@ -84,6 +84,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://oosterhout.click/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-18 17:33:08 UTC"
+      },
+      {
+        "ioc": "oosterhout.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-18 17:33:08 UTC"
+      },
+      {
+        "ioc": "https://oosterhout.click/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-18 17:33:07 UTC"
+      },
+      {
+        "ioc": "https://oosterhout.click/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-18 17:33:06 UTC"
+      },
       {
         "ioc": "monteiro.click",
         "type": "domain",
@@ -149,30 +173,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-16 13:44:08 UTC"
-      },
-      {
-        "ioc": "https://ritchie.click/mmaxs0rs.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 12:07:46 UTC"
-      },
-      {
-        "ioc": "https://ritchie.click/lkg91c5q.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 12:07:45 UTC"
-      },
-      {
-        "ioc": "https://ritchie.click/t4et81av.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 12:07:44 UTC"
-      },
-      {
-        "ioc": "https://ritchie.click/l46p3f8z.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 12:07:42 UTC"
       }
     ]
   }
