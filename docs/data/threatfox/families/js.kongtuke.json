@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-07-19T14:41:05.629508+00:00",
-  "recent_window_ioc_count": 83,
+  "generated": "2026-07-20T15:31:02.065571+00:00",
+  "recent_window_ioc_count": 89,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -14,11 +14,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-15",
-      "latest": "2026-07-18"
+      "latest": "2026-07-20"
     },
     "ioc_type_breakdown": {
-      "url": 268,
-      "domain": 216,
+      "url": 269,
+      "domain": 215,
       "sha256_hash": 10,
       "ip:port": 6
     },
@@ -28,7 +28,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-15": 68,
+      "2026-04-15": 65,
       "2026-04-18": 4,
       "2026-04-21": 1,
       "2026-04-22": 1,
@@ -71,7 +71,8 @@
       "2026-07-15": 24,
       "2026-07-16": 13,
       "2026-07-17": 7,
-      "2026-07-18": 4
+      "2026-07-18": 4,
+      "2026-07-20": 3
     },
     "top_ports": [
       {
@@ -84,6 +85,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "meduurst.space",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-20 14:14:46 UTC"
+      },
+      {
+        "ioc": "https://meduurst.space/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-20 14:14:45 UTC"
+      },
+      {
+        "ioc": "https://meduurst.space/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-20 14:14:45 UTC"
+      },
       {
         "ioc": "https://oosterhout.click/api/v1/session",
         "type": "url",
@@ -155,24 +174,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-16 15:10:47 UTC"
-      },
-      {
-        "ioc": "https://ritchie.click/pvgdgpjx.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 15:10:47 UTC"
-      },
-      {
-        "ioc": "tommy-or.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-16 15:10:46 UTC"
-      },
-      {
-        "ioc": "https://ritchie.click/ha1es146.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 13:44:08 UTC"
       }
     ]
   }
