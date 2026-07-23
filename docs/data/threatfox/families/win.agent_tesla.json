@@ -1,8 +1,8 @@
 {
   "malware_id": "win.agent_tesla",
   "family": "Agent Tesla",
-  "generated": "2026-07-21T15:24:46.053258+00:00",
-  "recent_window_ioc_count": 55,
+  "generated": "2026-07-23T15:36:39.303568+00:00",
+  "recent_window_ioc_count": 27,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
   "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
   "alt_names": [
@@ -14,20 +14,20 @@
     "SWEED"
   ],
   "stats": {
-    "total_iocs": 197,
+    "total_iocs": 208,
     "date_range": {
       "earliest": "2025-01-18",
-      "latest": "2026-07-20"
+      "latest": "2026-07-23"
     },
     "ioc_type_breakdown": {
-      "md5_hash": 55,
-      "sha1_hash": 55,
-      "sha256_hash": 55,
-      "domain": 24,
+      "md5_hash": 59,
+      "sha1_hash": 59,
+      "sha256_hash": 59,
+      "domain": 23,
       "url": 8
     },
     "confidence_distribution": {
-      "high": 189,
+      "high": 200,
       "medium": 8,
       "low": 0
     },
@@ -35,8 +35,6 @@
       "2025-01-18": 1,
       "2025-05-10": 1,
       "2026-01-18": 1,
-      "2026-01-21": 1,
-      "2026-01-22": 3,
       "2026-01-24": 3,
       "2026-01-27": 1,
       "2026-02-05": 1,
@@ -65,99 +63,100 @@
       "2026-07-13": 7,
       "2026-07-14": 45,
       "2026-07-15": 1,
-      "2026-07-20": 12
+      "2026-07-20": 12,
+      "2026-07-23": 15
     },
     "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "10cc531b5f4765f53cd3a58a2c23ffcf",
+        "ioc": "9d59e6476c4022f7dbb738d7207cad30",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:23:09 UTC"
+        "first_seen": "2026-07-23 01:48:07 UTC"
       },
       {
-        "ioc": "1c89e143465d44f7d3fa6561436624b6990027fb",
+        "ioc": "38a59765e43a7ea47ee773f001742c75670a8579",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:23:09 UTC"
+        "first_seen": "2026-07-23 01:48:06 UTC"
       },
       {
-        "ioc": "58328b7f4fecb0407da1947937b41162e23a61559d6f49526ec1683febad6ddc",
+        "ioc": "6dc941968b3bc93e3f5709972f0ce23395eb65465fa23ddd68b8cb6ca52ddd0c",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:23:09 UTC"
+        "first_seen": "2026-07-23 01:48:06 UTC"
       },
       {
-        "ioc": "d8d19575c1de6c091ebf0624596478fa",
+        "ioc": "b7721cf13508b02083feb0b010534423",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:23:08 UTC"
+        "first_seen": "2026-07-23 01:47:44 UTC"
       },
       {
-        "ioc": "22d0daad3abfb17c90862ac3fd80746738c9074e",
+        "ioc": "33ca049d12dcb1f23ba998abb11d08110381ba8a",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:23:08 UTC"
+        "first_seen": "2026-07-23 01:47:44 UTC"
       },
       {
-        "ioc": "2112d749000ec32a1eeb719eb1e0daee69cda7946eab3049f5d2fd83bac566c2",
+        "ioc": "9992545ef435706e582bd516988195df8bae9985ff70d30ea2c20dc5206dfe3b",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:23:08 UTC"
+        "first_seen": "2026-07-23 01:47:43 UTC"
       },
       {
-        "ioc": "791d27fd45d5ac5f25235b46547129ad",
+        "ioc": "2d569c5eaec74172ee46fb7af42962fc",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:22:41 UTC"
+        "first_seen": "2026-07-23 01:47:34 UTC"
       },
       {
-        "ioc": "a302b2902da6ebf1c6f9b79158320bb4111d75a0",
+        "ioc": "60e26cfee4817ebcdfee1448396ef6e6a9b05469",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:22:41 UTC"
+        "first_seen": "2026-07-23 01:47:34 UTC"
       },
       {
-        "ioc": "940f0d74f64672c50d4b6ed704aefa743d81b7cdfbeb6666a00f690f80b7b001",
+        "ioc": "b134896ab4f8a75cb79f559a1f3aa65b5cae52a3c39fb95ac8371d600c2c92a9",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:22:40 UTC"
+        "first_seen": "2026-07-23 01:47:33 UTC"
       },
       {
-        "ioc": "a757a8b09d99acc2835fd0d26541e46c",
+        "ioc": "a6482ea44033007a9da963cd3ff5ce49",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:22:39 UTC"
+        "first_seen": "2026-07-23 01:47:25 UTC"
       },
       {
-        "ioc": "ea9efc587962f4a1286aa26d274354039472d436",
+        "ioc": "2430d4d428b8f4a4f63b3f62d917ae49afeed37a",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:22:39 UTC"
+        "first_seen": "2026-07-23 01:47:25 UTC"
       },
       {
-        "ioc": "e6290924b6e7a434776239ae19e79b02e88c3a6bef1b0e1d61041cc4176dec6e",
+        "ioc": "f12c120af203e20c35f019ff8eefc52a3cc5fae18b4a55e9a8c835d6ee88f098",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-07-20 11:22:39 UTC"
+        "first_seen": "2026-07-23 01:47:25 UTC"
       },
       {
-        "ioc": "ftp.fundacionpiaz.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-15 07:21:12 UTC"
-      },
-      {
-        "ioc": "132fd7e557ae7b95f7dc8c2b5bbefe06",
+        "ioc": "7cec47740ae2e3a5914bb46bc2d0ffc6",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-14 17:06:45 UTC"
+        "first_seen": "2026-07-23 01:47:24 UTC"
       },
       {
-        "ioc": "3c679b739501a308372dffb6485de4ae9c14293b",
+        "ioc": "154484d6e6775ebef39dfdf7d3ca6c2f2a99d4fa",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-14 17:06:45 UTC"
+        "first_seen": "2026-07-23 01:47:24 UTC"
+      },
+      {
+        "ioc": "b811dce1aae1c0e0da249d5eb19dfd5b2640214627c9603b97f6f79c25a22e97",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-23 01:47:23 UTC"
       }
     ]
   }

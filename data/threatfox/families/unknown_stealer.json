@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-07-22T15:23:22.470656+00:00",
-  "recent_window_ioc_count": 25,
+  "generated": "2026-07-23T15:36:23.926440+00:00",
+  "recent_window_ioc_count": 28,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-07-09",
-      "latest": "2026-07-22"
+      "latest": "2026-07-23"
     },
     "ioc_type_breakdown": {
-      "domain": 481,
+      "domain": 479,
       "sha256_hash": 14,
-      "url": 3,
-      "ip:port": 2
+      "ip:port": 4,
+      "url": 3
     },
     "confidence_distribution": {
       "high": 499,
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-09": 469,
+      "2026-07-09": 466,
       "2026-07-11": 1,
       "2026-07-13": 4,
       "2026-07-14": 1,
@@ -33,9 +33,18 @@
       "2026-07-18": 3,
       "2026-07-19": 1,
       "2026-07-21": 1,
-      "2026-07-22": 15
+      "2026-07-22": 15,
+      "2026-07-23": 3
     },
     "top_ports": [
+      {
+        "port": "5051",
+        "count": 1
+      },
+      {
+        "port": "17892",
+        "count": 1
+      },
       {
         "port": "5000",
         "count": 1
@@ -46,6 +55,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "37.77.150.162:5051",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-23 08:10:53 UTC"
+      },
+      {
+        "ioc": "app-api.metricsengine.cc",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-23 05:12:57 UTC"
+      },
+      {
+        "ioc": "31.207.7.49:17892",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 05:12:50 UTC"
+      },
       {
         "ioc": "b6849ce4f0c9c5a26b15b994a88e951c84cdb4a8721388878ed0c9bd1775cd67",
         "type": "sha256_hash",
@@ -117,24 +144,6 @@
         "type": "sha256_hash",
         "confidence": 100,
         "first_seen": "2026-07-22 13:05:44 UTC"
-      },
-      {
-        "ioc": "7b4b991e822eaebebd75246685ae83fc4594f32c4b3f8aaa73db575e243d3393",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-07-22 13:05:44 UTC"
-      },
-      {
-        "ioc": "http://93.152.223.30:5000/api/stealer/report",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-22 08:48:01 UTC"
-      },
-      {
-        "ioc": "93.152.223.30:5000",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-22 08:48:00 UTC"
       }
     ]
   }

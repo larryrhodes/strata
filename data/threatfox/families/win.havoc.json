@@ -1,8 +1,8 @@
 {
   "malware_id": "win.havoc",
   "family": "Havoc",
-  "generated": "2026-07-22T15:23:49.061036+00:00",
-  "recent_window_ioc_count": 22,
+  "generated": "2026-07-23T15:36:10.750865+00:00",
+  "recent_window_ioc_count": 28,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.havoc",
   "description": "First released in October 2022, the Havoc C2 Framework is a flexible post-exploitation framework written in Golang, C++, and Qt, with agents called 'Demons' written in C and ASM, created by @C5pider. Designed to support red team engagements and adversary emulation, it offers a robust set of capabilities tailored for offensive security operations. The framework, which is under active development, utilizes HTTP(s) and SMB as communication protocols for its implants. Havoc can generate implants, known as Demons, in several formats including EXE, DLL, and Shellcode. A notable feature of Havoc is its ability to bypass EDR by employing advanced evasion techniques such as sleep obfuscation, return address stack spoofing, and indirect syscalls. This capability enhances its effectiveness in evading detection and circumventing security measures.",
   "alt_names": [
@@ -12,8 +12,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-12-10",
-      "latest": "2026-07-22"
+      "earliest": "2025-12-17",
+      "latest": "2026-07-23"
     },
     "ioc_type_breakdown": {
       "ip:port": 448,
@@ -29,13 +29,9 @@
       "low": 0
     },
     "activity_timeline": {
-      "2025-12-10": 1,
-      "2025-12-11": 2,
-      "2025-12-13": 1,
-      "2025-12-17": 4,
+      "2025-12-17": 2,
       "2025-12-18": 2,
       "2025-12-19": 2,
-      "2025-12-21": 1,
       "2025-12-23": 2,
       "2025-12-24": 3,
       "2025-12-25": 1,
@@ -145,7 +141,6 @@
       "2026-05-17": 1,
       "2026-05-18": 1,
       "2026-05-21": 1,
-      "2026-05-22": 1,
       "2026-05-23": 1,
       "2026-05-27": 2,
       "2026-05-28": 2,
@@ -185,20 +180,21 @@
       "2026-07-17": 17,
       "2026-07-19": 1,
       "2026-07-21": 1,
-      "2026-07-22": 1
+      "2026-07-22": 2,
+      "2026-07-23": 7
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 215
+        "count": 212
       },
       {
         "port": "8443",
-        "count": 53
+        "count": 51
       },
       {
         "port": "80",
-        "count": 43
+        "count": 45
       },
       {
         "port": "8080",
@@ -206,7 +202,7 @@
       },
       {
         "port": "22",
-        "count": 12
+        "count": 15
       },
       {
         "port": "40056",
@@ -230,6 +226,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "20.57.16.167:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 12:05:06 UTC"
+      },
+      {
+        "ioc": "172.239.45.42:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-23 09:43:57 UTC"
+      },
+      {
+        "ioc": "200.234.219.26:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 08:05:05 UTC"
+      },
+      {
+        "ioc": "200.234.219.26:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 07:05:09 UTC"
+      },
+      {
+        "ioc": "200.234.219.26:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 07:05:09 UTC"
+      },
+      {
+        "ioc": "159.203.32.40:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 02:05:05 UTC"
+      },
+      {
+        "ioc": "159.203.32.40:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-23 01:05:07 UTC"
+      },
+      {
+        "ioc": "20.69.167.4:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-22 17:05:54 UTC"
+      },
       {
         "ioc": "8.133.197.201:3001",
         "type": "ip:port",
@@ -271,54 +315,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-07-17 15:05:05 UTC"
-      },
-      {
-        "ioc": "146.190.80.105:22",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 15:05:05 UTC"
-      },
-      {
-        "ioc": "146.190.80.105:40056",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 14:05:08 UTC"
-      },
-      {
-        "ioc": "47.83.134.97:22",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 14:05:08 UTC"
-      },
-      {
-        "ioc": "20.188.119.195:22",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 14:05:07 UTC"
-      },
-      {
-        "ioc": "20.39.60.137:22",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 14:05:06 UTC"
-      },
-      {
-        "ioc": "20.39.60.137:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 13:05:06 UTC"
-      },
-      {
-        "ioc": "161.35.176.231:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 13:05:05 UTC"
-      },
-      {
-        "ioc": "161.35.176.231:22",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 13:05:05 UTC"
       }
     ]
   }

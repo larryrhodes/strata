@@ -1,8 +1,8 @@
 {
   "malware_id": "win.dcrat",
   "family": "DCRat",
-  "generated": "2026-07-22T15:24:52.451694+00:00",
-  "recent_window_ioc_count": 18,
+  "generated": "2026-07-23T15:37:52.616676+00:00",
+  "recent_window_ioc_count": 19,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
   "description": "DCRat is a typical RAT that has been around since at least June 2019.",
   "alt_names": [
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-02-05",
-      "latest": "2026-07-22"
+      "earliest": "2026-02-06",
+      "latest": "2026-07-23"
     },
     "ioc_type_breakdown": {
-      "ip:port": 324,
+      "ip:port": 322,
       "domain": 93,
-      "url": 75,
-      "sha256_hash": 5,
-      "md5_hash": 2,
-      "sha1_hash": 1
+      "url": 74,
+      "sha256_hash": 6,
+      "md5_hash": 3,
+      "sha1_hash": 2
     },
     "confidence_distribution": {
       "high": 401,
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-02-05": 1,
-      "2026-02-06": 4,
+      "2026-02-06": 1,
       "2026-02-07": 2,
       "2026-02-08": 2,
       "2026-02-09": 3,
@@ -166,19 +165,20 @@
       "2026-07-18": 4,
       "2026-07-19": 3,
       "2026-07-21": 2,
-      "2026-07-22": 3
+      "2026-07-22": 3,
+      "2026-07-23": 4
     },
     "top_ports": [
       {
         "port": "8848",
-        "count": 58
-      },
-      {
-        "port": "7777",
-        "count": 21
+        "count": 57
       },
       {
         "port": "12159",
+        "count": 21
+      },
+      {
+        "port": "7777",
         "count": 20
       },
       {
@@ -198,19 +198,43 @@
         "count": 12
       },
       {
-        "port": "8090",
-        "count": 8
-      },
-      {
         "port": "81",
         "count": 8
       },
       {
         "port": "2003",
         "count": 7
+      },
+      {
+        "port": "8090",
+        "count": 7
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "137.220.158.10:12159",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-23 09:43:28 UTC"
+      },
+      {
+        "ioc": "ad5a8f0a70678395eee394dbe48b2508784e06f37e7a980f4bd61599d180360d",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-23 01:48:14 UTC"
+      },
+      {
+        "ioc": "7c68c908dddecfa9ad6b4096f81127d46f1ca0d3",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-23 01:48:14 UTC"
+      },
+      {
+        "ioc": "22ce9b4f200c32eeb293116301e97307",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-23 01:48:14 UTC"
+      },
       {
         "ioc": "137.220.158.10:8848",
         "type": "ip:port",
@@ -276,30 +300,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-07-18 17:33:10 UTC"
-      },
-      {
-        "ioc": "https://store.julias.makeup/img_094957.png",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-07-18 17:33:03 UTC"
-      },
-      {
-        "ioc": "46.246.82.7:2003",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-17 19:45:49 UTC"
-      },
-      {
-        "ioc": "221.212.219.56:8848",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-17 19:45:23 UTC"
-      },
-      {
-        "ioc": "5.200.192.159:8848",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-16 19:46:28 UTC"
       }
     ]
   }
