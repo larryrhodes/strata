@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-07-23T15:33:42.652051+00:00",
-  "recent_window_ioc_count": 116,
+  "generated": "2026-07-24T15:14:38.804876+00:00",
+  "recent_window_ioc_count": 121,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -17,8 +17,8 @@
       "latest": "2026-07-23"
     },
     "ioc_type_breakdown": {
-      "url": 260,
-      "domain": 224,
+      "url": 259,
+      "domain": 225,
       "sha256_hash": 10,
       "ip:port": 6
     },
@@ -44,7 +44,6 @@
       "2026-06-09": 2,
       "2026-06-15": 1,
       "2026-06-20": 2,
-      "2026-06-23": 12,
       "2026-06-24": 9,
       "2026-06-25": 18,
       "2026-06-26": 6,
@@ -69,7 +68,7 @@
       "2026-07-20": 6,
       "2026-07-21": 76,
       "2026-07-22": 9,
-      "2026-07-23": 11
+      "2026-07-23": 23
     },
     "top_ports": [
       {
@@ -82,6 +81,78 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://bouoher.lol/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 19:11:49 UTC"
+      },
+      {
+        "ioc": "https://bouoher.lol/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 19:11:48 UTC"
+      },
+      {
+        "ioc": "bouoher.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-23 19:11:48 UTC"
+      },
+      {
+        "ioc": "aeshire.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:57 UTC"
+      },
+      {
+        "ioc": "barringer.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:56 UTC"
+      },
+      {
+        "ioc": "https://aeshire.click/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:56 UTC"
+      },
+      {
+        "ioc": "https://aeshire.click/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:56 UTC"
+      },
+      {
+        "ioc": "https://barringer.click/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:55 UTC"
+      },
+      {
+        "ioc": "https://tommy-bb.lol/f",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:54 UTC"
+      },
+      {
+        "ioc": "https://barringer.click/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:54 UTC"
+      },
+      {
+        "ioc": "https://barringer.click/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:54 UTC"
+      },
+      {
+        "ioc": "tommy-bb.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-23 17:10:53 UTC"
+      },
       {
         "ioc": "https://goncllves.click/api/v1/status",
         "type": "url",
@@ -99,78 +170,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-07-23 05:12:54 UTC"
-      },
-      {
-        "ioc": "https://riccardson.click/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:53 UTC"
-      },
-      {
-        "ioc": "https://riccardson.click/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:52 UTC"
-      },
-      {
-        "ioc": "https://rodrizuez.garden/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:41 UTC"
-      },
-      {
-        "ioc": "https://rodrizuez.garden/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:40 UTC"
-      },
-      {
-        "ioc": "rodrizuez.garden",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:39 UTC"
-      },
-      {
-        "ioc": "deornhem.garden",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:03 UTC"
-      },
-      {
-        "ioc": "https://deornhem.garden/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:02 UTC"
-      },
-      {
-        "ioc": "https://deornhem.garden/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-23 05:12:01 UTC"
-      },
-      {
-        "ioc": "tommy-nn.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-22 14:17:29 UTC"
-      },
-      {
-        "ioc": "https://tommy-nn.lol/f",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-22 14:17:29 UTC"
-      },
-      {
-        "ioc": "https://monterro.click/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-22 14:17:29 UTC"
-      },
-      {
-        "ioc": "https://goncllves.click/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-22 13:35:37 UTC"
       }
     ]
   }
