@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-07-23T15:34:09.614591+00:00",
-  "recent_window_ioc_count": 75,
+  "generated": "2026-07-25T14:49:21.602907+00:00",
+  "recent_window_ioc_count": 79,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -13,13 +13,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-28",
-      "latest": "2026-07-23"
+      "latest": "2026-07-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 310,
+      "ip:port": 311,
       "domain": 92,
       "sha256_hash": 51,
-      "url": 47
+      "url": 46
     },
     "confidence_distribution": {
       "high": 499,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-28": 9,
+      "2026-05-28": 8,
       "2026-05-29": 1,
       "2026-05-30": 5,
       "2026-05-31": 11,
@@ -75,7 +75,8 @@
       "2026-07-19": 34,
       "2026-07-20": 5,
       "2026-07-22": 7,
-      "2026-07-23": 29
+      "2026-07-23": 29,
+      "2026-07-25": 1
     },
     "top_ports": [
       {
@@ -111,15 +112,21 @@
         "count": 6
       },
       {
-        "port": "2222",
+        "port": "8080",
         "count": 5
       },
       {
-        "port": "2049",
+        "port": "2222",
         "count": 5
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "194.48.251.116:8080",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-25 11:02:36 UTC"
+      },
       {
         "ioc": "http://8.213.214.55/nerv.mips",
         "type": "url",
@@ -145,25 +152,25 @@
         "first_seen": "2026-07-23 14:13:46 UTC"
       },
       {
-        "ioc": "b5cf68c7cb5bb2d21d60bf6654926f61566d95bfd7c9f9e182d032f1da5b4605",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:06 UTC"
-      },
-      {
         "ioc": "06ffe84018080c60e67093332982be429619328bee027e104bc38a276e852c0b",
         "type": "sha256_hash",
         "confidence": 80,
         "first_seen": "2026-07-23 14:13:06 UTC"
       },
       {
-        "ioc": "c18aebf9c041c7f430259e590e4bfd921ad5d4fd641bad51132f7b64823b36f9",
+        "ioc": "b5cf68c7cb5bb2d21d60bf6654926f61566d95bfd7c9f9e182d032f1da5b4605",
+        "type": "sha256_hash",
+        "confidence": 80,
+        "first_seen": "2026-07-23 14:13:06 UTC"
+      },
+      {
+        "ioc": "9a9dda2b8029a3f249ea64873416b3be0dab8a5de4a4bb996b50ddc20c8623f6",
         "type": "sha256_hash",
         "confidence": 80,
         "first_seen": "2026-07-23 14:13:05 UTC"
       },
       {
-        "ioc": "9a9dda2b8029a3f249ea64873416b3be0dab8a5de4a4bb996b50ddc20c8623f6",
+        "ioc": "c18aebf9c041c7f430259e590e4bfd921ad5d4fd641bad51132f7b64823b36f9",
         "type": "sha256_hash",
         "confidence": 80,
         "first_seen": "2026-07-23 14:13:05 UTC"
@@ -200,12 +207,6 @@
       },
       {
         "ioc": "5a77a8978f2c50071abf35abe267c317fdf364b14398bca2f85b3c8bfc52064e",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:01 UTC"
-      },
-      {
-        "ioc": "15761f2f036c388f2afcee8cdf507f59c9de0308f696c40cc68bb043027c0bd6",
         "type": "sha256_hash",
         "confidence": 80,
         "first_seen": "2026-07-23 14:13:01 UTC"

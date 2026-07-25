@@ -1,8 +1,8 @@
 {
   "malware_id": "win.adaptix_c2",
   "family": "AdaptixC2",
-  "generated": "2026-07-24T15:16:16.631521+00:00",
-  "recent_window_ioc_count": 60,
+  "generated": "2026-07-25T14:49:34.954654+00:00",
+  "recent_window_ioc_count": 76,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.adaptix_c2",
   "description": "AdaptixC2 is a open-source post-exploitation and adversarial emulation framework that lets penetration testers control compromised hosts and execute system actions. While being created for red-teaming it is also used by threat actors for attacks.",
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-01",
-      "latest": "2026-07-24"
+      "latest": "2026-07-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 491,
-      "sha1_hash": 3,
-      "md5_hash": 3,
-      "sha256_hash": 3
+      "ip:port": 487,
+      "md5_hash": 5,
+      "sha256_hash": 4,
+      "sha1_hash": 4
     },
     "confidence_distribution": {
       "high": 492,
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-01": 53,
+      "2026-05-01": 38,
       "2026-05-02": 2,
       "2026-05-03": 1,
       "2026-05-08": 9,
@@ -67,7 +67,7 @@
       "2026-06-20": 5,
       "2026-06-21": 2,
       "2026-06-23": 1,
-      "2026-06-24": 6,
+      "2026-06-24": 3,
       "2026-06-25": 10,
       "2026-06-26": 2,
       "2026-06-27": 8,
@@ -97,12 +97,13 @@
       "2026-07-21": 9,
       "2026-07-22": 15,
       "2026-07-23": 9,
-      "2026-07-24": 1
+      "2026-07-24": 4,
+      "2026-07-25": 15
     },
     "top_ports": [
       {
         "port": "4321",
-        "count": 118
+        "count": 121
       },
       {
         "port": "80",
@@ -110,11 +111,11 @@
       },
       {
         "port": "443",
-        "count": 61
+        "count": 59
       },
       {
         "port": "8080",
-        "count": 53
+        "count": 52
       },
       {
         "port": "6579",
@@ -122,11 +123,11 @@
       },
       {
         "port": "8443",
-        "count": 11
+        "count": 10
       },
       {
         "port": "8989",
-        "count": 7
+        "count": 6
       },
       {
         "port": "8000",
@@ -143,94 +144,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "176.126.245.210:80",
+        "ioc": "80.78.27.42:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-07-24 01:05:05 UTC"
+        "first_seen": "2026-07-25 14:05:09 UTC"
       },
       {
-        "ioc": "176.126.245.210:443",
+        "ioc": "114.132.190.121:8083",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-07-23 23:05:04 UTC"
+        "first_seen": "2026-07-25 11:02:23 UTC"
       },
       {
-        "ioc": "176.126.245.210:8080",
-        "type": "ip:port",
+        "ioc": "3bff059c64e6c65f02913352c7d1c28e",
+        "type": "md5_hash",
         "confidence": 100,
-        "first_seen": "2026-07-23 22:05:07 UTC"
+        "first_seen": "2026-07-25 11:02:23 UTC"
       },
       {
-        "ioc": "3.93.175.98:8080",
+        "ioc": "74.249.84.175:4321",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 15:05:05 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:46:00 UTC"
       },
       {
-        "ioc": "3.93.175.98:80",
+        "ioc": "51.107.74.185:4321",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 14:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:45:51 UTC"
       },
       {
-        "ioc": "3.93.175.98:443",
+        "ioc": "27.124.20.6:4321",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 14:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:45:27 UTC"
       },
       {
-        "ioc": "45.136.13.247:21",
+        "ioc": "27.124.20.5:4321",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 13:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:45:27 UTC"
       },
       {
-        "ioc": "45.77.89.29:8888",
+        "ioc": "207.57.123.129:43211",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 12:05:05 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:44:42 UTC"
       },
       {
-        "ioc": "45.136.13.247:993",
+        "ioc": "2.27.29.171:42216",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 12:05:04 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:44:36 UTC"
       },
       {
-        "ioc": "45.136.13.247:1883",
+        "ioc": "2.27.28.207:42153",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-23 00:05:05 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:44:36 UTC"
       },
       {
-        "ioc": "198.13.51.245:443",
+        "ioc": "144.172.118.84:4321",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-22 22:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:43:30 UTC"
       },
       {
-        "ioc": "198.13.51.245:8080",
+        "ioc": "119.28.212.86:44321",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-22 21:05:05 UTC"
+        "confidence": 75,
+        "first_seen": "2026-07-25 09:43:20 UTC"
       },
       {
-        "ioc": "198.13.51.245:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-22 21:05:04 UTC"
+        "ioc": "230aa6979b84ef379373d3638c485fca",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-25 01:23:21 UTC"
       },
       {
-        "ioc": "45.136.13.247:17777",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-22 18:05:06 UTC"
+        "ioc": "551c8108e3691d035b2417c4f1ec3083c5213514c1c65348c5934dfcad53225b",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-25 01:23:20 UTC"
       },
       {
-        "ioc": "2.26.229.254:7000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-22 14:17:30 UTC"
+        "ioc": "608ed0cadd68a22468248632b771c73a845fc812",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-25 01:23:20 UTC"
       }
     ]
   }
