@@ -1,0 +1,121 @@
+{
+  "malware_id": "win.inc",
+  "family": "INC",
+  "generated": "2026-07-26T14:51:54.990029+00:00",
+  "recent_window_ioc_count": 77,
+  "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.inc",
+  "description": "According to Ireneusz Tarnowski, INC Ransom is a Rust-based ransomware family that employs a hybrid cryptographic scheme using X25519 (ECDH) and AES-CTR, generating a unique key per file with AES-NI hardware acceleration support and a software fallback. The malware uses a multithreaded producer-consumer architecture with asynchronous I/O Completion Ports for parallel file encryption and leverages the Windows Restart Manager to terminate processes holding locks on in-use files such as databases. It excludes system directories (Windows, Program Files, ProgramData, AppData) and file extensions (.exe, .dll, .log) from encryption to maintain system operability, and can stop services via the Windows Service Control Manager to disable security software and business applications.",
+  "alt_names": [],
+  "associated_groups": [],
+  "stats": {
+    "total_iocs": 77,
+    "date_range": {
+      "earliest": "2026-07-26",
+      "latest": "2026-07-26"
+    },
+    "ioc_type_breakdown": {
+      "md5_hash": 77
+    },
+    "confidence_distribution": {
+      "high": 77,
+      "medium": 0,
+      "low": 0
+    },
+    "activity_timeline": {
+      "2026-07-26": 77
+    },
+    "top_ports": [],
+    "sample_iocs": [
+      {
+        "ioc": "dce9ad6317ce147f1f3f74bc93d9252a",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:17 UTC"
+      },
+      {
+        "ioc": "85befc3111bc28dc9715570a068412ba",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:16 UTC"
+      },
+      {
+        "ioc": "441455c95dcb94ae91a7a160fdbe827c",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:16 UTC"
+      },
+      {
+        "ioc": "ec37a6c4866b7324fce2f11b0e89c4c2",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:16 UTC"
+      },
+      {
+        "ioc": "d683b433754eca7b1e5c25279f711c99",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:15 UTC"
+      },
+      {
+        "ioc": "066c1f3b224c94baa2a2ae41a88386b9",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:15 UTC"
+      },
+      {
+        "ioc": "acfa0c2374d79ee81b52d83625bc0c51",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:15 UTC"
+      },
+      {
+        "ioc": "78d359a87ae75ece08976e8b14d877fe",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:14 UTC"
+      },
+      {
+        "ioc": "fcc3cbe8bfe18f08eadda3acd4258369",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:14 UTC"
+      },
+      {
+        "ioc": "be3d939747ad05764b2d9dd461697093",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:14 UTC"
+      },
+      {
+        "ioc": "a9bc032353bd246ba50af1b8d4849bfd",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:13 UTC"
+      },
+      {
+        "ioc": "4e747a8d16cd1b8f57072dce5f3ee6dd",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:13 UTC"
+      },
+      {
+        "ioc": "97e2a41929919df0c43a554b40999d12",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:12 UTC"
+      },
+      {
+        "ioc": "8e7d534d816f1731fd66b4d458e18bf0",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:11 UTC"
+      },
+      {
+        "ioc": "37688f0d2f9a037a1ffd6c306bf87510",
+        "type": "md5_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:07:10 UTC"
+      }
+    ]
+  }
+}

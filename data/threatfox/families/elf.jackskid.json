@@ -1,0 +1,142 @@
+{
+  "malware_id": "elf.jackskid",
+  "family": "Jackskid",
+  "generated": "2026-07-26T14:53:05.419236+00:00",
+  "recent_window_ioc_count": 52,
+  "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.jackskid",
+  "description": "Jackskid is a Mirai-derived Linux/IoT DDoS botnet, first publicly documented by Foresiet in November 2025 and tracked by CNCERT/SecrSS as RCtea. It encrypts its configuration with a custom RC4 cipher post-processed by an LCG (key DEADBEEF CAFEBABE E0A4CBD6 BADC0DE5) and negotiates per-session ChaCha20 keys via XXTEA (passphrase FrshPckBnnnSplit). The same RC4+LCG modification appears in Aisuru, indicating a shared code lineage, and the family sits within the CatDDoS-derivative ecosystem. Later builds add ENS-based C2 resolution, an anti-competition module (0clKiller) backed by a NETLINK process monitor, and a pivot toward Android/ADB-exposed TV boxes. Jackskid and several related botnets were disrupted by law enforcement in March 2026.",
+  "alt_names": [
+    "RCtea"
+  ],
+  "associated_groups": [],
+  "stats": {
+    "total_iocs": 52,
+    "date_range": {
+      "earliest": "2026-07-26",
+      "latest": "2026-07-26"
+    },
+    "ioc_type_breakdown": {
+      "sha256_hash": 44,
+      "ip:port": 7,
+      "domain": 1
+    },
+    "confidence_distribution": {
+      "high": 52,
+      "medium": 0,
+      "low": 0
+    },
+    "activity_timeline": {
+      "2026-07-26": 52
+    },
+    "top_ports": [
+      {
+        "port": "17384",
+        "count": 4
+      },
+      {
+        "port": "20198",
+        "count": 1
+      },
+      {
+        "port": "53890",
+        "count": 1
+      },
+      {
+        "port": "57290",
+        "count": 1
+      }
+    ],
+    "sample_iocs": [
+      {
+        "ioc": "ipmoyu.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-26 12:21:39 UTC"
+      },
+      {
+        "ioc": "194.58.38.79:17384",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 12:16:59 UTC"
+      },
+      {
+        "ioc": "194.58.38.49:17384",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 12:16:59 UTC"
+      },
+      {
+        "ioc": "194.87.198.208:17384",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 12:16:59 UTC"
+      },
+      {
+        "ioc": "194.87.198.104:17384",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 12:16:59 UTC"
+      },
+      {
+        "ioc": "162.249.125.141:20198",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 11:40:13 UTC"
+      },
+      {
+        "ioc": "45.144.172.49:53890",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 11:35:32 UTC"
+      },
+      {
+        "ioc": "68.183.90.240:57290",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-26 11:34:42 UTC"
+      },
+      {
+        "ioc": "461a9036ea41cca79988c0504c72059af47b5e8ec1a9194d88da5395fe4e452f",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:04 UTC"
+      },
+      {
+        "ioc": "68a639621b556f8b3e9cdfb694867ce2895a856702fb440f01c1c67aa05ac60c",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:03 UTC"
+      },
+      {
+        "ioc": "1c5080b6fa705f69758a8add633e3314f1953308ff68750be9455340bc91536b",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:03 UTC"
+      },
+      {
+        "ioc": "4972c60f23b4bb0efeda90b69cf3b6a8ccc00ea489d7818064c6c49b816d54ad",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:02 UTC"
+      },
+      {
+        "ioc": "55c77daaa1ff91b4c58b66a46815a3a768de052121403a0793127f520f879dce",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:02 UTC"
+      },
+      {
+        "ioc": "9b52194d25869ef56f711942d12c067a14e5c15b5c2da1b1b52fe1c1e3deeb68",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:01 UTC"
+      },
+      {
+        "ioc": "3d798e43f9c486183d6a3890636e4980389da8c84af528b8eef0d5e946f83633",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-07-26 11:00:00 UTC"
+      }
+    ]
+  }
+}

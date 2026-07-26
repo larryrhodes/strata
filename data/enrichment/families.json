@@ -131,6 +131,17 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "elf.jackskid": {
+    "alt_names": [
+      "RCtea"
+    ],
+    "associated_groups": [],
+    "common_name": "Jackskid",
+    "description": "Jackskid is a Mirai-derived Linux/IoT DDoS botnet, first publicly documented by Foresiet in November 2025 and tracked by CNCERT/SecrSS as RCtea. It encrypts its configuration with a custom RC4 cipher post-processed by an LCG (key DEADBEEF CAFEBABE E0A4CBD6 BADC0DE5) and negotiates per-session ChaCha20 keys via XXTEA (passphrase FrshPckBnnnSplit). The same RC4+LCG modification appears in Aisuru, indicating a shared code lineage, and the family sits within the CatDDoS-derivative ecosystem. Later builds add ENS-based C2 resolution, an anti-competition module (0clKiller) backed by a NETLINK process monitor, and a pivot toward Android/ADB-exposed TV boxes. Jackskid and several related botnets were disrupted by law enforcement in March 2026.",
+    "enriched_at": "2026-07-26T14:48:47.253161+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "elf.kinsing": {
     "alt_names": [
       "h2miner"
@@ -386,6 +397,29 @@
     "common_name": "AMOS",
     "description": null,
     "enriched_at": "2026-07-14T15:09:01.007695+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "osx.macdownloader": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "MacDownloader",
+    "description": null,
+    "enriched_at": "2026-07-26T14:48:53.306687+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "osx.poolrat": {
+    "alt_names": [
+      "SIMPLESEA",
+      "SIMPLETEA"
+    ],
+    "associated_groups": [
+      "Lazarus Group"
+    ],
+    "common_name": "POOLRAT",
+    "description": null,
+    "enriched_at": "2026-07-26T14:48:50.053064+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -942,6 +976,15 @@
     "common_name": "Hupigon",
     "description": null,
     "enriched_at": "2026-07-08T17:01:40.513874+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.inc": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "INC",
+    "description": "According to Ireneusz Tarnowski, INC Ransom is a Rust-based ransomware family that employs a hybrid cryptographic scheme using X25519 (ECDH) and AES-CTR, generating a unique key per file with AES-NI hardware acceleration support and a software fallback. The malware uses a multithreaded producer-consumer architecture with asynchronous I/O Completion Ports for parallel file encryption and leverages the Windows Restart Manager to terminate processes holding locks on in-use files such as databases. It excludes system directories (Windows, Program Files, ProgramData, AppData) and file extensions (.exe, .dll, .log) from encryption to maintain system operability, and can stop services via the Windows Service Control Manager to disable security software and business applications.",
+    "enriched_at": "2026-07-26T14:48:45.153070+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1666,6 +1709,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.virut": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Virut",
+    "description": null,
+    "enriched_at": "2026-07-26T14:48:48.758764+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.vjw0rm": {
     "alt_names": [],
     "associated_groups": [],
@@ -1717,6 +1769,15 @@
     "common_name": "XenoRAT",
     "description": "XenoRAT is an open source remote access trojan written in C#. It can monitor user activity including keystrokes, and provide remote control over the compromised system.",
     "enriched_at": "2026-07-08T17:01:03.011104+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.xoriumstealer": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "XoriumStealer",
+    "description": null,
+    "enriched_at": "2026-07-26T14:48:52.150102+00:00",
     "source": "malpedia",
     "status": "ok"
   },
