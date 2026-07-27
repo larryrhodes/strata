@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-07-26T14:54:15.232189+00:00",
-  "recent_window_ioc_count": 45,
+  "generated": "2026-07-27T16:05:31.030158+00:00",
+  "recent_window_ioc_count": 43,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -13,13 +13,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-28",
-      "latest": "2026-07-25"
+      "latest": "2026-07-27"
     },
     "ioc_type_breakdown": {
       "ip:port": 311,
-      "domain": 92,
+      "domain": 93,
       "sha256_hash": 51,
-      "url": 46
+      "url": 45
     },
     "confidence_distribution": {
       "high": 499,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-28": 8,
+      "2026-05-28": 6,
       "2026-05-29": 1,
       "2026-05-30": 5,
       "2026-05-31": 11,
@@ -76,7 +76,9 @@
       "2026-07-20": 5,
       "2026-07-22": 7,
       "2026-07-23": 29,
-      "2026-07-25": 1
+      "2026-07-25": 1,
+      "2026-07-26": 1,
+      "2026-07-27": 1
     },
     "top_ports": [
       {
@@ -121,6 +123,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://47.239.127.71/lib/xxx",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-27 05:59:25 UTC"
+      },
+      {
+        "ioc": "reavercncv3.duckdns.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-26 17:01:42 UTC"
+      },
       {
         "ioc": "194.48.251.116:8080",
         "type": "ip:port",
@@ -198,18 +212,6 @@
         "type": "sha256_hash",
         "confidence": 80,
         "first_seen": "2026-07-23 14:13:02 UTC"
-      },
-      {
-        "ioc": "a452bec6a3870ff512d0bf8a2c01b9e052752a6a1c6b1c2b8dd4e61d97cb611e",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:02 UTC"
-      },
-      {
-        "ioc": "5a77a8978f2c50071abf35abe267c317fdf364b14398bca2f85b3c8bfc52064e",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:01 UTC"
       }
     ]
   }

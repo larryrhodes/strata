@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-07-26T14:49:24.342080+00:00",
-  "recent_window_ioc_count": 269,
+  "generated": "2026-07-27T16:01:18.270738+00:00",
+  "recent_window_ioc_count": 143,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,15 +10,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-13",
-      "latest": "2026-07-26"
+      "earliest": "2026-04-16",
+      "latest": "2026-07-27"
     },
     "ioc_type_breakdown": {
-      "url": 197,
-      "domain": 175,
-      "md5_hash": 34,
-      "sha1_hash": 34,
-      "sha256_hash": 34,
+      "url": 188,
+      "domain": 181,
+      "md5_hash": 35,
+      "sha1_hash": 35,
+      "sha256_hash": 35,
       "ip:port": 26
     },
     "confidence_distribution": {
@@ -27,31 +27,30 @@
       "low": 1
     },
     "activity_timeline": {
-      "2026-04-13": 1,
-      "2026-04-14": 7,
-      "2026-04-15": 3,
-      "2026-04-16": 4,
+      "2026-04-16": 3,
       "2026-04-17": 2,
       "2026-04-22": 2,
       "2026-04-24": 2,
       "2026-04-26": 2,
       "2026-05-01": 2,
-      "2026-05-11": 2,
+      "2026-05-11": 6,
+      "2026-05-12": 1,
       "2026-05-15": 2,
+      "2026-05-17": 1,
       "2026-05-23": 3,
       "2026-05-29": 2,
       "2026-06-06": 2,
+      "2026-06-09": 1,
       "2026-06-13": 4,
       "2026-06-17": 1,
       "2026-06-21": 5,
+      "2026-06-23": 2,
       "2026-06-24": 3,
       "2026-06-26": 2,
       "2026-06-28": 2,
       "2026-06-30": 1,
       "2026-07-01": 1,
       "2026-07-10": 4,
-      "2026-07-12": 3,
-      "2026-07-13": 1,
       "2026-07-14": 6,
       "2026-07-15": 90,
       "2026-07-16": 23,
@@ -64,7 +63,8 @@
       "2026-07-23": 30,
       "2026-07-24": 39,
       "2026-07-25": 20,
-      "2026-07-26": 4
+      "2026-07-26": 4,
+      "2026-07-27": 7
     },
     "top_ports": [
       {
@@ -73,6 +73,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://tbhadvisors.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-27 14:15:04 UTC"
+      },
+      {
+        "ioc": "https://bigredbook.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-27 14:15:03 UTC"
+      },
+      {
+        "ioc": "4bf11589985675d20577e3a8e1b84819",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-27 12:45:27 UTC"
+      },
+      {
+        "ioc": "4793486c9fee140382dee47c02dc2ca2816da340",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-27 12:45:27 UTC"
+      },
+      {
+        "ioc": "6d8d3f1ed3dbcfc7470bfdb7814b049f2dcd5248773c9ebf2c554892bb3011c4",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-27 12:45:26 UTC"
+      },
+      {
+        "ioc": "https://reclaimingthemission.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-07-27 12:15:02 UTC"
+      },
+      {
+        "ioc": "sot.tbo88men.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-27 06:09:13 UTC"
+      },
       {
         "ioc": "bb32b5cfeeaaa49eca3943a2e2bd07ed",
         "type": "md5_hash",
@@ -120,48 +162,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-07-25 20:41:55 UTC"
-      },
-      {
-        "ioc": "87a59eb6074958aaa81799312861574b2ea90527",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:55 UTC"
-      },
-      {
-        "ioc": "7153c7609816c1a5c2882dd7889cd2db9050813f3e5220f76e19f238709ad2d2",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:54 UTC"
-      },
-      {
-        "ioc": "c7fe8f4f25bad097efcadcd798da0a46",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:25 UTC"
-      },
-      {
-        "ioc": "9b45d7455d950bf89bacd045a5b5545c2ede865e",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:25 UTC"
-      },
-      {
-        "ioc": "2a5050ebca4c8fa135b80503d1d2bdf77ec30e8089cbd318a939888048957b55",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:24 UTC"
-      },
-      {
-        "ioc": "b6ea03ecc9f09124603cfde6c0017483",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:22 UTC"
-      },
-      {
-        "ioc": "44bc98bc9831d5a22e7dcddd7dbbb6387f9e17cc",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-25 20:41:21 UTC"
       }
     ]
   }
