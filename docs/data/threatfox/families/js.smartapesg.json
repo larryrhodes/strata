@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-07-27T16:04:26.775244+00:00",
-  "recent_window_ioc_count": 52,
+  "generated": "2026-07-28T15:47:39.479271+00:00",
+  "recent_window_ioc_count": 58,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 197,
+    "total_iocs": 203,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-07-27"
+      "latest": "2026-07-28"
     },
     "ioc_type_breakdown": {
-      "url": 118,
-      "domain": 59,
+      "url": 122,
+      "domain": 61,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 195,
+      "high": 201,
       "medium": 2,
       "low": 0
     },
@@ -64,7 +64,8 @@
       "2026-07-23": 8,
       "2026-07-24": 4,
       "2026-07-25": 18,
-      "2026-07-27": 9
+      "2026-07-27": 9,
+      "2026-07-28": 6
     },
     "top_ports": [
       {
@@ -77,6 +78,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://novacupola.top/role/handler-deploy",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:19:45 UTC"
+      },
+      {
+        "ioc": "https://novacupola.top/role/rate-layout.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:19:41 UTC"
+      },
+      {
+        "ioc": "novacupola.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:19:35 UTC"
+      },
+      {
+        "ioc": "https://laurelcloister.top/role/handler-deploy",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:17:19 UTC"
+      },
+      {
+        "ioc": "https://laurelcloister.top/role/rate-layout.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:17:18 UTC"
+      },
+      {
+        "ioc": "laurelcloister.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:17:18 UTC"
+      },
       {
         "ioc": "https://acaciaearthwork.top/private/session-util.js",
         "type": "url",
@@ -130,42 +167,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-27 10:47:21 UTC"
-      },
-      {
-        "ioc": "https://silenttunnelzone.top/token/token-controller.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-25 14:38:59 UTC"
-      },
-      {
-        "ioc": "silenttunnelzone.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-25 14:38:57 UTC"
-      },
-      {
-        "ioc": "https://brackenfolio.top/acl/principal-payload.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-25 12:14:23 UTC"
-      },
-      {
-        "ioc": "velvetcrossing.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-25 12:14:22 UTC"
-      },
-      {
-        "ioc": "heatherkiln.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-25 12:14:21 UTC"
-      },
-      {
-        "ioc": "cometparapet.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-25 12:14:20 UTC"
       }
     ]
   }

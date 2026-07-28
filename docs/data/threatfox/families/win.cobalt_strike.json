@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-07-27T15:59:48.171518+00:00",
-  "recent_window_ioc_count": 248,
+  "generated": "2026-07-28T15:43:40.253869+00:00",
+  "recent_window_ioc_count": 214,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,27 +37,20 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-06-17",
-      "latest": "2026-07-27"
+      "earliest": "2025-07-16",
+      "latest": "2026-07-28"
     },
     "ioc_type_breakdown": {
-      "ip:port": 447,
-      "domain": 53
+      "ip:port": 451,
+      "domain": 49
     },
     "confidence_distribution": {
-      "high": 477,
-      "medium": 23,
+      "high": 478,
+      "medium": 22,
       "low": 0
     },
     "activity_timeline": {
-      "2025-06-17": 1,
-      "2025-06-20": 1,
-      "2025-06-21": 3,
-      "2025-06-25": 1,
-      "2025-06-28": 2,
-      "2025-07-06": 1,
-      "2025-07-14": 1,
-      "2025-07-16": 3,
+      "2025-07-16": 1,
       "2025-07-18": 1,
       "2025-07-19": 1,
       "2025-07-23": 1,
@@ -141,7 +134,7 @@
       "2026-02-23": 1,
       "2026-02-24": 1,
       "2026-02-25": 1,
-      "2026-03-11": 1,
+      "2026-03-11": 2,
       "2026-03-14": 1,
       "2026-03-15": 2,
       "2026-03-16": 1,
@@ -160,8 +153,8 @@
       "2026-04-22": 2,
       "2026-04-27": 3,
       "2026-04-30": 3,
-      "2026-05-01": 2,
-      "2026-05-02": 1,
+      "2026-05-01": 3,
+      "2026-05-02": 2,
       "2026-05-03": 2,
       "2026-05-04": 3,
       "2026-05-05": 1,
@@ -180,7 +173,7 @@
       "2026-05-23": 3,
       "2026-05-24": 4,
       "2026-05-25": 2,
-      "2026-05-27": 3,
+      "2026-05-27": 2,
       "2026-05-28": 1,
       "2026-05-29": 3,
       "2026-05-31": 2,
@@ -203,8 +196,8 @@
       "2026-06-21": 1,
       "2026-06-22": 4,
       "2026-06-23": 1,
-      "2026-06-24": 4,
-      "2026-06-25": 7,
+      "2026-06-24": 3,
+      "2026-06-25": 5,
       "2026-06-26": 1,
       "2026-06-27": 9,
       "2026-06-28": 4,
@@ -229,22 +222,23 @@
       "2026-07-19": 1,
       "2026-07-23": 6,
       "2026-07-24": 2,
-      "2026-07-25": 3,
+      "2026-07-25": 4,
       "2026-07-26": 4,
-      "2026-07-27": 1
+      "2026-07-27": 3,
+      "2026-07-28": 10
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 205
+        "count": 200
       },
       {
         "port": "80",
-        "count": 38
+        "count": 39
       },
       {
         "port": "53",
-        "count": 22
+        "count": 21
       },
       {
         "port": "18443",
@@ -252,7 +246,7 @@
       },
       {
         "port": "8080",
-        "count": 8
+        "count": 10
       },
       {
         "port": "9999",
@@ -277,6 +271,78 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "103.146.231.107:24444",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:05:05 UTC"
+      },
+      {
+        "ioc": "103.146.231.107:8082",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:05:08 UTC"
+      },
+      {
+        "ioc": "103.146.231.107:23333",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:05:08 UTC"
+      },
+      {
+        "ioc": "103.146.231.107:6099",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:05:07 UTC"
+      },
+      {
+        "ioc": "103.146.231.107:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 12:05:05 UTC"
+      },
+      {
+        "ioc": "168.144.45.2:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 11:05:08 UTC"
+      },
+      {
+        "ioc": "168.144.45.2:53",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 11:05:07 UTC"
+      },
+      {
+        "ioc": "168.144.45.2:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 10:05:07 UTC"
+      },
+      {
+        "ioc": "168.144.45.2:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 10:05:05 UTC"
+      },
+      {
+        "ioc": "168.144.45.2:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-28 10:05:04 UTC"
+      },
+      {
+        "ioc": "159.94.211.163:24443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-27 23:45:57 UTC"
+      },
+      {
+        "ioc": "158.94.211.163:24443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-27 23:45:57 UTC"
+      },
+      {
         "ioc": "47.103.214.7:18443",
         "type": "ip:port",
         "confidence": 75,
@@ -293,78 +359,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-26 21:46:16 UTC"
-      },
-      {
-        "ioc": "dns2.dreamls.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-26 21:45:45 UTC"
-      },
-      {
-        "ioc": "dns1.dreamls.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-26 21:45:45 UTC"
-      },
-      {
-        "ioc": "54.178.100.27:8021",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-25 23:46:33 UTC"
-      },
-      {
-        "ioc": "38.54.89.235:6688",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-25 11:46:12 UTC"
-      },
-      {
-        "ioc": "117.28.246.18:8067",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-25 11:45:55 UTC"
-      },
-      {
-        "ioc": "209.200.246.194:34586",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-24 23:46:13 UTC"
-      },
-      {
-        "ioc": "103.193.150.74:8087",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-24 23:45:54 UTC"
-      },
-      {
-        "ioc": "8.135.47.140:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-23 15:46:56 UTC"
-      },
-      {
-        "ioc": "38.244.52.101:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-23 15:46:43 UTC"
-      },
-      {
-        "ioc": "102.204.223.106:2053",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-23 15:46:20 UTC"
-      },
-      {
-        "ioc": "www.ai2.qzz.io",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-23 15:46:18 UTC"
-      },
-      {
-        "ioc": "cloud-svc.site",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-23 15:46:13 UTC"
       }
     ]
   }

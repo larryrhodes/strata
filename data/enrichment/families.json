@@ -200,6 +200,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "elf.orbit": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "OrBit",
+    "description": "According to stormshield, Orbit is a two-stage malware that appeared in July 2022, discovered by Intezer lab. Acting as a stealer and backdoor on 64-bit Linux systems, it consists of an executable acting as a dropper and a dynamic library.",
+    "enriched_at": "2026-07-28T15:43:02.212568+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "elf.qilin": {
     "alt_names": [],
     "associated_groups": [],
@@ -645,6 +654,17 @@
     "common_name": "Arkei Stealer",
     "description": "Arkei is a stealer that appeared around May 2018. It collects data about browsers (saved passwords and autofill forms), cryptocurrency wallets, and steal files matching an attacker-defined pattern. It then exfiltrates everything in a zip file uploaded to the attacker's panel. Later, it was forked and used as a base to create Vidar stealer.",
     "enriched_at": "2026-07-08T17:01:03.978248+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.astarion_rat": {
+    "alt_names": [
+      "MIMICRAT"
+    ],
+    "associated_groups": [],
+    "common_name": "AstarionRAT",
+    "description": "According to Huntress, AstarionRAT is a full-featured RAT with 24 commands, including credential theft, SOCKS5 proxy, port scanning, reflective code loading, and shell execution, with RSA-encrypted C2 communication disguised as application telemetry.",
+    "enriched_at": "2026-07-28T15:43:04.953636+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1098,6 +1118,15 @@
     "common_name": "Luca Stealer",
     "description": "According to PCRisk, The Luca stealer can extract a variety of information from compromised machines. It targets data related to the following: operating system, device name, CPUs, desktop environment, network interface, user account name, preferred system language, running processes, etc.\r\n\r\nThis malicious program can steal information from over thirty Chromium-based browsers. From these applications, Luca can obtain Internet cookies, account log-in credentials (usernames/passwords), and credit card numbers. Additionally, the stealer can extract data from password manager and cryptowallet browser extensions compatible with over twenty browsers.\r\n\r\nThis malware also targets various messaging applications like Telegram, Discord, ICQ, Skype, Element, etc. It likewise aims to acquire information from gaming-related software such as Steam and Uplay (Ubisoft Connect). Furthermore, some versions of Luca can take screenshots and download the files stored on victims' devices.",
     "enriched_at": "2026-07-08T17:01:16.628973+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.lynx": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Lynx",
+    "description": "According to Nextron, Lynx ransomware is a sophisticated malware threat that has been active since mid-2024. Lynx has claimed over 20 victims across a range of industries. Once it infiltrates a system, it encrypts critical files, appending a \u2018.lynx\u2019 extension, and deletes backup files like shadow copies to hinder recovery. Uniquely, it also sends the ransom note to available printers, adding an unexpected element to its attack strategy. This malware shares similarities with previous INC ransomware, indicating that they bought INC ransomware source code.",
+    "enriched_at": "2026-07-28T15:43:00.941474+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1656,6 +1685,20 @@
     "common_name": "StrelaStealer",
     "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
     "enriched_at": "2026-07-08T17:00:20.472664+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.supper": {
+    "alt_names": [
+      "SocksShell",
+      "ZAPCAT"
+    ],
+    "associated_groups": [
+      "Vanilla Tempest"
+    ],
+    "common_name": "Supper",
+    "description": "Supper is a 64-bit Windows backdoor and tunnelling utility first observed in the wild in July 2024. This malware operates as both a Remote Access Trojan (RAT) and a SOCKS5 proxy, offering threat actors persistent access to infected systems and the ability to route arbitrary traffic through victim environments.\r\n\r\nOnce executed, it establishes a TCP connection to its primary C2 endpoint, i.e. hardcoded in the file, over port 443. A fallback mechanism allows the malware to retrieve alternate C2 IP addresses from an encoded file, %temp%/s01bafg, ensuring resilience in case the primary server is unavailable. The malware supports up to 16,384 concurrent sessions over a single TCP connection, each uniquely identified via a 16-bit session ID. \r\n\r\nCommunication begins with an unencrypted 300-byte handshake payload that includes a static bot identifier (0x00691155), system metadata (hostname, domain, OS version, integrity level), and a fixed flag. Following this, all network traffic is wrapped in a 12-byte obfuscated header and an encrypted payload (8 bytes) which consists of two encrypted IP addresses. The header is transformed using two hardcoded XOR keys: 0x4d4d4d4d4d4d4d4d and 0x4d4d4d4d. Payload encryption is performed with a non-standard, stateful XOR cipher, where each byte of the message is encrypted based on a calculated offset and a cycling key (xored with 0x4d4d4d4d) derived from the header. \r\n\r\nIt supports a range of C2 commands, including remote shell execution, session teardown, SOCKS5 proxy operations, self-deletion, and dynamic updating of fallback IPs. When executing commands, Supper spawns a hidden cmd.exe instance and forwards command outputs back to the C2 server after encryption. As a proxy, it accepts operator-specified connection requests, establishes TCP sessions to external targets, and forwards data between the target and the attacker, all managed under the session multiplexing framework.\r\n\r\nIf instructed or if a C2 session fails, the malware can delete itself using cmd.exe or schtasks.exe, often masquerading the operation under the guise of a scheduled task named \"GoogleUpdateTask\". The file used to store fallback C2 IPs (%temp%/s01bafg) is updated by the malware using its encryption routine.",
+    "enriched_at": "2026-07-28T15:43:03.435279+00:00",
     "source": "malpedia",
     "status": "ok"
   },

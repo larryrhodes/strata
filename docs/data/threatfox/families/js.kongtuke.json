@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-07-27T16:00:46.533021+00:00",
-  "recent_window_ioc_count": 176,
+  "generated": "2026-07-28T15:45:39.511864+00:00",
+  "recent_window_ioc_count": 110,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -13,8 +13,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-25",
-      "latest": "2026-07-27"
+      "earliest": "2026-05-04",
+      "latest": "2026-07-28"
     },
     "ioc_type_breakdown": {
       "domain": 263,
@@ -28,9 +28,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-25": 4,
-      "2026-05-02": 2,
-      "2026-05-04": 10,
+      "2026-05-04": 6,
       "2026-05-05": 3,
       "2026-05-11": 20,
       "2026-05-12": 3,
@@ -68,7 +66,8 @@
       "2026-07-24": 3,
       "2026-07-25": 6,
       "2026-07-26": 50,
-      "2026-07-27": 9
+      "2026-07-27": 16,
+      "2026-07-28": 3
     },
     "top_ports": [
       {
@@ -81,6 +80,66 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "griffihhs.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:19:49 UTC"
+      },
+      {
+        "ioc": "https://griffihhs.click/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:19:48 UTC"
+      },
+      {
+        "ioc": "https://griffihhs.click/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 13:19:47 UTC"
+      },
+      {
+        "ioc": "chaphan.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:39 UTC"
+      },
+      {
+        "ioc": "https://chaphan.click/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:38 UTC"
+      },
+      {
+        "ioc": "https://chaphan.click/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:38 UTC"
+      },
+      {
+        "ioc": "tommy-er.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:37 UTC"
+      },
+      {
+        "ioc": "https://tommy-er.top/f",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:37 UTC"
+      },
+      {
+        "ioc": "https://chaphan.click/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:37 UTC"
+      },
+      {
+        "ioc": "https://pfannerrtill.lol/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-27 19:00:36 UTC"
+      },
       {
         "ioc": "https://bauabach.lol/api/v1/status",
         "type": "url",
@@ -110,66 +169,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-27 12:11:08 UTC"
-      },
-      {
-        "ioc": "https://bauabach.lol/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 12:11:08 UTC"
-      },
-      {
-        "ioc": "https://pfannerrtill.lol/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 10:47:24 UTC"
-      },
-      {
-        "ioc": "pfannerrtill.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-27 10:47:24 UTC"
-      },
-      {
-        "ioc": "https://pfannerrtill.lol/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 10:47:23 UTC"
-      },
-      {
-        "ioc": "testspsychotechniques974.re",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-07-26 10:55:13 UTC"
-      },
-      {
-        "ioc": "souls-of-wildlife.ch",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-07-26 10:55:13 UTC"
-      },
-      {
-        "ioc": "traditionalafricanmarket.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-07-26 10:55:12 UTC"
-      },
-      {
-        "ioc": "toppansecurity.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-07-26 10:55:12 UTC"
-      },
-      {
-        "ioc": "vimjes.edu.in",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-07-26 10:55:11 UTC"
-      },
-      {
-        "ioc": "verifyaiinitiative.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-07-26 10:55:11 UTC"
       }
     ]
   }
