@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-07-28T15:46:55.749428+00:00",
-  "recent_window_ioc_count": 70,
+  "generated": "2026-07-29T15:34:46.819412+00:00",
+  "recent_window_ioc_count": 69,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,15 +12,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-13",
-      "latest": "2026-07-27"
+      "earliest": "2026-04-14",
+      "latest": "2026-07-29"
     },
     "ioc_type_breakdown": {
-      "ip:port": 203,
+      "ip:port": 204,
       "sha256_hash": 72,
       "sha1_hash": 72,
       "md5_hash": 72,
-      "domain": 66,
+      "domain": 65,
       "url": 15
     },
     "confidence_distribution": {
@@ -29,7 +29,6 @@
       "low": 10
     },
     "activity_timeline": {
-      "2026-04-13": 2,
       "2026-04-14": 14,
       "2026-04-15": 6,
       "2026-04-16": 1,
@@ -109,12 +108,13 @@
       "2026-07-24": 18,
       "2026-07-25": 28,
       "2026-07-26": 6,
-      "2026-07-27": 10
+      "2026-07-27": 10,
+      "2026-07-29": 2
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 20
+        "count": 21
       },
       {
         "port": "6666",
@@ -154,6 +154,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "156.247.40.164:889",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-07-29 09:45:57 UTC"
+      },
+      {
+        "ioc": "143.92.61.7:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-07-29 07:55:03 UTC"
+      },
       {
         "ioc": "6e795be8d4f34f798012d46530c62843dbb74c7cc64fd3a2db37ff68c85f52b8",
         "type": "sha256_hash",
@@ -231,18 +243,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-07-26 14:44:39 UTC"
-      },
-      {
-        "ioc": "92965d16cbf235f131ca72f8d698826de2a3e4eeb2df4f3d97ecdc9b443d998f",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-26 14:44:38 UTC"
-      },
-      {
-        "ioc": "4d33b3a66096f81f7c6eb70e304bea226ed3f7a5",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-26 14:44:38 UTC"
       }
     ]
   }

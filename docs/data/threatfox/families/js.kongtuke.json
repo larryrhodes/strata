@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-07-28T15:45:39.511864+00:00",
-  "recent_window_ioc_count": 110,
+  "generated": "2026-07-29T15:33:23.658659+00:00",
+  "recent_window_ioc_count": 107,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -13,12 +13,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-04",
+      "earliest": "2026-05-05",
       "latest": "2026-07-28"
     },
     "ioc_type_breakdown": {
-      "domain": 263,
-      "url": 222,
+      "domain": 264,
+      "url": 221,
       "sha256_hash": 9,
       "ip:port": 6
     },
@@ -28,7 +28,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-04": 6,
       "2026-05-05": 3,
       "2026-05-11": 20,
       "2026-05-12": 3,
@@ -67,7 +66,7 @@
       "2026-07-25": 6,
       "2026-07-26": 50,
       "2026-07-27": 16,
-      "2026-07-28": 3
+      "2026-07-28": 9
     },
     "top_ports": [
       {
@@ -80,6 +79,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "phiplips.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-28 16:54:50 UTC"
+      },
+      {
+        "ioc": "https://phiplips.click/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 16:54:49 UTC"
+      },
+      {
+        "ioc": "https://phiplips.click/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 16:54:49 UTC"
+      },
+      {
+        "ioc": "https://phiplips.click/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 16:54:48 UTC"
+      },
+      {
+        "ioc": "https://tommy-eg.top/f",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-28 16:54:47 UTC"
+      },
+      {
+        "ioc": "tommy-eg.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-28 16:54:45 UTC"
+      },
       {
         "ioc": "griffihhs.click",
         "type": "domain",
@@ -133,42 +168,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-27 19:00:37 UTC"
-      },
-      {
-        "ioc": "https://pfannerrtill.lol/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 19:00:36 UTC"
-      },
-      {
-        "ioc": "https://bauabach.lol/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 14:50:14 UTC"
-      },
-      {
-        "ioc": "globalupdate6711.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-27 14:50:13 UTC"
-      },
-      {
-        "ioc": "https://globalupdate6711.com/update/package",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 14:50:13 UTC"
-      },
-      {
-        "ioc": "bauabach.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-27 12:11:09 UTC"
-      },
-      {
-        "ioc": "https://bauabach.lol/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 12:11:08 UTC"
       }
     ]
   }
