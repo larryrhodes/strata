@@ -1,8 +1,8 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-07-17T15:07:21.034576+00:00",
-  "recent_window_ioc_count": 18,
+  "generated": "2026-07-30T15:36:29.754766+00:00",
+  "recent_window_ioc_count": 81,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
   "alt_names": [],
@@ -10,37 +10,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-02-04",
-      "latest": "2026-07-17"
+      "earliest": "2026-02-17",
+      "latest": "2026-07-30"
     },
     "ioc_type_breakdown": {
-      "url": 215,
-      "ip:port": 173,
-      "sha256_hash": 41,
-      "md5_hash": 32,
-      "sha1_hash": 32,
-      "domain": 7
+      "url": 179,
+      "ip:port": 149,
+      "sha256_hash": 61,
+      "md5_hash": 53,
+      "sha1_hash": 52,
+      "domain": 6
     },
     "confidence_distribution": {
-      "high": 401,
-      "medium": 99,
+      "high": 416,
+      "medium": 84,
       "low": 0
     },
     "activity_timeline": {
-      "2026-02-04": 3,
-      "2026-02-05": 13,
-      "2026-02-06": 1,
-      "2026-02-07": 8,
-      "2026-02-08": 1,
-      "2026-02-09": 6,
-      "2026-02-10": 1,
-      "2026-02-11": 1,
-      "2026-02-12": 1,
-      "2026-02-13": 11,
-      "2026-02-14": 3,
-      "2026-02-15": 18,
-      "2026-02-16": 3,
-      "2026-02-17": 10,
+      "2026-02-17": 2,
       "2026-02-18": 4,
       "2026-02-19": 1,
       "2026-02-21": 5,
@@ -117,13 +104,12 @@
       "2026-06-15": 1,
       "2026-06-16": 6,
       "2026-06-20": 1,
-      "2026-06-21": 5,
+      "2026-06-21": 4,
       "2026-06-23": 15,
       "2026-06-24": 2,
-      "2026-06-25": 17,
-      "2026-06-26": 2,
+      "2026-06-25": 15,
       "2026-06-27": 2,
-      "2026-06-29": 5,
+      "2026-06-29": 4,
       "2026-06-30": 3,
       "2026-07-02": 2,
       "2026-07-03": 1,
@@ -137,12 +123,20 @@
       "2026-07-13": 4,
       "2026-07-14": 1,
       "2026-07-16": 1,
-      "2026-07-17": 3
+      "2026-07-17": 4,
+      "2026-07-18": 2,
+      "2026-07-24": 3,
+      "2026-07-25": 1,
+      "2026-07-26": 3,
+      "2026-07-27": 8,
+      "2026-07-28": 3,
+      "2026-07-29": 56,
+      "2026-07-30": 7
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 169
+        "count": 145
       },
       {
         "port": "443",
@@ -159,94 +153,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "http://144.31.57.94/350be244a2f97a3a4ca8.php",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-17 09:14:30 UTC"
-      },
-      {
-        "ioc": "https://t.me/still_stellc",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-07-17 04:05:49 UTC"
-      },
-      {
-        "ioc": "http://89.110.104.237/46893b462dca7432.php",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-17 03:55:05 UTC"
-      },
-      {
-        "ioc": "http://196.251.107.163/ca2f6543a0826c0f55e0.php",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-16 04:25:06 UTC"
-      },
-      {
-        "ioc": "87.120.104.81:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-14 04:05:08 UTC"
-      },
-      {
-        "ioc": "178.16.52.93:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-13 21:09:07 UTC"
-      },
-      {
-        "ioc": "dc97d08061dcc998c1033ef07b5199a6",
+        "ioc": "55d059ddee230743be718bd56698228e",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-13 16:58:08 UTC"
+        "first_seen": "2026-07-30 11:24:36 UTC"
       },
       {
-        "ioc": "09abf355cbd02decf15685d6dfc47e032edd30546da64425e56721490695ffbb",
+        "ioc": "97d632037760b0b33cf3342ed948d24ea6ae4461214bd3b7c9c385885588b399",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-07-13 16:58:07 UTC"
+        "first_seen": "2026-07-30 11:24:35 UTC"
       },
       {
-        "ioc": "361bdcf246f96e3260b22e925dbea57532e7d385",
+        "ioc": "0853cb76e5cea4b7ed9ddc5ea2a3ec18356466b5",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-13 16:58:07 UTC"
+        "first_seen": "2026-07-30 11:24:35 UTC"
       },
       {
-        "ioc": "http://87.120.104.81/d19ca32cb5a444ac8b87.php",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-07-12 19:45:40 UTC"
-      },
-      {
-        "ioc": "77.90.185.121:80",
+        "ioc": "46.151.182.86:80",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-12 07:30:24 UTC"
+        "first_seen": "2026-07-30 09:00:41 UTC"
       },
       {
-        "ioc": "172.86.113.33:80",
+        "ioc": "92.119.165.90:80",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-12 07:30:23 UTC"
+        "first_seen": "2026-07-30 09:00:41 UTC"
       },
       {
-        "ioc": "77.90.185.122:80",
+        "ioc": "46.151.182.27:80",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-12 07:30:22 UTC"
+        "first_seen": "2026-07-30 09:00:41 UTC"
       },
       {
-        "ioc": "160.20.109.68:80",
+        "ioc": "185.242.246.175:80",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-12 07:30:21 UTC"
+        "first_seen": "2026-07-30 09:00:41 UTC"
       },
       {
-        "ioc": "85.120.81.21:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-12 07:30:21 UTC"
+        "ioc": "add10d5a77f0de905a2f3aa9a9b53282ff3c6d0e",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:33 UTC"
+      },
+      {
+        "ioc": "740898b58e04118c41b698eea2c74e52",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:33 UTC"
+      },
+      {
+        "ioc": "6c31dfcd522d65460e749941d675c714",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:32 UTC"
+      },
+      {
+        "ioc": "050d1fa390f009dbe1263b20467e3714d0340506",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:32 UTC"
+      },
+      {
+        "ioc": "0c16963f43604246e81f006d1f7df0a7258b36b929252c1502d92fea573d86aa",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:32 UTC"
+      },
+      {
+        "ioc": "c200f2497e8169897a1f0569e720331faf5f2fbc50530614641d612b4488797c",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:31 UTC"
+      },
+      {
+        "ioc": "375f8a4ff4eafe485b210a9ffb6a84bdbdb9c52ae602293ddae53717935e8daa",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:30 UTC"
+      },
+      {
+        "ioc": "cab8109654bfee89744d7ef0e855b55c316e8cfa",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-29 23:26:30 UTC"
       }
     ]
   }

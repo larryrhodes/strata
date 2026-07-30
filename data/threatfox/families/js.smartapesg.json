@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-07-29T15:35:56.301462+00:00",
-  "recent_window_ioc_count": 52,
+  "generated": "2026-07-30T15:38:01.056719+00:00",
+  "recent_window_ioc_count": 58,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 210,
+    "total_iocs": 219,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-07-29"
+      "latest": "2026-07-30"
     },
     "ioc_type_breakdown": {
-      "url": 127,
-      "domain": 63,
+      "url": 132,
+      "domain": 67,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 208,
+      "high": 217,
       "medium": 2,
       "low": 0
     },
@@ -44,6 +44,7 @@
       "2026-05-27": 2,
       "2026-06-13": 1,
       "2026-06-22": 2,
+      "2026-06-23": 1,
       "2026-06-30": 7,
       "2026-07-01": 3,
       "2026-07-03": 10,
@@ -66,7 +67,8 @@
       "2026-07-25": 18,
       "2026-07-27": 9,
       "2026-07-28": 6,
-      "2026-07-29": 7
+      "2026-07-29": 9,
+      "2026-07-30": 6
     },
     "top_ports": [
       {
@@ -79,6 +81,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "laurelcloister.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-30 12:28:05 UTC"
+      },
+      {
+        "ioc": "https://laurelcloister.top/role/logout-header.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-30 12:28:04 UTC"
+      },
+      {
+        "ioc": "https://chestnutstanza.top/realm/acl-controller.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-30 10:47:15 UTC"
+      },
+      {
+        "ioc": "chestnutstanza.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-30 10:47:15 UTC"
+      },
+      {
+        "ioc": "https://chestnutstanza.top/realm/health-service",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-30 10:47:15 UTC"
+      },
+      {
+        "ioc": "mulberrylodestar.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-07-30 09:43:19 UTC"
+      },
+      {
+        "ioc": "https://ibharcan.com/meta.google.com",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-29 16:13:56 UTC"
+      },
+      {
+        "ioc": "https://mulberrylodestar.top/metrics/verify-client.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-07-29 16:13:55 UTC"
+      },
       {
         "ioc": "https://ironwoodrotunda.top/metrics/api-transpiler",
         "type": "url",
@@ -120,54 +170,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-29 07:41:52 UTC"
-      },
-      {
-        "ioc": "https://novacupola.top/role/handler-deploy",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-28 13:19:45 UTC"
-      },
-      {
-        "ioc": "https://novacupola.top/role/rate-layout.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-28 13:19:41 UTC"
-      },
-      {
-        "ioc": "novacupola.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-28 13:19:35 UTC"
-      },
-      {
-        "ioc": "https://laurelcloister.top/role/handler-deploy",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-28 12:17:19 UTC"
-      },
-      {
-        "ioc": "https://laurelcloister.top/role/rate-layout.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-28 12:17:18 UTC"
-      },
-      {
-        "ioc": "laurelcloister.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-28 12:17:18 UTC"
-      },
-      {
-        "ioc": "https://acaciaearthwork.top/private/session-util.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 14:50:13 UTC"
-      },
-      {
-        "ioc": "https://acaciaearthwork.top/private/login-dom",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 14:50:12 UTC"
       }
     ]
   }
