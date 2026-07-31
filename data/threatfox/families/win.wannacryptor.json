@@ -1,8 +1,8 @@
 {
   "malware_id": "win.wannacryptor",
   "family": "WannaCryptor",
-  "generated": "2026-07-30T15:34:28.057504+00:00",
-  "recent_window_ioc_count": 153,
+  "generated": "2026-07-31T15:39:24.863651+00:00",
+  "recent_window_ioc_count": 159,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.wannacryptor",
   "description": "WannaCry is ransomware that contains a worm component enabled by the EternalBlue exploit. It attempts to use vulnerabilities in the Windows SMBv1 server to remotely compromise systems, encrypt files, and spread to other hosts. Systems that have installed the MS17-010 patch are not vulnerable to the exploits used. The spreading was stopped about 8 hours after initial outbreak due to triggering a kill switch domain.",
   "alt_names": [
@@ -15,18 +15,18 @@
     "Lazarus Group"
   ],
   "stats": {
-    "total_iocs": 306,
+    "total_iocs": 318,
     "date_range": {
       "earliest": "2026-06-14",
-      "latest": "2026-07-30"
+      "latest": "2026-07-31"
     },
     "ioc_type_breakdown": {
-      "md5_hash": 102,
-      "sha1_hash": 102,
-      "sha256_hash": 102
+      "md5_hash": 106,
+      "sha1_hash": 106,
+      "sha256_hash": 106
     },
     "confidence_distribution": {
-      "high": 306,
+      "high": 318,
       "medium": 0,
       "low": 0
     },
@@ -58,10 +58,83 @@
       "2026-07-27": 3,
       "2026-07-28": 6,
       "2026-07-29": 6,
-      "2026-07-30": 3
+      "2026-07-30": 3,
+      "2026-07-31": 12
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "edc0d904974de3d03e654e98d24bfe9e",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:35 UTC"
+      },
+      {
+        "ioc": "1fe32ef5a3ca6ad3f31a71b280421efec3cd255f",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:35 UTC"
+      },
+      {
+        "ioc": "79cab94e4ca816acbb4068254adaac761f16f8a6e4796408c77840235e5890ee",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:34 UTC"
+      },
+      {
+        "ioc": "2743ee280188d4250ab5aa6528a20448",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:31 UTC"
+      },
+      {
+        "ioc": "749de482e4b125876ba05f88958e4f4c279abfc1",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:30 UTC"
+      },
+      {
+        "ioc": "8489605870dd2735a8298cbb05db98cc6dc1d49e30caf3aa7d3260cc8fecdead",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:30 UTC"
+      },
+      {
+        "ioc": "e3ebd1db429e9ec95e75b8daaf43e2b3",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:24 UTC"
+      },
+      {
+        "ioc": "b3344fd24a3b750d6c90baac3316af342a41b298",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:24 UTC"
+      },
+      {
+        "ioc": "93f1112efb938edee0b52aa69c28303d99b489ec0d785af553250478546ec647",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:23 UTC"
+      },
+      {
+        "ioc": "7955f6409c9e6669fcd5e3a0a293bc21",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:20 UTC"
+      },
+      {
+        "ioc": "d2e9e164a0ea103a6efedf290665e0e40dcc66fe",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:19 UTC"
+      },
+      {
+        "ioc": "05be5a8131993a5034bc4a57963f0c8860aeb3188dd906ed78d95439d15d813e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-31 12:11:19 UTC"
+      },
       {
         "ioc": "41a65a494ba9b729e6fbf744644004a6",
         "type": "md5_hash",
@@ -79,78 +152,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-07-30 11:24:22 UTC"
-      },
-      {
-        "ioc": "609a433ec177c59a2667d9e29a15e17e",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:18:59 UTC"
-      },
-      {
-        "ioc": "a12df571520fe64a8847428e81d040176b8c6594",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:18:59 UTC"
-      },
-      {
-        "ioc": "6a4d371a7e82215799f79944204cf1ae4586a5a1cb6bdd5f6fb55e811e2154f2",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:18:59 UTC"
-      },
-      {
-        "ioc": "9ac564e1f6b5b1fb1fa22cf419566ef0",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:18:56 UTC"
-      },
-      {
-        "ioc": "286e08273c64ff646c4de582bccbbf8861ea28a2",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:18:55 UTC"
-      },
-      {
-        "ioc": "6f65ac067cd914ac0d3a04d801e0363cf615f867c0fe683340656387e48f9337",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:18:55 UTC"
-      },
-      {
-        "ioc": "d017feba12f5960520155ba240beb093",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-28 23:26:25 UTC"
-      },
-      {
-        "ioc": "7ce58221e01efa4d0f3cb605530e295e62f1e662",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-28 23:26:25 UTC"
-      },
-      {
-        "ioc": "376968a612e976c22025dc552cf79c6eda5af8a82136fe2dbff48fd72afaacaa",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-28 23:26:25 UTC"
-      },
-      {
-        "ioc": "700fb7e2c6a2ff13cd27e08a18703423",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-28 23:26:24 UTC"
-      },
-      {
-        "ioc": "19cdc7a8624c614cb8c06dc4f439fe86f9e6a515",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-28 23:26:24 UTC"
-      },
-      {
-        "ioc": "47f9779b48eeda53a846a2460456c738ad752ad0e02483231d927930f3f37dce",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-28 23:26:24 UTC"
       }
     ]
   }
