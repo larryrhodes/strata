@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-08-01T14:48:58.270978+00:00",
-  "recent_window_ioc_count": 120,
+  "generated": "2026-08-02T14:49:12.951392+00:00",
+  "recent_window_ioc_count": 114,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-11",
-      "latest": "2026-08-01"
+      "earliest": "2026-06-12",
+      "latest": "2026-08-02"
     },
     "ioc_type_breakdown": {
       "ip:port": 408,
@@ -26,8 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-11": 2,
-      "2026-06-12": 7,
+      "2026-06-12": 5,
       "2026-06-13": 7,
       "2026-06-14": 10,
       "2026-06-15": 8,
@@ -76,16 +75,17 @@
       "2026-07-29": 25,
       "2026-07-30": 21,
       "2026-07-31": 10,
-      "2026-08-01": 1
+      "2026-08-01": 3,
+      "2026-08-02": 2
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 61
+        "count": 63
       },
       {
         "port": "7707",
-        "count": 51
+        "count": 50
       },
       {
         "port": "6606",
@@ -104,6 +104,10 @@
         "count": 7
       },
       {
+        "port": "6666",
+        "count": 6
+      },
+      {
         "port": "8080",
         "count": 6
       },
@@ -114,13 +118,33 @@
       {
         "port": "7777",
         "count": 5
-      },
-      {
-        "port": "6666",
-        "count": 5
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "45.61.114.217:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-02 09:46:21 UTC"
+      },
+      {
+        "ioc": "185.157.46.242:8808",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 07:05:05 UTC"
+      },
+      {
+        "ioc": "157.20.182.22:6666",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-01 23:05:05 UTC"
+      },
+      {
+        "ioc": "86.106.119.24:8808",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-01 15:05:07 UTC"
+      },
       {
         "ioc": "157.20.182.22:1992",
         "type": "ip:port",
@@ -186,30 +210,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-07-31 09:43:15 UTC"
-      },
-      {
-        "ioc": "prakashjadhav7473.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-30 20:25:43 UTC"
-      },
-      {
-        "ioc": "pradeepprabhu7055.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-30 20:25:43 UTC"
-      },
-      {
-        "ioc": "35.72.170.195:21672",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 19:45:39 UTC"
-      },
-      {
-        "ioc": "195.177.94.69:27221",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 19:44:30 UTC"
       }
     ]
   }

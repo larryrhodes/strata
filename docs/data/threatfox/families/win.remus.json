@@ -1,25 +1,25 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-01T14:51:50.249611+00:00",
-  "recent_window_ioc_count": 64,
+  "generated": "2026-08-02T14:50:29.242379+00:00",
+  "recent_window_ioc_count": 73,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 404,
+    "total_iocs": 415,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-08-01"
+      "latest": "2026-08-02"
     },
     "ioc_type_breakdown": {
       "domain": 204,
-      "url": 114,
-      "ip:port": 86
+      "url": 120,
+      "ip:port": 91
     },
     "confidence_distribution": {
-      "high": 397,
+      "high": 408,
       "medium": 6,
       "low": 1
     },
@@ -87,7 +87,8 @@
       "2026-07-29": 7,
       "2026-07-30": 2,
       "2026-07-31": 1,
-      "2026-08-01": 10
+      "2026-08-01": 15,
+      "2026-08-02": 6
     },
     "top_ports": [
       {
@@ -115,23 +116,89 @@
         "count": 3
       },
       {
+        "port": "2930",
+        "count": 2
+      },
+      {
+        "port": "2535",
+        "count": 2
+      },
+      {
         "port": "4437",
         "count": 2
       },
       {
         "port": "7527",
         "count": 2
-      },
-      {
-        "port": "5291",
-        "count": 2
-      },
-      {
-        "port": "7802",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "85.31.60.169:5627",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 14:37:15 UTC"
+      },
+      {
+        "ioc": "http://topxgax.click:4930",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-02 13:16:32 UTC"
+      },
+      {
+        "ioc": "84.247.129.0:2930",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 09:29:59 UTC"
+      },
+      {
+        "ioc": "104.168.123.242:3276",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 09:29:59 UTC"
+      },
+      {
+        "ioc": "200.9.154.45:8539",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 06:54:46 UTC"
+      },
+      {
+        "ioc": "http://sxarth.click:3276",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-02 03:57:04 UTC"
+      },
+      {
+        "ioc": "http://anglecv.surf:7688",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-01 23:21:23 UTC"
+      },
+      {
+        "ioc": "http://riserma.biz:8768",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-01 20:49:22 UTC"
+      },
+      {
+        "ioc": "http://puresthomes.com:5282",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-01 20:49:22 UTC"
+      },
+      {
+        "ioc": "http://toeday.click:5326",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-01 20:33:43 UTC"
+      },
+      {
+        "ioc": "72.60.92.150:2535",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-01 15:15:34 UTC"
+      },
       {
         "ioc": "http://primzes.biz:8528",
         "type": "url",
@@ -155,72 +222,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-08-01 07:50:04 UTC"
-      },
-      {
-        "ioc": "http://kinderplow.com:5782",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 07:50:04 UTC"
-      },
-      {
-        "ioc": "45.148.146.52:2535",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-01 06:27:53 UTC"
-      },
-      {
-        "ioc": "http://sahalexchange.com:9504",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 04:03:13 UTC"
-      },
-      {
-        "ioc": "http://slyfogx.shop:5776",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 01:42:03 UTC"
-      },
-      {
-        "ioc": "http://azurhay.shop:8539",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 01:42:03 UTC"
-      },
-      {
-        "ioc": "http://onesdto.shop:2535",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 01:42:03 UTC"
-      },
-      {
-        "ioc": "85.31.60.169:4437",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-31 19:28:12 UTC"
-      },
-      {
-        "ioc": "smarwth.biz",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-30 09:11:09 UTC"
-      },
-      {
-        "ioc": "147.93.62.224:7527",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-30 08:53:38 UTC"
-      },
-      {
-        "ioc": "134.209.42.122:9895",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-29 17:41:00 UTC"
-      },
-      {
-        "ioc": "185.53.179.146:7527",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-29 15:55:43 UTC"
       }
     ]
   }

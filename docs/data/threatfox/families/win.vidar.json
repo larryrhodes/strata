@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-08-01T14:49:50.914386+00:00",
-  "recent_window_ioc_count": 83,
+  "generated": "2026-08-02T14:50:39.085079+00:00",
+  "recent_window_ioc_count": 73,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,12 +10,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-27",
-      "latest": "2026-07-31"
+      "earliest": "2026-03-20",
+      "latest": "2026-08-01"
     },
     "ioc_type_breakdown": {
-      "domain": 217,
-      "url": 156,
+      "domain": 218,
+      "url": 155,
       "md5_hash": 36,
       "sha1_hash": 36,
       "sha256_hash": 36,
@@ -27,7 +27,9 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-27": 4,
+      "2026-03-20": 2,
+      "2026-03-23": 3,
+      "2026-03-27": 6,
       "2026-04-03": 2,
       "2026-04-07": 2,
       "2026-04-13": 2,
@@ -58,8 +60,8 @@
       "2026-06-26": 2,
       "2026-07-10": 2,
       "2026-07-17": 4,
-      "2026-07-18": 7,
-      "2026-07-19": 45,
+      "2026-07-18": 1,
+      "2026-07-19": 38,
       "2026-07-20": 99,
       "2026-07-21": 18,
       "2026-07-22": 21,
@@ -71,7 +73,8 @@
       "2026-07-28": 3,
       "2026-07-29": 2,
       "2026-07-30": 15,
-      "2026-07-31": 22
+      "2026-07-31": 22,
+      "2026-08-01": 6
     },
     "top_ports": [
       {
@@ -80,6 +83,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "6518d397d3d18380d927cb8cbf458c22",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-01 15:25:19 UTC"
+      },
+      {
+        "ioc": "6cd50d34b2f5dabe1ab6e9c022bd472cff9e7fbd",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-01 15:25:18 UTC"
+      },
+      {
+        "ioc": "f11bc43f99f2d7518365b726f3ce69ccff1d4e2ad6d2e7b3888c004efcacc80a",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-01 15:25:18 UTC"
+      },
+      {
+        "ioc": "7904c7fcdd05bd24c0195cb78cdf9177",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-01 15:25:17 UTC"
+      },
+      {
+        "ioc": "62714e1de1a8211d7302d8638b202e3e04277b45",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-01 15:25:16 UTC"
+      },
+      {
+        "ioc": "cad2fac072f40774247e90a9c3acc96fc85a57abf833e6d214975884060ff864",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-01 15:25:16 UTC"
+      },
       {
         "ioc": "https://joemartinwords.com/",
         "type": "url",
@@ -133,42 +172,6 @@
         "type": "sha1_hash",
         "confidence": 95,
         "first_seen": "2026-07-31 12:11:58 UTC"
-      },
-      {
-        "ioc": "ec0078d806fcb7b0ef538a51ae03217888ce1bd3e96a73beceecc2c12675d77d",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:58 UTC"
-      },
-      {
-        "ioc": "25ce92092fefdcff7acde8689c4cfd8c",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:29 UTC"
-      },
-      {
-        "ioc": "dd36453cdc9becd6b6366bcc0f9eeb706925b3c4",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:29 UTC"
-      },
-      {
-        "ioc": "c50a08b67bbe92e4afae7bb28b33af820001aa384ee82ad1a88e16d623c14e6d",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:28 UTC"
-      },
-      {
-        "ioc": "33949eaabd8ab52d2bc39a1b21ea3dc2",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:27 UTC"
-      },
-      {
-        "ioc": "8714303539a5d6401b37d729c801dfa8020bd6cf",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:27 UTC"
       }
     ]
   }
