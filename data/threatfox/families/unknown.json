@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown",
   "family": "Unknown malware",
-  "generated": "2026-08-02T14:48:08.866557+00:00",
-  "recent_window_ioc_count": 1299,
+  "generated": "2026-08-03T16:04:09.866511+00:00",
+  "recent_window_ioc_count": 672,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown",
   "description": null,
   "alt_names": [],
@@ -11,31 +11,32 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-07-29",
-      "latest": "2026-08-02"
+      "latest": "2026-08-03"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 222,
-      "ip:port": 110,
-      "domain": 85,
-      "url": 45,
+      "sha256_hash": 209,
+      "ip:port": 120,
+      "domain": 86,
+      "url": 47,
       "md5_hash": 38
     },
     "confidence_distribution": {
-      "high": 265,
-      "medium": 235,
+      "high": 278,
+      "medium": 222,
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-29": 327,
+      "2026-07-29": 314,
       "2026-07-30": 54,
       "2026-07-31": 59,
       "2026-08-01": 28,
-      "2026-08-02": 32
+      "2026-08-02": 38,
+      "2026-08-03": 7
     },
     "top_ports": [
       {
         "port": "7443",
-        "count": 18
+        "count": 21
       },
       {
         "port": "3232",
@@ -46,12 +47,12 @@
         "count": 11
       },
       {
-        "port": "80",
-        "count": 8
+        "port": "22",
+        "count": 10
       },
       {
-        "port": "22",
-        "count": 8
+        "port": "80",
+        "count": 9
       },
       {
         "port": "8888",
@@ -76,6 +77,84 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "124.223.53.112:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 08:05:06 UTC"
+      },
+      {
+        "ioc": "92.119.158.20:7443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 07:05:06 UTC"
+      },
+      {
+        "ioc": "blazerpro.pro",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-03 05:45:43 UTC"
+      },
+      {
+        "ioc": "http://31.56.209.153/nz.sh",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-03 05:45:42 UTC"
+      },
+      {
+        "ioc": "207.57.123.251:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 02:05:07 UTC"
+      },
+      {
+        "ioc": "207.57.123.251:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 02:05:06 UTC"
+      },
+      {
+        "ioc": "103.236.69.102:8899",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 02:05:05 UTC"
+      },
+      {
+        "ioc": "https://exovision.cc/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-02 19:53:45 UTC"
+      },
+      {
+        "ioc": "85.137.240.26:17000",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 19:05:09 UTC"
+      },
+      {
+        "ioc": "102.117.169.132:7443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 19:05:07 UTC"
+      },
+      {
+        "ioc": "106.52.255.211:19876",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 17:05:05 UTC"
+      },
+      {
+        "ioc": "5.78.133.89:7443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-02 17:05:05 UTC"
+      },
+      {
+        "ioc": "138.124.67.47:1337",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-02 15:45:38 UTC"
+      },
+      {
         "ioc": "https://macwhisper.org/",
         "type": "url",
         "confidence": 100,
@@ -86,84 +165,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-02 14:43:24 UTC"
-      },
-      {
-        "ioc": "macwhisper.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-02 14:43:23 UTC"
-      },
-      {
-        "ioc": "https://quickfetchy.site/?s=download&user=1066",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-02 14:43:23 UTC"
-      },
-      {
-        "ioc": "https://tue-orange-04.cfd",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-02 14:37:18 UTC"
-      },
-      {
-        "ioc": "207.57.123.251:8888",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 14:05:06 UTC"
-      },
-      {
-        "ioc": "187.145.106.2:7443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 13:05:07 UTC"
-      },
-      {
-        "ioc": "1.117.77.166:3232",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 10:05:07 UTC"
-      },
-      {
-        "ioc": "43.131.251.190:8088",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 10:05:06 UTC"
-      },
-      {
-        "ioc": "198.46.187.30:65528",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-02 09:44:44 UTC"
-      },
-      {
-        "ioc": "178.16.55.237:6443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-02 09:44:17 UTC"
-      },
-      {
-        "ioc": "43.161.234.96:23",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 08:05:05 UTC"
-      },
-      {
-        "ioc": "dimatteophotography.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-02 06:55:08 UTC"
-      },
-      {
-        "ioc": "dmart-ny.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-02 06:55:08 UTC"
-      },
-      {
-        "ioc": "ceou.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-02 06:55:07 UTC"
       }
     ]
   }

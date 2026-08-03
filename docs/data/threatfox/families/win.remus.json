@@ -1,25 +1,25 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-02T14:50:29.242379+00:00",
-  "recent_window_ioc_count": 73,
+  "generated": "2026-08-03T16:09:07.068139+00:00",
+  "recent_window_ioc_count": 39,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 415,
+    "total_iocs": 420,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-08-02"
+      "latest": "2026-08-03"
     },
     "ioc_type_breakdown": {
       "domain": 204,
-      "url": 120,
-      "ip:port": 91
+      "url": 123,
+      "ip:port": 93
     },
     "confidence_distribution": {
-      "high": 408,
+      "high": 413,
       "medium": 6,
       "low": 1
     },
@@ -88,7 +88,8 @@
       "2026-07-30": 2,
       "2026-07-31": 1,
       "2026-08-01": 15,
-      "2026-08-02": 6
+      "2026-08-02": 6,
+      "2026-08-03": 5
     },
     "top_ports": [
       {
@@ -98,6 +99,10 @@
       {
         "port": "4219",
         "count": 4
+      },
+      {
+        "port": "2535",
+        "count": 3
       },
       {
         "port": "9895",
@@ -120,10 +125,6 @@
         "count": 2
       },
       {
-        "port": "2535",
-        "count": 2
-      },
-      {
         "port": "4437",
         "count": 2
       },
@@ -133,6 +134,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://zokrie.click:4536",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-03 14:44:23 UTC"
+      },
+      {
+        "ioc": "185.194.218.82:4930",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 12:43:11 UTC"
+      },
+      {
+        "ioc": "http://voihxd.xyz:7528",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-03 12:39:22 UTC"
+      },
+      {
+        "ioc": "154.12.237.176:2535",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-03 05:45:45 UTC"
+      },
+      {
+        "ioc": "http://uiccvbk.click:8839",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-03 00:29:34 UTC"
+      },
       {
         "ioc": "85.31.60.169:5627",
         "type": "ip:port",
@@ -192,36 +223,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-08-01 20:33:43 UTC"
-      },
-      {
-        "ioc": "72.60.92.150:2535",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-01 15:15:34 UTC"
-      },
-      {
-        "ioc": "http://primzes.biz:8528",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 14:43:23 UTC"
-      },
-      {
-        "ioc": "http://maxhealthinsadvantage.com:9403",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 10:53:23 UTC"
-      },
-      {
-        "ioc": "45.43.143.17:5776",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-01 08:50:33 UTC"
-      },
-      {
-        "ioc": "http://staxta.click:5627",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 07:50:04 UTC"
       }
     ]
   }

@@ -1,0 +1,136 @@
+{
+  "malware_id": "py.creal_stealer",
+  "family": "Creal Stealer",
+  "generated": "2026-08-03T16:09:54.928352+00:00",
+  "recent_window_ioc_count": 33,
+  "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/py.creal_stealer",
+  "description": "Creal is an open-source grabber/credential stealer that was originally made by a GitHub user named Ayhuuu, who even advertised a \"premium\" version on his now-deleted Telegram channel @Crealstealer. To the day of release, it was already not FUD, but its open-source nature made it attractive for threat actors to modify the base malware and even obfuscate it for less detection ratios. The base project came with a compiler, and the general source code the compiler used was PyInstaller for compilation into native formats like exe. For C2, Discord webhooks were utilized, which in later versions got protected with a service called https://stealer.to to make deletion not possible.\r\n\r\nIt Compromised following Data on Execution:\r\n\r\n* Discord Information\r\n* Browser Data\r\n* Crypto Related Data\r\n* Steam\r\n* Riot Games\r\n* Telegram\r\n* System Information\r\n* Tokens/Secrets",
+  "alt_names": [],
+  "associated_groups": [],
+  "stats": {
+    "total_iocs": 84,
+    "date_range": {
+      "earliest": "2026-06-16",
+      "latest": "2026-07-28"
+    },
+    "ioc_type_breakdown": {
+      "sha1_hash": 28,
+      "md5_hash": 28,
+      "sha256_hash": 28
+    },
+    "confidence_distribution": {
+      "high": 84,
+      "medium": 0,
+      "low": 0
+    },
+    "activity_timeline": {
+      "2026-06-16": 3,
+      "2026-06-17": 3,
+      "2026-06-22": 3,
+      "2026-06-25": 6,
+      "2026-06-30": 3,
+      "2026-07-04": 6,
+      "2026-07-09": 3,
+      "2026-07-14": 6,
+      "2026-07-15": 3,
+      "2026-07-23": 6,
+      "2026-07-24": 3,
+      "2026-07-25": 3,
+      "2026-07-27": 6,
+      "2026-07-28": 30
+    },
+    "top_ports": [],
+    "sample_iocs": [
+      {
+        "ioc": "61892efc7de79c7871b88076dc0a7441a2cc058f",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:27:11 UTC"
+      },
+      {
+        "ioc": "c7ffd01310d80e2983ec4027232b5b63",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:27:11 UTC"
+      },
+      {
+        "ioc": "aa4948508c0c98758400c5b167319a5fc45fa2bdec45c352db96719e3b075362",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:27:10 UTC"
+      },
+      {
+        "ioc": "f6996d9e9f587d804b8d87d93226dfb0",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:57 UTC"
+      },
+      {
+        "ioc": "5946a4df3bffa28095c867e6685e254362d8bda7",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:57 UTC"
+      },
+      {
+        "ioc": "624f9d23167fef7006ceed2413a6e491b69abfe918e07918335a90e97ffc4852",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:57 UTC"
+      },
+      {
+        "ioc": "4555ce1f128a9c70a0cabb1cb14afdd4",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:48 UTC"
+      },
+      {
+        "ioc": "2f4f8cd9ea48aa1f5976aeef92a0b9fe895a5565",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:47 UTC"
+      },
+      {
+        "ioc": "d33bc3e0969ef5e0960659f9befe232bdb4f8ab9b6b1e2556f2dcf4f8fc35659",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:47 UTC"
+      },
+      {
+        "ioc": "accc992b82f7332df297b48a2c778301",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:46 UTC"
+      },
+      {
+        "ioc": "fc2d83d15c58843337d2b123bb489be398227f8d",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:46 UTC"
+      },
+      {
+        "ioc": "5e10c356f7a41764011d102094f4823f2dce439c5cd50c68c23e3328de9255dc",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:46 UTC"
+      },
+      {
+        "ioc": "ce7d00292e5012a93207c63daef53c67",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:45 UTC"
+      },
+      {
+        "ioc": "51147a93ee2f3b3ac60c446435c96e72bdd54a1c0fb27cda033537f88c3690a0",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:45 UTC"
+      },
+      {
+        "ioc": "5a94069f639103c7fb2601df2899db37f2b780a7",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-07-28 23:26:45 UTC"
+      }
+    ]
+  }
+}
