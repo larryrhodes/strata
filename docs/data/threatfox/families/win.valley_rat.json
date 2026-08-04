@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-07-31T15:43:11.573331+00:00",
-  "recent_window_ioc_count": 58,
+  "generated": "2026-08-04T16:01:15.278539+00:00",
+  "recent_window_ioc_count": 53,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-14",
-      "latest": "2026-07-31"
+      "earliest": "2026-04-23",
+      "latest": "2026-08-03"
     },
     "ioc_type_breakdown": {
-      "ip:port": 198,
-      "md5_hash": 75,
-      "sha1_hash": 75,
-      "sha256_hash": 75,
+      "ip:port": 166,
+      "md5_hash": 77,
+      "sha1_hash": 77,
+      "sha256_hash": 77,
       "domain": 62,
-      "url": 15
+      "url": 41
     },
     "confidence_distribution": {
       "high": 489,
@@ -29,15 +29,7 @@
       "low": 10
     },
     "activity_timeline": {
-      "2026-04-14": 3,
-      "2026-04-15": 6,
-      "2026-04-16": 1,
-      "2026-04-17": 2,
-      "2026-04-18": 1,
-      "2026-04-20": 6,
-      "2026-04-21": 9,
-      "2026-04-22": 1,
-      "2026-04-23": 13,
+      "2026-04-23": 2,
       "2026-04-24": 3,
       "2026-04-25": 2,
       "2026-04-26": 7,
@@ -111,16 +103,19 @@
       "2026-07-27": 10,
       "2026-07-29": 5,
       "2026-07-30": 2,
-      "2026-07-31": 6
+      "2026-07-31": 6,
+      "2026-08-01": 3,
+      "2026-08-02": 3,
+      "2026-08-03": 34
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 21
+        "count": 14
       },
       {
         "port": "6666",
-        "count": 12
+        "count": 13
       },
       {
         "port": "80",
@@ -128,23 +123,11 @@
       },
       {
         "port": "8888",
-        "count": 10
+        "count": 9
       },
       {
         "port": "8880",
         "count": 8
-      },
-      {
-        "port": "558",
-        "count": 5
-      },
-      {
-        "port": "557",
-        "count": 5
-      },
-      {
-        "port": "1527",
-        "count": 5
       },
       {
         "port": "5677",
@@ -153,98 +136,110 @@
       {
         "port": "5678",
         "count": 3
+      },
+      {
+        "port": "6667",
+        "count": 3
+      },
+      {
+        "port": "9999",
+        "count": 2
+      },
+      {
+        "port": "4453",
+        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "aa1b178ea8f756e209b05880cfac8bbe",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:12:01 UTC"
-      },
-      {
-        "ioc": "6afcf80b5ff082e4bd4ce860d7846a06b99463d9",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:12:00 UTC"
-      },
-      {
-        "ioc": "2da611af6f3cad9f6829a476cfd47b8c4fd54e814024517da3aab2e4a81643b0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:59 UTC"
-      },
-      {
-        "ioc": "8f93aa8aa04ca6c13477542655cdb74b",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:33 UTC"
-      },
-      {
-        "ioc": "58b16700b8a3b8f0db2fb2e14b8c3e835270111518e67239b373a81ffd265b9a",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:32 UTC"
-      },
-      {
-        "ioc": "8a68d580a0bb9f62923bf112a467cb723e9f1b5d",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-31 12:11:32 UTC"
-      },
-      {
-        "ioc": "156.247.40.131:4453",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 22:50:42 UTC"
-      },
-      {
-        "ioc": "156.247.40.131:4452",
-        "type": "ip:port",
+        "ioc": "txpfproxy.vip",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-30 22:40:06 UTC"
+        "first_seen": "2026-08-03 17:22:23 UTC"
       },
       {
-        "ioc": "1e780a793ee1c9cb30f9dca02c91390b",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:26:36 UTC"
-      },
-      {
-        "ioc": "324126d263910469357915525f2637ec1b0a2a6b875399b96c979687fed86e40",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:26:35 UTC"
-      },
-      {
-        "ioc": "1acc53992476aeaf034a4ab1c7852f69863a2fba",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-29 23:26:35 UTC"
-      },
-      {
-        "ioc": "156.247.40.164:889",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-29 09:45:57 UTC"
-      },
-      {
-        "ioc": "143.92.61.7:443",
-        "type": "ip:port",
+        "ioc": "rkdrlc.pw",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-29 07:55:03 UTC"
+        "first_seen": "2026-08-03 17:22:23 UTC"
       },
       {
-        "ioc": "6e795be8d4f34f798012d46530c62843dbb74c7cc64fd3a2db37ff68c85f52b8",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-27 12:46:34 UTC"
+        "ioc": "ljdnxz.cc",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:22:23 UTC"
       },
       {
-        "ioc": "ff77c50195d619514562aee94de25a4a9323d0c7",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-27 12:46:34 UTC"
+        "ioc": "co777.club",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:22:23 UTC"
+      },
+      {
+        "ioc": "auk218.club",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:22:23 UTC"
+      },
+      {
+        "ioc": "akyv188.club",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:22:23 UTC"
+      },
+      {
+        "ioc": "https://yfghrey-1433552157.cos.ap-hongkong.myqcloud.com/20260729074327.zip",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:30 UTC"
+      },
+      {
+        "ioc": "https://withered-lake-8596.krzakanna172.workers.dev/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:30 UTC"
+      },
+      {
+        "ioc": "https://twilight-shadow-df0c.piecestrengthen3327.workers.dev/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:30 UTC"
+      },
+      {
+        "ioc": "https://tdfhdser-1433552157.cos.ap-hongkong.myqcloud.com/20260729213603.zip",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:30 UTC"
+      },
+      {
+        "ioc": "https://sweet-thunder-52f5.yenthi893197.workers.dev/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:29 UTC"
+      },
+      {
+        "ioc": "https://still-block-4945.kubukushi4609-fee.workers.dev/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:29 UTC"
+      },
+      {
+        "ioc": "https://royal-breeze-dc21.piecestrengthen3327.workers.dev/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:29 UTC"
+      },
+      {
+        "ioc": "https://restless-wood-acdc.kubataffeltie470.workers.dev/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:29 UTC"
+      },
+      {
+        "ioc": "https://mt-link.qdhuzf.cc/cl/rlLXIXSwv8IKS9aWzYqx.GteIY.dfPLTRPY013hMjghjIqNPZYu0.3GRfdJuvkQ6tE_bREwYxiJYCce5tvEnoE3KBUTwvCDTiu2bDHWXZs0x1W9uo0iVh.1QNGRtX1FCHw7RAGf7rgebqPkGAHTMO9PNVObFPz6ZweWWMF.A8WcBWExrFhKajHLSIXt2Nztt0U74bljpjJsEHOma6bAX63E8oWmZHpihcBw2sQ~~--2IJbf9QXryunJZJU--8Oh.0r5JKH3jZkGT7hZ3yQ~~",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 17:21:29 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-08-03T16:09:23.285603+00:00",
-  "recent_window_ioc_count": 37,
+  "generated": "2026-08-04T16:02:41.320825+00:00",
+  "recent_window_ioc_count": 36,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 220,
+    "total_iocs": 216,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-08-03"
+      "latest": "2026-08-04"
     },
     "ioc_type_breakdown": {
-      "url": 133,
-      "domain": 67,
+      "url": 130,
+      "domain": 66,
       "sha256_hash": 11,
       "ip:port": 9
     },
     "confidence_distribution": {
-      "high": 218,
+      "high": 214,
       "medium": 2,
       "low": 0
     },
@@ -45,8 +45,6 @@
       "2026-06-13": 1,
       "2026-06-22": 2,
       "2026-06-23": 1,
-      "2026-07-03": 5,
-      "2026-07-04": 4,
       "2026-07-06": 3,
       "2026-07-07": 11,
       "2026-07-08": 4,
@@ -68,7 +66,8 @@
       "2026-07-29": 9,
       "2026-07-30": 12,
       "2026-07-31": 6,
-      "2026-08-03": 4
+      "2026-08-03": 8,
+      "2026-08-04": 1
     },
     "top_ports": [
       {
@@ -81,6 +80,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://glentraverse.com/kos",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-04 05:21:11 UTC"
+      },
+      {
+        "ioc": "https://slatebeacon.top/legacy/throttle-theme.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 19:54:23 UTC"
+      },
+      {
+        "ioc": "slatebeacon.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-03 19:54:22 UTC"
+      },
+      {
+        "ioc": "https://slatebeacon.top/legacy/version-validator.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 19:54:21 UTC"
+      },
+      {
+        "ioc": "https://slatebeacon.top/legacy/identity-build",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-03 19:54:21 UTC"
+      },
       {
         "ioc": "https://ivyprologue.top/legacy/throttle-theme.js",
         "type": "url",
@@ -140,36 +169,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-31 09:15:24 UTC"
-      },
-      {
-        "ioc": "https://amberalcove.top/realm/oauth-pipeline.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-30 15:43:42 UTC"
-      },
-      {
-        "ioc": "amberalcove.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-30 15:43:42 UTC"
-      },
-      {
-        "ioc": "https://amberalcove.top/realm/health-service",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-30 15:43:41 UTC"
-      },
-      {
-        "ioc": "https://namastheandhra.com/cloudflare",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-30 15:43:41 UTC"
-      },
-      {
-        "ioc": "https://chestnutstanza.top/realm/oauth-pipeline.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-30 15:43:40 UTC"
       }
     ]
   }

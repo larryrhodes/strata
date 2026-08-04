@@ -1,25 +1,25 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-03T16:09:07.068139+00:00",
-  "recent_window_ioc_count": 39,
+  "generated": "2026-08-04T16:02:11.683525+00:00",
+  "recent_window_ioc_count": 41,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 420,
+    "total_iocs": 422,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-08-03"
+      "latest": "2026-08-04"
     },
     "ioc_type_breakdown": {
-      "domain": 204,
+      "domain": 205,
       "url": 123,
-      "ip:port": 93
+      "ip:port": 94
     },
     "confidence_distribution": {
-      "high": 413,
+      "high": 415,
       "medium": 6,
       "low": 1
     },
@@ -89,7 +89,8 @@
       "2026-07-31": 1,
       "2026-08-01": 15,
       "2026-08-02": 6,
-      "2026-08-03": 5
+      "2026-08-03": 5,
+      "2026-08-04": 2
     },
     "top_ports": [
       {
@@ -134,6 +135,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "pazona.shop",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-04 06:12:12 UTC"
+      },
+      {
+        "ioc": "109.104.155.94:5326",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-04 05:21:08 UTC"
+      },
       {
         "ioc": "http://zokrie.click:4536",
         "type": "url",
@@ -211,18 +224,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-08-01 20:49:22 UTC"
-      },
-      {
-        "ioc": "http://puresthomes.com:5282",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 20:49:22 UTC"
-      },
-      {
-        "ioc": "http://toeday.click:5326",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 20:33:43 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-07-22T15:24:12.232287+00:00",
-  "recent_window_ioc_count": 19,
+  "generated": "2026-08-04T16:02:23.238238+00:00",
+  "recent_window_ioc_count": 39,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,48 +18,21 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-04-15",
-      "latest": "2026-07-22"
+      "earliest": "2026-06-10",
+      "latest": "2026-08-04"
     },
     "ioc_type_breakdown": {
-      "ip:port": 469,
-      "domain": 31
+      "ip:port": 433,
+      "domain": 48,
+      "sha256_hash": 19
     },
     "confidence_distribution": {
-      "high": 499,
-      "medium": 1,
+      "high": 500,
+      "medium": 0,
       "low": 0
     },
     "activity_timeline": {
-      "2025-04-15": 1,
-      "2025-10-14": 1,
-      "2025-11-09": 1,
-      "2025-11-23": 1,
-      "2025-11-28": 1,
-      "2026-03-10": 1,
-      "2026-03-14": 1,
-      "2026-03-19": 1,
-      "2026-05-01": 7,
-      "2026-05-02": 6,
-      "2026-05-05": 1,
-      "2026-05-06": 2,
-      "2026-05-08": 4,
-      "2026-05-10": 1,
-      "2026-05-11": 1,
-      "2026-05-12": 1,
-      "2026-05-16": 1,
-      "2026-05-25": 2,
-      "2026-05-26": 2,
-      "2026-05-28": 1,
-      "2026-05-29": 1,
-      "2026-05-31": 1,
-      "2026-06-02": 3,
-      "2026-06-04": 1,
-      "2026-06-06": 1,
-      "2026-06-07": 1,
-      "2026-06-08": 3,
-      "2026-06-09": 8,
-      "2026-06-10": 13,
+      "2026-06-10": 2,
       "2026-06-11": 8,
       "2026-06-12": 16,
       "2026-06-13": 21,
@@ -85,11 +58,11 @@
       "2026-07-03": 9,
       "2026-07-04": 12,
       "2026-07-05": 5,
-      "2026-07-06": 9,
-      "2026-07-07": 16,
+      "2026-07-06": 11,
+      "2026-07-07": 32,
       "2026-07-08": 16,
       "2026-07-09": 21,
-      "2026-07-10": 18,
+      "2026-07-10": 17,
       "2026-07-11": 9,
       "2026-07-12": 6,
       "2026-07-13": 19,
@@ -100,24 +73,34 @@
       "2026-07-19": 2,
       "2026-07-20": 2,
       "2026-07-21": 2,
-      "2026-07-22": 1
+      "2026-07-22": 1,
+      "2026-07-23": 1,
+      "2026-07-24": 1,
+      "2026-07-25": 2,
+      "2026-07-26": 4,
+      "2026-07-27": 2,
+      "2026-07-28": 1,
+      "2026-07-30": 3,
+      "2026-08-02": 19,
+      "2026-08-03": 1,
+      "2026-08-04": 16
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 34
-      },
-      {
-        "port": "14644",
-        "count": 16
+        "count": 35
       },
       {
         "port": "14641",
-        "count": 15
+        "count": 14
       },
       {
         "port": "14646",
-        "count": 15
+        "count": 14
+      },
+      {
+        "port": "14644",
+        "count": 14
       },
       {
         "port": "14645",
@@ -140,100 +123,100 @@
         "count": 9
       },
       {
-        "port": "443",
-        "count": 9
+        "port": "14647",
+        "count": 8
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "172.111.163.172:65070",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-22 12:25:04 UTC"
-      },
-      {
-        "ioc": "107.174.33.15:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-21 22:25:08 UTC"
-      },
-      {
-        "ioc": "46.151.182.127:8080",
+        "ioc": "45.148.18.38:58268",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-21 07:05:54 UTC"
+        "first_seen": "2026-08-04 13:03:33 UTC"
       },
       {
-        "ioc": "energy4665.duckdns.org",
+        "ioc": "103.67.163.114:4688",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-04 13:01:27 UTC"
+      },
+      {
+        "ioc": "officefagbo.duckdns.org",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-07-20 14:25:42 UTC"
+        "first_seen": "2026-08-04 12:55:33 UTC"
       },
       {
-        "ioc": "107.173.47.142:80",
-        "type": "ip:port",
+        "ioc": "icingwater.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-04 12:55:32 UTC"
+      },
+      {
+        "ioc": "catground1957.casacam.net",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-20 10:45:03 UTC"
+        "first_seen": "2026-08-04 09:41:33 UTC"
       },
       {
-        "ioc": "23.94.197.120:2404",
-        "type": "ip:port",
-        "confidence": 77,
-        "first_seen": "2026-07-19 07:08:40 UTC"
-      },
-      {
-        "ioc": "62.60.226.68:24044",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-19 04:20:06 UTC"
-      },
-      {
-        "ioc": "185.149.24.6:2405",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 10:45:04 UTC"
-      },
-      {
-        "ioc": "185.236.203.99:58798",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-07-17 07:55:03 UTC"
-      },
-      {
-        "ioc": "102.220.160.105:2404",
+        "ioc": "209.54.103.181:7788",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-16 14:20:56 UTC"
+        "first_seen": "2026-08-04 09:41:03 UTC"
       },
       {
-        "ioc": "204.44.93.75:14642",
+        "ioc": "23.95.103.253:2404",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-16 09:44:56 UTC"
+        "first_seen": "2026-08-04 09:20:42 UTC"
       },
       {
-        "ioc": "204.44.93.75:14641",
-        "type": "ip:port",
+        "ioc": "www.jahstandclassprojectbackup3.com",
+        "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-07-16 09:44:56 UTC"
+        "first_seen": "2026-08-04 09:15:37 UTC"
       },
       {
-        "ioc": "103.186.64.138:2404",
-        "type": "ip:port",
+        "ioc": "www.jahstandclassprojectbackup2.com",
+        "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-07-16 07:16:13 UTC"
+        "first_seen": "2026-08-04 09:15:36 UTC"
       },
       {
-        "ioc": "64.89.161.94:2404",
-        "type": "ip:port",
+        "ioc": "www.jahstandclassprojectbackup1.com",
+        "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-07-16 07:11:05 UTC"
+        "first_seen": "2026-08-04 09:15:36 UTC"
       },
       {
-        "ioc": "204.44.93.75:14649",
-        "type": "ip:port",
+        "ioc": "www.jahstandclassprojectbackup.com",
+        "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-07-15 19:44:38 UTC"
+        "first_seen": "2026-08-04 09:15:36 UTC"
+      },
+      {
+        "ioc": "www.jahstandclassproject.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-04 09:15:36 UTC"
+      },
+      {
+        "ioc": "www.ikukuomaprojectbackup2.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-04 09:15:35 UTC"
+      },
+      {
+        "ioc": "www.ikukuomaprojectbackup1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-04 09:15:35 UTC"
+      },
+      {
+        "ioc": "www.ikukuomaprojectbackup.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-04 09:15:35 UTC"
       }
     ]
   }
