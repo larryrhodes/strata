@@ -1,25 +1,25 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-04T16:02:11.683525+00:00",
+  "generated": "2026-08-05T15:47:33.712006+00:00",
   "recent_window_ioc_count": 41,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 422,
+    "total_iocs": 429,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-08-04"
+      "latest": "2026-08-05"
     },
     "ioc_type_breakdown": {
       "domain": 205,
-      "url": 123,
-      "ip:port": 94
+      "url": 127,
+      "ip:port": 97
     },
     "confidence_distribution": {
-      "high": 415,
+      "high": 422,
       "medium": 6,
       "low": 1
     },
@@ -90,7 +90,8 @@
       "2026-08-01": 15,
       "2026-08-02": 6,
       "2026-08-03": 5,
-      "2026-08-04": 2
+      "2026-08-04": 2,
+      "2026-08-05": 7
     },
     "top_ports": [
       {
@@ -100,6 +101,10 @@
       {
         "port": "4219",
         "count": 4
+      },
+      {
+        "port": "2930",
+        "count": 3
       },
       {
         "port": "2535",
@@ -122,10 +127,6 @@
         "count": 3
       },
       {
-        "port": "2930",
-        "count": 2
-      },
-      {
         "port": "4437",
         "count": 2
       },
@@ -135,6 +136,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://resghjs.click:7647",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-05 15:30:07 UTC"
+      },
+      {
+        "ioc": "http://dafkov.shop:6843",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-05 15:14:34 UTC"
+      },
+      {
+        "ioc": "http://citife.top:2930",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-05 15:03:53 UTC"
+      },
+      {
+        "ioc": "195.222.53.130:2930",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 13:40:56 UTC"
+      },
+      {
+        "ioc": "142.132.211.95:4938",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 13:27:18 UTC"
+      },
+      {
+        "ioc": "209.145.55.206:8839",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:38:04 UTC"
+      },
+      {
+        "ioc": "http://hooiuse.click:4938",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-05 01:17:22 UTC"
+      },
       {
         "ioc": "pazona.shop",
         "type": "domain",
@@ -182,48 +225,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-02 14:37:15 UTC"
-      },
-      {
-        "ioc": "http://topxgax.click:4930",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-02 13:16:32 UTC"
-      },
-      {
-        "ioc": "84.247.129.0:2930",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 09:29:59 UTC"
-      },
-      {
-        "ioc": "104.168.123.242:3276",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 09:29:59 UTC"
-      },
-      {
-        "ioc": "200.9.154.45:8539",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 06:54:46 UTC"
-      },
-      {
-        "ioc": "http://sxarth.click:3276",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-02 03:57:04 UTC"
-      },
-      {
-        "ioc": "http://anglecv.surf:7688",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 23:21:23 UTC"
-      },
-      {
-        "ioc": "http://riserma.biz:8768",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-01 20:49:22 UTC"
       }
     ]
   }

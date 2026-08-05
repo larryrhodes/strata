@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-04T16:02:23.238238+00:00",
-  "recent_window_ioc_count": 39,
+  "generated": "2026-08-05T15:47:03.547772+00:00",
+  "recent_window_ioc_count": 43,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,8 +18,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-10",
-      "latest": "2026-08-04"
+      "earliest": "2026-06-11",
+      "latest": "2026-08-05"
     },
     "ioc_type_breakdown": {
       "ip:port": 433,
@@ -27,13 +27,12 @@
       "sha256_hash": 19
     },
     "confidence_distribution": {
-      "high": 500,
-      "medium": 0,
+      "high": 499,
+      "medium": 1,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-10": 2,
-      "2026-06-11": 8,
+      "2026-06-11": 6,
       "2026-06-12": 16,
       "2026-06-13": 21,
       "2026-06-14": 8,
@@ -83,12 +82,13 @@
       "2026-07-30": 3,
       "2026-08-02": 19,
       "2026-08-03": 1,
-      "2026-08-04": 16
+      "2026-08-04": 17,
+      "2026-08-05": 3
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 35
+        "count": 37
       },
       {
         "port": "14641",
@@ -128,6 +128,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "91.92.42.221:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-05 13:06:06 UTC"
+      },
+      {
+        "ioc": "204.44.69.223:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 12:40:05 UTC"
+      },
+      {
+        "ioc": "196.251.121.50:3996",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-08-05 08:04:42 UTC"
+      },
+      {
+        "ioc": "172.245.209.149:2414",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-04 21:45:10 UTC"
+      },
       {
         "ioc": "45.148.18.38:58268",
         "type": "ip:port",
@@ -193,30 +217,6 @@
         "type": "domain",
         "confidence": 75,
         "first_seen": "2026-08-04 09:15:36 UTC"
-      },
-      {
-        "ioc": "www.jahstandclassproject.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-04 09:15:36 UTC"
-      },
-      {
-        "ioc": "www.ikukuomaprojectbackup2.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-04 09:15:35 UTC"
-      },
-      {
-        "ioc": "www.ikukuomaprojectbackup1.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-04 09:15:35 UTC"
-      },
-      {
-        "ioc": "www.ikukuomaprojectbackup.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-04 09:15:35 UTC"
       }
     ]
   }

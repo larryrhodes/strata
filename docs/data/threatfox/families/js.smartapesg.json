@@ -1,8 +1,8 @@
 {
   "malware_id": "js.smartapesg",
   "family": "SmartApeSG",
-  "generated": "2026-08-04T16:02:41.320825+00:00",
-  "recent_window_ioc_count": 36,
+  "generated": "2026-08-05T15:48:17.354736+00:00",
+  "recent_window_ioc_count": 33,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
   "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
   "alt_names": [
@@ -11,19 +11,19 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 216,
+    "total_iocs": 220,
     "date_range": {
       "earliest": "2026-01-23",
-      "latest": "2026-08-04"
+      "latest": "2026-08-05"
     },
     "ioc_type_breakdown": {
-      "url": 130,
-      "domain": 66,
+      "url": 131,
+      "domain": 68,
       "sha256_hash": 11,
-      "ip:port": 9
+      "ip:port": 10
     },
     "confidence_distribution": {
-      "high": 214,
+      "high": 218,
       "medium": 2,
       "low": 0
     },
@@ -67,12 +67,13 @@
       "2026-07-30": 12,
       "2026-07-31": 6,
       "2026-08-03": 8,
-      "2026-08-04": 1
+      "2026-08-04": 1,
+      "2026-08-05": 4
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 8
+        "count": 9
       },
       {
         "port": "80",
@@ -80,6 +81,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "hornbeamcairn.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-05 11:43:40 UTC"
+      },
+      {
+        "ioc": "https://hornbeamcairn.top/endpoint/handler-stylesheet.js",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-05 11:43:39 UTC"
+      },
+      {
+        "ioc": "willowgazette.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-05 09:46:13 UTC"
+      },
+      {
+        "ioc": "178.156.164.194:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 09:46:12 UTC"
+      },
       {
         "ioc": "http://glentraverse.com/kos",
         "type": "url",
@@ -145,30 +170,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-07-31 10:45:51 UTC"
-      },
-      {
-        "ioc": "https://asterismchisel.top/user/version-deploy.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-31 10:45:49 UTC"
-      },
-      {
-        "ioc": "pewtercanto.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-31 09:15:25 UTC"
-      },
-      {
-        "ioc": "https://pewtercanto.top/user/acl-dom",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-31 09:15:25 UTC"
-      },
-      {
-        "ioc": "https://pewtercanto.top/user/version-deploy.js",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-31 09:15:24 UTC"
       }
     ]
   }
