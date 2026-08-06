@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-07-28T15:48:47.969665+00:00",
-  "recent_window_ioc_count": 42,
+  "generated": "2026-08-06T16:04:47.579700+00:00",
+  "recent_window_ioc_count": 34,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -12,28 +12,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-28",
-      "latest": "2026-07-27"
+      "earliest": "2026-06-03",
+      "latest": "2026-08-06"
     },
     "ioc_type_breakdown": {
-      "ip:port": 311,
-      "domain": 93,
-      "sha256_hash": 51,
-      "url": 45
+      "ip:port": 320,
+      "domain": 95,
+      "sha256_hash": 50,
+      "url": 35
     },
     "confidence_distribution": {
-      "high": 499,
-      "medium": 1,
+      "high": 498,
+      "medium": 2,
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-28": 6,
-      "2026-05-29": 1,
-      "2026-05-30": 5,
-      "2026-05-31": 11,
-      "2026-06-01": 14,
-      "2026-06-02": 1,
-      "2026-06-03": 6,
+      "2026-06-03": 3,
       "2026-06-04": 22,
       "2026-06-05": 37,
       "2026-06-06": 14,
@@ -78,20 +72,32 @@
       "2026-07-23": 29,
       "2026-07-25": 1,
       "2026-07-26": 1,
-      "2026-07-27": 1
+      "2026-07-27": 1,
+      "2026-07-29": 7,
+      "2026-07-30": 1,
+      "2026-07-31": 4,
+      "2026-08-02": 4,
+      "2026-08-03": 1,
+      "2026-08-04": 10,
+      "2026-08-05": 9,
+      "2026-08-06": 5
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 77
+        "count": 74
       },
       {
         "port": "25565",
-        "count": 25
+        "count": 26
+      },
+      {
+        "port": "8080",
+        "count": 15
       },
       {
         "port": "2375",
-        "count": 15
+        "count": 13
       },
       {
         "port": "1337",
@@ -99,22 +105,18 @@
       },
       {
         "port": "123",
-        "count": 10
+        "count": 12
       },
       {
         "port": "23",
-        "count": 7
+        "count": 9
       },
       {
         "port": "4569",
         "count": 6
       },
       {
-        "port": "39419",
-        "count": 6
-      },
-      {
-        "port": "8080",
+        "port": "443",
         "count": 5
       },
       {
@@ -124,94 +126,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "http://47.239.127.71/lib/xxx",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-07-27 05:59:25 UTC"
-      },
-      {
-        "ioc": "reavercncv3.duckdns.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-26 17:01:42 UTC"
-      },
-      {
-        "ioc": "194.48.251.116:8080",
+        "ioc": "80.225.83.93:4444",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-25 11:02:36 UTC"
+        "first_seen": "2026-08-06 09:46:27 UTC"
       },
       {
-        "ioc": "http://8.213.214.55/nerv.mips",
-        "type": "url",
+        "ioc": "110.42.64.35:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-06 07:15:57 UTC"
+      },
+      {
+        "ioc": "216.9.226.211:123",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-06 07:02:54 UTC"
+      },
+      {
+        "ioc": "216.9.226.211:23",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-06 07:02:54 UTC"
+      },
+      {
+        "ioc": "156.246.90.214:23",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-06 07:02:52 UTC"
+      },
+      {
+        "ioc": "45.123.191.90:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:55:37 UTC"
+      },
+      {
+        "ioc": "176.65.148.145:2",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:38:01 UTC"
+      },
+      {
+        "ioc": "178.83.206.213:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:37:59 UTC"
+      },
+      {
+        "ioc": "poop.garden",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:37:59 UTC"
+      },
+      {
+        "ioc": "155.103.69.225:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:37:58 UTC"
+      },
+      {
+        "ioc": "155.103.69.225:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:37:58 UTC"
+      },
+      {
+        "ioc": "155.103.69.225:123",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:37:57 UTC"
+      },
+      {
+        "ioc": "155.103.69.225:25565",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-05 06:37:56 UTC"
+      },
+      {
+        "ioc": "45.38.249.148:1004",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-08-05 06:37:55 UTC"
+      },
+      {
+        "ioc": "45.135.194.70:80",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-07-23 14:15:06 UTC"
-      },
-      {
-        "ioc": "http://110.37.76.236:59516/Mozi.m",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-07-23 14:14:53 UTC"
-      },
-      {
-        "ioc": "http://196.251.121.142/mp",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-07-23 14:13:57 UTC"
-      },
-      {
-        "ioc": "3ba46a4b246db63935fc44fc1f02e3f00dc833574f14733c0012fab9f5896510",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:46 UTC"
-      },
-      {
-        "ioc": "06ffe84018080c60e67093332982be429619328bee027e104bc38a276e852c0b",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:06 UTC"
-      },
-      {
-        "ioc": "b5cf68c7cb5bb2d21d60bf6654926f61566d95bfd7c9f9e182d032f1da5b4605",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:06 UTC"
-      },
-      {
-        "ioc": "9a9dda2b8029a3f249ea64873416b3be0dab8a5de4a4bb996b50ddc20c8623f6",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:05 UTC"
-      },
-      {
-        "ioc": "c18aebf9c041c7f430259e590e4bfd921ad5d4fd641bad51132f7b64823b36f9",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:05 UTC"
-      },
-      {
-        "ioc": "a479ab28ecf91731d98fdd22d105c33368fa9611fccd03804c062235ce5db235",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:04 UTC"
-      },
-      {
-        "ioc": "006bb7dbad34a262eb724d3c7062dd3513c98df19b681146931dc0e952035812",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:04 UTC"
-      },
-      {
-        "ioc": "2a1f933e02eb8ffdc3bac67927935dfc04fb27c2a6b2922d38920b39a8bcea5a",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:03 UTC"
-      },
-      {
-        "ioc": "3c79d4fb9210a9fe2d202cb35eea82f4b0af46f8f34418e44bf10f2b65b862d3",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-07-23 14:13:02 UTC"
+        "first_seen": "2026-08-04 11:57:27 UTC"
       }
     ]
   }

@@ -1,25 +1,25 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-05T15:47:33.712006+00:00",
-  "recent_window_ioc_count": 41,
+  "generated": "2026-08-06T16:04:31.586705+00:00",
+  "recent_window_ioc_count": 38,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 429,
+    "total_iocs": 431,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-08-05"
+      "latest": "2026-08-06"
     },
     "ioc_type_breakdown": {
       "domain": 205,
-      "url": 127,
-      "ip:port": 97
+      "url": 128,
+      "ip:port": 98
     },
     "confidence_distribution": {
-      "high": 422,
+      "high": 424,
       "medium": 6,
       "low": 1
     },
@@ -91,7 +91,8 @@
       "2026-08-02": 6,
       "2026-08-03": 5,
       "2026-08-04": 2,
-      "2026-08-05": 7
+      "2026-08-05": 8,
+      "2026-08-06": 1
     },
     "top_ports": [
       {
@@ -136,6 +137,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "159.65.136.5:7647",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-06 05:10:19 UTC"
+      },
+      {
+        "ioc": "http://opeaadn.click:2993",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-05 17:36:04 UTC"
+      },
       {
         "ioc": "http://resghjs.click:7647",
         "type": "url",
@@ -213,18 +226,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-03 05:45:45 UTC"
-      },
-      {
-        "ioc": "http://uiccvbk.click:8839",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-03 00:29:34 UTC"
-      },
-      {
-        "ioc": "85.31.60.169:5627",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-02 14:37:15 UTC"
       }
     ]
   }

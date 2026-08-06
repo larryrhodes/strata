@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-05T15:47:03.547772+00:00",
-  "recent_window_ioc_count": 43,
+  "generated": "2026-08-06T16:02:38.531239+00:00",
+  "recent_window_ioc_count": 58,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,8 +18,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-11",
-      "latest": "2026-08-05"
+      "earliest": "2026-06-12",
+      "latest": "2026-08-06"
     },
     "ioc_type_breakdown": {
       "ip:port": 433,
@@ -27,13 +27,12 @@
       "sha256_hash": 19
     },
     "confidence_distribution": {
-      "high": 499,
-      "medium": 1,
+      "high": 498,
+      "medium": 2,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-11": 6,
-      "2026-06-12": 16,
+      "2026-06-12": 9,
       "2026-06-13": 21,
       "2026-06-14": 8,
       "2026-06-15": 8,
@@ -57,7 +56,7 @@
       "2026-07-03": 9,
       "2026-07-04": 12,
       "2026-07-05": 5,
-      "2026-07-06": 11,
+      "2026-07-06": 9,
       "2026-07-07": 32,
       "2026-07-08": 16,
       "2026-07-09": 21,
@@ -83,12 +82,13 @@
       "2026-08-02": 19,
       "2026-08-03": 1,
       "2026-08-04": 17,
-      "2026-08-05": 3
+      "2026-08-05": 3,
+      "2026-08-06": 15
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 37
+        "count": 39
       },
       {
         "port": "14641",
@@ -108,15 +108,15 @@
       },
       {
         "port": "14642",
+        "count": 11
+      },
+      {
+        "port": "14649",
         "count": 10
       },
       {
         "port": "14643",
         "count": 10
-      },
-      {
-        "port": "14649",
-        "count": 9
       },
       {
         "port": "14648",
@@ -129,94 +129,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "91.92.42.221:2404",
+        "ioc": "172.111.163.163:65070",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-05 13:06:06 UTC"
+        "first_seen": "2026-08-06 14:55:03 UTC"
       },
       {
-        "ioc": "204.44.69.223:2404",
+        "ioc": "173.231.188.244:21590",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-05 12:40:05 UTC"
+        "confidence": 75,
+        "first_seen": "2026-08-06 14:53:37 UTC"
       },
       {
-        "ioc": "196.251.121.50:3996",
+        "ioc": "172.94.53.34:19700",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-06 14:52:04 UTC"
+      },
+      {
+        "ioc": "195.186.4.217:2404",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-08-05 08:04:42 UTC"
+        "first_seen": "2026-08-06 14:50:15 UTC"
       },
       {
-        "ioc": "172.245.209.149:2414",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-04 21:45:10 UTC"
-      },
-      {
-        "ioc": "45.148.18.38:58268",
+        "ioc": "173.224.219.231:443",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 13:03:33 UTC"
+        "first_seen": "2026-08-06 14:40:35 UTC"
       },
       {
-        "ioc": "103.67.163.114:4688",
+        "ioc": "108.181.253.47:443",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 13:01:27 UTC"
+        "first_seen": "2026-08-06 14:40:34 UTC"
       },
       {
-        "ioc": "officefagbo.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-04 12:55:33 UTC"
-      },
-      {
-        "ioc": "icingwater.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-04 12:55:32 UTC"
-      },
-      {
-        "ioc": "catground1957.casacam.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-04 09:41:33 UTC"
-      },
-      {
-        "ioc": "209.54.103.181:7788",
+        "ioc": "46.151.182.135:8080",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 09:41:03 UTC"
+        "first_seen": "2026-08-06 11:15:51 UTC"
       },
       {
-        "ioc": "23.95.103.253:2404",
+        "ioc": "93.152.221.158:2404",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 09:20:42 UTC"
+        "first_seen": "2026-08-06 09:03:46 UTC"
       },
       {
-        "ioc": "www.jahstandclassprojectbackup3.com",
-        "type": "domain",
+        "ioc": "217.60.195.118:2404",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 09:15:37 UTC"
+        "first_seen": "2026-08-06 09:02:08 UTC"
       },
       {
-        "ioc": "www.jahstandclassprojectbackup2.com",
-        "type": "domain",
+        "ioc": "161.248.179.98:2404",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 09:15:36 UTC"
+        "first_seen": "2026-08-06 08:45:44 UTC"
       },
       {
-        "ioc": "www.jahstandclassprojectbackup1.com",
+        "ioc": "donta.duckdns.org",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-08-04 09:15:36 UTC"
+        "first_seen": "2026-08-06 06:35:37 UTC"
       },
       {
-        "ioc": "www.jahstandclassprojectbackup.com",
-        "type": "domain",
+        "ioc": "103.83.86.143:14642",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-04 09:15:36 UTC"
+        "first_seen": "2026-08-06 06:26:59 UTC"
+      },
+      {
+        "ioc": "155.103.69.20:14649",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-06 06:23:10 UTC"
+      },
+      {
+        "ioc": "194.59.31.174:5050",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-06 06:15:47 UTC"
+      },
+      {
+        "ioc": "195.186.4.217:2466",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-06 06:12:52 UTC"
       }
     ]
   }
