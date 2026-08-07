@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-08-06T16:00:06.818148+00:00",
-  "recent_window_ioc_count": 238,
+  "generated": "2026-08-07T14:33:55.530496+00:00",
+  "recent_window_ioc_count": 231,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,16 +10,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-26",
-      "latest": "2026-08-06"
+      "earliest": "2026-04-15",
+      "latest": "2026-08-07"
     },
     "ioc_type_breakdown": {
-      "domain": 216,
-      "url": 150,
-      "sha256_hash": 36,
-      "md5_hash": 34,
-      "sha1_hash": 34,
-      "ip:port": 30
+      "domain": 221,
+      "url": 162,
+      "ip:port": 40,
+      "sha256_hash": 27,
+      "md5_hash": 25,
+      "sha1_hash": 25
     },
     "confidence_distribution": {
       "high": 500,
@@ -27,11 +27,17 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-26": 1,
+      "2026-04-15": 3,
+      "2026-04-16": 4,
+      "2026-04-17": 2,
+      "2026-04-22": 2,
+      "2026-04-24": 2,
+      "2026-04-26": 2,
       "2026-05-01": 2,
-      "2026-05-10": 13,
+      "2026-05-10": 14,
       "2026-05-11": 7,
       "2026-05-12": 3,
+      "2026-05-14": 1,
       "2026-05-15": 2,
       "2026-05-17": 2,
       "2026-05-23": 70,
@@ -47,11 +53,10 @@
       "2026-06-25": 1,
       "2026-06-26": 2,
       "2026-07-10": 2,
-      "2026-07-17": 4,
+      "2026-07-17": 3,
       "2026-07-18": 1,
       "2026-07-19": 29,
-      "2026-07-23": 8,
-      "2026-07-24": 39,
+      "2026-07-24": 8,
       "2026-07-25": 20,
       "2026-07-26": 4,
       "2026-07-27": 25,
@@ -64,104 +69,105 @@
       "2026-08-03": 123,
       "2026-08-04": 38,
       "2026-08-05": 20,
-      "2026-08-06": 6
+      "2026-08-06": 8,
+      "2026-08-07": 22
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 30
+        "count": 40
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "https://web.bayototo.org/",
+        "ioc": "https://blh.bayototo.org/",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-06 15:35:05 UTC"
+        "first_seen": "2026-08-07 13:35:05 UTC"
       },
       {
-        "ioc": "web.bayototo.org",
+        "ioc": "blh.bayototo.org",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-06 15:35:04 UTC"
+        "first_seen": "2026-08-07 13:35:04 UTC"
       },
       {
-        "ioc": "https://www.bayototo.org/",
+        "ioc": "https://dfd.bayototo.org/",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-06 14:55:05 UTC"
+        "first_seen": "2026-08-07 09:05:05 UTC"
       },
       {
-        "ioc": "https://ign.bayototo.org/",
+        "ioc": "dfd.bayototo.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-07 09:05:04 UTC"
+      },
+      {
+        "ioc": "167.233.174.147:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:23 UTC"
+      },
+      {
+        "ioc": "116.202.186.230:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:23 UTC"
+      },
+      {
+        "ioc": "167.233.168.67:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:23 UTC"
+      },
+      {
+        "ioc": "167.233.217.108:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:23 UTC"
+      },
+      {
+        "ioc": "62.238.60.47:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:23 UTC"
+      },
+      {
+        "ioc": "65.109.127.15:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:23 UTC"
+      },
+      {
+        "ioc": "167.233.125.232:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:22 UTC"
+      },
+      {
+        "ioc": "178.105.30.143:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:22 UTC"
+      },
+      {
+        "ioc": "167.233.160.192:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:22 UTC"
+      },
+      {
+        "ioc": "65.109.72.175:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 08:03:22 UTC"
+      },
+      {
+        "ioc": "https://167.233.174.147/",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-06 11:55:05 UTC"
-      },
-      {
-        "ioc": "ign.bayototo.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-06 11:55:04 UTC"
-      },
-      {
-        "ioc": "pik.tb88cuka.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-06 10:40:09 UTC"
-      },
-      {
-        "ioc": "https://xox.y8slot.net/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-05 22:50:05 UTC"
-      },
-      {
-        "ioc": "xox.y8slot.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-05 22:50:04 UTC"
-      },
-      {
-        "ioc": "https://spc.y8slot.net/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-05 18:40:05 UTC"
-      },
-      {
-        "ioc": "spc.y8slot.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-05 18:40:04 UTC"
-      },
-      {
-        "ioc": "https://tis.y8slot.net/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-05 14:55:25 UTC"
-      },
-      {
-        "ioc": "tis.y8slot.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-05 14:55:13 UTC"
-      },
-      {
-        "ioc": "9048c4f05b904a6431f762dc0e49e6fd1a1a8ffa948f6ceed24e4387974d3d9c",
-        "type": "sha256_hash",
-        "confidence": 75,
-        "first_seen": "2026-08-05 11:20:24 UTC"
-      },
-      {
-        "ioc": "ctlc.tb88cuka.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-05 11:20:23 UTC"
-      },
-      {
-        "ioc": "smc.tb88cuka.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-05 11:20:23 UTC"
+        "first_seen": "2026-08-07 08:02:48 UTC"
       }
     ]
   }

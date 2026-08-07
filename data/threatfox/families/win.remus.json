@@ -1,25 +1,25 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-06T16:04:31.586705+00:00",
-  "recent_window_ioc_count": 38,
+  "generated": "2026-08-07T14:36:28.887474+00:00",
+  "recent_window_ioc_count": 41,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 431,
+    "total_iocs": 434,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-08-06"
+      "latest": "2026-08-07"
     },
     "ioc_type_breakdown": {
       "domain": 205,
-      "url": 128,
-      "ip:port": 98
+      "url": 129,
+      "ip:port": 100
     },
     "confidence_distribution": {
-      "high": 424,
+      "high": 427,
       "medium": 6,
       "low": 1
     },
@@ -92,7 +92,8 @@
       "2026-08-03": 5,
       "2026-08-04": 2,
       "2026-08-05": 8,
-      "2026-08-06": 1
+      "2026-08-06": 1,
+      "2026-08-07": 3
     },
     "top_ports": [
       {
@@ -100,15 +101,15 @@
         "count": 21
       },
       {
+        "port": "2535",
+        "count": 4
+      },
+      {
         "port": "4219",
         "count": 4
       },
       {
         "port": "2930",
-        "count": 3
-      },
-      {
-        "port": "2535",
         "count": 3
       },
       {
@@ -137,6 +138,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "85.31.60.169:2535",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 09:39:44 UTC"
+      },
+      {
+        "ioc": "2.56.244.52:9022",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 09:39:43 UTC"
+      },
+      {
+        "ioc": "http://touggch.click:9022",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-07 02:24:23 UTC"
+      },
       {
         "ioc": "159.65.136.5:7647",
         "type": "ip:port",
@@ -208,24 +227,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-08-03 14:44:23 UTC"
-      },
-      {
-        "ioc": "185.194.218.82:4930",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-03 12:43:11 UTC"
-      },
-      {
-        "ioc": "http://voihxd.xyz:7528",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-03 12:39:22 UTC"
-      },
-      {
-        "ioc": "154.12.237.176:2535",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-03 05:45:45 UTC"
       }
     ]
   }
