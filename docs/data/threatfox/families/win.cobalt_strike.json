@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-08-07T14:33:43.097374+00:00",
-  "recent_window_ioc_count": 271,
+  "generated": "2026-08-08T14:07:15.592612+00:00",
+  "recent_window_ioc_count": 245,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,8 +37,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-05-24",
-      "latest": "2026-08-07"
+      "earliest": "2025-05-18",
+      "latest": "2026-08-08"
     },
     "ioc_type_breakdown": {
       "ip:port": 451,
@@ -50,6 +50,10 @@
       "low": 0
     },
     "activity_timeline": {
+      "2025-05-18": 1,
+      "2025-05-20": 1,
+      "2025-05-21": 3,
+      "2025-05-23": 1,
       "2025-05-24": 1,
       "2025-05-30": 2,
       "2025-05-31": 2,
@@ -207,11 +211,11 @@
       "2026-07-01": 4,
       "2026-07-02": 5,
       "2026-07-03": 2,
-      "2026-07-04": 4,
-      "2026-07-05": 4,
+      "2026-07-04": 3,
+      "2026-07-05": 3,
       "2026-07-06": 1,
-      "2026-07-07": 6,
-      "2026-07-08": 5,
+      "2026-07-07": 4,
+      "2026-07-08": 4,
       "2026-07-09": 5,
       "2026-07-10": 10,
       "2026-07-11": 7,
@@ -235,32 +239,33 @@
       "2026-08-04": 5,
       "2026-08-05": 10,
       "2026-08-06": 5,
-      "2026-08-07": 11
+      "2026-08-07": 2,
+      "2026-08-08": 8
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 210
+        "count": 211
       },
       {
         "port": "80",
-        "count": 40
+        "count": 38
       },
       {
         "port": "53",
         "count": 18
       },
       {
-        "port": "8080",
-        "count": 11
-      },
-      {
         "port": "18443",
         "count": 10
       },
       {
+        "port": "8080",
+        "count": 9
+      },
+      {
         "port": "8896",
-        "count": 7
+        "count": 8
       },
       {
         "port": "9999",
@@ -281,70 +286,64 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "43.138.116.60:8080",
+        "ioc": "111.228.62.67:3306",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 13:05:07 UTC"
+        "first_seen": "2026-08-08 14:05:08 UTC"
       },
       {
-        "ioc": "43.138.116.60:80",
+        "ioc": "111.228.62.67:8888",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 13:05:06 UTC"
+        "first_seen": "2026-08-08 14:05:08 UTC"
       },
       {
-        "ioc": "43.138.116.60:443",
+        "ioc": "192.255.236.156:22",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 13:05:06 UTC"
+        "first_seen": "2026-08-08 14:05:05 UTC"
       },
       {
-        "ioc": "43.138.116.60:22",
+        "ioc": "192.255.236.156:8082",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 13:05:06 UTC"
+        "first_seen": "2026-08-08 13:05:08 UTC"
       },
       {
-        "ioc": "43.139.87.203:8888",
+        "ioc": "192.255.236.156:8080",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 11:05:06 UTC"
+        "first_seen": "2026-08-08 13:05:07 UTC"
       },
       {
-        "ioc": "43.139.87.203:8080",
+        "ioc": "192.255.236.156:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 11:05:06 UTC"
+        "first_seen": "2026-08-08 13:05:06 UTC"
       },
       {
-        "ioc": "43.139.87.203:80",
+        "ioc": "192.255.236.156:80",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-07 10:05:08 UTC"
+        "first_seen": "2026-08-08 12:05:06 UTC"
       },
       {
-        "ioc": "43.139.87.203:443",
+        "ioc": "185.92.190.177:8896",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 10:05:08 UTC"
+        "confidence": 75,
+        "first_seen": "2026-08-08 11:47:11 UTC"
       },
       {
-        "ioc": "114.67.204.86:443",
+        "ioc": "121.5.27.17:443",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 10:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-08-07 23:46:45 UTC"
       },
       {
-        "ioc": "114.67.204.86:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 09:05:07 UTC"
-      },
-      {
-        "ioc": "114.67.204.86:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 09:05:07 UTC"
+        "ioc": "1302768123-l3a4w496qm.ap-shanghai.tencentscf.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-07 23:46:29 UTC"
       },
       {
         "ioc": "151.242.125.190:9527",
@@ -369,6 +368,12 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-06 11:47:15 UTC"
+      },
+      {
+        "ioc": "139.199.3.92:2087",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-06 11:47:09 UTC"
       }
     ]
   }

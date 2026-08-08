@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-07T14:35:44.443361+00:00",
-  "recent_window_ioc_count": 58,
+  "generated": "2026-08-08T14:10:00.717413+00:00",
+  "recent_window_ioc_count": 60,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-12",
+      "earliest": "2026-06-11",
       "latest": "2026-08-07"
     },
     "ioc_type_breakdown": {
-      "ip:port": 437,
-      "domain": 44,
+      "ip:port": 436,
+      "domain": 45,
       "sha256_hash": 19
     },
     "confidence_distribution": {
@@ -32,6 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
+      "2026-06-11": 4,
       "2026-06-12": 16,
       "2026-06-13": 21,
       "2026-06-14": 8,
@@ -57,7 +58,7 @@
       "2026-07-04": 12,
       "2026-07-05": 5,
       "2026-07-06": 9,
-      "2026-07-07": 22,
+      "2026-07-07": 16,
       "2026-07-08": 16,
       "2026-07-09": 21,
       "2026-07-10": 17,
@@ -84,12 +85,12 @@
       "2026-08-04": 17,
       "2026-08-05": 3,
       "2026-08-06": 16,
-      "2026-08-07": 2
+      "2026-08-07": 4
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 39
+        "count": 38
       },
       {
         "port": "14641",
@@ -129,6 +130,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "escalatefud.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-07 20:10:36 UTC"
+      },
+      {
+        "ioc": "194.59.31.77:5050",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-07 20:05:04 UTC"
+      },
       {
         "ioc": "196.251.107.252:22061",
         "type": "ip:port",
@@ -206,18 +219,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-06 08:45:44 UTC"
-      },
-      {
-        "ioc": "donta.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-06 06:35:37 UTC"
-      },
-      {
-        "ioc": "103.83.86.143:14642",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-06 06:26:59 UTC"
       }
     ]
   }
