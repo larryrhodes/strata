@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-08T14:10:00.717413+00:00",
-  "recent_window_ioc_count": 60,
+  "generated": "2026-08-09T14:11:49.366245+00:00",
+  "recent_window_ioc_count": 42,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-11",
-      "latest": "2026-08-07"
+      "earliest": "2026-06-10",
+      "latest": "2026-08-08"
     },
     "ioc_type_breakdown": {
-      "ip:port": 436,
-      "domain": 45,
+      "ip:port": 442,
+      "domain": 39,
       "sha256_hash": 19
     },
     "confidence_distribution": {
@@ -32,7 +32,8 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-11": 4,
+      "2026-06-10": 5,
+      "2026-06-11": 8,
       "2026-06-12": 16,
       "2026-06-13": 21,
       "2026-06-14": 8,
@@ -59,8 +60,8 @@
       "2026-07-05": 5,
       "2026-07-06": 9,
       "2026-07-07": 16,
-      "2026-07-08": 16,
-      "2026-07-09": 21,
+      "2026-07-08": 12,
+      "2026-07-09": 15,
       "2026-07-10": 17,
       "2026-07-11": 9,
       "2026-07-12": 6,
@@ -85,12 +86,13 @@
       "2026-08-04": 17,
       "2026-08-05": 3,
       "2026-08-06": 16,
-      "2026-08-07": 4
+      "2026-08-07": 4,
+      "2026-08-08": 1
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 38
+        "count": 37
       },
       {
         "port": "14641",
@@ -130,6 +132,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "blessedongrace.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-08 17:50:25 UTC"
+      },
       {
         "ioc": "escalatefud.duckdns.org",
         "type": "domain",
@@ -213,12 +221,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-06 09:02:08 UTC"
-      },
-      {
-        "ioc": "161.248.179.98:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-06 08:45:44 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-08-08T14:10:39.996713+00:00",
-  "recent_window_ioc_count": 53,
+  "generated": "2026-08-09T14:10:55.526211+00:00",
+  "recent_window_ioc_count": 59,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -12,12 +12,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-04",
-      "latest": "2026-08-08"
+      "earliest": "2026-06-05",
+      "latest": "2026-08-09"
     },
     "ioc_type_breakdown": {
-      "ip:port": 321,
-      "domain": 95,
+      "ip:port": 324,
+      "domain": 92,
       "sha256_hash": 50,
       "url": 34
     },
@@ -27,8 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-04": 1,
-      "2026-06-05": 37,
+      "2026-06-05": 28,
       "2026-06-06": 14,
       "2026-06-07": 4,
       "2026-06-08": 11,
@@ -81,7 +80,8 @@
       "2026-08-05": 9,
       "2026-08-06": 14,
       "2026-08-07": 13,
-      "2026-08-08": 2
+      "2026-08-08": 7,
+      "2026-08-09": 5
     },
     "top_ports": [
       {
@@ -98,7 +98,7 @@
       },
       {
         "port": "1337",
-        "count": 13
+        "count": 14
       },
       {
         "port": "123",
@@ -106,26 +106,86 @@
       },
       {
         "port": "23",
-        "count": 10
+        "count": 9
       },
       {
         "port": "2375",
-        "count": 9
+        "count": 8
       },
       {
         "port": "2222",
         "count": 6
       },
       {
-        "port": "443",
+        "port": "8082",
         "count": 5
       },
       {
-        "port": "2049",
+        "port": "443",
         "count": 5
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "79.143.191.7:8082",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-09 06:30:59 UTC"
+      },
+      {
+        "ioc": "mail.coping.ink",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-09 06:30:59 UTC"
+      },
+      {
+        "ioc": "smtp.coping.ink",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-09 06:30:56 UTC"
+      },
+      {
+        "ioc": "94.154.43.87:8082",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-09 06:30:55 UTC"
+      },
+      {
+        "ioc": "94.154.43.175:6794",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-09 06:30:53 UTC"
+      },
+      {
+        "ioc": "91.92.40.5:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-08 19:46:26 UTC"
+      },
+      {
+        "ioc": "94.154.43.46:1337",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-08 16:47:48 UTC"
+      },
+      {
+        "ioc": "94.154.43.97:9931",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-08 16:47:47 UTC"
+      },
+      {
+        "ioc": "217.60.195.187:8529",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-08 16:47:46 UTC"
+      },
+      {
+        "ioc": "18inchgermanylovercapybara.space",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-08 14:50:47 UTC"
+      },
       {
         "ioc": "217.60.195.187:80",
         "type": "ip:port",
@@ -155,66 +215,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-07 18:33:23 UTC"
-      },
-      {
-        "ioc": "103.83.86.215:4231",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 18:33:22 UTC"
-      },
-      {
-        "ioc": "103.83.86.215:7012",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 18:33:22 UTC"
-      },
-      {
-        "ioc": "103.83.86.215:6969",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 18:33:21 UTC"
-      },
-      {
-        "ioc": "103.83.86.215:4567",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 18:33:21 UTC"
-      },
-      {
-        "ioc": "103.83.86.215:5555",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 18:33:20 UTC"
-      },
-      {
-        "ioc": "103.83.86.215:2381",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 18:33:20 UTC"
-      },
-      {
-        "ioc": "64.89.163.215:666",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-07 15:19:04 UTC"
-      },
-      {
-        "ioc": "m4ch.ru",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-07 08:12:16 UTC"
-      },
-      {
-        "ioc": "bd.p0p3w4sh3r3.boats",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-07 08:06:44 UTC"
-      },
-      {
-        "ioc": "test.txtensatorxgyt.xyz",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-07 08:01:41 UTC"
       }
     ]
   }

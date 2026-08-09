@@ -1,7 +1,7 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-08-08T14:07:27.752655+00:00",
+  "generated": "2026-08-09T14:08:05.986684+00:00",
   "recent_window_ioc_count": 234,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
@@ -10,16 +10,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-15",
+      "earliest": "2026-04-13",
       "latest": "2026-08-08"
     },
     "ioc_type_breakdown": {
-      "domain": 224,
-      "url": 162,
+      "domain": 225,
+      "url": 167,
       "ip:port": 40,
-      "sha256_hash": 26,
-      "md5_hash": 24,
-      "sha1_hash": 24
+      "sha256_hash": 24,
+      "md5_hash": 22,
+      "sha1_hash": 22
     },
     "confidence_distribution": {
       "high": 500,
@@ -27,7 +27,9 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-15": 2,
+      "2026-04-13": 2,
+      "2026-04-14": 5,
+      "2026-04-15": 3,
       "2026-04-16": 4,
       "2026-04-17": 2,
       "2026-04-22": 2,
@@ -55,10 +57,9 @@
       "2026-07-10": 2,
       "2026-07-17": 3,
       "2026-07-18": 1,
-      "2026-07-19": 29,
+      "2026-07-19": 28,
       "2026-07-24": 8,
-      "2026-07-25": 12,
-      "2026-07-26": 4,
+      "2026-07-26": 3,
       "2026-07-27": 25,
       "2026-07-28": 3,
       "2026-07-29": 2,
@@ -71,7 +72,7 @@
       "2026-08-05": 20,
       "2026-08-06": 8,
       "2026-08-07": 29,
-      "2026-08-08": 1
+      "2026-08-08": 7
     },
     "top_ports": [
       {
@@ -80,6 +81,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "01f84e942908ccb2fc657d9dd1caf8b5",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-08 17:27:13 UTC"
+      },
+      {
+        "ioc": "c6cc775f76f0aced85206c313b452f29334c6ac9",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-08 17:27:12 UTC"
+      },
+      {
+        "ioc": "30064a241c39541e287ccbe04f1027a037a10918528384479d27b53a23c2b1aa",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-08 17:27:11 UTC"
+      },
+      {
+        "ioc": "d5cf90d75595ae54fad924f7ea2861dc",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-08 17:26:55 UTC"
+      },
+      {
+        "ioc": "365ee4d8c9c3b3b10f07b41b316a745452e8e00b",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-08 17:26:55 UTC"
+      },
+      {
+        "ioc": "dc1e2425521c3ff8344ea04a2294730e8ddda29da11b809421b85c896a693cad",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-08 17:26:55 UTC"
+      },
       {
         "ioc": "https://set.turbo88galaxy.top",
         "type": "url",
@@ -133,42 +170,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-08-07 13:35:05 UTC"
-      },
-      {
-        "ioc": "blh.bayototo.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-07 13:35:04 UTC"
-      },
-      {
-        "ioc": "https://dfd.bayototo.org/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-07 09:05:05 UTC"
-      },
-      {
-        "ioc": "dfd.bayototo.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-07 09:05:04 UTC"
-      },
-      {
-        "ioc": "167.233.174.147:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 08:03:23 UTC"
-      },
-      {
-        "ioc": "116.202.186.230:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 08:03:23 UTC"
-      },
-      {
-        "ioc": "167.233.168.67:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-07 08:03:23 UTC"
       }
     ]
   }
