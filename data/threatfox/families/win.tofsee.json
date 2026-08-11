@@ -1,8 +1,8 @@
 {
   "malware_id": "win.tofsee",
   "family": "Tofsee",
-  "generated": "2026-08-10T14:39:56.251889+00:00",
-  "recent_window_ioc_count": 61,
+  "generated": "2026-08-11T14:39:01.949860+00:00",
+  "recent_window_ioc_count": 63,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.tofsee",
   "description": "According to PCrisk, Tofsee (also known as Gheg) is a malicious Trojan-type program that is capable of performing DDoS attacks, mining cryptocurrency, sending emails, stealing various account credentials, updating itself, and more.\r\n\r\nCyber criminals mainly use this program as an email-oriented tool (they target users' email accounts), however, having Tofsee installed can also lead to many other problems.",
   "alt_names": [
@@ -10,20 +10,20 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 387,
+    "total_iocs": 391,
     "date_range": {
       "earliest": "2023-05-16",
-      "latest": "2026-08-08"
+      "latest": "2026-08-11"
     },
     "ioc_type_breakdown": {
-      "ip:port": 376,
+      "ip:port": 380,
       "md5_hash": 3,
       "sha1_hash": 3,
       "sha256_hash": 3,
       "domain": 2
     },
     "confidence_distribution": {
-      "high": 387,
+      "high": 391,
       "medium": 0,
       "low": 0
     },
@@ -81,7 +81,8 @@
       "2026-07-21": 1,
       "2026-07-31": 3,
       "2026-08-04": 5,
-      "2026-08-08": 56
+      "2026-08-08": 56,
+      "2026-08-11": 4
     },
     "top_ports": [
       {
@@ -97,19 +98,23 @@
         "count": 26
       },
       {
+        "port": "423",
+        "count": 25
+      },
+      {
+        "port": "425",
+        "count": 25
+      },
+      {
+        "port": "416",
+        "count": 25
+      },
+      {
         "port": "421",
         "count": 25
       },
       {
-        "port": "423",
-        "count": 24
-      },
-      {
-        "port": "425",
-        "count": 24
-      },
-      {
-        "port": "416",
+        "port": "417",
         "count": 24
       },
       {
@@ -119,13 +124,33 @@
       {
         "port": "427",
         "count": 23
-      },
-      {
-        "port": "418",
-        "count": 23
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "102.220.160.58:423",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 06:17:57 UTC"
+      },
+      {
+        "ioc": "102.220.160.58:417",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 06:17:57 UTC"
+      },
+      {
+        "ioc": "102.220.160.58:425",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 06:17:57 UTC"
+      },
+      {
+        "ioc": "102.220.160.58:416",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 06:17:56 UTC"
+      },
       {
         "ioc": "130.12.182.79:421",
         "type": "ip:port",
@@ -188,30 +213,6 @@
       },
       {
         "ioc": "217.60.241.50:422",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-08 17:35:05 UTC"
-      },
-      {
-        "ioc": "217.60.241.31:422",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-08 17:35:05 UTC"
-      },
-      {
-        "ioc": "130.12.182.79:420",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-08 17:35:05 UTC"
-      },
-      {
-        "ioc": "130.12.182.79:430",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-08 17:35:05 UTC"
-      },
-      {
-        "ioc": "130.12.182.79:427",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-08 17:35:05 UTC"

@@ -209,6 +209,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "elf.p2pinfect": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "P2Pinfect",
+    "description": "P2Pinfect is a fast-growing multi platform botnet, the purpose of which is still unknown. Written in Rust, it is compatible with Windows and Linux, including a MIPS variant for Linux based routers and IoT devices. It is capable of brute forcing SSH logins and exploiting Redis servers in order to propagate itself both to random IPs on the internet and to hosts it can find references to in files present on the infected system.",
+    "enriched_at": "2026-08-11T14:36:29.084682+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "elf.pitfuel": {
     "alt_names": [],
     "associated_groups": [],
@@ -729,6 +738,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.animate_clipper": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "AnimateClipper",
+    "description": "According to Check Point Research, AnimateClipper is a cryptocurrency clipper that is delivered through a ClickFix-style phishing chain in which a built-in Windows utility runs a remote scripted page, leading to a bundled Python environment that executes embedded shellcode in memory to load the final payload without writing the unpacked binary to disk. The malware continuously monitors the clipboard for cryptocurrency wallet addresses, identifies the wallet format locally, and silently replaces the copied address with one of many embedded attacker-controlled wallets, enabling transaction hijacking across more than 20 blockchain ecosystems. It resolves its command-and-control server dynamically by querying a smart contract over a public blockchain JSON-RPC endpoint, then communicates over HTTPS for periodic check-ins and to report address-replacement activity. The embedded replacement wallets themselves are stored directly in the binary, and on-chain data indicates the operation has been active since at least mid-2025.",
+    "enriched_at": "2026-08-11T14:36:31.218620+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.arkei_stealer": {
     "alt_names": [
       "ArkeiStealer"
@@ -757,6 +775,18 @@
     "common_name": "AsyncRAT",
     "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
     "enriched_at": "2026-07-08T17:00:21.550265+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.aurastealer": {
+    "alt_names": [
+      "AURA Stealer",
+      "AURASTEAL"
+    ],
+    "associated_groups": [],
+    "common_name": "Aura Stealer",
+    "description": "In July 2025, threat actor AuraCorp began advertising Aura Stealer as a Malware-as-a-Service (MaaS) program with multiple subscription tiers on underground forums. The information stealer targets credentials from over 110 browsers, 70 applications, and 250+ browser extensions, including cryptocurrency wallets and 2FA tools, while using AES-256 encryption for C2 communications. Notable features include seamless Chromium cookie harvesting without process termination, server-side App-Bound data decryption, and a built-in payload loader with custom morphing for detection evasion.",
+    "enriched_at": "2026-08-11T14:36:33.706380+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1129,6 +1159,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.grandoreiro": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Grandoreiro",
+    "description": "According to ESET Research, Grandoreiro is a Latin American banking trojan targeting Brazil, Mexico, Spain and Peru. As such, it shows unusual effort by its authors to evade detection and emulation, and progress towards a modular architecture.",
+    "enriched_at": "2026-08-11T14:36:30.198886+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.guidloader": {
     "alt_names": [],
     "associated_groups": [],
@@ -1291,6 +1330,19 @@
     "common_name": "Luca Stealer",
     "description": "According to PCRisk, The Luca stealer can extract a variety of information from compromised machines. It targets data related to the following: operating system, device name, CPUs, desktop environment, network interface, user account name, preferred system language, running processes, etc.\r\n\r\nThis malicious program can steal information from over thirty Chromium-based browsers. From these applications, Luca can obtain Internet cookies, account log-in credentials (usernames/passwords), and credit card numbers. Additionally, the stealer can extract data from password manager and cryptowallet browser extensions compatible with over twenty browsers.\r\n\r\nThis malware also targets various messaging applications like Telegram, Discord, ICQ, Skype, Element, etc. It likewise aims to acquire information from gaming-related software such as Steam and Uplay (Ubisoft Connect). Furthermore, some versions of Luca can take screenshots and download the files stored on victims' devices.",
     "enriched_at": "2026-07-08T17:01:16.628973+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.lumma": {
+    "alt_names": [
+      "LummaC2 Stealer"
+    ],
+    "associated_groups": [
+      "Angry Likho"
+    ],
+    "common_name": "Lumma Stealer",
+    "description": "Lumma Stealer (aka LummaC2 Stealer) is an information stealer written in C language that has been available through a Malware-as-a-Service (MaaS) model on Russian-speaking forums since at least August 2022. It is believed to have been developed by the threat actor \"Shamel\", who goes by the alias \"Lumma\". Lumma Stealer primarily targets cryptocurrency wallets and two-factor authentication (2FA) browser extensions, before ultimately stealing sensitive information from the victim's machine. Once the targeted data is obtained, it is exfiltrated to a C2 server via HTTP POST requests using the user agent \"TeslaBrowser/5.5\".\" The stealer also features a non-resident loader that is capable of delivering additional payloads via EXE, DLL, and PowerShell.",
+    "enriched_at": "2026-08-11T14:36:32.390111+00:00",
     "source": "malpedia",
     "status": "ok"
   },

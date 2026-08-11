@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-08-10T14:39:41.134691+00:00",
-  "recent_window_ioc_count": 63,
+  "generated": "2026-08-11T14:38:47.956536+00:00",
+  "recent_window_ioc_count": 66,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -13,11 +13,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-05",
-      "latest": "2026-08-10"
+      "latest": "2026-08-11"
     },
     "ioc_type_breakdown": {
-      "ip:port": 325,
-      "domain": 91,
+      "ip:port": 333,
+      "domain": 83,
       "sha256_hash": 50,
       "url": 34
     },
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-05": 23,
+      "2026-06-05": 10,
       "2026-06-06": 14,
       "2026-06-07": 4,
       "2026-06-08": 11,
@@ -82,7 +82,8 @@
       "2026-08-07": 13,
       "2026-08-08": 7,
       "2026-08-09": 4,
-      "2026-08-10": 6
+      "2026-08-10": 6,
+      "2026-08-11": 13
     },
     "top_ports": [
       {
@@ -99,7 +100,7 @@
       },
       {
         "port": "1337",
-        "count": 14
+        "count": 15
       },
       {
         "port": "123",
@@ -128,6 +129,84 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "103.27.78.14:8033",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-11 14:23:46 UTC"
+      },
+      {
+        "ioc": "217.217.243.76:8033",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-11 14:23:46 UTC"
+      },
+      {
+        "ioc": "62.84.172.106:8033",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-11 14:23:46 UTC"
+      },
+      {
+        "ioc": "176.65.139.236:1337",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-11 12:48:51 UTC"
+      },
+      {
+        "ioc": "69cnc.duckdns.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 12:16:39 UTC"
+      },
+      {
+        "ioc": "manbipll.duckdns.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 12:16:39 UTC"
+      },
+      {
+        "ioc": "api.mineblack.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 12:16:39 UTC"
+      },
+      {
+        "ioc": "voltagec2.tech",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 12:16:39 UTC"
+      },
+      {
+        "ioc": "reavercncv4.duckdns.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 12:16:39 UTC"
+      },
+      {
+        "ioc": "94.154.43.97:4330",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-11 11:26:37 UTC"
+      },
+      {
+        "ioc": "94.154.43.97:1302",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-11 11:26:37 UTC"
+      },
+      {
+        "ioc": "181.214.136.12:404",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-11 11:26:37 UTC"
+      },
+      {
+        "ioc": "94.154.43.97:44321",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-11 11:26:36 UTC"
+      },
+      {
         "ioc": "ebnlinfengv6l2ilx.duckdns.org",
         "type": "domain",
         "confidence": 100,
@@ -138,84 +217,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-10 09:21:57 UTC"
-      },
-      {
-        "ioc": "mail.cope.st",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-10 06:18:06 UTC"
-      },
-      {
-        "ioc": "46.151.182.200:60195",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-10 06:18:05 UTC"
-      },
-      {
-        "ioc": "smtp.cope.st",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-10 06:18:05 UTC"
-      },
-      {
-        "ioc": "180.93.116.41:56999",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-10 06:18:01 UTC"
-      },
-      {
-        "ioc": "79.143.191.7:8082",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-09 06:30:59 UTC"
-      },
-      {
-        "ioc": "mail.coping.ink",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-09 06:30:59 UTC"
-      },
-      {
-        "ioc": "smtp.coping.ink",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-09 06:30:56 UTC"
-      },
-      {
-        "ioc": "94.154.43.87:8082",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-09 06:30:55 UTC"
-      },
-      {
-        "ioc": "91.92.40.5:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-08 19:46:26 UTC"
-      },
-      {
-        "ioc": "94.154.43.46:1337",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-08 16:47:48 UTC"
-      },
-      {
-        "ioc": "94.154.43.97:9931",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-08 16:47:47 UTC"
-      },
-      {
-        "ioc": "217.60.195.187:8529",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-08 16:47:46 UTC"
-      },
-      {
-        "ioc": "18inchgermanylovercapybara.space",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-08 14:50:47 UTC"
       }
     ]
   }

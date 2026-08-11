@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-08-10T14:41:44.851573+00:00",
-  "recent_window_ioc_count": 33,
+  "generated": "2026-08-11T14:41:20.937896+00:00",
+  "recent_window_ioc_count": 40,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,15 +12,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-13",
-      "latest": "2026-08-10"
+      "earliest": "2026-03-15",
+      "latest": "2026-08-11"
     },
     "ioc_type_breakdown": {
-      "ip:port": 243,
-      "domain": 200,
-      "sha256_hash": 21,
-      "sha1_hash": 15,
-      "md5_hash": 15,
+      "ip:port": 245,
+      "domain": 201,
+      "sha256_hash": 20,
+      "sha1_hash": 14,
+      "md5_hash": 14,
       "url": 6
     },
     "confidence_distribution": {
@@ -29,8 +29,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-13": 2,
-      "2026-03-14": 10,
       "2026-03-15": 16,
       "2026-03-16": 7,
       "2026-03-17": 10,
@@ -131,16 +129,17 @@
       "2026-08-05": 7,
       "2026-08-06": 4,
       "2026-08-07": 6,
-      "2026-08-10": 5
+      "2026-08-10": 9,
+      "2026-08-11": 8
     },
     "top_ports": [
       {
         "port": "7004",
-        "count": 28
+        "count": 30
       },
       {
         "port": "443",
-        "count": 18
+        "count": 19
       },
       {
         "port": "6000",
@@ -177,6 +176,78 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "windowsupdate.webhop.me",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-11 10:10:32 UTC"
+      },
+      {
+        "ioc": "31.56.209.60:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 10:05:49 UTC"
+      },
+      {
+        "ioc": "barikadeuku.freedev.app",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 09:44:27 UTC"
+      },
+      {
+        "ioc": "without.kesug.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-11 09:41:26 UTC"
+      },
+      {
+        "ioc": "tagmentos.bingbaochow.cam",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-11 09:00:42 UTC"
+      },
+      {
+        "ioc": "haghuer.bingbaochow.cam",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-11 09:00:41 UTC"
+      },
+      {
+        "ioc": "104.249.10.95:7004",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 07:03:56 UTC"
+      },
+      {
+        "ioc": "technocalfindersda.bounceme.net",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-11 06:40:34 UTC"
+      },
+      {
+        "ioc": "31.59.118.77:7004",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:25:51 UTC"
+      },
+      {
+        "ioc": "155.103.71.203:2233",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:25:48 UTC"
+      },
+      {
+        "ioc": "155.254.98.57:7007",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:05:45 UTC"
+      },
+      {
+        "ioc": "155.103.71.88:3456",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:05:44 UTC"
+      },
+      {
         "ioc": "107.172.134.28:6000",
         "type": "ip:port",
         "confidence": 75,
@@ -193,78 +264,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-10 13:50:43 UTC"
-      },
-      {
-        "ioc": "147.124.212.143:4333",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-10 09:26:16 UTC"
-      },
-      {
-        "ioc": "91.219.238.82:8541",
-        "type": "ip:port",
-        "confidence": 99,
-        "first_seen": "2026-08-10 06:18:02 UTC"
-      },
-      {
-        "ioc": "46.151.182.225:7007",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-07 12:20:41 UTC"
-      },
-      {
-        "ioc": "tmplsnd.cabvlliahermosa.com.mx",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-07 12:20:06 UTC"
-      },
-      {
-        "ioc": "45.148.18.40:58798",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-07 12:06:08 UTC"
-      },
-      {
-        "ioc": "45.148.18.40:58268",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-07 12:06:08 UTC"
-      },
-      {
-        "ioc": "185.215.151.16:8823",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-07 10:20:40 UTC"
-      },
-      {
-        "ioc": "Pb3089EP3WAwzicHHzF9zQ==",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-07 10:20:35 UTC"
-      },
-      {
-        "ioc": "45.61.114.66:6000",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-06 18:13:36 UTC"
-      },
-      {
-        "ioc": "45.88.91.117:7004",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-06 11:00:46 UTC"
-      },
-      {
-        "ioc": "imobilityes.cabvlliahermosa.com.mx",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-06 09:18:28 UTC"
-      },
-      {
-        "ioc": "46.151.182.234:7007",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-06 09:18:04 UTC"
       }
     ]
   }

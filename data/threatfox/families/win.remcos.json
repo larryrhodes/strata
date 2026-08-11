@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-10T14:40:31.587910+00:00",
-  "recent_window_ioc_count": 55,
+  "generated": "2026-08-11T14:39:50.385381+00:00",
+  "recent_window_ioc_count": 53,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-11",
-      "latest": "2026-08-10"
+      "earliest": "2026-06-12",
+      "latest": "2026-08-11"
     },
     "ioc_type_breakdown": {
-      "ip:port": 441,
-      "domain": 40,
+      "ip:port": 436,
+      "domain": 45,
       "sha256_hash": 19
     },
     "confidence_distribution": {
@@ -32,8 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-11": 4,
-      "2026-06-12": 16,
+      "2026-06-12": 14,
       "2026-06-13": 21,
       "2026-06-14": 8,
       "2026-06-15": 8,
@@ -61,8 +60,8 @@
       "2026-07-07": 16,
       "2026-07-08": 12,
       "2026-07-09": 15,
-      "2026-07-10": 12,
-      "2026-07-11": 9,
+      "2026-07-10": 10,
+      "2026-07-11": 3,
       "2026-07-12": 6,
       "2026-07-13": 19,
       "2026-07-14": 21,
@@ -87,12 +86,13 @@
       "2026-08-06": 16,
       "2026-08-07": 4,
       "2026-08-08": 1,
-      "2026-08-10": 14
+      "2026-08-10": 23,
+      "2026-08-11": 5
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 35
+        "count": 33
       },
       {
         "port": "14641",
@@ -115,6 +115,10 @@
         "count": 11
       },
       {
+        "port": "14648",
+        "count": 10
+      },
+      {
         "port": "14649",
         "count": 10
       },
@@ -123,104 +127,100 @@
         "count": 10
       },
       {
-        "port": "14648",
-        "count": 9
-      },
-      {
         "port": "443",
         "count": 8
       }
     ],
     "sample_iocs": [
       {
+        "ioc": "newpapidnsorg.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-11 10:10:31 UTC"
+      },
+      {
+        "ioc": "172.111.163.168:65070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 07:46:58 UTC"
+      },
+      {
+        "ioc": "204.93.220.122:17508",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 07:45:10 UTC"
+      },
+      {
+        "ioc": "155.103.69.20:14648",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 07:43:47 UTC"
+      },
+      {
+        "ioc": "155.103.70.232:14554",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-11 06:58:27 UTC"
+      },
+      {
+        "ioc": "oceanking.noip.at",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:25:32 UTC"
+      },
+      {
+        "ioc": "dunday.mytunnel.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:25:31 UTC"
+      },
+      {
+        "ioc": "87.120.244.219:19601",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:20:49 UTC"
+      },
+      {
+        "ioc": "anilmut.ydns.eu",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:20:33 UTC"
+      },
+      {
+        "ioc": "www.xmmtbxbackup2.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:05:35 UTC"
+      },
+      {
+        "ioc": "www.xmmtbxbackup1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:05:34 UTC"
+      },
+      {
+        "ioc": "www.xmmtbxbackup.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:05:34 UTC"
+      },
+      {
+        "ioc": "www.xmmtbx.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-10 15:05:34 UTC"
+      },
+      {
+        "ioc": "217.60.195.236:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-10 14:45:05 UTC"
+      },
+      {
         "ioc": "87.120.244.219:17598",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-10 14:35:46 UTC"
-      },
-      {
-        "ioc": "161.97.162.13:8899",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:25:30 UTC"
-      },
-      {
-        "ioc": "209.127.35.195:3533",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:20:26 UTC"
-      },
-      {
-        "ioc": "185.242.4.122:37393",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:20:26 UTC"
-      },
-      {
-        "ioc": "109.248.148.247:32734",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:20:24 UTC"
-      },
-      {
-        "ioc": "86.106.84.151:37393",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:10:46 UTC"
-      },
-      {
-        "ioc": "31.13.190.82:37393",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:10:45 UTC"
-      },
-      {
-        "ioc": "kindjurt.myddns.me",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-10 14:10:37 UTC"
-      },
-      {
-        "ioc": "37.120.146.146:37393",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 13:50:44 UTC"
-      },
-      {
-        "ioc": "onboard.radiantfluxstudio.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-10 13:45:42 UTC"
-      },
-      {
-        "ioc": "46.183.218.151:37393",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 13:40:44 UTC"
-      },
-      {
-        "ioc": "185.14.92.102:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-10 13:40:04 UTC"
-      },
-      {
-        "ioc": "196.251.121.163:14555",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 13:35:39 UTC"
-      },
-      {
-        "ioc": "64.89.161.78:2817",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-10 07:15:31 UTC"
-      },
-      {
-        "ioc": "blessedongrace.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-08 17:50:25 UTC"
       }
     ]
   }
