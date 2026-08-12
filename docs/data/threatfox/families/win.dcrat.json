@@ -1,7 +1,7 @@
 {
   "malware_id": "win.dcrat",
   "family": "DCRat",
-  "generated": "2026-08-11T14:41:35.433360+00:00",
+  "generated": "2026-08-12T14:43:21.721287+00:00",
   "recent_window_ioc_count": 31,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
   "description": "DCRat is a typical RAT that has been around since at least June 2019.",
@@ -13,23 +13,23 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-02-25",
-      "latest": "2026-08-11"
+      "latest": "2026-08-12"
     },
     "ioc_type_breakdown": {
-      "ip:port": 336,
-      "domain": 81,
-      "url": 69,
+      "ip:port": 337,
+      "domain": 79,
+      "url": 70,
       "sha256_hash": 7,
       "md5_hash": 4,
       "sha1_hash": 3
     },
     "confidence_distribution": {
-      "high": 422,
-      "medium": 78,
+      "high": 424,
+      "medium": 76,
       "low": 0
     },
     "activity_timeline": {
-      "2026-02-25": 5,
+      "2026-02-25": 3,
       "2026-02-26": 3,
       "2026-02-27": 2,
       "2026-02-28": 6,
@@ -163,7 +163,8 @@
       "2026-08-07": 8,
       "2026-08-08": 1,
       "2026-08-10": 9,
-      "2026-08-11": 3
+      "2026-08-11": 4,
+      "2026-08-12": 1
     },
     "top_ports": [
       {
@@ -208,6 +209,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "128.90.105.228:6666",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-12 09:43:30 UTC"
+      },
+      {
+        "ioc": "http://92.119.165.248/L1nc0In.php",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-11 19:55:10 UTC"
+      },
       {
         "ioc": "98.156.49.133:2021",
         "type": "ip:port",
@@ -285,18 +298,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-08 03:05:07 UTC"
-      },
-      {
-        "ioc": "0a9f93b87901a403fa1f1b1362455f13",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-07 20:12:34 UTC"
-      },
-      {
-        "ioc": "997e7cf6edd424e6346a791ad82702ebb3e2ca9c",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-07 20:12:33 UTC"
       }
     ]
   }

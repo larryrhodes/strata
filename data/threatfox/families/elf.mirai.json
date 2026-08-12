@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-08-11T14:38:47.956536+00:00",
-  "recent_window_ioc_count": 66,
+  "generated": "2026-08-12T14:39:25.927096+00:00",
+  "recent_window_ioc_count": 67,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -12,22 +12,21 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-05",
-      "latest": "2026-08-11"
+      "earliest": "2026-06-06",
+      "latest": "2026-08-12"
     },
     "ioc_type_breakdown": {
-      "ip:port": 333,
-      "domain": 83,
+      "ip:port": 336,
+      "domain": 74,
       "sha256_hash": 50,
-      "url": 34
+      "url": 40
     },
     "confidence_distribution": {
-      "high": 498,
-      "medium": 2,
+      "high": 492,
+      "medium": 8,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-05": 10,
       "2026-06-06": 14,
       "2026-06-07": 4,
       "2026-06-08": 11,
@@ -83,7 +82,8 @@
       "2026-08-08": 7,
       "2026-08-09": 4,
       "2026-08-10": 6,
-      "2026-08-11": 13
+      "2026-08-11": 20,
+      "2026-08-12": 3
     },
     "top_ports": [
       {
@@ -95,12 +95,12 @@
         "count": 27
       },
       {
-        "port": "8080",
+        "port": "1337",
         "count": 16
       },
       {
-        "port": "1337",
-        "count": 15
+        "port": "8080",
+        "count": 16
       },
       {
         "port": "123",
@@ -128,6 +128,66 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "217.60.195.187:7075",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-12 08:48:33 UTC"
+      },
+      {
+        "ioc": "72.56.52.200:9999",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-12 04:57:11 UTC"
+      },
+      {
+        "ioc": "cmd.5gf7jtfk0y.st",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-12 04:47:21 UTC"
+      },
+      {
+        "ioc": "176.65.139.244:1337",
+        "type": "ip:port",
+        "confidence": 80,
+        "first_seen": "2026-08-11 19:20:30 UTC"
+      },
+      {
+        "ioc": "http://77.90.185.66/wget",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-08-11 19:20:25 UTC"
+      },
+      {
+        "ioc": "http://77.90.185.66/mirai.mips",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-08-11 19:20:25 UTC"
+      },
+      {
+        "ioc": "http://77.90.185.66/mirai.arm",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-08-11 19:20:24 UTC"
+      },
+      {
+        "ioc": "http://77.90.185.66/mirai.mpsl",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-08-11 19:20:24 UTC"
+      },
+      {
+        "ioc": "http://77.90.185.66/mirai.arm5",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-08-11 19:20:23 UTC"
+      },
+      {
+        "ioc": "http://77.90.185.66/mirai.arm7",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-08-11 19:20:23 UTC"
+      },
       {
         "ioc": "103.27.78.14:8033",
         "type": "ip:port",
@@ -157,66 +217,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-11 12:16:39 UTC"
-      },
-      {
-        "ioc": "manbipll.duckdns.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-11 12:16:39 UTC"
-      },
-      {
-        "ioc": "api.mineblack.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-11 12:16:39 UTC"
-      },
-      {
-        "ioc": "voltagec2.tech",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-11 12:16:39 UTC"
-      },
-      {
-        "ioc": "reavercncv4.duckdns.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-11 12:16:39 UTC"
-      },
-      {
-        "ioc": "94.154.43.97:4330",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-11 11:26:37 UTC"
-      },
-      {
-        "ioc": "94.154.43.97:1302",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-11 11:26:37 UTC"
-      },
-      {
-        "ioc": "181.214.136.12:404",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-11 11:26:37 UTC"
-      },
-      {
-        "ioc": "94.154.43.97:44321",
-        "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-11 11:26:36 UTC"
-      },
-      {
-        "ioc": "ebnlinfengv6l2ilx.duckdns.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-10 14:24:07 UTC"
-      },
-      {
-        "ioc": "meow.schoolprojectxyz.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-10 09:21:57 UTC"
       }
     ]
   }

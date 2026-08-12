@@ -1,8 +1,8 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-08-11T14:42:29.528338+00:00",
-  "recent_window_ioc_count": 26,
+  "generated": "2026-08-12T14:43:42.688353+00:00",
+  "recent_window_ioc_count": 30,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
   "alt_names": [],
@@ -11,15 +11,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-03-01",
-      "latest": "2026-08-11"
+      "latest": "2026-08-12"
     },
     "ioc_type_breakdown": {
-      "url": 163,
-      "ip:port": 134,
+      "url": 164,
+      "ip:port": 130,
       "sha256_hash": 72,
       "sha1_hash": 63,
       "md5_hash": 63,
-      "domain": 5
+      "domain": 8
     },
     "confidence_distribution": {
       "high": 425,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-01": 12,
+      "2026-03-01": 8,
       "2026-03-03": 2,
       "2026-03-04": 17,
       "2026-03-05": 6,
@@ -129,12 +129,13 @@
       "2026-08-06": 1,
       "2026-08-07": 9,
       "2026-08-08": 15,
-      "2026-08-11": 1
+      "2026-08-11": 1,
+      "2026-08-12": 4
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 130
+        "count": 126
       },
       {
         "port": "443",
@@ -150,6 +151,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "cloud-flare-authenticator.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-12 13:05:17 UTC"
+      },
+      {
+        "ioc": "cloud-flare-authenticator.link",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-12 13:05:17 UTC"
+      },
+      {
+        "ioc": "https://friendihelp.info/fast.php",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 07:16:10 UTC"
+      },
+      {
+        "ioc": "friendihelp.info",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-12 07:16:06 UTC"
+      },
       {
         "ioc": "http://46.151.182.189/",
         "type": "url",
@@ -215,30 +240,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-08-08 17:26:43 UTC"
-      },
-      {
-        "ioc": "ddf8b517a8fed544e1adac815a5d85d4c917717449dd52d1354c03f599f05779",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:42 UTC"
-      },
-      {
-        "ioc": "9e69795f8536df8d9fef86295b1e329b038c4400",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:20 UTC"
-      },
-      {
-        "ioc": "18daa4731d5b880e9566d8a231e872c5",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:20 UTC"
-      },
-      {
-        "ioc": "26a079d8aa4562500ba24d38f4c93d8696e90ccb91d8481f581f7995b235d9b4",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:19 UTC"
       }
     ]
   }
