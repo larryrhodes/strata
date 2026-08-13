@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vshell",
   "family": "VShell",
-  "generated": "2026-08-12T14:38:39.308507+00:00",
-  "recent_window_ioc_count": 73,
+  "generated": "2026-08-13T14:40:59.341331+00:00",
+  "recent_window_ioc_count": 66,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
   "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
   "alt_names": [],
@@ -10,11 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-03",
-      "latest": "2026-08-12"
+      "earliest": "2026-04-15",
+      "latest": "2026-08-13"
     },
     "ioc_type_breakdown": {
-      "ip:port": 500
+      "ip:port": 498,
+      "sha256_hash": 1,
+      "url": 1
     },
     "confidence_distribution": {
       "high": 498,
@@ -22,17 +24,12 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-03": 47,
+      "2026-04-15": 179,
+      "2026-05-10": 3,
+      "2026-05-18": 1,
+      "2026-06-03": 71,
       "2026-06-04": 5,
       "2026-06-05": 2,
-      "2026-07-12": 70,
-      "2026-07-13": 74,
-      "2026-07-14": 41,
-      "2026-07-15": 6,
-      "2026-07-16": 2,
-      "2026-07-17": 2,
-      "2026-07-21": 3,
-      "2026-07-22": 13,
       "2026-07-23": 12,
       "2026-07-24": 18,
       "2026-07-25": 12,
@@ -52,51 +49,76 @@
       "2026-08-09": 10,
       "2026-08-10": 4,
       "2026-08-11": 11,
-      "2026-08-12": 12
+      "2026-08-12": 12,
+      "2026-08-13": 4
     },
     "top_ports": [
       {
-        "port": "8885",
-        "count": 166
-      },
-      {
         "port": "8084",
-        "count": 92
+        "count": 115
       },
       {
         "port": "80",
-        "count": 37
+        "count": 52
       },
       {
         "port": "8080",
-        "count": 31
+        "count": 38
+      },
+      {
+        "port": "443",
+        "count": 26
       },
       {
         "port": "8085",
-        "count": 17
+        "count": 21
+      },
+      {
+        "port": "9999",
+        "count": 14
       },
       {
         "port": "8443",
-        "count": 10
-      },
-      {
-        "port": "8888",
-        "count": 9
+        "count": 12
       },
       {
         "port": "8083",
-        "count": 7
+        "count": 10
       },
       {
         "port": "8081",
-        "count": 6
+        "count": 7
       },
       {
-        "port": "8090",
-        "count": 5
+        "port": "18084",
+        "count": 7
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "192.25.102.246:8088",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-13 09:05:05 UTC"
+      },
+      {
+        "ioc": "45.130.147.57:8085",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-13 08:05:06 UTC"
+      },
+      {
+        "ioc": "111.229.135.130:8083",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-13 04:05:05 UTC"
+      },
+      {
+        "ioc": "8.134.51.218:8098",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-13 01:05:07 UTC"
+      },
       {
         "ioc": "134.122.140.110:8083",
         "type": "ip:port",
@@ -162,30 +184,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-12 04:05:05 UTC"
-      },
-      {
-        "ioc": "8.130.55.42:8888",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-12 02:05:05 UTC"
-      },
-      {
-        "ioc": "65.109.97.220:8084",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-11 13:05:10 UTC"
-      },
-      {
-        "ioc": "1.14.193.53:7717",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-11 08:05:07 UTC"
-      },
-      {
-        "ioc": "166.0.27.224:8084",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-11 07:05:06 UTC"
       }
     ]
   }

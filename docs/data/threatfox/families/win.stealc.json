@@ -1,8 +1,8 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-08-12T14:43:42.688353+00:00",
-  "recent_window_ioc_count": 30,
+  "generated": "2026-08-13T14:43:04.148932+00:00",
+  "recent_window_ioc_count": 41,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
   "alt_names": [],
@@ -10,12 +10,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-01",
-      "latest": "2026-08-12"
+      "earliest": "2026-03-04",
+      "latest": "2026-08-13"
     },
     "ioc_type_breakdown": {
-      "url": 164,
-      "ip:port": 130,
+      "url": 174,
+      "ip:port": 120,
       "sha256_hash": 72,
       "sha1_hash": 63,
       "md5_hash": 63,
@@ -27,8 +27,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-01": 8,
-      "2026-03-03": 2,
       "2026-03-04": 17,
       "2026-03-05": 6,
       "2026-03-06": 1,
@@ -111,10 +109,9 @@
       "2026-07-09": 3,
       "2026-07-12": 9,
       "2026-07-13": 4,
-      "2026-07-14": 1,
       "2026-07-16": 1,
       "2026-07-17": 4,
-      "2026-07-18": 2,
+      "2026-07-18": 1,
       "2026-07-24": 3,
       "2026-07-25": 1,
       "2026-07-26": 3,
@@ -130,12 +127,13 @@
       "2026-08-07": 9,
       "2026-08-08": 15,
       "2026-08-11": 1,
-      "2026-08-12": 4
+      "2026-08-12": 10,
+      "2026-08-13": 6
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 126
+        "count": 116
       },
       {
         "port": "443",
@@ -151,6 +149,78 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://91.92.34.11/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-13 08:30:34 UTC"
+      },
+      {
+        "ioc": "http://78.17.93.167/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-13 05:53:10 UTC"
+      },
+      {
+        "ioc": "https://cloud-flare-authenticator.link/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-13 05:53:09 UTC"
+      },
+      {
+        "ioc": "http://144.31.57.92/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-13 05:53:08 UTC"
+      },
+      {
+        "ioc": "http://91.202.233.163/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-13 05:53:05 UTC"
+      },
+      {
+        "ioc": "https://fbdfsgfwrgerwefew.top/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-13 05:53:04 UTC"
+      },
+      {
+        "ioc": "http://160.20.109.16/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 17:32:13 UTC"
+      },
+      {
+        "ioc": "http://178.16.52.90/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 17:32:12 UTC"
+      },
+      {
+        "ioc": "http://95.135.181.73/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 17:32:12 UTC"
+      },
+      {
+        "ioc": "http://160.20.109.33/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 17:32:11 UTC"
+      },
+      {
+        "ioc": "http://94.103.88.121/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 17:32:10 UTC"
+      },
+      {
+        "ioc": "http://91.92.242.73/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-12 17:32:09 UTC"
+      },
       {
         "ioc": "cloud-flare-authenticator.click",
         "type": "domain",
@@ -168,78 +238,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-08-12 07:16:10 UTC"
-      },
-      {
-        "ioc": "friendihelp.info",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-12 07:16:06 UTC"
-      },
-      {
-        "ioc": "http://46.151.182.189/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-11 06:32:15 UTC"
-      },
-      {
-        "ioc": "193.148.56.206:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-08 20:36:29 UTC"
-      },
-      {
-        "ioc": "http://193.148.56.206/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-08 20:36:26 UTC"
-      },
-      {
-        "ioc": "8d945e37a9d8f4f68fb34b623e628aed9cce8c8ea6593a8e2bbcbba33e166537",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:27:11 UTC"
-      },
-      {
-        "ioc": "b30bbd5be515a837e21a3c9ac34afab886f67d59",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:27:11 UTC"
-      },
-      {
-        "ioc": "b426a480de03b7a15e739cf07f7fac88",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:27:11 UTC"
-      },
-      {
-        "ioc": "7fe1c82d5a257a35d527e78f05d35592c015f0dd8de1956d1e7f02ca70462f4e",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:54 UTC"
-      },
-      {
-        "ioc": "b8601376c42b9ffdd0c599fa9650ab4f64674007",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:54 UTC"
-      },
-      {
-        "ioc": "a7896d977fe660b80c214495486f1f4d",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:54 UTC"
-      },
-      {
-        "ioc": "a4933d27e1f7f7331a3a0ab54d6b53339a412777",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:43 UTC"
-      },
-      {
-        "ioc": "58a519430128d0e52fc10b3bc7fdb717",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:43 UTC"
       }
     ]
   }

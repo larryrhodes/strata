@@ -1,8 +1,8 @@
 {
   "malware_id": "win.netwire",
   "family": "NetWire RC",
-  "generated": "2026-08-12T14:38:21.754461+00:00",
-  "recent_window_ioc_count": 87,
+  "generated": "2026-08-13T14:39:35.963523+00:00",
+  "recent_window_ioc_count": 93,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.netwire",
   "description": "Netwire is a RAT, its functionality seems focused on password stealing and keylogging, but includes remote control capabilities as well.\r\n\r\nKeylog files are stored on the infected machine in an obfuscated form. The algorithm is:\r\n\r\n            for i in range(0,num_read):\r\n                buffer[i] = ((buffer[i]-0x24)^0x9D)&0xFF",
   "alt_names": [
@@ -17,7 +17,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-20",
-      "latest": "2026-08-10"
+      "latest": "2026-08-13"
     },
     "ioc_type_breakdown": {
       "md5_hash": 167,
@@ -30,7 +30,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-20": 11,
+      "2026-06-20": 5,
       "2026-06-21": 15,
       "2026-06-22": 12,
       "2026-06-23": 153,
@@ -52,10 +52,47 @@
       "2026-08-04": 9,
       "2026-08-07": 69,
       "2026-08-08": 6,
-      "2026-08-10": 12
+      "2026-08-10": 12,
+      "2026-08-13": 6
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "6ff68578110de0105fc3a1a1ab635dd3",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:50 UTC"
+      },
+      {
+        "ioc": "0578ccbe64ee7f6c1f90cf656095dad7059b1587",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:50 UTC"
+      },
+      {
+        "ioc": "c1770108b0d0e6dde3fd5d588a85af3409ad41581784b1734a3eec637fddb15d",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:49 UTC"
+      },
+      {
+        "ioc": "ef5b6211a47d0bec3ddb8d77b9c9586a",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:49 UTC"
+      },
+      {
+        "ioc": "46da9bf913828dfdc3cbfc435e414285ba5cb715",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:49 UTC"
+      },
+      {
+        "ioc": "d1ccedd9d262377aa1e28d0ba13b49cbd6511ccaa5e95db0e506064b2861f6f7",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:48 UTC"
+      },
       {
         "ioc": "f466e3112ffdfa965f4457c98dee5b92",
         "type": "md5_hash",
@@ -109,42 +146,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-08-10 11:48:50 UTC"
-      },
-      {
-        "ioc": "a65f533d10703afcd9cc1210ca559b75",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-10 11:48:50 UTC"
-      },
-      {
-        "ioc": "2ac9f75fc9bc14e8f57e319630c3f9dde3a814f5",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-10 11:48:50 UTC"
-      },
-      {
-        "ioc": "ee8bd9222c943d35f0702143c7606aef6a62b229ffc109a468537322e917a9e1",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-10 11:48:49 UTC"
-      },
-      {
-        "ioc": "22be169a8b8005c07238dca6df6ecbf8",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:09 UTC"
-      },
-      {
-        "ioc": "eea4c4329e23baa399cfdc5e04bf06cc63d48325",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:08 UTC"
-      },
-      {
-        "ioc": "6da94ae29b7c3f8a3983ea42ca891eb24a784ae2bc0b9377724dafebacfdf7d9",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-08 17:26:07 UTC"
       }
     ]
   }
