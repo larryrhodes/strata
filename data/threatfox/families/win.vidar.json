@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-08-13T14:38:35.151988+00:00",
-  "recent_window_ioc_count": 420,
+  "generated": "2026-08-14T14:31:44.021973+00:00",
+  "recent_window_ioc_count": 662,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,16 +10,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-03",
-      "latest": "2026-08-13"
+      "earliest": "2026-02-13",
+      "latest": "2026-08-14"
     },
     "ioc_type_breakdown": {
-      "url": 150,
-      "domain": 89,
-      "sha256_hash": 78,
-      "md5_hash": 77,
-      "sha1_hash": 77,
-      "ip:port": 29
+      "domain": 197,
+      "url": 111,
+      "md5_hash": 64,
+      "sha1_hash": 64,
+      "sha256_hash": 64
     },
     "confidence_distribution": {
       "high": 500,
@@ -27,113 +26,156 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-03": 19,
-      "2026-08-04": 38,
-      "2026-08-05": 20,
-      "2026-08-06": 8,
-      "2026-08-07": 29,
-      "2026-08-08": 7,
-      "2026-08-10": 85,
-      "2026-08-11": 48,
-      "2026-08-12": 238,
-      "2026-08-13": 8
+      "2026-02-13": 2,
+      "2026-02-23": 2,
+      "2026-03-02": 2,
+      "2026-03-09": 2,
+      "2026-03-13": 2,
+      "2026-03-19": 2,
+      "2026-03-20": 2,
+      "2026-03-23": 3,
+      "2026-03-27": 6,
+      "2026-04-03": 2,
+      "2026-04-07": 2,
+      "2026-04-13": 2,
+      "2026-04-14": 3,
+      "2026-04-15": 3,
+      "2026-04-16": 4,
+      "2026-04-17": 2,
+      "2026-04-22": 2,
+      "2026-04-24": 2,
+      "2026-04-26": 2,
+      "2026-05-01": 2,
+      "2026-05-10": 1,
+      "2026-05-11": 56,
+      "2026-05-12": 39,
+      "2026-05-15": 2,
+      "2026-05-17": 2,
+      "2026-05-23": 3,
+      "2026-05-29": 2,
+      "2026-06-06": 2,
+      "2026-06-09": 5,
+      "2026-06-13": 3,
+      "2026-06-15": 3,
+      "2026-06-16": 2,
+      "2026-06-17": 2,
+      "2026-06-21": 3,
+      "2026-06-22": 6,
+      "2026-06-23": 6,
+      "2026-06-24": 1,
+      "2026-06-25": 1,
+      "2026-06-26": 2,
+      "2026-06-29": 3,
+      "2026-07-01": 3,
+      "2026-07-10": 2,
+      "2026-07-15": 1,
+      "2026-07-17": 2,
+      "2026-07-18": 1,
+      "2026-07-20": 1,
+      "2026-07-24": 2,
+      "2026-07-28": 1,
+      "2026-07-31": 1,
+      "2026-08-03": 8,
+      "2026-08-04": 4,
+      "2026-08-05": 1,
+      "2026-08-07": 4,
+      "2026-08-08": 1,
+      "2026-08-10": 2,
+      "2026-08-12": 2,
+      "2026-08-13": 9,
+      "2026-08-14": 262
     },
-    "top_ports": [
-      {
-        "port": "443",
-        "count": 29
-      }
-    ],
+    "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "1ab183b92f988063206d8f415f1e6439",
+        "ioc": "https://116.202.1.107",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:57:52 UTC"
+      },
+      {
+        "ioc": "https://tip.sm188dadu.top/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:50:06 UTC"
+      },
+      {
+        "ioc": "tip.sm188dadu.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:50:06 UTC"
+      },
+      {
+        "ioc": "tip.10001slot.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:50:05 UTC"
+      },
+      {
+        "ioc": "https://xdr.sm188dadu.top/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:05:06 UTC"
+      },
+      {
+        "ioc": "xdr.sm188dadu.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:05:05 UTC"
+      },
+      {
+        "ioc": "xdr.10001slot.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 13:05:04 UTC"
+      },
+      {
+        "ioc": "790145cd39af7feeb893487af476e6dc",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-08-13 13:09:47 UTC"
+        "first_seen": "2026-08-14 12:10:47 UTC"
       },
       {
-        "ioc": "9985a958af279455f1ccaf2c35ea527d08ca0c3289f88c084c3a2bd6260b3d03",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-13 13:09:46 UTC"
-      },
-      {
-        "ioc": "aef7e86df2479892739c5d13fb389b474489e846",
+        "ioc": "28b95a45c9a3b289d491f581e368280d85127565",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-08-13 13:09:46 UTC"
+        "first_seen": "2026-08-14 12:10:47 UTC"
       },
       {
-        "ioc": "https://xor.beri303.org",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 11:51:09 UTC"
+        "ioc": "90c5ca87d0fe3fa240b01af3c85adafd9f90e841204cbb122c6a538a2dff6757",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-14 12:10:47 UTC"
       },
       {
-        "ioc": "https://xor.sm188castle.top",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 11:51:08 UTC"
+        "ioc": "5166de87a42870b861c2010a88c54db3",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-14 12:10:45 UTC"
       },
       {
-        "ioc": "xor.sm188castle.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-13 10:40:06 UTC"
+        "ioc": "ad7905e1a2f0274e489f82a12e5b98b77bb7e504",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-14 12:10:45 UTC"
       },
       {
-        "ioc": "xor.beri303.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-13 10:40:05 UTC"
+        "ioc": "de96127b64c06e8e23cfb5d63e815272be085bd4c9406f3e89562873a595ec47",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-14 12:10:45 UTC"
       },
       {
-        "ioc": "https://sep.beri303.org",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 05:53:17 UTC"
+        "ioc": "107cfbddfd263ee8ea17f803460c7737",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-14 12:10:44 UTC"
       },
       {
-        "ioc": "https://65.109.35.163",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-12 20:05:51 UTC"
-      },
-      {
-        "ioc": "https://sep.sm188blood.top/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 20:05:06 UTC"
-      },
-      {
-        "ioc": "sep.sm188blood.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-12 20:05:05 UTC"
-      },
-      {
-        "ioc": "sep.beri303.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-12 20:05:04 UTC"
-      },
-      {
-        "ioc": "https://37.27.134.32",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-12 16:31:08 UTC"
-      },
-      {
-        "ioc": "https://gii.beri303.org/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 16:15:05 UTC"
-      },
-      {
-        "ioc": "gii.beri303.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-12 16:15:04 UTC"
+        "ioc": "1c9fd050813f4fe59bf46a0e18b29beefc85f34d",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-14 12:10:44 UTC"
       }
     ]
   }

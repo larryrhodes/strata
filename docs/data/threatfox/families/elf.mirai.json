@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-08-13T14:40:44.510014+00:00",
-  "recent_window_ioc_count": 67,
+  "generated": "2026-08-14T14:33:31.467295+00:00",
+  "recent_window_ioc_count": 73,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -12,24 +12,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-06",
-      "latest": "2026-08-13"
+      "earliest": "2026-06-08",
+      "latest": "2026-08-14"
     },
     "ioc_type_breakdown": {
-      "ip:port": 333,
+      "ip:port": 335,
       "domain": 76,
       "sha256_hash": 51,
-      "url": 40
+      "url": 38
     },
     "confidence_distribution": {
-      "high": 492,
-      "medium": 8,
+      "high": 491,
+      "medium": 9,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-06": 9,
-      "2026-06-07": 4,
-      "2026-06-08": 11,
+      "2026-06-08": 6,
       "2026-06-09": 2,
       "2026-06-10": 13,
       "2026-06-11": 2,
@@ -84,140 +82,141 @@
       "2026-08-10": 6,
       "2026-08-11": 20,
       "2026-08-12": 5,
-      "2026-08-13": 3
+      "2026-08-13": 4,
+      "2026-08-14": 17
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 75
+        "count": 69
       },
       {
         "port": "25565",
-        "count": 27
+        "count": 28
+      },
+      {
+        "port": "8080",
+        "count": 17
       },
       {
         "port": "1337",
         "count": 16
       },
       {
-        "port": "8080",
-        "count": 16
-      },
-      {
         "port": "123",
-        "count": 12
+        "count": 14
       },
       {
         "port": "23",
-        "count": 9
+        "count": 11
+      },
+      {
+        "port": "2049",
+        "count": 6
       },
       {
         "port": "2222",
         "count": 6
       },
       {
+        "port": "2",
+        "count": 5
+      },
+      {
         "port": "8082",
-        "count": 5
-      },
-      {
-        "port": "443",
-        "count": 5
-      },
-      {
-        "port": "2049",
         "count": 5
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "35bf80f0af528d458d53a7f7179e0ae284d6fb2be613bab904b8fe115e730b0d",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-08-13 08:30:47 UTC"
-      },
-      {
-        "ioc": "http://154.90.70.23/x86",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-13 08:30:46 UTC"
-      },
-      {
-        "ioc": "kappadocia.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-13 07:59:09 UTC"
-      },
-      {
-        "ioc": "development.leandro.st",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-12 18:47:38 UTC"
-      },
-      {
-        "ioc": "94.154.43.76:1312",
+        "ioc": "166.0.192.57:6742",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-12 17:32:16 UTC"
+        "first_seen": "2026-08-14 13:17:42 UTC"
       },
       {
-        "ioc": "217.60.195.187:7075",
+        "ioc": "2.26.81.46:1999",
         "type": "ip:port",
         "confidence": 80,
-        "first_seen": "2026-08-12 08:48:33 UTC"
+        "first_seen": "2026-08-14 07:19:39 UTC"
       },
       {
-        "ioc": "72.56.52.200:9999",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-12 04:57:11 UTC"
-      },
-      {
-        "ioc": "cmd.5gf7jtfk0y.st",
+        "ioc": "afterhours.click",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-12 04:47:21 UTC"
+        "first_seen": "2026-08-14 06:20:32 UTC"
       },
       {
-        "ioc": "176.65.139.244:1337",
+        "ioc": "135.136.191.231:8080",
         "type": "ip:port",
-        "confidence": 80,
-        "first_seen": "2026-08-11 19:20:30 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:31 UTC"
       },
       {
-        "ioc": "http://77.90.185.66/wget",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-08-11 19:20:25 UTC"
+        "ioc": "imagiraffe.shop",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:31 UTC"
       },
       {
-        "ioc": "http://77.90.185.66/mirai.mips",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-08-11 19:20:25 UTC"
+        "ioc": "chickenfriedwatermelonkoolaid.store",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:30 UTC"
       },
       {
-        "ioc": "http://77.90.185.66/mirai.arm",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-08-11 19:20:24 UTC"
+        "ioc": "nightslikethis.club",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:30 UTC"
       },
       {
-        "ioc": "http://77.90.185.66/mirai.mpsl",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-08-11 19:20:24 UTC"
+        "ioc": "135.136.191.231:23",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:29 UTC"
       },
       {
-        "ioc": "http://77.90.185.66/mirai.arm5",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-08-11 19:20:23 UTC"
+        "ioc": "135.136.191.231:25565",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:28 UTC"
       },
       {
-        "ioc": "http://77.90.185.66/mirai.arm7",
-        "type": "url",
+        "ioc": "135.136.191.231:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:28 UTC"
+      },
+      {
+        "ioc": "135.136.191.231:123",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:28 UTC"
+      },
+      {
+        "ioc": "3.34.139.65:123",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:27 UTC"
+      },
+      {
+        "ioc": "172.104.49.49:3667",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:20:09 UTC"
+      },
+      {
+        "ioc": "45.38.249.63:1004",
+        "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-08-11 19:20:23 UTC"
+        "first_seen": "2026-08-14 06:20:09 UTC"
+      },
+      {
+        "ioc": "160.119.71.134:2",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-14 06:18:50 UTC"
       }
     ]
   }

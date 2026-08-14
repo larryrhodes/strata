@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-08-13T14:42:49.235213+00:00",
-  "recent_window_ioc_count": 50,
+  "generated": "2026-08-14T14:35:34.528598+00:00",
+  "recent_window_ioc_count": 49,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -16,12 +16,12 @@
       "latest": "2026-08-13"
     },
     "ioc_type_breakdown": {
-      "ip:port": 143,
-      "md5_hash": 92,
+      "ip:port": 144,
       "sha1_hash": 92,
+      "md5_hash": 92,
       "sha256_hash": 92,
       "url": 41,
-      "domain": 40
+      "domain": 39
     },
     "confidence_distribution": {
       "high": 497,
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-07": 3,
+      "2026-05-07": 2,
       "2026-05-12": 8,
       "2026-05-15": 2,
       "2026-05-16": 6,
@@ -98,12 +98,12 @@
       "2026-08-07": 14,
       "2026-08-08": 20,
       "2026-08-12": 7,
-      "2026-08-13": 9
+      "2026-08-13": 10
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 13
+        "count": 14
       },
       {
         "port": "80",
@@ -144,14 +144,20 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "7a0f3eebfb821131f22ff6ec2645b4fc",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-13 13:09:58 UTC"
+        "ioc": "156.247.41.102:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-13 16:00:19 UTC"
       },
       {
         "ioc": "91763fd9896d4e7c17058d566e903a94ab801127",
         "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-13 13:09:58 UTC"
+      },
+      {
+        "ioc": "7a0f3eebfb821131f22ff6ec2645b4fc",
+        "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-08-13 13:09:58 UTC"
       },
@@ -226,12 +232,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-08-12 12:00:17 UTC"
-      },
-      {
-        "ioc": "c37867e844f570179d9aaa3e417149223c847e6bc9d58ab4997d03a3c66882a0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-12 12:00:16 UTC"
       }
     ]
   }
