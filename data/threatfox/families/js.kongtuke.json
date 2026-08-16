@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-08-15T13:57:43.370789+00:00",
-  "recent_window_ioc_count": 28,
+  "generated": "2026-08-16T13:57:53.768431+00:00",
+  "recent_window_ioc_count": 34,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -14,21 +14,23 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-03-30",
-      "latest": "2026-08-14"
+      "latest": "2026-08-15"
     },
     "ioc_type_breakdown": {
       "domain": 323,
-      "url": 159,
-      "sha256_hash": 10,
-      "ip:port": 8
+      "url": 153,
+      "sha256_hash": 12,
+      "ip:port": 8,
+      "md5_hash": 2,
+      "sha1_hash": 2
     },
     "confidence_distribution": {
-      "high": 370,
-      "medium": 130,
+      "high": 371,
+      "medium": 129,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-30": 35,
+      "2026-03-30": 24,
       "2026-04-06": 8,
       "2026-04-08": 5,
       "2026-04-10": 4,
@@ -67,7 +69,8 @@
       "2026-08-11": 4,
       "2026-08-12": 10,
       "2026-08-13": 1,
-      "2026-08-14": 8
+      "2026-08-14": 8,
+      "2026-08-15": 11
     },
     "top_ports": [
       {
@@ -80,6 +83,72 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "082587256ff1ecbed29ca78dbfee706d",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:17:41 UTC"
+      },
+      {
+        "ioc": "4f70d46d66a362d4c0ddc1242443223f20b9ca9c",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:17:41 UTC"
+      },
+      {
+        "ioc": "5ee2f468fac76514a39aac80f78a48a36a3a6585460017bfccca54e4afeb13c2",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:17:40 UTC"
+      },
+      {
+        "ioc": "488e038d75bd71a749dcb98ca5f0006d",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:17:35 UTC"
+      },
+      {
+        "ioc": "0e555954137d88bde2aac58051f507c1c886e2e6",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:17:35 UTC"
+      },
+      {
+        "ioc": "5320d565de984280aed253f7ba82c3a5f9d6a7be23300e746e10c63f2b583cbd",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:17:34 UTC"
+      },
+      {
+        "ioc": "https://rodrigeez.surf/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-15 15:42:48 UTC"
+      },
+      {
+        "ioc": "https://edgetoken2186.net/ue",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-15 15:42:33 UTC"
+      },
+      {
+        "ioc": "https://datapass2578.com/ue",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-15 15:42:32 UTC"
+      },
+      {
+        "ioc": "edgetoken2186.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-15 15:42:32 UTC"
+      },
+      {
+        "ioc": "datapass2578.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-15 15:42:31 UTC"
+      },
       {
         "ioc": "https://gonznlez.surf/api/v1/status",
         "type": "url",
@@ -103,72 +172,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-14 12:45:44 UTC"
-      },
-      {
-        "ioc": "gonznlez.surf",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-14 11:26:04 UTC"
-      },
-      {
-        "ioc": "https://gonznlez.surf/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 11:26:03 UTC"
-      },
-      {
-        "ioc": "https://gonznlez.surf/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 11:26:03 UTC"
-      },
-      {
-        "ioc": "https://mathiuu.surf/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 06:20:26 UTC"
-      },
-      {
-        "ioc": "https://herndndes.beer/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 13:35:53 UTC"
-      },
-      {
-        "ioc": "corralos.beer",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:28 UTC"
-      },
-      {
-        "ioc": "https://corralos.beer/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:27 UTC"
-      },
-      {
-        "ioc": "https://corralos.beer/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:26 UTC"
-      },
-      {
-        "ioc": "https://corralos.beer/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:08 UTC"
-      },
-      {
-        "ioc": "https://herndndes.beer/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:31:34 UTC"
-      },
-      {
-        "ioc": "https://herndndes.beer/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:31:33 UTC"
       }
     ]
   }

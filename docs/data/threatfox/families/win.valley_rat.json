@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-08-15T13:57:29.224406+00:00",
-  "recent_window_ioc_count": 35,
+  "generated": "2026-08-16T13:58:22.346302+00:00",
+  "recent_window_ioc_count": 32,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-07",
-      "latest": "2026-08-13"
+      "earliest": "2026-05-16",
+      "latest": "2026-08-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 144,
-      "sha1_hash": 92,
-      "md5_hash": 92,
-      "sha256_hash": 92,
-      "url": 41,
-      "domain": 39
+      "ip:port": 138,
+      "md5_hash": 95,
+      "sha256_hash": 95,
+      "sha1_hash": 95,
+      "url": 40,
+      "domain": 37
     },
     "confidence_distribution": {
       "high": 497,
@@ -29,10 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-07": 2,
-      "2026-05-12": 8,
-      "2026-05-15": 2,
-      "2026-05-16": 6,
+      "2026-05-16": 3,
       "2026-05-18": 3,
       "2026-05-21": 2,
       "2026-05-23": 2,
@@ -98,28 +95,26 @@
       "2026-08-07": 14,
       "2026-08-08": 20,
       "2026-08-12": 7,
-      "2026-08-13": 10
+      "2026-08-13": 10,
+      "2026-08-15": 9,
+      "2026-08-16": 6
     },
     "top_ports": [
       {
+        "port": "6666",
+        "count": 12
+      },
+      {
         "port": "443",
-        "count": 14
+        "count": 12
       },
       {
         "port": "80",
         "count": 12
       },
       {
-        "port": "6666",
-        "count": 11
-      },
-      {
         "port": "8888",
-        "count": 8
-      },
-      {
-        "port": "6667",
-        "count": 3
+        "count": 9
       },
       {
         "port": "5677",
@@ -130,8 +125,8 @@
         "count": 3
       },
       {
-        "port": "8880",
-        "count": 3
+        "port": "433",
+        "count": 2
       },
       {
         "port": "1112",
@@ -140,98 +135,102 @@
       {
         "port": "1113",
         "count": 2
+      },
+      {
+        "port": "6667",
+        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "156.247.41.102:443",
+        "ioc": "143.92.61.212:433",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-13 16:00:19 UTC"
+        "first_seen": "2026-08-16 13:50:12 UTC"
       },
       {
-        "ioc": "91763fd9896d4e7c17058d566e903a94ab801127",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-13 13:09:58 UTC"
+        "ioc": "107.148.46.100:8888",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 13:30:53 UTC"
       },
       {
-        "ioc": "7a0f3eebfb821131f22ff6ec2645b4fc",
+        "ioc": "202.61.85.34:7800",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-16 13:30:11 UTC"
+      },
+      {
+        "ioc": "107.148.46.100:6666",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-16 13:20:09 UTC"
+      },
+      {
+        "ioc": "43.132.212.50:661",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-16 08:50:08 UTC"
+      },
+      {
+        "ioc": "43.132.212.50:662",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-16 08:50:05 UTC"
+      },
+      {
+        "ioc": "079d47dd089638b90a5741175e15760f",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-08-13 13:09:58 UTC"
+        "first_seen": "2026-08-15 17:17:30 UTC"
       },
       {
-        "ioc": "b9f992a46caa3b898a960ceb13b8be215054e74d80b288de82b662c028faecb6",
+        "ioc": "aafaddd58c513931655be4a52b11317283b500ef27608a83af45d4e625568d20",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-08-13 13:09:57 UTC"
+        "first_seen": "2026-08-15 17:17:29 UTC"
       },
       {
-        "ioc": "8.210.155.34:6868",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-13 09:45:11 UTC"
-      },
-      {
-        "ioc": "118.107.9.161:1112",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-13 09:06:14 UTC"
-      },
-      {
-        "ioc": "118.107.9.161:1113",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-13 09:00:13 UTC"
-      },
-      {
-        "ioc": "103.30.7.55:8477",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-13 07:25:07 UTC"
-      },
-      {
-        "ioc": "161.248.14.213:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-13 07:01:54 UTC"
-      },
-      {
-        "ioc": "161.248.14.213:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-13 06:55:08 UTC"
-      },
-      {
-        "ioc": "112.213.110.210:441",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-12 13:26:59 UTC"
-      },
-      {
-        "ioc": "ba4a5126156520fc1d7e71b8e6151598b492bd5f",
+        "ioc": "4068c64946bc4bafa70fba0bef12fd1568d62441",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-08-12 12:01:04 UTC"
+        "first_seen": "2026-08-15 17:17:29 UTC"
       },
       {
-        "ioc": "655bc97584876b110db5e07464af6522",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-12 12:01:04 UTC"
-      },
-      {
-        "ioc": "80ffaa35ddfdbe219dc67158d1e456d49c8a813bed24b5a882f2f89e0ffe0297",
+        "ioc": "b1dd31636a26d8811f470ccdc32b90ed291dba7cee4ff7d02a9cb01d85146126",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-08-12 12:01:03 UTC"
+        "first_seen": "2026-08-15 17:16:28 UTC"
       },
       {
-        "ioc": "7e7c478b6016828d9bf035079574fdc5",
+        "ioc": "3573283767223581ce41758669305a2164b84936",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:28 UTC"
+      },
+      {
+        "ioc": "90e645041b6e91f8b83d0da2c62ec148",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-08-12 12:00:17 UTC"
+        "first_seen": "2026-08-15 17:16:28 UTC"
+      },
+      {
+        "ioc": "b69960959a2a3027410b08b37cb233b1ef14d958",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:16 UTC"
+      },
+      {
+        "ioc": "4533a423f75743a34bed873c0606fc17",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:16 UTC"
+      },
+      {
+        "ioc": "7db44e145483e67e5fa9944a0d1e9df51e4cd6a0b50249cd882a38eca2443ec7",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:15 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-15T13:57:01.622503+00:00",
-  "recent_window_ioc_count": 39,
+  "generated": "2026-08-16T13:57:39.822146+00:00",
+  "recent_window_ioc_count": 40,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -19,11 +19,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-22",
-      "latest": "2026-08-13"
+      "latest": "2026-08-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 402,
-      "domain": 76,
+      "ip:port": 401,
+      "domain": 77,
       "sha256_hash": 21,
       "url": 1
     },
@@ -33,7 +33,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-22": 8,
+      "2026-06-22": 6,
       "2026-06-23": 11,
       "2026-06-24": 16,
       "2026-06-25": 15,
@@ -80,12 +80,17 @@
       "2026-08-10": 23,
       "2026-08-11": 5,
       "2026-08-12": 3,
-      "2026-08-13": 7
+      "2026-08-13": 7,
+      "2026-08-16": 2
     },
     "top_ports": [
       {
         "port": "2404",
         "count": 47
+      },
+      {
+        "port": "443",
+        "count": 9
       },
       {
         "port": "14641",
@@ -94,10 +99,6 @@
       {
         "port": "14645",
         "count": 9
-      },
-      {
-        "port": "443",
-        "count": 8
       },
       {
         "port": "14642",
@@ -125,6 +126,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "141.94.14.42:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 13:05:06 UTC"
+      },
+      {
+        "ioc": "vibemedia.me",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-16 13:03:24 UTC"
+      },
       {
         "ioc": "192.227.135.223:6040",
         "type": "ip:port",
@@ -202,18 +215,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-11 07:45:10 UTC"
-      },
-      {
-        "ioc": "155.103.69.20:14648",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-11 07:43:47 UTC"
-      },
-      {
-        "ioc": "155.103.70.232:14554",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-11 06:58:27 UTC"
       }
     ]
   }

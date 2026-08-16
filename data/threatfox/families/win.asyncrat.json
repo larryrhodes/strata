@@ -1,7 +1,7 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-08-15T13:54:19.069455+00:00",
+  "generated": "2026-08-16T13:55:47.678323+00:00",
   "recent_window_ioc_count": 104,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
@@ -10,24 +10,23 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-24",
-      "latest": "2026-08-15"
+      "earliest": "2026-06-25",
+      "latest": "2026-08-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 416,
-      "md5_hash": 23,
-      "sha256_hash": 23,
-      "sha1_hash": 23,
-      "domain": 15
+      "ip:port": 414,
+      "sha256_hash": 24,
+      "sha1_hash": 24,
+      "md5_hash": 24,
+      "domain": 14
     },
     "confidence_distribution": {
-      "high": 499,
-      "medium": 1,
+      "high": 498,
+      "medium": 2,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-24": 8,
-      "2026-06-25": 3,
+      "2026-06-25": 2,
       "2026-06-26": 2,
       "2026-06-27": 6,
       "2026-06-28": 5,
@@ -48,7 +47,7 @@
       "2026-07-13": 9,
       "2026-07-14": 10,
       "2026-07-15": 8,
-      "2026-07-16": 18,
+      "2026-07-16": 15,
       "2026-07-17": 9,
       "2026-07-18": 7,
       "2026-07-20": 12,
@@ -56,7 +55,7 @@
       "2026-07-22": 16,
       "2026-07-23": 16,
       "2026-07-24": 13,
-      "2026-07-25": 13,
+      "2026-07-25": 12,
       "2026-07-26": 10,
       "2026-07-27": 33,
       "2026-07-28": 18,
@@ -77,20 +76,21 @@
       "2026-08-12": 32,
       "2026-08-13": 16,
       "2026-08-14": 13,
-      "2026-08-15": 6
+      "2026-08-15": 16,
+      "2026-08-16": 3
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 66
+        "count": 65
       },
       {
         "port": "7707",
-        "count": 52
+        "count": 51
       },
       {
         "port": "6606",
-        "count": 43
+        "count": 44
       },
       {
         "port": "8080",
@@ -98,11 +98,11 @@
       },
       {
         "port": "443",
-        "count": 9
+        "count": 10
       },
       {
         "port": "80",
-        "count": 9
+        "count": 10
       },
       {
         "port": "4444",
@@ -113,8 +113,8 @@
         "count": 6
       },
       {
-        "port": "6666",
-        "count": 6
+        "port": "21",
+        "count": 5
       },
       {
         "port": "3306",
@@ -122,6 +122,84 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "121.127.233.54:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 13:05:08 UTC"
+      },
+      {
+        "ioc": "185.34.147.34:21",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-16 13:05:07 UTC"
+      },
+      {
+        "ioc": "193.161.193.99:35711",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 09:44:26 UTC"
+      },
+      {
+        "ioc": "172.93.144.140:8580",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-15 21:05:05 UTC"
+      },
+      {
+        "ioc": "185.34.147.35:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-15 19:44:33 UTC"
+      },
+      {
+        "ioc": "185.34.147.34:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-15 19:44:32 UTC"
+      },
+      {
+        "ioc": "185.34.147.33:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-15 19:44:32 UTC"
+      },
+      {
+        "ioc": "185.34.147.32:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-15 19:44:31 UTC"
+      },
+      {
+        "ioc": "185.34.147.31:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-15 19:44:30 UTC"
+      },
+      {
+        "ioc": "32c92e3a2f50c0d2e64bfaf78c6221de95cc23d4ca22045c70c8e237c60cf29f",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:30 UTC"
+      },
+      {
+        "ioc": "96863ca872571710a738462ee163aa7d68396496",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:30 UTC"
+      },
+      {
+        "ioc": "59ac80a9f292b50f093a9979d2f0e569",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-15 17:16:30 UTC"
+      },
+      {
+        "ioc": "94.154.32.220:80",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-08-15 15:43:03 UTC"
+      },
       {
         "ioc": "104.243.248.63:412",
         "type": "ip:port",
@@ -133,84 +211,6 @@
         "type": "domain",
         "confidence": 75,
         "first_seen": "2026-08-15 10:00:54 UTC"
-      },
-      {
-        "ioc": "207.189.22.218:7707",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-15 09:55:03 UTC"
-      },
-      {
-        "ioc": "23.175.48.7:7707",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 09:45:31 UTC"
-      },
-      {
-        "ioc": "155.94.150.221:6745",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 09:43:45 UTC"
-      },
-      {
-        "ioc": "104.243.248.63:306",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 09:43:13 UTC"
-      },
-      {
-        "ioc": "23.175.48.7:8808",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-14 19:45:36 UTC"
-      },
-      {
-        "ioc": "178.16.52.136:3009",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-14 19:44:10 UTC"
-      },
-      {
-        "ioc": "128.90.63.117:4444",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-14 19:43:26 UTC"
-      },
-      {
-        "ioc": "62.85.24.150:8808",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-14 15:05:05 UTC"
-      },
-      {
-        "ioc": "172.111.139.163:9999",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-14 14:05:09 UTC"
-      },
-      {
-        "ioc": "d359e37f01c454771d6f2a5266be4c06",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-14 12:09:19 UTC"
-      },
-      {
-        "ioc": "5334ab4eafeb63eaeab2d69bdfedf38cb92ed5d88dfe96564171cdfa22e3da17",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-14 12:09:18 UTC"
-      },
-      {
-        "ioc": "47aa4e2a552e8590fa17405e8ad536c00793a087",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-14 12:09:18 UTC"
-      },
-      {
-        "ioc": "63.141.237.101:7707",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-14 09:46:18 UTC"
       }
     ]
   }
