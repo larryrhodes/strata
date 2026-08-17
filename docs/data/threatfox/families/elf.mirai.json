@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-08-16T13:56:29.741025+00:00",
-  "recent_window_ioc_count": 68,
+  "generated": "2026-08-17T14:05:20.249339+00:00",
+  "recent_window_ioc_count": 64,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -13,13 +13,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-10",
-      "latest": "2026-08-15"
+      "latest": "2026-08-17"
     },
     "ioc_type_breakdown": {
-      "ip:port": 346,
+      "ip:port": 347,
       "domain": 65,
       "sha256_hash": 51,
-      "url": 38
+      "url": 37
     },
     "confidence_distribution": {
       "high": 491,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-10": 5,
+      "2026-06-10": 4,
       "2026-06-11": 2,
       "2026-06-12": 1,
       "2026-06-13": 3,
@@ -82,7 +82,8 @@
       "2026-08-12": 5,
       "2026-08-13": 4,
       "2026-08-14": 18,
-      "2026-08-15": 15
+      "2026-08-15": 15,
+      "2026-08-17": 1
     },
     "top_ports": [
       {
@@ -128,19 +129,25 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "198.144.179.82:55650",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 05:38:18 UTC"
+      },
+      {
         "ioc": "45.38.249.63:14",
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-15 15:43:01 UTC"
       },
       {
-        "ioc": "45.38.249.63:2049",
+        "ioc": "45.38.249.63:1005",
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-15 15:43:00 UTC"
       },
       {
-        "ioc": "45.38.249.63:1005",
+        "ioc": "45.38.249.63:2049",
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-15 15:43:00 UTC"
@@ -188,6 +195,12 @@
         "first_seen": "2026-08-15 15:42:56 UTC"
       },
       {
+        "ioc": "45.38.249.63:1009",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-15 15:42:55 UTC"
+      },
+      {
         "ioc": "45.38.249.63:1006",
         "type": "ip:port",
         "confidence": 100,
@@ -200,22 +213,10 @@
         "first_seen": "2026-08-15 15:42:55 UTC"
       },
       {
-        "ioc": "45.38.249.63:1009",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-15 15:42:55 UTC"
-      },
-      {
         "ioc": "45.38.249.63:6969",
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-15 15:42:54 UTC"
-      },
-      {
-        "ioc": "169.58.168.81:8082",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-15 15:42:32 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vshell",
   "family": "VShell",
-  "generated": "2026-08-16T13:55:34.359695+00:00",
-  "recent_window_ioc_count": 112,
+  "generated": "2026-08-17T14:03:58.981378+00:00",
+  "recent_window_ioc_count": 113,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
   "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-15",
-      "latest": "2026-08-16"
+      "latest": "2026-08-17"
     },
     "ioc_type_breakdown": {
       "ip:port": 498,
@@ -24,13 +24,12 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-15": 144,
+      "2026-04-15": 149,
       "2026-05-10": 3,
       "2026-05-18": 1,
       "2026-06-03": 71,
       "2026-06-04": 5,
       "2026-06-05": 2,
-      "2026-07-26": 11,
       "2026-07-28": 8,
       "2026-07-29": 15,
       "2026-07-30": 15,
@@ -50,12 +49,13 @@
       "2026-08-13": 6,
       "2026-08-14": 17,
       "2026-08-15": 10,
-      "2026-08-16": 49
+      "2026-08-16": 50,
+      "2026-08-17": 5
     },
     "top_ports": [
       {
         "port": "8084",
-        "count": 109
+        "count": 107
       },
       {
         "port": "80",
@@ -63,7 +63,7 @@
       },
       {
         "port": "8080",
-        "count": 35
+        "count": 34
       },
       {
         "port": "443",
@@ -71,19 +71,19 @@
       },
       {
         "port": "8085",
-        "count": 19
+        "count": 18
+      },
+      {
+        "port": "8443",
+        "count": 14
+      },
+      {
+        "port": "9999",
+        "count": 13
       },
       {
         "port": "8083",
         "count": 13
-      },
-      {
-        "port": "9999",
-        "count": 12
-      },
-      {
-        "port": "8443",
-        "count": 12
       },
       {
         "port": "8888",
@@ -95,6 +95,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "137.220.225.62:8084",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 08:05:05 UTC"
+      },
+      {
+        "ioc": "114.132.46.254:9001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 07:05:06 UTC"
+      },
+      {
+        "ioc": "186.241.79.63:11268",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 03:05:06 UTC"
+      },
+      {
+        "ioc": "139.196.238.43:8443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 03:05:05 UTC"
+      },
+      {
+        "ioc": "60.185.66.128:8084",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 02:05:06 UTC"
+      },
+      {
+        "ioc": "204.194.54.54:8443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-16 15:05:04 UTC"
+      },
       {
         "ioc": "139.95.24.51:8081",
         "type": "ip:port",
@@ -148,42 +184,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-16 13:04:37 UTC"
-      },
-      {
-        "ioc": "122.51.48.49:8086",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-16 13:04:37 UTC"
-      },
-      {
-        "ioc": "70.34.247.220:8080",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-16 13:04:36 UTC"
-      },
-      {
-        "ioc": "151.245.121.11:8080",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-16 13:04:36 UTC"
-      },
-      {
-        "ioc": "83.229.124.36:9999",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-16 13:04:35 UTC"
-      },
-      {
-        "ioc": "8.130.210.211:8888",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-16 13:04:35 UTC"
-      },
-      {
-        "ioc": "107.149.189.253:8080",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-16 13:04:35 UTC"
       }
     ]
   }

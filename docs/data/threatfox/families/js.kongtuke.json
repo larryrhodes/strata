@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-08-16T13:57:53.768431+00:00",
-  "recent_window_ioc_count": 34,
+  "generated": "2026-08-17T14:07:20.787083+00:00",
+  "recent_window_ioc_count": 37,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -14,11 +14,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-03-30",
-      "latest": "2026-08-15"
+      "latest": "2026-08-17"
     },
     "ioc_type_breakdown": {
-      "domain": 323,
-      "url": 153,
+      "domain": 324,
+      "url": 152,
       "sha256_hash": 12,
       "ip:port": 8,
       "md5_hash": 2,
@@ -30,7 +30,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-30": 24,
+      "2026-03-30": 21,
       "2026-04-06": 8,
       "2026-04-08": 5,
       "2026-04-10": 4,
@@ -70,7 +70,8 @@
       "2026-08-12": 10,
       "2026-08-13": 1,
       "2026-08-14": 8,
-      "2026-08-15": 11
+      "2026-08-15": 11,
+      "2026-08-17": 3
     },
     "top_ports": [
       {
@@ -83,6 +84,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "eelorme.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-17 13:34:10 UTC"
+      },
+      {
+        "ioc": "https://eelorme.lol/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-17 13:34:09 UTC"
+      },
+      {
+        "ioc": "https://eelorme.lol/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-17 13:34:08 UTC"
+      },
       {
         "ioc": "082587256ff1ecbed29ca78dbfee706d",
         "type": "md5_hash",
@@ -154,24 +173,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-08-14 15:21:56 UTC"
-      },
-      {
-        "ioc": "https://rodrigeez.surf/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 12:45:45 UTC"
-      },
-      {
-        "ioc": "https://rodrigeez.surf/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 12:45:44 UTC"
-      },
-      {
-        "ioc": "rodrigeez.surf",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-14 12:45:44 UTC"
       }
     ]
   }

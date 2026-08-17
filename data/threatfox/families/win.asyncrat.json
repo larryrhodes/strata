@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-08-16T13:55:47.678323+00:00",
-  "recent_window_ioc_count": 104,
+  "generated": "2026-08-17T14:04:11.777285+00:00",
+  "recent_window_ioc_count": 105,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,15 +10,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-25",
-      "latest": "2026-08-16"
+      "earliest": "2026-06-27",
+      "latest": "2026-08-17"
     },
     "ioc_type_breakdown": {
-      "ip:port": 414,
-      "sha256_hash": 24,
-      "sha1_hash": 24,
-      "md5_hash": 24,
-      "domain": 14
+      "ip:port": 416,
+      "sha256_hash": 23,
+      "sha1_hash": 23,
+      "md5_hash": 23,
+      "domain": 15
     },
     "confidence_distribution": {
       "high": 498,
@@ -26,9 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-25": 2,
-      "2026-06-26": 2,
-      "2026-06-27": 6,
+      "2026-06-27": 5,
       "2026-06-28": 5,
       "2026-06-29": 3,
       "2026-06-30": 6,
@@ -47,7 +45,7 @@
       "2026-07-13": 9,
       "2026-07-14": 10,
       "2026-07-15": 8,
-      "2026-07-16": 15,
+      "2026-07-16": 12,
       "2026-07-17": 9,
       "2026-07-18": 7,
       "2026-07-20": 12,
@@ -56,7 +54,7 @@
       "2026-07-23": 16,
       "2026-07-24": 13,
       "2026-07-25": 12,
-      "2026-07-26": 10,
+      "2026-07-26": 9,
       "2026-07-27": 33,
       "2026-07-28": 18,
       "2026-07-29": 25,
@@ -77,40 +75,41 @@
       "2026-08-13": 16,
       "2026-08-14": 13,
       "2026-08-15": 16,
-      "2026-08-16": 3
+      "2026-08-16": 8,
+      "2026-08-17": 4
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 65
+        "count": 64
       },
       {
         "port": "7707",
-        "count": 51
+        "count": 50
       },
       {
         "port": "6606",
         "count": 44
       },
       {
-        "port": "8080",
-        "count": 11
+        "port": "80",
+        "count": 10
       },
       {
         "port": "443",
         "count": 10
       },
       {
-        "port": "80",
+        "port": "8080",
         "count": 10
       },
       {
         "port": "4444",
-        "count": 8
+        "count": 7
       },
       {
         "port": "7777",
-        "count": 6
+        "count": 7
       },
       {
         "port": "21",
@@ -122,6 +121,60 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "86.48.16.94:3200",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-17 09:47:39 UTC"
+      },
+      {
+        "ioc": "169.58.180.142:30400",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-17 09:44:22 UTC"
+      },
+      {
+        "ioc": "145.63.130.104:4444",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-17 09:43:51 UTC"
+      },
+      {
+        "ioc": "185.34.147.32:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-17 06:05:06 UTC"
+      },
+      {
+        "ioc": "2.27.4.236:5552",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 21:06:08 UTC"
+      },
+      {
+        "ioc": "n8e.us.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-16 19:50:34 UTC"
+      },
+      {
+        "ioc": "172.94.18.103:77",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 19:44:09 UTC"
+      },
+      {
+        "ioc": "153.52.182.78:7777",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 19:43:44 UTC"
+      },
+      {
+        "ioc": "104.243.248.63:1002",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-16 19:43:12 UTC"
+      },
       {
         "ioc": "121.127.233.54:443",
         "type": "ip:port",
@@ -157,60 +210,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-15 19:44:32 UTC"
-      },
-      {
-        "ioc": "185.34.147.33:6606",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 19:44:32 UTC"
-      },
-      {
-        "ioc": "185.34.147.32:6606",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 19:44:31 UTC"
-      },
-      {
-        "ioc": "185.34.147.31:6606",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 19:44:30 UTC"
-      },
-      {
-        "ioc": "32c92e3a2f50c0d2e64bfaf78c6221de95cc23d4ca22045c70c8e237c60cf29f",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-15 17:16:30 UTC"
-      },
-      {
-        "ioc": "96863ca872571710a738462ee163aa7d68396496",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-15 17:16:30 UTC"
-      },
-      {
-        "ioc": "59ac80a9f292b50f093a9979d2f0e569",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-15 17:16:30 UTC"
-      },
-      {
-        "ioc": "94.154.32.220:80",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-15 15:43:03 UTC"
-      },
-      {
-        "ioc": "104.243.248.63:412",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-15 11:05:07 UTC"
-      },
-      {
-        "ioc": "aappicha.ddns.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-15 10:00:54 UTC"
       }
     ]
   }
