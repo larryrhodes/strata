@@ -1,8 +1,8 @@
 {
   "malware_id": "win.dcrat",
   "family": "DCRat",
-  "generated": "2026-08-17T14:08:05.528698+00:00",
-  "recent_window_ioc_count": 33,
+  "generated": "2026-08-18T14:12:29.522625+00:00",
+  "recent_window_ioc_count": 30,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
   "description": "DCRat is a typical RAT that has been around since at least June 2019.",
   "alt_names": [
@@ -13,7 +13,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-03-01",
-      "latest": "2026-08-17"
+      "latest": "2026-08-18"
     },
     "ioc_type_breakdown": {
       "ip:port": 329,
@@ -145,7 +145,7 @@
       "2026-07-24": 11,
       "2026-07-25": 2,
       "2026-07-26": 1,
-      "2026-07-27": 5,
+      "2026-07-27": 2,
       "2026-07-28": 6,
       "2026-07-29": 5,
       "2026-07-30": 4,
@@ -165,12 +165,13 @@
       "2026-08-14": 4,
       "2026-08-15": 2,
       "2026-08-16": 10,
-      "2026-08-17": 2
+      "2026-08-17": 4,
+      "2026-08-18": 1
     },
     "top_ports": [
       {
         "port": "8848",
-        "count": 72
+        "count": 73
       },
       {
         "port": "12159",
@@ -178,11 +179,11 @@
       },
       {
         "port": "7777",
-        "count": 16
+        "count": 15
       },
       {
         "port": "8888",
-        "count": 15
+        "count": 13
       },
       {
         "port": "443",
@@ -210,6 +211,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "128.90.112.33:2486",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-18 09:43:30 UTC"
+      },
+      {
+        "ioc": "207.89.17.21:7070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-17 19:44:57 UTC"
+      },
+      {
+        "ioc": "178.16.52.100:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-17 19:44:16 UTC"
+      },
       {
         "ioc": "http://cp917571.tw1.ru/L1nc0In.php",
         "type": "url",
@@ -281,24 +300,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-16 04:05:05 UTC"
-      },
-      {
-        "ioc": "38.60.253.24:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 19:46:05 UTC"
-      },
-      {
-        "ioc": "172.86.77.50:5656",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-15 19:44:11 UTC"
-      },
-      {
-        "ioc": "78.17.213.180:1907",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-14 19:46:27 UTC"
       }
     ]
   }

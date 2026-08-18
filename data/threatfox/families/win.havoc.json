@@ -1,7 +1,7 @@
 {
   "malware_id": "win.havoc",
   "family": "Havoc",
-  "generated": "2026-08-17T14:08:43.398117+00:00",
+  "generated": "2026-08-18T14:12:44.835487+00:00",
   "recent_window_ioc_count": 28,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.havoc",
   "description": "First released in October 2022, the Havoc C2 Framework is a flexible post-exploitation framework written in Golang, C++, and Qt, with agents called 'Demons' written in C and ASM, created by @C5pider. Designed to support red team engagements and adversary emulation, it offers a robust set of capabilities tailored for offensive security operations. The framework, which is under active development, utilizes HTTP(s) and SMB as communication protocols for its implants. Havoc can generate implants, known as Demons, in several formats including EXE, DLL, and Shellcode. A notable feature of Havoc is its ability to bypass EDR by employing advanced evasion techniques such as sleep obfuscation, return address stack spoofing, and indirect syscalls. This capability enhances its effectiveness in evading detection and circumventing security measures.",
@@ -10,22 +10,22 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 491,
+    "total_iocs": 489,
     "date_range": {
       "earliest": "2023-07-31",
-      "latest": "2026-08-17"
+      "latest": "2026-08-18"
     },
     "ioc_type_breakdown": {
-      "ip:port": 457,
-      "domain": 26,
+      "ip:port": 456,
+      "domain": 25,
       "sha256_hash": 3,
       "url": 3,
       "md5_hash": 1,
       "sha1_hash": 1
     },
     "confidence_distribution": {
-      "high": 470,
-      "medium": 21,
+      "high": 467,
+      "medium": 22,
       "low": 0
     },
     "activity_timeline": {
@@ -82,7 +82,6 @@
       "2025-10-22": 1,
       "2025-10-23": 1,
       "2025-11-01": 1,
-      "2025-11-06": 1,
       "2025-11-10": 2,
       "2025-11-16": 1,
       "2025-11-20": 1,
@@ -107,7 +106,6 @@
       "2026-01-13": 1,
       "2026-01-14": 2,
       "2026-01-15": 2,
-      "2026-01-16": 1,
       "2026-01-17": 5,
       "2026-01-20": 3,
       "2026-01-21": 1,
@@ -135,9 +133,9 @@
       "2026-02-12": 3,
       "2026-02-13": 5,
       "2026-02-14": 1,
-      "2026-02-15": 3,
+      "2026-02-15": 2,
       "2026-02-16": 4,
-      "2026-02-17": 13,
+      "2026-02-17": 12,
       "2026-02-18": 6,
       "2026-02-19": 9,
       "2026-02-20": 5,
@@ -248,12 +246,13 @@
       "2026-08-14": 5,
       "2026-08-15": 4,
       "2026-08-16": 3,
-      "2026-08-17": 1
+      "2026-08-17": 1,
+      "2026-08-18": 2
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 220
+        "count": 219
       },
       {
         "port": "8443",
@@ -261,7 +260,7 @@
       },
       {
         "port": "80",
-        "count": 52
+        "count": 51
       },
       {
         "port": "8080",
@@ -273,7 +272,7 @@
       },
       {
         "port": "22",
-        "count": 7
+        "count": 8
       },
       {
         "port": "8081",
@@ -293,6 +292,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "213.139.77.194:443",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:09:09 UTC"
+      },
+      {
+        "ioc": "109.248.160.184:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-18 03:05:05 UTC"
+      },
       {
         "ioc": "178.128.14.67:4443",
         "type": "ip:port",
@@ -370,18 +381,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-14 09:05:09 UTC"
-      },
-      {
-        "ioc": "154.36.188.233:8080",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-13 09:43:51 UTC"
-      },
-      {
-        "ioc": "93.152.223.39:9443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-13 06:48:22 UTC"
       }
     ]
   }

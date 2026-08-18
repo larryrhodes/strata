@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-17T14:03:14.756455+00:00",
-  "recent_window_ioc_count": 161,
+  "generated": "2026-08-18T14:08:15.534985+00:00",
+  "recent_window_ioc_count": 169,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,24 +10,20 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-19",
-      "latest": "2026-08-17"
+      "earliest": "2026-05-23",
+      "latest": "2026-08-18"
     },
     "ioc_type_breakdown": {
-      "url": 291,
-      "domain": 132,
+      "url": 307,
+      "domain": 116,
       "ip:port": 77
     },
     "confidence_distribution": {
-      "high": 494,
-      "medium": 6,
+      "high": 497,
+      "medium": 3,
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-19": 4,
-      "2026-05-20": 4,
-      "2026-05-21": 6,
-      "2026-05-22": 6,
       "2026-05-23": 1,
       "2026-05-24": 13,
       "2026-05-26": 7,
@@ -45,7 +41,7 @@
       "2026-06-16": 1,
       "2026-06-19": 5,
       "2026-06-20": 1,
-      "2026-06-21": 21,
+      "2026-06-21": 19,
       "2026-06-22": 1,
       "2026-06-23": 2,
       "2026-06-24": 6,
@@ -93,7 +89,8 @@
       "2026-08-14": 23,
       "2026-08-15": 38,
       "2026-08-16": 25,
-      "2026-08-17": 7
+      "2026-08-17": 16,
+      "2026-08-18": 13
     },
     "top_ports": [
       {
@@ -113,6 +110,14 @@
         "count": 3
       },
       {
+        "port": "8592",
+        "count": 2
+      },
+      {
+        "port": "8811",
+        "count": 2
+      },
+      {
         "port": "8839",
         "count": 2
       },
@@ -127,106 +132,98 @@
       {
         "port": "4437",
         "count": 2
-      },
-      {
-        "port": "7527",
-        "count": 2
-      },
-      {
-        "port": "5291",
-        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "http://kupzovo.shop:7567/events",
-        "type": "url",
+        "ioc": "178.156.219.14:8592",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-17 05:14:53 UTC"
+        "first_seen": "2026-08-18 13:45:55 UTC"
       },
       {
-        "ioc": "http://vexdico.shop:8539/contacts",
+        "ioc": "http://poagint.click:8592/categories",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-17 05:14:53 UTC"
+        "first_seen": "2026-08-18 13:45:54 UTC"
       },
       {
-        "ioc": "http://bravplo.click:7713/orders",
+        "ioc": "http://kupzovo.shop:7567/addresses",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-17 05:14:53 UTC"
+        "first_seen": "2026-08-18 13:45:51 UTC"
       },
       {
-        "ioc": "http://vexdico.shop:8539/comments",
+        "ioc": "http://bravplo.click:7713/articles",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-17 05:14:53 UTC"
+        "first_seen": "2026-08-18 12:33:22 UTC"
       },
       {
-        "ioc": "http://mrlketo.shop:8932/reviews",
+        "ioc": "http://fasnzect.click:4929/contacts",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-17 05:14:53 UTC"
+        "first_seen": "2026-08-18 10:32:16 UTC"
       },
       {
-        "ioc": "http://bravplo.click:7713/images",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-17 05:14:52 UTC"
+        "ioc": "195.35.37.15:4929",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-18 09:15:10 UTC"
       },
       {
-        "ioc": "http://kupzovo.shop:7567/images",
+        "ioc": "http://kupzovo.shop:7567/collections",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-17 03:01:01 UTC"
+        "first_seen": "2026-08-18 08:41:18 UTC"
       },
       {
-        "ioc": "http://shkpiva.shop:5627/addresses",
+        "ioc": "http://fasnzect.click:4929/exports",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 23:22:16 UTC"
+        "first_seen": "2026-08-18 08:41:17 UTC"
       },
       {
-        "ioc": "http://glimqra.click:6534/accounts",
+        "ioc": "http://fasnzect.click:4929/events",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 23:22:16 UTC"
+        "first_seen": "2026-08-18 07:26:23 UTC"
       },
       {
-        "ioc": "http://bravplo.click:7713/collections",
+        "ioc": "http://vexdico.shop:8539/transactions",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 22:39:45 UTC"
+        "first_seen": "2026-08-18 06:44:13 UTC"
       },
       {
-        "ioc": "http://vexdico.shop:8539/articles",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-16 22:24:03 UTC"
+        "ioc": "167.99.67.141:8811",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-18 05:28:19 UTC"
       },
       {
-        "ioc": "http://glimqra.click:6534/categories",
+        "ioc": "http://mrlketo.shop:8932/posts",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 22:24:03 UTC"
+        "first_seen": "2026-08-18 04:35:43 UTC"
       },
       {
-        "ioc": "http://vexdico.shop:8539/files",
+        "ioc": "http://kupzovo.shop:7567/transactions",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 19:49:23 UTC"
+        "first_seen": "2026-08-18 04:35:43 UTC"
       },
       {
-        "ioc": "http://tokjoza.shop:5200/exports",
+        "ioc": "http://mrlketo.shop:8932/tokens",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 15:45:24 UTC"
+        "first_seen": "2026-08-17 23:19:13 UTC"
       },
       {
-        "ioc": "http://glimqra.click:6534/messages",
+        "ioc": "http://kupzovo.shop:7567/articles",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-16 15:45:23 UTC"
+        "first_seen": "2026-08-17 23:19:13 UTC"
       }
     ]
   }

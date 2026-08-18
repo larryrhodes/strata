@@ -1,8 +1,8 @@
 {
   "malware_id": "win.sliver",
   "family": "Sliver",
-  "generated": "2026-08-05T15:44:32.665446+00:00",
-  "recent_window_ioc_count": 80,
+  "generated": "2026-08-18T14:09:41.034630+00:00",
+  "recent_window_ioc_count": 86,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.sliver",
   "description": "According to VK9 Seecurity, Sliver is a Command and Control (C2) system made for penetration testers, red teams, and advanced persistent threats. It generates implants (slivers) that can run on virtually every architecture out there, and securely manage these connections through a central server. Sliver supports multiple callback protocols including DNS, TCP, and HTTP(S) to make egress simple, even when those pesky blue teams block your domains. You can even have multiple operators (players) simultaneously commanding your sliver army.",
   "alt_names": [],
@@ -10,38 +10,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-10",
-      "latest": "2026-07-30"
+      "earliest": "2026-03-24",
+      "latest": "2026-08-18"
     },
     "ioc_type_breakdown": {
-      "ip:port": 482,
-      "sha256_hash": 6,
-      "domain": 4,
-      "sha1_hash": 3,
-      "md5_hash": 3,
-      "url": 2
+      "ip:port": 489,
+      "sha256_hash": 4,
+      "domain": 3,
+      "url": 2,
+      "sha1_hash": 1,
+      "md5_hash": 1
     },
     "confidence_distribution": {
-      "high": 220,
-      "medium": 280,
+      "high": 185,
+      "medium": 315,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-10": 15,
-      "2026-03-11": 5,
-      "2026-03-12": 3,
-      "2026-03-13": 10,
-      "2026-03-14": 13,
-      "2026-03-15": 5,
-      "2026-03-16": 7,
-      "2026-03-17": 5,
-      "2026-03-18": 5,
-      "2026-03-19": 2,
-      "2026-03-20": 5,
-      "2026-03-21": 4,
-      "2026-03-22": 4,
-      "2026-03-23": 4,
-      "2026-03-24": 17,
+      "2026-03-24": 11,
       "2026-03-25": 33,
       "2026-03-26": 2,
       "2026-03-27": 4,
@@ -84,43 +70,48 @@
       "2026-07-21": 2,
       "2026-07-25": 1,
       "2026-07-28": 3,
-      "2026-07-30": 80
+      "2026-07-30": 80,
+      "2026-08-09": 7,
+      "2026-08-12": 2,
+      "2026-08-14": 2,
+      "2026-08-16": 6,
+      "2026-08-18": 76
     },
     "top_ports": [
       {
         "port": "31337",
-        "count": 325
+        "count": 366
       },
       {
         "port": "443",
-        "count": 67
+        "count": 40
       },
       {
         "port": "8443",
         "count": 16
       },
       {
-        "port": "1337",
-        "count": 8
-      },
-      {
-        "port": "80",
-        "count": 6
-      },
-      {
         "port": "8080",
         "count": 5
       },
       {
-        "port": "8000",
-        "count": 5
-      },
-      {
-        "port": "8888",
-        "count": 5
+        "port": "80",
+        "count": 4
       },
       {
         "port": "40056",
+        "count": 4
+      },
+      {
+        "port": "1337",
+        "count": 4
+      },
+      {
+        "port": "4443",
+        "count": 3
+      },
+      {
+        "port": "8000",
         "count": 3
       },
       {
@@ -130,94 +121,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "45.142.142.204:31337",
+        "ioc": "130.94.94.118:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:01 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:45 UTC"
       },
       {
-        "ioc": "148.113.37.70:31337",
+        "ioc": "108.143.227.46:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:01 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:44 UTC"
       },
       {
-        "ioc": "5.187.6.96:31337",
+        "ioc": "207.180.58.107:4443",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:01 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:44 UTC"
       },
       {
-        "ioc": "116.198.204.146:31337",
+        "ioc": "68.178.205.17:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:01 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:44 UTC"
       },
       {
-        "ioc": "150.40.117.127:31337",
+        "ioc": "173.230.130.248:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:01 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:44 UTC"
       },
       {
-        "ioc": "193.111.62.133:31337",
+        "ioc": "64.227.87.165:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:01 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:43 UTC"
       },
       {
-        "ioc": "185.165.171.156:31337",
+        "ioc": "159.89.232.174:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:43 UTC"
       },
       {
-        "ioc": "67.217.228.212:31337",
+        "ioc": "65.49.231.115:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:43 UTC"
       },
       {
-        "ioc": "195.58.137.115:31337",
+        "ioc": "74.0.32.96:4443",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:43 UTC"
       },
       {
-        "ioc": "138.226.236.13:31337",
+        "ioc": "192.129.226.132:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:42 UTC"
       },
       {
-        "ioc": "162.35.160.163:31337",
+        "ioc": "5.9.89.201:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:42 UTC"
       },
       {
-        "ioc": "178.105.31.148:31337",
+        "ioc": "185.223.207.38:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:42 UTC"
       },
       {
-        "ioc": "15.204.173.19:31337",
+        "ioc": "199.245.176.16:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:41 UTC"
       },
       {
-        "ioc": "47.80.18.76:31337",
+        "ioc": "89.106.78.234:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:41 UTC"
       },
       {
-        "ioc": "85.121.176.71:31337",
+        "ioc": "45.32.60.15:31337",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:04:00 UTC"
+        "confidence": 50,
+        "first_seen": "2026-08-18 12:01:41 UTC"
       }
     ]
   }
