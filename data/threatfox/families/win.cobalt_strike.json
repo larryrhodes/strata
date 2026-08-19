@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-08-18T14:07:44.924812+00:00",
-  "recent_window_ioc_count": 304,
+  "generated": "2026-08-19T14:07:37.546045+00:00",
+  "recent_window_ioc_count": 312,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,20 +37,80 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-11-03",
-      "latest": "2026-08-18"
+      "earliest": "2025-05-20",
+      "latest": "2026-08-19"
     },
     "ioc_type_breakdown": {
-      "ip:port": 466,
-      "domain": 34
+      "ip:port": 449,
+      "domain": 51
     },
     "confidence_distribution": {
-      "high": 398,
-      "medium": 102,
+      "high": 476,
+      "medium": 24,
       "low": 0
     },
     "activity_timeline": {
-      "2025-11-03": 1,
+      "2025-05-20": 1,
+      "2025-05-21": 1,
+      "2025-05-23": 1,
+      "2025-05-24": 1,
+      "2025-05-30": 2,
+      "2025-05-31": 2,
+      "2025-06-02": 1,
+      "2025-06-06": 1,
+      "2025-06-08": 1,
+      "2025-06-10": 1,
+      "2025-06-12": 1,
+      "2025-06-13": 1,
+      "2025-06-16": 1,
+      "2025-06-17": 1,
+      "2025-06-20": 1,
+      "2025-06-25": 1,
+      "2025-06-28": 1,
+      "2025-07-03": 1,
+      "2025-07-06": 1,
+      "2025-07-14": 1,
+      "2025-07-16": 3,
+      "2025-07-18": 1,
+      "2025-07-19": 1,
+      "2025-07-25": 1,
+      "2025-07-27": 1,
+      "2025-08-05": 2,
+      "2025-08-06": 2,
+      "2025-08-11": 1,
+      "2025-08-12": 2,
+      "2025-08-15": 2,
+      "2025-08-16": 2,
+      "2025-08-17": 1,
+      "2025-08-18": 1,
+      "2025-08-20": 1,
+      "2025-08-25": 1,
+      "2025-08-29": 5,
+      "2025-08-31": 1,
+      "2025-09-02": 4,
+      "2025-09-04": 1,
+      "2025-09-06": 1,
+      "2025-09-10": 1,
+      "2025-09-11": 3,
+      "2025-09-22": 4,
+      "2025-09-24": 1,
+      "2025-09-25": 2,
+      "2025-09-27": 1,
+      "2025-09-28": 1,
+      "2025-10-09": 1,
+      "2025-10-16": 2,
+      "2025-10-21": 2,
+      "2025-10-22": 1,
+      "2025-10-23": 2,
+      "2025-10-24": 1,
+      "2025-10-25": 1,
+      "2025-10-26": 1,
+      "2025-10-27": 1,
+      "2025-10-28": 3,
+      "2025-10-29": 2,
+      "2025-10-30": 1,
+      "2025-11-01": 1,
+      "2025-11-03": 2,
       "2025-11-04": 3,
       "2025-11-06": 1,
       "2025-11-07": 2,
@@ -71,17 +131,15 @@
       "2025-12-25": 1,
       "2025-12-30": 19,
       "2026-01-01": 1,
-      "2026-01-05": 1,
       "2026-01-06": 1,
       "2026-01-07": 1,
       "2026-01-08": 1,
-      "2026-01-16": 2,
+      "2026-01-16": 1,
       "2026-01-17": 1,
       "2026-01-23": 1,
       "2026-01-25": 2,
       "2026-01-26": 1,
       "2026-01-30": 2,
-      "2026-02-05": 3,
       "2026-02-08": 84,
       "2026-02-13": 1,
       "2026-02-14": 1,
@@ -122,11 +180,10 @@
       "2026-05-29": 1,
       "2026-05-31": 2,
       "2026-06-01": 1,
-      "2026-06-02": 1,
       "2026-06-03": 1,
       "2026-06-04": 4,
       "2026-06-05": 1,
-      "2026-06-06": 4,
+      "2026-06-06": 5,
       "2026-06-07": 1,
       "2026-06-09": 1,
       "2026-06-10": 9,
@@ -139,14 +196,14 @@
       "2026-06-24": 1,
       "2026-06-25": 1,
       "2026-06-26": 1,
-      "2026-06-27": 4,
+      "2026-06-27": 3,
       "2026-06-28": 1,
       "2026-06-29": 3,
       "2026-06-30": 1,
       "2026-07-01": 3,
       "2026-07-02": 5,
       "2026-07-04": 1,
-      "2026-07-05": 3,
+      "2026-07-05": 2,
       "2026-07-07": 3,
       "2026-07-08": 3,
       "2026-07-09": 2,
@@ -158,8 +215,7 @@
       "2026-07-16": 2,
       "2026-07-17": 1,
       "2026-07-18": 5,
-      "2026-07-19": 2,
-      "2026-07-21": 1,
+      "2026-07-19": 1,
       "2026-07-23": 6,
       "2026-07-24": 3,
       "2026-07-25": 3,
@@ -169,155 +225,156 @@
       "2026-07-30": 1,
       "2026-07-31": 10,
       "2026-08-01": 6,
-      "2026-08-02": 2,
+      "2026-08-02": 1,
       "2026-08-03": 1,
-      "2026-08-04": 6,
+      "2026-08-04": 5,
       "2026-08-05": 12,
       "2026-08-06": 6,
-      "2026-08-07": 4,
+      "2026-08-07": 3,
       "2026-08-08": 2,
       "2026-08-10": 6,
-      "2026-08-11": 7,
+      "2026-08-11": 6,
       "2026-08-12": 3,
-      "2026-08-13": 5,
-      "2026-08-14": 2,
+      "2026-08-13": 4,
+      "2026-08-14": 3,
       "2026-08-15": 1,
       "2026-08-16": 6,
       "2026-08-17": 1,
-      "2026-08-18": 94
+      "2026-08-18": 4,
+      "2026-08-19": 14
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 165
-      },
-      {
-        "port": "50050",
-        "count": 70
+        "count": 212
       },
       {
         "port": "80",
-        "count": 30
+        "count": 31
       },
       {
         "port": "53",
-        "count": 10
-      },
-      {
-        "port": "8443",
-        "count": 9
+        "count": 17
       },
       {
         "port": "8080",
-        "count": 9
+        "count": 12
       },
       {
         "port": "8896",
         "count": 9
       },
       {
+        "port": "8443",
+        "count": 8
+      },
+      {
         "port": "18443",
         "count": 8
       },
       {
-        "port": "8696",
+        "port": "9999",
+        "count": 6
+      },
+      {
+        "port": "6666",
         "count": 5
       },
       {
-        "port": "8898",
+        "port": "8696",
         "count": 5
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "43.136.178.239:80",
+        "ioc": "49.235.52.47:3000",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-18 14:05:05 UTC"
+        "first_seen": "2026-08-19 14:05:06 UTC"
       },
       {
-        "ioc": "43.136.178.239:443",
+        "ioc": "49.235.52.47:8080",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-18 14:05:04 UTC"
+        "first_seen": "2026-08-19 14:05:06 UTC"
       },
       {
-        "ioc": "39.105.200.188:22",
+        "ioc": "49.235.52.47:80",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-18 13:05:06 UTC"
+        "first_seen": "2026-08-19 14:05:06 UTC"
       },
       {
-        "ioc": "110.42.255.63:5432",
+        "ioc": "49.235.52.47:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-18 12:05:09 UTC"
+        "first_seen": "2026-08-19 14:05:05 UTC"
       },
       {
-        "ioc": "110.42.255.63:22",
+        "ioc": "49.235.52.47:8083",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-18 12:05:08 UTC"
+        "first_seen": "2026-08-19 14:05:05 UTC"
       },
       {
-        "ioc": "88.119.174.86:443",
+        "ioc": "147.139.136.105:8080",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:27 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 13:05:05 UTC"
       },
       {
-        "ioc": "94.23.121.241:7433",
+        "ioc": "38.207.177.165:8080",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:27 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 13:05:04 UTC"
       },
       {
-        "ioc": "192.144.171.134:443",
+        "ioc": "147.139.136.105:22",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:25 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 12:05:05 UTC"
       },
       {
-        "ioc": "193.112.191.222:443",
+        "ioc": "147.139.136.105:80",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:25 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 12:05:05 UTC"
       },
       {
-        "ioc": "129.28.122.92:443",
+        "ioc": "147.139.136.105:443",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:25 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 12:05:04 UTC"
       },
       {
-        "ioc": "198.199.72.177:7771",
+        "ioc": "2.57.241.129:80",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:23 UTC"
+        "confidence": 75,
+        "first_seen": "2026-08-19 11:48:03 UTC"
       },
       {
-        "ioc": "182.92.117.223:55000",
+        "ioc": "38.207.177.165:80",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:23 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 09:05:07 UTC"
       },
       {
-        "ioc": "39.106.80.126:50050",
+        "ioc": "38.207.177.165:443",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:20 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 09:05:06 UTC"
       },
       {
-        "ioc": "175.178.99.75:50050",
+        "ioc": "47.108.86.120:443",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-08-18 11:58:19 UTC"
+        "confidence": 100,
+        "first_seen": "2026-08-19 04:05:04 UTC"
       },
       {
-        "ioc": "24.144.93.255:50050",
+        "ioc": "43.252.213.228:50050",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-08-18 11:58:19 UTC"
+        "first_seen": "2026-08-18 11:58:16 UTC"
       }
     ]
   }
