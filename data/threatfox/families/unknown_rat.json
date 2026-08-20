@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-08-19T14:11:50.842348+00:00",
-  "recent_window_ioc_count": 62,
+  "generated": "2026-08-20T14:15:37.744950+00:00",
+  "recent_window_ioc_count": 50,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,25 +10,23 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-04",
+      "earliest": "2026-03-06",
       "latest": "2026-08-19"
     },
     "ioc_type_breakdown": {
-      "ip:port": 223,
-      "domain": 134,
+      "ip:port": 225,
+      "domain": 132,
       "url": 126,
       "sha256_hash": 15,
       "md5_hash": 2
     },
     "confidence_distribution": {
-      "high": 463,
-      "medium": 37,
+      "high": 466,
+      "medium": 34,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-04": 1,
-      "2026-03-05": 1,
-      "2026-03-06": 6,
+      "2026-03-06": 4,
       "2026-03-07": 1,
       "2026-03-08": 1,
       "2026-03-09": 1,
@@ -129,12 +127,12 @@
       "2026-08-14": 3,
       "2026-08-17": 12,
       "2026-08-18": 18,
-      "2026-08-19": 12
+      "2026-08-19": 16
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 107
+        "count": 109
       },
       {
         "port": "8041",
@@ -174,6 +172,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "192.142.53.225:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-19 16:58:47 UTC"
+      },
+      {
+        "ioc": "79.133.57.37:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-19 16:57:59 UTC"
+      },
+      {
+        "ioc": "kikaku.sadamula.shop",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-19 16:57:22 UTC"
+      },
+      {
+        "ioc": "217.217.97.172:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-19 16:56:55 UTC"
+      },
       {
         "ioc": "222align.noip.at",
         "type": "domain",
@@ -239,30 +261,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-19 06:02:25 UTC"
-      },
-      {
-        "ioc": "74.207.198.32:8041",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-19 06:02:24 UTC"
-      },
-      {
-        "ioc": "https://maymun.lol/mods/api/log-download",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-18 05:25:19 UTC"
-      },
-      {
-        "ioc": "https://maymun.lol/ws",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-18 05:25:18 UTC"
-      },
-      {
-        "ioc": "https://maymun.lol/?p=",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-18 05:25:17 UTC"
       }
     ]
   }

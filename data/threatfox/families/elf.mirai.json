@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-08-19T14:12:43.285186+00:00",
-  "recent_window_ioc_count": 53,
+  "generated": "2026-08-20T14:15:11.100577+00:00",
+  "recent_window_ioc_count": 54,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -13,21 +13,21 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-14",
-      "latest": "2026-08-19"
+      "latest": "2026-08-20"
     },
     "ioc_type_breakdown": {
-      "ip:port": 349,
-      "domain": 63,
-      "sha256_hash": 51,
-      "url": 37
+      "ip:port": 344,
+      "domain": 66,
+      "sha256_hash": 52,
+      "url": 38
     },
     "confidence_distribution": {
-      "high": 490,
-      "medium": 10,
+      "high": 488,
+      "medium": 12,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-14": 92,
+      "2026-06-14": 86,
       "2026-06-15": 3,
       "2026-06-16": 2,
       "2026-06-18": 2,
@@ -81,16 +81,17 @@
       "2026-08-15": 15,
       "2026-08-17": 4,
       "2026-08-18": 5,
-      "2026-08-19": 5
+      "2026-08-19": 7,
+      "2026-08-20": 4
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 69
+        "count": 67
       },
       {
         "port": "25565",
-        "count": 28
+        "count": 27
       },
       {
         "port": "8080",
@@ -98,7 +99,7 @@
       },
       {
         "port": "1337",
-        "count": 16
+        "count": 15
       },
       {
         "port": "123",
@@ -117,15 +118,51 @@
         "count": 6
       },
       {
-        "port": "2222",
-        "count": 6
+        "port": "1999",
+        "count": 5
       },
       {
-        "port": "1999",
+        "port": "2",
         "count": 5
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "c1c6011ad508835c5f06c76f8957c7ac5dd6525ff5f85b95e50e56cf0b594448",
+        "type": "sha256_hash",
+        "confidence": 80,
+        "first_seen": "2026-08-20 13:15:00 UTC"
+      },
+      {
+        "ioc": "http://91.92.47.97/bins/wget.sh",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-20 13:14:59 UTC"
+      },
+      {
+        "ioc": "servers.opik.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-20 07:24:41 UTC"
+      },
+      {
+        "ioc": "69.33.213.199:6621",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-20 07:24:41 UTC"
+      },
+      {
+        "ioc": "wer-ldr.duckdns.org",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-08-19 17:01:10 UTC"
+      },
+      {
+        "ioc": "wereng.duckdns.org",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-08-19 17:01:09 UTC"
+      },
       {
         "ioc": "nagawar.xyz",
         "type": "domain",
@@ -179,42 +216,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-18 05:25:00 UTC"
-      },
-      {
-        "ioc": "45.90.98.27:3778",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-18 05:24:24 UTC"
-      },
-      {
-        "ioc": "154.222.16.250:9098",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-17 19:43:47 UTC"
-      },
-      {
-        "ioc": "154.222.16.226:9098",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-17 19:43:47 UTC"
-      },
-      {
-        "ioc": "154.222.16.141:9098",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-17 19:43:46 UTC"
-      },
-      {
-        "ioc": "198.144.179.82:55650",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-17 05:38:18 UTC"
-      },
-      {
-        "ioc": "45.38.249.63:14",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-15 15:43:01 UTC"
       }
     ]
   }

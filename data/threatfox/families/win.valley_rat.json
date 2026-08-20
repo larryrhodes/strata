@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-08-19T14:12:09.359368+00:00",
-  "recent_window_ioc_count": 57,
+  "generated": "2026-08-20T14:14:47.980289+00:00",
+  "recent_window_ioc_count": 55,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-07",
-      "latest": "2026-08-19"
+      "earliest": "2026-06-08",
+      "latest": "2026-08-20"
     },
     "ioc_type_breakdown": {
-      "ip:port": 142,
+      "ip:port": 148,
       "md5_hash": 97,
       "sha256_hash": 97,
       "sha1_hash": 97,
       "url": 38,
-      "domain": 29
+      "domain": 23
     },
     "confidence_distribution": {
       "high": 497,
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-07": 1,
-      "2026-06-08": 12,
+      "2026-06-08": 6,
       "2026-06-10": 1,
       "2026-06-11": 2,
       "2026-06-14": 16,
@@ -88,24 +87,25 @@
       "2026-08-16": 12,
       "2026-08-17": 9,
       "2026-08-18": 7,
-      "2026-08-19": 10
+      "2026-08-19": 14,
+      "2026-08-20": 3
     },
     "top_ports": [
       {
-        "port": "7811",
-        "count": 11
+        "port": "443",
+        "count": 12
       },
       {
-        "port": "443",
-        "count": 11
+        "port": "7811",
+        "count": 12
       },
       {
         "port": "6666",
-        "count": 11
+        "count": 12
       },
       {
         "port": "7800",
-        "count": 10
+        "count": 11
       },
       {
         "port": "80",
@@ -116,23 +116,65 @@
         "count": 9
       },
       {
+        "port": "4453",
+        "count": 3
+      },
+      {
+        "port": "4452",
+        "count": 3
+      },
+      {
         "port": "22012",
         "count": 2
       },
       {
         "port": "22011",
         "count": 2
-      },
-      {
-        "port": "441",
-        "count": 2
-      },
-      {
-        "port": "1112",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "43.99.86.192:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-20 03:05:14 UTC"
+      },
+      {
+        "ioc": "118.107.9.136:7811",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-20 02:55:14 UTC"
+      },
+      {
+        "ioc": "121.127.253.206:8856",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-20 01:50:12 UTC"
+      },
+      {
+        "ioc": "207.56.119.83:6666",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-19 18:05:10 UTC"
+      },
+      {
+        "ioc": "118.107.9.136:7800",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-19 14:55:11 UTC"
+      },
+      {
+        "ioc": "27.124.12.148:4453",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-19 14:35:13 UTC"
+      },
+      {
+        "ioc": "27.124.12.148:4452",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-19 14:35:09 UTC"
+      },
       {
         "ioc": "69eef609c1e8ee01f4f363b6975f436b",
         "type": "md5_hash",
@@ -180,48 +222,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-19 02:10:08 UTC"
-      },
-      {
-        "ioc": "202.61.84.89:7800",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-19 00:15:15 UTC"
-      },
-      {
-        "ioc": "202.61.84.89:7811",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-19 00:15:11 UTC"
-      },
-      {
-        "ioc": "207.56.217.9:7811",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-18 15:50:38 UTC"
-      },
-      {
-        "ioc": "27.124.12.180:7800",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-18 15:50:37 UTC"
-      },
-      {
-        "ioc": "27.124.12.180:7811",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-18 15:50:34 UTC"
-      },
-      {
-        "ioc": "156.234.7.60:7800",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-18 15:50:33 UTC"
-      },
-      {
-        "ioc": "156.234.7.60:7811",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-18 15:50:26 UTC"
       }
     ]
   }
