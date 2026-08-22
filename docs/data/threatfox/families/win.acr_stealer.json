@@ -1,33 +1,32 @@
 {
   "malware_id": "win.acr_stealer",
   "family": "ACR Stealer",
-  "generated": "2026-07-25T14:52:07.949309+00:00",
-  "recent_window_ioc_count": 22,
+  "generated": "2026-08-22T13:57:20.898795+00:00",
+  "recent_window_ioc_count": 87,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
   "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 241,
+    "total_iocs": 349,
     "date_range": {
-      "earliest": "2026-02-07",
-      "latest": "2026-07-24"
+      "earliest": "2026-02-25",
+      "latest": "2026-08-22"
     },
     "ioc_type_breakdown": {
+      "domain": 166,
       "ip:port": 110,
-      "domain": 79,
-      "md5_hash": 17,
-      "sha1_hash": 17,
-      "sha256_hash": 17,
+      "md5_hash": 24,
+      "sha1_hash": 24,
+      "sha256_hash": 24,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 241,
-      "medium": 0,
+      "high": 348,
+      "medium": 1,
       "low": 0
     },
     "activity_timeline": {
-      "2026-02-07": 3,
       "2026-02-25": 1,
       "2026-03-07": 7,
       "2026-03-08": 2,
@@ -85,7 +84,17 @@
       "2026-07-14": 1,
       "2026-07-18": 6,
       "2026-07-19": 1,
-      "2026-07-24": 15
+      "2026-07-24": 15,
+      "2026-07-27": 10,
+      "2026-07-30": 6,
+      "2026-08-05": 1,
+      "2026-08-07": 1,
+      "2026-08-10": 2,
+      "2026-08-11": 2,
+      "2026-08-12": 2,
+      "2026-08-19": 9,
+      "2026-08-20": 1,
+      "2026-08-22": 77
     },
     "top_ports": [
       {
@@ -95,94 +104,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "9684b0229634d90636f8c1cf68589484",
+        "ioc": "d252e8f0884cdfd7a81c26f2009b7719",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-07-24 01:06:13 UTC"
+        "first_seen": "2026-08-22 11:18:46 UTC"
       },
       {
-        "ioc": "6ebb1ee6895f8a5c50aa2de2765d3fe5df0e7df9",
+        "ioc": "26a0fda22f954435e12528f1b270ff8e046692d0",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-07-24 01:06:12 UTC"
+        "first_seen": "2026-08-22 11:18:45 UTC"
       },
       {
-        "ioc": "86471a7fea86de0cd8301ab2e5220170e154f71a14ce04b15ba67d1ab62a0b7c",
+        "ioc": "82085936272bf263f09cb82c1d9d94c6098f5c46a973d00da4c682346e3fa71e",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-07-24 01:06:12 UTC"
+        "first_seen": "2026-08-22 11:18:45 UTC"
       },
       {
-        "ioc": "0c09c139f79368d432460b08f99610fb",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:08 UTC"
+        "ioc": "zzxryguzfq02042676.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:45 UTC"
       },
       {
-        "ioc": "65fd2357119bd09ba317ea293b0414d05eb02a69",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:08 UTC"
+        "ioc": "ykize140825p.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:45 UTC"
       },
       {
-        "ioc": "ad5d551335f98af221996306603a1618f990832bf6fdda23200e886be5a28f99",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:08 UTC"
+        "ioc": "y87fvt1g020426i.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:45 UTC"
       },
       {
-        "ioc": "4c8cdacf7e5ec0657c281ec2b107af86",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:07 UTC"
+        "ioc": "wqhuc2gq08020426mws.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:45 UTC"
       },
       {
-        "ioc": "646934b76c30d2ac8e5a48f7e1c4f9b13aa52678",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:07 UTC"
+        "ioc": "vss7s6zte020426g12.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:45 UTC"
       },
       {
-        "ioc": "f8a09b989de6f5f57a4a1666f1b0fb4d1b1175e624d35f9e3dd7805dc06ea52f",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:07 UTC"
+        "ioc": "vd1qf14082587.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       },
       {
-        "ioc": "b17e88ed55e2a1d3b8e69e62b3208913",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:05 UTC"
+        "ioc": "v6a5iq6qxq140825s.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       },
       {
-        "ioc": "33b0633c1db65405dad2a3b9257f621c4436747a",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:05 UTC"
+        "ioc": "v4wbnux67t0204260.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       },
       {
-        "ioc": "499f27061cc38ec593b8104599919c92bb729a55640e6057778a18b05eb7191c",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:04 UTC"
+        "ioc": "v0cow1k020426uj.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       },
       {
-        "ioc": "2825198bfb35cf74f4a841f5dc4fb798",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:00 UTC"
+        "ioc": "ureyd250425ft.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       },
       {
-        "ioc": "8a0ad7e1cf495189fc4d52d075870a7b8077ee90",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:00 UTC"
+        "ioc": "um8e86140825vjg.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       },
       {
-        "ioc": "824c913c874d3300c7deefd16ea653d323cfa6a5a7680f10beb00a8cbfa398a4",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-07-24 01:06:00 UTC"
+        "ioc": "u9cux020426d.cfd",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-22 09:36:44 UTC"
       }
     ]
   }
