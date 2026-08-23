@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-22T13:55:28.268424+00:00",
-  "recent_window_ioc_count": 154,
+  "generated": "2026-08-23T13:57:12.159939+00:00",
+  "recent_window_ioc_count": 132,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,12 +11,12 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-10",
-      "latest": "2026-08-22"
+      "latest": "2026-08-23"
     },
     "ioc_type_breakdown": {
-      "url": 337,
+      "url": 339,
       "domain": 82,
-      "ip:port": 81
+      "ip:port": 79
     },
     "confidence_distribution": {
       "high": 496,
@@ -24,7 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-10": 21,
+      "2026-06-10": 18,
       "2026-06-12": 2,
       "2026-06-13": 3,
       "2026-06-14": 5,
@@ -85,7 +85,8 @@
       "2026-08-19": 47,
       "2026-08-20": 16,
       "2026-08-21": 11,
-      "2026-08-22": 9
+      "2026-08-22": 9,
+      "2026-08-23": 3
     },
     "top_ports": [
       {
@@ -103,6 +104,10 @@
       {
         "port": "9895",
         "count": 3
+      },
+      {
+        "port": "7242",
+        "count": 2
       },
       {
         "port": "8592",
@@ -123,13 +128,27 @@
       {
         "port": "4437",
         "count": 2
-      },
-      {
-        "port": "7527",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://zonxh.shop:7728/orders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-23 00:40:27 UTC"
+      },
+      {
+        "ioc": "167.71.217.41:7242",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-23 00:40:21 UTC"
+      },
+      {
+        "ioc": "http://palaera.click:7242/comments",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-23 00:40:20 UTC"
+      },
       {
         "ioc": "165.227.199.109:8539",
         "type": "ip:port",
@@ -201,24 +220,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-08-21 20:25:23 UTC"
-      },
-      {
-        "ioc": "http://kupzovo.shop:7567/payments",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-21 20:25:15 UTC"
-      },
-      {
-        "ioc": "http://zakuiru.shop:9048/messages",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-21 19:25:21 UTC"
-      },
-      {
-        "ioc": "http://none/comments",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-21 14:25:21 UTC"
       }
     ]
   }
