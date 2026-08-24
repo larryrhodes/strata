@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-23T13:57:12.159939+00:00",
-  "recent_window_ioc_count": 132,
+  "generated": "2026-08-24T14:13:40.826634+00:00",
+  "recent_window_ioc_count": 141,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-10",
-      "latest": "2026-08-23"
+      "earliest": "2026-06-15",
+      "latest": "2026-08-24"
     },
     "ioc_type_breakdown": {
-      "url": 339,
-      "domain": 82,
-      "ip:port": 79
+      "url": 351,
+      "domain": 81,
+      "ip:port": 68
     },
     "confidence_distribution": {
       "high": 496,
@@ -24,15 +24,11 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-10": 18,
-      "2026-06-12": 2,
-      "2026-06-13": 3,
-      "2026-06-14": 5,
-      "2026-06-15": 3,
+      "2026-06-15": 1,
       "2026-06-16": 1,
       "2026-06-19": 5,
       "2026-06-20": 1,
-      "2026-06-21": 20,
+      "2026-06-21": 22,
       "2026-06-22": 1,
       "2026-06-23": 2,
       "2026-06-24": 6,
@@ -86,7 +82,8 @@
       "2026-08-20": 16,
       "2026-08-21": 11,
       "2026-08-22": 9,
-      "2026-08-23": 3
+      "2026-08-23": 11,
+      "2026-08-24": 20
     },
     "top_ports": [
       {
@@ -106,6 +103,14 @@
         "count": 3
       },
       {
+        "port": "6534",
+        "count": 2
+      },
+      {
+        "port": "8202",
+        "count": 2
+      },
+      {
         "port": "7242",
         "count": 2
       },
@@ -120,106 +125,98 @@
       {
         "port": "8839",
         "count": 2
-      },
-      {
-        "port": "2536",
-        "count": 2
-      },
-      {
-        "port": "4437",
-        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "http://zonxh.shop:7728/orders",
+        "ioc": "http://smareach.click:6534/attachments",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-23 00:40:27 UTC"
+        "first_seen": "2026-08-24 14:00:33 UTC"
       },
       {
-        "ioc": "167.71.217.41:7242",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-23 00:40:21 UTC"
-      },
-      {
-        "ioc": "http://palaera.click:7242/comments",
+        "ioc": "http://smareach.click:6534/accounts",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-23 00:40:20 UTC"
+        "first_seen": "2026-08-24 13:45:27 UTC"
       },
       {
-        "ioc": "165.227.199.109:8539",
+        "ioc": "http://smareach.click:6534/exports",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-24 13:30:45 UTC"
+      },
+      {
+        "ioc": "207.180.248.154:6534",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-22 09:03:33 UTC"
+        "first_seen": "2026-08-24 13:25:15 UTC"
       },
       {
-        "ioc": "http://zakuiru.shop:9048/products",
+        "ioc": "http://zakuiru.shop:9048/projects",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 06:00:37 UTC"
+        "first_seen": "2026-08-24 12:50:37 UTC"
       },
       {
-        "ioc": "http://kupzovo.shop:7567/profiles",
+        "ioc": "http://shhsift.click:7647/payments",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 06:00:27 UTC"
+        "first_seen": "2026-08-24 12:50:33 UTC"
       },
       {
-        "ioc": "http://zakuiru.shop:9048/comments",
+        "ioc": "http://markext.shop:4627/sessions",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 00:45:23 UTC"
+        "first_seen": "2026-08-24 12:50:29 UTC"
       },
       {
-        "ioc": "http://spareon.click:8811/transactions",
+        "ioc": "http://shhsift.click:7647/profiles",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 00:45:19 UTC"
+        "first_seen": "2026-08-24 12:40:26 UTC"
       },
       {
-        "ioc": "http://spareon.click:8811/categories",
+        "ioc": "http://shhsift.click:7647/imports",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 00:40:25 UTC"
+        "first_seen": "2026-08-24 12:40:24 UTC"
       },
       {
-        "ioc": "http://kupzovo.shop:7567/comments",
-        "type": "url",
+        "ioc": "173.212.242.81:4627",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-22 00:20:22 UTC"
+        "first_seen": "2026-08-24 12:40:21 UTC"
       },
       {
-        "ioc": "http://zakuiru.shop:9048/images",
+        "ioc": "http://markext.shop:4627/exports",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 00:15:37 UTC"
+        "first_seen": "2026-08-24 12:40:20 UTC"
       },
       {
-        "ioc": "http://xightne.click:7242/addresses",
+        "ioc": "http://zakuiru.shop:9048/attachments",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-22 00:15:34 UTC"
+        "first_seen": "2026-08-24 12:35:26 UTC"
       },
       {
-        "ioc": "http://zakuiru.shop:9048/tokens",
+        "ioc": "http://shhsift.click:7647/messages",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-21 21:55:25 UTC"
+        "first_seen": "2026-08-24 12:35:22 UTC"
       },
       {
-        "ioc": "http://kupzovo.shop:7567/tags",
+        "ioc": "http://zonxh.shop:7728/tokens",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-21 21:55:19 UTC"
+        "first_seen": "2026-08-24 12:05:23 UTC"
       },
       {
-        "ioc": "http://vexdico.shop:8539/videos",
+        "ioc": "http://shhsift.click:7647/documents",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-21 20:25:23 UTC"
+        "first_seen": "2026-08-24 12:05:20 UTC"
       }
     ]
   }
