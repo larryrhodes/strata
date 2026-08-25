@@ -1,8 +1,8 @@
 {
   "malware_id": "win.pure_rat",
   "family": "PureRAT",
-  "generated": "2026-08-24T14:13:51.986357+00:00",
-  "recent_window_ioc_count": 124,
+  "generated": "2026-08-25T14:24:04.794050+00:00",
+  "recent_window_ioc_count": 103,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.pure_rat",
   "description": "According to Morphisec, this RAT combines advanced in-memory execution, API and resource resolution at runtime, and layered evasion techniques. They have named it \u2018Resolver\u2019 due to its heavy reliance on runtime resolution mechanisms and dynamic resource handling, which make static and behavioral analysis significantly more difficult.",
   "alt_names": [
@@ -14,7 +14,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-07-28",
-      "latest": "2026-08-23"
+      "latest": "2026-08-24"
     },
     "ioc_type_breakdown": {
       "ip:port": 491,
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-28": 26,
+      "2026-07-28": 24,
       "2026-07-29": 70,
       "2026-07-30": 20,
       "2026-07-31": 12,
@@ -55,12 +55,13 @@
       "2026-08-20": 50,
       "2026-08-21": 13,
       "2026-08-22": 9,
-      "2026-08-23": 4
+      "2026-08-23": 4,
+      "2026-08-24": 2
     },
     "top_ports": [
       {
         "port": "56003",
-        "count": 117
+        "count": 119
       },
       {
         "port": "443",
@@ -68,7 +69,7 @@
       },
       {
         "port": "56001",
-        "count": 105
+        "count": 104
       },
       {
         "port": "56002",
@@ -100,6 +101,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "154.201.82.105:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-24 17:37:46 UTC"
+      },
+      {
+        "ioc": "154.201.82.108:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-24 17:37:46 UTC"
+      },
       {
         "ioc": "203.159.90.155:56002",
         "type": "ip:port",
@@ -177,18 +190,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-22 10:30:55 UTC"
-      },
-      {
-        "ioc": "31.57.184.154:56003",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-21 19:46:05 UTC"
-      },
-      {
-        "ioc": "104.249.10.86:56002",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-21 19:43:15 UTC"
       }
     ]
   }

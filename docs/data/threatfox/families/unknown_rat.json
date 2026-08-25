@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-08-24T14:16:28.874270+00:00",
-  "recent_window_ioc_count": 64,
+  "generated": "2026-08-25T14:27:20.455579+00:00",
+  "recent_window_ioc_count": 52,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-24",
-      "latest": "2026-08-24"
+      "earliest": "2026-03-25",
+      "latest": "2026-08-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 225,
-      "domain": 129,
-      "url": 126,
+      "ip:port": 224,
+      "url": 131,
+      "domain": 125,
       "sha256_hash": 15,
       "md5_hash": 5
     },
@@ -26,7 +26,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-24": 6,
       "2026-03-25": 1,
       "2026-03-26": 3,
       "2026-03-27": 16,
@@ -116,7 +115,8 @@
       "2026-08-21": 12,
       "2026-08-22": 6,
       "2026-08-23": 6,
-      "2026-08-24": 6
+      "2026-08-24": 6,
+      "2026-08-25": 6
     },
     "top_ports": [
       {
@@ -144,10 +144,6 @@
         "count": 3
       },
       {
-        "port": "3000",
-        "count": 3
-      },
-      {
         "port": "8443",
         "count": 3
       },
@@ -158,9 +154,49 @@
       {
         "port": "56545",
         "count": 2
+      },
+      {
+        "port": "8040",
+        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://kolpa.lol/ws",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-25 06:49:05 UTC"
+      },
+      {
+        "ioc": "https://kolpa.lol/mods/api/log-download",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-25 06:49:05 UTC"
+      },
+      {
+        "ioc": "kolpa.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-25 06:49:05 UTC"
+      },
+      {
+        "ioc": "https://kolpa.lol/get/config",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-25 06:49:04 UTC"
+      },
+      {
+        "ioc": "https://kolpa.lol/?p=",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-25 06:49:04 UTC"
+      },
+      {
+        "ioc": "https://kolpa.lol/babayla/zor/yarisirlar",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-25 06:49:03 UTC"
+      },
       {
         "ioc": "https://kingo.lol/mods/api/log-download",
         "type": "url",
@@ -214,42 +250,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-08-23 16:11:02 UTC"
-      },
-      {
-        "ioc": "https://kestane.lol/babayla/zor/yarisirlar/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-23 16:11:01 UTC"
-      },
-      {
-        "ioc": "https://kestane.lol/get/config",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-23 16:11:01 UTC"
-      },
-      {
-        "ioc": "kestane.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-23 16:11:00 UTC"
-      },
-      {
-        "ioc": "94.154.32.180:8041",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-22 11:07:03 UTC"
-      },
-      {
-        "ioc": "relay.serverkinetices.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 11:06:24 UTC"
-      },
-      {
-        "ioc": "203.159.90.118:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-22 11:06:22 UTC"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-08-24T14:17:02.046531+00:00",
+  "generated": "2026-08-25T14:25:51.836391+00:00",
   "recent_window_ioc_count": 60,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
@@ -19,11 +19,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-27",
-      "latest": "2026-08-24"
+      "latest": "2026-08-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 381,
-      "domain": 99,
+      "ip:port": 380,
+      "domain": 100,
       "sha256_hash": 19,
       "url": 1
     },
@@ -33,7 +33,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-27": 4,
+      "2026-06-27": 3,
       "2026-06-28": 10,
       "2026-06-29": 9,
       "2026-06-30": 12,
@@ -83,7 +83,8 @@
       "2026-08-20": 10,
       "2026-08-21": 1,
       "2026-08-22": 1,
-      "2026-08-24": 2
+      "2026-08-24": 2,
+      "2026-08-25": 1
     },
     "top_ports": [
       {
@@ -128,6 +129,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "burunagangababagmakeodionweginoyekelegid.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-25 14:20:24 UTC"
+      },
       {
         "ioc": "192.236.217.108:2404",
         "type": "ip:port",
@@ -211,12 +218,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-20 07:40:58 UTC"
-      },
-      {
-        "ioc": "103.83.87.87:27900",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-19 18:41:26 UTC"
       }
     ]
   }

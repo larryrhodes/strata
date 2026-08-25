@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-08-24T14:12:17.234155+00:00",
-  "recent_window_ioc_count": 266,
+  "generated": "2026-08-25T14:22:26.207055+00:00",
+  "recent_window_ioc_count": 243,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -11,15 +11,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-14",
-      "latest": "2026-08-24"
+      "latest": "2026-08-25"
     },
     "ioc_type_breakdown": {
-      "url": 131,
-      "domain": 87,
-      "sha256_hash": 83,
-      "sha1_hash": 82,
-      "md5_hash": 82,
-      "ip:port": 35
+      "url": 142,
+      "domain": 95,
+      "sha1_hash": 75,
+      "md5_hash": 75,
+      "sha256_hash": 75,
+      "ip:port": 38
     },
     "confidence_distribution": {
       "high": 500,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-14": 129,
+      "2026-08-14": 107,
       "2026-08-15": 77,
       "2026-08-16": 12,
       "2026-08-17": 20,
@@ -37,104 +37,105 @@
       "2026-08-21": 43,
       "2026-08-22": 24,
       "2026-08-23": 31,
-      "2026-08-24": 38
+      "2026-08-24": 42,
+      "2026-08-25": 18
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 35
+        "count": 38
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "https://ggk.123ful.net/",
+        "ioc": "https://168.119.61.136",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-24 14:10:48 UTC"
+        "first_seen": "2026-08-25 11:32:58 UTC"
       },
       {
-        "ioc": "ggk.123ful.net",
+        "ioc": "https://hh3.123ful.net/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-25 11:25:47 UTC"
+      },
+      {
+        "ioc": "hh3.123ful.net",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-24 14:10:47 UTC"
+        "first_seen": "2026-08-25 11:25:47 UTC"
       },
       {
-        "ioc": "https://185.167.99.44",
-        "type": "url",
+        "ioc": "185.167.99.44:443",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-24 14:03:39 UTC"
+        "first_seen": "2026-08-25 07:17:53 UTC"
       },
       {
-        "ioc": "https://dor.123ful.net/",
-        "type": "url",
+        "ioc": "62.238.36.8:443",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-24 11:25:47 UTC"
+        "first_seen": "2026-08-25 07:17:53 UTC"
       },
       {
-        "ioc": "dor.123ful.net",
+        "ioc": "178.104.211.128:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-25 07:17:53 UTC"
+      },
+      {
+        "ioc": "hbd.sm188dnsxx.top",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-24 11:25:47 UTC"
+        "first_seen": "2026-08-25 07:17:25 UTC"
       },
       {
-        "ioc": "62.238.46.243:443",
-        "type": "ip:port",
+        "ioc": "dor.sm188dnsxx.top",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:44 UTC"
+        "first_seen": "2026-08-25 07:17:25 UTC"
       },
       {
-        "ioc": "77.42.91.181:443",
-        "type": "ip:port",
+        "ioc": "ggk.sm188dnsxx.top",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:44 UTC"
+        "first_seen": "2026-08-25 07:17:25 UTC"
       },
       {
-        "ioc": "193.168.173.159:443",
-        "type": "ip:port",
+        "ioc": "hit.sm188dnsxx.top",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:44 UTC"
+        "first_seen": "2026-08-25 07:17:25 UTC"
       },
       {
-        "ioc": "185.227.110.24:443",
-        "type": "ip:port",
+        "ioc": "ibi.sm188dnsxx.top",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:44 UTC"
+        "first_seen": "2026-08-25 07:17:25 UTC"
       },
       {
-        "ioc": "167.233.78.24:443",
-        "type": "ip:port",
+        "ioc": "https://62.238.36.8/",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:44 UTC"
+        "first_seen": "2026-08-25 07:17:07 UTC"
       },
       {
-        "ioc": "62.238.122.8:443",
-        "type": "ip:port",
+        "ioc": "https://178.104.211.128/",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:43 UTC"
+        "first_seen": "2026-08-25 07:17:07 UTC"
       },
       {
-        "ioc": "62.238.125.82:443",
-        "type": "ip:port",
+        "ioc": "https://hbd.sm188dnsxx.top/",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:43 UTC"
+        "first_seen": "2026-08-25 07:17:07 UTC"
       },
       {
-        "ioc": "2.29.9.195:443",
-        "type": "ip:port",
+        "ioc": "https://dor.sm188dnsxx.top/",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-24 07:43:43 UTC"
-      },
-      {
-        "ioc": "45.91.169.81:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-24 07:43:43 UTC"
-      },
-      {
-        "ioc": "185.100.157.8:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-24 07:43:43 UTC"
+        "first_seen": "2026-08-25 07:17:06 UTC"
       }
     ]
   }

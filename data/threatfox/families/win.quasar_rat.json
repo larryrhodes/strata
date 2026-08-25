@@ -1,7 +1,7 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-08-24T14:14:25.293615+00:00",
+  "generated": "2026-08-25T14:23:52.680446+00:00",
   "recent_window_ioc_count": 117,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
@@ -87,7 +87,6 @@
       "2026-07-24": 3,
       "2026-07-25": 6,
       "2026-07-28": 4,
-      "2026-08-03": 1,
       "2026-08-07": 1,
       "2026-08-08": 1,
       "2026-08-09": 2,
@@ -102,7 +101,7 @@
       "2026-08-21": 14,
       "2026-08-22": 1,
       "2026-08-23": 3,
-      "2026-08-24": 5
+      "2026-08-24": 6
     },
     "top_ports": [
       {
@@ -134,19 +133,25 @@
         "count": 3
       },
       {
+        "port": "4785",
+        "count": 2
+      },
+      {
         "port": "8727",
         "count": 2
       },
       {
         "port": "6001",
         "count": 2
-      },
-      {
-        "port": "8888",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "79.227.124.242:4785",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-24 20:05:07 UTC"
+      },
       {
         "ioc": "104.255.228.252:4782",
         "type": "ip:port",
@@ -227,12 +232,6 @@
       },
       {
         "ioc": "92.101.1.239:1604",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-21 19:16:04 UTC"
-      },
-      {
-        "ioc": "79.198.173.193:4785",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-21 19:16:04 UTC"

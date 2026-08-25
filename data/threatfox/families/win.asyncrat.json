@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-08-24T14:14:36.301972+00:00",
-  "recent_window_ioc_count": 87,
+  "generated": "2026-08-25T14:25:14.654571+00:00",
+  "recent_window_ioc_count": 81,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,23 +10,26 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-10-19",
-      "latest": "2026-08-24"
+      "earliest": "2025-05-24",
+      "latest": "2026-08-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 467,
+      "ip:port": 469,
       "md5_hash": 8,
       "sha1_hash": 8,
       "sha256_hash": 8,
-      "domain": 8,
+      "domain": 6,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 492,
-      "medium": 8,
+      "high": 491,
+      "medium": 9,
       "low": 0
     },
     "activity_timeline": {
+      "2025-05-24": 1,
+      "2025-06-18": 2,
+      "2025-09-07": 1,
       "2025-10-19": 1,
       "2025-11-01": 1,
       "2025-12-23": 1,
@@ -49,7 +52,7 @@
       "2026-05-06": 1,
       "2026-05-08": 1,
       "2026-05-10": 1,
-      "2026-05-11": 3,
+      "2026-05-11": 2,
       "2026-05-12": 1,
       "2026-05-14": 1,
       "2026-05-16": 3,
@@ -82,9 +85,9 @@
       "2026-07-06": 2,
       "2026-07-07": 1,
       "2026-07-08": 1,
-      "2026-07-09": 5,
+      "2026-07-09": 4,
       "2026-07-10": 1,
-      "2026-07-11": 3,
+      "2026-07-11": 2,
       "2026-07-12": 4,
       "2026-07-13": 8,
       "2026-07-14": 10,
@@ -112,8 +115,8 @@
       "2026-08-07": 10,
       "2026-08-08": 3,
       "2026-08-09": 6,
-      "2026-08-10": 6,
-      "2026-08-11": 11,
+      "2026-08-10": 5,
+      "2026-08-11": 8,
       "2026-08-12": 32,
       "2026-08-13": 16,
       "2026-08-14": 13,
@@ -126,16 +129,17 @@
       "2026-08-21": 14,
       "2026-08-22": 9,
       "2026-08-23": 5,
-      "2026-08-24": 1
+      "2026-08-24": 1,
+      "2026-08-25": 3
     },
     "top_ports": [
       {
         "port": "8808",
-        "count": 61
+        "count": 62
       },
       {
         "port": "7707",
-        "count": 56
+        "count": 55
       },
       {
         "port": "6606",
@@ -143,7 +147,7 @@
       },
       {
         "port": "443",
-        "count": 12
+        "count": 13
       },
       {
         "port": "80",
@@ -171,6 +175,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "80.190.77.86:30700",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-25 13:05:08 UTC"
+      },
+      {
+        "ioc": "50.116.42.10:8808",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-25 12:05:05 UTC"
+      },
+      {
+        "ioc": "160.25.140.133:443",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-08-25 06:48:53 UTC"
+      },
       {
         "ioc": "45.131.182.88:8808",
         "type": "ip:port",
@@ -242,24 +264,6 @@
         "type": "sha1_hash",
         "confidence": 95,
         "first_seen": "2026-08-22 11:19:24 UTC"
-      },
-      {
-        "ioc": "b2a33b38f8fd574fb80e9df8c4094090365ee7250593e372b854da9757a9a3c0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-22 11:19:23 UTC"
-      },
-      {
-        "ioc": "45.131.182.88:7707",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-22 09:46:13 UTC"
-      },
-      {
-        "ioc": "104.243.248.63:100",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-22 09:43:12 UTC"
       }
     ]
   }
