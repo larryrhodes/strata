@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-25T14:22:45.209422+00:00",
-  "recent_window_ioc_count": 181,
+  "generated": "2026-08-26T14:13:42.618505+00:00",
+  "recent_window_ioc_count": 184,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-21",
-      "latest": "2026-08-25"
+      "earliest": "2026-07-27",
+      "latest": "2026-08-26"
     },
     "ioc_type_breakdown": {
-      "url": 387,
-      "ip:port": 60,
-      "domain": 53
+      "url": 401,
+      "ip:port": 59,
+      "domain": 40
     },
     "confidence_distribution": {
       "high": 498,
@@ -24,23 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-21": 7,
-      "2026-06-24": 1,
-      "2026-06-28": 1,
-      "2026-06-29": 1,
-      "2026-07-01": 1,
-      "2026-07-04": 2,
-      "2026-07-06": 1,
-      "2026-07-07": 1,
-      "2026-07-11": 1,
-      "2026-07-12": 1,
-      "2026-07-13": 1,
-      "2026-07-15": 1,
-      "2026-07-21": 2,
-      "2026-07-23": 1,
-      "2026-07-25": 1,
-      "2026-07-26": 2,
-      "2026-07-27": 38,
+      "2026-07-27": 32,
       "2026-07-28": 3,
       "2026-07-29": 7,
       "2026-07-30": 2,
@@ -69,15 +53,20 @@
       "2026-08-22": 9,
       "2026-08-23": 11,
       "2026-08-24": 74,
-      "2026-08-25": 8
+      "2026-08-25": 26,
+      "2026-08-26": 13
     },
     "top_ports": [
+      {
+        "port": "8839",
+        "count": 4
+      },
       {
         "port": "2535",
         "count": 4
       },
       {
-        "port": "8839",
+        "port": "7242",
         "count": 3
       },
       {
@@ -93,14 +82,6 @@
         "count": 2
       },
       {
-        "port": "7242",
-        "count": 2
-      },
-      {
-        "port": "8592",
-        "count": 2
-      },
-      {
         "port": "8811",
         "count": 2
       },
@@ -111,98 +92,102 @@
       {
         "port": "2930",
         "count": 2
+      },
+      {
+        "port": "7527",
+        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "167.71.217.41:8839",
+        "ioc": "159.89.43.36:8839",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-25 14:18:09 UTC"
+        "first_seen": "2026-08-26 13:50:13 UTC"
       },
       {
-        "ioc": "http://mrlketo.shop:8932/users",
+        "ioc": "remus.su",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-08-26 12:43:52 UTC"
+      },
+      {
+        "ioc": "http://shhsift.click:7647/workspaces",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-25 09:14:23 UTC"
+        "first_seen": "2026-08-26 11:20:55 UTC"
       },
       {
-        "ioc": "http://uiccvbk.click:8839/orders",
+        "ioc": "http://risadxe.click:8954/settings",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-25 06:55:23 UTC"
+        "first_seen": "2026-08-26 11:20:55 UTC"
       },
       {
-        "ioc": "64.227.109.19:3452",
+        "ioc": "http://fresok.top:9048/customers",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-26 10:05:26 UTC"
+      },
+      {
+        "ioc": "http://Cryptovectorhub3.lol:5478/accounts",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-26 10:05:24 UTC"
+      },
+      {
+        "ioc": "http://spareon.click:8811/permissions",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-26 07:17:23 UTC"
+      },
+      {
+        "ioc": "http://shhsift.click:7647/webhooks",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-26 05:35:34 UTC"
+      },
+      {
+        "ioc": "http://fresok.top:9048/posts",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-26 05:35:23 UTC"
+      },
+      {
+        "ioc": "http://Cryptovectorhub3.lol:5478/customers",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-26 05:35:21 UTC"
+      },
+      {
+        "ioc": "216.203.20.46:5478",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-25 06:48:09 UTC"
+        "first_seen": "2026-08-26 05:35:13 UTC"
       },
       {
-        "ioc": "http://shhsift.click:7647/accounts",
+        "ioc": "http://fresok.top:9048/projects",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-25 02:36:23 UTC"
+        "first_seen": "2026-08-26 05:15:23 UTC"
       },
       {
-        "ioc": "http://zonxh.shop:7728/reviews",
+        "ioc": "http://zonxh.shop:7728/permissions",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-25 02:36:22 UTC"
+        "first_seen": "2026-08-26 05:15:23 UTC"
       },
       {
-        "ioc": "http://shhsift.click:7647/tasks",
+        "ioc": "http://ciffice.biz:7720/documents",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-25 01:33:23 UTC"
+        "first_seen": "2026-08-25 22:42:22 UTC"
       },
       {
-        "ioc": "http://zonxh.shop:7728/profiles",
+        "ioc": "http://vztax.shop:9820/customers",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-08-25 01:33:22 UTC"
-      },
-      {
-        "ioc": "http://shhsift.click:7647/transactions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 23:32:03 UTC"
-      },
-      {
-        "ioc": "http://bazadar.shop:5728/webhooks",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 23:32:03 UTC"
-      },
-      {
-        "ioc": "http://zakuiru.shop:9048/addresses",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 23:26:33 UTC"
-      },
-      {
-        "ioc": "http://zonxh.shop:7728/addresses",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 23:26:33 UTC"
-      },
-      {
-        "ioc": "http://zonxh.shop:7728/users",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 23:21:35 UTC"
-      },
-      {
-        "ioc": "http://zakuiru.shop:9048/articles",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 22:45:28 UTC"
-      },
-      {
-        "ioc": "http://vztax.shop:9820/folders",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-24 22:40:14 UTC"
+        "first_seen": "2026-08-25 21:15:32 UTC"
       }
     ]
   }

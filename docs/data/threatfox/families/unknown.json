@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown",
   "family": "Unknown malware",
-  "generated": "2026-08-25T14:20:57.589016+00:00",
-  "recent_window_ioc_count": 826,
+  "generated": "2026-08-26T14:12:25.829344+00:00",
+  "recent_window_ioc_count": 755,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown",
   "description": null,
   "alt_names": [],
@@ -10,194 +10,161 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-07-09",
-      "latest": "2026-08-25"
+      "earliest": "2026-08-18",
+      "latest": "2026-08-26"
     },
     "ioc_type_breakdown": {
-      "ip:port": 375,
-      "domain": 123,
-      "url": 2
+      "domain": 387,
+      "url": 62,
+      "ip:port": 51
     },
     "confidence_distribution": {
-      "high": 476,
-      "medium": 24,
+      "high": 493,
+      "medium": 7,
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-09": 3,
-      "2026-07-10": 2,
-      "2026-07-14": 3,
-      "2026-07-16": 2,
-      "2026-07-17": 1,
-      "2026-07-18": 1,
-      "2026-07-19": 1,
-      "2026-07-20": 9,
-      "2026-07-21": 5,
-      "2026-07-22": 6,
-      "2026-07-23": 2,
-      "2026-07-24": 2,
-      "2026-07-25": 1,
-      "2026-07-26": 2,
-      "2026-07-27": 2,
-      "2026-07-28": 4,
-      "2026-07-29": 7,
-      "2026-07-31": 3,
-      "2026-08-01": 7,
-      "2026-08-02": 3,
-      "2026-08-03": 1,
-      "2026-08-04": 5,
-      "2026-08-05": 8,
-      "2026-08-06": 5,
-      "2026-08-07": 1,
-      "2026-08-08": 9,
-      "2026-08-09": 4,
-      "2026-08-10": 3,
-      "2026-08-11": 5,
-      "2026-08-12": 12,
-      "2026-08-13": 7,
-      "2026-08-14": 5,
-      "2026-08-15": 7,
-      "2026-08-16": 5,
-      "2026-08-17": 9,
-      "2026-08-18": 43,
-      "2026-08-19": 4,
+      "2026-08-18": 82,
+      "2026-08-19": 5,
       "2026-08-20": 3,
       "2026-08-21": 4,
-      "2026-08-23": 75,
-      "2026-08-25": 219
+      "2026-08-23": 95,
+      "2026-08-24": 1,
+      "2026-08-25": 239,
+      "2026-08-26": 71
     },
     "top_ports": [
       {
         "port": "7443",
-        "count": 104
+        "count": 23
+      },
+      {
+        "port": "8848",
+        "count": 13
       },
       {
         "port": "443",
-        "count": 25
+        "count": 2
       },
       {
-        "port": "23789",
-        "count": 18
+        "port": "8080",
+        "count": 1
       },
       {
-        "port": "54123",
-        "count": 17
+        "port": "60000",
+        "count": 1
       },
       {
-        "port": "49376",
-        "count": 17
+        "port": "8041",
+        "count": 1
       },
       {
-        "port": "46852",
-        "count": 17
+        "port": "8443",
+        "count": 1
       },
       {
-        "port": "42061",
-        "count": 17
+        "port": "43148",
+        "count": 1
       },
       {
-        "port": "38429",
-        "count": 17
+        "port": "8801",
+        "count": 1
       },
       {
-        "port": "32876",
-        "count": 17
-      },
-      {
-        "port": "27651",
-        "count": 17
+        "port": "888",
+        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "43.143.94.53:8088",
+        "ioc": "85.239.149.198:8080",
         "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-26 13:24:21 UTC"
+      },
+      {
+        "ioc": "https://ivahook.online/api/clients/ping",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-25 14:05:06 UTC"
+        "first_seen": "2026-08-26 12:52:08 UTC"
       },
       {
-        "ioc": "tripinupdate.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-25 14:00:46 UTC"
-      },
-      {
-        "ioc": "rootfarmapp.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-25 14:00:45 UTC"
-      },
-      {
-        "ioc": "neversoftmain.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-25 14:00:45 UTC"
-      },
-      {
-        "ioc": "dondermicapp.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-25 14:00:44 UTC"
-      },
-      {
-        "ioc": "aroclenetapp.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-25 14:00:43 UTC"
-      },
-      {
-        "ioc": "ratatwista.com",
-        "type": "domain",
+        "ioc": "https://ivahook.online/api/clients/exfiltrate",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-25 13:58:07 UTC"
+        "first_seen": "2026-08-26 12:52:07 UTC"
       },
       {
-        "ioc": "178.16.53.113:50051",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-25 13:58:07 UTC"
-      },
-      {
-        "ioc": "45.8.46.122:3232",
-        "type": "ip:port",
+        "ioc": "https://pancar.lol/?p=",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-25 13:05:10 UTC"
+        "first_seen": "2026-08-26 12:43:58 UTC"
       },
       {
-        "ioc": "3.238.106.234:7443",
-        "type": "ip:port",
+        "ioc": "https://pancar.lol/ws",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-25 13:05:07 UTC"
+        "first_seen": "2026-08-26 12:43:58 UTC"
       },
       {
-        "ioc": "2.27.202.130:7443",
-        "type": "ip:port",
+        "ioc": "https://pancar.lol/mods/api/log-download",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-08-25 13:05:06 UTC"
+        "first_seen": "2026-08-26 12:43:58 UTC"
       },
       {
-        "ioc": "154.90.70.20:61543",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-25 12:36:06 UTC"
+        "ioc": "https://pancar.lol/babayla/zor/yarisirlar/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-26 12:43:57 UTC"
       },
       {
-        "ioc": "154.90.70.20:54123",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-25 12:36:06 UTC"
+        "ioc": "https://pancar.lol/get/config",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-26 12:43:57 UTC"
       },
       {
-        "ioc": "154.90.70.20:49376",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-25 12:36:06 UTC"
+        "ioc": "pancar.lol",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-08-26 12:43:56 UTC"
       },
       {
-        "ioc": "154.90.70.20:46852",
+        "ioc": "156.234.82.4:8848",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-25 12:36:05 UTC"
+        "first_seen": "2026-08-26 12:04:36 UTC"
+      },
+      {
+        "ioc": "47.98.129.153:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-26 12:04:36 UTC"
+      },
+      {
+        "ioc": "103.199.100.173:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-26 12:04:36 UTC"
+      },
+      {
+        "ioc": "134.122.173.16:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-26 12:04:35 UTC"
+      },
+      {
+        "ioc": "23.248.223.83:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-26 12:04:35 UTC"
+      },
+      {
+        "ioc": "23.248.223.86:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-26 12:04:35 UTC"
       }
     ]
   }
