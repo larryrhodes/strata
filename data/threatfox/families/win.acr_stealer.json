@@ -1,28 +1,28 @@
 {
   "malware_id": "win.acr_stealer",
   "family": "ACR Stealer",
-  "generated": "2026-08-26T14:15:25.667082+00:00",
-  "recent_window_ioc_count": 79,
+  "generated": "2026-08-27T23:05:39.771221+00:00",
+  "recent_window_ioc_count": 80,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
   "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 348,
+    "total_iocs": 351,
     "date_range": {
       "earliest": "2026-03-07",
-      "latest": "2026-08-22"
+      "latest": "2026-08-27"
     },
     "ioc_type_breakdown": {
       "domain": 166,
       "ip:port": 109,
-      "md5_hash": 24,
-      "sha1_hash": 24,
-      "sha256_hash": 24,
+      "md5_hash": 25,
+      "sha1_hash": 25,
+      "sha256_hash": 25,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 347,
+      "high": 350,
       "medium": 1,
       "low": 0
     },
@@ -93,7 +93,8 @@
       "2026-08-12": 2,
       "2026-08-19": 9,
       "2026-08-20": 1,
-      "2026-08-22": 77
+      "2026-08-22": 77,
+      "2026-08-27": 3
     },
     "top_ports": [
       {
@@ -102,6 +103,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "91f4d29bbd95d3f69bde9a5a92c85143",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-27 00:06:28 UTC"
+      },
+      {
+        "ioc": "ceabbf3ec577b2a3aa5917b9566da8f6e6a2b1d1",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-27 00:06:27 UTC"
+      },
+      {
+        "ioc": "81de4d530901a1df65b325368728f4eea2c39e7e53a2df97aec3744771d86a1e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-27 00:06:27 UTC"
+      },
       {
         "ioc": "d252e8f0884cdfd7a81c26f2009b7719",
         "type": "md5_hash",
@@ -170,24 +189,6 @@
       },
       {
         "ioc": "v0cow1k020426uj.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
-      },
-      {
-        "ioc": "ureyd250425ft.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
-      },
-      {
-        "ioc": "um8e86140825vjg.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
-      },
-      {
-        "ioc": "u9cux020426d.cfd",
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-22 09:36:44 UTC"

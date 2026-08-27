@@ -1,8 +1,8 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-08-15T13:57:15.431592+00:00",
-  "recent_window_ioc_count": 35,
+  "generated": "2026-08-27T23:07:25.059314+00:00",
+  "recent_window_ioc_count": 51,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
   "alt_names": [],
@@ -10,35 +10,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-04",
-      "latest": "2026-08-14"
+      "earliest": "2026-03-17",
+      "latest": "2026-08-27"
     },
     "ioc_type_breakdown": {
-      "url": 174,
-      "ip:port": 120,
-      "sha256_hash": 72,
-      "sha1_hash": 63,
-      "md5_hash": 63,
-      "domain": 8
+      "url": 152,
+      "ip:port": 134,
+      "sha256_hash": 74,
+      "md5_hash": 65,
+      "sha1_hash": 65,
+      "domain": 10
     },
     "confidence_distribution": {
-      "high": 427,
-      "medium": 73,
+      "high": 453,
+      "medium": 47,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-04": 15,
-      "2026-03-05": 6,
-      "2026-03-06": 1,
-      "2026-03-07": 6,
-      "2026-03-09": 1,
-      "2026-03-10": 5,
-      "2026-03-11": 17,
-      "2026-03-12": 1,
-      "2026-03-13": 5,
-      "2026-03-14": 3,
-      "2026-03-16": 2,
-      "2026-03-17": 17,
+      "2026-03-17": 15,
       "2026-03-18": 2,
       "2026-03-19": 9,
       "2026-03-20": 6,
@@ -129,12 +118,22 @@
       "2026-08-11": 1,
       "2026-08-12": 10,
       "2026-08-13": 6,
-      "2026-08-14": 2
+      "2026-08-14": 2,
+      "2026-08-15": 5,
+      "2026-08-16": 1,
+      "2026-08-17": 2,
+      "2026-08-19": 3,
+      "2026-08-20": 3,
+      "2026-08-22": 7,
+      "2026-08-23": 3,
+      "2026-08-25": 2,
+      "2026-08-26": 1,
+      "2026-08-27": 37
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 116
+        "count": 130
       },
       {
         "port": "443",
@@ -151,94 +150,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "http://144.31.57.113/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 06:20:27 UTC"
+        "ioc": "23.94.252.4:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 09:09:26 UTC"
       },
       {
-        "ioc": "http://91.92.241.69/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-14 06:20:26 UTC"
-      },
-      {
-        "ioc": "http://91.92.34.11/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 08:30:34 UTC"
-      },
-      {
-        "ioc": "http://78.17.93.167/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 05:53:10 UTC"
-      },
-      {
-        "ioc": "https://cloud-flare-authenticator.link/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 05:53:09 UTC"
-      },
-      {
-        "ioc": "http://144.31.57.92/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 05:53:08 UTC"
-      },
-      {
-        "ioc": "http://91.202.233.163/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 05:53:05 UTC"
-      },
-      {
-        "ioc": "https://fbdfsgfwrgerwefew.top/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-13 05:53:04 UTC"
-      },
-      {
-        "ioc": "http://160.20.109.16/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:13 UTC"
-      },
-      {
-        "ioc": "http://178.16.52.90/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:12 UTC"
-      },
-      {
-        "ioc": "http://95.135.181.73/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:12 UTC"
-      },
-      {
-        "ioc": "http://160.20.109.33/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:11 UTC"
-      },
-      {
-        "ioc": "http://94.103.88.121/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:10 UTC"
-      },
-      {
-        "ioc": "http://91.92.242.73/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-12 17:32:09 UTC"
-      },
-      {
-        "ioc": "cloud-flare-authenticator.click",
+        "ioc": "windows-update-local.rest",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-12 13:05:17 UTC"
+        "first_seen": "2026-08-27 07:48:01 UTC"
+      },
+      {
+        "ioc": "http://91.92.241.119/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:28 UTC"
+      },
+      {
+        "ioc": "http://80.76.49.106/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:27 UTC"
+      },
+      {
+        "ioc": "http://31.77.228.62/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:27 UTC"
+      },
+      {
+        "ioc": "http://178.16.52.93/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:26 UTC"
+      },
+      {
+        "ioc": "http://158.94.208.32/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:26 UTC"
+      },
+      {
+        "ioc": "http://135.181.127.244/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:25 UTC"
+      },
+      {
+        "ioc": "http://103.101.85.184/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-27 07:29:25 UTC"
+      },
+      {
+        "ioc": "95.135.181.73:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 07:29:04 UTC"
+      },
+      {
+        "ioc": "94.103.88.121:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 07:29:04 UTC"
+      },
+      {
+        "ioc": "91.92.242.73:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 07:29:03 UTC"
+      },
+      {
+        "ioc": "91.92.241.69:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 07:29:03 UTC"
+      },
+      {
+        "ioc": "91.92.241.119:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 07:29:03 UTC"
+      },
+      {
+        "ioc": "80.76.49.77:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 07:29:03 UTC"
       }
     ]
   }
