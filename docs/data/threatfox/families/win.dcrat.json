@@ -1,8 +1,8 @@
 {
   "malware_id": "win.dcrat",
   "family": "DCRat",
-  "generated": "2026-08-27T23:07:39.649634+00:00",
-  "recent_window_ioc_count": 50,
+  "generated": "2026-08-28T23:14:19.598315+00:00",
+  "recent_window_ioc_count": 55,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
   "description": "DCRat is a typical RAT that has been around since at least June 2019.",
   "alt_names": [
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-08",
-      "latest": "2026-08-27"
+      "earliest": "2026-03-12",
+      "latest": "2026-08-28"
     },
     "ioc_type_breakdown": {
-      "ip:port": 305,
-      "url": 86,
+      "ip:port": 301,
+      "url": 87,
       "domain": 66,
-      "sha256_hash": 20,
-      "md5_hash": 12,
-      "sha1_hash": 11
+      "sha256_hash": 21,
+      "md5_hash": 13,
+      "sha1_hash": 12
     },
     "confidence_distribution": {
       "high": 444,
@@ -29,9 +29,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-08": 2,
-      "2026-03-09": 2,
-      "2026-03-10": 2,
       "2026-03-12": 4,
       "2026-03-13": 7,
       "2026-03-14": 5,
@@ -147,7 +144,7 @@
       "2026-08-03": 2,
       "2026-08-04": 3,
       "2026-08-05": 2,
-      "2026-08-06": 6,
+      "2026-08-06": 3,
       "2026-08-07": 8,
       "2026-08-08": 1,
       "2026-08-10": 9,
@@ -167,12 +164,13 @@
       "2026-08-24": 1,
       "2026-08-25": 20,
       "2026-08-26": 7,
-      "2026-08-27": 2
+      "2026-08-27": 2,
+      "2026-08-28": 9
     },
     "top_ports": [
       {
         "port": "8848",
-        "count": 77
+        "count": 78
       },
       {
         "port": "12159",
@@ -180,11 +178,11 @@
       },
       {
         "port": "7777",
-        "count": 10
+        "count": 9
       },
       {
         "port": "443",
-        "count": 8
+        "count": 7
       },
       {
         "port": "5656",
@@ -203,15 +201,69 @@
         "count": 6
       },
       {
-        "port": "8080",
+        "port": "207",
         "count": 5
       },
       {
-        "port": "207",
-        "count": 5
+        "port": "6666",
+        "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "91.92.241.38:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-28 19:46:31 UTC"
+      },
+      {
+        "ioc": "102.220.160.231:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-28 19:43:04 UTC"
+      },
+      {
+        "ioc": "102.220.160.231:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-28 19:43:04 UTC"
+      },
+      {
+        "ioc": "http://cx288605.tw1.ru/L1nc0In.php",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-28 16:50:08 UTC"
+      },
+      {
+        "ioc": "92937973d50ddd6bff639bf35feb25b119f56edd",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:29 UTC"
+      },
+      {
+        "ioc": "9fce0558dd8b2061c7a8baf0877d5384",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:29 UTC"
+      },
+      {
+        "ioc": "9b0e3f974dac0023599bb604b5b30e3e763c2d1d28ecff80d307ca73dc06243f",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:28 UTC"
+      },
+      {
+        "ioc": "69.167.11.119:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-28 09:05:07 UTC"
+      },
+      {
+        "ioc": "http://ooooarwv.beget.tech/L1nc0In.php",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-28 05:05:14 UTC"
+      },
       {
         "ioc": "46.246.84.10:8848",
         "type": "ip:port",
@@ -247,60 +299,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-26 17:05:07 UTC"
-      },
-      {
-        "ioc": "160.20.109.29:8090",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-26 17:05:06 UTC"
-      },
-      {
-        "ioc": "http://37.230.117.14/Auth5/Poll1VmDownloads/4geo5Server/8generatorPhp/Datalife4Datalife/0Betterdump/_sql/baseprotect/PipeJs_linuxTrackWordpressdatalifeUploads.php",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-26 15:45:10 UTC"
-      },
-      {
-        "ioc": "http://cf762637.tw1.ru/L1nc0In.php",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-26 15:35:08 UTC"
-      },
-      {
-        "ioc": "124.198.132.77:1458",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-25 22:16:21 UTC"
-      },
-      {
-        "ioc": "fd669e1388907d25b8039b5ae22804a6b77a96d139c8f8bbff50c15c9968bfa2",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-25 20:46:24 UTC"
-      },
-      {
-        "ioc": "55888979b9436e79d41aeb0b763de01ed99b85db",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-25 20:46:24 UTC"
-      },
-      {
-        "ioc": "1bd88bbb0c82349303aa60c470c8b51e",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-25 20:46:24 UTC"
-      },
-      {
-        "ioc": "1fa24618993a4828e566da20b40bb181",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-25 20:26:56 UTC"
-      },
-      {
-        "ioc": "50ab6fa03c74aac498627a9949d88931f4b15fd8",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-25 20:26:55 UTC"
       }
     ]
   }

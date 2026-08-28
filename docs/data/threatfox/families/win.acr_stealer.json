@@ -1,28 +1,28 @@
 {
   "malware_id": "win.acr_stealer",
   "family": "ACR Stealer",
-  "generated": "2026-08-27T23:05:39.771221+00:00",
-  "recent_window_ioc_count": 80,
+  "generated": "2026-08-28T23:12:11.966081+00:00",
+  "recent_window_ioc_count": 86,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
   "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 351,
+    "total_iocs": 357,
     "date_range": {
       "earliest": "2026-03-07",
-      "latest": "2026-08-27"
+      "latest": "2026-08-28"
     },
     "ioc_type_breakdown": {
       "domain": 166,
       "ip:port": 109,
-      "md5_hash": 25,
-      "sha1_hash": 25,
-      "sha256_hash": 25,
+      "md5_hash": 27,
+      "sha1_hash": 27,
+      "sha256_hash": 27,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 350,
+      "high": 356,
       "medium": 1,
       "low": 0
     },
@@ -94,7 +94,8 @@
       "2026-08-19": 9,
       "2026-08-20": 1,
       "2026-08-22": 77,
-      "2026-08-27": 3
+      "2026-08-27": 3,
+      "2026-08-28": 6
     },
     "top_ports": [
       {
@@ -103,6 +104,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "8be48ea27f6cd6b2ec2ef3be4977322d",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:35 UTC"
+      },
+      {
+        "ioc": "ba655e73a1c08143324ffeaf56b6f6bea0a134e6",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:35 UTC"
+      },
+      {
+        "ioc": "105195dfdfbfdce7cf13f50d92bba761eba5bc22c31000109a67708f61474e12",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:35 UTC"
+      },
+      {
+        "ioc": "98f00e36daaf4c4bae91031d4b53ea9b",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:21 UTC"
+      },
+      {
+        "ioc": "6c19930c2b6b2ec49b42399dcd8e477de347c010",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:20 UTC"
+      },
+      {
+        "ioc": "46ced738ab9a9a37df3e36c6a8603742f26783f0be2fa845bdec10b5ddb50bfb",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-08-28 16:02:20 UTC"
+      },
       {
         "ioc": "91f4d29bbd95d3f69bde9a5a92c85143",
         "type": "md5_hash",
@@ -156,42 +193,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-22 09:36:45 UTC"
-      },
-      {
-        "ioc": "wqhuc2gq08020426mws.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:45 UTC"
-      },
-      {
-        "ioc": "vss7s6zte020426g12.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:45 UTC"
-      },
-      {
-        "ioc": "vd1qf14082587.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
-      },
-      {
-        "ioc": "v6a5iq6qxq140825s.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
-      },
-      {
-        "ioc": "v4wbnux67t0204260.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
-      },
-      {
-        "ioc": "v0cow1k020426uj.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-22 09:36:44 UTC"
       }
     ]
   }

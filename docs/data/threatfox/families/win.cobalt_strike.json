@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-08-27T23:03:35.210908+00:00",
-  "recent_window_ioc_count": 182,
+  "generated": "2026-08-28T23:11:37.673021+00:00",
+  "recent_window_ioc_count": 179,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,24 +37,19 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-03-01",
-      "latest": "2026-08-27"
+      "earliest": "2025-04-01",
+      "latest": "2026-08-28"
     },
     "ioc_type_breakdown": {
-      "ip:port": 447,
-      "domain": 53
+      "ip:port": 448,
+      "domain": 52
     },
     "confidence_distribution": {
-      "high": 477,
-      "medium": 23,
+      "high": 475,
+      "medium": 25,
       "low": 0
     },
     "activity_timeline": {
-      "2025-03-01": 1,
-      "2025-03-09": 1,
-      "2025-03-12": 1,
-      "2025-03-20": 1,
-      "2025-03-25": 1,
       "2025-04-01": 1,
       "2025-04-16": 1,
       "2025-05-07": 1,
@@ -136,7 +131,7 @@
       "2025-12-09": 1,
       "2025-12-12": 1,
       "2025-12-15": 1,
-      "2025-12-16": 2,
+      "2025-12-16": 1,
       "2025-12-22": 1,
       "2025-12-23": 3,
       "2025-12-24": 1,
@@ -181,7 +176,7 @@
       "2026-05-11": 1,
       "2026-05-19": 1,
       "2026-05-20": 1,
-      "2026-05-23": 2,
+      "2026-05-23": 1,
       "2026-05-24": 1,
       "2026-05-25": 1,
       "2026-05-27": 2,
@@ -214,7 +209,7 @@
       "2026-07-07": 3,
       "2026-07-08": 3,
       "2026-07-09": 1,
-      "2026-07-10": 5,
+      "2026-07-10": 4,
       "2026-07-11": 3,
       "2026-07-13": 1,
       "2026-07-16": 2,
@@ -225,7 +220,6 @@
       "2026-07-24": 2,
       "2026-07-25": 2,
       "2026-07-26": 4,
-      "2026-07-27": 1,
       "2026-07-29": 5,
       "2026-07-30": 1,
       "2026-07-31": 10,
@@ -253,20 +247,21 @@
       "2026-08-24": 2,
       "2026-08-25": 2,
       "2026-08-26": 2,
-      "2026-08-27": 8
+      "2026-08-27": 15,
+      "2026-08-28": 2
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 221
+        "count": 219
       },
       {
         "port": "80",
-        "count": 27
+        "count": 26
       },
       {
         "port": "53",
-        "count": 17
+        "count": 16
       },
       {
         "port": "8896",
@@ -281,12 +276,12 @@
         "count": 8
       },
       {
-        "port": "18443",
+        "port": "9999",
         "count": 7
       },
       {
-        "port": "9999",
-        "count": 7
+        "port": "18443",
+        "count": 6
       },
       {
         "port": "8696",
@@ -298,6 +293,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "137.220.151.95:2222",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-28 19:05:05 UTC"
+      },
+      {
+        "ioc": "162.251.92.64:18888",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-28 11:47:52 UTC"
+      },
+      {
+        "ioc": "185.130.46.191:44885",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 23:47:17 UTC"
+      },
+      {
+        "ioc": "185.130.46.191:44884",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 23:47:17 UTC"
+      },
+      {
+        "ioc": "185.130.46.191:44882",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 23:47:17 UTC"
+      },
+      {
+        "ioc": "114.55.250.233:1128",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 23:47:07 UTC"
+      },
+      {
+        "ioc": "ajax.graphwindows.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-08-27 23:46:56 UTC"
+      },
       {
         "ioc": "8.162.1.240:10087",
         "type": "ip:port",
@@ -345,48 +382,6 @@
         "type": "domain",
         "confidence": 75,
         "first_seen": "2026-08-27 11:48:13 UTC"
-      },
-      {
-        "ioc": "91.108.189.81:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-26 11:48:52 UTC"
-      },
-      {
-        "ioc": "online-r.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-26 11:48:12 UTC"
-      },
-      {
-        "ioc": "119.45.225.53:8889",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-25 21:47:10 UTC"
-      },
-      {
-        "ioc": "ck.erloro.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-25 21:46:58 UTC"
-      },
-      {
-        "ioc": "175.27.214.144:4433",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-24 17:39:33 UTC"
-      },
-      {
-        "ioc": "209.200.246.194:24563",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-24 11:47:51 UTC"
-      },
-      {
-        "ioc": "209.200.246.194:32126",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-23 23:46:54 UTC"
       }
     ]
   }
