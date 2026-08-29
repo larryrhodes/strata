@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-08-28T23:11:37.673021+00:00",
-  "recent_window_ioc_count": 179,
+  "generated": "2026-08-29T17:21:24.470170+00:00",
+  "recent_window_ioc_count": 176,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,29 +37,19 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-04-01",
-      "latest": "2026-08-28"
+      "earliest": "2025-05-24",
+      "latest": "2026-08-29"
     },
     "ioc_type_breakdown": {
       "ip:port": 448,
       "domain": 52
     },
     "confidence_distribution": {
-      "high": 475,
-      "medium": 25,
+      "high": 476,
+      "medium": 24,
       "low": 0
     },
     "activity_timeline": {
-      "2025-04-01": 1,
-      "2025-04-16": 1,
-      "2025-05-07": 1,
-      "2025-05-12": 2,
-      "2025-05-15": 3,
-      "2025-05-17": 1,
-      "2025-05-18": 1,
-      "2025-05-20": 1,
-      "2025-05-21": 1,
-      "2025-05-23": 1,
       "2025-05-24": 1,
       "2025-05-30": 2,
       "2025-05-31": 2,
@@ -141,9 +131,11 @@
       "2026-01-06": 1,
       "2026-01-07": 1,
       "2026-01-08": 1,
+      "2026-01-16": 2,
       "2026-01-23": 1,
       "2026-01-26": 1,
       "2026-01-30": 2,
+      "2026-01-31": 1,
       "2026-02-08": 83,
       "2026-02-13": 1,
       "2026-02-14": 1,
@@ -245,35 +237,36 @@
       "2026-08-21": 6,
       "2026-08-23": 4,
       "2026-08-24": 2,
-      "2026-08-25": 2,
+      "2026-08-25": 3,
       "2026-08-26": 2,
       "2026-08-27": 15,
-      "2026-08-28": 2
+      "2026-08-28": 2,
+      "2026-08-29": 9
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 219
+        "count": 212
       },
       {
         "port": "80",
-        "count": 26
+        "count": 28
       },
       {
         "port": "53",
-        "count": 16
+        "count": 15
+      },
+      {
+        "port": "8080",
+        "count": 10
       },
       {
         "port": "8896",
         "count": 10
       },
       {
-        "port": "8080",
-        "count": 9
-      },
-      {
         "port": "8443",
-        "count": 8
+        "count": 9
       },
       {
         "port": "9999",
@@ -294,10 +287,64 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "137.220.151.95:2222",
+        "ioc": "43.163.88.35:139",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-28 19:05:05 UTC"
+        "first_seen": "2026-08-29 16:05:05 UTC"
+      },
+      {
+        "ioc": "43.163.88.35:8443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 14:05:06 UTC"
+      },
+      {
+        "ioc": "43.163.88.35:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 14:05:05 UTC"
+      },
+      {
+        "ioc": "43.163.88.35:137",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 13:05:06 UTC"
+      },
+      {
+        "ioc": "43.163.88.35:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 13:05:06 UTC"
+      },
+      {
+        "ioc": "43.163.88.35:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 13:05:05 UTC"
+      },
+      {
+        "ioc": "151.245.230.21:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 12:05:06 UTC"
+      },
+      {
+        "ioc": "151.245.230.21:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 12:05:06 UTC"
+      },
+      {
+        "ioc": "162.251.92.64:448",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-29 11:48:21 UTC"
+      },
+      {
+        "ioc": "8.134.166.14:54451",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-28 23:47:33 UTC"
       },
       {
         "ioc": "162.251.92.64:18888",
@@ -328,60 +375,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-27 23:47:07 UTC"
-      },
-      {
-        "ioc": "ajax.graphwindows.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-27 23:46:56 UTC"
-      },
-      {
-        "ioc": "8.162.1.240:10087",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:55 UTC"
-      },
-      {
-        "ioc": "47.79.21.106:45678",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:51 UTC"
-      },
-      {
-        "ioc": "39.97.57.155:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:44 UTC"
-      },
-      {
-        "ioc": "38.207.177.73:9966",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:43 UTC"
-      },
-      {
-        "ioc": "186.244.245.91:28446",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:39 UTC"
-      },
-      {
-        "ioc": "106.15.10.2:6789",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:21 UTC"
-      },
-      {
-        "ioc": "106.15.10.2:11111",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:21 UTC"
-      },
-      {
-        "ioc": "c-proxy-xjmkjgbsdn.cn-hangzhou.fcapp.run",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-27 11:48:13 UTC"
       }
     ]
   }

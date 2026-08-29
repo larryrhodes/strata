@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-08-28T23:11:07.458078+00:00",
-  "recent_window_ioc_count": 296,
+  "generated": "2026-08-29T17:21:06.662936+00:00",
+  "recent_window_ioc_count": 273,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -11,11 +11,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-15",
-      "latest": "2026-08-28"
+      "latest": "2026-08-29"
     },
     "ioc_type_breakdown": {
-      "url": 147,
-      "domain": 89,
+      "url": 148,
+      "domain": 88,
       "sha256_hash": 76,
       "md5_hash": 75,
       "sha1_hash": 75,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-15": 3,
+      "2026-08-15": 2,
       "2026-08-16": 12,
       "2026-08-17": 20,
       "2026-08-18": 54,
@@ -40,7 +40,8 @@
       "2026-08-25": 43,
       "2026-08-26": 19,
       "2026-08-27": 20,
-      "2026-08-28": 117
+      "2026-08-28": 117,
+      "2026-08-29": 1
     },
     "top_ports": [
       {
@@ -49,6 +50,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://46.225.92.123",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-29 14:08:51 UTC"
+      },
       {
         "ioc": "https://46.29.26.35",
         "type": "url",
@@ -132,12 +139,6 @@
         "type": "sha1_hash",
         "confidence": 95,
         "first_seen": "2026-08-28 16:02:39 UTC"
-      },
-      {
-        "ioc": "712e7912a669a71a7006fd1a0333b5da45dbbc78672c46ae62e794fbc1372959",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:38 UTC"
       }
     ]
   }
