@@ -1,8 +1,8 @@
 {
   "malware_id": "js.iclickfix",
   "family": "IClickFix",
-  "generated": "2026-08-29T17:19:52.103481+00:00",
-  "recent_window_ioc_count": 809,
+  "generated": "2026-08-30T17:43:15.060483+00:00",
+  "recent_window_ioc_count": 689,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.iclickfix",
   "description": "IClickFix is a malicious JavaScript framework deployed on compromised WordPress sites to deliver further malware using the ClickFix social engineering tactic and fake Cloudflare Turnstile CAPTCHA challenge.",
   "alt_names": [],
@@ -10,37 +10,44 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-19",
+      "earliest": "2026-08-14",
       "latest": "2026-08-29"
     },
     "ioc_type_breakdown": {
       "domain": 496,
-      "ip:port": 3,
-      "url": 1
+      "url": 2,
+      "ip:port": 2
     },
     "confidence_distribution": {
-      "high": 255,
-      "medium": 245,
+      "high": 493,
+      "medium": 7,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-19": 3,
-      "2026-08-21": 3,
-      "2026-08-23": 96,
-      "2026-08-24": 32,
-      "2026-08-25": 20,
-      "2026-08-26": 256,
-      "2026-08-27": 3,
+      "2026-08-14": 67,
+      "2026-08-17": 4,
+      "2026-08-18": 225,
+      "2026-08-19": 34,
+      "2026-08-23": 74,
+      "2026-08-24": 3,
+      "2026-08-26": 4,
+      "2026-08-27": 1,
       "2026-08-28": 84,
-      "2026-08-29": 3
+      "2026-08-29": 4
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 3
+        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://clickzona.net/embed/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-08-29 19:02:46 UTC"
+      },
       {
         "ioc": "tin.tokyo77hit.com",
         "type": "domain",
@@ -121,12 +128,6 @@
       },
       {
         "ioc": "nkitservices.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-28 12:37:33 UTC"
-      },
-      {
-        "ioc": "multi-sweep.com",
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-28 12:37:33 UTC"

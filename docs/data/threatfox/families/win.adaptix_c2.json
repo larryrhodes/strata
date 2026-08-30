@@ -1,8 +1,8 @@
 {
   "malware_id": "win.adaptix_c2",
   "family": "AdaptixC2",
-  "generated": "2026-08-24T14:16:45.088808+00:00",
-  "recent_window_ioc_count": 60,
+  "generated": "2026-08-30T17:48:30.070261+00:00",
+  "recent_window_ioc_count": 36,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.adaptix_c2",
   "description": "AdaptixC2 is a open-source post-exploitation and adversarial emulation framework that lets penetration testers control compromised hosts and execute system actions. While being created for red-teaming it is also used by threat actors for attacks.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-01",
-      "latest": "2026-08-24"
+      "latest": "2026-08-30"
     },
     "ioc_type_breakdown": {
       "ip:port": 475,
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-01": 29,
+      "2026-05-01": 35,
       "2026-05-02": 2,
       "2026-05-03": 1,
       "2026-05-08": 9,
@@ -93,19 +93,19 @@
       "2026-07-21": 2,
       "2026-07-22": 3,
       "2026-07-24": 3,
-      "2026-07-25": 20,
+      "2026-07-25": 19,
       "2026-07-27": 4,
       "2026-07-28": 8,
       "2026-07-29": 2,
       "2026-07-30": 10,
       "2026-07-31": 1,
       "2026-08-01": 6,
-      "2026-08-03": 6,
-      "2026-08-04": 5,
-      "2026-08-05": 21,
-      "2026-08-06": 4,
-      "2026-08-07": 8,
-      "2026-08-08": 21,
+      "2026-08-03": 2,
+      "2026-08-04": 3,
+      "2026-08-05": 7,
+      "2026-08-06": 1,
+      "2026-08-07": 7,
+      "2026-08-08": 10,
       "2026-08-09": 3,
       "2026-08-10": 4,
       "2026-08-11": 1,
@@ -120,32 +120,34 @@
       "2026-08-20": 7,
       "2026-08-21": 4,
       "2026-08-22": 4,
-      "2026-08-24": 6
+      "2026-08-24": 7,
+      "2026-08-25": 1,
+      "2026-08-26": 4,
+      "2026-08-27": 10,
+      "2026-08-28": 4,
+      "2026-08-29": 6,
+      "2026-08-30": 4
     },
     "top_ports": [
       {
         "port": "4321",
-        "count": 181
+        "count": 186
       },
       {
         "port": "443",
-        "count": 33
+        "count": 30
       },
       {
         "port": "8080",
-        "count": 31
+        "count": 26
       },
       {
         "port": "80",
-        "count": 25
+        "count": 21
       },
       {
         "port": "8443",
         "count": 10
-      },
-      {
-        "port": "9443",
-        "count": 5
       },
       {
         "port": "32333",
@@ -156,104 +158,108 @@
         "count": 5
       },
       {
-        "port": "49999",
+        "port": "4444",
         "count": 4
       },
       {
-        "port": "4323",
+        "port": "9443",
+        "count": 4
+      },
+      {
+        "port": "49999",
         "count": 4
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "155.117.155.141:8080",
+        "ioc": "121.127.253.146:4444",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-24 14:05:06 UTC"
+        "first_seen": "2026-08-30 14:05:05 UTC"
       },
       {
-        "ioc": "155.117.155.141:80",
+        "ioc": "121.127.253.146:8080",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-24 14:05:06 UTC"
+        "first_seen": "2026-08-30 13:05:07 UTC"
       },
       {
-        "ioc": "155.117.155.141:443",
+        "ioc": "121.127.253.146:80",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-24 14:05:05 UTC"
+        "first_seen": "2026-08-30 13:05:07 UTC"
       },
       {
-        "ioc": "164.160.187.69:443",
+        "ioc": "121.127.253.146:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-24 12:05:06 UTC"
+        "first_seen": "2026-08-30 13:05:06 UTC"
       },
       {
-        "ioc": "164.160.187.69:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-24 11:05:06 UTC"
-      },
-      {
-        "ioc": "164.160.187.69:8081",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-24 11:05:05 UTC"
-      },
-      {
-        "ioc": "117.72.192.13:4321",
+        "ioc": "1.69.201.249:9003",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-22 09:43:24 UTC"
+        "first_seen": "2026-08-29 19:43:02 UTC"
       },
       {
-        "ioc": "31.58.87.123:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-22 00:05:07 UTC"
-      },
-      {
-        "ioc": "31.58.87.123:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-22 00:05:06 UTC"
-      },
-      {
-        "ioc": "31.58.87.123:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-22 00:05:05 UTC"
-      },
-      {
-        "ioc": "8.137.111.232:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-21 14:05:06 UTC"
-      },
-      {
-        "ioc": "8.137.111.232:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-21 14:05:05 UTC"
-      },
-      {
-        "ioc": "8.137.111.232:4433",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-21 13:05:06 UTC"
-      },
-      {
-        "ioc": "121.127.253.146:4321",
+        "ioc": "144.172.117.108:4321",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-21 09:43:27 UTC"
+        "first_seen": "2026-08-29 09:43:41 UTC"
       },
       {
-        "ioc": "202.61.130.163:8888",
+        "ioc": "103.116.52.203:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-29 09:43:05 UTC"
+      },
+      {
+        "ioc": "20.119.73.195:8080",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-08-20 14:05:05 UTC"
+        "first_seen": "2026-08-29 02:05:06 UTC"
+      },
+      {
+        "ioc": "20.119.73.195:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 02:05:06 UTC"
+      },
+      {
+        "ioc": "20.119.73.195:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-29 02:05:04 UTC"
+      },
+      {
+        "ioc": "13.220.213.63:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-28 12:05:10 UTC"
+      },
+      {
+        "ioc": "13.220.213.63:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-28 12:05:10 UTC"
+      },
+      {
+        "ioc": "13.220.213.63:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-08-28 12:05:09 UTC"
+      },
+      {
+        "ioc": "186.244.245.91:45702",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-28 09:44:42 UTC"
+      },
+      {
+        "ioc": "45.88.186.164:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-08-27 15:20:48 UTC"
       }
     ]
   }

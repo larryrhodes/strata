@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.xmrig",
   "family": "XMRIG",
-  "generated": "2026-08-29T17:25:27.555367+00:00",
-  "recent_window_ioc_count": 40,
+  "generated": "2026-08-30T17:48:14.894672+00:00",
+  "recent_window_ioc_count": 41,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.xmrig",
   "description": null,
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 284,
     "date_range": {
       "earliest": "2025-12-16",
-      "latest": "2026-08-28"
+      "latest": "2026-08-30"
     },
     "ioc_type_breakdown": {
       "ip:port": 212,
@@ -64,12 +64,13 @@
       "2026-07-30": 3,
       "2026-08-02": 1,
       "2026-08-03": 2,
-      "2026-08-08": 15,
+      "2026-08-08": 14,
       "2026-08-11": 7,
       "2026-08-12": 1,
       "2026-08-26": 8,
       "2026-08-27": 18,
-      "2026-08-28": 14
+      "2026-08-28": 14,
+      "2026-08-30": 1
     },
     "top_ports": [
       {
@@ -97,8 +98,12 @@
         "count": 4
       },
       {
+        "port": "3333",
+        "count": 3
+      },
+      {
         "port": "443",
-        "count": 4
+        "count": 3
       },
       {
         "port": "8181",
@@ -107,13 +112,15 @@
       {
         "port": "8058",
         "count": 2
-      },
-      {
-        "port": "8060",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "141.94.96.195:3333",
+        "type": "ip:port",
+        "confidence": 90,
+        "first_seen": "2026-08-30 07:09:29 UTC"
+      },
       {
         "ioc": "112.74.42.150:22",
         "type": "ip:port",
@@ -197,12 +204,6 @@
         "type": "ip:port",
         "confidence": 85,
         "first_seen": "2026-08-28 13:03:48 UTC"
-      },
-      {
-        "ioc": "selfupdate.net",
-        "type": "domain",
-        "confidence": 90,
-        "first_seen": "2026-08-27 13:17:49 UTC"
       }
     ]
   }
