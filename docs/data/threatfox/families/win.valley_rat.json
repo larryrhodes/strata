@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-08-31T19:37:06.664732+00:00",
-  "recent_window_ioc_count": 68,
+  "generated": "2026-09-01T17:25:49.918981+00:00",
+  "recent_window_ioc_count": 78,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,14 +12,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-30",
-      "latest": "2026-08-31"
+      "earliest": "2026-07-02",
+      "latest": "2026-09-01"
     },
     "ioc_type_breakdown": {
-      "ip:port": 178,
-      "md5_hash": 93,
-      "sha1_hash": 89,
-      "sha256_hash": 89,
+      "ip:port": 183,
+      "md5_hash": 91,
+      "sha1_hash": 88,
+      "sha256_hash": 87,
       "url": 34,
       "domain": 17
     },
@@ -29,9 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-30": 4,
-      "2026-07-01": 5,
-      "2026-07-02": 7,
+      "2026-07-02": 6,
       "2026-07-03": 5,
       "2026-07-04": 18,
       "2026-07-06": 1,
@@ -82,7 +80,8 @@
       "2026-08-28": 9,
       "2026-08-29": 3,
       "2026-08-30": 11,
-      "2026-08-31": 11
+      "2026-08-31": 11,
+      "2026-09-01": 10
     },
     "top_ports": [
       {
@@ -94,20 +93,20 @@
         "count": 19
       },
       {
-        "port": "6666",
-        "count": 13
+        "port": "443",
+        "count": 16
       },
       {
-        "port": "443",
+        "port": "6666",
         "count": 12
       },
       {
         "port": "80",
-        "count": 11
+        "count": 10
       },
       {
         "port": "8888",
-        "count": 10
+        "count": 9
       },
       {
         "port": "8383",
@@ -118,15 +117,75 @@
         "count": 8
       },
       {
-        "port": "441",
+        "port": "8443",
         "count": 4
       },
       {
-        "port": "4453",
-        "count": 3
+        "port": "441",
+        "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "95.41.36.198:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:31 UTC"
+      },
+      {
+        "ioc": "95.40.176.172:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:30 UTC"
+      },
+      {
+        "ioc": "185.9.17.250:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:30 UTC"
+      },
+      {
+        "ioc": "95.41.69.117:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:29 UTC"
+      },
+      {
+        "ioc": "95.40.209.24:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:29 UTC"
+      },
+      {
+        "ioc": "69.72.83.130:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:28 UTC"
+      },
+      {
+        "ioc": "43.154.230.182:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:28 UTC"
+      },
+      {
+        "ioc": "69.72.83.130:2096",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:27 UTC"
+      },
+      {
+        "ioc": "69.72.83.130:2083",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:27 UTC"
+      },
+      {
+        "ioc": "69.72.83.130:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 07:27:26 UTC"
+      },
       {
         "ioc": "07ddbbe2c71c45577a7a4fbcdba0df91",
         "type": "md5_hash",
@@ -156,66 +215,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-08-31 13:47:46 UTC"
-      },
-      {
-        "ioc": "103.45.66.18:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-31 13:47:46 UTC"
-      },
-      {
-        "ioc": "103.45.66.18:442",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-31 13:47:46 UTC"
-      },
-      {
-        "ioc": "103.45.66.18:441",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-08-31 13:47:45 UTC"
-      },
-      {
-        "ioc": "144.172.84.7:6688",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-31 09:45:03 UTC"
-      },
-      {
-        "ioc": "156.251.11.58:935",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-31 00:55:09 UTC"
-      },
-      {
-        "ioc": "156.251.11.58:936",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-31 00:55:05 UTC"
-      },
-      {
-        "ioc": "134.122.185.201:6685",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-30 04:25:13 UTC"
-      },
-      {
-        "ioc": "134.122.185.201:6698",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-30 04:25:09 UTC"
-      },
-      {
-        "ioc": "eb5e1454e3edc95f364b74c3db91c12c21ad0902",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-30 01:34:28 UTC"
-      },
-      {
-        "ioc": "30550319146db843b5987e3bd4f3befcd5dd77ec3f24862db2d0703f5998667c",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-30 01:34:28 UTC"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-08-31T19:38:45.507278+00:00",
+  "generated": "2026-09-01T17:26:57.874468+00:00",
   "recent_window_ioc_count": 50,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
@@ -11,23 +11,23 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-03-17",
-      "latest": "2026-08-30"
+      "latest": "2026-09-01"
     },
     "ioc_type_breakdown": {
-      "url": 146,
-      "ip:port": 134,
+      "url": 145,
+      "ip:port": 135,
       "sha256_hash": 76,
       "sha1_hash": 67,
       "md5_hash": 67,
       "domain": 10
     },
     "confidence_distribution": {
-      "high": 463,
-      "medium": 37,
+      "high": 465,
+      "medium": 35,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-17": 5,
+      "2026-03-17": 3,
       "2026-03-18": 2,
       "2026-03-19": 9,
       "2026-03-20": 6,
@@ -131,7 +131,8 @@
       "2026-08-27": 37,
       "2026-08-28": 6,
       "2026-08-29": 1,
-      "2026-08-30": 3
+      "2026-08-30": 3,
+      "2026-09-01": 2
     },
     "top_ports": [
       {
@@ -140,7 +141,7 @@
       },
       {
         "port": "443",
-        "count": 2
+        "count": 3
       },
       {
         "port": "6673",
@@ -152,6 +153,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "89.34.90.45:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-01 06:55:17 UTC"
+      },
+      {
+        "ioc": "https://proxy.checkverifybot.com",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-01 04:45:27 UTC"
+      },
       {
         "ioc": "9c927df9fdd83af1b57810daa6cc7712a238d31a860bb8d33c6dacb03f53584d",
         "type": "sha256_hash",
@@ -229,18 +242,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-08-27 07:29:28 UTC"
-      },
-      {
-        "ioc": "http://80.76.49.106/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-27 07:29:27 UTC"
-      },
-      {
-        "ioc": "http://31.77.228.62/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-27 07:29:27 UTC"
       }
     ]
   }

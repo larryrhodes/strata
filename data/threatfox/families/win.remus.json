@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-08-31T19:35:43.721243+00:00",
-  "recent_window_ioc_count": 246,
+  "generated": "2026-09-01T17:24:26.780318+00:00",
+  "recent_window_ioc_count": 197,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-13",
-      "latest": "2026-08-31"
+      "latest": "2026-09-01"
     },
     "ioc_type_breakdown": {
       "url": 404,
@@ -24,7 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-13": 13,
+      "2026-08-13": 1,
       "2026-08-14": 23,
       "2026-08-15": 38,
       "2026-08-16": 25,
@@ -42,7 +42,8 @@
       "2026-08-28": 25,
       "2026-08-29": 17,
       "2026-08-30": 26,
-      "2026-08-31": 10
+      "2026-08-31": 17,
+      "2026-09-01": 5
     },
     "top_ports": [
       {
@@ -70,6 +71,10 @@
         "count": 2
       },
       {
+        "port": "6271",
+        "count": 1
+      },
+      {
         "port": "4812",
         "count": 1
       },
@@ -80,13 +85,81 @@
       {
         "port": "3215",
         "count": 1
-      },
-      {
-        "port": "9001",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://cdire.shop:9048/settings",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-01 15:25:55 UTC"
+      },
+      {
+        "ioc": "http://cdire.shop:9048/profiles",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-01 11:46:10 UTC"
+      },
+      {
+        "ioc": "154.19.37.231:6271",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-01 06:10:29 UTC"
+      },
+      {
+        "ioc": "http://cdire.shop:9048/tasks",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-01 04:28:23 UTC"
+      },
+      {
+        "ioc": "http://doresxa.click:6271/files",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-01 04:28:23 UTC"
+      },
+      {
+        "ioc": "http://cdire.shop:9048/events",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 22:10:23 UTC"
+      },
+      {
+        "ioc": "http://cdire.shop:9048/categories",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 21:55:03 UTC"
+      },
+      {
+        "ioc": "http://nopxs.shop:8839/settings",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 21:55:03 UTC"
+      },
+      {
+        "ioc": "http://cdire.shop:9048/folders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 21:49:43 UTC"
+      },
+      {
+        "ioc": "http://oceanvw.click:3215/folders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 21:49:43 UTC"
+      },
+      {
+        "ioc": "http://cdire.shop:9048/invoices",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 20:20:06 UTC"
+      },
+      {
+        "ioc": "http://oceanvw.click:3215/permissions",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-08-31 20:20:04 UTC"
+      },
       {
         "ioc": "http://cdire.shop:9048/tags",
         "type": "url",
@@ -104,78 +177,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-08-31 11:55:55 UTC"
-      },
-      {
-        "ioc": "http://cdire.shop:9048/sessions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-31 09:55:03 UTC"
-      },
-      {
-        "ioc": "http://bravplo.click:7713/tasks",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-31 08:15:33 UTC"
-      },
-      {
-        "ioc": "31.97.133.166:4812",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-31 07:46:57 UTC"
-      },
-      {
-        "ioc": "http://cdire.shop:9048/accounts",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-31 06:02:23 UTC"
-      },
-      {
-        "ioc": "http://shhsift.click:7647/users",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-31 06:02:23 UTC"
-      },
-      {
-        "ioc": "http://uiccvbk.click:8839/invoices",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-31 06:02:23 UTC"
-      },
-      {
-        "ioc": "http://flreaow.click:6527/webhooks",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-31 04:33:23 UTC"
-      },
-      {
-        "ioc": "http://gofkaxz.click:8137/invoices",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-30 23:25:18 UTC"
-      },
-      {
-        "ioc": "http://cdire.shop:9048/transactions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-30 23:25:17 UTC"
-      },
-      {
-        "ioc": "http://urbandm.click:4812/documents",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-30 22:44:22 UTC"
-      },
-      {
-        "ioc": "http://cdire.shop:9048/videos",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-30 22:11:23 UTC"
-      },
-      {
-        "ioc": "http://cdire.shop:9048/tokens",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-08-30 20:56:03 UTC"
       }
     ]
   }
