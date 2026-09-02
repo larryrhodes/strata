@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-01T17:26:31.763897+00:00",
-  "recent_window_ioc_count": 53,
+  "generated": "2026-09-02T17:19:38.789250+00:00",
+  "recent_window_ioc_count": 44,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,26 +10,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-03",
-      "latest": "2026-08-30"
+      "earliest": "2026-04-08",
+      "latest": "2026-09-02"
     },
     "ioc_type_breakdown": {
       "ip:port": 207,
       "url": 143,
-      "domain": 136,
-      "sha256_hash": 9,
+      "domain": 134,
+      "sha256_hash": 11,
       "md5_hash": 5
     },
     "confidence_distribution": {
-      "high": 468,
-      "medium": 32,
+      "high": 469,
+      "medium": 31,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-03": 1,
-      "2026-04-04": 2,
-      "2026-04-06": 5,
-      "2026-04-07": 1,
       "2026-04-08": 1,
       "2026-04-09": 3,
       "2026-04-11": 2,
@@ -111,16 +107,17 @@
       "2026-08-25": 8,
       "2026-08-26": 18,
       "2026-08-27": 33,
-      "2026-08-30": 2
+      "2026-08-30": 2,
+      "2026-09-02": 9
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 102
+        "count": 101
       },
       {
         "port": "8041",
-        "count": 21
+        "count": 20
       },
       {
         "port": "4449",
@@ -139,6 +136,10 @@
         "count": 3
       },
       {
+        "port": "48988",
+        "count": 2
+      },
+      {
         "port": "80",
         "count": 2
       },
@@ -149,13 +150,63 @@
       {
         "port": "56545",
         "count": 2
-      },
-      {
-        "port": "3000",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "91.193.7.186:48988",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-02 08:12:49 UTC"
+      },
+      {
+        "ioc": "out-agent.duckdns.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-02 08:12:25 UTC"
+      },
+      {
+        "ioc": "lafinersova.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-02 05:50:23 UTC"
+      },
+      {
+        "ioc": "moweros.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-02 05:50:09 UTC"
+      },
+      {
+        "ioc": "176.65.144.127:3854",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-02 05:50:08 UTC"
+      },
+      {
+        "ioc": "176.65.144.127:3851",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-02 05:50:06 UTC"
+      },
+      {
+        "ioc": "bedotiq.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-02 05:50:05 UTC"
+      },
+      {
+        "ioc": "7969ccaf1db750bc3b02d51626d6916ecbd0c0cf2f7de3c7bc0be240f5f2978d",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-09-02 05:50:02 UTC"
+      },
+      {
+        "ioc": "9fa80577b8b3cb9c3062e5e1986cc9fe0c26eed023f7d430dfa5c60169c15c45",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-09-02 05:49:45 UTC"
+      },
       {
         "ioc": "shift-api-control.com",
         "type": "domain",
@@ -191,60 +242,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-08-27 08:36:11 UTC"
-      },
-      {
-        "ioc": "sel.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:11 UTC"
-      },
-      {
-        "ioc": "nef.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "mrr.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "kul.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "gli.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "fso.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "dod.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "cyx0.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
-      },
-      {
-        "ioc": "2280.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:10 UTC"
       }
     ]
   }
