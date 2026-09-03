@@ -1,8 +1,8 @@
 {
   "malware_id": "win.adaptix_c2",
   "family": "AdaptixC2",
-  "generated": "2026-09-02T17:20:24.182234+00:00",
-  "recent_window_ioc_count": 38,
+  "generated": "2026-09-03T17:11:28.606721+00:00",
+  "recent_window_ioc_count": 28,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.adaptix_c2",
   "description": "AdaptixC2 is a open-source post-exploitation and adversarial emulation framework that lets penetration testers control compromised hosts and execute system actions. While being created for red-teaming it is also used by threat actors for attacks.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-01",
-      "latest": "2026-09-02"
+      "latest": "2026-09-03"
     },
     "ioc_type_breakdown": {
       "ip:port": 475,
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-01": 23,
+      "2026-05-01": 34,
       "2026-05-02": 2,
       "2026-05-03": 1,
       "2026-05-08": 9,
@@ -109,8 +109,8 @@
       "2026-08-09": 3,
       "2026-08-10": 3,
       "2026-08-11": 1,
-      "2026-08-12": 13,
-      "2026-08-13": 14,
+      "2026-08-12": 6,
+      "2026-08-13": 9,
       "2026-08-14": 8,
       "2026-08-15": 9,
       "2026-08-16": 3,
@@ -129,24 +129,25 @@
       "2026-08-30": 4,
       "2026-08-31": 2,
       "2026-09-01": 6,
-      "2026-09-02": 5
+      "2026-09-02": 5,
+      "2026-09-03": 1
     },
     "top_ports": [
       {
         "port": "4321",
-        "count": 187
+        "count": 191
       },
       {
         "port": "443",
-        "count": 32
+        "count": 28
       },
       {
         "port": "8080",
-        "count": 27
+        "count": 23
       },
       {
         "port": "80",
-        "count": 23
+        "count": 20
       },
       {
         "port": "8443",
@@ -165,15 +166,21 @@
         "count": 4
       },
       {
-        "port": "49999",
+        "port": "9443",
         "count": 4
       },
       {
-        "port": "4323",
+        "port": "49999",
         "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "144.31.51.6:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-03 09:43:43 UTC"
+      },
       {
         "ioc": "43.198.116.85:443",
         "type": "ip:port",
@@ -257,12 +264,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-08-30 14:05:05 UTC"
-      },
-      {
-        "ioc": "121.127.253.146:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-30 13:05:07 UTC"
       }
     ]
   }

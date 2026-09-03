@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vshell",
   "family": "VShell",
-  "generated": "2026-09-02T17:18:13.314331+00:00",
-  "recent_window_ioc_count": 82,
+  "generated": "2026-09-03T17:09:20.854733+00:00",
+  "recent_window_ioc_count": 67,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
   "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
   "alt_names": [],
@@ -10,11 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-05-18",
-      "latest": "2026-09-02"
+      "earliest": "2026-04-15",
+      "latest": "2026-09-03"
     },
     "ioc_type_breakdown": {
-      "ip:port": 500
+      "ip:port": 498,
+      "sha256_hash": 1,
+      "url": 1
     },
     "confidence_distribution": {
       "high": 498,
@@ -22,7 +24,10 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-05-18": 1,
+      "2026-04-15": 6,
+      "2026-05-10": 3,
+      "2026-05-14": 2,
+      "2026-05-18": 2,
       "2026-05-19": 1,
       "2026-05-30": 1,
       "2026-06-02": 6,
@@ -54,8 +59,7 @@
       "2026-07-26": 1,
       "2026-07-28": 3,
       "2026-07-30": 1,
-      "2026-08-12": 12,
-      "2026-08-13": 6,
+      "2026-08-13": 5,
       "2026-08-14": 17,
       "2026-08-15": 10,
       "2026-08-16": 50,
@@ -75,20 +79,21 @@
       "2026-08-30": 8,
       "2026-08-31": 8,
       "2026-09-01": 13,
-      "2026-09-02": 7
+      "2026-09-02": 7,
+      "2026-09-03": 1
     },
     "top_ports": [
       {
         "port": "8084",
-        "count": 80
+        "count": 79
       },
       {
         "port": "80",
-        "count": 63
+        "count": 62
       },
       {
         "port": "8080",
-        "count": 44
+        "count": 45
       },
       {
         "port": "8884",
@@ -99,27 +104,33 @@
         "count": 22
       },
       {
-        "port": "8443",
+        "port": "9999",
         "count": 15
       },
       {
-        "port": "9999",
-        "count": 14
+        "port": "8443",
+        "count": 15
       },
       {
         "port": "8888",
         "count": 12
       },
       {
-        "port": "8083",
+        "port": "8086",
         "count": 9
       },
       {
-        "port": "8086",
-        "count": 9
+        "port": "8083",
+        "count": 8
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "64.81.114.71:8888",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-03 17:05:08 UTC"
+      },
       {
         "ioc": "154.91.58.114:8084",
         "type": "ip:port",
@@ -203,12 +214,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-09-01 08:05:05 UTC"
-      },
-      {
-        "ioc": "146.56.239.16:8084",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-01 08:05:04 UTC"
       }
     ]
   }

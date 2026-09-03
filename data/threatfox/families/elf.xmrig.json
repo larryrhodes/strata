@@ -1,26 +1,26 @@
 {
   "malware_id": "elf.xmrig",
   "family": "XMRIG",
-  "generated": "2026-09-02T17:19:54.434853+00:00",
-  "recent_window_ioc_count": 38,
+  "generated": "2026-09-03T17:12:30.349241+00:00",
+  "recent_window_ioc_count": 20,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.xmrig",
   "description": null,
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 287,
+    "total_iocs": 289,
     "date_range": {
       "earliest": "2025-12-16",
-      "latest": "2026-09-02"
+      "latest": "2026-09-03"
     },
     "ioc_type_breakdown": {
-      "ip:port": 215,
+      "ip:port": 217,
       "url": 32,
       "domain": 25,
       "sha256_hash": 15
     },
     "confidence_distribution": {
-      "high": 281,
+      "high": 283,
       "medium": 6,
       "low": 0
     },
@@ -71,7 +71,8 @@
       "2026-08-27": 18,
       "2026-08-28": 14,
       "2026-08-30": 1,
-      "2026-09-02": 3
+      "2026-09-02": 3,
+      "2026-09-03": 2
     },
     "top_ports": [
       {
@@ -99,6 +100,10 @@
         "count": 4
       },
       {
+        "port": "9009",
+        "count": 3
+      },
+      {
         "port": "3333",
         "count": 3
       },
@@ -109,13 +114,21 @@
       {
         "port": "8181",
         "count": 2
-      },
-      {
-        "port": "8058",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "46.8.228.191:9009",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-03 05:39:05 UTC"
+      },
+      {
+        "ioc": "216.9.226.120:9009",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-03 05:39:04 UTC"
+      },
       {
         "ioc": "43.156.71.43:22",
         "type": "ip:port",
@@ -193,18 +206,6 @@
         "type": "ip:port",
         "confidence": 85,
         "first_seen": "2026-08-28 13:03:50 UTC"
-      },
-      {
-        "ioc": "45.17.39.120:22",
-        "type": "ip:port",
-        "confidence": 85,
-        "first_seen": "2026-08-28 13:03:50 UTC"
-      },
-      {
-        "ioc": "43.129.53.19:22",
-        "type": "ip:port",
-        "confidence": 85,
-        "first_seen": "2026-08-28 13:03:49 UTC"
       }
     ]
   }

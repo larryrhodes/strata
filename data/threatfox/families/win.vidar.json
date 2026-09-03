@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-09-02T17:16:08.612278+00:00",
-  "recent_window_ioc_count": 510,
+  "generated": "2026-09-03T17:07:36.063304+00:00",
+  "recent_window_ioc_count": 514,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,166 +10,127 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2024-12-25",
-      "latest": "2026-09-02"
+      "earliest": "2026-08-28",
+      "latest": "2026-09-03"
     },
     "ioc_type_breakdown": {
-      "url": 136,
-      "domain": 114,
-      "md5_hash": 73,
-      "sha1_hash": 73,
-      "sha256_hash": 73,
-      "ip:port": 31
+      "md5_hash": 109,
+      "sha1_hash": 109,
+      "sha256_hash": 109,
+      "url": 90,
+      "domain": 49,
+      "ip:port": 34
     },
     "confidence_distribution": {
-      "high": 496,
-      "medium": 4,
+      "high": 495,
+      "medium": 5,
       "low": 0
     },
     "activity_timeline": {
-      "2024-12-25": 1,
-      "2025-01-18": 1,
-      "2025-11-05": 2,
-      "2025-11-12": 2,
-      "2026-02-13": 2,
-      "2026-03-09": 2,
-      "2026-03-13": 2,
-      "2026-03-19": 2,
-      "2026-03-20": 2,
-      "2026-03-23": 3,
-      "2026-03-27": 6,
-      "2026-04-03": 2,
-      "2026-04-07": 2,
-      "2026-04-13": 2,
-      "2026-04-14": 3,
-      "2026-04-15": 3,
-      "2026-04-16": 4,
-      "2026-04-17": 2,
-      "2026-04-22": 2,
-      "2026-04-24": 2,
-      "2026-04-26": 2,
-      "2026-05-01": 2,
-      "2026-05-11": 2,
-      "2026-05-15": 2,
-      "2026-05-23": 3,
-      "2026-05-29": 2,
-      "2026-06-06": 2,
-      "2026-06-15": 5,
-      "2026-06-26": 2,
-      "2026-08-03": 8,
-      "2026-08-10": 2,
-      "2026-08-18": 1,
-      "2026-08-19": 1,
-      "2026-08-20": 10,
-      "2026-08-21": 9,
-      "2026-08-23": 1,
-      "2026-08-24": 11,
-      "2026-08-25": 8,
-      "2026-08-26": 10,
-      "2026-08-27": 9,
-      "2026-08-28": 6,
+      "2026-08-28": 106,
       "2026-08-29": 1,
-      "2026-08-30": 10,
+      "2026-08-30": 16,
       "2026-08-31": 100,
       "2026-09-01": 139,
-      "2026-09-02": 105
+      "2026-09-02": 107,
+      "2026-09-03": 31
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 31
+        "count": 34
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "https://31.77.220.180",
+        "ioc": "https://46.62.133.5",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-03 16:50:20 UTC"
+      },
+      {
+        "ioc": "https://ram.sm188dvlv.mom/",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-09-02 16:28:45 UTC"
+        "first_seen": "2026-09-03 15:40:46 UTC"
       },
       {
-        "ioc": "https://community.fandom.com/wikia.php?controller=UserProfile&method=getUserData&format=json&userId=63727183",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-02 16:10:26 UTC"
-      },
-      {
-        "ioc": "https://telegram.me/nag0e",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-02 16:05:34 UTC"
-      },
-      {
-        "ioc": "https://dev.epicgames.com/community/api/user_profiles/profile.json?hash_id=XmE5L",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-02 16:05:28 UTC"
-      },
-      {
-        "ioc": "https://fpw.13balien.org/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-02 13:35:45 UTC"
-      },
-      {
-        "ioc": "fpw.13balien.org",
+        "ioc": "ram.sm188dvlv.mom",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-09-02 13:35:45 UTC"
+        "first_seen": "2026-09-03 15:40:46 UTC"
       },
       {
-        "ioc": "b135d924f409aeb7be55feacd68e946f",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:33 UTC"
+        "ioc": "https://ram.13balien.org/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-03 15:40:46 UTC"
       },
       {
-        "ioc": "a7b0d89d2f4f846e38ce3c4ea904d16113fda9ea",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:33 UTC"
+        "ioc": "ram.13balien.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 15:40:45 UTC"
       },
       {
-        "ioc": "40b643468356c0fd751893647ad0dc9e2a0019427e4f5f0e2f6e559efcecb977",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:33 UTC"
+        "ioc": "https://s77.sm188dvlv.mom/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-03 10:45:45 UTC"
       },
       {
-        "ioc": "07ec1d0d4f4b2029430ba43303cfde85",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:32 UTC"
+        "ioc": "s77.sm188dvlv.mom",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 10:45:45 UTC"
       },
       {
-        "ioc": "b9d338eeaaef4ad7ba2ca7d759ec97928d5de04a",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:32 UTC"
+        "ioc": "https://s77.13balien.org/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-03 10:40:45 UTC"
       },
       {
-        "ioc": "65be921e09dc27a0e34a9ce31ad9cbb99854a4d7b4be828e158b19ac849332d0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:32 UTC"
+        "ioc": "s77.13balien.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 10:40:45 UTC"
       },
       {
-        "ioc": "cbfdc0774c54d016bf35923d3c5603ae",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:30 UTC"
+        "ioc": "2.29.12.45:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-03 09:03:22 UTC"
       },
       {
-        "ioc": "8026788ad7f9ea95083c3e8610b173bf6559f87f",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:30 UTC"
+        "ioc": "2.29.29.217:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-03 09:03:22 UTC"
       },
       {
-        "ioc": "921ae4b0d4344348a744504a68a434bf82e941a3575172be4bf6f929c08b89c6",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 06:33:29 UTC"
+        "ioc": "178.104.22.105:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-03 09:03:22 UTC"
+      },
+      {
+        "ioc": "m5p.sm188dvlv.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 09:02:55 UTC"
+      },
+      {
+        "ioc": "gen.sm188dvlv.lat",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 09:02:55 UTC"
+      },
+      {
+        "ioc": "hot.sm188dvlv.mom",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 09:02:55 UTC"
       }
     ]
   }
