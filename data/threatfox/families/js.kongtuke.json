@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-09-03T17:12:16.323568+00:00",
-  "recent_window_ioc_count": 20,
+  "generated": "2026-09-04T17:03:15.741974+00:00",
+  "recent_window_ioc_count": 24,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -13,25 +13,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-10",
-      "latest": "2026-09-03"
+      "earliest": "2026-04-11",
+      "latest": "2026-09-04"
     },
     "ioc_type_breakdown": {
-      "domain": 323,
-      "url": 153,
+      "domain": 321,
+      "url": 156,
       "sha256_hash": 12,
-      "ip:port": 8,
+      "ip:port": 7,
       "md5_hash": 2,
       "sha1_hash": 2
     },
     "confidence_distribution": {
-      "high": 371,
-      "medium": 129,
+      "high": 373,
+      "medium": 127,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-10": 2,
-      "2026-04-11": 6,
+      "2026-04-11": 2,
       "2026-04-14": 6,
       "2026-04-15": 68,
       "2026-04-18": 4,
@@ -59,8 +58,7 @@
       "2026-07-14": 9,
       "2026-07-21": 76,
       "2026-07-26": 50,
-      "2026-08-12": 3,
-      "2026-08-13": 1,
+      "2026-08-12": 2,
       "2026-08-14": 8,
       "2026-08-15": 11,
       "2026-08-17": 4,
@@ -72,7 +70,8 @@
       "2026-08-26": 3,
       "2026-08-31": 8,
       "2026-09-01": 4,
-      "2026-09-03": 4
+      "2026-09-03": 8,
+      "2026-09-04": 4
     },
     "top_ports": [
       {
@@ -81,10 +80,58 @@
       },
       {
         "port": "443",
-        "count": 4
+        "count": 3
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://rochardson.me/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-04 12:36:59 UTC"
+      },
+      {
+        "ioc": "rochardson.me",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-04 11:16:13 UTC"
+      },
+      {
+        "ioc": "https://rochardson.me/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-04 11:16:12 UTC"
+      },
+      {
+        "ioc": "https://rochardson.me/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-04 11:16:12 UTC"
+      },
+      {
+        "ioc": "https://guiglen.sbs/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-03 20:17:32 UTC"
+      },
+      {
+        "ioc": "https://guiglen.sbs/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-03 20:17:32 UTC"
+      },
+      {
+        "ioc": "guiglen.sbs",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-03 20:17:32 UTC"
+      },
+      {
+        "ioc": "https://guiglen.sbs/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-03 20:17:31 UTC"
+      },
       {
         "ioc": "https://saaverra.sbs/api/v1/status",
         "type": "url",
@@ -126,54 +173,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-01 13:37:04 UTC"
-      },
-      {
-        "ioc": "marhhetti.sbs",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-01 13:37:03 UTC"
-      },
-      {
-        "ioc": "https://hrrrison.sbs/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-31 14:10:50 UTC"
-      },
-      {
-        "ioc": "https://swewart.sbs/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-31 13:46:06 UTC"
-      },
-      {
-        "ioc": "https://hrrrison.sbs/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-31 09:15:21 UTC"
-      },
-      {
-        "ioc": "hrrrison.sbs",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-31 09:15:21 UTC"
-      },
-      {
-        "ioc": "https://hrrrison.sbs/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-31 09:15:20 UTC"
-      },
-      {
-        "ioc": "https://swewart.sbs/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-08-31 08:13:14 UTC"
-      },
-      {
-        "ioc": "swewart.sbs",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-31 08:13:14 UTC"
       }
     ]
   }

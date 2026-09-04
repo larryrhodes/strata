@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-09-03T17:08:19.277055+00:00",
-  "recent_window_ioc_count": 118,
+  "generated": "2026-09-04T17:00:27.191663+00:00",
+  "recent_window_ioc_count": 103,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-14",
-      "latest": "2026-09-03"
+      "earliest": "2026-08-15",
+      "latest": "2026-09-04"
     },
     "ioc_type_breakdown": {
-      "url": 404,
+      "url": 403,
       "domain": 57,
-      "ip:port": 39
+      "ip:port": 40
     },
     "confidence_distribution": {
       "high": 498,
@@ -24,8 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-14": 3,
-      "2026-08-15": 38,
+      "2026-08-15": 36,
       "2026-08-16": 25,
       "2026-08-17": 16,
       "2026-08-18": 18,
@@ -44,7 +43,8 @@
       "2026-08-31": 17,
       "2026-09-01": 16,
       "2026-09-02": 5,
-      "2026-09-03": 5
+      "2026-09-03": 5,
+      "2026-09-04": 5
     },
     "top_ports": [
       {
@@ -76,19 +76,49 @@
         "count": 2
       },
       {
+        "port": "6929",
+        "count": 1
+      },
+      {
         "port": "6271",
         "count": 1
       },
       {
         "port": "4812",
         "count": 1
-      },
-      {
-        "port": "7528",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://bestals.shop:8592/payments",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 11:40:21 UTC"
+      },
+      {
+        "ioc": "http://bestals.shop:8592/projects",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 10:40:23 UTC"
+      },
+      {
+        "ioc": "http://neortal.click:8321/folders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 10:30:32 UTC"
+      },
+      {
+        "ioc": "http://bestals.shop:8592/subscriptions",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 10:30:30 UTC"
+      },
+      {
+        "ioc": "137.184.108.14:6929",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-04 06:42:43 UTC"
+      },
       {
         "ioc": "http://zonxh.shop:7728/videos",
         "type": "url",
@@ -148,36 +178,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-02 01:40:55 UTC"
-      },
-      {
-        "ioc": "http://bestals.shop:8592/images",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-01 22:03:25 UTC"
-      },
-      {
-        "ioc": "http://doresxa.click:6271/transactions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-01 22:03:25 UTC"
-      },
-      {
-        "ioc": "http://bestals.shop:8592/comments",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-01 21:05:23 UTC"
-      },
-      {
-        "ioc": "http://neortal.click:8321/videos",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-01 21:05:23 UTC"
-      },
-      {
-        "ioc": "http://shhsift.click:7647/projects",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-01 20:49:23 UTC"
       }
     ]
   }

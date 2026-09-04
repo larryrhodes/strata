@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-02T17:19:38.789250+00:00",
-  "recent_window_ioc_count": 44,
+  "generated": "2026-09-04T17:03:31.361302+00:00",
+  "recent_window_ioc_count": 23,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,27 +10,23 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-08",
-      "latest": "2026-09-02"
+      "earliest": "2026-04-13",
+      "latest": "2026-09-04"
     },
     "ioc_type_breakdown": {
-      "ip:port": 207,
-      "url": 143,
-      "domain": 134,
-      "sha256_hash": 11,
+      "ip:port": 205,
+      "url": 148,
+      "domain": 133,
+      "sha256_hash": 9,
       "md5_hash": 5
     },
     "confidence_distribution": {
-      "high": 469,
-      "medium": 31,
+      "high": 467,
+      "medium": 33,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-08": 1,
-      "2026-04-09": 3,
-      "2026-04-11": 2,
-      "2026-04-12": 3,
-      "2026-04-13": 10,
+      "2026-04-13": 7,
       "2026-04-14": 14,
       "2026-04-15": 5,
       "2026-04-16": 2,
@@ -108,16 +104,17 @@
       "2026-08-26": 18,
       "2026-08-27": 33,
       "2026-08-30": 2,
-      "2026-09-02": 9
+      "2026-09-02": 9,
+      "2026-09-04": 12
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 101
+        "count": 99
       },
       {
         "port": "8041",
-        "count": 20
+        "count": 19
       },
       {
         "port": "4449",
@@ -129,10 +126,6 @@
       },
       {
         "port": "4525",
-        "count": 3
-      },
-      {
-        "port": "8443",
         "count": 3
       },
       {
@@ -150,9 +143,85 @@
       {
         "port": "56545",
         "count": 2
+      },
+      {
+        "port": "3000",
+        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "192.159.99.212:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-04 11:30:56 UTC"
+      },
+      {
+        "ioc": "202.61.160.202:8383",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-04 10:00:56 UTC"
+      },
+      {
+        "ioc": "00vn1.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-04 07:44:00 UTC"
+      },
+      {
+        "ioc": "64.224.17.70:8041",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-04 07:43:28 UTC"
+      },
+      {
+        "ioc": "52.249.219.108:3001",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-09-04 06:42:48 UTC"
+      },
+      {
+        "ioc": "http://52.249.219.108:3001/ws",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-09-04 06:42:48 UTC"
+      },
+      {
+        "ioc": "http://52.249.219.108:3001/api/upload",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-09-04 06:42:48 UTC"
+      },
+      {
+        "ioc": "https://d1u70y867zmoi6.cloudfront.net/helper",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 06:42:46 UTC"
+      },
+      {
+        "ioc": "http://18.136.197.129/init",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 06:42:46 UTC"
+      },
+      {
+        "ioc": "https://66.179.31.11/linux/linux_pwn.zip",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 06:42:45 UTC"
+      },
+      {
+        "ioc": "https://66.179.31.11/linux/mac_pwn.zip",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-04 06:42:45 UTC"
+      },
+      {
+        "ioc": "clash-verge-upgrade.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-04 06:42:44 UTC"
+      },
       {
         "ioc": "91.193.7.186:48988",
         "type": "ip:port",
@@ -170,78 +239,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-09-02 05:50:23 UTC"
-      },
-      {
-        "ioc": "moweros.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-02 05:50:09 UTC"
-      },
-      {
-        "ioc": "176.65.144.127:3854",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-02 05:50:08 UTC"
-      },
-      {
-        "ioc": "176.65.144.127:3851",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-02 05:50:06 UTC"
-      },
-      {
-        "ioc": "bedotiq.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-02 05:50:05 UTC"
-      },
-      {
-        "ioc": "7969ccaf1db750bc3b02d51626d6916ecbd0c0cf2f7de3c7bc0be240f5f2978d",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-09-02 05:50:02 UTC"
-      },
-      {
-        "ioc": "9fa80577b8b3cb9c3062e5e1986cc9fe0c26eed023f7d430dfa5c60169c15c45",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-09-02 05:49:45 UTC"
-      },
-      {
-        "ioc": "shift-api-control.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-30 07:09:45 UTC"
-      },
-      {
-        "ioc": "176.65.144.127:3847",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-08-30 07:09:44 UTC"
-      },
-      {
-        "ioc": "war.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:11 UTC"
-      },
-      {
-        "ioc": "u550.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:11 UTC"
-      },
-      {
-        "ioc": "swi.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:11 UTC"
-      },
-      {
-        "ioc": "sos.cantdown.su",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-08-27 08:36:11 UTC"
       }
     ]
   }

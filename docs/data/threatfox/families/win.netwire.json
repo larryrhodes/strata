@@ -1,8 +1,8 @@
 {
   "malware_id": "win.netwire",
   "family": "NetWire RC",
-  "generated": "2026-09-03T17:11:46.408886+00:00",
-  "recent_window_ioc_count": 27,
+  "generated": "2026-09-04T17:04:05.083221+00:00",
+  "recent_window_ioc_count": 21,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.netwire",
   "description": "Netwire is a RAT, its functionality seems focused on password stealing and keylogging, but includes remote control capabilities as well.\r\n\r\nKeylog files are stored on the infected machine in an obfuscated form. The algorithm is:\r\n\r\n            for i in range(0,num_read):\r\n                buffer[i] = ((buffer[i]-0x24)^0x9D)&0xFF",
   "alt_names": [
@@ -17,7 +17,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-23",
-      "latest": "2026-09-01"
+      "latest": "2026-09-04"
     },
     "ioc_type_breakdown": {
       "md5_hash": 167,
@@ -30,7 +30,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-23": 53,
+      "2026-06-23": 50,
       "2026-06-29": 30,
       "2026-07-01": 3,
       "2026-07-05": 6,
@@ -57,10 +57,29 @@
       "2026-08-23": 33,
       "2026-08-25": 6,
       "2026-08-28": 9,
-      "2026-09-01": 18
+      "2026-09-01": 18,
+      "2026-09-04": 3
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "6c13dfb410af585f6d03540dd9597ab2",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-04 00:46:10 UTC"
+      },
+      {
+        "ioc": "2f0b8f128e364319ca0ae650f2e3cff70470f135",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-04 00:46:09 UTC"
+      },
+      {
+        "ioc": "28d65f871d2b7aabc8fe8a13dfca6a48b2d87a49e80773d9e62cbb955beb0761",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-04 00:46:09 UTC"
+      },
       {
         "ioc": "aae740360ec8cfe8c2573863f85d98be",
         "type": "md5_hash",
@@ -132,24 +151,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-09-01 01:40:40 UTC"
-      },
-      {
-        "ioc": "a56af1b76500fad38edb4958e6a29399",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-01 01:40:32 UTC"
-      },
-      {
-        "ioc": "98bf6e4cfe91f5a1154ae0e168437b81318dd24b",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-01 01:40:32 UTC"
-      },
-      {
-        "ioc": "6374eb353f02c7b26e00697a32f4a4f613402ca0296f5f10afdb3243f729c1b9",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-01 01:40:32 UTC"
       }
     ]
   }
