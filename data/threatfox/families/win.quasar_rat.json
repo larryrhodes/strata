@@ -1,8 +1,8 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-09-03T17:12:01.658711+00:00",
-  "recent_window_ioc_count": 26,
+  "generated": "2026-09-05T16:17:25.995145+00:00",
+  "recent_window_ioc_count": 22,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
   "alt_names": [
@@ -20,11 +20,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-13",
-      "latest": "2026-09-03"
+      "latest": "2026-09-05"
     },
     "ioc_type_breakdown": {
-      "ip:port": 225,
-      "domain": 214,
+      "ip:port": 226,
+      "domain": 213,
       "url": 21,
       "sha256_hash": 14,
       "sha1_hash": 13,
@@ -36,7 +36,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-13": 9,
+      "2026-04-13": 8,
       "2026-04-14": 52,
       "2026-04-15": 59,
       "2026-04-16": 1,
@@ -87,7 +87,7 @@
       "2026-07-25": 6,
       "2026-07-28": 4,
       "2026-08-09": 1,
-      "2026-08-13": 10,
+      "2026-08-13": 7,
       "2026-08-15": 5,
       "2026-08-16": 9,
       "2026-08-18": 1,
@@ -104,12 +104,13 @@
       "2026-08-30": 3,
       "2026-09-01": 10,
       "2026-09-02": 4,
-      "2026-09-03": 1
+      "2026-09-03": 1,
+      "2026-09-05": 4
     },
     "top_ports": [
       {
         "port": "4782",
-        "count": 77
+        "count": 80
       },
       {
         "port": "8080",
@@ -149,6 +150,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "41.234.4.41:1339",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-05 11:34:59 UTC"
+      },
+      {
+        "ioc": "192.3.136.229:4782",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-05 11:34:58 UTC"
+      },
+      {
+        "ioc": "62.171.173.61:4782",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-05 11:34:57 UTC"
+      },
+      {
+        "ioc": "158.94.208.19:4782",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-05 11:34:56 UTC"
+      },
       {
         "ioc": "45.61.170.158:8080",
         "type": "ip:port",
@@ -214,30 +239,6 @@
         "type": "ip:port",
         "confidence": 50,
         "first_seen": "2026-09-01 06:55:09 UTC"
-      },
-      {
-        "ioc": "86.250.101.142:4782",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-01 06:55:09 UTC"
-      },
-      {
-        "ioc": "107.175.0.152:15000",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-01 06:55:08 UTC"
-      },
-      {
-        "ioc": "105.108.202.236:288",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-01 06:55:08 UTC"
-      },
-      {
-        "ioc": "177.2.16.126:14782",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-01 06:55:07 UTC"
       }
     ]
   }
