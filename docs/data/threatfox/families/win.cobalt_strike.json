@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-09-05T16:12:46.760401+00:00",
-  "recent_window_ioc_count": 146,
+  "generated": "2026-09-06T16:24:42.611774+00:00",
+  "recent_window_ioc_count": 181,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,21 +37,21 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-06-17",
-      "latest": "2026-09-05"
+      "earliest": "2025-06-20",
+      "latest": "2026-09-06"
     },
     "ioc_type_breakdown": {
-      "ip:port": 443,
+      "ip:port": 442,
       "domain": 56,
+      "sha256_hash": 1,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 478,
-      "medium": 22,
+      "high": 479,
+      "medium": 21,
       "low": 0
     },
     "activity_timeline": {
-      "2025-06-17": 1,
       "2025-06-20": 1,
       "2025-06-25": 1,
       "2025-06-28": 2,
@@ -165,9 +165,8 @@
       "2026-06-05": 1,
       "2026-06-06": 5,
       "2026-06-07": 1,
-      "2026-06-09": 1,
       "2026-06-10": 3,
-      "2026-06-11": 6,
+      "2026-06-11": 5,
       "2026-06-15": 2,
       "2026-06-16": 3,
       "2026-06-19": 1,
@@ -193,12 +192,12 @@
       "2026-07-24": 1,
       "2026-07-25": 1,
       "2026-07-26": 4,
-      "2026-07-29": 3,
+      "2026-07-29": 2,
       "2026-07-31": 7,
       "2026-08-01": 5,
       "2026-08-02": 1,
       "2026-08-03": 1,
-      "2026-08-04": 5,
+      "2026-08-04": 2,
       "2026-08-05": 11,
       "2026-08-06": 7,
       "2026-08-07": 5,
@@ -213,31 +212,32 @@
       "2026-08-17": 2,
       "2026-08-18": 3,
       "2026-08-19": 2,
-      "2026-08-20": 4,
+      "2026-08-20": 3,
       "2026-08-21": 6,
       "2026-08-23": 4,
       "2026-08-24": 3,
       "2026-08-25": 3,
-      "2026-08-26": 8,
+      "2026-08-26": 5,
       "2026-08-27": 16,
       "2026-08-28": 3,
       "2026-08-29": 5,
       "2026-08-30": 6,
       "2026-08-31": 2,
       "2026-09-01": 6,
-      "2026-09-02": 4,
+      "2026-09-02": 3,
       "2026-09-03": 7,
       "2026-09-04": 8,
-      "2026-09-05": 7
+      "2026-09-05": 7,
+      "2026-09-06": 12
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 217
+        "count": 215
       },
       {
         "port": "80",
-        "count": 24
+        "count": 25
       },
       {
         "port": "53",
@@ -248,15 +248,15 @@
         "count": 11
       },
       {
-        "port": "8888",
-        "count": 7
+        "port": "8080",
+        "count": 8
       },
       {
         "port": "9999",
         "count": 7
       },
       {
-        "port": "8080",
+        "port": "8888",
         "count": 6
       },
       {
@@ -274,6 +274,84 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "206.237.120.90:34448",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 16:05:08 UTC"
+      },
+      {
+        "ioc": "206.237.120.90:56735",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 16:05:08 UTC"
+      },
+      {
+        "ioc": "206.237.120.90:29590",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 16:05:07 UTC"
+      },
+      {
+        "ioc": "206.237.120.90:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 16:05:07 UTC"
+      },
+      {
+        "ioc": "206.237.120.90:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 15:05:07 UTC"
+      },
+      {
+        "ioc": "206.237.120.90:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 15:05:06 UTC"
+      },
+      {
+        "ioc": "193.239.86.193:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 15:05:06 UTC"
+      },
+      {
+        "ioc": "193.239.86.193:7000",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 14:05:06 UTC"
+      },
+      {
+        "ioc": "193.239.86.193:7443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 14:05:05 UTC"
+      },
+      {
+        "ioc": "193.239.86.193:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 14:05:05 UTC"
+      },
+      {
+        "ioc": "192.9.157.200:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-06 13:47:16 UTC"
+      },
+      {
+        "ioc": "193.239.86.193:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-06 13:05:09 UTC"
+      },
+      {
+        "ioc": "f535cdbb32dd25fa7dfbcdbae96eafbd5740882e46355c78c895224de6f22e4e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-05 20:17:06 UTC"
+      },
+      {
         "ioc": "http://43.225.47.57:443/ptj",
         "type": "url",
         "confidence": 75,
@@ -284,84 +362,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-05 13:48:00 UTC"
-      },
-      {
-        "ioc": "154.197.141.252:12443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-05 13:47:53 UTC"
-      },
-      {
-        "ioc": "154.197.141.246:12443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-05 13:47:52 UTC"
-      },
-      {
-        "ioc": "111.230.185.183:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-05 13:47:44 UTC"
-      },
-      {
-        "ioc": "103.212.186.85:8888",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-05 13:47:41 UTC"
-      },
-      {
-        "ioc": "120.77.254.122:5555",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:17:51 UTC"
-      },
-      {
-        "ioc": "188.227.14.105:541",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 19:47:51 UTC"
-      },
-      {
-        "ioc": "223.109.142.7:8443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 17:47:55 UTC"
-      },
-      {
-        "ioc": "8.219.134.47:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 15:48:32 UTC"
-      },
-      {
-        "ioc": "47.95.201.24:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 15:48:28 UTC"
-      },
-      {
-        "ioc": "202.182.112.157:6666",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 15:48:18 UTC"
-      },
-      {
-        "ioc": "154.37.218.73:13580",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 15:48:12 UTC"
-      },
-      {
-        "ioc": "www.qkshhdjrbd.work",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-04 15:47:55 UTC"
-      },
-      {
-        "ioc": "dns.n1u89dhs.xyz",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-04 15:47:50 UTC"
       }
     ]
   }
