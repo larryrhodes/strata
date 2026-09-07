@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-06T16:28:04.248257+00:00",
-  "recent_window_ioc_count": 44,
+  "generated": "2026-09-07T18:24:25.809285+00:00",
+  "recent_window_ioc_count": 48,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-15",
-      "latest": "2026-09-05"
+      "earliest": "2026-04-16",
+      "latest": "2026-09-07"
     },
     "ioc_type_breakdown": {
       "ip:port": 203,
       "url": 150,
-      "domain": 125,
-      "sha256_hash": 17,
+      "domain": 124,
+      "sha256_hash": 18,
       "md5_hash": 5
     },
     "confidence_distribution": {
@@ -26,8 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-15": 3,
-      "2026-04-16": 2,
+      "2026-04-16": 1,
       "2026-04-17": 4,
       "2026-04-19": 1,
       "2026-04-23": 1,
@@ -104,7 +103,8 @@
       "2026-08-30": 2,
       "2026-09-02": 9,
       "2026-09-04": 12,
-      "2026-09-05": 23
+      "2026-09-05": 23,
+      "2026-09-07": 4
     },
     "top_ports": [
       {
@@ -116,12 +116,12 @@
         "count": 18
       },
       {
-        "port": "4449",
+        "port": "4521",
         "count": 8
       },
       {
-        "port": "4521",
-        "count": 7
+        "port": "4449",
+        "count": 8
       },
       {
         "port": "80",
@@ -149,6 +149,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "729454cfdc30e2cce222f0a6c67adfd268ac8971068fdef72477e212497f2a2d",
+        "type": "sha256_hash",
+        "confidence": 75,
+        "first_seen": "2026-09-07 08:18:09 UTC"
+      },
+      {
+        "ioc": "138.199.38.136:4522",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 07:22:54 UTC"
+      },
+      {
+        "ioc": "102.129.180.86:4521",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 07:19:08 UTC"
+      },
+      {
+        "ioc": "91.92.40.108:9111",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 06:36:59 UTC"
+      },
       {
         "ioc": "435ggtrgbewrtw.duckdns.org",
         "type": "domain",
@@ -214,30 +238,6 @@
         "type": "sha256_hash",
         "confidence": 100,
         "first_seen": "2026-09-05 11:34:29 UTC"
-      },
-      {
-        "ioc": "18.136.197.129:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:28 UTC"
-      },
-      {
-        "ioc": "3119231f219b938438b4fbf459dbc88f73fe660e7906898b7c1248c1782ef2b0",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:27 UTC"
-      },
-      {
-        "ioc": "ba35186c3b0b69f7f897b1e180f22f6822e52ab571bea53b15dc0e43cf86db2f",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:27 UTC"
-      },
-      {
-        "ioc": "7a8aac687ea67207c19e1c74edb73e8a1a341a0fae0b75f2b434054922763f99",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:27 UTC"
       }
     ]
   }

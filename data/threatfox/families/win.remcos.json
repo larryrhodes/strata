@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-09-06T16:26:34.230167+00:00",
-  "recent_window_ioc_count": 66,
+  "generated": "2026-09-07T18:22:15.297518+00:00",
+  "recent_window_ioc_count": 89,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-07-04",
-      "latest": "2026-09-06"
+      "earliest": "2026-07-07",
+      "latest": "2026-09-07"
     },
     "ioc_type_breakdown": {
-      "ip:port": 372,
-      "domain": 109,
+      "ip:port": 357,
+      "domain": 124,
       "sha256_hash": 19
     },
     "confidence_distribution": {
@@ -32,10 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-04": 9,
-      "2026-07-05": 5,
-      "2026-07-06": 11,
-      "2026-07-07": 32,
+      "2026-07-07": 19,
       "2026-07-08": 16,
       "2026-07-09": 21,
       "2026-07-10": 17,
@@ -87,23 +84,24 @@
       "2026-09-03": 13,
       "2026-09-04": 6,
       "2026-09-05": 7,
-      "2026-09-06": 1
+      "2026-09-06": 12,
+      "2026-09-07": 27
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 78
+        "count": 88
       },
       {
         "port": "65070",
-        "count": 14
+        "count": 15
       },
       {
         "port": "443",
-        "count": 14
+        "count": 13
       },
       {
-        "port": "8080",
+        "port": "56090",
         "count": 6
       },
       {
@@ -111,116 +109,116 @@
         "count": 6
       },
       {
-        "port": "56090",
-        "count": 5
-      },
-      {
         "port": "14647",
         "count": 5
       },
       {
-        "port": "465",
+        "port": "8080",
         "count": 5
+      },
+      {
+        "port": "49006",
+        "count": 4
+      },
+      {
+        "port": "465",
+        "count": 4
       },
       {
         "port": "14642",
-        "count": 5
-      },
-      {
-        "port": "14648",
         "count": 4
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "141.98.10.154:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-06 13:17:30 UTC"
-      },
-      {
-        "ioc": "23.226.68.58:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:41 UTC"
-      },
-      {
-        "ioc": "adtbastard.opik.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:40 UTC"
-      },
-      {
-        "ioc": "adtbastard.hopto.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:40 UTC"
-      },
-      {
-        "ioc": "172.93.142.56:2409",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:31:50 UTC"
-      },
-      {
-        "ioc": "postdatak.duckdns.org",
+        "ioc": "api.kolaybet.club",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-09-05 06:45:14 UTC"
+        "first_seen": "2026-09-07 15:55:24 UTC"
       },
       {
-        "ioc": "inspectormanna.duckdns.org",
+        "ioc": "malware.kolaybet.club",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-09-05 06:45:14 UTC"
+        "first_seen": "2026-09-07 15:55:24 UTC"
       },
       {
-        "ioc": "204.10.160.243:2404",
+        "ioc": "backdoor.kolaybet.club",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:24 UTC"
+      },
+      {
+        "ioc": "api.688vbet.pro",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:23 UTC"
+      },
+      {
+        "ioc": "malware.688vbet.pro",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:23 UTC"
+      },
+      {
+        "ioc": "backdoor.688vbet.pro",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:23 UTC"
+      },
+      {
+        "ioc": "c2.clipmagic.co",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:22 UTC"
+      },
+      {
+        "ioc": "api.clipmagic.co",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:22 UTC"
+      },
+      {
+        "ioc": "malware.clipmagic.co",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:22 UTC"
+      },
+      {
+        "ioc": "backdoor.clipmagic.co",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-07 15:55:21 UTC"
+      },
+      {
+        "ioc": "146.70.51.10:2424",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-05 06:40:08 UTC"
+        "first_seen": "2026-09-07 13:31:39 UTC"
       },
       {
-        "ioc": "87.120.244.219:2020",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 20:26:12 UTC"
-      },
-      {
-        "ioc": "195.186.4.216:2022",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 12:45:59 UTC"
-      },
-      {
-        "ioc": "217.60.103.34:5025",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 12:44:32 UTC"
-      },
-      {
-        "ioc": "89.106.84.200:8736",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-04 12:41:36 UTC"
-      },
-      {
-        "ioc": "172.111.163.166:65070",
+        "ioc": "204.44.93.69:2404",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-04 09:07:58 UTC"
+        "first_seen": "2026-09-07 11:26:46 UTC"
       },
       {
-        "ioc": "213.152.162.118:49006",
+        "ioc": "184.75.208.10:49006",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-04 06:42:43 UTC"
+        "first_seen": "2026-09-07 08:18:08 UTC"
       },
       {
-        "ioc": "155.103.71.126:4049",
+        "ioc": "198.135.55.102:2404",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-03 20:27:59 UTC"
+        "first_seen": "2026-09-07 08:18:07 UTC"
+      },
+      {
+        "ioc": "31.57.184.17:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 08:10:55 UTC"
       }
     ]
   }
