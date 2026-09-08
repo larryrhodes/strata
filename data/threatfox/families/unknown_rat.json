@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-07T18:24:25.809285+00:00",
-  "recent_window_ioc_count": 48,
+  "generated": "2026-09-08T17:25:07.647608+00:00",
+  "recent_window_ioc_count": 57,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,25 +10,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-16",
-      "latest": "2026-09-07"
+      "earliest": "2026-04-23",
+      "latest": "2026-09-08"
     },
     "ioc_type_breakdown": {
-      "ip:port": 203,
-      "url": 150,
-      "domain": 124,
+      "ip:port": 200,
+      "url": 155,
+      "domain": 122,
       "sha256_hash": 18,
       "md5_hash": 5
     },
     "confidence_distribution": {
-      "high": 467,
-      "medium": 33,
+      "high": 468,
+      "medium": 32,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-16": 1,
-      "2026-04-17": 4,
-      "2026-04-19": 1,
       "2026-04-23": 1,
       "2026-04-25": 2,
       "2026-04-26": 1,
@@ -104,7 +101,8 @@
       "2026-09-02": 9,
       "2026-09-04": 12,
       "2026-09-05": 23,
-      "2026-09-07": 4
+      "2026-09-07": 4,
+      "2026-09-08": 6
     },
     "top_ports": [
       {
@@ -144,11 +142,47 @@
         "count": 2
       },
       {
-        "port": "3000",
+        "port": "8443",
         "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "soduncdn.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-08 05:10:08 UTC"
+      },
+      {
+        "ioc": "https://soduncdn.com/m.html",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-08 05:10:07 UTC"
+      },
+      {
+        "ioc": "https://soduncdn.com/mac.zip",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-08 05:10:07 UTC"
+      },
+      {
+        "ioc": "https://d1yflfpbv6t1dr.cloudfront.net/helper",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-08 05:10:06 UTC"
+      },
+      {
+        "ioc": "https://soduncdn.com/w.html",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-08 05:10:04 UTC"
+      },
+      {
+        "ioc": "https://d1yflfpbv6t1dr.cloudfront.net/360speedld.exe",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-08 05:10:04 UTC"
+      },
       {
         "ioc": "729454cfdc30e2cce222f0a6c67adfd268ac8971068fdef72477e212497f2a2d",
         "type": "sha256_hash",
@@ -202,42 +236,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-05 11:34:34 UTC"
-      },
-      {
-        "ioc": "https://66.179.31.11/linux/mp.html",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:34 UTC"
-      },
-      {
-        "ioc": "https://66.179.31.11/linux/lp.html",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:34 UTC"
-      },
-      {
-        "ioc": "service.mynamer.eu",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:33 UTC"
-      },
-      {
-        "ioc": "edge-node.mynamer.eu",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:33 UTC"
-      },
-      {
-        "ioc": "66.179.31.11:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:30 UTC"
-      },
-      {
-        "ioc": "43d5a6dcf75097d1d3e7704fa5d7fbb084135ebec64382e9f547a1a6a145caa7",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:29 UTC"
       }
     ]
   }

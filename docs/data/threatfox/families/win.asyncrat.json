@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-09-07T18:21:59.312561+00:00",
-  "recent_window_ioc_count": 105,
+  "generated": "2026-09-08T17:23:17.861142+00:00",
+  "recent_window_ioc_count": 98,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,15 +10,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-02-05",
-      "latest": "2026-09-07"
+      "earliest": "2026-05-01",
+      "latest": "2026-09-08"
     },
     "ioc_type_breakdown": {
-      "ip:port": 465,
+      "ip:port": 462,
       "domain": 11,
-      "md5_hash": 8,
-      "sha1_hash": 8,
-      "sha256_hash": 8
+      "md5_hash": 9,
+      "sha1_hash": 9,
+      "sha256_hash": 9
     },
     "confidence_distribution": {
       "high": 495,
@@ -26,13 +26,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-02-05": 2,
-      "2026-03-02": 1,
-      "2026-03-13": 1,
-      "2026-03-15": 1,
-      "2026-03-24": 1,
-      "2026-03-27": 1,
-      "2026-04-07": 2,
       "2026-05-01": 7,
       "2026-05-06": 1,
       "2026-05-08": 1,
@@ -67,14 +60,14 @@
       "2026-07-13": 3,
       "2026-07-14": 2,
       "2026-07-16": 2,
-      "2026-07-17": 2,
+      "2026-07-17": 1,
       "2026-07-18": 1,
       "2026-07-20": 1,
       "2026-07-21": 3,
       "2026-07-22": 7,
       "2026-07-23": 4,
-      "2026-07-24": 2,
-      "2026-07-25": 5,
+      "2026-07-24": 1,
+      "2026-07-25": 4,
       "2026-07-26": 3,
       "2026-07-27": 12,
       "2026-07-28": 13,
@@ -105,7 +98,7 @@
       "2026-08-22": 2,
       "2026-08-23": 1,
       "2026-08-24": 1,
-      "2026-08-25": 11,
+      "2026-08-25": 8,
       "2026-08-26": 16,
       "2026-08-27": 10,
       "2026-08-28": 13,
@@ -118,12 +111,13 @@
       "2026-09-04": 8,
       "2026-09-05": 20,
       "2026-09-06": 11,
-      "2026-09-07": 11
+      "2026-09-07": 15,
+      "2026-09-08": 11
     },
     "top_ports": [
       {
         "port": "7707",
-        "count": 52
+        "count": 51
       },
       {
         "port": "8808",
@@ -131,11 +125,11 @@
       },
       {
         "port": "6606",
-        "count": 46
+        "count": 48
       },
       {
         "port": "443",
-        "count": 16
+        "count": 15
       },
       {
         "port": "80",
@@ -150,11 +144,11 @@
         "count": 9
       },
       {
-        "port": "7777",
-        "count": 7
+        "port": "5000",
+        "count": 8
       },
       {
-        "port": "5000",
+        "port": "7777",
         "count": 7
       },
       {
@@ -164,94 +158,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "c2.kolaybet.club",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-07 15:50:20 UTC"
-      },
-      {
-        "ioc": "185.242.3.250:8808",
+        "ioc": "110.42.6.163:8848",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-07 09:44:36 UTC"
+        "first_seen": "2026-09-08 12:55:40 UTC"
       },
       {
-        "ioc": "128.90.136.115:4444",
+        "ioc": "80.190.77.86:1010",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-07 09:43:33 UTC"
+        "first_seen": "2026-09-08 09:47:09 UTC"
       },
       {
-        "ioc": "1379414483df8390aa9eabf1e0d143b1",
+        "ioc": "217.60.198.81:7744",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-08 09:46:00 UTC"
+      },
+      {
+        "ioc": "64.89.160.29:5566",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-08 08:00:02 UTC"
+      },
+      {
+        "ioc": "457371960d83375e5c805ebc7b99932b",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-07 07:34:39 UTC"
+        "first_seen": "2026-09-08 06:34:30 UTC"
       },
       {
-        "ioc": "9522fead5e39391590927f75c4427cc7ebd2d02e",
+        "ioc": "9bd21215d9551af44e0230d281efdd16218313fd",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-09-07 07:34:39 UTC"
+        "first_seen": "2026-09-08 06:34:29 UTC"
       },
       {
-        "ioc": "747b8e6d1285ae88b1cf018515bf808ce00c25fc24e2231d95afabe6cbe1c1c7",
+        "ioc": "2eea097e689004e05f44f04ff22909c96d43d04fa7e5936f3709cf0d3a36c041",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-09-07 07:34:38 UTC"
+        "first_seen": "2026-09-08 06:34:29 UTC"
       },
       {
-        "ioc": "944d1a7459e616f7acb2077d930b665c",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:34:35 UTC"
+        "ioc": "62.85.42.217:8808",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-09-08 05:04:52 UTC"
       },
       {
-        "ioc": "5da66e92ab3e6e9884729d835caf33b0b890aaec",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:34:35 UTC"
-      },
-      {
-        "ioc": "cd17ee97e06ff23641b1176b9bb2b08cc030f55feb2879b64d5806df9df244eb",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:34:34 UTC"
-      },
-      {
-        "ioc": "qaqfaxian.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-07 06:55:32 UTC"
-      },
-      {
-        "ioc": "predatest.servebeer.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-07 06:50:39 UTC"
-      },
-      {
-        "ioc": "58win.gifts",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-06 20:05:21 UTC"
-      },
-      {
-        "ioc": "58win.futbol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-06 20:05:20 UTC"
-      },
-      {
-        "ioc": "58win.builders",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-06 20:05:19 UTC"
-      },
-      {
-        "ioc": "36.255.97.175:4445",
+        "ioc": "26.150.54.213:8808",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-06 19:46:09 UTC"
+        "first_seen": "2026-09-08 02:28:59 UTC"
+      },
+      {
+        "ioc": "26.150.54.213:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-08 02:28:59 UTC"
+      },
+      {
+        "ioc": "26.150.54.213:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-08 02:28:59 UTC"
+      },
+      {
+        "ioc": "80.190.77.86:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 19:46:58 UTC"
+      },
+      {
+        "ioc": "31.70.81.171:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 19:46:09 UTC"
+      },
+      {
+        "ioc": "160.179.230.137:5000",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 19:43:59 UTC"
+      },
+      {
+        "ioc": "102.220.160.198:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-07 19:43:06 UTC"
       }
     ]
   }
