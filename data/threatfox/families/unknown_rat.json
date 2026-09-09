@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-08T17:25:07.647608+00:00",
-  "recent_window_ioc_count": 57,
+  "generated": "2026-09-09T17:17:31.607980+00:00",
+  "recent_window_ioc_count": 49,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-23",
-      "latest": "2026-09-08"
+      "earliest": "2026-04-30",
+      "latest": "2026-09-09"
     },
     "ioc_type_breakdown": {
-      "ip:port": 200,
-      "url": 155,
-      "domain": 122,
-      "sha256_hash": 18,
+      "ip:port": 202,
+      "url": 154,
+      "domain": 120,
+      "sha256_hash": 19,
       "md5_hash": 5
     },
     "confidence_distribution": {
@@ -26,9 +26,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-23": 1,
-      "2026-04-25": 2,
-      "2026-04-26": 1,
       "2026-04-30": 3,
       "2026-05-04": 1,
       "2026-05-05": 6,
@@ -102,7 +99,8 @@
       "2026-09-04": 12,
       "2026-09-05": 23,
       "2026-09-07": 4,
-      "2026-09-08": 6
+      "2026-09-08": 6,
+      "2026-09-09": 4
     },
     "top_ports": [
       {
@@ -130,6 +128,10 @@
         "count": 3
       },
       {
+        "port": "8434",
+        "count": 2
+      },
+      {
         "port": "48988",
         "count": 2
       },
@@ -140,13 +142,33 @@
       {
         "port": "56545",
         "count": 2
-      },
-      {
-        "port": "8443",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "83.217.212.42:38471",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-09 07:14:20 UTC"
+      },
+      {
+        "ioc": "64.188.64.113:8434",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-09 07:14:20 UTC"
+      },
+      {
+        "ioc": "2.27.22.130:8434",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-09 07:14:17 UTC"
+      },
+      {
+        "ioc": "c3394372c2000643ce385269b0d8c648ccb8c833076a84bde397a3c01e7b4a5b",
+        "type": "sha256_hash",
+        "confidence": 75,
+        "first_seen": "2026-09-09 07:14:11 UTC"
+      },
       {
         "ioc": "soduncdn.com",
         "type": "domain",
@@ -212,30 +234,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-09-05 13:51:47 UTC"
-      },
-      {
-        "ioc": "20.187.77.65:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 12:23:36 UTC"
-      },
-      {
-        "ioc": "d.clash-verge-upgrade.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:35 UTC"
-      },
-      {
-        "ioc": "https://66.179.31.11/linux/wp.html",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:35 UTC"
-      },
-      {
-        "ioc": "https://66.179.31.11/sideload.exe",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-05 11:34:34 UTC"
       }
     ]
   }

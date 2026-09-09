@@ -1,8 +1,8 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-09-06T16:28:46.170137+00:00",
-  "recent_window_ioc_count": 32,
+  "generated": "2026-09-09T17:19:06.174826+00:00",
+  "recent_window_ioc_count": 22,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
   "alt_names": [
@@ -20,23 +20,23 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-14",
-      "latest": "2026-09-06"
+      "latest": "2026-09-09"
     },
     "ioc_type_breakdown": {
-      "ip:port": 234,
-      "domain": 202,
+      "ip:port": 235,
+      "domain": 198,
       "url": 21,
-      "sha256_hash": 15,
-      "sha1_hash": 14,
-      "md5_hash": 14
+      "sha256_hash": 16,
+      "sha1_hash": 15,
+      "md5_hash": 15
     },
     "confidence_distribution": {
-      "high": 444,
-      "medium": 56,
+      "high": 443,
+      "medium": 57,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-14": 48,
+      "2026-04-14": 44,
       "2026-04-15": 59,
       "2026-04-16": 1,
       "2026-04-22": 1,
@@ -105,7 +105,9 @@
       "2026-09-02": 4,
       "2026-09-03": 1,
       "2026-09-05": 5,
-      "2026-09-06": 12
+      "2026-09-06": 12,
+      "2026-09-08": 3,
+      "2026-09-09": 1
     },
     "top_ports": [
       {
@@ -150,6 +152,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "115.245.115.158:8443",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-09-09 07:14:02 UTC"
+      },
+      {
+        "ioc": "1f37d2345e765100b8dc628bb6ce098472891fe0",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-08 06:34:32 UTC"
+      },
+      {
+        "ioc": "b1ceadb93463f22943f9677aa330f15a",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-08 06:34:32 UTC"
+      },
+      {
+        "ioc": "1b68d68b9fd200183c69084e91fe53bd5dca5c501bce1bbf1894034bc69fafe6",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-08 06:34:31 UTC"
+      },
       {
         "ioc": "177.2.16.64:14782",
         "type": "ip:port",
@@ -215,30 +241,6 @@
         "type": "sha1_hash",
         "confidence": 95,
         "first_seen": "2026-09-06 06:39:52 UTC"
-      },
-      {
-        "ioc": "54c426085dec3ece1925a0eecc5e6433",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-06 06:39:52 UTC"
-      },
-      {
-        "ioc": "193.161.193.99:56776",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-05 23:55:06 UTC"
-      },
-      {
-        "ioc": "41.234.4.41:1339",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-05 11:34:59 UTC"
-      },
-      {
-        "ioc": "192.3.136.229:4782",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-05 11:34:58 UTC"
       }
     ]
   }

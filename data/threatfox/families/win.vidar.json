@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-09-08T17:22:36.468920+00:00",
-  "recent_window_ioc_count": 304,
+  "generated": "2026-09-09T17:15:07.096066+00:00",
+  "recent_window_ioc_count": 236,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -11,15 +11,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-31",
-      "latest": "2026-09-08"
+      "latest": "2026-09-09"
     },
     "ioc_type_breakdown": {
-      "md5_hash": 114,
-      "sha1_hash": 114,
-      "sha256_hash": 114,
-      "url": 66,
-      "domain": 56,
-      "ip:port": 36
+      "md5_hash": 122,
+      "sha1_hash": 122,
+      "sha256_hash": 122,
+      "url": 67,
+      "domain": 36,
+      "ip:port": 31
     },
     "confidence_distribution": {
       "high": 495,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-31": 62,
+      "2026-08-31": 21,
       "2026-09-01": 138,
       "2026-09-02": 107,
       "2026-09-03": 35,
@@ -35,104 +35,105 @@
       "2026-09-05": 21,
       "2026-09-06": 20,
       "2026-09-07": 32,
-      "2026-09-08": 6
+      "2026-09-08": 7,
+      "2026-09-09": 40
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 36
+        "count": 31
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "https://178.104.112.188",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-08 08:27:47 UTC"
+        "ioc": "178.104.123.110:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:27 UTC"
       },
       {
-        "ioc": "bedbf012561c71bb4a9a65c2984b400a",
+        "ioc": "2.28.118.174:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:27 UTC"
+      },
+      {
+        "ioc": "157.180.91.189:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:27 UTC"
+      },
+      {
+        "ioc": "178.104.112.1:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:27 UTC"
+      },
+      {
+        "ioc": "178.104.112.188:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:27 UTC"
+      },
+      {
+        "ioc": "2.29.17.179:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:27 UTC"
+      },
+      {
+        "ioc": "2.29.23.78:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:26 UTC"
+      },
+      {
+        "ioc": "2.29.22.60:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:26 UTC"
+      },
+      {
+        "ioc": "178.104.118.80:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:26 UTC"
+      },
+      {
+        "ioc": "178.104.123.239:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 16:38:26 UTC"
+      },
+      {
+        "ioc": "https://135.181.145.162",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-09 13:15:58 UTC"
+      },
+      {
+        "ioc": "8a64780289cf2908861ba97b29b0ef0d",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-08 06:34:29 UTC"
+        "first_seen": "2026-09-09 12:35:29 UTC"
       },
       {
-        "ioc": "d2ef8967da190d374da416b080051a19e56f1947",
+        "ioc": "2c3c84f8efb7dc5c62a4508fb8d1e790c6190c06",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-09-08 06:34:28 UTC"
+        "first_seen": "2026-09-09 12:35:29 UTC"
       },
       {
-        "ioc": "0b5baefd7cc0b2f4ed9a537ec813ca59130fe2d88783971687d8bcfa50015ff0",
+        "ioc": "65adad3a57dcf5e80ceed05056f178938a9b0a14323db2e49b9d38091ff18431",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-09-08 06:34:28 UTC"
+        "first_seen": "2026-09-09 12:35:28 UTC"
       },
       {
-        "ioc": "https://rega.v-panel.asia/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-08 05:05:36 UTC"
-      },
-      {
-        "ioc": "rega.v-panel.asia",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-08 05:05:35 UTC"
-      },
-      {
-        "ioc": "https://95.182.87.117",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 17:21:26 UTC"
-      },
-      {
-        "ioc": "https://register.v-panel.asia/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 11:26:46 UTC"
-      },
-      {
-        "ioc": "register.v-panel.asia",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-07 11:26:45 UTC"
-      },
-      {
-        "ioc": "1160591b6337e2be1ea81ccf3897f4fe",
+        "ioc": "25428edf5bd032f05d4e41182452c2f8",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-07 07:35:19 UTC"
-      },
-      {
-        "ioc": "c8a25f150cc0d30456a26bb159458a22c3481821",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:35:19 UTC"
-      },
-      {
-        "ioc": "162172aaf538da54d65cf8bdaf9894b0e7f0f3d2810e2791b81f1257599d338e",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:35:18 UTC"
-      },
-      {
-        "ioc": "8a7d6f695e9ed0aecd02a88973cafa3c",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:34:52 UTC"
-      },
-      {
-        "ioc": "e66268079ec8369257d6a33efafcc9f359ef9f82",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:34:52 UTC"
-      },
-      {
-        "ioc": "af8bc148eccabfa26795abff990f4cdf2dcace007af277c69d672fae76ac0f11",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-07 07:34:52 UTC"
+        "first_seen": "2026-09-09 12:35:28 UTC"
       }
     ]
   }
