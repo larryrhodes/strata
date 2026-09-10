@@ -1,8 +1,8 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-09-09T17:19:06.174826+00:00",
-  "recent_window_ioc_count": 22,
+  "generated": "2026-09-10T17:12:18.213514+00:00",
+  "recent_window_ioc_count": 27,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
   "alt_names": [
@@ -20,13 +20,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-14",
-      "latest": "2026-09-09"
+      "latest": "2026-09-10"
     },
     "ioc_type_breakdown": {
-      "ip:port": 235,
-      "domain": 198,
-      "url": 21,
-      "sha256_hash": 16,
+      "ip:port": 237,
+      "domain": 197,
+      "sha256_hash": 18,
+      "url": 18,
       "sha1_hash": 15,
       "md5_hash": 15
     },
@@ -36,7 +36,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-14": 44,
+      "2026-04-14": 38,
       "2026-04-15": 59,
       "2026-04-16": 1,
       "2026-04-22": 1,
@@ -107,7 +107,8 @@
       "2026-09-05": 5,
       "2026-09-06": 12,
       "2026-09-08": 3,
-      "2026-09-09": 1
+      "2026-09-09": 1,
+      "2026-09-10": 6
     },
     "top_ports": [
       {
@@ -116,7 +117,7 @@
       },
       {
         "port": "8080",
-        "count": 8
+        "count": 9
       },
       {
         "port": "443",
@@ -152,6 +153,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "bc033453ae6a4965aac275ec154517bb55c428149ef4107951246ecf17e48674",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-10 14:29:34 UTC"
+      },
+      {
+        "ioc": "1066003052bf79de8ab4f07bb7ff3dc980a8622b9175ef714a6df5dd01d517b7",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-10 13:42:14 UTC"
+      },
+      {
+        "ioc": "sns.grotominpgroup.pl",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-10 11:00:55 UTC"
+      },
+      {
+        "ioc": "cns.grotominpgroup.pl",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-10 11:00:54 UTC"
+      },
+      {
+        "ioc": "37.114.46.118:8808",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-10 03:05:06 UTC"
+      },
+      {
+        "ioc": "20.218.121.193:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-10 03:05:05 UTC"
+      },
       {
         "ioc": "115.245.115.158:8443",
         "type": "ip:port",
@@ -205,42 +242,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-06 08:05:19 UTC"
-      },
-      {
-        "ioc": "103.106.67.96:1020",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:19 UTC"
-      },
-      {
-        "ioc": "169.58.131.93:4783",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:18 UTC"
-      },
-      {
-        "ioc": "31.57.38.167:4782",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:18 UTC"
-      },
-      {
-        "ioc": "103.89.13.21:4782",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:18 UTC"
-      },
-      {
-        "ioc": "1f5214dad42cbad505f559ab2bc332139d6a5d6b9e080d35ec5576e7141dddd1",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-06 06:39:52 UTC"
-      },
-      {
-        "ioc": "af94a7e03eb3d3def52a88de34085d747cdfc2b6",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-06 06:39:52 UTC"
       }
     ]
   }

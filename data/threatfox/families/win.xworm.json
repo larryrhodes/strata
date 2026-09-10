@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-09-04T17:04:21.783700+00:00",
-  "recent_window_ioc_count": 19,
+  "generated": "2026-09-10T17:12:34.209667+00:00",
+  "recent_window_ioc_count": 27,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-21",
-      "latest": "2026-09-04"
+      "earliest": "2026-03-23",
+      "latest": "2026-09-10"
     },
     "ioc_type_breakdown": {
-      "ip:port": 257,
-      "domain": 181,
-      "sha256_hash": 27,
-      "sha1_hash": 15,
-      "md5_hash": 15,
-      "url": 5
+      "ip:port": 266,
+      "domain": 168,
+      "sha256_hash": 28,
+      "sha1_hash": 16,
+      "md5_hash": 16,
+      "url": 6
     },
     "confidence_distribution": {
       "high": 481,
@@ -29,9 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-21": 5,
-      "2026-03-22": 10,
-      "2026-03-23": 11,
+      "2026-03-23": 1,
       "2026-03-24": 12,
       "2026-03-25": 14,
       "2026-03-26": 8,
@@ -140,28 +138,33 @@
       "2026-08-31": 4,
       "2026-09-01": 2,
       "2026-09-02": 10,
-      "2026-09-04": 2
+      "2026-09-04": 3,
+      "2026-09-06": 1,
+      "2026-09-07": 4,
+      "2026-09-08": 4,
+      "2026-09-09": 3,
+      "2026-09-10": 12
     },
     "top_ports": [
       {
         "port": "7004",
-        "count": 36
+        "count": 40
       },
       {
         "port": "443",
-        "count": 23
-      },
-      {
-        "port": "6000",
-        "count": 14
+        "count": 24
       },
       {
         "port": "7007",
-        "count": 12
+        "count": 13
+      },
+      {
+        "port": "6000",
+        "count": 13
       },
       {
         "port": "7000",
-        "count": 10
+        "count": 11
       },
       {
         "port": "8823",
@@ -186,94 +189,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "74.120.121.223:7004",
+        "ioc": "64.89.160.225:7001",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-04 12:41:35 UTC"
+        "first_seen": "2026-09-10 11:25:43 UTC"
       },
       {
-        "ioc": "techycarterpiller.kozow.com",
+        "ioc": "45.154.98.168:9019",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-10 11:25:43 UTC"
+      },
+      {
+        "ioc": "phanxwodm.duckdns.org",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-09-04 12:20:25 UTC"
+        "first_seen": "2026-09-10 11:15:31 UTC"
       },
       {
-        "ioc": "b75ee9270008a9a46f28f0b41738b138bbb7d89cd964acb3570cffb42fc81a05",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-09-02 09:22:29 UTC"
-      },
-      {
-        "ioc": "2214907e696bad85bde1d90c943ef66e413d7a5c6d7596ced25b74441200439a",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-02 09:14:36 UTC"
-      },
-      {
-        "ioc": "447e3a131e62bd33b1297739a7b959a92358a97f58554469044636a3c4f244e8",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-02 09:14:35 UTC"
-      },
-      {
-        "ioc": "6d4012e0dd3b56a3e52857734fa0d582cdf3c56f0e5decc8005c882d1d1c6ceb",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-02 09:14:34 UTC"
-      },
-      {
-        "ioc": "c0db6ddd6222d02ad7490399d33c61ded0076f0037409dc8498924458646d78a",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-02 09:14:34 UTC"
-      },
-      {
-        "ioc": "f139b4ca15feffb7a6633ec1a431c5c604b397576b56b5c863ae8fe4fa14db4f",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-02 09:14:33 UTC"
-      },
-      {
-        "ioc": "206.238.115.64:4444",
+        "ioc": "103.83.86.22:7500",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-02 05:49:42 UTC"
+        "first_seen": "2026-09-10 11:10:56 UTC"
       },
       {
-        "ioc": "40390bff40cfeb3b8149a1d87cdb7659962c47b3",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 01:17:49 UTC"
-      },
-      {
-        "ioc": "3ef284d34290f2f784e12e005c1698b5",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 01:17:49 UTC"
-      },
-      {
-        "ioc": "eac9fafb8e19bb12618199b48c79fb94cab8e447b09973b1443464a3f13ea5ed",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-02 01:17:48 UTC"
-      },
-      {
-        "ioc": "103.67.163.188:6161",
+        "ioc": "194.116.236.9:7000",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-01 07:35:26 UTC"
+        "first_seen": "2026-09-10 11:10:56 UTC"
       },
       {
-        "ioc": "151.241.154.50:7004",
+        "ioc": "203.202.232.127:1515",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-01 06:25:28 UTC"
+        "first_seen": "2026-09-10 11:01:13 UTC"
       },
       {
-        "ioc": "102.220.160.87:7009",
+        "ioc": "103.83.86.96:4001",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-08-31 14:15:34 UTC"
+        "first_seen": "2026-09-10 10:55:30 UTC"
+      },
+      {
+        "ioc": "91.239.6.97:4449",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-10 10:45:30 UTC"
+      },
+      {
+        "ioc": "windowsupgrade.3utilities.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-10 10:40:23 UTC"
+      },
+      {
+        "ioc": "107.149.8.250:54321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-10 06:18:47 UTC"
+      },
+      {
+        "ioc": "185.29.10.23:1012",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-10 06:10:29 UTC"
+      },
+      {
+        "ioc": "http://209.145.51.44/keepon.exe",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 05:32:10 UTC"
+      },
+      {
+        "ioc": "95.211.120.98:7004",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 18:20:39 UTC"
+      },
+      {
+        "ioc": "104.168.7.212:7004",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-09 18:15:14 UTC"
+      },
+      {
+        "ioc": "62.60.226.185:6001",
+        "type": "ip:port",
+        "confidence": 77,
+        "first_seen": "2026-09-09 08:47:36 UTC"
       }
     ]
   }

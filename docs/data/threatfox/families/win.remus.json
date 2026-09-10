@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-09-09T17:17:18.332906+00:00",
-  "recent_window_ioc_count": 49,
+  "generated": "2026-09-10T17:10:13.290969+00:00",
+  "recent_window_ioc_count": 52,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-16",
-      "latest": "2026-09-09"
+      "latest": "2026-09-10"
     },
     "ioc_type_breakdown": {
       "url": 405,
@@ -24,7 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-16": 22,
+      "2026-08-16": 15,
       "2026-08-17": 16,
       "2026-08-18": 18,
       "2026-08-19": 47,
@@ -48,7 +48,8 @@
       "2026-09-06": 5,
       "2026-09-07": 10,
       "2026-09-08": 18,
-      "2026-09-09": 2
+      "2026-09-09": 2,
+      "2026-09-10": 7
     },
     "top_ports": [
       {
@@ -93,6 +94,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://zream.shop:5728/products",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 11:10:47 UTC"
+      },
+      {
+        "ioc": "http://neortal.click:8321/settings",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 06:15:34 UTC"
+      },
+      {
+        "ioc": "http://bestals.shop:8592/settings",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 02:45:27 UTC"
+      },
+      {
+        "ioc": "http://uniqion.click:6929/events",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 02:45:26 UTC"
+      },
+      {
+        "ioc": "http://trencts.shop:8592/payments",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 02:15:34 UTC"
+      },
+      {
+        "ioc": "http://smaring.shop:9895/comments",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 02:15:33 UTC"
+      },
+      {
+        "ioc": "http://gofkaxz.click:8137/tokens",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-10 02:15:32 UTC"
+      },
       {
         "ioc": "http://shozter.shop:9895/imports",
         "type": "url",
@@ -140,48 +183,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-08 16:25:27 UTC"
-      },
-      {
-        "ioc": "http://quicbud.shop:7647/categories",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-08 16:20:26 UTC"
-      },
-      {
-        "ioc": "http://trencts.shop:8592/messages",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-08 16:20:25 UTC"
-      },
-      {
-        "ioc": "http://doresxa.click:6271/videos",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-08 16:20:24 UTC"
-      },
-      {
-        "ioc": "http://quicbud.shop:7647/invoices",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-08 15:45:29 UTC"
-      },
-      {
-        "ioc": "http://trencts.shop:8592/projects",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-08 15:45:28 UTC"
-      },
-      {
-        "ioc": "http://futlink.click:4326/accounts",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-08 15:45:27 UTC"
-      },
-      {
-        "ioc": "2.25.206.107:4326",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-08 15:45:06 UTC"
       }
     ]
   }
