@@ -1,8 +1,8 @@
 {
   "malware_id": "js.kongtuke",
   "family": "KongTuke",
-  "generated": "2026-09-10T17:10:40.587053+00:00",
-  "recent_window_ioc_count": 52,
+  "generated": "2026-09-11T17:09:36.832111+00:00",
+  "recent_window_ioc_count": 50,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
   "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
   "alt_names": [
@@ -17,16 +17,16 @@
       "latest": "2026-09-10"
     },
     "ioc_type_breakdown": {
-      "domain": 324,
-      "url": 152,
+      "domain": 325,
+      "url": 151,
       "sha256_hash": 12,
       "ip:port": 8,
       "md5_hash": 2,
       "sha1_hash": 2
     },
     "confidence_distribution": {
-      "high": 371,
-      "medium": 129,
+      "high": 372,
+      "medium": 128,
       "low": 0
     },
     "activity_timeline": {
@@ -61,10 +61,9 @@
       "2026-07-11": 5,
       "2026-07-14": 9,
       "2026-07-21": 76,
-      "2026-07-26": 50,
+      "2026-07-26": 49,
       "2026-08-15": 6,
-      "2026-08-19": 1,
-      "2026-08-20": 12,
+      "2026-08-20": 2,
       "2026-08-23": 3,
       "2026-08-24": 5,
       "2026-08-26": 3,
@@ -76,7 +75,7 @@
       "2026-09-07": 8,
       "2026-09-08": 3,
       "2026-09-09": 3,
-      "2026-09-10": 3
+      "2026-09-10": 15
     },
     "top_ports": [
       {
@@ -89,6 +88,78 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "kusikowski.sbs",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:56:02 UTC"
+      },
+      {
+        "ioc": "https://kusikowski.sbs/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:56:01 UTC"
+      },
+      {
+        "ioc": "https://kusikowski.sbs/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:56:01 UTC"
+      },
+      {
+        "ioc": "https://kusikowski.sbs/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:56:00 UTC"
+      },
+      {
+        "ioc": "https://syshex6495.com/b",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:59 UTC"
+      },
+      {
+        "ioc": "syshex6495.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:58 UTC"
+      },
+      {
+        "ioc": "hodkiewhcz.sbs",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:57 UTC"
+      },
+      {
+        "ioc": "https://hodkiewhcz.sbs/api/v1/verify",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:56 UTC"
+      },
+      {
+        "ioc": "https://hodkiewhcz.sbs/api/v1/session",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:56 UTC"
+      },
+      {
+        "ioc": "https://logincrypt8338.com/b",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:55 UTC"
+      },
+      {
+        "ioc": "https://hodkiewhcz.sbs/api/v1/status",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:55 UTC"
+      },
+      {
+        "ioc": "logincrypt8338.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-10 17:55:54 UTC"
+      },
       {
         "ioc": "okuneva.sbs",
         "type": "domain",
@@ -106,78 +177,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-10 05:13:55 UTC"
-      },
-      {
-        "ioc": "schulist.sbs",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-09 16:43:03 UTC"
-      },
-      {
-        "ioc": "https://schulist.sbs/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-09 16:43:02 UTC"
-      },
-      {
-        "ioc": "https://schulist.sbs/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-09 16:43:01 UTC"
-      },
-      {
-        "ioc": "https://watsiia.top/api/v1/session",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-08 12:33:32 UTC"
-      },
-      {
-        "ioc": "watsiia.top",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-08 12:33:32 UTC"
-      },
-      {
-        "ioc": "https://watsiia.top/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-08 12:33:31 UTC"
-      },
-      {
-        "ioc": "https://opsbyte3368.com/ue",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 18:15:36 UTC"
-      },
-      {
-        "ioc": "opsbyte3368.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-07 18:15:36 UTC"
-      },
-      {
-        "ioc": "https://opsbyte3368.com/b",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 18:15:36 UTC"
-      },
-      {
-        "ioc": "https://schamserger.top/b",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 17:21:25 UTC"
-      },
-      {
-        "ioc": "https://schamserger.top/api/v1/status",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 17:21:25 UTC"
-      },
-      {
-        "ioc": "https://schamserger.top/api/v1/verify",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-07 15:58:51 UTC"
       }
     ]
   }

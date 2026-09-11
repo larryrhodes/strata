@@ -1,8 +1,8 @@
 {
   "malware_id": "win.coinminer",
   "family": "Coinminer",
-  "generated": "2026-09-10T17:11:34.886090+00:00",
-  "recent_window_ioc_count": 32,
+  "generated": "2026-09-11T17:10:45.714550+00:00",
+  "recent_window_ioc_count": 36,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
   "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
   "alt_names": [],
@@ -11,11 +11,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-14",
-      "latest": "2026-09-10"
+      "latest": "2026-09-11"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 171,
-      "md5_hash": 164,
+      "sha256_hash": 172,
+      "md5_hash": 163,
       "sha1_hash": 163,
       "ip:port": 1,
       "domain": 1
@@ -26,7 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-14": 10,
+      "2026-06-14": 3,
       "2026-06-16": 9,
       "2026-06-20": 9,
       "2026-06-21": 15,
@@ -70,7 +70,8 @@
       "2026-09-05": 9,
       "2026-09-06": 6,
       "2026-09-08": 6,
-      "2026-09-10": 8
+      "2026-09-10": 8,
+      "2026-09-11": 7
     },
     "top_ports": [
       {
@@ -79,6 +80,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "99eb27ff6b08c4ee8b66c01470c3aa08",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-11 06:31:21 UTC"
+      },
+      {
+        "ioc": "89bb7970b0d7bf8e57657c271967230e0773a47d",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-11 06:31:21 UTC"
+      },
+      {
+        "ioc": "e5a665da69d6ee08e46566dd1048c25554bdf620f63a152758a11cd1d9e6d634",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-11 06:31:20 UTC"
+      },
+      {
+        "ioc": "d268fef891afd96e33b757d2404c1a33",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-11 06:30:57 UTC"
+      },
+      {
+        "ioc": "f4d3ca96738289ec109cf0713cb65e4d2fee8400",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-11 06:30:57 UTC"
+      },
+      {
+        "ioc": "28c45e21bac8064a9b14c2c8e6d9ab52674d858c8dc8fb684f9ec4d36eba0e47",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-11 06:30:56 UTC"
+      },
+      {
+        "ioc": "1a937fa01d4ff5ce37ce61bd6b6abdca0c9bd6f66752e640b77bef673f20bd27",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-11 05:26:06 UTC"
+      },
       {
         "ioc": "e865ccdc55aad38dbbabad97e930951b379d8a51e31ed4163999876343f218b4",
         "type": "sha256_hash",
@@ -126,48 +169,6 @@
         "type": "sha256_hash",
         "confidence": 100,
         "first_seen": "2026-09-10 13:41:55 UTC"
-      },
-      {
-        "ioc": "b8181d43e0231d5a12038e16ece15329",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:22 UTC"
-      },
-      {
-        "ioc": "984a0e0826f6a64db6f453643f3f96cbc8f02baa",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:22 UTC"
-      },
-      {
-        "ioc": "ad4e1af8ca493cafc4e4d6b764194af49b9fe8d02c233ce529929627bfac1afd",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:21 UTC"
-      },
-      {
-        "ioc": "3e49faab0a462731cda05061dffa697e",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:15 UTC"
-      },
-      {
-        "ioc": "cc4520c0149c1487f1fbeb18aecbd46da561ee9e",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:14 UTC"
-      },
-      {
-        "ioc": "c10d0fc195135663bdc10bdf738dfaaa2fc03e56c737dc6806b126ce6639870c",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:13 UTC"
-      },
-      {
-        "ioc": "283523c3039c3b3d487d67228ff68f4e",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-06 06:39:53 UTC"
       }
     ]
   }

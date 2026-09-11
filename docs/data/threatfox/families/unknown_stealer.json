@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-09-10T17:07:44.156031+00:00",
-  "recent_window_ioc_count": 192,
+  "generated": "2026-09-11T17:07:55.153132+00:00",
+  "recent_window_ioc_count": 198,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -10,23 +10,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-01",
-      "latest": "2026-09-10"
+      "earliest": "2026-06-02",
+      "latest": "2026-09-11"
     },
     "ioc_type_breakdown": {
-      "domain": 327,
-      "url": 124,
+      "domain": 323,
+      "url": 123,
       "ip:port": 30,
-      "sha256_hash": 19
+      "sha256_hash": 24
     },
     "confidence_distribution": {
-      "high": 488,
-      "medium": 11,
+      "high": 491,
+      "medium": 8,
       "low": 1
     },
     "activity_timeline": {
-      "2026-06-01": 2,
-      "2026-06-02": 14,
+      "2026-06-02": 10,
       "2026-06-03": 4,
       "2026-06-04": 7,
       "2026-06-06": 2,
@@ -84,16 +83,17 @@
       "2026-09-06": 10,
       "2026-09-07": 55,
       "2026-09-09": 101,
-      "2026-09-10": 13
+      "2026-09-10": 13,
+      "2026-09-11": 6
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 11
+        "count": 10
       },
       {
         "port": "443",
-        "count": 5
+        "count": 6
       },
       {
         "port": "9000",
@@ -129,6 +129,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "213.108.22.160:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-11 07:20:31 UTC"
+      },
+      {
+        "ioc": "8e11c717fa2e8c37b5f1ed695d8c8e1898d4e1f40a976e79ece0a8f4260fa9b4",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-11 05:26:30 UTC"
+      },
+      {
+        "ioc": "edb7f446f91211fcb38d3d38b69dc3e503a554a7b1399700af6aa4635266af15",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-11 05:26:22 UTC"
+      },
+      {
+        "ioc": "ab81e32fd9260645a5a4e6534a69d4a8c8db5e5c873a2a8f5aae600902bd4a8c",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-11 05:26:21 UTC"
+      },
+      {
+        "ioc": "ffb3eacf4164d66a8d5e591c043f3f86d599e8d39384417d6fdf78796ae18a84",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-11 05:26:10 UTC"
+      },
+      {
+        "ioc": "440cb05dbc1425d4e40e70c260ac1aed00152c2d348ecb7c87aa7a8198cd9eae",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-11 05:26:01 UTC"
+      },
       {
         "ioc": "d9f8bfbb716f94e359f88cbe21d23f7d48cd7a24cadf71207e5a2eafbb91cf4b",
         "type": "sha256_hash",
@@ -182,42 +218,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-09-10 05:14:28 UTC"
-      },
-      {
-        "ioc": "45.138.16.54:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-10 05:14:27 UTC"
-      },
-      {
-        "ioc": "45.138.16.54:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-10 05:14:26 UTC"
-      },
-      {
-        "ioc": "45.138.16.54:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-10 05:14:25 UTC"
-      },
-      {
-        "ioc": "mi6.operationanonrecoil.ru",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-10 05:13:48 UTC"
-      },
-      {
-        "ioc": "nextside.cfd",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-09 23:32:19 UTC"
-      },
-      {
-        "ioc": "net-bit.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-09 23:32:19 UTC"
       }
     ]
   }
