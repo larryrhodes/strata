@@ -59,6 +59,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "apk.clientor": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Clientor",
+    "description": null,
+    "enriched_at": "2026-09-12T16:26:47.530507+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "apk.clipper": {
     "alt_names": [],
     "associated_groups": [],
@@ -384,6 +393,15 @@
     "common_name": "P2Pinfect",
     "description": "P2Pinfect is a fast-growing multi platform botnet, the purpose of which is still unknown. Written in Rust, it is compatible with Windows and Linux, including a MIPS variant for Linux based routers and IoT devices. It is capable of brute forcing SSH logins and exploiting Redis servers in order to propagate itself both to random IPs on the internet and to hosts it can find references to in files present on the infected system.",
     "enriched_at": "2026-08-11T14:36:29.084682+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "elf.payload": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Payload ",
+    "description": "According to 0x3oBAD, this is a 64-bit Linux ELF ransomware binary targeting VMware ESXi hypervisor environments. The sample combines a robust cryptographic scheme Curve25519 ECDHand ChaCha20 with ESXi-specific VM enumeration via the vmInventory.xml inventory file, graceful shutdown of running VMs before encryption, and a multi-threaded file encryption pipeline scaled to available CPU cores. The ransom note is delivered inside ESXi\u2019s own web UI welcome.txt, replacing the host management interface greeting.",
+    "enriched_at": "2026-09-12T16:26:43.268883+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -804,6 +822,17 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "osx.simpletea": {
+    "alt_names": [],
+    "associated_groups": [
+      "Lazarus Group"
+    ],
+    "common_name": "SimpleTea",
+    "description": "SimpleTea is a RAT for macOS that is based on the same object-oriented project as SimpleTea for Linux (SimplexTea).\r\n\r\nIt also shares similarities with POOLRAT (also known as SIMPLESEA), like the supported commands or a single-byte XOR encryption of its configuration. However, the indices of commands are different.\r\n\r\nSimpleTea for macOS was uploaded to VirusTotal from Hong Kong and China in September 2023.",
+    "enriched_at": "2026-09-12T16:26:45.054022+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "osx.unidentified_001": {
     "alt_names": [],
     "associated_groups": [
@@ -910,6 +939,15 @@
     "common_name": "NetWorm",
     "description": null,
     "enriched_at": "2026-08-08T14:06:40.803320+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "py.pyration": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "PY#RATION",
+    "description": "According to Securonix, this malware exhibits remote access trojan (RAT) behavior, allowing for control of and persistence on the affected host. As with other RATs, PY#RATION possesses a whole host of features and capabilities, including data exfiltration and keylogging. What makes this malware particularly unique is its utilization of websockets for both command and control (C2) communication and exfiltration as well as how it evades detection from antivirus and network security measures.",
+    "enriched_at": "2026-09-12T16:26:41.939441+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2552,6 +2590,17 @@
     "common_name": "Rubeus",
     "description": "Rubeus is a C# toolset for raw Kerberos interaction and abuses.",
     "enriched_at": "2026-07-25T14:47:13.571958+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.runningrat": {
+    "alt_names": [
+      "running_rat"
+    ],
+    "associated_groups": [],
+    "common_name": "Running RAT",
+    "description": "NJCCIC characterizes RunningRAT as a remote access trojan (RAT) that operates using two DLL files. When the trojan is loaded onto a system, it executes the first DLL. This is used to disable anti-malware solutions, unpack and execute the main RAT DLL, and gain persistence. The trojan installs a Windows batch file dx.bat that attempts to kill the daumcleaner.exe task, a Korean security program. The file then attempts to remove itself. Once the second DLL is loaded into memory, the first DLL overwrites the IP address for the control server to change the address the trojan communicates with. The second DLL gathers information about the victim's system, including its operating system and driver and processor information. The RAT can log user keystrokes, copy the clipboard, delete files, compress files, clear event logs, shut down the machine, and more. The second DLL also uses several anti-bugging techniques.",
+    "enriched_at": "2026-09-12T16:26:46.462033+00:00",
     "source": "malpedia",
     "status": "ok"
   },

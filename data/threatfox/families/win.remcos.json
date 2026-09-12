@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-09-11T17:08:18.832933+00:00",
-  "recent_window_ioc_count": 97,
+  "generated": "2026-09-12T16:29:23.754932+00:00",
+  "recent_window_ioc_count": 91,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -19,7 +19,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-07-09",
-      "latest": "2026-09-11"
+      "latest": "2026-09-12"
     },
     "ioc_type_breakdown": {
       "ip:port": 352,
@@ -32,7 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-09": 6,
+      "2026-07-09": 5,
       "2026-07-10": 17,
       "2026-07-11": 9,
       "2026-07-12": 6,
@@ -87,7 +87,8 @@
       "2026-09-08": 4,
       "2026-09-09": 17,
       "2026-09-10": 17,
-      "2026-09-11": 11
+      "2026-09-11": 11,
+      "2026-09-12": 1
     },
     "top_ports": [
       {
@@ -132,6 +133,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "192.3.198.23:5130",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 11:40:02 UTC"
+      },
       {
         "ioc": "169.58.169.10:2404",
         "type": "ip:port",
@@ -215,12 +222,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-09-10 17:55:40 UTC"
-      },
-      {
-        "ioc": "8b7995dd93cc355f0a56eca0c4e7176d41f36a2573a62fa4bf62322086504379",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-10 14:29:35 UTC"
       }
     ]
   }

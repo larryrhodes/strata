@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-09-11T17:08:01.590898+00:00",
-  "recent_window_ioc_count": 138,
+  "generated": "2026-09-12T16:28:58.746140+00:00",
+  "recent_window_ioc_count": 151,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -38,11 +38,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2025-06-10",
-      "latest": "2026-09-11"
+      "latest": "2026-09-12"
     },
     "ioc_type_breakdown": {
-      "ip:port": 444,
-      "domain": 56
+      "ip:port": 443,
+      "domain": 57
     },
     "confidence_distribution": {
       "high": 477,
@@ -233,7 +233,8 @@
       "2026-09-08": 3,
       "2026-09-09": 2,
       "2026-09-10": 6,
-      "2026-09-11": 13
+      "2026-09-11": 6,
+      "2026-09-12": 7
     },
     "top_ports": [
       {
@@ -242,7 +243,7 @@
       },
       {
         "port": "80",
-        "count": 28
+        "count": 27
       },
       {
         "port": "53",
@@ -250,15 +251,11 @@
       },
       {
         "port": "8443",
-        "count": 13
+        "count": 14
       },
       {
         "port": "9999",
         "count": 7
-      },
-      {
-        "port": "8080",
-        "count": 6
       },
       {
         "port": "8888",
@@ -275,26 +272,54 @@
       {
         "port": "8696",
         "count": 5
+      },
+      {
+        "port": "18443",
+        "count": 4
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "59.110.153.133:443",
+        "ioc": "49.51.230.17:53001",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 17:05:07 UTC"
+        "confidence": 75,
+        "first_seen": "2026-09-12 13:48:33 UTC"
       },
       {
-        "ioc": "59.110.153.133:8080",
+        "ioc": "38.76.183.197:8806",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 17:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-09-12 13:48:26 UTC"
       },
       {
-        "ioc": "193.233.82.36:22",
+        "ioc": "165.154.68.30:4433",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 16:05:05 UTC"
+        "confidence": 75,
+        "first_seen": "2026-09-12 13:48:18 UTC"
+      },
+      {
+        "ioc": "23.227.196.108:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-12 03:47:34 UTC"
+      },
+      {
+        "ioc": "162.35.122.126:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-12 03:47:27 UTC"
+      },
+      {
+        "ioc": "139.199.160.80:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-12 03:47:24 UTC"
+      },
+      {
+        "ioc": "networkness.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-12 03:47:11 UTC"
       },
       {
         "ioc": "100.87.53.0:7443",
@@ -303,34 +328,10 @@
         "first_seen": "2026-09-11 15:48:12 UTC"
       },
       {
-        "ioc": "193.233.82.36:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 15:05:08 UTC"
-      },
-      {
-        "ioc": "193.233.82.36:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 15:05:07 UTC"
-      },
-      {
-        "ioc": "193.233.82.36:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 15:05:05 UTC"
-      },
-      {
         "ioc": "193.112.95.1:443",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-11 13:51:07 UTC"
-      },
-      {
-        "ioc": "101.43.53.103:9405",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 13:05:06 UTC"
       },
       {
         "ioc": "1309673150-86ymvxmhrm.ap-shanghai.tencentscf.com",

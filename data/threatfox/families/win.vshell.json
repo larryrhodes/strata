@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vshell",
   "family": "VShell",
-  "generated": "2026-09-11T17:06:40.516384+00:00",
-  "recent_window_ioc_count": 568,
+  "generated": "2026-09-12T16:27:35.778959+00:00",
+  "recent_window_ioc_count": 576,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
   "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-05",
-      "latest": "2026-09-11"
+      "earliest": "2026-09-07",
+      "latest": "2026-09-12"
     },
     "ioc_type_breakdown": {
-      "ip:port": 436,
-      "sha256_hash": 20,
-      "sha1_hash": 19,
-      "md5_hash": 19,
+      "ip:port": 431,
+      "sha256_hash": 23,
+      "sha1_hash": 20,
+      "md5_hash": 20,
       "url": 6
     },
     "confidence_distribution": {
@@ -26,146 +26,145 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-05": 19,
-      "2026-09-06": 40,
-      "2026-09-07": 105,
+      "2026-09-07": 76,
       "2026-09-08": 83,
       "2026-09-09": 72,
       "2026-09-10": 93,
-      "2026-09-11": 88
+      "2026-09-11": 111,
+      "2026-09-12": 65
     },
     "top_ports": [
       {
-        "port": "8094",
-        "count": 232
+        "port": "8074",
+        "count": 208
       },
       {
-        "port": "8074",
-        "count": 131
+        "port": "8094",
+        "count": 193
       },
       {
         "port": "8084",
-        "count": 30
-      },
-      {
-        "port": "4141",
-        "count": 5
+        "count": 12
       },
       {
         "port": "80",
-        "count": 4
-      },
-      {
-        "port": "8088",
-        "count": 3
-      },
-      {
-        "port": "8089",
-        "count": 3
-      },
-      {
-        "port": "8080",
-        "count": 3
-      },
-      {
-        "port": "18084",
         "count": 2
       },
       {
         "port": "44321",
         "count": 2
+      },
+      {
+        "port": "9300",
+        "count": 1
+      },
+      {
+        "port": "60003",
+        "count": 1
+      },
+      {
+        "port": "20001",
+        "count": 1
+      },
+      {
+        "port": "65531",
+        "count": 1
+      },
+      {
+        "port": "8443",
+        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "47.238.131.36:65531",
+        "ioc": "154.91.63.100:8074",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-11 17:05:05 UTC"
+        "first_seen": "2026-09-12 16:05:08 UTC"
       },
       {
-        "ioc": "101.99.91.180:80",
+        "ioc": "154.91.62.99:8074",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-11 17:05:05 UTC"
+        "first_seen": "2026-09-12 16:05:07 UTC"
       },
       {
-        "ioc": "102.129.165.178:8443",
+        "ioc": "154.91.62.98:8074",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-11 14:05:08 UTC"
+        "first_seen": "2026-09-12 16:05:06 UTC"
       },
       {
-        "ioc": "23.146.4.179:8088",
+        "ioc": "154.91.62.121:8074",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-11 11:05:05 UTC"
+        "first_seen": "2026-09-12 16:05:06 UTC"
       },
       {
-        "ioc": "173.249.206.44:8084",
+        "ioc": "154.91.62.120:8074",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-11 10:05:05 UTC"
+        "first_seen": "2026-09-12 16:05:05 UTC"
       },
       {
-        "ioc": "121.41.29.228:8004",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 09:05:08 UTC"
-      },
-      {
-        "ioc": "1.14.120.4:8084",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 07:05:08 UTC"
-      },
-      {
-        "ioc": "154.91.63.114:8074",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 07:05:06 UTC"
-      },
-      {
-        "ioc": "154.91.63.112:8074",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-11 07:05:05 UTC"
-      },
-      {
-        "ioc": "aa75d6c809b96790c6337880c7792340383519050d5dd1384efcff89aca3477e",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:18 UTC"
-      },
-      {
-        "ioc": "e9f19ce41262150926381604f0f1a296eb74724c",
+        "ioc": "d98ab13332f6f089882f5dfd8f95cbd623721b8f",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-09-11 06:31:18 UTC"
+        "first_seen": "2026-09-12 15:32:10 UTC"
       },
       {
-        "ioc": "4aad73caa05337c716f32a9455d3e58c",
+        "ioc": "bb8bb6120224bbe4b6b34c297db633be",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-11 06:31:18 UTC"
+        "first_seen": "2026-09-12 15:32:10 UTC"
       },
       {
-        "ioc": "6ae3d6fb2cf1eba4b8889ae3da6e2a79786c7e3073e40aeae1962dd416f01b7d",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:17 UTC"
+        "ioc": "154.91.62.119:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 15:05:09 UTC"
       },
       {
-        "ioc": "76e3115fd46ab158cd1b5005ee5a44a54823b370",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:17 UTC"
+        "ioc": "154.91.62.116:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 15:05:08 UTC"
       },
       {
-        "ioc": "24d322d5cec845a830bfbadc3b172ee2",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:17 UTC"
+        "ioc": "154.91.62.115:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 15:05:08 UTC"
+      },
+      {
+        "ioc": "154.91.62.108:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 15:05:07 UTC"
+      },
+      {
+        "ioc": "154.91.61.100:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 15:05:06 UTC"
+      },
+      {
+        "ioc": "154.91.62.107:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 14:05:07 UTC"
+      },
+      {
+        "ioc": "154.91.62.101:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 14:05:07 UTC"
+      },
+      {
+        "ioc": "154.91.61.122:8074",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-12 14:05:05 UTC"
       }
     ]
   }
