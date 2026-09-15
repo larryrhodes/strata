@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-09-14T18:53:35.319911+00:00",
-  "recent_window_ioc_count": 57,
+  "generated": "2026-09-15T17:48:58.567334+00:00",
+  "recent_window_ioc_count": 55,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -13,11 +13,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-03-27",
-      "latest": "2026-09-14"
+      "latest": "2026-09-15"
     },
     "ioc_type_breakdown": {
-      "ip:port": 259,
-      "domain": 157,
+      "ip:port": 260,
+      "domain": 156,
       "sha256_hash": 34,
       "md5_hash": 22,
       "sha1_hash": 22,
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-27": 5,
+      "2026-03-27": 4,
       "2026-03-28": 7,
       "2026-03-29": 13,
       "2026-03-30": 6,
@@ -142,7 +142,8 @@
       "2026-09-10": 13,
       "2026-09-11": 9,
       "2026-09-13": 6,
-      "2026-09-14": 22
+      "2026-09-14": 22,
+      "2026-09-15": 1
     },
     "top_ports": [
       {
@@ -155,7 +156,7 @@
       },
       {
         "port": "7007",
-        "count": 13
+        "count": 14
       },
       {
         "port": "7000",
@@ -187,6 +188,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "46.151.182.34:7007",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-15 13:06:10 UTC"
+      },
       {
         "ioc": "203.202.232.16:2477",
         "type": "ip:port",
@@ -267,12 +274,6 @@
       },
       {
         "ioc": "za7fmrh-63387.portmap.host",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-14 11:55:51 UTC"
-      },
-      {
-        "ioc": "tr308gf-36294.portmap.host",
         "type": "domain",
         "confidence": 50,
         "first_seen": "2026-09-14 11:55:51 UTC"
