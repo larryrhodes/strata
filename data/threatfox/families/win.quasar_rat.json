@@ -1,8 +1,8 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-09-10T17:12:18.213514+00:00",
-  "recent_window_ioc_count": 27,
+  "generated": "2026-09-16T17:47:11.762163+00:00",
+  "recent_window_ioc_count": 53,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
   "alt_names": [
@@ -19,16 +19,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-14",
-      "latest": "2026-09-10"
+      "earliest": "2026-04-15",
+      "latest": "2026-09-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 237,
-      "domain": 197,
-      "sha256_hash": 18,
-      "url": 18,
-      "sha1_hash": 15,
-      "md5_hash": 15
+      "ip:port": 239,
+      "domain": 210,
+      "sha256_hash": 19,
+      "sha1_hash": 16,
+      "md5_hash": 16
     },
     "confidence_distribution": {
       "high": 443,
@@ -36,8 +35,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-14": 38,
-      "2026-04-15": 59,
+      "2026-04-15": 32,
       "2026-04-16": 1,
       "2026-04-22": 1,
       "2026-04-24": 8,
@@ -92,10 +90,10 @@
       "2026-08-18": 1,
       "2026-08-19": 71,
       "2026-08-20": 22,
-      "2026-08-21": 14,
+      "2026-08-21": 13,
       "2026-08-22": 1,
-      "2026-08-23": 3,
-      "2026-08-24": 6,
+      "2026-08-23": 2,
+      "2026-08-24": 3,
       "2026-08-25": 3,
       "2026-08-26": 9,
       "2026-08-27": 2,
@@ -108,27 +106,33 @@
       "2026-09-06": 12,
       "2026-09-08": 3,
       "2026-09-09": 1,
-      "2026-09-10": 6
+      "2026-09-10": 6,
+      "2026-09-11": 3,
+      "2026-09-12": 4,
+      "2026-09-13": 2,
+      "2026-09-14": 22,
+      "2026-09-15": 16,
+      "2026-09-16": 23
     },
     "top_ports": [
       {
         "port": "4782",
-        "count": 82
+        "count": 80
       },
       {
         "port": "8080",
-        "count": 9
+        "count": 10
       },
       {
         "port": "443",
-        "count": 8
-      },
-      {
-        "port": "4783",
-        "count": 5
+        "count": 9
       },
       {
         "port": "1604",
+        "count": 7
+      },
+      {
+        "port": "4783",
         "count": 5
       },
       {
@@ -140,108 +144,108 @@
         "count": 4
       },
       {
-        "port": "8888",
-        "count": 3
-      },
-      {
-        "port": "4785",
-        "count": 3
-      },
-      {
         "port": "17788",
         "count": 3
+      },
+      {
+        "port": "33223",
+        "count": 3
+      },
+      {
+        "port": "7000",
+        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "bc033453ae6a4965aac275ec154517bb55c428149ef4107951246ecf17e48674",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-10 14:29:34 UTC"
-      },
-      {
-        "ioc": "1066003052bf79de8ab4f07bb7ff3dc980a8622b9175ef714a6df5dd01d517b7",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-10 13:42:14 UTC"
-      },
-      {
-        "ioc": "sns.grotominpgroup.pl",
+        "ioc": "www.x88mi.com",
         "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-10 11:00:55 UTC"
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:50 UTC"
       },
       {
-        "ioc": "cns.grotominpgroup.pl",
+        "ioc": "kuy88.xyz",
         "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-10 11:00:54 UTC"
-      },
-      {
-        "ioc": "37.114.46.118:8808",
-        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-10 03:05:06 UTC"
+        "first_seen": "2026-09-16 17:46:50 UTC"
       },
       {
-        "ioc": "20.218.121.193:8080",
-        "type": "ip:port",
+        "ioc": "ao88mi.com",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-09-10 03:05:05 UTC"
+        "first_seen": "2026-09-16 17:46:50 UTC"
       },
       {
-        "ioc": "115.245.115.158:8443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-09 07:14:02 UTC"
-      },
-      {
-        "ioc": "1f37d2345e765100b8dc628bb6ce098472891fe0",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:32 UTC"
-      },
-      {
-        "ioc": "b1ceadb93463f22943f9677aa330f15a",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:32 UTC"
-      },
-      {
-        "ioc": "1b68d68b9fd200183c69084e91fe53bd5dca5c501bce1bbf1894034bc69fafe6",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-08 06:34:31 UTC"
-      },
-      {
-        "ioc": "177.2.16.64:14782",
-        "type": "ip:port",
+        "ioc": "ga888vnd.com",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-09-06 11:05:07 UTC"
+        "first_seen": "2026-09-16 17:46:49 UTC"
       },
       {
-        "ioc": "177.2.16.151:14782",
-        "type": "ip:port",
+        "ioc": "mb66.uk.net",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-09-06 11:05:07 UTC"
+        "first_seen": "2026-09-16 17:46:48 UTC"
       },
       {
-        "ioc": "45.225.135.87:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:20 UTC"
+        "ioc": "ccz.us.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:47 UTC"
       },
       {
-        "ioc": "38.54.94.117:4783",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:20 UTC"
+        "ioc": "mb66-okvip.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:46 UTC"
       },
       {
-        "ioc": "177.9.99.79:1005",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-06 08:05:19 UTC"
+        "ioc": "glossysquid.pro",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:45 UTC"
+      },
+      {
+        "ioc": "mb66s.club",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:44 UTC"
+      },
+      {
+        "ioc": "f168s.best",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:44 UTC"
+      },
+      {
+        "ioc": "mb66online.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:43 UTC"
+      },
+      {
+        "ioc": "f8bet-k2.buzz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:42 UTC"
+      },
+      {
+        "ioc": "ok99.io",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:41 UTC"
+      },
+      {
+        "ioc": "ok9.rip",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:40 UTC"
+      },
+      {
+        "ioc": "mb66.property",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-16 17:46:39 UTC"
       }
     ]
   }

@@ -1,26 +1,26 @@
 {
   "malware_id": "osx.macsync",
   "family": "MacSync",
-  "generated": "2026-09-15T17:48:42.681928+00:00",
+  "generated": "2026-09-16T17:46:20.209179+00:00",
   "recent_window_ioc_count": 56,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.macsync",
   "description": "According to Zscaler, MacSync (also tracked as MacSync Stealer) is a macOS information stealer likely developed by a Russian-speaking threat actor, as evidenced by Russian-language comments found in its third-stage AppleScript payload. It is distributed through a multi-stage ClickFix campaign that abuses shared Claude chats, ultimately delivering the core stealer via osascript, which leaves no file trace on disk. Its capabilities include stealing keychain data, browser credentials, cookies, and autofill information from Chromium- and Gecko-based browsers, harvesting cryptocurrency wallet data (both browser extensions and desktop applications), and collecting sensitive files such as cloud keys, shell history, and high-value documents, all of which are compressed and exfiltrated in 10MB HTTP PUT chunks. The malware also implements persistence by appending a curl command to ~/.zshrc, prompts the user for full disk access, and may drop additional trojanized payloads targeting hardware-wallet users.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 280,
+    "total_iocs": 281,
     "date_range": {
       "earliest": "2026-09-02",
-      "latest": "2026-09-13"
+      "latest": "2026-09-16"
     },
     "ioc_type_breakdown": {
       "domain": 228,
       "sha256_hash": 26,
       "url": 21,
-      "ip:port": 5
+      "ip:port": 6
     },
     "confidence_distribution": {
-      "high": 280,
+      "high": 281,
       "medium": 0,
       "low": 0
     },
@@ -29,12 +29,13 @@
       "2026-09-03": 7,
       "2026-09-07": 1,
       "2026-09-09": 1,
-      "2026-09-13": 55
+      "2026-09-13": 55,
+      "2026-09-16": 1
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 3
+        "count": 4
       },
       {
         "port": "8443",
@@ -46,6 +47,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "178.128.253.92:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-16 08:45:42 UTC"
+      },
       {
         "ioc": "85.206.161.241:8443",
         "type": "ip:port",
@@ -126,12 +133,6 @@
       },
       {
         "ioc": "https://realrix.com/curl/d35264940fd1ae67937ee429568701d7b1cee0ccdfd513936b6302d8b75f1105",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-13 11:48:21 UTC"
-      },
-      {
-        "ioc": "https://realrix.com/curl/b54cc90c9143f757e0ac59356414f14447d5f9cbbae0b0e61cf6b4e8ced28f42",
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-13 11:48:21 UTC"

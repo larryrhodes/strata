@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-09-15T17:47:19.236132+00:00",
-  "recent_window_ioc_count": 112,
+  "generated": "2026-09-16T17:44:21.380825+00:00",
+  "recent_window_ioc_count": 113,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -12,14 +12,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-25",
-      "latest": "2026-09-15"
+      "earliest": "2026-06-27",
+      "latest": "2026-09-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 248,
+      "ip:port": 247,
       "sha256_hash": 131,
       "url": 63,
-      "domain": 58
+      "domain": 59
     },
     "confidence_distribution": {
       "high": 484,
@@ -27,7 +27,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-25": 3,
       "2026-06-27": 16,
       "2026-06-28": 12,
       "2026-06-29": 7,
@@ -94,20 +93,17 @@
       "2026-09-12": 23,
       "2026-09-13": 45,
       "2026-09-14": 18,
-      "2026-09-15": 6
+      "2026-09-15": 7,
+      "2026-09-16": 2
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 45
+        "count": 46
       },
       {
         "port": "8080",
         "count": 18
-      },
-      {
-        "port": "23",
-        "count": 10
       },
       {
         "port": "25565",
@@ -116,6 +112,10 @@
       {
         "port": "123",
         "count": 8
+      },
+      {
+        "port": "23",
+        "count": 7
       },
       {
         "port": "1999",
@@ -139,6 +139,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "94.154.43.217:11121",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-16 09:44:09 UTC"
+      },
+      {
+        "ioc": "tftp2.sh",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-16 06:24:35 UTC"
+      },
+      {
+        "ioc": "77.90.14.60:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-15 19:47:00 UTC"
+      },
       {
         "ioc": "9b1f88a9438254cf36932cf0ab696411ac2891c698f9d98da65569178702a0dd",
         "type": "sha256_hash",
@@ -210,24 +228,6 @@
         "type": "domain",
         "confidence": 50,
         "first_seen": "2026-09-14 11:52:27 UTC"
-      },
-      {
-        "ioc": "chanbomaydi.devs.surf",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-14 11:52:27 UTC"
-      },
-      {
-        "ioc": "ff69af09f1dba3c4ede99a5f5837ddff5ac3cb71621d4cd3f2da11e30fe2eab9",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-14 10:31:25 UTC"
-      },
-      {
-        "ioc": "87.58.201.21:6678",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-14 09:04:18 UTC"
       }
     ]
   }
