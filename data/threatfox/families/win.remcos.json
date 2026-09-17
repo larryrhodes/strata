@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-09-16T17:43:49.340470+00:00",
-  "recent_window_ioc_count": 141,
+  "generated": "2026-09-17T17:44:32.240350+00:00",
+  "recent_window_ioc_count": 179,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,13 +18,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-07-20",
-      "latest": "2026-09-16"
+      "earliest": "2026-08-04",
+      "latest": "2026-09-17"
     },
     "ioc_type_breakdown": {
-      "ip:port": 306,
-      "domain": 167,
-      "sha256_hash": 27
+      "ip:port": 299,
+      "domain": 192,
+      "sha256_hash": 9
     },
     "confidence_distribution": {
       "high": 453,
@@ -32,19 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-20": 2,
-      "2026-07-21": 2,
-      "2026-07-22": 1,
-      "2026-07-23": 1,
-      "2026-07-24": 1,
-      "2026-07-25": 2,
-      "2026-07-26": 4,
-      "2026-07-27": 2,
-      "2026-07-28": 1,
-      "2026-07-30": 3,
-      "2026-08-02": 19,
-      "2026-08-03": 1,
-      "2026-08-04": 17,
+      "2026-08-04": 1,
       "2026-08-05": 3,
       "2026-08-06": 16,
       "2026-08-07": 4,
@@ -82,19 +70,20 @@
       "2026-09-13": 5,
       "2026-09-14": 48,
       "2026-09-15": 50,
-      "2026-09-16": 4
+      "2026-09-16": 44,
+      "2026-09-17": 15
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 95
-      },
-      {
-        "port": "65070",
-        "count": 12
+        "count": 92
       },
       {
         "port": "443",
+        "count": 11
+      },
+      {
+        "port": "65070",
         "count": 11
       },
       {
@@ -106,6 +95,10 @@
         "count": 5
       },
       {
+        "port": "3231",
+        "count": 4
+      },
+      {
         "port": "4411",
         "count": 4
       },
@@ -114,108 +107,104 @@
         "count": 4
       },
       {
-        "port": "8080",
-        "count": 4
-      },
-      {
-        "port": "14647",
+        "port": "14649",
         "count": 3
       },
       {
-        "port": "9090",
+        "port": "14647",
         "count": 3
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "103.83.86.147:2404",
+        "ioc": "216.9.225.24:14649",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-17 16:34:50 UTC"
+      },
+      {
+        "ioc": "107.172.13.250:8448",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-17 16:20:19 UTC"
+      },
+      {
+        "ioc": "wagners123.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-17 16:10:20 UTC"
+      },
+      {
+        "ioc": "www.allltrucks.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-17 15:15:21 UTC"
+      },
+      {
+        "ioc": "www.neelgirlchemicalsbackup.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-17 15:15:21 UTC"
+      },
+      {
+        "ioc": "www.neelgirlchemicals.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-17 15:15:21 UTC"
+      },
+      {
+        "ioc": "104.245.107.22:5433",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-16 11:47:10 UTC"
+        "first_seen": "2026-09-17 14:13:38 UTC"
       },
       {
-        "ioc": "204.44.69.231:14642",
+        "ioc": "74.50.123.47:2404",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-16 06:25:01 UTC"
+        "first_seen": "2026-09-17 10:51:12 UTC"
       },
       {
-        "ioc": "204.44.69.231:14646",
+        "ioc": "199.47.241.52:7878",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-16 06:24:59 UTC"
+        "first_seen": "2026-09-17 09:19:19 UTC"
       },
       {
-        "ioc": "204.44.69.231:14644",
+        "ioc": "102.220.163.42:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-17 06:30:33 UTC"
+      },
+      {
+        "ioc": "196.251.107.252:22062",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-16 06:24:59 UTC"
+        "first_seen": "2026-09-17 05:42:12 UTC"
       },
       {
-        "ioc": "90.8.202.45:5452",
+        "ioc": "2.25.222.233:8899",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-15 20:37:42 UTC"
+        "first_seen": "2026-09-17 05:42:01 UTC"
       },
       {
-        "ioc": "backdoor.yakuza88.co",
-        "type": "domain",
+        "ioc": "103.67.163.201:2404",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
+        "first_seen": "2026-09-17 05:41:55 UTC"
       },
       {
-        "ioc": "backdoor.u888d9.com",
-        "type": "domain",
+        "ioc": "d780677e97da00b2b90849741720c1a02e758356630b63242a18074775c69e1c",
+        "type": "sha256_hash",
         "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
+        "first_seen": "2026-09-17 05:41:42 UTC"
       },
       {
-        "ioc": "backdoor.slotmachinesoldiveri.com",
-        "type": "domain",
+        "ioc": "31.56.209.74:3231",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.profitness.in.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.nohu90.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.liman3d.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.jinyazhou888.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.jilicasinos.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.imo88slot.co",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
-      },
-      {
-        "ioc": "backdoor.hay88.london",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-15 20:37:41 UTC"
+        "first_seen": "2026-09-17 05:41:33 UTC"
       }
     ]
   }

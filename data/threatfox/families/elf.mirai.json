@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-09-16T17:44:21.380825+00:00",
-  "recent_window_ioc_count": 113,
+  "generated": "2026-09-17T17:45:00.524892+00:00",
+  "recent_window_ioc_count": 112,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-27": 16,
+      "2026-06-27": 15,
       "2026-06-28": 12,
       "2026-06-29": 7,
       "2026-06-30": 2,
@@ -94,12 +94,12 @@
       "2026-09-13": 45,
       "2026-09-14": 18,
       "2026-09-15": 7,
-      "2026-09-16": 2
+      "2026-09-16": 3
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 46
+        "count": 47
       },
       {
         "port": "8080",
@@ -139,6 +139,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "143.20.185.213:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-16 19:43:45 UTC"
+      },
       {
         "ioc": "94.154.43.217:11121",
         "type": "ip:port",
@@ -194,13 +200,13 @@
         "first_seen": "2026-09-15 06:04:26 UTC"
       },
       {
-        "ioc": "http://213.232.114.14/handshakebins.sh",
+        "ioc": "http://176.65.139.228:6677/Exodus.sh",
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-14 16:57:28 UTC"
       },
       {
-        "ioc": "http://176.65.139.228:6677/Exodus.sh",
+        "ioc": "http://213.232.114.14/handshakebins.sh",
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-14 16:57:28 UTC"
@@ -222,12 +228,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-14 16:57:25 UTC"
-      },
-      {
-        "ioc": "qstresser.work",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-14 11:52:27 UTC"
       }
     ]
   }
