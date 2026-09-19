@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-09-18T17:09:21.828366+00:00",
-  "recent_window_ioc_count": 4359,
+  "generated": "2026-09-19T16:41:48.715021+00:00",
+  "recent_window_ioc_count": 1987,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -11,24 +11,38 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-17",
-      "latest": "2026-09-17"
+      "latest": "2026-09-19"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 493,
-      "ip:port": 7
+      "sha256_hash": 488,
+      "ip:port": 12
     },
     "confidence_distribution": {
-      "high": 7,
-      "medium": 493,
+      "high": 12,
+      "medium": 488,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-17": 500
+      "2026-09-17": 495,
+      "2026-09-18": 1,
+      "2026-09-19": 4
     },
     "top_ports": [
       {
         "port": "7707",
+        "count": 4
+      },
+      {
+        "port": "8808",
         "count": 2
+      },
+      {
+        "port": "9090",
+        "count": 1
+      },
+      {
+        "port": "1003",
+        "count": 1
       },
       {
         "port": "4444",
@@ -36,10 +50,6 @@
       },
       {
         "port": "2001",
-        "count": 1
-      },
-      {
-        "port": "8808",
         "count": 1
       },
       {
@@ -52,6 +62,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "91.92.241.149:9090",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-19 09:47:12 UTC"
+      },
+      {
+        "ioc": "91.92.241.149:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-19 09:47:12 UTC"
+      },
+      {
+        "ioc": "188.137.227.133:8808",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-19 09:44:37 UTC"
+      },
+      {
+        "ioc": "102.220.160.198:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-19 09:43:06 UTC"
+      },
+      {
+        "ioc": "80.190.77.86:1003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-18 19:46:45 UTC"
+      },
       {
         "ioc": "128.90.136.246:4444",
         "type": "ip:port",
@@ -111,36 +151,6 @@
         "type": "sha256_hash",
         "confidence": 50,
         "first_seen": "2026-09-17 04:57:10 UTC"
-      },
-      {
-        "ioc": "08eff7248a828c8be4cec506f4a6636998200632d53a9d3d71f1d1d881d597fd",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-17 04:57:10 UTC"
-      },
-      {
-        "ioc": "08eef230e08ae65cf8f1895a6c62f3d6734b76eaf9d2c41cfba2566651e3d849",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-17 04:57:10 UTC"
-      },
-      {
-        "ioc": "08ec5f64326db6fbf5f8ecd875d95ae35cee9bda2737c65e21796a0fed0d2ba9",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-17 04:57:10 UTC"
-      },
-      {
-        "ioc": "08e93587b2aa27b82fad7e2eef0f42efabcbddd9f13777e57765106c2473444b",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-17 04:57:09 UTC"
-      },
-      {
-        "ioc": "08e9048b8d66c63f4709f6f1bde6222c37431130b469d2376723f643a8c7d9ce",
-        "type": "sha256_hash",
-        "confidence": 50,
-        "first_seen": "2026-09-17 04:57:09 UTC"
       }
     ]
   }

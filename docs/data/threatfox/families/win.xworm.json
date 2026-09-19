@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-09-18T17:13:52.151802+00:00",
-  "recent_window_ioc_count": 60,
+  "generated": "2026-09-19T16:46:42.311416+00:00",
+  "recent_window_ioc_count": 73,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,12 +12,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-03-31",
-      "latest": "2026-09-17"
+      "earliest": "2026-04-01",
+      "latest": "2026-09-18"
     },
     "ioc_type_breakdown": {
-      "ip:port": 262,
-      "domain": 155,
+      "ip:port": 264,
+      "domain": 153,
       "sha256_hash": 34,
       "md5_hash": 22,
       "sha1_hash": 22,
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-31": 10,
-      "2026-04-01": 4,
+      "2026-04-01": 1,
       "2026-04-02": 9,
       "2026-04-03": 15,
       "2026-04-04": 10,
@@ -141,24 +140,25 @@
       "2026-09-14": 22,
       "2026-09-15": 17,
       "2026-09-16": 2,
-      "2026-09-17": 13
+      "2026-09-17": 13,
+      "2026-09-18": 13
     },
     "top_ports": [
       {
         "port": "7004",
-        "count": 40
+        "count": 39
       },
       {
         "port": "443",
-        "count": 24
+        "count": 25
+      },
+      {
+        "port": "6000",
+        "count": 13
       },
       {
         "port": "7007",
         "count": 13
-      },
-      {
-        "port": "6000",
-        "count": 12
       },
       {
         "port": "7000",
@@ -187,6 +187,84 @@
     ],
     "sample_iocs": [
       {
+        "ioc": "tyyyy-50833.portmap.host",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:49 UTC"
+      },
+      {
+        "ioc": "195.177.94.91:6000",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:48 UTC"
+      },
+      {
+        "ioc": "jxjdhjdx-61930.portmap.host",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:47 UTC"
+      },
+      {
+        "ioc": "31.6.50.206:2002",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:46 UTC"
+      },
+      {
+        "ioc": "143.92.51.33:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:43 UTC"
+      },
+      {
+        "ioc": "82.47.101.153:3388",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:39 UTC"
+      },
+      {
+        "ioc": "hb2grktsae.localto.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:38 UTC"
+      },
+      {
+        "ioc": "t2d2.ddns.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:37 UTC"
+      },
+      {
+        "ioc": "45.141.27.97:7000",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:35 UTC"
+      },
+      {
+        "ioc": "zogyjkdssr.localto.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:34 UTC"
+      },
+      {
+        "ioc": "8.tcp.cpolar.cn",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 18:21:33 UTC"
+      },
+      {
+        "ioc": "162.217.248.219:9467",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-18 17:25:33 UTC"
+      },
+      {
+        "ioc": "mail.qilantelecorn.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-18 17:25:19 UTC"
+      },
+      {
         "ioc": "vla.tcptunnel.su",
         "type": "domain",
         "confidence": 100,
@@ -197,84 +275,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-09-17 20:54:49 UTC"
-      },
-      {
-        "ioc": "britsygomez90901002.duckdns.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:45 UTC"
-      },
-      {
-        "ioc": "31.57.97.111:5555",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:44 UTC"
-      },
-      {
-        "ioc": "tissues-carers.tun.ply.gg",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:44 UTC"
-      },
-      {
-        "ioc": "36.255.97.7:4445",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:43 UTC"
-      },
-      {
-        "ioc": "82.47.102.179:5001",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:39 UTC"
-      },
-      {
-        "ioc": "85.203.4.222:6000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:37 UTC"
-      },
-      {
-        "ioc": "sddfgdqw45tj-35300.portmap.host",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:36 UTC"
-      },
-      {
-        "ioc": "85.203.4.161:6000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:35 UTC"
-      },
-      {
-        "ioc": "lodalasan22wwee.duckdns.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:33 UTC"
-      },
-      {
-        "ioc": "82.22.62.195:6767",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-17 20:54:32 UTC"
-      },
-      {
-        "ioc": "191.101.130.75:7731",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-17 15:10:23 UTC"
-      },
-      {
-        "ioc": "82.47.101.153:7165",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-16 17:47:51 UTC"
-      },
-      {
-        "ioc": "188.52.56.123:5000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-16 17:47:45 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "osx.amos",
   "family": "AMOS",
-  "generated": "2026-09-18T17:11:51.839812+00:00",
-  "recent_window_ioc_count": 136,
+  "generated": "2026-09-19T16:44:30.095019+00:00",
+  "recent_window_ioc_count": 149,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos",
   "description": null,
   "alt_names": [
@@ -10,21 +10,21 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 248,
+    "total_iocs": 261,
     "date_range": {
       "earliest": "2025-10-24",
-      "latest": "2026-09-18"
+      "latest": "2026-09-19"
     },
     "ioc_type_breakdown": {
-      "domain": 138,
-      "url": 66,
-      "sha256_hash": 31,
-      "ip:port": 9,
+      "domain": 140,
+      "url": 71,
+      "sha256_hash": 36,
+      "ip:port": 10,
       "sha1_hash": 3,
       "md5_hash": 1
     },
     "confidence_distribution": {
-      "high": 236,
+      "high": 249,
       "medium": 11,
       "low": 1
     },
@@ -52,12 +52,13 @@
       "2026-09-11": 1,
       "2026-09-13": 89,
       "2026-09-14": 33,
-      "2026-09-18": 14
+      "2026-09-18": 14,
+      "2026-09-19": 13
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 6
+        "count": 7
       },
       {
         "port": "443",
@@ -65,6 +66,84 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "165.232.73.74:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:48 UTC"
+      },
+      {
+        "ioc": "lyric-8.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:48 UTC"
+      },
+      {
+        "ioc": "https://lyric-8.com/api/metrics/run?event=stager",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:47 UTC"
+      },
+      {
+        "ioc": "https://lyric-8.com/api/metrics/run?event=pasted",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:47 UTC"
+      },
+      {
+        "ioc": "http://165.232.73.74/api/metrics/run",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:46 UTC"
+      },
+      {
+        "ioc": "https://blueprint-71.com/2kqYRM0DCrnyJgoS4gVLl_FHJRRdTUhGCbjyuYwpZ6c/cc2/update",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:45 UTC"
+      },
+      {
+        "ioc": "blueprint-71.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:45 UTC"
+      },
+      {
+        "ioc": "a3dabccd14492f4c70658ece96a3ed7b4e275ff9d70c434298bd6f863d1e24b9",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:44 UTC"
+      },
+      {
+        "ioc": "https://blueprint-71.com/curl/amtkquxbo3/obh3bn3umykzjlth.json",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:44 UTC"
+      },
+      {
+        "ioc": "6e753133e537264247a08587d87b30b8d9a96caea1d6cc92d41fc8058073b8f7",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:43 UTC"
+      },
+      {
+        "ioc": "872611186a14d610770b362e3bef2cad071cc211d30c39e2b1a186b35f0294ba",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:42 UTC"
+      },
+      {
+        "ioc": "dfe96b68cb910deb4e29f41c7525e0cd3a2d1c7234e227cbeee4a9e6d535f95f",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:42 UTC"
+      },
+      {
+        "ioc": "55b8fff6b61ed493f477bac718c37714075d4ff52bc302d28a331def371834b6",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-19 05:52:42 UTC"
+      },
       {
         "ioc": "https://jadeleap15.com/contact",
         "type": "url",
@@ -76,84 +155,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-18 06:00:46 UTC"
-      },
-      {
-        "ioc": "https://rudder-moss.com/zxc/apptwo.zip",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 06:00:46 UTC"
-      },
-      {
-        "ioc": "https://rudder-moss.com/zxc/app.zip",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 06:00:46 UTC"
-      },
-      {
-        "ioc": "https://rudder-moss.com/zxc/mdw",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 06:00:45 UTC"
-      },
-      {
-        "ioc": "https://rudder-moss.com/zxc/kito",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 06:00:45 UTC"
-      },
-      {
-        "ioc": "https://rudder-moss.com/zxc/appex.zip",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 06:00:45 UTC"
-      },
-      {
-        "ioc": "158e11946bf88b2de4cabca7ea6b07dde9232c903a3925a60a3fd947bf1017b2",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-18 06:00:44 UTC"
-      },
-      {
-        "ioc": "leaf-core.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:42 UTC"
-      },
-      {
-        "ioc": "https://leaf-core.com/api/metrics/run?event=stager",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:40 UTC"
-      },
-      {
-        "ioc": "https://leaf-core.com/api/metrics/run?event=pasted",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:40 UTC"
-      },
-      {
-        "ioc": "postaspen18.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:40 UTC"
-      },
-      {
-        "ioc": "https://postaspen18.com/2kqYRM0DCrnyJgoS4gVLl_FHJRRdTUhGCbjyuYwpZ6c/apph4/update",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:39 UTC"
-      },
-      {
-        "ioc": "https://postaspen18.com/curl/vopt4gbk1/ov19v1sg6oxsfg536m.json",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:39 UTC"
-      },
-      {
-        "ioc": "tide-maple.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-14 08:02:07 UTC"
       }
     ]
   }

@@ -1,26 +1,26 @@
 {
   "malware_id": "osx.macsync",
   "family": "MacSync",
-  "generated": "2026-09-18T17:12:24.673350+00:00",
-  "recent_window_ioc_count": 102,
+  "generated": "2026-09-19T16:44:51.428143+00:00",
+  "recent_window_ioc_count": 103,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.macsync",
   "description": "According to Zscaler, MacSync (also tracked as MacSync Stealer) is a macOS information stealer likely developed by a Russian-speaking threat actor, as evidenced by Russian-language comments found in its third-stage AppleScript payload. It is distributed through a multi-stage ClickFix campaign that abuses shared Claude chats, ultimately delivering the core stealer via osascript, which leaves no file trace on disk. Its capabilities include stealing keychain data, browser credentials, cookies, and autofill information from Chromium- and Gecko-based browsers, harvesting cryptocurrency wallet data (both browser extensions and desktop applications), and collecting sensitive files such as cloud keys, shell history, and high-value documents, all of which are compressed and exfiltrated in 10MB HTTP PUT chunks. The malware also implements persistence by appending a curl command to ~/.zshrc, prompts the user for full disk access, and may drop additional trojanized payloads targeting hardware-wallet users.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 322,
+    "total_iocs": 328,
     "date_range": {
       "earliest": "2026-09-02",
-      "latest": "2026-09-17"
+      "latest": "2026-09-18"
     },
     "ioc_type_breakdown": {
-      "domain": 230,
-      "url": 49,
+      "domain": 233,
+      "url": 52,
       "sha256_hash": 37,
       "ip:port": 6
     },
     "confidence_distribution": {
-      "high": 322,
+      "high": 328,
       "medium": 0,
       "low": 0
     },
@@ -31,7 +31,8 @@
       "2026-09-09": 1,
       "2026-09-13": 55,
       "2026-09-16": 1,
-      "2026-09-17": 41
+      "2026-09-17": 41,
+      "2026-09-18": 6
     },
     "top_ports": [
       {
@@ -48,6 +49,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "ahJNo6F501Z6JD1NNAH9bc236ifFkePeDKzyvysHi.wsecurite.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 19:11:21 UTC"
+      },
+      {
+        "ioc": "wsecurite.com",
+        "type": "domain",
+        "confidence": 90,
+        "first_seen": "2026-09-18 17:23:40 UTC"
+      },
+      {
+        "ioc": "genovaw.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-18 17:23:39 UTC"
+      },
+      {
+        "ioc": "https://genovaw.com/dynamic?txd=001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-18 17:23:39 UTC"
+      },
+      {
+        "ioc": "https://genovaw.com/curl/001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-18 17:23:25 UTC"
+      },
+      {
+        "ioc": "https://genovaw.com/loader/agent/001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-18 17:23:24 UTC"
+      },
       {
         "ioc": "fincoadvance.com",
         "type": "domain",
@@ -101,42 +138,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-17 16:42:08 UTC"
-      },
-      {
-        "ioc": "https://byrnewealthmanagement.com/curl/1fb7b78a1dd8d2ae0b78c34784bad25d3fb0f13aad55e1e6e51c6c7b23bac23a",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-17 16:42:08 UTC"
-      },
-      {
-        "ioc": "https://cincycarpetcleaning.com/curl/6e2d25066bc1db68a10d55189c7c0bae6443d5178fd4310808270e261236ce30",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-17 16:42:07 UTC"
-      },
-      {
-        "ioc": "https://criminallawyerpr.com/curl/85cb26206d920216eee0c5f67e8de516b4d55bd1752025bb3c08a069a44fdbdf",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-17 16:42:05 UTC"
-      },
-      {
-        "ioc": "https://criminallawyerpr.com/curl/720e1e04c2690ac14874d54823354d6bd06336b23e8458debaffeb2b18f5be6a",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-17 16:42:05 UTC"
-      },
-      {
-        "ioc": "https://customroofingcontractors.com/curl/b42a0ed9d1ecb72e42d6034502c304845d98805481d99cea4e259359f9ab206e",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-17 16:42:04 UTC"
-      },
-      {
-        "ioc": "https://criminallawyerpr.com/curl/8e92ee3f0bccc8211145e3aee82c34e9ae67058e9abf154e4b335a6575f97833",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-17 16:42:04 UTC"
       }
     ]
   }

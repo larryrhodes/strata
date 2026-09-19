@@ -1,16 +1,16 @@
 {
-  "generated": "2026-09-18T17:09:10.585790+00:00",
+  "generated": "2026-09-19T16:41:40.133291+00:00",
   "window_days": 7,
-  "total_iocs": 11539,
-  "total_families": 103,
+  "total_iocs": 8539,
+  "total_families": 100,
   "families": [
     {
       "family": "AsyncRAT",
       "malware_id": "win.asyncrat",
-      "ioc_count": 4359,
+      "ioc_count": 1987,
       "ioc_type_breakdown": {
-        "ip:port": 76,
-        "sha256_hash": 4266,
+        "ip:port": 77,
+        "sha256_hash": 1893,
         "domain": 9,
         "sha1_hash": 4,
         "md5_hash": 4
@@ -61,10 +61,11 @@
     {
       "family": "Unknown Loader",
       "malware_id": "unknown_loader",
-      "ioc_count": 1326,
+      "ioc_count": 1135,
       "ioc_type_breakdown": {
-        "sha256_hash": 52,
-        "domain": 1272,
+        "url": 1,
+        "sha256_hash": 48,
+        "domain": 1084,
         "ip:port": 2
       },
       "top_iocs": [
@@ -108,10 +109,8 @@
         "OffLoader",
         "PavinLoader",
         "a47659cdad283e9dcd10da78ff795967",
-        "b41e5dbdefe20c98c5cb62a2074b18e7",
         "babki",
         "basenet",
-        "compromised",
         "d52f85",
         "dropped-by-StealC",
         "dropped-by-amadey",
@@ -120,203 +119,74 @@
         "exe",
         "ironport",
         "sepolia",
-        "upx"
+        "upx",
+        "zip"
       ],
       "description": null,
       "associated_groups": []
     },
     {
-      "family": "IClickFix",
-      "malware_id": "js.iclickfix",
-      "ioc_count": 781,
-      "ioc_type_breakdown": {
-        "domain": 772,
-        "url": 9
-      },
-      "top_iocs": [
-        {
-          "ioc": "kiln-skioi-c29ap.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 11:21:03 UTC"
-        },
-        {
-          "ioc": "gaezskoynbrisk.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 11:08:56 UTC"
-        },
-        {
-          "ioc": "https://www.motorway.nl",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-17 18:41:21 UTC"
-        },
-        {
-          "ioc": "https://www.motorway.nl/nochain-sw.js",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-17 18:41:21 UTC"
-        },
-        {
-          "ioc": "siteborg.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 11:19:53 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.iclickfix",
-      "tag_hints": [
-        "Amos",
-        "ClickFix",
-        "CompromisedVictim",
-        "EduSite",
-        "GovSite",
-        "Mac",
-        "Polygon",
-        "actor-infra",
-        "attacker-infra",
-        "c2",
-        "etherhiding",
-        "hardware-fingerprint",
-        "inject-domain",
-        "nochain",
-        "payload-infra",
-        "t.js",
-        "turnstile"
-      ],
-      "description": "IClickFix is a malicious JavaScript framework deployed on compromised WordPress sites to deliver further malware using the ClickFix social engineering tactic and fake Cloudflare Turnstile CAPTCHA challenge.",
-      "associated_groups": []
-    },
-    {
-      "family": "ClearFake",
-      "malware_id": "js.clearfake",
-      "ioc_count": 680,
-      "ioc_type_breakdown": {
-        "domain": 640,
-        "url": 40
-      },
-      "top_iocs": [
-        {
-          "ioc": "qt85eiy6.en-us-easybatteryfixed.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:21:16 UTC"
-        },
-        {
-          "ioc": "en-us-easybatteryfixed.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:20:11 UTC"
-        },
-        {
-          "ioc": "47wv110r.mosbatsms.ir",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:02:28 UTC"
-        },
-        {
-          "ioc": "ciu2swv9.alibabasport.ir",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 14:01:34 UTC"
-        },
-        {
-          "ioc": "alibabasport.ir",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 13:59:50 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake",
-      "tag_hints": [
-        "11September2026",
-        "12September2026",
-        "13September2026",
-        "14September2026",
-        "15September2026",
-        "16September2026",
-        "17September2026",
-        "18September2026",
-        "ClearFake",
-        "ClickFix",
-        "Commandline",
-        "DomainShadowing",
-        "ErrTraffic",
-        "EtherHidingMagecart",
-        "Windows",
-        "compromised",
-        "etherhide",
-        "etherhiding",
-        "mac-0x0f14",
-        "mac-0x68dc",
-        "mac-0x76c7",
-        "mac-0xdcf2",
-        "macOS"
-      ],
-      "description": "ClearFake is a malicious JavaScript framework deployed on compromised websites to deliver further malware using the drive-by download technique. The malware leverages social engineering to trick the user into running a fake web browser update.",
-      "associated_groups": []
-    },
-    {
       "family": "Unknown malware",
       "malware_id": "unknown",
-      "ioc_count": 670,
+      "ioc_count": 686,
       "ioc_type_breakdown": {
-        "ip:port": 245,
-        "url": 101,
-        "sha256_hash": 26,
+        "url": 116,
         "domain": 169,
+        "ip:port": 246,
+        "sha256_hash": 26,
         "md5_hash": 129
       },
       "top_iocs": [
         {
-          "ioc": "134.122.202.217:8888",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 14:05:06 UTC"
-        },
-        {
-          "ioc": "134.122.202.217:22",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 14:05:05 UTC"
-        },
-        {
-          "ioc": "https://103.101.85.26/gate",
+          "ioc": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/129fd90846a1e173/9221.txt",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 13:25:09 UTC"
+          "first_seen": "2026-09-19 05:52:48 UTC"
         },
         {
-          "ioc": "179.199.143.63:7443",
+          "ioc": "106.52.255.211:13321",
           "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-18 06:05:05 UTC"
+          "first_seen": "2026-09-19 00:05:03 UTC"
         },
         {
-          "ioc": "79a40766ab58027817db28412d600be9f3e64f8e24133562cc3aacb500ec720a",
-          "type": "sha256_hash",
+          "ioc": "187.124.49.109:2222",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-17 18:41:03 UTC"
+          "first_seen": "2026-09-18 22:05:05 UTC"
+        },
+        {
+          "ioc": "187.124.49.109:8080",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-18 21:05:09 UTC"
+        },
+        {
+          "ioc": "187.124.49.109:80",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-18 21:05:07 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown",
       "tag_hints": [
+        "7moor",
+        "Certum",
         "ClearFake",
         "ClickFix",
+        "Downloader",
+        "EV-signed",
         "Factory-v3",
         "GOOGLE",
         "GoPhish",
-        "Hvnc",
         "INNO",
         "IoT",
-        "IrcBot",
         "Mythic",
         "NodeJS",
         "PHP",
         "Panda",
-        "PivotC2",
         "PowerSploit",
+        "Ransomware",
         "RedGuard",
         "STRU",
         "ScreenConnect",
@@ -341,10 +211,10 @@
         "elf",
         "etherhide",
         "etherhiding",
+        "exe",
         "fabric",
         "fake-ai",
         "fakemas",
-        "hhunter",
         "honeypot",
         "info-stealer",
         "jar",
@@ -352,61 +222,196 @@
         "locust",
         "macOS",
         "malicious",
+        "meshagent",
         "minecraft",
-        "orbit",
+        "payload-delivery",
         "phishing",
         "polygon-c2",
         "python",
         "sentinel",
+        "shellcode",
         "shodan",
         "ssh-honeypot",
         "stager",
         "stealer",
-        "tg.pe",
         "voidproxy",
-        "webshell"
+        "webshell",
+        "zip"
       ],
       "description": null,
       "associated_groups": []
     },
     {
-      "family": "Cobalt Strike",
-      "malware_id": "win.cobalt_strike",
-      "ioc_count": 367,
+      "family": "ClearFake",
+      "malware_id": "js.clearfake",
+      "ioc_count": 613,
       "ioc_type_breakdown": {
-        "ip:port": 363,
-        "domain": 4
+        "domain": 582,
+        "url": 31
       },
       "top_iocs": [
         {
-          "ioc": "8.160.168.147:80",
-          "type": "ip:port",
+          "ioc": "h1zhr28q.usa-lipogummy.com",
+          "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-18 10:05:08 UTC"
+          "first_seen": "2026-09-19 16:08:30 UTC"
         },
         {
-          "ioc": "8.160.168.147:8080",
-          "type": "ip:port",
+          "ioc": "i8tdljt4.pmeelectric.org",
+          "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-18 10:05:08 UTC"
+          "first_seen": "2026-09-19 15:02:03 UTC"
         },
         {
-          "ioc": "8.160.168.147:443",
-          "type": "ip:port",
+          "ioc": "pmeelectric.org",
+          "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-18 10:05:07 UTC"
+          "first_seen": "2026-09-19 15:00:46 UTC"
         },
         {
-          "ioc": "8.160.168.147:22",
-          "type": "ip:port",
+          "ioc": "46vm4qgb.www-glycofree.com",
+          "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-18 10:05:06 UTC"
+          "first_seen": "2026-09-19 14:31:55 UTC"
         },
         {
-          "ioc": "60.204.248.97:80",
+          "ioc": "v17q5203.usa--lipogummy.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-19 14:06:00 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake",
+      "tag_hints": [
+        "12September2026",
+        "13September2026",
+        "14September2026",
+        "15September2026",
+        "16September2026",
+        "17September2026",
+        "18September2026",
+        "19September2026",
+        "ClearFake",
+        "ClickFix",
+        "Commandline",
+        "DomainShadowing",
+        "ErrTraffic",
+        "EtherHidingMagecart",
+        "Windows",
+        "compromised",
+        "etherhide",
+        "etherhiding",
+        "mac-0x0f14",
+        "mac-0x68dc",
+        "mac-0x76c7",
+        "mac-0xdcf2",
+        "macOS"
+      ],
+      "description": "ClearFake is a malicious JavaScript framework deployed on compromised websites to deliver further malware using the drive-by download technique. The malware leverages social engineering to trick the user into running a fake web browser update.",
+      "associated_groups": []
+    },
+    {
+      "family": "IClickFix",
+      "malware_id": "js.iclickfix",
+      "ioc_count": 574,
+      "ioc_type_breakdown": {
+        "domain": 565,
+        "url": 9
+      },
+      "top_iocs": [
+        {
+          "ioc": "kiln-skioi-c29up.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-19 09:06:06 UTC"
+        },
+        {
+          "ioc": "trilliot6776.icu",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-19 09:06:06 UTC"
+        },
+        {
+          "ioc": "coral-weave-wren-veis.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 20:43:17 UTC"
+        },
+        {
+          "ioc": "kiln-skioi-c29ap.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 11:21:03 UTC"
+        },
+        {
+          "ioc": "gaezskoynbrisk.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 11:08:56 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.iclickfix",
+      "tag_hints": [
+        "Amos",
+        "ClickFix",
+        "CompromisedVictim",
+        "EduSite",
+        "GovSite",
+        "LENAI",
+        "Mac",
+        "Polygon",
+        "actor-infra",
+        "attacker-infra",
+        "etherhide",
+        "etherhiding",
+        "hardware-fingerprint",
+        "inject-domain",
+        "payload-infra",
+        "t.js",
+        "turnstile"
+      ],
+      "description": "IClickFix is a malicious JavaScript framework deployed on compromised WordPress sites to deliver further malware using the ClickFix social engineering tactic and fake Cloudflare Turnstile CAPTCHA challenge.",
+      "associated_groups": []
+    },
+    {
+      "family": "Cobalt Strike",
+      "malware_id": "win.cobalt_strike",
+      "ioc_count": 379,
+      "ioc_type_breakdown": {
+        "ip:port": 374,
+        "domain": 4,
+        "url": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "8.148.187.55:8081",
           "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-18 10:05:05 UTC"
+          "first_seen": "2026-09-19 16:05:06 UTC"
+        },
+        {
+          "ioc": "123.56.106.181:80",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 16:05:05 UTC"
+        },
+        {
+          "ioc": "35.215.160.200:8080",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 16:05:05 UTC"
+        },
+        {
+          "ioc": "35.215.160.200:22",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:05:05 UTC"
+        },
+        {
+          "ioc": "35.215.160.200:443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:05:05 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
@@ -460,62 +465,188 @@
       ]
     },
     {
+      "family": "VShell",
+      "malware_id": "win.vshell",
+      "ioc_count": 314,
+      "ioc_type_breakdown": {
+        "sha256_hash": 55,
+        "url": 6,
+        "md5_hash": 14,
+        "sha1_hash": 14,
+        "ip:port": 225
+      },
+      "top_iocs": [
+        {
+          "ioc": "192.210.197.131:12313",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 12:05:05 UTC"
+        },
+        {
+          "ioc": "154.91.63.99:8084",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 11:05:10 UTC"
+        },
+        {
+          "ioc": "154.91.63.123:8084",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 11:05:09 UTC"
+        },
+        {
+          "ioc": "154.91.63.102:8084",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 11:05:08 UTC"
+        },
+        {
+          "ioc": "154.91.62.123:8084",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 11:05:07 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
+      "tag_hints": [
+        "Vshell",
+        "exe"
+      ],
+      "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
+      "associated_groups": []
+    },
+    {
+      "family": "Remcos",
+      "malware_id": "win.remcos",
+      "ioc_count": 308,
+      "ioc_type_breakdown": {
+        "ip:port": 63,
+        "domain": 244,
+        "sha256_hash": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "193.124.131.235:2409",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:51 UTC"
+        },
+        {
+          "ioc": "193.124.131.235:2407",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:51 UTC"
+        },
+        {
+          "ioc": "193.124.131.235:2406",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:51 UTC"
+        },
+        {
+          "ioc": "193.124.131.235:3398",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:50 UTC"
+        },
+        {
+          "ioc": "193.124.131.235:2405",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:50 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
+      "tag_hints": [
+        "22062",
+        "5000",
+        "9d2ca3",
+        "CK-099",
+        "FMT",
+        "Port$$",
+        "RAT",
+        "REMOTEHOST",
+        "RIOTMEDIC2026CRYPTOSCREENSHOT",
+        "Rem1",
+        "RemcosRAT",
+        "Social Security Report 2026",
+        "Wini$$",
+        "aloma001",
+        "c2",
+        "dropped-by-amadey",
+        "exe",
+        "monipro",
+        "pok",
+        "remcos",
+        "tor05g"
+      ],
+      "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
+      "associated_groups": [
+        "APT33",
+        "The Gorgon Group",
+        "UAC-0050"
+      ]
+    },
+    {
       "family": "Vidar",
       "malware_id": "win.vidar",
-      "ioc_count": 305,
+      "ioc_count": 263,
       "ioc_type_breakdown": {
-        "domain": 75,
         "url": 109,
-        "sha1_hash": 34,
-        "md5_hash": 34,
-        "sha256_hash": 40,
+        "domain": 73,
+        "sha1_hash": 21,
+        "md5_hash": 21,
+        "sha256_hash": 26,
         "ip:port": 13
       },
       "top_iocs": [
         {
-          "ioc": "ma.zk89.net",
-          "type": "domain",
+          "ioc": "https://ma.1hoki.org",
+          "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 15:15:45 UTC"
+          "first_seen": "2026-09-19 06:25:37 UTC"
+        },
+        {
+          "ioc": "https://ma.19hoki.org",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:21 UTC"
+        },
+        {
+          "ioc": "https://192.142.37.129",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:21 UTC"
         },
         {
           "ioc": "https://ma.zk89.net",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 15:12:35 UTC"
+          "first_seen": "2026-09-18 17:23:47 UTC"
         },
         {
-          "ioc": "ma.199cuan.org",
+          "ioc": "ma.zk89.net",
           "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-18 15:10:45 UTC"
-        },
-        {
-          "ioc": "https://ma.199cuan.org/",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-18 15:10:45 UTC"
-        },
-        {
-          "ioc": "https://kz.zk89.net",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-18 11:06:20 UTC"
+          "first_seen": "2026-09-18 15:15:45 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
       "tag_hints": [
         "29234a87d7e35de44c898ddb6becb28a",
         "363d88e5a9c1d1a3f45f3741a6e2fcaa",
+        "3a2918022604800cdad549fc923fe6d8",
         "3c967638c9707bd9a6aa9b0d44570c7a",
         "5309e205df3520e147a2278edef66ef4",
         "55fe2e0fddfa426fca2b0dd7b0cbd443",
+        "7347836807ad35a478daa982b6a56e60",
         "7475be643c56dd8ea8a0d0f96c4fc477",
         "77ad750cf9b219e398cba83287d008eb",
         "8dbad9a375e8878a31856816a5750204",
         "94262af4cd814e09d82a2d78526e1403",
         "Loader",
         "Vidar",
+        "bf33027f37759641887481194ff9b944",
         "c2",
         "d11f5c04051e332b9cfaabcb37c2ada9",
         "e627a0eeaa55821d47561af121c61a42",
@@ -528,122 +659,13 @@
       "associated_groups": []
     },
     {
-      "family": "Remus",
-      "malware_id": "win.remus",
-      "ioc_count": 303,
-      "ioc_type_breakdown": {
-        "url": 287,
-        "ip:port": 11,
-        "domain": 5
-      },
-      "top_iocs": [
-        {
-          "ioc": "143.244.130.3:8291",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-17 11:24:08 UTC"
-        },
-        {
-          "ioc": "143.244.141.187:8213",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-16 15:07:01 UTC"
-        },
-        {
-          "ioc": "45.77.68.157:7289",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-16 06:24:39 UTC"
-        },
-        {
-          "ioc": "152.42.182.175:6728",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 14:14:56 UTC"
-        },
-        {
-          "ioc": "118.175.159.92:8271",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 03:20:12 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
-      "tag_hints": [
-        "0f81469cc7638ba7c82eaddbd6b3c20a",
-        "1df60ba477f3af01b8adc920ea2d006e",
-        "5a4378fb90db39f09c7b18d1f314e645",
-        "65b650d78cbf74f17a1f5c139d5ab278",
-        "945c9f3c8cddcb7f33efce50a9a949ad",
-        "Remus",
-        "Remus Stealer",
-        "RemusStealer",
-        "ba56b65cdce57132ff8c6c73af40e67b",
-        "c2",
-        "efd062fb781a1c2ab43a84c9fb1ae666",
-        "stealer"
-      ],
-      "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
-      "associated_groups": []
-    },
-    {
-      "family": "VShell",
-      "malware_id": "win.vshell",
-      "ioc_count": 282,
-      "ioc_type_breakdown": {
-        "ip:port": 240,
-        "sha256_hash": 40,
-        "sha1_hash": 1,
-        "md5_hash": 1
-      },
-      "top_iocs": [
-        {
-          "ioc": "154.91.59.112:8084",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 17:05:05 UTC"
-        },
-        {
-          "ioc": "154.91.59.104:8084",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 17:05:04 UTC"
-        },
-        {
-          "ioc": "154.91.58.112:8084",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:05:09 UTC"
-        },
-        {
-          "ioc": "154.91.58.113:8084",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:05:09 UTC"
-        },
-        {
-          "ioc": "154.91.58.109:8084",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:05:07 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
-      "tag_hints": [
-        "Vshell",
-        "exe"
-      ],
-      "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
-      "associated_groups": []
-    },
-    {
       "family": "Unknown Stealer",
       "malware_id": "unknown_stealer",
-      "ioc_count": 238,
+      "ioc_count": 235,
       "ioc_type_breakdown": {
         "url": 10,
         "domain": 220,
-        "sha256_hash": 7,
+        "sha256_hash": 4,
         "ip:port": 1
       },
       "top_iocs": [
@@ -686,11 +708,9 @@
         "RustyStealer",
         "TraceStealer",
         "WordPress",
-        "b696f20301937e575bd5892b037b7b51",
         "c2",
         "credential-stealer",
         "dropped-by-amadey",
-        "dropped-by-vidar",
         "etherhiding",
         "exe",
         "fabric",
@@ -707,114 +727,98 @@
       "associated_groups": []
     },
     {
-      "family": "Remcos",
-      "malware_id": "win.remcos",
-      "ioc_count": 232,
+      "family": "Remus",
+      "malware_id": "win.remus",
+      "ioc_count": 195,
       "ioc_type_breakdown": {
-        "ip:port": 57,
-        "domain": 174,
-        "sha256_hash": 1
+        "url": 183,
+        "ip:port": 7,
+        "domain": 5
       },
       "top_iocs": [
         {
-          "ioc": "206.123.137.132:57484",
+          "ioc": "143.244.130.3:8291",
           "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-18 13:17:45 UTC"
+          "first_seen": "2026-09-17 11:24:08 UTC"
         },
         {
-          "ioc": "185.215.151.15:8089",
+          "ioc": "143.244.141.187:8213",
           "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-18 05:05:31 UTC"
+          "first_seen": "2026-09-16 15:07:01 UTC"
         },
         {
-          "ioc": "cellardoorchocolates.online",
-          "type": "domain",
+          "ioc": "45.77.68.157:7289",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-17 20:53:07 UTC"
+          "first_seen": "2026-09-16 06:24:39 UTC"
         },
         {
-          "ioc": "j88.cellardoorchocolates.online",
-          "type": "domain",
+          "ioc": "152.42.182.175:6728",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-17 20:53:07 UTC"
+          "first_seen": "2026-09-14 14:14:56 UTC"
         },
         {
-          "ioc": "rr88-link.com",
-          "type": "domain",
+          "ioc": "118.175.159.92:8271",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-17 20:53:07 UTC"
+          "first_seen": "2026-09-14 03:20:12 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
       "tag_hints": [
-        "22062",
-        "5000",
-        "9d2ca3",
-        "CK-099",
-        "F0XMAlL_Update",
-        "FMT",
-        "Port$$",
-        "RAT",
-        "REMOTEHOST",
-        "Rem1",
-        "RemcosRAT",
-        "Social Security Report 2026",
-        "Wini$$",
-        "aloma001",
+        "0f81469cc7638ba7c82eaddbd6b3c20a",
+        "1df60ba477f3af01b8adc920ea2d006e",
+        "65b650d78cbf74f17a1f5c139d5ab278",
+        "Remus",
+        "Remus Stealer",
+        "RemusStealer",
         "c2",
-        "dropped-by-amadey",
-        "exe",
-        "monipro",
-        "pok",
-        "remcos",
-        "tor05g"
+        "efd062fb781a1c2ab43a84c9fb1ae666",
+        "stealer"
       ],
-      "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
-      "associated_groups": [
-        "APT33",
-        "The Gorgon Group",
-        "UAC-0050"
-      ]
+      "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
+      "associated_groups": []
     },
     {
       "family": "php.shin_webshell",
       "malware_id": "php.shin_webshell",
-      "ioc_count": 190,
+      "ioc_count": 188,
       "ioc_type_breakdown": {
-        "domain": 190
+        "domain": 188
       },
       "top_iocs": [
         {
-          "ioc": "38chocolate.workers.dev",
+          "ioc": "butygeja.workers.dev",
           "type": "domain",
           "confidence": 50,
-          "first_seen": "2026-09-18 16:22:06 UTC"
+          "first_seen": "2026-09-19 15:47:07 UTC"
         },
         {
-          "ioc": "4m67cltgrp.workers.dev",
+          "ioc": "vorekabi.workers.dev",
           "type": "domain",
           "confidence": 50,
-          "first_seen": "2026-09-18 16:14:27 UTC"
+          "first_seen": "2026-09-19 15:38:03 UTC"
         },
         {
-          "ioc": "rsmze54782.workers.dev",
+          "ioc": "xyyhb62254.workers.dev",
           "type": "domain",
           "confidence": 50,
-          "first_seen": "2026-09-18 14:26:16 UTC"
+          "first_seen": "2026-09-19 13:53:00 UTC"
         },
         {
-          "ioc": "rarufusi.workers.dev",
+          "ioc": "64nsw308x6.workers.dev",
           "type": "domain",
           "confidence": 50,
-          "first_seen": "2026-09-18 14:20:44 UTC"
+          "first_seen": "2026-09-19 13:44:52 UTC"
         },
         {
-          "ioc": "mauritaalright.workers.dev",
+          "ioc": "qnjom46076.workers.dev",
           "type": "domain",
           "confidence": 50,
-          "first_seen": "2026-09-18 12:32:37 UTC"
+          "first_seen": "2026-09-19 13:17:15 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell",
@@ -833,43 +837,43 @@
     {
       "family": "AMOS",
       "malware_id": "osx.amos",
-      "ioc_count": 136,
+      "ioc_count": 149,
       "ioc_type_breakdown": {
-        "url": 40,
-        "sha256_hash": 23,
-        "domain": 72,
-        "ip:port": 1
+        "domain": 74,
+        "ip:port": 2,
+        "url": 45,
+        "sha256_hash": 28
       },
       "top_iocs": [
         {
-          "ioc": "https://jadeleap15.com/contact",
-          "type": "url",
+          "ioc": "lyric-8.com",
+          "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-18 06:00:48 UTC"
+          "first_seen": "2026-09-19 05:52:48 UTC"
         },
         {
-          "ioc": "http://178.128.253.92/api/metrics/run",
-          "type": "url",
+          "ioc": "165.232.73.74:80",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-18 06:00:46 UTC"
+          "first_seen": "2026-09-19 05:52:48 UTC"
         },
         {
-          "ioc": "https://rudder-moss.com/zxc/app.zip",
+          "ioc": "https://lyric-8.com/api/metrics/run?event=pasted",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 06:00:46 UTC"
+          "first_seen": "2026-09-19 05:52:47 UTC"
         },
         {
-          "ioc": "https://rudder-moss.com/zxc/apptwo.zip",
+          "ioc": "https://lyric-8.com/api/metrics/run?event=stager",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 06:00:46 UTC"
+          "first_seen": "2026-09-19 05:52:47 UTC"
         },
         {
-          "ioc": "https://rudder-moss.com/zxc/appex.zip",
+          "ioc": "http://165.232.73.74/api/metrics/run",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 06:00:45 UTC"
+          "first_seen": "2026-09-19 05:52:46 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos",
@@ -880,6 +884,7 @@
         "Foxveil",
         "RotatingC2",
         "apph4",
+        "cc2",
         "macOS"
       ],
       "description": null,
@@ -888,40 +893,40 @@
     {
       "family": "PureRAT",
       "malware_id": "win.pure_rat",
-      "ioc_count": 115,
+      "ioc_count": 118,
       "ioc_type_breakdown": {
-        "ip:port": 115
+        "ip:port": 118
       },
       "top_iocs": [
         {
-          "ioc": "80.76.49.209:443",
+          "ioc": "217.60.195.193:56002",
           "type": "ip:port",
           "confidence": 75,
-          "first_seen": "2026-09-18 09:57:46 UTC"
+          "first_seen": "2026-09-19 09:45:53 UTC"
         },
         {
-          "ioc": "45.139.104.222:55006",
+          "ioc": "217.60.195.193:56003",
           "type": "ip:port",
           "confidence": 75,
-          "first_seen": "2026-09-18 09:56:47 UTC"
+          "first_seen": "2026-09-19 09:45:53 UTC"
         },
         {
-          "ioc": "45.139.104.26:55011",
+          "ioc": "217.60.195.193:56001",
           "type": "ip:port",
           "confidence": 75,
-          "first_seen": "2026-09-18 09:56:47 UTC"
+          "first_seen": "2026-09-19 09:45:52 UTC"
         },
         {
-          "ioc": "45.139.104.222:443",
+          "ioc": "92.118.126.165:443",
           "type": "ip:port",
           "confidence": 75,
-          "first_seen": "2026-09-18 09:56:46 UTC"
+          "first_seen": "2026-09-18 19:47:01 UTC"
         },
         {
-          "ioc": "92.118.126.165:56001",
+          "ioc": "91.219.239.100:56003",
           "type": "ip:port",
           "confidence": 75,
-          "first_seen": "2026-09-17 19:47:17 UTC"
+          "first_seen": "2026-09-18 19:46:57 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.pure_rat",
@@ -935,14 +940,174 @@
       "associated_groups": []
     },
     {
+      "family": "MacSync",
+      "malware_id": "osx.macsync",
+      "ioc_count": 103,
+      "ioc_type_breakdown": {
+        "domain": 12,
+        "url": 52,
+        "sha256_hash": 37,
+        "ip:port": 2
+      },
+      "top_iocs": [
+        {
+          "ioc": "ahJNo6F501Z6JD1NNAH9bc236ifFkePeDKzyvysHi.wsecurite.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 19:11:21 UTC"
+        },
+        {
+          "ioc": "genovaw.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 17:23:39 UTC"
+        },
+        {
+          "ioc": "https://genovaw.com/dynamic?txd=001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-18 17:23:39 UTC"
+        },
+        {
+          "ioc": "https://genovaw.com/curl/001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-18 17:23:25 UTC"
+        },
+        {
+          "ioc": "https://genovaw.com/loader/agent/001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-18 17:23:24 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.macsync",
+      "tag_hints": [
+        "ClickFix",
+        "MacSync",
+        "backdoor",
+        "loader_agent",
+        "macOS",
+        "reverse-tunnel",
+        "safeguard-build",
+        "seed-phrase-stealer"
+      ],
+      "description": "According to Zscaler, MacSync (also tracked as MacSync Stealer) is a macOS information stealer likely developed by a Russian-speaking threat actor, as evidenced by Russian-language comments found in its third-stage AppleScript payload. It is distributed through a multi-stage ClickFix campaign that abuses shared Claude chats, ultimately delivering the core stealer via osascript, which leaves no file trace on disk. Its capabilities include stealing keychain data, browser credentials, cookies, and autofill information from Chromium- and Gecko-based browsers, harvesting cryptocurrency wallet data (both browser extensions and desktop applications), and collecting sensitive files such as cloud keys, shell history, and high-value documents, all of which are compressed and exfiltrated in 10MB HTTP PUT chunks. The malware also implements persistence by appending a curl command to ~/.zshrc, prompts the user for full disk access, and may drop additional trojanized payloads targeting hardware-wallet users.",
+      "associated_groups": []
+    },
+    {
+      "family": "Quasar RAT",
+      "malware_id": "win.quasar_rat",
+      "ioc_count": 97,
+      "ioc_type_breakdown": {
+        "domain": 86,
+        "ip:port": 11
+      },
+      "top_iocs": [
+        {
+          "ioc": "mb66.coupons",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:20:30 UTC"
+        },
+        {
+          "ioc": "ga888.free",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:20:29 UTC"
+        },
+        {
+          "ioc": "mb66a.me",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:20:28 UTC"
+        },
+        {
+          "ioc": "789bet.doctor",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:20:27 UTC"
+        },
+        {
+          "ioc": "8chicharrara.sa.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:20:26 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
+      "tag_hints": [
+        "QuasarRAT",
+        "quasar"
+      ],
+      "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
+      "associated_groups": [
+        "APT33",
+        "Dropping Elephant",
+        "Stone Panda",
+        "The Gorgon Group"
+      ]
+    },
+    {
+      "family": "ValleyRAT",
+      "malware_id": "win.valley_rat",
+      "ioc_count": 83,
+      "ioc_type_breakdown": {
+        "ip:port": 26,
+        "sha256_hash": 19,
+        "sha1_hash": 19,
+        "md5_hash": 19
+      },
+      "top_iocs": [
+        {
+          "ioc": "202.61.85.153:7800",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-16 06:25:13 UTC"
+        },
+        {
+          "ioc": "202.61.85.153:7811",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-16 06:25:10 UTC"
+        },
+        {
+          "ioc": "202.61.85.168:7800",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-16 06:00:19 UTC"
+        },
+        {
+          "ioc": "202.61.85.168:7811",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-16 06:00:14 UTC"
+        },
+        {
+          "ioc": "43.229.114.114:6669",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-14 02:15:09 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
+      "tag_hints": [
+        "RAT",
+        "ValleyRAT",
+        "valleyrat_s2"
+      ],
+      "description": null,
+      "associated_groups": []
+    },
+    {
       "family": "Mirai",
       "malware_id": "elf.mirai",
-      "ioc_count": 104,
+      "ioc_count": 82,
       "ioc_type_breakdown": {
+        "url": 10,
         "ip:port": 14,
         "domain": 3,
-        "sha256_hash": 82,
-        "url": 5
+        "sha256_hash": 55
       },
       "top_iocs": [
         {
@@ -994,227 +1159,19 @@
       "associated_groups": []
     },
     {
-      "family": "MacSync",
-      "malware_id": "osx.macsync",
-      "ioc_count": 102,
-      "ioc_type_breakdown": {
-        "domain": 11,
-        "url": 52,
-        "sha256_hash": 37,
-        "ip:port": 2
-      },
-      "top_iocs": [
-        {
-          "ioc": "genovaw.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:56:46 UTC"
-        },
-        {
-          "ioc": "https://genovaw.com/curl/001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:56:46 UTC"
-        },
-        {
-          "ioc": "https://genovaw.com/dynamic?txd=001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:56:46 UTC"
-        },
-        {
-          "ioc": "https://genovaw.com/loader/agent/001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-18 16:56:46 UTC"
-        },
-        {
-          "ioc": "fincoadvance.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 16:42:12 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.macsync",
-      "tag_hints": [
-        "ClickFix",
-        "MacSync",
-        "backdoor",
-        "macOS",
-        "reverse-tunnel",
-        "safeguard-build",
-        "seed-phrase-stealer"
-      ],
-      "description": "According to Zscaler, MacSync (also tracked as MacSync Stealer) is a macOS information stealer likely developed by a Russian-speaking threat actor, as evidenced by Russian-language comments found in its third-stage AppleScript payload. It is distributed through a multi-stage ClickFix campaign that abuses shared Claude chats, ultimately delivering the core stealer via osascript, which leaves no file trace on disk. Its capabilities include stealing keychain data, browser credentials, cookies, and autofill information from Chromium- and Gecko-based browsers, harvesting cryptocurrency wallet data (both browser extensions and desktop applications), and collecting sensitive files such as cloud keys, shell history, and high-value documents, all of which are compressed and exfiltrated in 10MB HTTP PUT chunks. The malware also implements persistence by appending a curl command to ~/.zshrc, prompts the user for full disk access, and may drop additional trojanized payloads targeting hardware-wallet users.",
-      "associated_groups": []
-    },
-    {
-      "family": "ValleyRAT",
-      "malware_id": "win.valley_rat",
-      "ioc_count": 96,
-      "ioc_type_breakdown": {
-        "sha256_hash": 24,
-        "sha1_hash": 24,
-        "md5_hash": 24,
-        "ip:port": 24
-      },
-      "top_iocs": [
-        {
-          "ioc": "202.61.85.153:7800",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-16 06:25:13 UTC"
-        },
-        {
-          "ioc": "202.61.85.153:7811",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-16 06:25:10 UTC"
-        },
-        {
-          "ioc": "202.61.85.168:7800",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-16 06:00:19 UTC"
-        },
-        {
-          "ioc": "202.61.85.168:7811",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-16 06:00:14 UTC"
-        },
-        {
-          "ioc": "43.229.114.114:6669",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 02:15:09 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
-      "tag_hints": [
-        "RAT",
-        "ValleyRAT",
-        "valleyrat_s2"
-      ],
-      "description": null,
-      "associated_groups": []
-    },
-    {
-      "family": "Aisuru",
-      "malware_id": "elf.aisuru",
-      "ioc_count": 91,
-      "ioc_type_breakdown": {
-        "ip:port": 91
-      },
-      "top_iocs": [
-        {
-          "ioc": "43.157.63.92:34567",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 05:05:33 UTC"
-        },
-        {
-          "ioc": "164.92.207.173:9034",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 05:04:35 UTC"
-        },
-        {
-          "ioc": "217.60.195.161:8001",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-17 14:13:39 UTC"
-        },
-        {
-          "ioc": "43.157.63.92:37215",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-17 14:13:37 UTC"
-        },
-        {
-          "ioc": "43.157.63.92:5555",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-17 13:30:43 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.aisuru",
-      "tag_hints": [
-        "AISURU",
-        "DDoS",
-        "Mirai",
-        "airashi",
-        "botnet",
-        "c2"
-      ],
-      "description": "Honeypot-aware variant of Mirai.",
-      "associated_groups": []
-    },
-    {
-      "family": "Quasar RAT",
-      "malware_id": "win.quasar_rat",
-      "ioc_count": 89,
-      "ioc_type_breakdown": {
-        "ip:port": 14,
-        "domain": 72,
-        "sha256_hash": 1,
-        "sha1_hash": 1,
-        "md5_hash": 1
-      },
-      "top_iocs": [
-        {
-          "ioc": "178.16.54.195:4782",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 09:05:05 UTC"
-        },
-        {
-          "ioc": "mb66.money",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:53:38 UTC"
-        },
-        {
-          "ioc": "mb669.win",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:53:37 UTC"
-        },
-        {
-          "ioc": "mb66d.pro",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:53:36 UTC"
-        },
-        {
-          "ioc": "mb661.click",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:53:35 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
-      "tag_hints": [
-        "QuasarRAT",
-        "RAT",
-        "quasar"
-      ],
-      "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
-      "associated_groups": [
-        "APT33",
-        "Dropping Elephant",
-        "Stone Panda",
-        "The Gorgon Group"
-      ]
-    },
-    {
       "family": "Jackskid",
       "malware_id": "elf.jackskid",
-      "ioc_count": 81,
+      "ioc_count": 82,
       "ioc_type_breakdown": {
-        "ip:port": 81
+        "ip:port": 82
       },
       "top_iocs": [
+        {
+          "ioc": "43.166.252.222:443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:47:21 UTC"
+        },
         {
           "ioc": "185.173.39.2:443",
           "type": "ip:port",
@@ -1238,12 +1195,6 @@
           "type": "ip:port",
           "confidence": 100,
           "first_seen": "2026-09-18 05:04:37 UTC"
-        },
-        {
-          "ioc": "77.232.42.76:443",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 05:04:36 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.jackskid",
@@ -1258,60 +1209,63 @@
       "associated_groups": []
     },
     {
-      "family": "Mozi",
-      "malware_id": "elf.mozi",
-      "ioc_count": 63,
+      "family": "Aisuru",
+      "malware_id": "elf.aisuru",
+      "ioc_count": 77,
       "ioc_type_breakdown": {
-        "url": 63
+        "ip:port": 77
       },
       "top_iocs": [
         {
-          "ioc": "http://43.230.94.186:58162/Mozi.m",
-          "type": "url",
-          "confidence": 75,
-          "first_seen": "2026-09-18 13:17:42 UTC"
+          "ioc": "167.71.45.235:8080",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 16:26:23 UTC"
         },
         {
-          "ioc": "http://153.117.34.135:48306/Mozi.a",
-          "type": "url",
-          "confidence": 75,
-          "first_seen": "2026-09-18 13:17:39 UTC"
+          "ioc": "178.62.118.210:8443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:51:11 UTC"
         },
         {
-          "ioc": "http://111.184.208.168:54288/Mozi.m",
-          "type": "url",
-          "confidence": 75,
-          "first_seen": "2026-09-18 06:54:55 UTC"
+          "ioc": "138.68.168.41:8001",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:47:26 UTC"
         },
         {
-          "ioc": "http://105.184.7.6:49853/Mozi.m",
-          "type": "url",
-          "confidence": 75,
-          "first_seen": "2026-09-18 06:54:55 UTC"
+          "ioc": "144.126.224.25:8001",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:47:25 UTC"
         },
         {
-          "ioc": "http://42.7.119.110:43491/Mozi.m",
-          "type": "url",
-          "confidence": 75,
-          "first_seen": "2026-09-18 05:05:20 UTC"
+          "ioc": "144.126.234.230:8001",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:47:25 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mozi",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.aisuru",
       "tag_hints": [
-        "IoT",
-        "Mozi",
-        "elf"
+        "AISURU",
+        "DDoS",
+        "Mirai",
+        "airashi",
+        "botnet",
+        "c2"
       ],
-      "description": "Mozi is a IoT botnet, that makes use of P2P for communication and reuses source code of other well-known malware families, including Gafgyt, Mirai, and IoT Reaper.",
+      "description": "Honeypot-aware variant of Mirai.",
       "associated_groups": []
     },
     {
       "family": "XWorm",
       "malware_id": "win.xworm",
-      "ioc_count": 60,
+      "ioc_count": 73,
       "ioc_type_breakdown": {
-        "domain": 28,
-        "ip:port": 22,
+        "domain": 35,
+        "ip:port": 28,
         "md5_hash": 3,
         "sha256_hash": 3,
         "sha1_hash": 3,
@@ -1319,34 +1273,34 @@
       },
       "top_iocs": [
         {
-          "ioc": "vla.tcptunnel.su",
+          "ioc": "tyyyy-50833.portmap.host",
           "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-17 20:54:50 UTC"
+          "first_seen": "2026-09-18 18:21:49 UTC"
         },
         {
-          "ioc": "Azx19-45876.portmap.host",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:54:49 UTC"
-        },
-        {
-          "ioc": "britsygomez90901002.duckdns.org",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:54:45 UTC"
-        },
-        {
-          "ioc": "tissues-carers.tun.ply.gg",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 20:54:44 UTC"
-        },
-        {
-          "ioc": "31.57.97.111:5555",
+          "ioc": "195.177.94.91:6000",
           "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-17 20:54:44 UTC"
+          "first_seen": "2026-09-18 18:21:48 UTC"
+        },
+        {
+          "ioc": "jxjdhjdx-61930.portmap.host",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:21:47 UTC"
+        },
+        {
+          "ioc": "31.6.50.206:2002",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:21:46 UTC"
+        },
+        {
+          "ioc": "143.92.51.33:443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-18 18:21:43 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
@@ -1360,59 +1314,59 @@
       ]
     },
     {
-      "family": "WannaCryptor",
-      "malware_id": "win.wannacryptor",
-      "ioc_count": 51,
+      "family": "Mozi",
+      "malware_id": "elf.mozi",
+      "ioc_count": 64,
       "ioc_type_breakdown": {
-        "sha1_hash": 17,
-        "md5_hash": 17,
-        "sha256_hash": 17
+        "url": 64
       },
       "top_iocs": [
         {
-          "ioc": "c4ec1fdfbb4906014c279483b2478baf263134a3",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-16 00:33:50 UTC"
+          "ioc": "http://39.34.191.107:42078/Mozi.m",
+          "type": "url",
+          "confidence": 75,
+          "first_seen": "2026-09-19 15:47:20 UTC"
         },
         {
-          "ioc": "ea3d8bf23d059bf3e626583045dd48a0",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-16 00:33:50 UTC"
+          "ioc": "http://103.249.199.1:35620/Mozi.m",
+          "type": "url",
+          "confidence": 75,
+          "first_seen": "2026-09-19 15:47:20 UTC"
         },
         {
-          "ioc": "d76f7b5a55ef8f6db63f62a3e83646d57d50677267ab316909122b2ae716eb90",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-16 00:33:49 UTC"
+          "ioc": "http://100.165.12.219:42975/Mozi.m",
+          "type": "url",
+          "confidence": 75,
+          "first_seen": "2026-09-19 15:47:19 UTC"
         },
         {
-          "ioc": "754c6de7387dc7c44dbd765d82658d4e",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-16 00:33:46 UTC"
+          "ioc": "http://203.99.56.137:36975/Mozi.m",
+          "type": "url",
+          "confidence": 75,
+          "first_seen": "2026-09-19 06:25:38 UTC"
         },
         {
-          "ioc": "e9d7cf3afe8cf7cbf806e39ce528648ea9bb5aa64b0d1b2fc4d2ec3fe92f294b",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-16 00:33:45 UTC"
+          "ioc": "http://223.123.125.178:38438/Mozi.m",
+          "type": "url",
+          "confidence": 75,
+          "first_seen": "2026-09-19 06:25:36 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.wannacryptor",
-      "tag_hints": [],
-      "description": "WannaCry is ransomware that contains a worm component enabled by the EternalBlue exploit. It attempts to use vulnerabilities in the Windows SMBv1 server to remotely compromise systems, encrypt files, and spread to other hosts. Systems that have installed the MS17-010 patch are not vulnerable to the exploits used. The spreading was stopped about 8 hours after initial outbreak due to triggering a kill switch domain.",
-      "associated_groups": [
-        "Lazarus Group"
-      ]
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mozi",
+      "tag_hints": [
+        "IoT",
+        "Mozi",
+        "elf"
+      ],
+      "description": "Mozi is a IoT botnet, that makes use of P2P for communication and reuses source code of other well-known malware families, including Gafgyt, Mirai, and IoT Reaper.",
+      "associated_groups": []
     },
     {
       "family": "Sliver",
       "malware_id": "win.sliver",
-      "ioc_count": 51,
+      "ioc_count": 49,
       "ioc_type_breakdown": {
-        "ip:port": 51
+        "ip:port": 49
       },
       "top_iocs": [
         {
@@ -1422,18 +1376,6 @@
           "first_seen": "2026-09-14 09:44:47 UTC"
         },
         {
-          "ioc": "68.178.202.150:40056",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-12 09:47:25 UTC"
-        },
-        {
-          "ioc": "68.178.205.17:40056",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-12 09:47:25 UTC"
-        },
-        {
           "ioc": "43.156.184.213:31337",
           "type": "ip:port",
           "confidence": 50,
@@ -1441,6 +1383,18 @@
         },
         {
           "ioc": "151.243.126.22:31337",
+          "type": "ip:port",
+          "confidence": 50,
+          "first_seen": "2026-09-14 11:14:00 UTC"
+        },
+        {
+          "ioc": "209.74.72.248:31337",
+          "type": "ip:port",
+          "confidence": 50,
+          "first_seen": "2026-09-14 11:14:00 UTC"
+        },
+        {
+          "ioc": "192.110.167.180:31337",
           "type": "ip:port",
           "confidence": 50,
           "first_seen": "2026-09-14 11:14:00 UTC"
@@ -1505,9 +1459,9 @@
     {
       "family": "DCRat",
       "malware_id": "win.dcrat",
-      "ioc_count": 45,
+      "ioc_count": 47,
       "ioc_type_breakdown": {
-        "ip:port": 42,
+        "ip:port": 44,
         "url": 1,
         "domain": 2
       },
@@ -1554,11 +1508,59 @@
       "associated_groups": []
     },
     {
+      "family": "WannaCryptor",
+      "malware_id": "win.wannacryptor",
+      "ioc_count": 42,
+      "ioc_type_breakdown": {
+        "md5_hash": 14,
+        "sha256_hash": 14,
+        "sha1_hash": 14
+      },
+      "top_iocs": [
+        {
+          "ioc": "b000bf75dea341762cae37ba3cad28cf",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-18 17:21:21 UTC"
+        },
+        {
+          "ioc": "aeedfc2ccefd82ddb3854277e0dac4839e260bd380871f1c30ace052c4b80ee9",
+          "type": "sha256_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-18 17:21:20 UTC"
+        },
+        {
+          "ioc": "adbb7a349d2c42027b618f424fc8e65de7fe3a26",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-18 17:21:20 UTC"
+        },
+        {
+          "ioc": "c4ec1fdfbb4906014c279483b2478baf263134a3",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-16 00:33:50 UTC"
+        },
+        {
+          "ioc": "ea3d8bf23d059bf3e626583045dd48a0",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-16 00:33:50 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.wannacryptor",
+      "tag_hints": [],
+      "description": "WannaCry is ransomware that contains a worm component enabled by the EternalBlue exploit. It attempts to use vulnerabilities in the Windows SMBv1 server to remotely compromise systems, encrypt files, and spread to other hosts. Systems that have installed the MS17-010 patch are not vulnerable to the exploits used. The spreading was stopped about 8 hours after initial outbreak due to triggering a kill switch domain.",
+      "associated_groups": [
+        "Lazarus Group"
+      ]
+    },
+    {
       "family": "AdaptixC2",
       "malware_id": "win.adaptix_c2",
-      "ioc_count": 40,
+      "ioc_count": 38,
       "ioc_type_breakdown": {
-        "ip:port": 39,
+        "ip:port": 37,
         "sha256_hash": 1
       },
       "top_iocs": [
@@ -1608,9 +1610,9 @@
     {
       "family": "Havoc",
       "malware_id": "win.havoc",
-      "ioc_count": 35,
+      "ioc_count": 32,
       "ioc_type_breakdown": {
-        "ip:port": 35
+        "ip:port": 32
       },
       "top_iocs": [
         {
@@ -1653,66 +1655,78 @@
       "associated_groups": []
     },
     {
-      "family": "Agent Tesla",
-      "malware_id": "win.agent_tesla",
-      "ioc_count": 33,
+      "family": "CECbot",
+      "malware_id": "apk.cecbot",
+      "ioc_count": 30,
       "ioc_type_breakdown": {
-        "domain": 18,
-        "md5_hash": 5,
-        "sha256_hash": 5,
-        "sha1_hash": 5
+        "domain": 7,
+        "ip:port": 23
       },
       "top_iocs": [
         {
-          "ioc": "ftp.sequences.digital",
+          "ioc": "iwonderifulovemeaswell.vg",
           "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-13 19:07:29 UTC"
+          "first_seen": "2026-09-19 05:39:35 UTC"
         },
         {
-          "ioc": "a4f4aa29e5eebbdb1e86466b1c55976a",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-14 12:31:57 UTC"
+          "ioc": "lovefromallareas.at",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:39:35 UTC"
         },
         {
-          "ioc": "a4c4f0a300ce5aad85f93edd5c07b9d11947b97a3a9b3da51d024310bfe2d7de",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-14 12:31:56 UTC"
+          "ioc": "iloveuevenifudontlovemeback.is",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:39:35 UTC"
         },
         {
-          "ioc": "a5f6bc78dcd96938972b1199e5d6924e83fed9e4",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-14 12:31:56 UTC"
+          "ioc": "217.60.103.96:6969",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-18 13:17:43 UTC"
         },
         {
-          "ioc": "1406c0b27cbb8d9b4d50e4eef4d5d1992a8fd566",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-13 18:53:06 UTC"
+          "ioc": "64.89.160.15:6969",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-18 13:17:43 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/apk.cecbot",
       "tag_hints": [
-        "AgentTesla"
+        "Android",
+        "CECbot",
+        "DDoS",
+        "botnet"
       ],
-      "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
-      "associated_groups": [
-        "SWEED"
-      ]
+      "description": null,
+      "associated_groups": []
     },
     {
       "family": "Coinminer",
       "malware_id": "win.coinminer",
-      "ioc_count": 27,
+      "ioc_count": 26,
       "ioc_type_breakdown": {
-        "sha256_hash": 13,
-        "sha1_hash": 7,
-        "md5_hash": 7
+        "url": 5,
+        "sha256_hash": 11,
+        "sha1_hash": 5,
+        "md5_hash": 5
       },
       "top_iocs": [
+        {
+          "ioc": "http://178.198.246.24/info.zip",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-19 16:35:11 UTC"
+        },
+        {
+          "ioc": "http://177.70.102.232:8070/TmpFTP/01/Inutiliza%C3%A7%C3%A3o/2019-12-19/info.zip",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-19 15:47:04 UTC"
+        },
         {
           "ioc": "17e7f0170795c2e704077570333a1f0985b190c016d372d6b70a41e170302cdb",
           "type": "sha256_hash",
@@ -1730,18 +1744,6 @@
           "type": "sha256_hash",
           "confidence": 100,
           "first_seen": "2026-09-15 13:47:16 UTC"
-        },
-        {
-          "ioc": "35c226d7a959c858a6c0f91215a949371d60210939154d5e63d782ebb02680fe",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-15 13:47:15 UTC"
-        },
-        {
-          "ioc": "ae00173d00f74bf65aa244ebf3885ae72c264162b6945af09c1eb7360ba45c44",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-14 06:00:16 UTC"
         }
       ],
       "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
@@ -1755,106 +1757,6 @@
         "zip"
       ],
       "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
-      "associated_groups": []
-    },
-    {
-      "family": "CECbot",
-      "malware_id": "apk.cecbot",
-      "ioc_count": 27,
-      "ioc_type_breakdown": {
-        "ip:port": 23,
-        "domain": 4
-      },
-      "top_iocs": [
-        {
-          "ioc": "217.60.103.96:6969",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 13:17:43 UTC"
-        },
-        {
-          "ioc": "64.89.160.15:6969",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 13:17:43 UTC"
-        },
-        {
-          "ioc": "94.154.43.235:6969",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 13:17:42 UTC"
-        },
-        {
-          "ioc": "62.60.226.173:10213",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 13:17:38 UTC"
-        },
-        {
-          "ioc": "130.12.181.199:8443",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 11:06:21 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/apk.cecbot",
-      "tag_hints": [
-        "Android",
-        "CECbot",
-        "DDoS",
-        "botnet"
-      ],
-      "description": null,
-      "associated_groups": []
-    },
-    {
-      "family": "ACR Stealer",
-      "malware_id": "win.acr_stealer",
-      "ioc_count": 26,
-      "ioc_type_breakdown": {
-        "domain": 11,
-        "sha256_hash": 5,
-        "sha1_hash": 5,
-        "md5_hash": 5
-      },
-      "top_iocs": [
-        {
-          "ioc": "matie-bal.club",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-15 06:59:41 UTC"
-        },
-        {
-          "ioc": "logs.primebyte.cc",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-14 06:20:03 UTC"
-        },
-        {
-          "ioc": "mail.novaform.cc",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-14 06:18:59 UTC"
-        },
-        {
-          "ioc": "kaliop-weda.club",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-13 18:41:42 UTC"
-        },
-        {
-          "ioc": "tulipstone.cc",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-13 13:00:44 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
-      "tag_hints": [
-        "ACRStealer",
-        "ClearFake"
-      ],
-      "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
       "associated_groups": []
     },
     {
@@ -1914,127 +1816,119 @@
       ]
     },
     {
-      "family": "Stealc",
-      "malware_id": "win.stealc",
+      "family": "Evilginx",
+      "malware_id": "elf.evilginx",
       "ioc_count": 21,
       "ioc_type_breakdown": {
-        "sha1_hash": 4,
-        "md5_hash": 4,
-        "sha256_hash": 6,
-        "url": 6,
-        "ip:port": 1
+        "ip:port": 15,
+        "url": 6
       },
       "top_iocs": [
         {
-          "ioc": "http://31.77.228.203/",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-17 05:41:56 UTC"
-        },
-        {
-          "ioc": "http://91.92.242.57/",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-17 05:41:36 UTC"
-        },
-        {
-          "ioc": "http://46.29.26.45/",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-16 15:07:01 UTC"
-        },
-        {
-          "ioc": "193.178.158.55:80",
+          "ioc": "209.74.86.250:8443",
           "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 07:05:05 UTC"
+          "confidence": 75,
+          "first_seen": "2026-09-18 19:44:57 UTC"
         },
         {
-          "ioc": "http://144.124.237.64/",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-14 06:10:45 UTC"
+          "ioc": "185.212.128.32:9000",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-18 19:44:21 UTC"
+        },
+        {
+          "ioc": "157.230.7.115:8443",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-18 19:43:53 UTC"
+        },
+        {
+          "ioc": "20.175.26.173:9000",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-17 19:45:12 UTC"
+        },
+        {
+          "ioc": "94.183.235.121:5000",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-17 09:48:49 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.evilginx",
       "tag_hints": [
-        "10x09x2026",
-        "Loader",
-        "New",
-        "Stealc",
+        "EvilGinx",
+        "EvilGoPhish",
+        "URLscan",
         "c2",
-        "dddd22",
-        "exe",
-        "hurimurib3",
-        "mix5",
-        "stealer"
+        "drb-ra"
       ],
-      "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
+      "description": "According to the author, Evilginx is a standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication.",
       "associated_groups": []
     },
     {
-      "family": "Nanocore RAT",
-      "malware_id": "win.nanocore",
-      "ioc_count": 21,
+      "family": "Unknown RAT",
+      "malware_id": "unknown_rat",
+      "ioc_count": 18,
       "ioc_type_breakdown": {
-        "sha1_hash": 5,
-        "md5_hash": 5,
-        "sha256_hash": 5,
-        "domain": 5,
-        "ip:port": 1
+        "ip:port": 5,
+        "domain": 11,
+        "url": 2
       },
       "top_iocs": [
         {
-          "ioc": "34.76.205.124:443",
+          "ioc": "155.254.99.109:8041",
           "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-12 14:25:03 UTC"
+          "first_seen": "2026-09-18 11:57:30 UTC"
         },
         {
-          "ioc": "f50e7af2e1b0b234bae872a70c325048234e05a0",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:50:48 UTC"
+          "ioc": "churchoflife.io",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 11:56:55 UTC"
         },
         {
-          "ioc": "1b8155a20f71952cf3c0fefa4db1bebf",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:50:48 UTC"
+          "ioc": "rmm.smartscreen.lifestyle",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-17 13:17:08 UTC"
         },
         {
-          "ioc": "277ed20b7ad7f6c3c8c5285f386e46b4",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:50:47 UTC"
+          "ioc": "krisannly.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-16 06:24:53 UTC"
         },
         {
-          "ioc": "b6abd2ecd767bc7239a699a89be078aec85d8f680c54f3a2c5068494c57d4ae1",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:50:47 UTC"
+          "ioc": "relay.miranarts-top.cc",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-13 19:50:29 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.nanocore",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
       "tag_hints": [
-        "NanoCore",
+        "ConnectWise",
+        "MiniRMM",
         "RAT",
-        "c2"
+        "ScreenConnect",
+        "SeroRAT",
+        "c2",
+        "meshagent",
+        "rmm"
       ],
-      "description": "Nanocore is a Remote Access Tool used to steal credentials and to spy on cameras. It as been used for a while by numerous criminal actors as well as by nation state threat actors.",
-      "associated_groups": [
-        "APT33",
-        "The Gorgon Group"
-      ]
+      "description": null,
+      "associated_groups": []
     },
     {
       "family": "NetWire RC",
       "malware_id": "win.netwire",
-      "ioc_count": 21,
+      "ioc_count": 18,
       "ioc_type_breakdown": {
-        "md5_hash": 7,
-        "sha1_hash": 7,
-        "sha256_hash": 7
+        "md5_hash": 6,
+        "sha1_hash": 6,
+        "sha256_hash": 6
       },
       "top_iocs": [
         {
@@ -2074,103 +1968,6 @@
       "associated_groups": [
         "APT33"
       ]
-    },
-    {
-      "family": "Venus Stealer",
-      "malware_id": "py.venus_stealer",
-      "ioc_count": 21,
-      "ioc_type_breakdown": {
-        "md5_hash": 7,
-        "sha256_hash": 7,
-        "sha1_hash": 7
-      },
-      "top_iocs": [
-        {
-          "ioc": "71b98686e02e0f5317cbe2b1e2856d69",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-14 12:33:09 UTC"
-        },
-        {
-          "ioc": "8923aca5091d95b50052efcafe757a243462be44bb17f0c6323db74cdb59ae07",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-14 12:33:08 UTC"
-        },
-        {
-          "ioc": "0d5cb8ee597faa909d355429317a95a7e58ea746",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-14 12:33:08 UTC"
-        },
-        {
-          "ioc": "922e98fd7b17cc32299137e537d072faadc1913f",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:05 UTC"
-        },
-        {
-          "ioc": "26814f84f86496ca3915c79ff102e343",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:05 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/py.venus_stealer",
-      "tag_hints": [],
-      "description": "Venus Stealer is a python based Infostealer observed early 2023.",
-      "associated_groups": []
-    },
-    {
-      "family": "Evilginx",
-      "malware_id": "elf.evilginx",
-      "ioc_count": 20,
-      "ioc_type_breakdown": {
-        "ip:port": 14,
-        "url": 6
-      },
-      "top_iocs": [
-        {
-          "ioc": "20.175.26.173:9000",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-17 19:45:12 UTC"
-        },
-        {
-          "ioc": "94.183.235.121:5000",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-17 09:48:49 UTC"
-        },
-        {
-          "ioc": "159.198.32.64:8443",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-17 09:44:19 UTC"
-        },
-        {
-          "ioc": "185.212.128.32:80",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-16 19:44:40 UTC"
-        },
-        {
-          "ioc": "66.29.134.188:8443",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-16 09:47:44 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.evilginx",
-      "tag_hints": [
-        "EvilGinx",
-        "EvilGoPhish",
-        "URLscan",
-        "c2",
-        "drb-ra"
-      ],
-      "description": "According to the author, Evilginx is a standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication.",
-      "associated_groups": []
     },
     {
       "family": "Phorpiex",
@@ -2219,272 +2016,55 @@
       "associated_groups": []
     },
     {
-      "family": "Bashlite",
-      "malware_id": "elf.bashlite",
-      "ioc_count": 17,
-      "ioc_type_breakdown": {
-        "ip:port": 2,
-        "sha256_hash": 15
-      },
-      "top_iocs": [
-        {
-          "ioc": "91.92.35.7:6969",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 14:14:56 UTC"
-        },
-        {
-          "ioc": "bc77970b42b8b065a4c268c9b25249c112f7b29c23a908743a0c29b1f9f80364",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-13 06:34:15 UTC"
-        },
-        {
-          "ioc": "b738dccd894597da51ae8775f07c873892582fb6fe492bc3e3eb71b75b96d263",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-13 06:33:56 UTC"
-        },
-        {
-          "ioc": "d1c9456ab7f3f28479b8d7db4c375db82d0d8a0b044e39f490895ed72336460b",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-13 06:33:56 UTC"
-        },
-        {
-          "ioc": "ab78c81419d8bf371c48f65011e031ba9a6c0c134a66eedf49e045a51f3587cc",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-12 07:29:16 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.bashlite",
-      "tag_hints": [
-        "Bashlite",
-        "Gafgyt",
-        "Mirai",
-        "elf",
-        "wraith"
-      ],
-      "description": "Bashlite is a malware family which infects Linux systems in order to launch distributed denial-of-service attacks (DDoS). Originally it was also known under the name Bashdoor, but this term now refers to the exploit method used by the malware. It has been used to launch attacks of up to 400 Gbps.",
-      "associated_groups": []
-    },
-    {
-      "family": "Unknown RAT",
-      "malware_id": "unknown_rat",
-      "ioc_count": 17,
-      "ioc_type_breakdown": {
-        "ip:port": 4,
-        "domain": 11,
-        "url": 2
-      },
-      "top_iocs": [
-        {
-          "ioc": "155.254.99.109:8041",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-18 11:57:30 UTC"
-        },
-        {
-          "ioc": "churchoflife.io",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-18 11:56:55 UTC"
-        },
-        {
-          "ioc": "rmm.smartscreen.lifestyle",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 13:17:08 UTC"
-        },
-        {
-          "ioc": "krisannly.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-16 06:24:53 UTC"
-        },
-        {
-          "ioc": "relay.miranarts-top.cc",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-13 19:50:29 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
-      "tag_hints": [
-        "ConnectWise",
-        "MiniRMM",
-        "ScreenConnect",
-        "c2",
-        "meshagent",
-        "rmm"
-      ],
-      "description": null,
-      "associated_groups": []
-    },
-    {
-      "family": "Ghost RAT",
-      "malware_id": "win.ghost_rat",
+      "family": "Agent Tesla",
+      "malware_id": "win.agent_tesla",
       "ioc_count": 16,
       "ioc_type_breakdown": {
-        "sha1_hash": 4,
+        "domain": 4,
         "md5_hash": 4,
         "sha256_hash": 4,
-        "domain": 1,
-        "ip:port": 3
+        "sha1_hash": 4
       },
       "top_iocs": [
         {
-          "ioc": "mm.tgoodluck.xyz",
+          "ioc": "ftp.sequences.digital",
           "type": "domain",
           "confidence": 100,
-          "first_seen": "2026-09-14 13:58:44 UTC"
+          "first_seen": "2026-09-13 19:07:29 UTC"
         },
         {
-          "ioc": "103.124.101.68:80",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 13:35:11 UTC"
-        },
-        {
-          "ioc": "198.23.185.239:80",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 12:15:07 UTC"
-        },
-        {
-          "ioc": "0a833212452c5cc772becb7b4e7751f1efa5ea48",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:50:59 UTC"
-        },
-        {
-          "ioc": "09f1709d2b6ef921ba1b90e638a37080",
+          "ioc": "a4f4aa29e5eebbdb1e86466b1c55976a",
           "type": "md5_hash",
           "confidence": 95,
-          "first_seen": "2026-09-17 14:50:59 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.ghost_rat",
-      "tag_hints": [
-        "GHOST",
-        "Gh0st",
-        "Gh0stRAT",
-        "RAT",
-        "c2",
-        "shodan"
-      ],
-      "description": "According to Security Ninja, Gh0st RAT (Remote Access Terminal) is a trojan \u201cRemote Access Tool\u201d used on Windows platforms, and has been used to hack into some of the most sensitive computer networks on Earth.\r\n\r\nBelow is a list of Gh0st RAT capabilities.\r\nTake full control of the remote screen on the infected bot.\r\nProvide real time as well as offline keystroke logging.\r\nProvide live feed of webcam, microphone of infected host.\r\nDownload remote binaries on the infected remote host.\r\nTake control of remote shutdown and reboot of host.\r\nDisable infected computer remote pointer and keyboard input.\r\nEnter into shell of remote infected host with full control.\r\nProvide a list of all the active processes.\r\nClear all existing SSDT of all existing hooks.",
-      "associated_groups": [
-        "EMISSARY PANDA",
-        "Hurricane Panda",
-        "Lazarus Group",
-        "Leviathan",
-        "Red Menshen",
-        "Stone Panda"
-      ]
-    },
-    {
-      "family": "CrossRAT",
-      "malware_id": "jar.crossrat",
-      "ioc_count": 15,
-      "ioc_type_breakdown": {
-        "sha1_hash": 5,
-        "md5_hash": 5,
-        "sha256_hash": 5
-      },
-      "top_iocs": [
-        {
-          "ioc": "3a7d43913b70b5cb6543f007b33d7c2547d08019",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:51:09 UTC"
+          "first_seen": "2026-09-14 12:31:57 UTC"
         },
         {
-          "ioc": "0958ba3a7e13502ab3582b76c42b0af3",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-17 14:51:09 UTC"
-        },
-        {
-          "ioc": "c07fc51b54d37857ee131eb9a698fff42dbb9460abc9b0103e04a20d51851d15",
+          "ioc": "a4c4f0a300ce5aad85f93edd5c07b9d11947b97a3a9b3da51d024310bfe2d7de",
           "type": "sha256_hash",
           "confidence": 95,
-          "first_seen": "2026-09-17 14:51:08 UTC"
+          "first_seen": "2026-09-14 12:31:56 UTC"
         },
         {
-          "ioc": "a51a18b3908126f1f1c11895e92c1d65230903be",
+          "ioc": "a5f6bc78dcd96938972b1199e5d6924e83fed9e4",
           "type": "sha1_hash",
           "confidence": 95,
-          "first_seen": "2026-09-16 00:33:53 UTC"
+          "first_seen": "2026-09-14 12:31:56 UTC"
         },
         {
-          "ioc": "895e427449556e15d357670e9e499dcb",
-          "type": "md5_hash",
+          "ioc": "1406c0b27cbb8d9b4d50e4eef4d5d1992a8fd566",
+          "type": "sha1_hash",
           "confidence": 95,
-          "first_seen": "2026-09-16 00:33:53 UTC"
+          "first_seen": "2026-09-13 18:53:06 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/jar.crossrat",
-      "tag_hints": [],
-      "description": null,
-      "associated_groups": [
-        "Dark Caracal"
-      ]
-    },
-    {
-      "family": "XMRIG",
-      "malware_id": "elf.xmrig",
-      "ioc_count": 15,
-      "ioc_type_breakdown": {
-        "url": 3,
-        "ip:port": 12
-      },
-      "top_iocs": [
-        {
-          "ioc": "194.116.236.129:53",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-12 20:28:46 UTC"
-        },
-        {
-          "ioc": "156.229.165.166:53",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-12 20:28:46 UTC"
-        },
-        {
-          "ioc": "107.175.114.96:443",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-12 20:28:45 UTC"
-        },
-        {
-          "ioc": "216.9.226.82:443",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-12 20:28:45 UTC"
-        },
-        {
-          "ioc": "194.116.236.129:443",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-12 20:28:45 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.xmrig",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
       "tag_hints": [
-        "CoinMiner",
-        "MFB_Threat_Labs",
-        "go-bot",
-        "honeypot",
-        "mdrfckr",
-        "outlaw",
-        "ssh-bruteforce",
-        "xmrig"
+        "AgentTesla"
       ],
-      "description": null,
-      "associated_groups": []
+      "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
+      "associated_groups": [
+        "SWEED"
+      ]
     },
     {
       "family": "Formbook",
@@ -2585,52 +2165,56 @@
       "associated_groups": []
     },
     {
-      "family": "SmartApeSG",
-      "malware_id": "js.smartapesg",
+      "family": "xmrig",
+      "malware_id": "win.xmrig",
       "ioc_count": 13,
       "ioc_type_breakdown": {
-        "domain": 7,
-        "url": 6
+        "ip:port": 3,
+        "url": 7,
+        "sha256_hash": 3
       },
       "top_iocs": [
         {
-          "ioc": "sallowcloister.co",
-          "type": "domain",
+          "ioc": "80.74.30.4:8765",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-18 11:13:29 UTC"
+          "first_seen": "2026-09-19 05:52:35 UTC"
         },
         {
-          "ioc": "https://sallowcloister.co/settings/secure-script.js",
+          "ioc": "193.181.209.137:8765",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:34 UTC"
+        },
+        {
+          "ioc": "http://80.74.30.4:3000/sparky/comfyui-utils.git",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-18 11:13:07 UTC"
+          "first_seen": "2026-09-19 05:52:34 UTC"
         },
         {
-          "ioc": "https://aspentraverse.co/status/version-sessionstore.js",
+          "ioc": "208.167.233.7:80",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:32 UTC"
+        },
+        {
+          "ioc": "http://165.245.138.247:81/private/rigel-win.zip",
           "type": "url",
           "confidence": 100,
-          "first_seen": "2026-09-17 23:19:13 UTC"
-        },
-        {
-          "ioc": "aspentraverse.co",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 23:18:48 UTC"
-        },
-        {
-          "ioc": "https://yewanthology.co/rate/settings-compiler.js",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-16 16:28:58 UTC"
+          "first_seen": "2026-09-19 05:52:31 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xmrig",
       "tag_hints": [
-        "ClickFix",
-        "SmartApeSG",
-        "compromised-website"
+        "botnet",
+        "comfyui",
+        "cryptojacking",
+        "monero",
+        "sparky",
+        "xmrig"
       ],
-      "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
+      "description": "According to PCrisk, XMRIG is a completely legitimate open-source application that utilizes system CPUs to mine Monero cryptocurrency. Unfortunately, criminals generate revenue by infiltrating this app into systems without users' consent. This deceptive marketing method is called \"bundling\".\r\n\r\nIn most cases, \"bundling\" is used to infiltrate several potentially unwanted programs (PUAs) at once. So, there is a high probability that XMRIG Virus came with a number of adware-type applications that deliver intrusive ads and gather sensitive information.",
       "associated_groups": []
     },
     {
@@ -2690,6 +2274,266 @@
       ]
     },
     {
+      "family": "SmartApeSG",
+      "malware_id": "js.smartapesg",
+      "ioc_count": 12,
+      "ioc_type_breakdown": {
+        "domain": 6,
+        "url": 6
+      },
+      "top_iocs": [
+        {
+          "ioc": "sallowcloister.co",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-18 11:13:29 UTC"
+        },
+        {
+          "ioc": "https://sallowcloister.co/settings/secure-script.js",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-18 11:13:07 UTC"
+        },
+        {
+          "ioc": "https://aspentraverse.co/status/version-sessionstore.js",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-17 23:19:13 UTC"
+        },
+        {
+          "ioc": "aspentraverse.co",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-17 23:18:48 UTC"
+        },
+        {
+          "ioc": "https://yewanthology.co/rate/settings-compiler.js",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-16 16:28:58 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.smartapesg",
+      "tag_hints": [
+        "ClickFix",
+        "SmartApeSG",
+        "compromised-website"
+      ],
+      "description": "According to Proofpoint, this is a cluster of fake update campaigns delivering payloads like NetSupportManager RAT and Lumma Stealer.",
+      "associated_groups": []
+    },
+    {
+      "family": "Stealc",
+      "malware_id": "win.stealc",
+      "ioc_count": 12,
+      "ioc_type_breakdown": {
+        "sha1_hash": 2,
+        "md5_hash": 2,
+        "sha256_hash": 2,
+        "url": 5,
+        "ip:port": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "http://31.77.228.203/",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-17 05:41:56 UTC"
+        },
+        {
+          "ioc": "http://91.92.242.57/",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-17 05:41:36 UTC"
+        },
+        {
+          "ioc": "http://46.29.26.45/",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-16 15:07:01 UTC"
+        },
+        {
+          "ioc": "193.178.158.55:80",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-14 07:05:05 UTC"
+        },
+        {
+          "ioc": "http://144.124.237.64/",
+          "type": "url",
+          "confidence": 100,
+          "first_seen": "2026-09-14 06:10:45 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
+      "tag_hints": [
+        "Loader",
+        "New",
+        "Stealc",
+        "c2",
+        "dddd22",
+        "hurimurib3",
+        "mix5",
+        "stealer"
+      ],
+      "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
+      "associated_groups": []
+    },
+    {
+      "family": "ACR Stealer",
+      "malware_id": "win.acr_stealer",
+      "ioc_count": 12,
+      "ioc_type_breakdown": {
+        "domain": 6,
+        "sha256_hash": 2,
+        "sha1_hash": 2,
+        "md5_hash": 2
+      },
+      "top_iocs": [
+        {
+          "ioc": "matie-bal.club",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-15 06:59:41 UTC"
+        },
+        {
+          "ioc": "logs.primebyte.cc",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-14 06:20:03 UTC"
+        },
+        {
+          "ioc": "mail.novaform.cc",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-14 06:18:59 UTC"
+        },
+        {
+          "ioc": "kaliop-weda.club",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-13 18:41:42 UTC"
+        },
+        {
+          "ioc": "tulipstone.cc",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-13 13:00:44 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
+      "tag_hints": [
+        "ACRStealer",
+        "ClearFake"
+      ],
+      "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
+      "associated_groups": []
+    },
+    {
+      "family": "Nanocore RAT",
+      "malware_id": "win.nanocore",
+      "ioc_count": 11,
+      "ioc_type_breakdown": {
+        "sha1_hash": 2,
+        "md5_hash": 2,
+        "sha256_hash": 2,
+        "domain": 5
+      },
+      "top_iocs": [
+        {
+          "ioc": "f50e7af2e1b0b234bae872a70c325048234e05a0",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:48 UTC"
+        },
+        {
+          "ioc": "1b8155a20f71952cf3c0fefa4db1bebf",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:48 UTC"
+        },
+        {
+          "ioc": "277ed20b7ad7f6c3c8c5285f386e46b4",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:47 UTC"
+        },
+        {
+          "ioc": "b6abd2ecd767bc7239a699a89be078aec85d8f680c54f3a2c5068494c57d4ae1",
+          "type": "sha256_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:47 UTC"
+        },
+        {
+          "ioc": "5bae05459ea65a55a7d5fe94b19ef14297ea7ba589a35bdaca79a04934657724",
+          "type": "sha256_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:46 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.nanocore",
+      "tag_hints": [
+        "NanoCore",
+        "c2"
+      ],
+      "description": "Nanocore is a Remote Access Tool used to steal credentials and to spy on cameras. It as been used for a while by numerous criminal actors as well as by nation state threat actors.",
+      "associated_groups": [
+        "APT33",
+        "The Gorgon Group"
+      ]
+    },
+    {
+      "family": "XMRIG",
+      "malware_id": "elf.xmrig",
+      "ioc_count": 11,
+      "ioc_type_breakdown": {
+        "url": 3,
+        "ip:port": 8
+      },
+      "top_iocs": [
+        {
+          "ioc": "194.116.236.129:53",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-12 20:28:46 UTC"
+        },
+        {
+          "ioc": "156.229.165.166:53",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-12 20:28:46 UTC"
+        },
+        {
+          "ioc": "107.175.114.96:443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-12 20:28:45 UTC"
+        },
+        {
+          "ioc": "216.9.226.82:443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-12 20:28:45 UTC"
+        },
+        {
+          "ioc": "194.116.236.129:443",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-12 20:28:45 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.xmrig",
+      "tag_hints": [
+        "CoinMiner",
+        "MFB_Threat_Labs",
+        "honeypot",
+        "mdrfckr",
+        "xmrig"
+      ],
+      "description": null,
+      "associated_groups": []
+    },
+    {
       "family": "MASS Logger",
       "malware_id": "win.masslogger",
       "ioc_count": 11,
@@ -2739,102 +2583,209 @@
       "associated_groups": []
     },
     {
-      "family": "SalatStealer",
-      "malware_id": "win.salatstealer",
+      "family": "Ghost RAT",
+      "malware_id": "win.ghost_rat",
       "ioc_count": 10,
       "ioc_type_breakdown": {
-        "sha256_hash": 4,
+        "sha1_hash": 2,
+        "md5_hash": 2,
+        "sha256_hash": 2,
+        "domain": 1,
+        "ip:port": 3
+      },
+      "top_iocs": [
+        {
+          "ioc": "mm.tgoodluck.xyz",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-14 13:58:44 UTC"
+        },
+        {
+          "ioc": "103.124.101.68:80",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-14 13:35:11 UTC"
+        },
+        {
+          "ioc": "198.23.185.239:80",
+          "type": "ip:port",
+          "confidence": 100,
+          "first_seen": "2026-09-14 12:15:07 UTC"
+        },
+        {
+          "ioc": "0a833212452c5cc772becb7b4e7751f1efa5ea48",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:59 UTC"
+        },
+        {
+          "ioc": "09f1709d2b6ef921ba1b90e638a37080",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:50:59 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.ghost_rat",
+      "tag_hints": [
+        "GHOST",
+        "Gh0st",
+        "Gh0stRAT",
+        "RAT",
+        "c2",
+        "shodan"
+      ],
+      "description": "According to Security Ninja, Gh0st RAT (Remote Access Terminal) is a trojan \u201cRemote Access Tool\u201d used on Windows platforms, and has been used to hack into some of the most sensitive computer networks on Earth.\r\n\r\nBelow is a list of Gh0st RAT capabilities.\r\nTake full control of the remote screen on the infected bot.\r\nProvide real time as well as offline keystroke logging.\r\nProvide live feed of webcam, microphone of infected host.\r\nDownload remote binaries on the infected remote host.\r\nTake control of remote shutdown and reboot of host.\r\nDisable infected computer remote pointer and keyboard input.\r\nEnter into shell of remote infected host with full control.\r\nProvide a list of all the active processes.\r\nClear all existing SSDT of all existing hooks.",
+      "associated_groups": [
+        "EMISSARY PANDA",
+        "Hurricane Panda",
+        "Lazarus Group",
+        "Leviathan",
+        "Red Menshen",
+        "Stone Panda"
+      ]
+    },
+    {
+      "family": "Venus Stealer",
+      "malware_id": "py.venus_stealer",
+      "ioc_count": 9,
+      "ioc_type_breakdown": {
+        "sha256_hash": 3,
         "sha1_hash": 3,
         "md5_hash": 3
       },
       "top_iocs": [
         {
-          "ioc": "37cbee9242444dffe560c8f2dfefa6ec0ff4bda186824bb5ace22ed8cd486436",
+          "ioc": "1ae9433efe8a190b2dc0b842050b67255d3c54b17097314f189d608c7a40d678",
           "type": "sha256_hash",
           "confidence": 95,
-          "first_seen": "2026-09-15 06:05:10 UTC"
+          "first_seen": "2026-09-19 15:25:19 UTC"
         },
         {
-          "ioc": "1de1cb57d11bfdae49e04d78b17e8a3579af5f29",
+          "ioc": "3d2e9031c415884cc67ef0fedf9d802981700f6b",
           "type": "sha1_hash",
           "confidence": 95,
-          "first_seen": "2026-09-13 18:50:27 UTC"
+          "first_seen": "2026-09-19 15:25:19 UTC"
         },
         {
-          "ioc": "75cfecbb3316ad279ac4e7fd6dadaa76",
+          "ioc": "93e76e5b33860040d1a4235234a8e6c7",
           "type": "md5_hash",
           "confidence": 95,
-          "first_seen": "2026-09-13 18:50:27 UTC"
+          "first_seen": "2026-09-19 15:25:19 UTC"
         },
         {
-          "ioc": "84596497251e3847ce4389cb389a56fe87e08944474ffd4019ec315d306f449e",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-13 18:50:26 UTC"
-        },
-        {
-          "ioc": "e97e94bd9be61e85a813c45bf145086459fc13e8",
+          "ioc": "491f801f4d59380016d1b8ea5ff4baa097cdf84f",
           "type": "sha1_hash",
           "confidence": 95,
-          "first_seen": "2026-09-12 15:32:18 UTC"
+          "first_seen": "2026-09-19 15:25:15 UTC"
+        },
+        {
+          "ioc": "0049d699536ec0a1a3242626edf840d3",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-19 15:25:15 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.salatstealer",
-      "tag_hints": [
-        "SalatStealer",
-        "exe",
-        "stealer",
-        "upx"
-      ],
-      "description": "Crypto Stealer written in GO. Targets browsers, crypto wallets and telegram clients (Telegram Desktop, Kotatogram). Can capture webcam and microphone and stream it on to c2 server.",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/py.venus_stealer",
+      "tag_hints": [],
+      "description": "Venus Stealer is a python based Infostealer observed early 2023.",
       "associated_groups": []
     },
     {
-      "family": "KongTuke",
-      "malware_id": "js.kongtuke",
-      "ioc_count": 10,
+      "family": "DanaBot",
+      "malware_id": "win.danabot",
+      "ioc_count": 9,
       "ioc_type_breakdown": {
-        "domain": 3,
-        "url": 7
+        "ip:port": 9
       },
       "top_iocs": [
         {
-          "ioc": "aatthews.cfd",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-11 17:30:40 UTC"
+          "ioc": "64.84.56.233:443",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-19 09:46:50 UTC"
         },
         {
-          "ioc": "https://aatthews.cfd/api/v1/session",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-11 17:30:40 UTC"
+          "ioc": "154.86.14.17:443",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-19 09:43:54 UTC"
         },
         {
-          "ioc": "https://aatthews.cfd/api/v1/verify",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-11 17:30:39 UTC"
+          "ioc": "154.216.139.17:443",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-19 09:43:53 UTC"
         },
         {
-          "ioc": "https://aatthews.cfd/api/v1/status",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-11 17:30:39 UTC"
+          "ioc": "138.0.191.215:9001",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-19 09:43:36 UTC"
         },
         {
-          "ioc": "https://winrun2915.com/b",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-11 17:30:39 UTC"
+          "ioc": "147.224.179.31:443",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-17 19:43:47 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.kongtuke",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.danabot",
       "tag_hints": [
-        "Kongtuke"
+        "DanBot",
+        "drb-ra"
       ],
-      "description": "Kongtuke is a sophisticated TDS system that was initially discovered around May 2024. Making use of compromised CMS Websites, Kongtuke redirects website visitors through a multi-stage infection process ultimately leading to device infection. Initially using fake Update lures, it started to use FakeCaptcha lures at the beginning of 2025. It is likely an initial access service, selling infections to both Ransomware affiliates and other IA vendors like SocGholish.",
-      "associated_groups": []
+      "description": "Proofpoints describes DanaBot as the latest example of malware focused on persistence and stealing useful information that can later be monetized rather than demanding an immediate ransom from victims. The social engineering in the low-volume DanaBot campaigns we have observed so far has been well-crafted, again pointing to a renewed focus on \u201cquality over quantity\u201d in email-based threats. DanaBot\u2019s modular nature enables it to download additional components, increasing the flexibility and robust stealing and remote monitoring capabilities of this banker.",
+      "associated_groups": [
+        "SCULLY SPIDER"
+      ]
+    },
+    {
+      "family": "CrossRAT",
+      "malware_id": "jar.crossrat",
+      "ioc_count": 9,
+      "ioc_type_breakdown": {
+        "sha1_hash": 3,
+        "md5_hash": 3,
+        "sha256_hash": 3
+      },
+      "top_iocs": [
+        {
+          "ioc": "3a7d43913b70b5cb6543f007b33d7c2547d08019",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:51:09 UTC"
+        },
+        {
+          "ioc": "0958ba3a7e13502ab3582b76c42b0af3",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:51:09 UTC"
+        },
+        {
+          "ioc": "c07fc51b54d37857ee131eb9a698fff42dbb9460abc9b0103e04a20d51851d15",
+          "type": "sha256_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-17 14:51:08 UTC"
+        },
+        {
+          "ioc": "a51a18b3908126f1f1c11895e92c1d65230903be",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-16 00:33:53 UTC"
+        },
+        {
+          "ioc": "895e427449556e15d357670e9e499dcb",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-16 00:33:53 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/jar.crossrat",
+      "tag_hints": [],
+      "description": null,
+      "associated_groups": [
+        "Dark Caracal"
+      ]
     },
     {
       "family": "Pulsar RAT",
@@ -2926,58 +2877,6 @@
         "EtherRat"
       ],
       "description": "According to sysdig, EtherRAT uses Ethereum smart contracts for C2 URL resolution. It establishes persistence through five independent mechanisms, ensuring survival across reboots and system maintenance (systemd, xdg, cron, bashrc, profile).",
-      "associated_groups": []
-    },
-    {
-      "family": "Amadey",
-      "malware_id": "win.amadey",
-      "ioc_count": 8,
-      "ioc_type_breakdown": {
-        "url": 2,
-        "md5_hash": 2,
-        "sha256_hash": 2,
-        "sha1_hash": 2
-      },
-      "top_iocs": [
-        {
-          "ioc": "http://194.102.105.70/8jdjZhdf7/index.php",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-11 17:30:37 UTC"
-        },
-        {
-          "ioc": "5a52ab26c92887b367383c8c47d1f825",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:34 UTC"
-        },
-        {
-          "ioc": "52ebd649910eac2754dd5631d388dfdcf25e200be19918d1c94999225729a73c",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:33 UTC"
-        },
-        {
-          "ioc": "6ac13b1d254972f48fab7a854cec277261c3538e",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:33 UTC"
-        },
-        {
-          "ioc": "6f2da55a79f65a87ad3d36492e7fb9f0",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:16 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.amadey",
-      "tag_hints": [
-        "0d20ad",
-        "Amadey",
-        "URLscan",
-        "c2"
-      ],
-      "description": "Amadey is a botnet that appeared around October 2018 and is being sold for about $500 on Russian-speaking hacking forums. It periodically sends information about the system and installed AV software to its C2 server and polls to receive orders from it. Its main functionality is that it can load other payloads (called \"tasks\") for all or specifically targeted computers compromised by the malware.",
       "associated_groups": []
     },
     {
@@ -3080,6 +2979,55 @@
       "associated_groups": []
     },
     {
+      "family": "FAKEUPDATES",
+      "malware_id": "js.fakeupdates",
+      "ioc_count": 6,
+      "ioc_type_breakdown": {
+        "domain": 5,
+        "ip:port": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "img2.aixpirts.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-19 05:52:25 UTC"
+        },
+        {
+          "ioc": "engine.commdistinc.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-17 18:41:20 UTC"
+        },
+        {
+          "ioc": "push-api.daibeltrading.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-17 05:42:13 UTC"
+        },
+        {
+          "ioc": "front-api.ecodevelopmentltd.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-15 15:18:01 UTC"
+        },
+        {
+          "ioc": "pa-portal.gloshex.com",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-14 16:57:25 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.fakeupdates",
+      "tag_hints": [
+        "SocGholish"
+      ],
+      "description": "FAKEUPDATES is a downloader written in JavaScript that communicates via HTTP. Supported payload types include executables and JavaScript. It writes the payloads to disk prior to launching them. FAKEUPDATES has led to further compromise via additional malware families that include CHTHONIC, DRIDEX, EMPIRE, KOADIC, DOPPELPAYMER, and AZORULT.\r\n\r\nFAKEUPDATES has been heavily used by UNC1543, a financially motivated group.",
+      "associated_groups": [
+        "GOLD PRELUDE"
+      ]
+    },
+    {
       "family": "SystemBC",
       "malware_id": "win.systembc",
       "ioc_count": 6,
@@ -3126,104 +3074,6 @@
       "description": "SystemBC is a multiplatform proxy malware active since August 2019. It creates SOCKS5 network tunnels in the victim\u2019s network and connects to its C2 server using a custom, RC4-encrypted protocol. It can also download and execute additional malware, with payloads either written to disk or mapped into memory. The SystemBC kit, including the C2 panel, server, and malware executables, is sold in underground forums.",
       "associated_groups": [
         "Vanilla Tempest"
-      ]
-    },
-    {
-      "family": "DanaBot",
-      "malware_id": "win.danabot",
-      "ioc_count": 6,
-      "ioc_type_breakdown": {
-        "ip:port": 6
-      },
-      "top_iocs": [
-        {
-          "ioc": "147.224.179.31:443",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-17 19:43:47 UTC"
-        },
-        {
-          "ioc": "64.181.194.179:443",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-17 09:48:11 UTC"
-        },
-        {
-          "ioc": "109.227.48.165:4433",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-15 09:43:24 UTC"
-        },
-        {
-          "ioc": "198.44.167.14:443",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-14 19:45:31 UTC"
-        },
-        {
-          "ioc": "154.214.2.223:443",
-          "type": "ip:port",
-          "confidence": 75,
-          "first_seen": "2026-09-14 09:43:55 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.danabot",
-      "tag_hints": [
-        "DanBot",
-        "drb-ra"
-      ],
-      "description": "Proofpoints describes DanaBot as the latest example of malware focused on persistence and stealing useful information that can later be monetized rather than demanding an immediate ransom from victims. The social engineering in the low-volume DanaBot campaigns we have observed so far has been well-crafted, again pointing to a renewed focus on \u201cquality over quantity\u201d in email-based threats. DanaBot\u2019s modular nature enables it to download additional components, increasing the flexibility and robust stealing and remote monitoring capabilities of this banker.",
-      "associated_groups": [
-        "SCULLY SPIDER"
-      ]
-    },
-    {
-      "family": "FAKEUPDATES",
-      "malware_id": "js.fakeupdates",
-      "ioc_count": 6,
-      "ioc_type_breakdown": {
-        "domain": 5,
-        "ip:port": 1
-      },
-      "top_iocs": [
-        {
-          "ioc": "engine.commdistinc.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 18:41:20 UTC"
-        },
-        {
-          "ioc": "push-api.daibeltrading.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-17 05:42:13 UTC"
-        },
-        {
-          "ioc": "front-api.ecodevelopmentltd.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-15 15:18:01 UTC"
-        },
-        {
-          "ioc": "pa-portal.gloshex.com",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-14 16:57:25 UTC"
-        },
-        {
-          "ioc": "95.133.228.51:443",
-          "type": "ip:port",
-          "confidence": 100,
-          "first_seen": "2026-09-14 08:38:56 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.fakeupdates",
-      "tag_hints": [
-        "SocGholish"
-      ],
-      "description": "FAKEUPDATES is a downloader written in JavaScript that communicates via HTTP. Supported payload types include executables and JavaScript. It writes the payloads to disk prior to launching them. FAKEUPDATES has led to further compromise via additional malware families that include CHTHONIC, DRIDEX, EMPIRE, KOADIC, DOPPELPAYMER, and AZORULT.\r\n\r\nFAKEUPDATES has been heavily used by UNC1543, a financially motivated group.",
-      "associated_groups": [
-        "GOLD PRELUDE"
       ]
     },
     {
@@ -3279,161 +3129,99 @@
       ]
     },
     {
-      "family": "PY#RATION",
-      "malware_id": "py.pyration",
-      "ioc_count": 6,
-      "ioc_type_breakdown": {
-        "sha256_hash": 2,
-        "sha1_hash": 2,
-        "md5_hash": 2
-      },
-      "top_iocs": [
-        {
-          "ioc": "bbafb0d313cb0f7a55395f950a0a1337934af072b3d4ebafc704bab60f03fdfc",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:20 UTC"
-        },
-        {
-          "ioc": "8ec6051fd1c23060aef7d7a37c9130ee3ebc2aac",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:20 UTC"
-        },
-        {
-          "ioc": "788464d6404cc1dc463f511c3b1c22eb",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:20 UTC"
-        },
-        {
-          "ioc": "e9f2856e7040aeebd9a4f0107296fd2a13873e482bfafe285652687af25ab949",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:13 UTC"
-        },
-        {
-          "ioc": "faaae3aa1b19eb446142dc618e674a5947b5f4c1",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:32:13 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/py.pyration",
-      "tag_hints": [],
-      "description": "According to Securonix, this malware exhibits remote access trojan (RAT) behavior, allowing for control of and persistence on the affected host. As with other RATs, PY#RATION possesses a whole host of features and capabilities, including data exfiltration and keylogging. What makes this malware particularly unique is its utilization of websockets for both command and control (C2) communication and exfiltration as well as how it evades detection from antivirus and network security measures.",
-      "associated_groups": []
-    },
-    {
-      "family": "Tsunami",
-      "malware_id": "elf.tsunami",
+      "family": "Bashlite",
+      "malware_id": "elf.bashlite",
       "ioc_count": 5,
       "ioc_type_breakdown": {
-        "sha256_hash": 5
+        "ip:port": 2,
+        "sha256_hash": 3
       },
       "top_iocs": [
         {
-          "ioc": "86947b00a3d61b82b6f752876404953ff3c39952f2b261988baf63fbbbd6d6ae",
-          "type": "sha256_hash",
+          "ioc": "91.92.35.7:6969",
+          "type": "ip:port",
           "confidence": 100,
-          "first_seen": "2026-09-13 06:34:12 UTC"
+          "first_seen": "2026-09-14 14:14:56 UTC"
         },
         {
-          "ioc": "0d762c8cbba56cd827c0dc710688d7410840940b9994020b8e365b63d3ff316c",
+          "ioc": "bc77970b42b8b065a4c268c9b25249c112f7b29c23a908743a0c29b1f9f80364",
           "type": "sha256_hash",
           "confidence": 100,
-          "first_seen": "2026-09-13 06:34:11 UTC"
+          "first_seen": "2026-09-13 06:34:15 UTC"
         },
         {
-          "ioc": "9e28f942262805b5fb59f46568fed53fd4b7dbf6faf666bedaf6ff22dd416572",
+          "ioc": "b738dccd894597da51ae8775f07c873892582fb6fe492bc3e3eb71b75b96d263",
           "type": "sha256_hash",
           "confidence": 100,
-          "first_seen": "2026-09-12 07:29:17 UTC"
+          "first_seen": "2026-09-13 06:33:56 UTC"
         },
         {
-          "ioc": "a2d67291d87fe8f4d6e92fdb45c0190fb372cdd2c83ccc9ab8fb81bf69c74588",
+          "ioc": "d1c9456ab7f3f28479b8d7db4c375db82d0d8a0b044e39f490895ed72336460b",
           "type": "sha256_hash",
           "confidence": 100,
-          "first_seen": "2026-09-12 07:29:08 UTC"
+          "first_seen": "2026-09-13 06:33:56 UTC"
         },
         {
-          "ioc": "7d22fabcc98916294775e10101526492c105b583ccc9cf3e2edad9187dab4f14",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-12 07:28:53 UTC"
+          "ioc": "46.151.182.200:19191",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-18 14:20:41 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.tsunami",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.bashlite",
       "tag_hints": [
-        "Tsunami",
+        "Bashlite",
+        "Gafgyt",
         "elf"
       ],
-      "description": null,
+      "description": "Bashlite is a malware family which infects Linux systems in order to launch distributed denial-of-service attacks (DDoS). Originally it was also known under the name Bashdoor, but this term now refers to the exploit method used by the malware. It has been used to launch attacks of up to 400 Gbps.",
       "associated_groups": []
     },
     {
-      "family": "Hades",
-      "malware_id": "win.hades",
-      "ioc_count": 5,
+      "family": "Brute Ratel C4",
+      "malware_id": "win.brute_ratel_c4",
+      "ioc_count": 4,
       "ioc_type_breakdown": {
-        "sha1_hash": 1,
-        "md5_hash": 1,
-        "url": 1,
-        "domain": 1,
-        "sha256_hash": 1
+        "ip:port": 4
       },
       "top_iocs": [
         {
-          "ioc": "https://hpbq8h0d8ic7.hellodcuser.com",
-          "type": "url",
-          "confidence": 100,
-          "first_seen": "2026-09-12 07:28:49 UTC"
+          "ioc": "13.193.175.186:80",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-18 19:43:27 UTC"
         },
         {
-          "ioc": "togethers.tv",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-12 07:28:48 UTC"
+          "ioc": "13.192.33.5:80",
+          "type": "ip:port",
+          "confidence": 50,
+          "first_seen": "2026-09-15 06:04:33 UTC"
         },
         {
-          "ioc": "b4ff59be95361d56347d381ffa917a5e583937b5c854b243e466d9d8f5bc2990",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-12 07:28:48 UTC"
+          "ioc": "57.182.211.200:80",
+          "type": "ip:port",
+          "confidence": 50,
+          "first_seen": "2026-09-14 11:18:36 UTC"
         },
         {
-          "ioc": "c95ffa015198284a4bc23fc454a097a7a91f2ed2",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:52 UTC"
-        },
-        {
-          "ioc": "8876382b1cbf3e14ae2d4cd90a94b797",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:52 UTC"
+          "ioc": "31.156.181.5:9002",
+          "type": "ip:port",
+          "confidence": 50,
+          "first_seen": "2026-09-14 11:18:36 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.hades",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.brute_ratel_c4",
       "tag_hints": [
-        "Cloudflare",
-        "Discord",
-        "Electron",
-        "Hades",
-        "NSIS",
-        "RAT",
+        "16509",
+        "BruteRatel",
+        "brute ratel",
         "c2",
-        "fake-app",
-        "payload-delivery",
-        "stealer",
-        "streaming-lure",
-        "turkey",
-        "wallet"
+        "censys",
+        "drb-ra",
+        "shodan"
       ],
-      "description": "According to PCrisk, Hades Locker is an updated version of WildFire Locker ransomware that infiltrates systems and encrypts a variety of data types using AES encryption. Hades Locker appends the names of encrypted files with the \".~HL[5_random_characters] (first 5 characters of encryption password)\" extension.",
-      "associated_groups": [
-        "GOLD WINTER"
-      ]
+      "description": "Brute Ratel C4 (BRC4) is a commercial framework for red-teaming and adversarial attack simulation, which made its first appearance in December 2020. It was specifically designed to evade detection by endpoint detection and response (EDR) and antivirus (AV) capabilities. BRC4 allows operators to deploy a backdoor agent known as Badger (aka BOLDBADGER) within a target environment.\r\nThis agent enables arbitrary command execution, facilitating lateral movement, privilege escalation, and the establishment of additional persistence avenues. The Badger backdoor agent can communicate with a remote server via DNS over HTTPS, HTTP, HTTPS, SMB, and TCP, using custom encrypted channels. It supports a variety of backdoor commands including shell command execution, file transfers, file execution, and credential harvesting. Additionally, the Badger agent can perform tasks such as port scanning, screenshot capturing, and keystroke logging. Notably, in September 2022, a cracked version of Brute Ratel C4 was leaked in the cybercriminal underground, leading to its use by threat actors.",
+      "associated_groups": []
     },
     {
       "family": "OtterCookie",
@@ -3482,93 +3270,82 @@
       ]
     },
     {
-      "family": "RedLine Stealer",
-      "malware_id": "win.redline_stealer",
+      "family": "SalatStealer",
+      "malware_id": "win.salatstealer",
       "ioc_count": 4,
       "ioc_type_breakdown": {
-        "domain": 1,
-        "sha256_hash": 1,
+        "sha256_hash": 2,
         "sha1_hash": 1,
         "md5_hash": 1
       },
       "top_iocs": [
         {
-          "ioc": "gro.runtimeforge.cc",
-          "type": "domain",
-          "confidence": 100,
-          "first_seen": "2026-09-14 13:59:18 UTC"
-        },
-        {
-          "ioc": "3118a029c644a831c1ae3e55047b2598462c70c45053425d985de24c22b04eb1",
+          "ioc": "37cbee9242444dffe560c8f2dfefa6ec0ff4bda186824bb5ace22ed8cd486436",
           "type": "sha256_hash",
           "confidence": 95,
-          "first_seen": "2026-09-12 15:31:53 UTC"
+          "first_seen": "2026-09-15 06:05:10 UTC"
         },
         {
-          "ioc": "4c504fbd95c6174d9675d2c89f024704e8f5e890",
+          "ioc": "1de1cb57d11bfdae49e04d78b17e8a3579af5f29",
           "type": "sha1_hash",
           "confidence": 95,
-          "first_seen": "2026-09-12 15:31:53 UTC"
+          "first_seen": "2026-09-13 18:50:27 UTC"
         },
         {
-          "ioc": "4ab4d11c6bbdc1c0e6ce46bd00f76093",
+          "ioc": "75cfecbb3316ad279ac4e7fd6dadaa76",
           "type": "md5_hash",
           "confidence": 95,
-          "first_seen": "2026-09-12 15:31:53 UTC"
+          "first_seen": "2026-09-13 18:50:27 UTC"
+        },
+        {
+          "ioc": "84596497251e3847ce4389cb389a56fe87e08944474ffd4019ec315d306f449e",
+          "type": "sha256_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-13 18:50:26 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.redline_stealer",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.salatstealer",
       "tag_hints": [
-        "RedLineStealer"
+        "SalatStealer",
+        "exe",
+        "stealer",
+        "upx"
       ],
-      "description": "RedLine Stealer is a malware available on underground forums for sale apparently as a standalone ($100/$150 depending on the version) or also on a subscription basis ($100/month). This malware harvests information from browsers such as saved credentials, autocomplete data, and credit card information. A system inventory is also taken when running on a target machine, to include details such as the username, location data, hardware configuration, and information regarding installed security software. More recent versions of RedLine added the ability to steal cryptocurrency. FTP and IM clients are also apparently targeted by this family, and this malware has the ability to upload and download files, execute commands, and periodically send back information about the infected computer.",
+      "description": "Crypto Stealer written in GO. Targets browsers, crypto wallets and telegram clients (Telegram Desktop, Kotatogram). Can capture webcam and microphone and stream it on to c2 server.",
       "associated_groups": []
     },
     {
-      "family": "Payload ",
-      "malware_id": "elf.payload",
-      "ioc_count": 4,
+      "family": "stealler",
+      "malware_id": "py.stealler",
+      "ioc_count": 3,
       "ioc_type_breakdown": {
+        "md5_hash": 1,
         "sha256_hash": 1,
-        "ip:port": 3
+        "sha1_hash": 1
       },
       "top_iocs": [
         {
-          "ioc": "a505de0af54408dcde2f869608398a409908543a43fad15397a342b2200f8a52",
+          "ioc": "a5181dd5da1137c6d2e88acdc1ff32fd",
+          "type": "md5_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-19 15:25:19 UTC"
+        },
+        {
+          "ioc": "1ad42cab7899671275d79ff38317ae4df61d58de9d2e4f23facf297b5b33654b",
           "type": "sha256_hash",
-          "confidence": 85,
-          "first_seen": "2026-09-12 13:44:25 UTC"
+          "confidence": 95,
+          "first_seen": "2026-09-19 15:25:18 UTC"
         },
         {
-          "ioc": "47.239.197.191:7650",
-          "type": "ip:port",
-          "confidence": 85,
-          "first_seen": "2026-09-12 13:44:23 UTC"
-        },
-        {
-          "ioc": "120.26.164.252:9918",
-          "type": "ip:port",
-          "confidence": 85,
-          "first_seen": "2026-09-12 13:44:23 UTC"
-        },
-        {
-          "ioc": "223.19.66.178:22",
-          "type": "ip:port",
-          "confidence": 80,
-          "first_seen": "2026-09-12 13:44:24 UTC"
+          "ioc": "fc3874454b6ecbd71ca4364f26f78cc99dd872cb",
+          "type": "sha1_hash",
+          "confidence": 95,
+          "first_seen": "2026-09-19 15:25:18 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.payload",
-      "tag_hints": [
-        "Downloader",
-        "elf",
-        "mikrotik",
-        "sms-abuse",
-        "ssh-botnet",
-        "ssh-worm",
-        "telegram-tdata"
-      ],
-      "description": "According to 0x3oBAD, this is a 64-bit Linux ELF ransomware binary targeting VMware ESXi hypervisor environments. The sample combines a robust cryptographic scheme Curve25519 ECDHand ChaCha20 with ESXi-specific VM enumeration via the vmInventory.xml inventory file, graceful shutdown of running VMs before encryption, and a multi-threaded file encryption pipeline scaled to available CPU cores. The ransom note is delivered inside ESXi\u2019s own web UI welcome.txt, replacing the host management interface greeting.",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/py.stealler",
+      "tag_hints": [],
+      "description": null,
       "associated_groups": []
     },
     {
@@ -3711,45 +3488,6 @@
         "c2"
       ],
       "description": "According to Proofpoint, Overlord is an open-source RAT written in Go.",
-      "associated_groups": []
-    },
-    {
-      "family": "Brute Ratel C4",
-      "malware_id": "win.brute_ratel_c4",
-      "ioc_count": 3,
-      "ioc_type_breakdown": {
-        "ip:port": 3
-      },
-      "top_iocs": [
-        {
-          "ioc": "13.192.33.5:80",
-          "type": "ip:port",
-          "confidence": 50,
-          "first_seen": "2026-09-15 06:04:33 UTC"
-        },
-        {
-          "ioc": "57.182.211.200:80",
-          "type": "ip:port",
-          "confidence": 50,
-          "first_seen": "2026-09-14 11:18:36 UTC"
-        },
-        {
-          "ioc": "31.156.181.5:9002",
-          "type": "ip:port",
-          "confidence": 50,
-          "first_seen": "2026-09-14 11:18:36 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.brute_ratel_c4",
-      "tag_hints": [
-        "16509",
-        "BruteRatel",
-        "brute ratel",
-        "c2",
-        "censys",
-        "shodan"
-      ],
-      "description": "Brute Ratel C4 (BRC4) is a commercial framework for red-teaming and adversarial attack simulation, which made its first appearance in December 2020. It was specifically designed to evade detection by endpoint detection and response (EDR) and antivirus (AV) capabilities. BRC4 allows operators to deploy a backdoor agent known as Badger (aka BOLDBADGER) within a target environment.\r\nThis agent enables arbitrary command execution, facilitating lateral movement, privilege escalation, and the establishment of additional persistence avenues. The Badger backdoor agent can communicate with a remote server via DNS over HTTPS, HTTP, HTTPS, SMB, and TCP, using custom encrypted channels. It supports a variety of backdoor commands including shell command execution, file transfers, file execution, and credential harvesting. Additionally, the Badger agent can perform tasks such as port scanning, screenshot capturing, and keystroke logging. Notably, in September 2022, a cracked version of Brute Ratel C4 was leaked in the cybercriminal underground, leading to its use by threat actors.",
       "associated_groups": []
     },
     {
@@ -4139,108 +3877,36 @@
       ]
     },
     {
-      "family": "SimpleTea",
-      "malware_id": "osx.simpletea",
-      "ioc_count": 3,
+      "family": "PoshC2",
+      "malware_id": "win.poshc2",
+      "ioc_count": 2,
       "ioc_type_breakdown": {
-        "sha1_hash": 1,
-        "md5_hash": 1,
+        "ip:port": 1,
         "sha256_hash": 1
       },
       "top_iocs": [
         {
-          "ioc": "95b5b10a5734c1240b1d4384fc0c2d1984a14ab3",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:56 UTC"
-        },
-        {
-          "ioc": "fd944e273188b95150be59f249e896be",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:56 UTC"
-        },
-        {
-          "ioc": "42e9c10c1da5c624010da51c0654bfe027e71d175ac7bfcb695608cf01a8a6ca",
+          "ioc": "22ae11d4d8971b1b1bc2c80b7a70e59dadd6112bc1ecfce750093d1d5f87e27f",
           "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:55 UTC"
+          "confidence": 100,
+          "first_seen": "2026-09-17 05:41:37 UTC"
+        },
+        {
+          "ioc": "137.184.139.185:8080",
+          "type": "ip:port",
+          "confidence": 75,
+          "first_seen": "2026-09-19 09:43:35 UTC"
         }
       ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/osx.simpletea",
-      "tag_hints": [],
-      "description": "SimpleTea is a RAT for macOS that is based on the same object-oriented project as SimpleTea for Linux (SimplexTea).\r\n\r\nIt also shares similarities with POOLRAT (also known as SIMPLESEA), like the supported commands or a single-byte XOR encryption of its configuration. However, the indices of commands are different.\r\n\r\nSimpleTea for macOS was uploaded to VirusTotal from Hong Kong and China in September 2023.",
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.poshc2",
+      "tag_hints": [
+        "drb-ra",
+        "poshc2"
+      ],
+      "description": "PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement.\r\n\r\nPoshC2 is primarily written in Python3 and follows a modular format to enable users to add their own modules and tools, allowing an extendible and flexible C2 framework. Out-of-the-box PoshC2 comes PowerShell/C# and Python3 implants with payloads written in PowerShell v2 and v4, C++ and C# source code, a variety of executables, DLLs and raw shellcode in addition to a Python3 payload. These enable C2 functionality on a wide range of devices and operating systems, including Windows, *nix and OSX.",
       "associated_groups": [
-        "Lazarus Group"
+        "APT33"
       ]
-    },
-    {
-      "family": "Running RAT",
-      "malware_id": "win.runningrat",
-      "ioc_count": 3,
-      "ioc_type_breakdown": {
-        "md5_hash": 1,
-        "sha256_hash": 1,
-        "sha1_hash": 1
-      },
-      "top_iocs": [
-        {
-          "ioc": "4a88c4a8fd4ae358387fe70e97e93a1a",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:50 UTC"
-        },
-        {
-          "ioc": "d68bd997fea85e2b9e2438e989397798ad214635dd4e43b733214876ac6fa19f",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:49 UTC"
-        },
-        {
-          "ioc": "e132e1b5667f14a545166dbbf91a3a53c9afcd0c",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:49 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.runningrat",
-      "tag_hints": [],
-      "description": "NJCCIC characterizes RunningRAT as a remote access trojan (RAT) that operates using two DLL files. When the trojan is loaded onto a system, it executes the first DLL. This is used to disable anti-malware solutions, unpack and execute the main RAT DLL, and gain persistence. The trojan installs a Windows batch file dx.bat that attempts to kill the daumcleaner.exe task, a Korean security program. The file then attempts to remove itself. Once the second DLL is loaded into memory, the first DLL overwrites the IP address for the control server to change the address the trojan communicates with. The second DLL gathers information about the victim's system, including its operating system and driver and processor information. The RAT can log user keystrokes, copy the clipboard, delete files, compress files, clear event logs, shut down the machine, and more. The second DLL also uses several anti-bugging techniques.",
-      "associated_groups": []
-    },
-    {
-      "family": "Clientor",
-      "malware_id": "apk.clientor",
-      "ioc_count": 3,
-      "ioc_type_breakdown": {
-        "md5_hash": 1,
-        "sha256_hash": 1,
-        "sha1_hash": 1
-      },
-      "top_iocs": [
-        {
-          "ioc": "46a7ca270fdd2cb4744798f3bd5a5d65",
-          "type": "md5_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:39 UTC"
-        },
-        {
-          "ioc": "b99da433d42a9ac546868b3b5fca27439a9d99d7981369e74557547be87b7542",
-          "type": "sha256_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:38 UTC"
-        },
-        {
-          "ioc": "bfb01f57c319d49f66653c807c62a6a7a71c63f2",
-          "type": "sha1_hash",
-          "confidence": 95,
-          "first_seen": "2026-09-12 15:31:38 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/apk.clientor",
-      "tag_hints": [],
-      "description": null,
-      "associated_groups": []
     },
     {
       "family": "LxBase RAT",
@@ -4391,34 +4057,6 @@
       ]
     },
     {
-      "family": "RevStealer",
-      "malware_id": "win.revstealer",
-      "ioc_count": 2,
-      "ioc_type_breakdown": {
-        "domain": 2
-      },
-      "top_iocs": [
-        {
-          "ioc": "board.go-frame89.one",
-          "type": "domain",
-          "confidence": 75,
-          "first_seen": "2026-09-15 13:08:38 UTC"
-        },
-        {
-          "ioc": "check.mentor-square80.click",
-          "type": "domain",
-          "confidence": 75,
-          "first_seen": "2026-09-11 17:49:41 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.revstealer",
-      "tag_hints": [
-        "RevStealer"
-      ],
-      "description": null,
-      "associated_groups": []
-    },
-    {
       "family": "PureLogs Stealer",
       "malware_id": "win.purelogs",
       "ioc_count": 2,
@@ -4445,6 +4083,88 @@
       ],
       "description": "PureLogs, also known as PureLog Stealer, is an infostealer malware from the Pure family that aims to steal sensitive information from infected devices.",
       "associated_groups": []
+    },
+    {
+      "family": "Tsunami",
+      "malware_id": "elf.tsunami",
+      "ioc_count": 2,
+      "ioc_type_breakdown": {
+        "sha256_hash": 2
+      },
+      "top_iocs": [
+        {
+          "ioc": "86947b00a3d61b82b6f752876404953ff3c39952f2b261988baf63fbbbd6d6ae",
+          "type": "sha256_hash",
+          "confidence": 100,
+          "first_seen": "2026-09-13 06:34:12 UTC"
+        },
+        {
+          "ioc": "0d762c8cbba56cd827c0dc710688d7410840940b9994020b8e365b63d3ff316c",
+          "type": "sha256_hash",
+          "confidence": 100,
+          "first_seen": "2026-09-13 06:34:11 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.tsunami",
+      "tag_hints": [
+        "Tsunami",
+        "elf"
+      ],
+      "description": null,
+      "associated_groups": []
+    },
+    {
+      "family": "MimiKatz",
+      "malware_id": "win.mimikatz",
+      "ioc_count": 1,
+      "ioc_type_breakdown": {
+        "url": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "http://92.127.156.174:8880/master.exe",
+          "type": "url",
+          "confidence": 95,
+          "first_seen": "2026-09-19 15:46:45 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.mimikatz",
+      "tag_hints": [
+        "Mimikatz",
+        "exe"
+      ],
+      "description": "Varonis summarizes Mimikatz as an open-source application that allows users to view and save authentication credentials like Kerberos tickets. Benjamin Delpy continues to lead Mimikatz developments, so the toolset works with the current release of Windows and includes the most up-to-date attacks.\r\n\r\nAttackers commonly use Mimikatz to steal credentials and escalate privileges: in most cases, endpoint protection software and anti-virus systems will detect and delete it. Conversely, pentesters use Mimikatz to detect and exploit vulnerabilities in your networks so you can fix them.",
+      "associated_groups": [
+        "APT10",
+        "APT32",
+        "Anunak",
+        "GALLIUM"
+      ]
+    },
+    {
+      "family": "SNOWLIGHT",
+      "malware_id": "elf.snowlight",
+      "ioc_count": 1,
+      "ioc_type_breakdown": {
+        "url": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "http://193.160.32.138:8085/?h=193.160.32.138&p=8085&t=tcp&a=l32&stage=true",
+          "type": "url",
+          "confidence": 95,
+          "first_seen": "2026-09-19 15:46:44 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.snowlight",
+      "tag_hints": [
+        "SNOWLIGHT",
+        "elf"
+      ],
+      "description": "According to sysdig, SNOWLIGHT is used as a dropper for its fileless payload (vshell).",
+      "associated_groups": [
+        "UNC5174"
+      ]
     },
     {
       "family": "SparkRAT",
@@ -4492,28 +4212,6 @@
       ],
       "description": "According to ESET Research, Grandoreiro is a Latin American banking trojan targeting Brazil, Mexico, Spain and Peru. As such, it shows unusual effort by its authors to evade detection and emulation, and progress towards a modular architecture.",
       "associated_groups": []
-    },
-    {
-      "family": "PoshC2",
-      "malware_id": "win.poshc2",
-      "ioc_count": 1,
-      "ioc_type_breakdown": {
-        "sha256_hash": 1
-      },
-      "top_iocs": [
-        {
-          "ioc": "22ae11d4d8971b1b1bc2c80b7a70e59dadd6112bc1ecfce750093d1d5f87e27f",
-          "type": "sha256_hash",
-          "confidence": 100,
-          "first_seen": "2026-09-17 05:41:37 UTC"
-        }
-      ],
-      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.poshc2",
-      "tag_hints": [],
-      "description": "PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement.\r\n\r\nPoshC2 is primarily written in Python3 and follows a modular format to enable users to add their own modules and tools, allowing an extendible and flexible C2 framework. Out-of-the-box PoshC2 comes PowerShell/C# and Python3 implants with payloads written in PowerShell v2 and v4, C++ and C# source code, a variety of executables, DLLs and raw shellcode in addition to a Python3 payload. These enable C2 functionality on a wide range of devices and operating systems, including Windows, *nix and OSX.",
-      "associated_groups": [
-        "APT33"
-      ]
     },
     {
       "family": "Latrodectus",
@@ -4612,6 +4310,28 @@
       ]
     },
     {
+      "family": "RevStealer",
+      "malware_id": "win.revstealer",
+      "ioc_count": 1,
+      "ioc_type_breakdown": {
+        "domain": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "board.go-frame89.one",
+          "type": "domain",
+          "confidence": 75,
+          "first_seen": "2026-09-15 13:08:38 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.revstealer",
+      "tag_hints": [
+        "RevStealer"
+      ],
+      "description": null,
+      "associated_groups": []
+    },
+    {
       "family": "Loki Password Stealer (PWS)",
       "malware_id": "win.lokipws",
       "ioc_count": 1,
@@ -4636,6 +4356,52 @@
         "The Gorgon Group",
         "Cobalt"
       ]
+    },
+    {
+      "family": "RedLine Stealer",
+      "malware_id": "win.redline_stealer",
+      "ioc_count": 1,
+      "ioc_type_breakdown": {
+        "domain": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "gro.runtimeforge.cc",
+          "type": "domain",
+          "confidence": 100,
+          "first_seen": "2026-09-14 13:59:18 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.redline_stealer",
+      "tag_hints": [
+        "RedLineStealer"
+      ],
+      "description": "RedLine Stealer is a malware available on underground forums for sale apparently as a standalone ($100/$150 depending on the version) or also on a subscription basis ($100/month). This malware harvests information from browsers such as saved credentials, autocomplete data, and credit card information. A system inventory is also taken when running on a target machine, to include details such as the username, location data, hardware configuration, and information regarding installed security software. More recent versions of RedLine added the ability to steal cryptocurrency. FTP and IM clients are also apparently targeted by this family, and this malware has the ability to upload and download files, execute commands, and periodically send back information about the infected computer.",
+      "associated_groups": []
+    },
+    {
+      "family": "Amadey",
+      "malware_id": "win.amadey",
+      "ioc_count": 1,
+      "ioc_type_breakdown": {
+        "url": 1
+      },
+      "top_iocs": [
+        {
+          "ioc": "http://194.102.105.70/8jdjZhdf7/Login.php",
+          "type": "url",
+          "confidence": 50,
+          "first_seen": "2026-09-14 11:43:17 UTC"
+        }
+      ],
+      "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.amadey",
+      "tag_hints": [
+        "Amadey",
+        "URLscan",
+        "c2"
+      ],
+      "description": "Amadey is a botnet that appeared around October 2018 and is being sold for about $500 on Russian-speaking hacking forums. It periodically sends information about the system and installed AV software to its C2 server and polls to receive orders from it. Its main functionality is that it can load other payloads (called \"tasks\") for all or specifically targeted computers compromised by the malware.",
+      "associated_groups": []
     },
     {
       "family": "Troldesh",
