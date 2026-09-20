@@ -1,8 +1,8 @@
 {
   "malware_id": "win.wannacryptor",
   "family": "WannaCryptor",
-  "generated": "2026-09-18T17:14:07.484571+00:00",
-  "recent_window_ioc_count": 51,
+  "generated": "2026-09-20T17:01:07.546603+00:00",
+  "recent_window_ioc_count": 42,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.wannacryptor",
   "description": "WannaCry is ransomware that contains a worm component enabled by the EternalBlue exploit. It attempts to use vulnerabilities in the Windows SMBv1 server to remotely compromise systems, encrypt files, and spread to other hosts. Systems that have installed the MS17-010 patch are not vulnerable to the exploits used. The spreading was stopped about 8 hours after initial outbreak due to triggering a kill switch domain.",
   "alt_names": [
@@ -15,18 +15,18 @@
     "Lazarus Group"
   ],
   "stats": {
-    "total_iocs": 447,
+    "total_iocs": 450,
     "date_range": {
       "earliest": "2026-06-14",
-      "latest": "2026-09-16"
+      "latest": "2026-09-18"
     },
     "ioc_type_breakdown": {
-      "md5_hash": 149,
-      "sha1_hash": 149,
-      "sha256_hash": 149
+      "md5_hash": 150,
+      "sha1_hash": 150,
+      "sha256_hash": 150
     },
     "confidence_distribution": {
-      "high": 447,
+      "high": 450,
       "medium": 0,
       "low": 0
     },
@@ -78,10 +78,29 @@
       "2026-09-04": 3,
       "2026-09-12": 12,
       "2026-09-13": 27,
-      "2026-09-16": 12
+      "2026-09-16": 12,
+      "2026-09-18": 3
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "b000bf75dea341762cae37ba3cad28cf",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-18 17:21:21 UTC"
+      },
+      {
+        "ioc": "adbb7a349d2c42027b618f424fc8e65de7fe3a26",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-18 17:21:20 UTC"
+      },
+      {
+        "ioc": "aeedfc2ccefd82ddb3854277e0dac4839e260bd380871f1c30ace052c4b80ee9",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-18 17:21:20 UTC"
+      },
       {
         "ioc": "ea3d8bf23d059bf3e626583045dd48a0",
         "type": "md5_hash",
@@ -153,24 +172,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-09-16 00:33:42 UTC"
-      },
-      {
-        "ioc": "b82bc571bf628d692482af7b38cd16aa",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-13 18:51:45 UTC"
-      },
-      {
-        "ioc": "a4bb6de1f82e9c8090d7837e0214a0962790a3f4",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-13 18:51:45 UTC"
-      },
-      {
-        "ioc": "b4340ceb494626014fc86a0cd1c59bb0c0ccff460b1c3e6c03f6d6a54c7ea1f7",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-13 18:51:44 UTC"
       }
     ]
   }

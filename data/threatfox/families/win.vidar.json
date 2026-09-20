@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-09-19T16:43:21.603835+00:00",
-  "recent_window_ioc_count": 263,
+  "generated": "2026-09-20T16:57:07.474670+00:00",
+  "recent_window_ioc_count": 267,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -11,14 +11,14 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-07",
-      "latest": "2026-09-19"
+      "latest": "2026-09-20"
     },
     "ioc_type_breakdown": {
-      "url": 125,
-      "sha256_hash": 96,
-      "md5_hash": 87,
-      "sha1_hash": 87,
-      "domain": 82,
+      "url": 134,
+      "sha256_hash": 92,
+      "domain": 85,
+      "md5_hash": 83,
+      "sha1_hash": 83,
       "ip:port": 23
     },
     "confidence_distribution": {
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-07": 26,
+      "2026-09-07": 14,
       "2026-09-08": 7,
       "2026-09-09": 40,
       "2026-09-10": 22,
@@ -39,7 +39,8 @@
       "2026-09-16": 42,
       "2026-09-17": 45,
       "2026-09-18": 13,
-      "2026-09-19": 3
+      "2026-09-19": 4,
+      "2026-09-20": 11
     },
     "top_ports": [
       {
@@ -48,6 +49,78 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://xd.1betasia.org",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 16:36:20 UTC"
+      },
+      {
+        "ioc": "https://xd.hg77.org",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 16:36:19 UTC"
+      },
+      {
+        "ioc": "https://oi.hg77.org",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 14:52:20 UTC"
+      },
+      {
+        "ioc": "https://signup.v-panel.asia/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 14:52:18 UTC"
+      },
+      {
+        "ioc": "signup.v-panel.asia",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-20 14:52:17 UTC"
+      },
+      {
+        "ioc": "https://178.104.90.103",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-20 13:45:24 UTC"
+      },
+      {
+        "ioc": "go.1betasia.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-20 13:36:20 UTC"
+      },
+      {
+        "ioc": "https://178.105.213.40",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 05:32:56 UTC"
+      },
+      {
+        "ioc": "signin.v-panel.asia",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-20 05:32:53 UTC"
+      },
+      {
+        "ioc": "https://signin.v-panel.asia/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 05:32:53 UTC"
+      },
+      {
+        "ioc": "https://fr.hg77.org",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-20 05:32:47 UTC"
+      },
+      {
+        "ioc": "https://oi.1betasia.org",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 18:02:56 UTC"
+      },
       {
         "ioc": "https://ma.1hoki.org",
         "type": "url",
@@ -65,78 +138,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-19 05:52:21 UTC"
-      },
-      {
-        "ioc": "https://ma.zk89.net",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 17:23:47 UTC"
-      },
-      {
-        "ioc": "ma.zk89.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 15:15:45 UTC"
-      },
-      {
-        "ioc": "https://ma.199cuan.org/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 15:10:45 UTC"
-      },
-      {
-        "ioc": "ma.199cuan.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 15:10:45 UTC"
-      },
-      {
-        "ioc": "https://kz.zk89.net",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 11:06:20 UTC"
-      },
-      {
-        "ioc": "kz.zk89.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 10:50:46 UTC"
-      },
-      {
-        "ioc": "https://kz.199cuan.org/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 10:50:45 UTC"
-      },
-      {
-        "ioc": "kz.199cuan.org",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 10:50:45 UTC"
-      },
-      {
-        "ioc": "https://se.zk89.net",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:05:34 UTC"
-      },
-      {
-        "ioc": "https://sh.zk89.net",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 05:04:44 UTC"
-      },
-      {
-        "ioc": "sh.zk89.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 00:35:46 UTC"
-      },
-      {
-        "ioc": "https://sh.199cuan.org/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-18 00:35:45 UTC"
       }
     ]
   }
