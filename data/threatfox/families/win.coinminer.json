@@ -1,8 +1,8 @@
 {
   "malware_id": "win.coinminer",
   "family": "Coinminer",
-  "generated": "2026-09-12T16:31:43.156065+00:00",
-  "recent_window_ioc_count": 43,
+  "generated": "2026-09-21T18:58:06.693830+00:00",
+  "recent_window_ioc_count": 31,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
   "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
   "alt_names": [],
@@ -10,13 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-16",
-      "latest": "2026-09-12"
+      "earliest": "2026-06-22",
+      "latest": "2026-09-21"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 172,
-      "md5_hash": 163,
-      "sha1_hash": 163,
+      "sha256_hash": 174,
+      "md5_hash": 158,
+      "sha1_hash": 158,
+      "url": 8,
       "ip:port": 1,
       "domain": 1
     },
@@ -26,10 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-16": 5,
-      "2026-06-20": 9,
-      "2026-06-21": 15,
-      "2026-06-22": 15,
+      "2026-06-22": 6,
       "2026-06-23": 6,
       "2026-06-25": 150,
       "2026-06-29": 3,
@@ -71,7 +69,15 @@
       "2026-09-08": 6,
       "2026-09-10": 8,
       "2026-09-11": 7,
-      "2026-09-12": 7
+      "2026-09-12": 7,
+      "2026-09-13": 6,
+      "2026-09-14": 1,
+      "2026-09-15": 2,
+      "2026-09-16": 9,
+      "2026-09-17": 1,
+      "2026-09-18": 2,
+      "2026-09-19": 8,
+      "2026-09-21": 9
     },
     "top_ports": [
       {
@@ -81,94 +87,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "3c55633d66761f990433756516db965c",
+        "ioc": "99f5be9f0047403db9afcda21b33ad3e",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:19 UTC"
+        "first_seen": "2026-09-21 18:26:58 UTC"
       },
       {
-        "ioc": "ab225b56f24326c9c79687e8a884648a68ad1647",
+        "ioc": "31bc159b00d2b1ea7fa5acc303fff363854bedb2",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:19 UTC"
+        "first_seen": "2026-09-21 18:26:57 UTC"
       },
       {
-        "ioc": "19bebe9719e4f9c21631f7389c445d6f05550c2867024d54177cb14eea88d89d",
+        "ioc": "7618324f0ee19ea02ac6dd84246501c3de6a4e10d529c63a3a2ce224efd11f24",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:19 UTC"
+        "first_seen": "2026-09-21 18:26:57 UTC"
       },
       {
-        "ioc": "48a24b5a4148c1afe07978cacb241738",
+        "ioc": "3bac388c6f1d1e79944780454f5482f4",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:09 UTC"
+        "first_seen": "2026-09-21 18:26:57 UTC"
       },
       {
-        "ioc": "f5b7992b56452e87fc16fb06a119486c119957ab",
+        "ioc": "a4266f05e5f3d4303c8d0c832577f9c597ea1f1d",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:09 UTC"
+        "first_seen": "2026-09-21 18:26:56 UTC"
       },
       {
-        "ioc": "75d65495954107d7eb67a25618bf33c734a6635846a9bf46bd6c2f3f16216b38",
+        "ioc": "7cf2024df87ba1cb23e2db17b154ecd693318dd167a935467c86f57e57c88897",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:08 UTC"
+        "first_seen": "2026-09-21 18:26:56 UTC"
       },
       {
-        "ioc": "52ec3ba075a507e62bb6e3272fb13b30a8ddc0f62c4ea194311d558b338eb5ed",
+        "ioc": "137ce92053ba81fb406fd00dc86abbf6",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-21 18:26:45 UTC"
+      },
+      {
+        "ioc": "b20944971008d4b758cee82f62dd932195641b79",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-21 18:26:45 UTC"
+      },
+      {
+        "ioc": "b9fb7c4d7b12e27879677890d06c6fa3c3a406fe3b135636037682f92354b960",
         "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-21 18:26:45 UTC"
+      },
+      {
+        "ioc": "http://178.198.246.24/info.zip",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 18:03:01 UTC"
+      },
+      {
+        "ioc": "http://178.61.160.6:5001/info.zip",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-09-19 18:03:00 UTC"
+      },
+      {
+        "ioc": "http://178.61.160.6:5001/video.scr",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 18:02:58 UTC"
+      },
+      {
+        "ioc": "http://180.148.33.24/AV.scr",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 18:02:58 UTC"
+      },
+      {
+        "ioc": "http://180.148.33.24/info.zip",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-19 18:02:58 UTC"
+      },
+      {
+        "ioc": "http://177.70.102.232:8070/TmpFTP/01/Cancelamento/2022-09-06/info.zip",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-09-12 07:29:05 UTC"
-      },
-      {
-        "ioc": "99eb27ff6b08c4ee8b66c01470c3aa08",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:21 UTC"
-      },
-      {
-        "ioc": "89bb7970b0d7bf8e57657c271967230e0773a47d",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:21 UTC"
-      },
-      {
-        "ioc": "e5a665da69d6ee08e46566dd1048c25554bdf620f63a152758a11cd1d9e6d634",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:31:20 UTC"
-      },
-      {
-        "ioc": "d268fef891afd96e33b757d2404c1a33",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:30:57 UTC"
-      },
-      {
-        "ioc": "f4d3ca96738289ec109cf0713cb65e4d2fee8400",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:30:57 UTC"
-      },
-      {
-        "ioc": "28c45e21bac8064a9b14c2c8e6d9ab52674d858c8dc8fb684f9ec4d36eba0e47",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-11 06:30:56 UTC"
-      },
-      {
-        "ioc": "1a937fa01d4ff5ce37ce61bd6b6abdca0c9bd6f66752e640b77bef673f20bd27",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-11 05:26:06 UTC"
-      },
-      {
-        "ioc": "e865ccdc55aad38dbbabad97e930951b379d8a51e31ed4163999876343f218b4",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-10 15:27:39 UTC"
+        "first_seen": "2026-09-19 15:47:06 UTC"
       }
     ]
   }

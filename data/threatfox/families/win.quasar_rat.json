@@ -1,8 +1,8 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-09-20T16:58:04.669175+00:00",
-  "recent_window_ioc_count": 95,
+  "generated": "2026-09-21T18:55:41.703078+00:00",
+  "recent_window_ioc_count": 77,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
   "alt_names": [
@@ -19,15 +19,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-15",
-      "latest": "2026-09-18"
+      "earliest": "2026-04-22",
+      "latest": "2026-09-21"
     },
     "ioc_type_breakdown": {
-      "ip:port": 239,
-      "domain": 210,
-      "sha256_hash": 19,
-      "sha1_hash": 16,
-      "md5_hash": 16
+      "ip:port": 238,
+      "domain": 208,
+      "sha256_hash": 20,
+      "md5_hash": 17,
+      "sha1_hash": 17
     },
     "confidence_distribution": {
       "high": 443,
@@ -35,8 +35,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-15": 3,
-      "2026-04-16": 1,
       "2026-04-22": 1,
       "2026-04-24": 8,
       "2026-04-25": 4,
@@ -114,7 +112,8 @@
       "2026-09-15": 16,
       "2026-09-16": 23,
       "2026-09-17": 19,
-      "2026-09-18": 15
+      "2026-09-18": 15,
+      "2026-09-21": 4
     },
     "top_ports": [
       {
@@ -159,6 +158,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "cba5d54230e862787080f0b881f38b2f",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-21 18:27:01 UTC"
+      },
+      {
+        "ioc": "c16923aa6b647fe1b8e8b2879fc251e48d1f09b34351056d7afe83b18efcdbf6",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-21 18:27:00 UTC"
+      },
+      {
+        "ioc": "502d908a2040f5b23cbb087584247095c9cbb4a3",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-21 18:27:00 UTC"
+      },
+      {
+        "ioc": "217.69.9.252:3252",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-21 12:45:26 UTC"
+      },
       {
         "ioc": "mb66.coupons",
         "type": "domain",
@@ -224,30 +247,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-09-18 18:20:20 UTC"
-      },
-      {
-        "ioc": "nchmct.info",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:19 UTC"
-      },
-      {
-        "ioc": "sc88b.bet",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:18 UTC"
-      },
-      {
-        "ioc": "79king.to",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:17 UTC"
-      },
-      {
-        "ioc": "178.16.54.195:4782",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-18 09:05:05 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.dcrat",
   "family": "DCRat",
-  "generated": "2026-09-19T16:47:51.615612+00:00",
-  "recent_window_ioc_count": 47,
+  "generated": "2026-09-21T18:57:53.078499+00:00",
+  "recent_window_ioc_count": 33,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.dcrat",
   "description": "DCRat is a typical RAT that has been around since at least June 2019.",
   "alt_names": [
@@ -13,23 +13,23 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-01",
-      "latest": "2026-09-19"
+      "latest": "2026-09-20"
     },
     "ioc_type_breakdown": {
-      "ip:port": 348,
-      "url": 84,
+      "ip:port": 350,
+      "url": 83,
       "sha256_hash": 22,
-      "domain": 16,
+      "domain": 15,
       "sha1_hash": 15,
       "md5_hash": 15
     },
     "confidence_distribution": {
-      "high": 486,
-      "medium": 14,
+      "high": 487,
+      "medium": 13,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-01": 3,
+      "2026-04-01": 1,
       "2026-04-02": 1,
       "2026-04-03": 1,
       "2026-04-06": 5,
@@ -164,12 +164,13 @@
       "2026-09-16": 7,
       "2026-09-17": 6,
       "2026-09-18": 5,
-      "2026-09-19": 5
+      "2026-09-19": 6,
+      "2026-09-20": 1
     },
     "top_ports": [
       {
         "port": "8848",
-        "count": 113
+        "count": 114
       },
       {
         "port": "12159",
@@ -177,7 +178,7 @@
       },
       {
         "port": "7777",
-        "count": 15
+        "count": 16
       },
       {
         "port": "5656",
@@ -209,6 +210,18 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "128.241.244.7:8848",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-20 09:43:31 UTC"
+      },
+      {
+        "ioc": "128.90.112.200:7777",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-19 19:43:36 UTC"
+      },
       {
         "ioc": "181.206.118.219:5118",
         "type": "ip:port",
@@ -286,18 +299,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-17 09:47:45 UTC"
-      },
-      {
-        "ioc": "172.111.139.65:8848",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-17 09:44:31 UTC"
-      },
-      {
-        "ioc": "128.90.105.123:7777",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-17 09:43:37 UTC"
       }
     ]
   }
