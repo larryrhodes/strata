@@ -1,8 +1,8 @@
 {
   "malware_id": "win.quasar_rat",
   "family": "Quasar RAT",
-  "generated": "2026-09-21T18:55:41.703078+00:00",
-  "recent_window_ioc_count": 77,
+  "generated": "2026-09-22T17:45:11.623338+00:00",
+  "recent_window_ioc_count": 81,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.quasar_rat",
   "description": "Quasar RAT is a malware family written in .NET which is used by a variety of attackers. The malware is fully functional and open source, and is often packed to make analysis of the source more difficult.",
   "alt_names": [
@@ -19,12 +19,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-22",
-      "latest": "2026-09-21"
+      "earliest": "2026-04-24",
+      "latest": "2026-09-22"
     },
     "ioc_type_breakdown": {
-      "ip:port": 238,
-      "domain": 208,
+      "ip:port": 235,
+      "domain": 211,
       "sha256_hash": 20,
       "md5_hash": 17,
       "sha1_hash": 17
@@ -35,8 +35,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-22": 1,
-      "2026-04-24": 8,
+      "2026-04-24": 5,
       "2026-04-25": 4,
       "2026-04-27": 1,
       "2026-04-28": 1,
@@ -113,20 +112,21 @@
       "2026-09-16": 23,
       "2026-09-17": 19,
       "2026-09-18": 15,
-      "2026-09-21": 4
+      "2026-09-21": 6,
+      "2026-09-22": 2
     },
     "top_ports": [
       {
         "port": "4782",
-        "count": 82
-      },
-      {
-        "port": "443",
-        "count": 9
+        "count": 80
       },
       {
         "port": "8080",
         "count": 9
+      },
+      {
+        "port": "443",
+        "count": 8
       },
       {
         "port": "1604",
@@ -141,11 +141,11 @@
         "count": 4
       },
       {
-        "port": "64",
-        "count": 4
+        "port": "33223",
+        "count": 3
       },
       {
-        "port": "33223",
+        "port": "64",
         "count": 3
       },
       {
@@ -158,6 +158,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "bns.grotominpgroup.pl",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-22 14:55:19 UTC"
+      },
+      {
+        "ioc": "kns.grotominpgroup.pl",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-22 14:55:19 UTC"
+      },
+      {
+        "ioc": "update.ddns.net",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-21 20:55:16 UTC"
+      },
+      {
+        "ioc": "41.41.128.115:5005",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-21 20:30:08 UTC"
+      },
       {
         "ioc": "cba5d54230e862787080f0b881f38b2f",
         "type": "md5_hash",
@@ -223,30 +247,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-09-18 18:20:24 UTC"
-      },
-      {
-        "ioc": "sulebet.live",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:23 UTC"
-      },
-      {
-        "ioc": "mb66.pizza",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:22 UTC"
-      },
-      {
-        "ioc": "dafacodabac52.fit",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:21 UTC"
-      },
-      {
-        "ioc": "mb663rd.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:20:20 UTC"
       }
     ]
   }

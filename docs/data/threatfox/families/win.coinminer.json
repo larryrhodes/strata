@@ -1,8 +1,8 @@
 {
   "malware_id": "win.coinminer",
   "family": "Coinminer",
-  "generated": "2026-09-21T18:58:06.693830+00:00",
-  "recent_window_ioc_count": 31,
+  "generated": "2026-09-22T17:48:19.623464+00:00",
+  "recent_window_ioc_count": 30,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
   "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-22",
-      "latest": "2026-09-21"
+      "latest": "2026-09-22"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 174,
+      "sha256_hash": 173,
       "md5_hash": 158,
       "sha1_hash": 158,
-      "url": 8,
+      "url": 9,
       "ip:port": 1,
       "domain": 1
     },
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-22": 6,
+      "2026-06-22": 5,
       "2026-06-23": 6,
       "2026-06-25": 150,
       "2026-06-29": 3,
@@ -77,7 +77,8 @@
       "2026-09-17": 1,
       "2026-09-18": 2,
       "2026-09-19": 8,
-      "2026-09-21": 9
+      "2026-09-21": 9,
+      "2026-09-22": 1
     },
     "top_ports": [
       {
@@ -86,6 +87,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://124.123.123.15/info.zip",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-09-22 04:58:21 UTC"
+      },
       {
         "ioc": "99f5be9f0047403db9afcda21b33ad3e",
         "type": "md5_hash",
@@ -169,12 +176,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-09-19 18:02:58 UTC"
-      },
-      {
-        "ioc": "http://177.70.102.232:8070/TmpFTP/01/Cancelamento/2022-09-06/info.zip",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-09-19 15:47:06 UTC"
       }
     ]
   }
