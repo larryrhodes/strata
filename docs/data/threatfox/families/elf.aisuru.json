@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.aisuru",
   "family": "Aisuru",
-  "generated": "2026-09-22T17:45:52.419668+00:00",
-  "recent_window_ioc_count": 76,
+  "generated": "2026-09-23T17:57:58.779338+00:00",
+  "recent_window_ioc_count": 80,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.aisuru",
   "description": "Honeypot-aware variant of Mirai.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-12",
-      "latest": "2026-09-22"
+      "earliest": "2026-08-13",
+      "latest": "2026-09-23"
     },
     "ioc_type_breakdown": {
       "ip:port": 500
@@ -22,8 +22,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-12": 7,
-      "2026-08-13": 12,
+      "2026-08-13": 10,
       "2026-08-14": 10,
       "2026-08-15": 26,
       "2026-08-16": 13,
@@ -63,7 +62,8 @@
       "2026-09-19": 18,
       "2026-09-20": 17,
       "2026-09-21": 9,
-      "2026-09-22": 14
+      "2026-09-22": 14,
+      "2026-09-23": 9
     },
     "top_ports": [
       {
@@ -72,11 +72,11 @@
       },
       {
         "port": "8443",
-        "count": 111
+        "count": 110
       },
       {
         "port": "8080",
-        "count": 94
+        "count": 95
       },
       {
         "port": "9034",
@@ -92,7 +92,7 @@
       },
       {
         "port": "12345",
-        "count": 19
+        "count": 18
       },
       {
         "port": "37215",
@@ -100,10 +100,64 @@
       },
       {
         "port": "5555",
-        "count": 12
+        "count": 13
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "134.122.50.221:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 15:03:27 UTC"
+      },
+      {
+        "ioc": "159.223.56.76:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 15:03:26 UTC"
+      },
+      {
+        "ioc": "152.42.173.73:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 15:03:26 UTC"
+      },
+      {
+        "ioc": "188.166.111.101:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 15:03:25 UTC"
+      },
+      {
+        "ioc": "168.144.98.150:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 15:03:25 UTC"
+      },
+      {
+        "ioc": "206.189.10.124:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 15:03:24 UTC"
+      },
+      {
+        "ioc": "185.137.122.215:8001",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 13:51:59 UTC"
+      },
+      {
+        "ioc": "43.173.38.253:5555",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 08:26:53 UTC"
+      },
+      {
+        "ioc": "130.78.189.71:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-23 07:44:25 UTC"
+      },
       {
         "ioc": "144.126.234.230:8080",
         "type": "ip:port",
@@ -139,60 +193,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-09-22 08:30:55 UTC"
-      },
-      {
-        "ioc": "134.209.106.204:34567",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 06:39:08 UTC"
-      },
-      {
-        "ioc": "130.78.189.71:8001",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 05:00:32 UTC"
-      },
-      {
-        "ioc": "134.209.106.204:9034",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:59:49 UTC"
-      },
-      {
-        "ioc": "43.173.38.253:12345",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:59:48 UTC"
-      },
-      {
-        "ioc": "43.173.38.253:9034",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:58:49 UTC"
-      },
-      {
-        "ioc": "43.173.38.253:34567",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:58:42 UTC"
-      },
-      {
-        "ioc": "43.173.38.253:37215",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:58:02 UTC"
-      },
-      {
-        "ioc": "134.209.223.192:34567",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:57:50 UTC"
-      },
-      {
-        "ioc": "188.166.158.18:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-21 11:29:16 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-09-22T17:46:41.727314+00:00",
-  "recent_window_ioc_count": 57,
+  "generated": "2026-09-23T17:59:34.231784+00:00",
+  "recent_window_ioc_count": 44,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -13,14 +13,14 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-03",
-      "latest": "2026-09-22"
+      "latest": "2026-09-23"
     },
     "ioc_type_breakdown": {
-      "ip:port": 266,
-      "domain": 148,
-      "sha256_hash": 35,
-      "sha1_hash": 23,
-      "md5_hash": 23,
+      "ip:port": 268,
+      "domain": 143,
+      "sha256_hash": 36,
+      "sha1_hash": 24,
+      "md5_hash": 24,
       "url": 5
     },
     "confidence_distribution": {
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-03": 12,
+      "2026-04-03": 7,
       "2026-04-04": 10,
       "2026-04-05": 5,
       "2026-04-06": 6,
@@ -142,7 +142,8 @@
       "2026-09-18": 13,
       "2026-09-20": 1,
       "2026-09-21": 5,
-      "2026-09-22": 7
+      "2026-09-22": 7,
+      "2026-09-23": 5
     },
     "top_ports": [
       {
@@ -155,7 +156,7 @@
       },
       {
         "port": "7007",
-        "count": 14
+        "count": 15
       },
       {
         "port": "6000",
@@ -187,6 +188,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "23.132.164.57:7007",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 15:20:25 UTC"
+      },
+      {
+        "ioc": "2b5f0c927f5436d8c04d58bb8c9fba470cbbf4ce23eacf2d65e336ca2bb59d97",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-23 15:02:33 UTC"
+      },
+      {
+        "ioc": "be312034d50a5e2cf8e25bd4011ad2dbcb876910",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-23 15:02:33 UTC"
+      },
+      {
+        "ioc": "7c2b5d3b7535da03eeecb3dacafef353",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-23 15:02:33 UTC"
+      },
+      {
+        "ioc": "64.89.160.127:5892",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 07:47:49 UTC"
+      },
       {
         "ioc": "155.103.69.190:7787",
         "type": "ip:port",
@@ -246,36 +277,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-09-21 18:27:07 UTC"
-      },
-      {
-        "ioc": "3c4f65fe6f50dcf5e30eba42790637a660a45316",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-21 18:27:07 UTC"
-      },
-      {
-        "ioc": "483023803efafc86ee7c15151b0fe0e8",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-21 18:27:07 UTC"
-      },
-      {
-        "ioc": "144.217.94.121:1339",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-20 16:45:28 UTC"
-      },
-      {
-        "ioc": "tyyyy-50833.portmap.host",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:21:49 UTC"
-      },
-      {
-        "ioc": "195.177.94.91:6000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-18 18:21:48 UTC"
       }
     ]
   }
