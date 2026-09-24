@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-09-23T17:55:17.712219+00:00",
-  "recent_window_ioc_count": 1948,
+  "generated": "2026-09-24T17:54:58.427272+00:00",
+  "recent_window_ioc_count": 1017,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -11,159 +11,160 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-20",
-      "latest": "2026-09-23"
+      "latest": "2026-09-24"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 468,
-      "ip:port": 21,
+      "sha256_hash": 453,
+      "ip:port": 36,
       "domain": 6,
       "sha1_hash": 2,
       "md5_hash": 2,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 35,
-      "medium": 465,
+      "high": 51,
+      "medium": 449,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-20": 467,
+      "2026-09-20": 451,
       "2026-09-21": 17,
       "2026-09-22": 10,
-      "2026-09-23": 6
+      "2026-09-23": 14,
+      "2026-09-24": 8
     },
     "top_ports": [
       {
+        "port": "80",
+        "count": 4
+      },
+      {
         "port": "8808",
+        "count": 4
+      },
+      {
+        "port": "6606",
         "count": 3
       },
       {
-        "port": "80",
+        "port": "7707",
         "count": 2
       },
       {
-        "port": "8080",
+        "port": "6767",
         "count": 1
       },
       {
-        "port": "3603",
+        "port": "1145",
         "count": 1
       },
       {
-        "port": "5012",
+        "port": "3606",
         "count": 1
       },
       {
-        "port": "7005",
+        "port": "2505",
         "count": 1
       },
       {
-        "port": "1723",
+        "port": "443",
         "count": 1
       },
       {
-        "port": "7707",
-        "count": 1
-      },
-      {
-        "port": "9000",
-        "count": 1
-      },
-      {
-        "port": "3000",
+        "port": "7000",
         "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "46.151.182.5:8080",
+        "ioc": "43.228.157.233:6767",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-23 15:39:53 UTC"
+        "first_seen": "2026-09-24 14:40:37 UTC"
       },
       {
-        "ioc": "kkkbbb.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-23 15:20:20 UTC"
+        "ioc": "23.132.164.72:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-24 13:05:06 UTC"
       },
       {
-        "ioc": "143.246.43.117:80",
+        "ioc": "188.212.158.203:1145",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-23 09:43:41 UTC"
+        "first_seen": "2026-09-24 09:44:37 UTC"
       },
       {
-        "ioc": "104.243.248.63:3603",
+        "ioc": "185.112.59.102:8808",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-09-23 09:43:15 UTC"
+        "first_seen": "2026-09-24 09:44:23 UTC"
       },
       {
-        "ioc": "eb8b9a20fc7dea1e0fb133053e6301153f4c0c99b87d56c0aefa9b63862668c0",
+        "ioc": "185.112.59.102:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 09:44:23 UTC"
+      },
+      {
+        "ioc": "104.243.248.63:3606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 09:43:15 UTC"
+      },
+      {
+        "ioc": "102.220.163.36:2505",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 09:43:08 UTC"
+      },
+      {
+        "ioc": "ac7e7f562436c49ec2d3dddbce6cad28f0372b2b25f15b456c3d5fcc06e5285a",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-09-23 06:35:15 UTC"
+        "first_seen": "2026-09-24 04:58:23 UTC"
       },
       {
-        "ioc": "http://188.212.158.34/system.exe",
-        "type": "url",
-        "confidence": 95,
-        "first_seen": "2026-09-23 06:34:53 UTC"
-      },
-      {
-        "ioc": "191.107.92.58:5012",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 19:44:38 UTC"
-      },
-      {
-        "ioc": "102.220.163.36:7005",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 19:43:08 UTC"
-      },
-      {
-        "ioc": "46.40.193.169:1723",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 09:46:50 UTC"
-      },
-      {
-        "ioc": "192.142.10.165:8808",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 09:44:40 UTC"
-      },
-      {
-        "ioc": "188.137.227.133:7707",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 09:44:38 UTC"
-      },
-      {
-        "ioc": "spongebob.dynuddns.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-22 08:40:18 UTC"
-      },
-      {
-        "ioc": "105.158.184.236:8808",
+        "ioc": "65.108.207.22:80",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-22 06:05:07 UTC"
+        "first_seen": "2026-09-23 20:05:11 UTC"
       },
       {
-        "ioc": "91.92.241.149:8808",
+        "ioc": "91.92.241.149:6606",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 04:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:47:35 UTC"
       },
       {
-        "ioc": "52.47.77.229:9000",
+        "ioc": "84.247.187.47:443",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-22 03:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:47:27 UTC"
+      },
+      {
+        "ioc": "82.47.101.16:7000",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:47:26 UTC"
+      },
+      {
+        "ioc": "74.208.146.77:2244",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:47:18 UTC"
+      },
+      {
+        "ioc": "195.177.94.16:6606",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:45:06 UTC"
+      },
+      {
+        "ioc": "128.90.59.124:7070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:43:34 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.adaptix_c2",
   "family": "AdaptixC2",
-  "generated": "2026-09-23T17:59:14.613134+00:00",
-  "recent_window_ioc_count": 46,
+  "generated": "2026-09-24T17:57:57.359801+00:00",
+  "recent_window_ioc_count": 47,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.adaptix_c2",
   "description": "AdaptixC2 is a open-source post-exploitation and adversarial emulation framework that lets penetration testers control compromised hosts and execute system actions. While being created for red-teaming it is also used by threat actors for attacks.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-05-22",
-      "latest": "2026-09-23"
+      "latest": "2026-09-24"
     },
     "ioc_type_breakdown": {
       "ip:port": 473,
@@ -112,7 +112,7 @@
       "2026-08-29": 3,
       "2026-08-31": 2,
       "2026-09-01": 2,
-      "2026-09-02": 5,
+      "2026-09-02": 1,
       "2026-09-03": 1,
       "2026-09-04": 3,
       "2026-09-05": 5,
@@ -132,28 +132,33 @@
       "2026-09-20": 4,
       "2026-09-21": 17,
       "2026-09-22": 6,
-      "2026-09-23": 9
+      "2026-09-23": 10,
+      "2026-09-24": 3
     },
     "top_ports": [
       {
         "port": "4321",
-        "count": 198
+        "count": 199
       },
       {
         "port": "443",
-        "count": 25
+        "count": 24
       },
       {
         "port": "8080",
-        "count": 22
+        "count": 21
       },
       {
         "port": "80",
-        "count": 20
+        "count": 19
       },
       {
         "port": "8443",
         "count": 9
+      },
+      {
+        "port": "4322",
+        "count": 5
       },
       {
         "port": "8989",
@@ -168,15 +173,35 @@
         "count": 5
       },
       {
-        "port": "4322",
-        "count": 4
-      },
-      {
         "port": "65432",
         "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "45.207.211.207:4322",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 09:46:25 UTC"
+      },
+      {
+        "ioc": "39.105.16.200:4321",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 09:46:11 UTC"
+      },
+      {
+        "ioc": "2.27.160.141:61712",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 09:44:56 UTC"
+      },
+      {
+        "ioc": "187.77.30.227:5005",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-23 19:15:33 UTC"
+      },
       {
         "ioc": "8.137.111.232:4321",
         "type": "ip:port",
@@ -242,30 +267,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-22 19:44:13 UTC"
-      },
-      {
-        "ioc": "172.252.225.152:12688",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 19:44:13 UTC"
-      },
-      {
-        "ioc": "172.252.225.151:12688",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 19:44:13 UTC"
-      },
-      {
-        "ioc": "109.74.144.151:46321",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 19:43:23 UTC"
-      },
-      {
-        "ioc": "121.41.70.79:9966",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-22 09:43:27 UTC"
       }
     ]
   }

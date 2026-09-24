@@ -1,7 +1,7 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-09-23T17:59:34.231784+00:00",
+  "generated": "2026-09-24T17:58:11.911258+00:00",
   "recent_window_ioc_count": 44,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
@@ -13,7 +13,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-03",
-      "latest": "2026-09-23"
+      "latest": "2026-09-24"
     },
     "ioc_type_breakdown": {
       "ip:port": 268,
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-03": 7,
+      "2026-04-03": 6,
       "2026-04-04": 10,
       "2026-04-05": 5,
       "2026-04-06": 6,
@@ -143,7 +143,8 @@
       "2026-09-20": 1,
       "2026-09-21": 5,
       "2026-09-22": 7,
-      "2026-09-23": 5
+      "2026-09-23": 5,
+      "2026-09-24": 1
     },
     "top_ports": [
       {
@@ -164,11 +165,15 @@
       },
       {
         "port": "7000",
-        "count": 12
+        "count": 11
       },
       {
         "port": "8823",
         "count": 10
+      },
+      {
+        "port": "2021",
+        "count": 6
       },
       {
         "port": "1122",
@@ -179,15 +184,17 @@
         "count": 5
       },
       {
-        "port": "2021",
-        "count": 5
-      },
-      {
         "port": "80",
         "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "102.220.161.92:2021",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-24 05:45:33 UTC"
+      },
       {
         "ioc": "23.132.164.57:7007",
         "type": "ip:port",
@@ -271,12 +278,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-21 21:35:19 UTC"
-      },
-      {
-        "ioc": "553f13ad0daf5cc2897b177df386c40b12b83c581f7685131a52f30b48b37987",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-21 18:27:07 UTC"
       }
     ]
   }

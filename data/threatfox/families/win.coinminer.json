@@ -1,8 +1,8 @@
 {
   "malware_id": "win.coinminer",
   "family": "Coinminer",
-  "generated": "2026-09-22T17:48:19.623464+00:00",
-  "recent_window_ioc_count": 30,
+  "generated": "2026-09-24T17:58:37.442359+00:00",
+  "recent_window_ioc_count": 28,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
   "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-22",
-      "latest": "2026-09-22"
+      "earliest": "2026-06-23",
+      "latest": "2026-09-24"
     },
     "ioc_type_breakdown": {
       "sha256_hash": 173,
-      "md5_hash": 158,
-      "sha1_hash": 158,
-      "url": 9,
+      "md5_hash": 157,
+      "sha1_hash": 157,
+      "url": 11,
       "ip:port": 1,
       "domain": 1
     },
@@ -27,8 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-22": 5,
-      "2026-06-23": 6,
+      "2026-06-23": 3,
       "2026-06-25": 150,
       "2026-06-29": 3,
       "2026-07-01": 3,
@@ -78,7 +77,9 @@
       "2026-09-18": 2,
       "2026-09-19": 8,
       "2026-09-21": 9,
-      "2026-09-22": 1
+      "2026-09-22": 1,
+      "2026-09-23": 3,
+      "2026-09-24": 5
     },
     "top_ports": [
       {
@@ -87,6 +88,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "78ad2cce134fd6e9819489fabdfeffa1",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-24 14:33:00 UTC"
+      },
+      {
+        "ioc": "fcefcb26f4021203c5898545c4ce043ad9cc83a2",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-24 14:33:00 UTC"
+      },
+      {
+        "ioc": "a3948d4628c764bd1408883bfc2990bb4432ce014455ff31ed5d47eecb8ef57e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-24 14:32:59 UTC"
+      },
+      {
+        "ioc": "https://ralph-schinagl.com/Photo.scr",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-09-24 04:58:28 UTC"
+      },
+      {
+        "ioc": "http://200.14.250.72/TmpFTP/DELCACHEPRODUTOSEG/1/8029/19062024111300/info.zip",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-09-24 04:58:24 UTC"
+      },
+      {
+        "ioc": "833ccad990c6f300f761dde5a8349cf4",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-23 15:02:31 UTC"
+      },
+      {
+        "ioc": "960fef0096ae38ad37203acfc2e1a8b1e779b4b6",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-23 15:02:31 UTC"
+      },
+      {
+        "ioc": "b9f239f6670f52d74ed55d1fbe7ca02feca1387e7aacd329abbcd1cf114e2b7d",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-23 15:02:31 UTC"
+      },
       {
         "ioc": "http://124.123.123.15/info.zip",
         "type": "url",
@@ -128,54 +177,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-09-21 18:26:56 UTC"
-      },
-      {
-        "ioc": "137ce92053ba81fb406fd00dc86abbf6",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-21 18:26:45 UTC"
-      },
-      {
-        "ioc": "b20944971008d4b758cee82f62dd932195641b79",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-21 18:26:45 UTC"
-      },
-      {
-        "ioc": "b9fb7c4d7b12e27879677890d06c6fa3c3a406fe3b135636037682f92354b960",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-21 18:26:45 UTC"
-      },
-      {
-        "ioc": "http://178.198.246.24/info.zip",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-19 18:03:01 UTC"
-      },
-      {
-        "ioc": "http://178.61.160.6:5001/info.zip",
-        "type": "url",
-        "confidence": 95,
-        "first_seen": "2026-09-19 18:03:00 UTC"
-      },
-      {
-        "ioc": "http://178.61.160.6:5001/video.scr",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-19 18:02:58 UTC"
-      },
-      {
-        "ioc": "http://180.148.33.24/AV.scr",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-19 18:02:58 UTC"
-      },
-      {
-        "ioc": "http://180.148.33.24/info.zip",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-19 18:02:58 UTC"
       }
     ]
   }
