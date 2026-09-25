@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-09-24T17:55:39.122983+00:00",
-  "recent_window_ioc_count": 324,
+  "generated": "2026-09-25T18:03:07.696152+00:00",
+  "recent_window_ioc_count": 289,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,12 +37,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2025-08-20",
-      "latest": "2026-09-24"
+      "earliest": "2025-08-29",
+      "latest": "2026-09-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 445,
-      "domain": 55
+      "ip:port": 446,
+      "domain": 54
     },
     "confidence_distribution": {
       "high": 480,
@@ -50,10 +50,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2025-08-20": 1,
-      "2025-08-23": 1,
-      "2025-08-25": 1,
-      "2025-08-29": 5,
+      "2025-08-29": 4,
       "2025-08-31": 1,
       "2025-09-02": 3,
       "2025-09-04": 1,
@@ -211,7 +208,8 @@
       "2026-09-21": 3,
       "2026-09-22": 11,
       "2026-09-23": 6,
-      "2026-09-24": 12
+      "2026-09-24": 9,
+      "2026-09-25": 7
     },
     "top_ports": [
       {
@@ -220,7 +218,7 @@
       },
       {
         "port": "80",
-        "count": 36
+        "count": 35
       },
       {
         "port": "53",
@@ -229,6 +227,10 @@
       {
         "port": "8443",
         "count": 12
+      },
+      {
+        "port": "18443",
+        "count": 5
       },
       {
         "port": "8888",
@@ -247,26 +249,52 @@
         "count": 5
       },
       {
-        "port": "8080",
-        "count": 4
-      },
-      {
-        "port": "18443",
-        "count": 4
+        "port": "5996",
+        "count": 3
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "209.38.82.85:8080",
+        "ioc": "101.43.53.103:9123",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-24 15:05:07 UTC"
+        "first_seen": "2026-09-25 13:05:08 UTC"
       },
       {
-        "ioc": "209.38.82.85:80",
+        "ioc": "42.51.44.173:18888",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 15:05:06 UTC"
+        "confidence": 75,
+        "first_seen": "2026-09-25 05:47:58 UTC"
+      },
+      {
+        "ioc": "45.227.253.132:56225",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-25 03:47:23 UTC"
+      },
+      {
+        "ioc": "43.136.69.37:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-25 03:47:21 UTC"
+      },
+      {
+        "ioc": "42.51.44.173:18443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-25 03:47:20 UTC"
+      },
+      {
+        "ioc": "139.196.50.117:8839",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-25 03:47:07 UTC"
+      },
+      {
+        "ioc": "i.gckni.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-25 03:46:53 UTC"
       },
       {
         "ioc": "82.156.186.185:18443",
@@ -287,16 +315,10 @@
         "first_seen": "2026-09-24 13:48:03 UTC"
       },
       {
-        "ioc": "81.70.21.163:8088",
+        "ioc": "85.11.182.104:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-09-24 13:05:05 UTC"
-      },
-      {
-        "ioc": "81.70.21.163:4444",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 13:05:05 UTC"
+        "first_seen": "2026-09-24 07:05:05 UTC"
       },
       {
         "ioc": "82.158.89.214:443",
@@ -321,30 +343,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-24 03:47:34 UTC"
-      },
-      {
-        "ioc": "ccc.0101011010010111001.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-24 03:47:19 UTC"
-      },
-      {
-        "ioc": "35.213.187.40:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-23 15:05:07 UTC"
-      },
-      {
-        "ioc": "82.158.89.75:2053",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-23 13:48:14 UTC"
-      },
-      {
-        "ioc": "47.86.184.71:10443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-23 13:48:10 UTC"
       }
     ]
   }

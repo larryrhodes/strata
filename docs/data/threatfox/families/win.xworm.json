@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-09-24T17:58:11.911258+00:00",
-  "recent_window_ioc_count": 44,
+  "generated": "2026-09-25T18:06:38.996301+00:00",
+  "recent_window_ioc_count": 31,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -13,7 +13,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-04-03",
-      "latest": "2026-09-24"
+      "latest": "2026-09-25"
     },
     "ioc_type_breakdown": {
       "ip:port": 268,
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-03": 6,
+      "2026-04-03": 5,
       "2026-04-04": 10,
       "2026-04-05": 5,
       "2026-04-06": 6,
@@ -144,7 +144,8 @@
       "2026-09-21": 5,
       "2026-09-22": 7,
       "2026-09-23": 5,
-      "2026-09-24": 1
+      "2026-09-24": 1,
+      "2026-09-25": 1
     },
     "top_ports": [
       {
@@ -189,6 +190,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "loganwolverin2042.webredirect.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-25 10:25:23 UTC"
+      },
       {
         "ioc": "102.220.161.92:2021",
         "type": "ip:port",
@@ -269,12 +276,6 @@
       },
       {
         "ioc": "13.143.66.14:1370",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-21 21:35:19 UTC"
-      },
-      {
-        "ioc": "89.39.121.145:1370",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-09-21 21:35:19 UTC"

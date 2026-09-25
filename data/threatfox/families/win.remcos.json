@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-09-24T17:56:45.843953+00:00",
-  "recent_window_ioc_count": 78,
+  "generated": "2026-09-25T18:04:27.321723+00:00",
+  "recent_window_ioc_count": 84,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -19,11 +19,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-04",
-      "latest": "2026-09-24"
+      "latest": "2026-09-25"
     },
     "ioc_type_breakdown": {
-      "ip:port": 365,
-      "domain": 123,
+      "ip:port": 368,
+      "domain": 120,
       "sha256_hash": 11,
       "url": 1
     },
@@ -33,7 +33,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-04": 8,
+      "2026-08-04": 1,
       "2026-08-05": 3,
       "2026-08-06": 16,
       "2026-08-07": 4,
@@ -79,12 +79,13 @@
       "2026-09-21": 6,
       "2026-09-22": 13,
       "2026-09-23": 28,
-      "2026-09-24": 17
+      "2026-09-24": 18,
+      "2026-09-25": 6
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 107
+        "count": 109
       },
       {
         "port": "443",
@@ -92,11 +93,11 @@
       },
       {
         "port": "65070",
-        "count": 11
+        "count": 12
       },
       {
         "port": "2015",
-        "count": 7
+        "count": 8
       },
       {
         "port": "14647",
@@ -124,6 +125,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "206.123.132.73:2301",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 11:47:17 UTC"
+      },
+      {
+        "ioc": "128.90.103.193:2015",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 06:28:20 UTC"
+      },
+      {
+        "ioc": "43.156.187.96:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 06:28:11 UTC"
+      },
+      {
+        "ioc": "176.126.114.42:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 06:28:10 UTC"
+      },
+      {
+        "ioc": "172.111.163.171:65070",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 06:27:28 UTC"
+      },
+      {
+        "ioc": "135.136.158.9:2430",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 03:00:18 UTC"
+      },
+      {
+        "ioc": "217.60.103.120:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-24 18:42:13 UTC"
+      },
       {
         "ioc": "155.103.69.85:14642",
         "type": "ip:port",
@@ -171,48 +214,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-09-24 12:35:43 UTC"
-      },
-      {
-        "ioc": "155.103.69.85:14648",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 11:50:28 UTC"
-      },
-      {
-        "ioc": "195.177.94.253:4332",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 11:50:24 UTC"
-      },
-      {
-        "ioc": "ferdinandcumberbatchx3.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-24 10:45:19 UTC"
-      },
-      {
-        "ioc": "196.251.107.252:22063",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 09:11:11 UTC"
-      },
-      {
-        "ioc": "155.103.71.242:14643",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 09:11:10 UTC"
-      },
-      {
-        "ioc": "155.103.69.57:14646",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-24 08:07:23 UTC"
-      },
-      {
-        "ioc": "142.202.205.224:74",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-24 06:42:25 UTC"
       }
     ]
   }

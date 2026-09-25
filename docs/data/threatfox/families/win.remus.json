@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-09-24T17:55:49.368423+00:00",
-  "recent_window_ioc_count": 216,
+  "generated": "2026-09-25T18:03:21.927983+00:00",
+  "recent_window_ioc_count": 196,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-08",
-      "latest": "2026-09-24"
+      "earliest": "2026-09-11",
+      "latest": "2026-09-25"
     },
     "ioc_type_breakdown": {
-      "url": 478,
-      "ip:port": 17,
-      "domain": 5
+      "url": 475,
+      "ip:port": 19,
+      "domain": 6
     },
     "confidence_distribution": {
       "high": 498,
@@ -24,9 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-08": 4,
-      "2026-09-10": 6,
-      "2026-09-11": 107,
+      "2026-09-11": 106,
       "2026-09-12": 29,
       "2026-09-13": 23,
       "2026-09-14": 20,
@@ -39,7 +37,8 @@
       "2026-09-21": 23,
       "2026-09-22": 79,
       "2026-09-23": 45,
-      "2026-09-24": 20
+      "2026-09-24": 20,
+      "2026-09-25": 11
     },
     "top_ports": [
       {
@@ -59,31 +58,97 @@
         "count": 2
       },
       {
+        "port": "8239",
+        "count": 1
+      },
+      {
+        "port": "3546",
+        "count": 1
+      },
+      {
+        "port": "5263",
+        "count": 1
+      },
+      {
+        "port": "5003",
+        "count": 1
+      },
+      {
         "port": "2538",
         "count": 1
       },
       {
         "port": "8291",
         "count": 1
-      },
-      {
-        "port": "8271",
-        "count": 1
-      },
-      {
-        "port": "5892",
-        "count": 1
-      },
-      {
-        "port": "6421",
-        "count": 1
-      },
-      {
-        "port": "5288",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://obutdor.shop:5003/posts",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-25 16:28:23 UTC"
+      },
+      {
+        "ioc": "http://petcarv.click:8239/orders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-25 16:28:23 UTC"
+      },
+      {
+        "ioc": "15.204.253.8:8239",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 14:10:10 UTC"
+      },
+      {
+        "ioc": "137.184.108.14:3546",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 12:30:12 UTC"
+      },
+      {
+        "ioc": "http://vgfeden.shop:7728/webhooks",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-25 07:18:39 UTC"
+      },
+      {
+        "ioc": "http://jxewele.shop:4262/contacts",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-25 07:18:39 UTC"
+      },
+      {
+        "ioc": "http://novxlse.click:9820/addresses",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-25 07:18:38 UTC"
+      },
+      {
+        "ioc": "http://urbandm.click:4812/sessions",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-25 06:37:24 UTC"
+      },
+      {
+        "ioc": "168.231.121.175:5263",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 06:28:05 UTC"
+      },
+      {
+        "ioc": "bdducts.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-25 06:28:03 UTC"
+      },
+      {
+        "ioc": "143.244.141.187:5003",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-25 03:00:33 UTC"
+      },
       {
         "ioc": "http://quiunch.click:6271/events",
         "type": "url",
@@ -107,72 +172,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-24 12:13:39 UTC"
-      },
-      {
-        "ioc": "http://petcarv.click:8239/users",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 12:13:39 UTC"
-      },
-      {
-        "ioc": "http://kipthen.shop:9932/teams",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 12:13:38 UTC"
-      },
-      {
-        "ioc": "http://tfoyses.shop:3452/events",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 12:13:38 UTC"
-      },
-      {
-        "ioc": "http://tfoyses.shop:3452/collections",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 07:21:33 UTC"
-      },
-      {
-        "ioc": "http://fuarnpp.shop:5627/documents",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 07:21:33 UTC"
-      },
-      {
-        "ioc": "http://fgashub.shop:9932/transactions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 06:22:23 UTC"
-      },
-      {
-        "ioc": "http://phetsre.shop:3452/documents",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 06:22:23 UTC"
-      },
-      {
-        "ioc": "http://homecor.click:6527/addresses",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 06:22:23 UTC"
-      },
-      {
-        "ioc": "http://obutdor.shop:5003/customers",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 04:32:23 UTC"
-      },
-      {
-        "ioc": "http://vgfeden.shop:7728/files",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 02:50:43 UTC"
-      },
-      {
-        "ioc": "http://trsries.click:7289/subscriptions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 02:50:43 UTC"
       }
     ]
   }
