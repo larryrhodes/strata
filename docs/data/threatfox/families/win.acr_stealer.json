@@ -1,45 +1,32 @@
 {
   "malware_id": "win.acr_stealer",
   "family": "ACR Stealer",
-  "generated": "2026-08-28T23:12:11.966081+00:00",
-  "recent_window_ioc_count": 86,
+  "generated": "2026-09-26T17:23:54.949692+00:00",
+  "recent_window_ioc_count": 64,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
   "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 357,
+    "total_iocs": 396,
     "date_range": {
-      "earliest": "2026-03-07",
-      "latest": "2026-08-28"
+      "earliest": "2026-03-25",
+      "latest": "2026-09-26"
     },
     "ioc_type_breakdown": {
-      "domain": 166,
-      "ip:port": 109,
-      "md5_hash": 27,
-      "sha1_hash": 27,
-      "sha256_hash": 27,
-      "url": 1
+      "domain": 244,
+      "ip:port": 47,
+      "sha256_hash": 35,
+      "md5_hash": 34,
+      "sha1_hash": 34,
+      "url": 2
     },
     "confidence_distribution": {
-      "high": 356,
+      "high": 395,
       "medium": 1,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-07": 7,
-      "2026-03-08": 2,
-      "2026-03-09": 2,
-      "2026-03-10": 1,
-      "2026-03-11": 3,
-      "2026-03-12": 3,
-      "2026-03-14": 4,
-      "2026-03-16": 2,
-      "2026-03-17": 4,
-      "2026-03-18": 3,
-      "2026-03-19": 26,
-      "2026-03-20": 1,
-      "2026-03-24": 5,
       "2026-03-25": 2,
       "2026-03-26": 2,
       "2026-03-27": 2,
@@ -95,104 +82,118 @@
       "2026-08-20": 1,
       "2026-08-22": 77,
       "2026-08-27": 3,
-      "2026-08-28": 6
+      "2026-08-28": 6,
+      "2026-09-03": 1,
+      "2026-09-04": 2,
+      "2026-09-07": 1,
+      "2026-09-10": 1,
+      "2026-09-11": 8,
+      "2026-09-12": 13,
+      "2026-09-13": 9,
+      "2026-09-14": 2,
+      "2026-09-15": 1,
+      "2026-09-22": 2,
+      "2026-09-23": 1,
+      "2026-09-24": 1,
+      "2026-09-25": 2,
+      "2026-09-26": 58
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 109
+        "count": 47
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "8be48ea27f6cd6b2ec2ef3be4977322d",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:35 UTC"
-      },
-      {
-        "ioc": "ba655e73a1c08143324ffeaf56b6f6bea0a134e6",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:35 UTC"
-      },
-      {
-        "ioc": "105195dfdfbfdce7cf13f50d92bba761eba5bc22c31000109a67708f61474e12",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:35 UTC"
-      },
-      {
-        "ioc": "98f00e36daaf4c4bae91031d4b53ea9b",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:21 UTC"
-      },
-      {
-        "ioc": "6c19930c2b6b2ec49b42399dcd8e477de347c010",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:20 UTC"
-      },
-      {
-        "ioc": "46ced738ab9a9a37df3e36c6a8603742f26783f0be2fa845bdec10b5ddb50bfb",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-28 16:02:20 UTC"
-      },
-      {
-        "ioc": "91f4d29bbd95d3f69bde9a5a92c85143",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-27 00:06:28 UTC"
-      },
-      {
-        "ioc": "ceabbf3ec577b2a3aa5917b9566da8f6e6a2b1d1",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-27 00:06:27 UTC"
-      },
-      {
-        "ioc": "81de4d530901a1df65b325368728f4eea2c39e7e53a2df97aec3744771d86a1e",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-27 00:06:27 UTC"
-      },
-      {
-        "ioc": "d252e8f0884cdfd7a81c26f2009b7719",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-22 11:18:46 UTC"
-      },
-      {
-        "ioc": "26a0fda22f954435e12528f1b270ff8e046692d0",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-22 11:18:45 UTC"
-      },
-      {
-        "ioc": "82085936272bf263f09cb82c1d9d94c6098f5c46a973d00da4c682346e3fa71e",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-08-22 11:18:45 UTC"
-      },
-      {
-        "ioc": "zzxryguzfq02042676.cfd",
+        "ioc": "quiverlake.cc",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-22 09:36:45 UTC"
+        "first_seen": "2026-09-26 10:05:06 UTC"
       },
       {
-        "ioc": "ykize140825p.cfd",
+        "ioc": "apricotrun.cc",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-22 09:36:45 UTC"
+        "first_seen": "2026-09-26 10:05:06 UTC"
       },
       {
-        "ioc": "y87fvt1g020426i.cfd",
+        "ioc": "russetmoor.cc",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-08-22 09:36:45 UTC"
+        "first_seen": "2026-09-26 10:05:06 UTC"
+      },
+      {
+        "ioc": "honeytrail.cc",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-26 10:05:06 UTC"
+      },
+      {
+        "ioc": "wisebyte.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "webforq.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "swiftflux.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "peddlingconjure.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "lowenbay.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "logicbyte.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "linenwood.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "koalafield.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "kilogramwomanlike.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "kestrelbay.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
+      },
+      {
+        "ioc": "kelpstone.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-26 08:56:52 UTC"
       }
     ]
   }

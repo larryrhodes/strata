@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-25T18:07:09.953279+00:00",
-  "recent_window_ioc_count": 22,
+  "generated": "2026-09-26T17:25:31.025779+00:00",
+  "recent_window_ioc_count": 23,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -11,22 +11,22 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-13",
-      "latest": "2026-09-25"
+      "latest": "2026-09-26"
     },
     "ioc_type_breakdown": {
-      "domain": 328,
-      "url": 88,
-      "ip:port": 56,
+      "domain": 330,
+      "url": 87,
+      "ip:port": 55,
       "sha256_hash": 24,
       "md5_hash": 4
     },
     "confidence_distribution": {
-      "high": 475,
-      "medium": 25,
+      "high": 477,
+      "medium": 23,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-13": 5,
+      "2026-08-13": 6,
       "2026-08-14": 3,
       "2026-08-17": 12,
       "2026-08-18": 18,
@@ -37,10 +37,10 @@
       "2026-08-24": 6,
       "2026-08-25": 8,
       "2026-08-26": 18,
-      "2026-08-27": 33,
+      "2026-08-27": 32,
       "2026-08-30": 2,
       "2026-09-02": 9,
-      "2026-09-04": 12,
+      "2026-09-04": 10,
       "2026-09-05": 23,
       "2026-09-07": 4,
       "2026-09-08": 6,
@@ -55,7 +55,8 @@
       "2026-09-20": 2,
       "2026-09-22": 1,
       "2026-09-23": 5,
-      "2026-09-25": 13
+      "2026-09-25": 13,
+      "2026-09-26": 2
     },
     "top_ports": [
       {
@@ -101,13 +102,25 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "e16d11d02dd4ff355c4832fbdaa950d88852b47133e33a253e043ebc1f5a5dc3",
+        "ioc": "orospucocu.sbs",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-26 06:20:21 UTC"
+      },
+      {
+        "ioc": "https://orospucocu.sbs/ws",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-26 06:20:21 UTC"
+      },
+      {
+        "ioc": "e94a99395a2f5f33c84020f767151a2e464b1b32d7e323c949dbcee8577e4af2",
         "type": "sha256_hash",
         "confidence": 75,
         "first_seen": "2026-09-25 09:05:30 UTC"
       },
       {
-        "ioc": "e94a99395a2f5f33c84020f767151a2e464b1b32d7e323c949dbcee8577e4af2",
+        "ioc": "e16d11d02dd4ff355c4832fbdaa950d88852b47133e33a253e043ebc1f5a5dc3",
         "type": "sha256_hash",
         "confidence": 75,
         "first_seen": "2026-09-25 09:05:30 UTC"
@@ -119,25 +132,25 @@
         "first_seen": "2026-09-25 09:05:29 UTC"
       },
       {
-        "ioc": "345d1a775867b9e79ee6b0825e1e2416d715550f2162ac32c076f0371c8553e1",
-        "type": "sha256_hash",
-        "confidence": 75,
-        "first_seen": "2026-09-25 09:05:28 UTC"
-      },
-      {
         "ioc": "db11d553f89f4ef02f725c96f7af7a3659bf17831a8e73966f1af4e92be6c594",
         "type": "sha256_hash",
         "confidence": 75,
         "first_seen": "2026-09-25 09:05:28 UTC"
       },
       {
-        "ioc": "1dc438b8979a4d7125cc5cc64b80cc76b49a4b3197fb3b7b7fd6bbfe2ed25c82",
+        "ioc": "345d1a775867b9e79ee6b0825e1e2416d715550f2162ac32c076f0371c8553e1",
+        "type": "sha256_hash",
+        "confidence": 75,
+        "first_seen": "2026-09-25 09:05:28 UTC"
+      },
+      {
+        "ioc": "bad0600a850436154f8d7b6f7a191dc45bd136897780cd032b336cb4b358d241",
         "type": "sha256_hash",
         "confidence": 75,
         "first_seen": "2026-09-25 09:05:27 UTC"
       },
       {
-        "ioc": "bad0600a850436154f8d7b6f7a191dc45bd136897780cd032b336cb4b358d241",
+        "ioc": "1dc438b8979a4d7125cc5cc64b80cc76b49a4b3197fb3b7b7fd6bbfe2ed25c82",
         "type": "sha256_hash",
         "confidence": 75,
         "first_seen": "2026-09-25 09:05:27 UTC"
@@ -177,18 +190,6 @@
         "type": "domain",
         "confidence": 50,
         "first_seen": "2026-09-25 08:34:29 UTC"
-      },
-      {
-        "ioc": "opalcraftsmp.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-23 17:20:26 UTC"
-      },
-      {
-        "ioc": "http://20.124.84.92:3001/api/upload",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-23 13:52:59 UTC"
       }
     ]
   }

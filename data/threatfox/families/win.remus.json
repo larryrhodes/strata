@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-09-25T18:03:21.927983+00:00",
-  "recent_window_ioc_count": 196,
+  "generated": "2026-09-26T17:23:09.375586+00:00",
+  "recent_window_ioc_count": 184,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,11 +11,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-11",
-      "latest": "2026-09-25"
+      "latest": "2026-09-26"
     },
     "ioc_type_breakdown": {
-      "url": 475,
-      "ip:port": 19,
+      "url": 473,
+      "ip:port": 21,
       "domain": 6
     },
     "confidence_distribution": {
@@ -24,7 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-11": 106,
+      "2026-09-11": 103,
       "2026-09-12": 29,
       "2026-09-13": 23,
       "2026-09-14": 20,
@@ -38,7 +38,8 @@
       "2026-09-22": 79,
       "2026-09-23": 45,
       "2026-09-24": 20,
-      "2026-09-25": 11
+      "2026-09-25": 11,
+      "2026-09-26": 3
     },
     "top_ports": [
       {
@@ -58,6 +59,18 @@
         "count": 2
       },
       {
+        "port": "5621",
+        "count": 1
+      },
+      {
+        "port": "4262",
+        "count": 1
+      },
+      {
+        "port": "5713",
+        "count": 1
+      },
+      {
         "port": "8239",
         "count": 1
       },
@@ -68,21 +81,27 @@
       {
         "port": "5263",
         "count": 1
-      },
-      {
-        "port": "5003",
-        "count": 1
-      },
-      {
-        "port": "2538",
-        "count": 1
-      },
-      {
-        "port": "8291",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "143.244.190.5:5621",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-26 15:11:58 UTC"
+      },
+      {
+        "ioc": "88.222.242.235:4262",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-26 12:22:20 UTC"
+      },
+      {
+        "ioc": "88.222.242.235:5713",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-09-26 12:22:20 UTC"
+      },
       {
         "ioc": "http://obutdor.shop:5003/posts",
         "type": "url",
@@ -154,24 +173,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-24 14:29:23 UTC"
-      },
-      {
-        "ioc": "http://spiohop.shop:9932/categories",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 13:42:53 UTC"
-      },
-      {
-        "ioc": "http://quiunch.click:6271/files",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 13:42:53 UTC"
-      },
-      {
-        "ioc": "http://jxewele.shop:4262/imports",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 12:13:39 UTC"
       }
     ]
   }
