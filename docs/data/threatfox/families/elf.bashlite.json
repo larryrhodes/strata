@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.bashlite",
   "family": "Bashlite",
-  "generated": "2026-09-26T17:25:06.622485+00:00",
-  "recent_window_ioc_count": 29,
+  "generated": "2026-09-27T17:54:37.547236+00:00",
+  "recent_window_ioc_count": 31,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.bashlite",
   "description": "Bashlite is a malware family which infects Linux systems in order to launch distributed denial-of-service attacks (DDoS). Originally it was also known under the name Bashdoor, but this term now refers to the exploit method used by the malware. It has been used to launch attacks of up to 400 Gbps.",
   "alt_names": [
@@ -14,18 +14,18 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 67,
+    "total_iocs": 71,
     "date_range": {
       "earliest": "2026-03-26",
-      "latest": "2026-09-26"
+      "latest": "2026-09-27"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 47,
+      "sha256_hash": 51,
       "ip:port": 17,
       "domain": 3
     },
     "confidence_distribution": {
-      "high": 67,
+      "high": 71,
       "medium": 0,
       "low": 0
     },
@@ -56,7 +56,8 @@
       "2026-09-23": 5,
       "2026-09-24": 5,
       "2026-09-25": 5,
-      "2026-09-26": 1
+      "2026-09-26": 1,
+      "2026-09-27": 4
     },
     "top_ports": [
       {
@@ -101,6 +102,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "38c27f12e49368ed064a7e36e1d78e8ee9e7cb31cc6aa3cab91b787c8ebf91b1",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-27 17:05:07 UTC"
+      },
+      {
+        "ioc": "c1f1f3efb4d4eb151024fbbaaf62d35985dc77f7dbc622557b75d85d7ef11c4c",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-27 17:05:07 UTC"
+      },
+      {
+        "ioc": "8e204247ddb0abbf58f91142a2aeb856d8e952e4744dd7feb23c001984e5629f",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-09-27 17:05:07 UTC"
+      },
+      {
+        "ioc": "7ff2375f3300ce58ae4f6058d98481b3004489b1d781403c2fe9b58d63283c6c",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-09-27 06:38:58 UTC"
+      },
       {
         "ioc": "176.65.134.121:8080",
         "type": "ip:port",
@@ -166,30 +191,6 @@
         "type": "sha256_hash",
         "confidence": 100,
         "first_seen": "2026-09-24 04:57:19 UTC"
-      },
-      {
-        "ioc": "05c0b04b90d0f5aaafb14e46341f7821d9b0970541fec2fd701219dbfe94465a",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-23 06:34:57 UTC"
-      },
-      {
-        "ioc": "d36cff93b5c3936f33d95e76051dab320e8ee68e0a7f5e74e569ac1ee6278658",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-23 06:34:52 UTC"
-      },
-      {
-        "ioc": "0cbf6f10c9a39d628bb5c0a3810f25d2f58b37a4351045ab200c62154d03734e",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-09-23 06:34:37 UTC"
-      },
-      {
-        "ioc": "14270dc1d285e7eaf8ccf3fee7f0e1bb9efe214c8db357ae5104809671793d90",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-23 06:34:29 UTC"
       }
     ]
   }

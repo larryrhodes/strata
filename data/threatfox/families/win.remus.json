@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-09-26T17:23:09.375586+00:00",
-  "recent_window_ioc_count": 184,
+  "generated": "2026-09-27T17:54:21.905347+00:00",
+  "recent_window_ioc_count": 188,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,12 +11,12 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-11",
-      "latest": "2026-09-26"
+      "latest": "2026-09-27"
     },
     "ioc_type_breakdown": {
-      "url": 473,
+      "url": 472,
       "ip:port": 21,
-      "domain": 6
+      "domain": 7
     },
     "confidence_distribution": {
       "high": 498,
@@ -24,7 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-11": 103,
+      "2026-09-11": 98,
       "2026-09-12": 29,
       "2026-09-13": 23,
       "2026-09-14": 20,
@@ -39,7 +39,8 @@
       "2026-09-23": 45,
       "2026-09-24": 20,
       "2026-09-25": 11,
-      "2026-09-26": 3
+      "2026-09-26": 3,
+      "2026-09-27": 5
     },
     "top_ports": [
       {
@@ -84,6 +85,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://jxewele.shop:4262/permissions",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-27 14:36:08 UTC"
+      },
+      {
+        "ioc": "http://obutdor.shop:5003/webhooks",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-27 14:36:08 UTC"
+      },
+      {
+        "ioc": "heaucts.click",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-27 14:05:17 UTC"
+      },
+      {
+        "ioc": "http://quiunch.click:6271/profiles",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-27 07:13:23 UTC"
+      },
+      {
+        "ioc": "http://obutdor.shop:5003/folders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-09-27 04:56:29 UTC"
+      },
       {
         "ioc": "143.244.190.5:5621",
         "type": "ip:port",
@@ -143,36 +174,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-09-25 07:18:38 UTC"
-      },
-      {
-        "ioc": "http://urbandm.click:4812/sessions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-25 06:37:24 UTC"
-      },
-      {
-        "ioc": "168.231.121.175:5263",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-25 06:28:05 UTC"
-      },
-      {
-        "ioc": "bdducts.click",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-25 06:28:03 UTC"
-      },
-      {
-        "ioc": "143.244.141.187:5003",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-25 03:00:33 UTC"
-      },
-      {
-        "ioc": "http://quiunch.click:6271/events",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-09-24 14:29:23 UTC"
       }
     ]
   }
