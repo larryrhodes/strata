@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-09-27T17:54:38.841702+00:00",
-  "recent_window_ioc_count": 21,
+  "generated": "2026-09-28T20:12:23.762884+00:00",
+  "recent_window_ioc_count": 30,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-13",
-      "latest": "2026-09-26"
+      "earliest": "2026-08-11",
+      "latest": "2026-09-28"
     },
     "ioc_type_breakdown": {
-      "domain": 330,
-      "url": 87,
-      "ip:port": 55,
-      "sha256_hash": 24,
+      "domain": 333,
+      "url": 94,
+      "ip:port": 57,
+      "sha256_hash": 12,
       "md5_hash": 4
     },
     "confidence_distribution": {
@@ -26,7 +26,9 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-13": 6,
+      "2026-08-11": 1,
+      "2026-08-12": 2,
+      "2026-08-13": 16,
       "2026-08-14": 3,
       "2026-08-17": 12,
       "2026-08-18": 18,
@@ -41,7 +43,7 @@
       "2026-08-30": 2,
       "2026-09-02": 9,
       "2026-09-04": 10,
-      "2026-09-05": 23,
+      "2026-09-05": 1,
       "2026-09-07": 4,
       "2026-09-08": 6,
       "2026-09-09": 238,
@@ -56,16 +58,17 @@
       "2026-09-22": 1,
       "2026-09-23": 5,
       "2026-09-25": 13,
-      "2026-09-26": 2
+      "2026-09-26": 2,
+      "2026-09-28": 9
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 21
+        "count": 20
       },
       {
         "port": "8041",
-        "count": 8
+        "count": 10
       },
       {
         "port": "3001",
@@ -73,10 +76,6 @@
       },
       {
         "port": "8434",
-        "count": 2
-      },
-      {
-        "port": "80",
         "count": 2
       },
       {
@@ -98,9 +97,67 @@
       {
         "port": "4522",
         "count": 1
+      },
+      {
+        "port": "4521",
+        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://thisisafalsepositive.st/shard/submitDiscordInjection",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:52:30 UTC"
+      },
+      {
+        "ioc": "https://thisisafalsepositive.st/shard/submitWalletFiles",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:52:30 UTC"
+      },
+      {
+        "ioc": "https://thisisafalsepositive.st/shard/submitWallet",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:52:30 UTC"
+      },
+      {
+        "ioc": "https://thisisafalsepositive.st/shard/submitFile",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:52:30 UTC"
+      },
+      {
+        "ioc": "https://thisisafalsepositive.st/shard/submitData",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:52:30 UTC"
+      },
+      {
+        "ioc": "https://thisisafalsepositive.st/shard/submitLogs",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:52:29 UTC"
+      },
+      {
+        "ioc": "silentnet.st",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:49:36 UTC"
+      },
+      {
+        "ioc": "antimalwarediagnostics.st",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-09-28 18:49:36 UTC"
+      },
+      {
+        "ioc": "oapi.polysupport.team",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-09-28 06:08:01 UTC"
+      },
       {
         "ioc": "orospucocu.sbs",
         "type": "domain",
@@ -136,60 +193,6 @@
         "type": "sha256_hash",
         "confidence": 75,
         "first_seen": "2026-09-25 09:05:28 UTC"
-      },
-      {
-        "ioc": "345d1a775867b9e79ee6b0825e1e2416d715550f2162ac32c076f0371c8553e1",
-        "type": "sha256_hash",
-        "confidence": 75,
-        "first_seen": "2026-09-25 09:05:28 UTC"
-      },
-      {
-        "ioc": "bad0600a850436154f8d7b6f7a191dc45bd136897780cd032b336cb4b358d241",
-        "type": "sha256_hash",
-        "confidence": 75,
-        "first_seen": "2026-09-25 09:05:27 UTC"
-      },
-      {
-        "ioc": "1dc438b8979a4d7125cc5cc64b80cc76b49a4b3197fb3b7b7fd6bbfe2ed25c82",
-        "type": "sha256_hash",
-        "confidence": 75,
-        "first_seen": "2026-09-25 09:05:27 UTC"
-      },
-      {
-        "ioc": "dibardo.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-25 08:34:31 UTC"
-      },
-      {
-        "ioc": "esunager.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-25 08:34:31 UTC"
-      },
-      {
-        "ioc": "medonaz.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-25 08:34:30 UTC"
-      },
-      {
-        "ioc": "sotikan.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-25 08:34:30 UTC"
-      },
-      {
-        "ioc": "giperon.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-25 08:34:29 UTC"
-      },
-      {
-        "ioc": "remuloz.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-25 08:34:29 UTC"
       }
     ]
   }
