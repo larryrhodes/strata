@@ -2129,6 +2129,18 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.lorem_ipsum": {
+    "alt_names": [
+      "AxolotlLoader",
+      "OAKGLINT"
+    ],
+    "associated_groups": [],
+    "common_name": "Lorem Ipsum",
+    "description": "According to BlueVoyant, Lorem Ipsum is a multi-stage malware family whose loader components are written in PowerShell, with later stages transitioning to shellcode and DLL-based payloads. The loader chains multiple PowerShell stages that use AES decryption for embedded payloads, followed by gzip decompression and reflective memory loading; newer versions employ substitution cipher decoding and XOR-encrypted shellcode stubs. It persists via Windows registry Run keys and evolved to use DLL sideloading, where a legitimate executable sideloads a malicious DLL that decodes embedded ciphertext to launch the core loader. C2 communication runs through JFIF image files with additional data appended beyond the image boundary, allowing bidirectional exchange disguised as image traffic. \r\n\r\nA separate C/C++ downloader and dropper component has been observed as a delivered payload within the same chain. It inspects command-line arguments and uses sleep delays to evade analysis environments, then beacons by sending a hardcoded JPEG as the HTTP POST body, embedding a campaign-specific GUID in the URL path to identify the victim or build. Depending on the response it either writes the payload to the temporary directory with hidden and system attributes and launches it directly, or side-loads a reflective shellcode downloader that runs entirely in memory and queries campaign endpoints for the next stage. Variant-specific features include steganographic resource decoding, registry Run key persistence, execution timeouts, self-deletion, and stack-constructed C2 domain strings.",
+    "enriched_at": "2026-09-29T18:48:15.233949+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.luca_stealer": {
     "alt_names": [],
     "associated_groups": [],
