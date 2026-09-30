@@ -1,23 +1,23 @@
 {
   "malware_id": "elf.potassium",
   "family": "Potassium",
-  "generated": "2026-09-29T18:48:44.391532+00:00",
-  "recent_window_ioc_count": 23,
+  "generated": "2026-09-30T18:32:02.275783+00:00",
+  "recent_window_ioc_count": 27,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.potassium",
   "description": "Mirai-derived DDoS bot for Android and Linux IoT devices, spread through exposed ADB, telnet, and command injection in router and DVR web interfaces. It stands apart from other Mirai forks through a ChaCha20-encrypted config table whose static key and nonce are shared by every build, and a reverse shell (SHELL/SHOUT) carried over the C2 connection.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 23,
+    "total_iocs": 27,
     "date_range": {
       "earliest": "2026-09-26",
-      "latest": "2026-09-29"
+      "latest": "2026-09-30"
     },
     "ioc_type_breakdown": {
-      "ip:port": 23
+      "ip:port": 27
     },
     "confidence_distribution": {
-      "high": 23,
+      "high": 27,
       "medium": 0,
       "low": 0
     },
@@ -25,19 +25,20 @@
       "2026-09-26": 13,
       "2026-09-27": 1,
       "2026-09-28": 4,
-      "2026-09-29": 5
+      "2026-09-29": 5,
+      "2026-09-30": 4
     },
     "top_ports": [
       {
         "port": "7193",
+        "count": 10
+      },
+      {
+        "port": "15987",
         "count": 8
       },
       {
         "port": "23789",
-        "count": 6
-      },
-      {
-        "port": "15987",
         "count": 6
       },
       {
@@ -50,6 +51,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "5.181.2.72:15987",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-30 17:06:41 UTC"
+      },
+      {
+        "ioc": "89.185.82.39:15987",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-30 17:06:41 UTC"
+      },
+      {
+        "ioc": "5.181.2.75:7193",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-30 15:14:06 UTC"
+      },
+      {
+        "ioc": "5.181.2.72:7193",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-09-30 05:49:38 UTC"
+      },
       {
         "ioc": "89.185.82.38:23789",
         "type": "ip:port",
@@ -115,30 +140,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-09-26 15:06:18 UTC"
-      },
-      {
-        "ioc": "45.95.233.131:15987",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-26 15:06:17 UTC"
-      },
-      {
-        "ioc": "212.192.14.31:15987",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-26 13:35:59 UTC"
-      },
-      {
-        "ioc": "130.49.190.185:23789",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-26 13:35:59 UTC"
-      },
-      {
-        "ioc": "45.95.233.131:23789",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-09-26 13:35:58 UTC"
       }
     ]
   }
