@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-09-30T18:31:28.803270+00:00",
-  "recent_window_ioc_count": 3872,
+  "generated": "2026-10-01T18:58:45.648153+00:00",
+  "recent_window_ioc_count": 3864,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -11,155 +11,156 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-28",
-      "latest": "2026-09-30"
+      "latest": "2026-10-01"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 458,
-      "domain": 24,
-      "ip:port": 18
+      "sha256_hash": 467,
+      "ip:port": 31,
+      "domain": 2
     },
     "confidence_distribution": {
-      "high": 14,
-      "medium": 486,
+      "high": 25,
+      "medium": 475,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-28": 463,
+      "2026-09-28": 455,
       "2026-09-29": 6,
-      "2026-09-30": 31
+      "2026-09-30": 10,
+      "2026-10-01": 29
     },
     "top_ports": [
       {
         "port": "7707",
-        "count": 3
+        "count": 5
       },
       {
         "port": "6606",
-        "count": 3
+        "count": 4
       },
       {
         "port": "8808",
-        "count": 2
-      },
-      {
-        "port": "9977",
-        "count": 1
-      },
-      {
-        "port": "2030",
-        "count": 1
-      },
-      {
-        "port": "9997",
-        "count": 1
-      },
-      {
-        "port": "4444",
-        "count": 1
+        "count": 3
       },
       {
         "port": "7777",
+        "count": 2
+      },
+      {
+        "port": "8050",
         "count": 1
       },
       {
-        "port": "443",
+        "port": "444",
         "count": 1
       },
       {
-        "port": "2000",
+        "port": "5001",
+        "count": 1
+      },
+      {
+        "port": "5000",
+        "count": 1
+      },
+      {
+        "port": "3101",
+        "count": 1
+      },
+      {
+        "port": "2101",
         "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "147.50.252.47:9977",
+        "ioc": "039489023.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-01 14:55:25 UTC"
+      },
+      {
+        "ioc": "41.43.184.224:7707",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:49:47 UTC"
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:45:03 UTC"
       },
       {
-        "ioc": "147.50.252.47:8808",
+        "ioc": "23.132.164.73:8808",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:49:47 UTC"
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:44:48 UTC"
       },
       {
-        "ioc": "147.50.252.47:7707",
+        "ioc": "23.132.164.73:7707",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:49:47 UTC"
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:44:48 UTC"
       },
       {
-        "ioc": "147.50.252.47:6606",
+        "ioc": "185.241.211.167:8050",
         "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:49:47 UTC"
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:44:00 UTC"
       },
       {
-        "ioc": "www.shbet8.jp.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "ioc": "160.119.76.118:444",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:43:43 UTC"
       },
       {
-        "ioc": "www.qh88beting.me",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "ioc": "105.137.170.202:5001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:43:13 UTC"
       },
       {
-        "ioc": "www.mu88vn.guru",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "ioc": "105.137.170.202:5000",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-01 09:43:13 UTC"
       },
       {
-        "ioc": "www.mu88trangchu.online",
-        "type": "domain",
+        "ioc": "72ba0f1f9089a4fc2cc71600f28c46c3ab790a9c586f00252dc2dcffbda62212",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:16 UTC"
       },
       {
-        "ioc": "www.mu886.pizza",
-        "type": "domain",
+        "ioc": "c70dacc60ee672c786c7ab6d816f786df6f3b715bd18badfef094b6e5bd9d7d1",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:15 UTC"
       },
       {
-        "ioc": "www.feliciachang.me",
-        "type": "domain",
+        "ioc": "3853847f9df8f734f0a574a73718a1b1f97827fae1def709f69ae60dc545523f",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:14 UTC"
       },
       {
-        "ioc": "shopfifa4.com",
-        "type": "domain",
+        "ioc": "a4e7953b05706c442f4c498c6d1859a08f02d41b66632b797986388f867d0eae",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:14 UTC"
       },
       {
-        "ioc": "shbet8.jp.net",
-        "type": "domain",
+        "ioc": "81fb36a6b1f806c40f5c36697724d96917354c0bf7e243689ca15614736b0c70",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:13 UTC"
       },
       {
-        "ioc": "qh88beting.me",
-        "type": "domain",
+        "ioc": "8f7c3ac3bfb448def0b47a56e52249bec1e7a8b714b2eebd214dd5653e0d8bfe",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:12 UTC"
       },
       {
-        "ioc": "mu88vn.guru",
-        "type": "domain",
+        "ioc": "48812647f9e9c283a9a31e60958694c1ee44028e1fea8ed7ae031b09e7129f90",
+        "type": "sha256_hash",
         "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
-      },
-      {
-        "ioc": "mu88trangchu.online",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-09-30 16:46:36 UTC"
+        "first_seen": "2026-10-01 05:18:11 UTC"
       }
     ]
   }
