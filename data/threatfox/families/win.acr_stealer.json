@@ -1,20 +1,20 @@
 {
   "malware_id": "win.acr_stealer",
   "family": "ACR Stealer",
-  "generated": "2026-10-01T18:59:06.641345+00:00",
-  "recent_window_ioc_count": 68,
+  "generated": "2026-10-02T18:37:31.573510+00:00",
+  "recent_window_ioc_count": 67,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
   "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 357,
+    "total_iocs": 354,
     "date_range": {
-      "earliest": "2026-03-25",
-      "latest": "2026-09-30"
+      "earliest": "2026-04-02",
+      "latest": "2026-10-02"
     },
     "ioc_type_breakdown": {
-      "domain": 244,
+      "domain": 241,
       "sha256_hash": 35,
       "md5_hash": 34,
       "sha1_hash": 34,
@@ -22,13 +22,11 @@
       "url": 3
     },
     "confidence_distribution": {
-      "high": 356,
+      "high": 353,
       "medium": 1,
       "low": 0
     },
     "activity_timeline": {
-      "2026-03-25": 2,
-      "2026-04-01": 2,
       "2026-04-02": 1,
       "2026-04-03": 1,
       "2026-04-06": 3,
@@ -92,7 +90,8 @@
       "2026-09-25": 2,
       "2026-09-26": 58,
       "2026-09-27": 1,
-      "2026-09-30": 7
+      "2026-09-30": 7,
+      "2026-10-02": 1
     },
     "top_ports": [
       {
@@ -101,6 +100,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "imap.silverpine.cc",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-02 06:15:52 UTC"
+      },
       {
         "ioc": "quietfox.cc",
         "type": "domain",
@@ -181,12 +186,6 @@
       },
       {
         "ioc": "webforq.cc",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-26 08:56:52 UTC"
-      },
-      {
-        "ioc": "swiftflux.cc",
         "type": "domain",
         "confidence": 75,
         "first_seen": "2026-09-26 08:56:52 UTC"

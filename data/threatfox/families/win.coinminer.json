@@ -1,7 +1,7 @@
 {
   "malware_id": "win.coinminer",
   "family": "Coinminer",
-  "generated": "2026-10-01T18:59:08.730187+00:00",
+  "generated": "2026-10-02T18:37:33.010457+00:00",
   "recent_window_ioc_count": 49,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
   "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-25",
-      "latest": "2026-10-01"
+      "latest": "2026-10-02"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 179,
-      "md5_hash": 147,
-      "sha1_hash": 147,
-      "url": 25,
+      "sha256_hash": 178,
+      "md5_hash": 146,
+      "sha1_hash": 146,
+      "url": 28,
       "ip:port": 1,
       "domain": 1
     },
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-25": 104,
+      "2026-06-25": 98,
       "2026-06-29": 3,
       "2026-07-01": 3,
       "2026-07-02": 6,
@@ -85,7 +85,8 @@
       "2026-09-28": 8,
       "2026-09-29": 6,
       "2026-09-30": 2,
-      "2026-10-01": 9
+      "2026-10-01": 9,
+      "2026-10-02": 6
     },
     "top_ports": [
       {
@@ -94,6 +95,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "d26dcee9175d152bb8c5dfbb70485e98",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-02 14:50:09 UTC"
+      },
+      {
+        "ioc": "eeaac6049d6f1e96ce9c0a845ed389441e1a9c92",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-02 14:50:08 UTC"
+      },
+      {
+        "ioc": "3ea15dafb800d3181d230e227623055a863c03ec8045ab96565a95f9ac057156",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-02 14:50:07 UTC"
+      },
+      {
+        "ioc": "http://116.58.62.74/info.zip",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-02 03:39:43 UTC"
+      },
+      {
+        "ioc": "http://103.59.134.98/Photo.scr",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-02 02:44:40 UTC"
+      },
+      {
+        "ioc": "http://111.235.143.155:8080/info.zip",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-10-02 00:44:00 UTC"
+      },
       {
         "ioc": "http://190.196.38.77/video.scr",
         "type": "url",
@@ -147,42 +184,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-10-01 06:42:48 UTC"
-      },
-      {
-        "ioc": "fd34dab743b38c3832586923048e8e23a4b4f84008278b44032ed8bbd9c75035",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-30 21:45:57 UTC"
-      },
-      {
-        "ioc": "ea4015a2296ff237aa2c88face657791d556fb38939868186881f698c485ad44",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-30 20:45:54 UTC"
-      },
-      {
-        "ioc": "c04f0dc1cbefd3b345496edbd7cdfbc5",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-29 00:34:08 UTC"
-      },
-      {
-        "ioc": "b13cadbdd686db4a80445d6413708bdf2c5e6be4",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-29 00:34:08 UTC"
-      },
-      {
-        "ioc": "b1f1fe9eaa28a32efb48a7a70a40ff7e5fcf7e633081ee65713833e5f695ebd5",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-29 00:34:08 UTC"
-      },
-      {
-        "ioc": "d024d63c31d57b7c7b45d26705e7755f",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-09-29 00:33:55 UTC"
       }
     ]
   }
