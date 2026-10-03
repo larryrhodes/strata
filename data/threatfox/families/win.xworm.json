@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-10-02T18:37:39.279137+00:00",
-  "recent_window_ioc_count": 25,
+  "generated": "2026-10-03T17:32:03.176953+00:00",
+  "recent_window_ioc_count": 28,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,15 +12,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-04-06",
-      "latest": "2026-10-02"
+      "earliest": "2026-04-07",
+      "latest": "2026-10-03"
     },
     "ioc_type_breakdown": {
-      "ip:port": 264,
-      "domain": 147,
-      "sha256_hash": 36,
-      "md5_hash": 24,
-      "sha1_hash": 24,
+      "ip:port": 263,
+      "domain": 145,
+      "sha256_hash": 37,
+      "md5_hash": 25,
+      "sha1_hash": 25,
       "url": 5
     },
     "confidence_distribution": {
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-06": 1,
-      "2026-04-07": 8,
+      "2026-04-07": 6,
       "2026-04-08": 4,
       "2026-04-09": 7,
       "2026-04-10": 4,
@@ -147,7 +146,8 @@
       "2026-09-29": 3,
       "2026-09-30": 4,
       "2026-10-01": 16,
-      "2026-10-02": 1
+      "2026-10-02": 1,
+      "2026-10-03": 3
     },
     "top_ports": [
       {
@@ -192,6 +192,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "3a17c971d67659cfb590bd97f131039c",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-03 06:30:12 UTC"
+      },
+      {
+        "ioc": "5e6cb6842c63b751a04e14a4a4f9602d5c7bf337",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-03 06:30:11 UTC"
+      },
+      {
+        "ioc": "d15f8b15696bf2118bf81cf9656f28a6bc6992731956f2e070ce0f033fdd2ef3",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-03 06:30:11 UTC"
+      },
       {
         "ioc": "ogo1.duckdns.org",
         "type": "domain",
@@ -263,24 +281,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-10-01 15:00:34 UTC"
-      },
-      {
-        "ioc": "46.151.182.5:5050",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-01 14:55:29 UTC"
-      },
-      {
-        "ioc": "94.154.32.41:7004",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-01 12:40:34 UTC"
-      },
-      {
-        "ioc": "faithbiglovered.opik.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-01 10:05:26 UTC"
       }
     ]
   }

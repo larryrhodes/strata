@@ -173,6 +173,19 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "apk.mirax": {
+    "alt_names": [
+      "Astrinox",
+      "Mirax Bot",
+      "MiraxRAT"
+    ],
+    "associated_groups": [],
+    "common_name": "Mirax",
+    "description": "Mirax is an Android RAT / banking trojan sold as a private Malware-as-a-Service since December 2025 by an actor using the moniker \"Mirax Bot\", advertised only to a small pool of predominantly Russian-speaking affiliates. It combines a conventional banking-trojan stack \u2014 HTML/JavaScript overlay injection against banking and cryptocurrency apps, Accessibility-Services abuse, HVNC, keylogging, SMS interception, and lock-screen (PIN / pattern / biometric) intelligence harvesting \u2014 with an integrated SOCKS5 residential-proxy module multiplexed with Yamux over the WebSocket C2 channel, which turns infected handsets into residential-IP proxy nodes for follow-on fraud. C2 traffic is routed through a C2 Gate server on three concurrent WebSocket channels (control on 8443, data/streaming on 8444, proxy tunnel on 8445). Observed campaigns rely on paid Meta ads impersonating IPTV and illegal sports-streaming apps that redirect to droppers hosted on GitHub Releases with daily-rotating hashes; the analysed campaign targeted Spanish-speaking users (Spain) and reached more than 220,000 accounts, though the platform's overlay inventory includes templates for German, French, Italian, Polish, Portuguese, and other European languages.",
+    "enriched_at": "2026-10-03T17:31:25.804034+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "apk.soumnibot": {
     "alt_names": [],
     "associated_groups": [],
@@ -264,6 +277,19 @@
     "common_name": "Aisuru",
     "description": "Honeypot-aware variant of Mirai.",
     "enriched_at": "2026-07-08T17:00:12.906215+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "elf.akira": {
+    "alt_names": [
+      "REDBIKE"
+    ],
+    "associated_groups": [
+      "Storm-1567"
+    ],
+    "common_name": "Akira",
+    "description": "Ransomware",
+    "enriched_at": "2026-10-03T17:31:26.811774+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -490,6 +516,18 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "elf.perlbot": {
+    "alt_names": [
+      "ShellBot",
+      "DDoS Perl IrcBot"
+    ],
+    "associated_groups": [],
+    "common_name": "PerlBot",
+    "description": null,
+    "enriched_at": "2026-10-03T17:31:29.025395+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "elf.pink": {
     "alt_names": [],
     "associated_groups": [],
@@ -514,6 +552,15 @@
     "common_name": "Potassium",
     "description": "Mirai-derived DDoS bot for Android and Linux IoT devices, spread through exposed ADB, telnet, and command injection in router and DVR web interfaces. It stands apart from other Mirai forks through a ChaCha20-encrypted config table whose static key and nonce are shared by every build, and a reverse shell (SHELL/SHOUT) carried over the C2 connection.",
     "enriched_at": "2026-09-25T18:01:59.151030+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "elf.prometei": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Prometei",
+    "description": null,
+    "enriched_at": "2026-10-03T17:31:30.789623+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1657,6 +1704,15 @@
     "common_name": "DCRat",
     "description": "DCRat is a typical RAT that has been around since at least June 2019.",
     "enriched_at": "2026-07-08T17:00:35.476797+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.deerstealer": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "DeerStealer",
+    "description": "According to Broadcom, DeerStealer is an information stealer written in Delphi and targeting devices running an windows operating system. The malware has hidden VNC capabilities for stealthy remote desktop control, collecting crypto wallets from USB sticks and over 800 browser extensions. It exfiltrates the stolen data in form of a ZIP archive to a botnet C2 server.",
+    "enriched_at": "2026-10-03T17:31:27.990184+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2885,6 +2941,15 @@
     "common_name": "SalatStealer",
     "description": "Crypto Stealer written in GO. Targets browsers, crypto wallets and telegram clients (Telegram Desktop, Kotatogram). Can capture webcam and microphone and stream it on to c2 server.",
     "enriched_at": "2026-07-08T17:00:38.378926+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.santa_stealer": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "SantaStealer",
+    "description": "According to Rapid7, this malware collects and exfiltrates sensitive documents, credentials, wallets, and data from a broad range of applications, and aims to operate entirely in-memory to avoid file-based detection. Stolen data is then compressed, split into 10 MB chunks, and sent to a C2 server over unencrypted HTTP.",
+    "enriched_at": "2026-10-03T17:31:32.416939+00:00",
     "source": "malpedia",
     "status": "ok"
   },

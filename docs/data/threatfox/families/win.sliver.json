@@ -1,8 +1,8 @@
 {
   "malware_id": "win.sliver",
   "family": "Sliver",
-  "generated": "2026-10-02T18:37:27.661878+00:00",
-  "recent_window_ioc_count": 79,
+  "generated": "2026-10-03T17:31:51.966957+00:00",
+  "recent_window_ioc_count": 80,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.sliver",
   "description": "According to VK9 Seecurity, Sliver is a Command and Control (C2) system made for penetration testers, red teams, and advanced persistent threats. It generates implants (slivers) that can run on virtually every architecture out there, and securely manage these connections through a central server. Sliver supports multiple callback protocols including DNS, TCP, and HTTP(S) to make egress simple, even when those pesky blue teams block your domains. You can even have multiple operators (players) simultaneously commanding your sliver army.",
   "alt_names": [],
@@ -10,12 +10,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-14",
-      "latest": "2026-10-02"
+      "earliest": "2026-08-16",
+      "latest": "2026-10-03"
     },
     "ioc_type_breakdown": {
-      "ip:port": 493,
-      "sha256_hash": 3,
+      "ip:port": 492,
+      "sha256_hash": 4,
       "md5_hash": 1,
       "sha1_hash": 1,
       "url": 1,
@@ -27,7 +27,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-14": 1,
       "2026-08-16": 6,
       "2026-08-18": 76,
       "2026-08-19": 41,
@@ -54,12 +53,13 @@
       "2026-09-28": 1,
       "2026-09-29": 7,
       "2026-09-30": 2,
-      "2026-10-02": 9
+      "2026-10-02": 9,
+      "2026-10-03": 1
     },
     "top_ports": [
       {
         "port": "31337",
-        "count": 404
+        "count": 403
       },
       {
         "port": "8443",
@@ -99,6 +99,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "2823619d9775c348c53807e986feee0c6862ee7350e2d0e4edc6954b2de73c02",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-03 16:46:40 UTC"
+      },
       {
         "ioc": "46.151.182.182:31337",
         "type": "ip:port",
@@ -182,12 +188,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-09-29 20:57:07 UTC"
-      },
-      {
-        "ioc": "67.215.229.22:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-09-29 12:40:38 UTC"
       }
     ]
   }
