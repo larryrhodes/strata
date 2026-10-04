@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.aisuru",
   "family": "Aisuru",
-  "generated": "2026-10-03T17:31:55.917204+00:00",
-  "recent_window_ioc_count": 73,
+  "generated": "2026-10-04T17:46:31.812439+00:00",
+  "recent_window_ioc_count": 64,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.aisuru",
   "description": "Honeypot-aware variant of Mirai.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-18",
-      "latest": "2026-10-03"
+      "latest": "2026-10-04"
     },
     "ioc_type_breakdown": {
       "ip:port": 497,
@@ -24,7 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-18": 12,
+      "2026-08-18": 9,
       "2026-08-19": 21,
       "2026-08-20": 5,
       "2026-08-21": 5,
@@ -70,12 +70,13 @@
       "2026-09-30": 17,
       "2026-10-01": 14,
       "2026-10-02": 3,
-      "2026-10-03": 1
+      "2026-10-03": 1,
+      "2026-10-04": 3
     },
     "top_ports": [
       {
         "port": "8001",
-        "count": 138
+        "count": 135
       },
       {
         "port": "8443",
@@ -83,7 +84,7 @@
       },
       {
         "port": "8080",
-        "count": 103
+        "count": 105
       },
       {
         "port": "9034",
@@ -94,12 +95,12 @@
         "count": 40
       },
       {
-        "port": "12345",
+        "port": "9035",
         "count": 17
       },
       {
-        "port": "9035",
-        "count": 16
+        "port": "12345",
+        "count": 17
       },
       {
         "port": "5555",
@@ -111,6 +112,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "159.223.108.19:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-04 06:54:53 UTC"
+      },
+      {
+        "ioc": "140.233.190.115:9035",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-04 06:54:52 UTC"
+      },
+      {
+        "ioc": "64.227.117.205:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-04 06:54:52 UTC"
+      },
       {
         "ioc": "64.227.117.205:9034",
         "type": "ip:port",
@@ -182,24 +201,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-01 05:17:54 UTC"
-      },
-      {
-        "ioc": "140.233.190.110:34567",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-01 05:17:46 UTC"
-      },
-      {
-        "ioc": "140.233.190.114:9034",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-01 05:17:45 UTC"
-      },
-      {
-        "ioc": "142.93.6.168:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-01 05:17:35 UTC"
       }
     ]
   }

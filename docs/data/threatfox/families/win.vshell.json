@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vshell",
   "family": "VShell",
-  "generated": "2026-10-03T17:31:42.964846+00:00",
-  "recent_window_ioc_count": 268,
+  "generated": "2026-10-04T17:46:21.781778+00:00",
+  "recent_window_ioc_count": 224,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
   "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-19",
-      "latest": "2026-10-03"
+      "earliest": "2026-09-20",
+      "latest": "2026-10-04"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 175,
-      "ip:port": 135,
-      "url": 94,
+      "sha256_hash": 176,
+      "ip:port": 133,
+      "url": 95,
       "md5_hash": 48,
       "sha1_hash": 48
     },
@@ -26,8 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-19": 4,
-      "2026-09-20": 72,
+      "2026-09-20": 69,
       "2026-09-21": 32,
       "2026-09-22": 36,
       "2026-09-23": 18,
@@ -40,12 +39,13 @@
       "2026-09-30": 28,
       "2026-10-01": 36,
       "2026-10-02": 63,
-      "2026-10-03": 8
+      "2026-10-03": 9,
+      "2026-10-04": 6
     },
     "top_ports": [
       {
         "port": "8084",
-        "count": 36
+        "count": 33
       },
       {
         "port": "80",
@@ -85,6 +85,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "45.192.213.15:10443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-04 07:05:04 UTC"
+      },
+      {
+        "ioc": "http://149.88.73.99:2222/?h=149.88.73.99&p=2222&t=ws&a=w32&stage=true",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-10-04 05:44:58 UTC"
+      },
+      {
+        "ioc": "5aec4cf6d50b41c6c3477ff429184fe90d65a5c328ea3ea0ac29c6bed029cf83",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-04 02:46:11 UTC"
+      },
+      {
+        "ioc": "137413a0ab6691e6ad52963e078f17a1f7817148ccdf7fa4ce462f49a5fcde25",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-04 02:46:10 UTC"
+      },
+      {
+        "ioc": "http://8.218.2.176:8084/?h=8.218.2.176&p=8084&t=tcp&a=w64&stage=true",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-10-04 02:39:56 UTC"
+      },
+      {
+        "ioc": "http://8.218.2.176:8084/?h=8.218.2.176&p=8084&t=tcp&a=w32&stage=true",
+        "type": "url",
+        "confidence": 95,
+        "first_seen": "2026-10-04 02:39:43 UTC"
+      },
+      {
+        "ioc": "ab42877d03155a4b5a5cc662e1d86df4c00201281b357fae9d2463827bf0de61",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-03 19:46:41 UTC"
+      },
       {
         "ioc": "49.235.158.141:2077",
         "type": "ip:port",
@@ -132,48 +174,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-03 05:05:05 UTC"
-      },
-      {
-        "ioc": "http://192.255.236.156:8084/?h=192.255.236.156&p=8084&t=tcp&a=w64&stage=true",
-        "type": "url",
-        "confidence": 95,
-        "first_seen": "2026-10-02 23:41:20 UTC"
-      },
-      {
-        "ioc": "158.94.209.99:8088",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-02 23:05:04 UTC"
-      },
-      {
-        "ioc": "148.66.17.126:60001",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-02 23:05:03 UTC"
-      },
-      {
-        "ioc": "e453dd92671fb00bdedbd35b4c82dbf100125b8388a97b47e83acf7816f6ca86",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-02 20:46:12 UTC"
-      },
-      {
-        "ioc": "154.89.152.200:3306",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-02 20:15:08 UTC"
-      },
-      {
-        "ioc": "49.235.134.179:8889",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-02 18:10:07 UTC"
-      },
-      {
-        "ioc": "8.137.35.137:8085",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-02 18:05:04 UTC"
       }
     ]
   }

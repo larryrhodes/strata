@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-10-03T17:31:53.175665+00:00",
-  "recent_window_ioc_count": 76,
+  "generated": "2026-10-04T17:46:29.531496+00:00",
+  "recent_window_ioc_count": 77,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -19,21 +19,21 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-19",
-      "latest": "2026-10-03"
+      "latest": "2026-10-04"
     },
     "ioc_type_breakdown": {
-      "ip:port": 390,
-      "domain": 94,
-      "sha256_hash": 14,
+      "ip:port": 392,
+      "domain": 90,
+      "sha256_hash": 16,
       "url": 2
     },
     "confidence_distribution": {
-      "high": 460,
-      "medium": 40,
+      "high": 464,
+      "medium": 36,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-19": 29,
+      "2026-08-19": 25,
       "2026-08-20": 10,
       "2026-08-21": 1,
       "2026-08-22": 1,
@@ -76,12 +76,13 @@
       "2026-09-30": 21,
       "2026-10-01": 11,
       "2026-10-02": 9,
-      "2026-10-03": 2
+      "2026-10-03": 4,
+      "2026-10-04": 2
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 104
+        "count": 105
       },
       {
         "port": "2015",
@@ -121,6 +122,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "185.157.163.24:61845",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-04 12:31:01 UTC"
+      },
+      {
+        "ioc": "217.60.103.131:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-04 06:54:18 UTC"
+      },
+      {
+        "ioc": "5c07cc093157d933dfc507854fe18af40dc909d98e3c9b3cbd9d92bb7ffbbbf3",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-03 19:46:55 UTC"
+      },
+      {
+        "ioc": "cc2b96a6c355518992425086221902594f98c16b2825f517d961f35368bba14d",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-03 19:46:47 UTC"
+      },
       {
         "ioc": "adfefc2614695191b1a6e4050e53784a56204f03da3f1a6c55a90ae08ed16e72",
         "type": "sha256_hash",
@@ -186,30 +211,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-02 06:30:31 UTC"
-      },
-      {
-        "ioc": "185.236.203.99:62927",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-01 16:10:31 UTC"
-      },
-      {
-        "ioc": "bk.aerovisioncity.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-01 14:55:24 UTC"
-      },
-      {
-        "ioc": "45.88.91.194:60509",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-01 14:30:28 UTC"
-      },
-      {
-        "ioc": "45.88.91.194:60508",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-01 14:30:28 UTC"
       }
     ]
   }
