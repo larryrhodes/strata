@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-10-01T18:59:11.812714+00:00",
-  "recent_window_ioc_count": 32,
+  "generated": "2026-10-06T19:01:44.714880+00:00",
+  "recent_window_ioc_count": 44,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,36 +10,23 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-07-13",
-      "latest": "2026-09-30"
+      "earliest": "2026-08-05",
+      "latest": "2026-10-06"
     },
     "ioc_type_breakdown": {
-      "domain": 219,
-      "url": 152,
-      "ip:port": 113,
-      "sha256_hash": 12,
+      "domain": 258,
+      "url": 136,
+      "ip:port": 82,
+      "sha256_hash": 20,
       "md5_hash": 4
     },
     "confidence_distribution": {
-      "high": 471,
-      "medium": 29,
+      "high": 475,
+      "medium": 25,
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-13": 4,
-      "2026-07-14": 10,
-      "2026-07-15": 10,
-      "2026-07-16": 2,
-      "2026-07-21": 1,
-      "2026-07-23": 2,
-      "2026-07-25": 9,
-      "2026-07-26": 4,
-      "2026-07-30": 3,
-      "2026-08-01": 5,
-      "2026-08-02": 6,
-      "2026-08-03": 1,
-      "2026-08-04": 12,
-      "2026-08-05": 12,
+      "2026-08-05": 4,
       "2026-08-06": 4,
       "2026-08-07": 14,
       "2026-08-08": 15,
@@ -65,7 +52,7 @@
       "2026-09-05": 1,
       "2026-09-07": 4,
       "2026-09-08": 6,
-      "2026-09-09": 94,
+      "2026-09-09": 132,
       "2026-09-10": 25,
       "2026-09-13": 2,
       "2026-09-14": 3,
@@ -80,24 +67,19 @@
       "2026-09-26": 2,
       "2026-09-28": 9,
       "2026-09-29": 3,
-      "2026-09-30": 5
+      "2026-09-30": 5,
+      "2026-10-04": 7,
+      "2026-10-05": 4,
+      "2026-10-06": 28
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 49
+        "count": 32
       },
       {
         "port": "8041",
-        "count": 21
-      },
-      {
-        "port": "4521",
-        "count": 3
-      },
-      {
-        "port": "4525",
-        "count": 3
+        "count": 18
       },
       {
         "port": "3001",
@@ -112,108 +94,116 @@
         "count": 2
       },
       {
-        "port": "4449",
-        "count": 2
-      },
-      {
         "port": "27063",
         "count": 1
       },
       {
         "port": "9876",
         "count": 1
+      },
+      {
+        "port": "8080",
+        "count": 1
+      },
+      {
+        "port": "7447",
+        "count": 1
+      },
+      {
+        "port": "4444",
+        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "82.197.70.119:27063",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-30 19:13:04 UTC"
-      },
-      {
-        "ioc": "31.40.204.71:9876",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-30 10:00:39 UTC"
-      },
-      {
-        "ioc": "bomboclat.sbs",
+        "ioc": "getsupportonlinenow.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-09-30 05:49:21 UTC"
+        "first_seen": "2026-10-06 16:18:31 UTC"
       },
       {
-        "ioc": "https://bomboclat.sbs/get/config",
+        "ioc": "https://api.telegram.org/bot8850962001:AAGZazMZdUQkJOgJEP9YX1afUccTTnMmO5A/",
         "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-30 05:49:20 UTC"
+        "confidence": 90,
+        "first_seen": "2026-10-06 14:30:51 UTC"
       },
       {
-        "ioc": "https://bomboclat.sbs/ws",
-        "type": "url",
+        "ioc": "2d8fb6368c33ba76766834ab0737e9e830d8413ece0e7568a93fa3f894cd7ef9",
+        "type": "sha256_hash",
         "confidence": 100,
-        "first_seen": "2026-09-30 05:49:20 UTC"
+        "first_seen": "2026-10-06 14:30:50 UTC"
       },
       {
-        "ioc": "http://169.58.190.196:8080/api/register",
-        "type": "url",
+        "ioc": "a4f5bec5e206631a718b88e16f1a5fa3ebd0ad55955fd30001c29e42b601beeb",
+        "type": "sha256_hash",
         "confidence": 100,
-        "first_seen": "2026-09-29 12:36:45 UTC"
+        "first_seen": "2026-10-06 14:30:50 UTC"
       },
       {
-        "ioc": "169.58.190.196:8080",
+        "ioc": "5c1bf506401bda993ceedaf28b90ebff6d6beb92f33b9b975c21fc85b1be2614",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-06 14:30:49 UTC"
+      },
+      {
+        "ioc": "c7ef30d2fbc1fad85c9e14c200b9328b7be55b83ab2080e8dd7e25be76abb2dc",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-06 14:30:49 UTC"
+      },
+      {
+        "ioc": "ff1d48aeeda856e3b2f6aac842dc393e1156e1d5f783b1e7f812b3b0d5eb2986",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-06 14:30:49 UTC"
+      },
+      {
+        "ioc": "debdc34170bd40bf2e18611eeb4605f99bd146b88c694cb1d7cf751976ead49e",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-06 14:30:48 UTC"
+      },
+      {
+        "ioc": "b2c851105fa97e65b4a9068bba3d832b02a0bcb5d594f689e07391403305ebb7",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-06 14:30:47 UTC"
+      },
+      {
+        "ioc": "dbe63e6863be3fefc70f8446134129f8351147c213cea78696e324429cf29393",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-10-06 14:30:47 UTC"
+      },
+      {
+        "ioc": "45.91.52.45:443",
         "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-29 12:36:44 UTC"
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:27:59 UTC"
       },
       {
-        "ioc": "2.26.49.181:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-09-29 12:33:06 UTC"
-      },
-      {
-        "ioc": "https://thisisafalsepositive.st/shard/submitDiscordInjection",
+        "ioc": "https://heavenproject.lgbt/api/connect",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-09-28 18:52:30 UTC"
+        "first_seen": "2026-10-06 05:27:46 UTC"
       },
       {
-        "ioc": "https://thisisafalsepositive.st/shard/submitWalletFiles",
+        "ioc": "https://heavenproject.lgbt/api/keylog",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-09-28 18:52:30 UTC"
+        "first_seen": "2026-10-06 05:27:44 UTC"
       },
       {
-        "ioc": "https://thisisafalsepositive.st/shard/submitWallet",
+        "ioc": "https://heavenproject.lgbt/api/heartbeat",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-09-28 18:52:30 UTC"
+        "first_seen": "2026-10-06 05:27:44 UTC"
       },
       {
-        "ioc": "https://thisisafalsepositive.st/shard/submitFile",
+        "ioc": "https://heavenproject.lgbt/api/terminal",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-09-28 18:52:30 UTC"
-      },
-      {
-        "ioc": "https://thisisafalsepositive.st/shard/submitData",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-28 18:52:30 UTC"
-      },
-      {
-        "ioc": "https://thisisafalsepositive.st/shard/submitLogs",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-09-28 18:52:29 UTC"
-      },
-      {
-        "ioc": "silentnet.st",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-09-28 18:49:36 UTC"
+        "first_seen": "2026-10-06 05:27:43 UTC"
       }
     ]
   }

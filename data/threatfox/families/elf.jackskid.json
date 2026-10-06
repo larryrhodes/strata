@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.jackskid",
   "family": "Jackskid",
-  "generated": "2026-10-04T17:46:37.026995+00:00",
-  "recent_window_ioc_count": 28,
+  "generated": "2026-10-06T19:01:47.007813+00:00",
+  "recent_window_ioc_count": 36,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.jackskid",
   "description": "Jackskid is a Mirai-derived Linux/IoT DDoS botnet, first publicly documented by Foresiet in November 2025 and tracked by CNCERT/SecrSS as RCtea. It encrypts its configuration with a custom RC4 cipher post-processed by an LCG (key DEADBEEF CAFEBABE E0A4CBD6 BADC0DE5) and negotiates per-session ChaCha20 keys via XXTEA (passphrase FrshPckBnnnSplit). The same RC4+LCG modification appears in Aisuru, indicating a shared code lineage, and the family sits within the CatDDoS-derivative ecosystem. Later builds add ENS-based C2 resolution, an anti-competition module (0clKiller) backed by a NETLINK process monitor, and a pivot toward Android/ADB-exposed TV boxes. Jackskid and several related botnets were disrupted by law enforcement in March 2026.",
   "alt_names": [
@@ -10,18 +10,18 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 194,
+    "total_iocs": 202,
     "date_range": {
       "earliest": "2026-07-26",
-      "latest": "2026-10-04"
+      "latest": "2026-10-06"
     },
     "ioc_type_breakdown": {
-      "ip:port": 138,
+      "ip:port": 146,
       "sha256_hash": 44,
       "domain": 12
     },
     "confidence_distribution": {
-      "high": 194,
+      "high": 202,
       "medium": 0,
       "low": 0
     },
@@ -43,12 +43,13 @@
       "2026-09-30": 3,
       "2026-10-01": 10,
       "2026-10-03": 5,
-      "2026-10-04": 10
+      "2026-10-04": 10,
+      "2026-10-06": 8
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 129
+        "count": 137
       },
       {
         "port": "17384",
@@ -72,6 +73,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "176.97.114.125:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:52:13 UTC"
+      },
+      {
+        "ioc": "176.97.114.132:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:52:12 UTC"
+      },
+      {
+        "ioc": "176.97.114.177:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:52:11 UTC"
+      },
+      {
+        "ioc": "176.97.114.170:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:52:11 UTC"
+      },
+      {
+        "ioc": "176.97.114.243:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:52:10 UTC"
+      },
+      {
+        "ioc": "176.97.114.29:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:52:09 UTC"
+      },
+      {
+        "ioc": "147.139.168.67:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:28:04 UTC"
+      },
+      {
+        "ioc": "198.11.174.58:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-06 05:28:00 UTC"
+      },
       {
         "ioc": "172.104.41.216:443",
         "type": "ip:port",
@@ -113,54 +162,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-04 13:27:12 UTC"
-      },
-      {
-        "ioc": "43.156.121.164:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-04 12:13:09 UTC"
-      },
-      {
-        "ioc": "43.172.6.45:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-04 12:13:08 UTC"
-      },
-      {
-        "ioc": "43.157.240.245:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-04 12:13:08 UTC"
-      },
-      {
-        "ioc": "170.106.150.123:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-03 06:04:00 UTC"
-      },
-      {
-        "ioc": "43.166.79.76:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-03 06:03:59 UTC"
-      },
-      {
-        "ioc": "43.166.175.50:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-03 06:03:58 UTC"
-      },
-      {
-        "ioc": "43.173.28.224:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-03 06:03:57 UTC"
-      },
-      {
-        "ioc": "43.167.217.157:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-03 06:03:57 UTC"
       }
     ]
   }
