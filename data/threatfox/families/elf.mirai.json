@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-10-06T19:01:14.352950+00:00",
-  "recent_window_ioc_count": 3687,
+  "generated": "2026-10-07T19:28:02.559095+00:00",
+  "recent_window_ioc_count": 3576,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -13,12 +13,12 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-05",
-      "latest": "2026-10-06"
+      "latest": "2026-10-07"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 495,
+      "sha256_hash": 494,
       "ip:port": 4,
-      "domain": 1
+      "domain": 2
     },
     "confidence_distribution": {
       "high": 500,
@@ -26,8 +26,9 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-05": 349,
-      "2026-10-06": 151
+      "2026-10-05": 348,
+      "2026-10-06": 151,
+      "2026-10-07": 1
     },
     "top_ports": [
       {
@@ -48,6 +49,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "botsportscanning.duckdns.org",
+        "type": "domain",
+        "confidence": 90,
+        "first_seen": "2026-10-07 04:37:51 UTC"
+      },
       {
         "ioc": "139.162.5.254:3778",
         "type": "ip:port",
@@ -131,12 +138,6 @@
         "type": "sha256_hash",
         "confidence": 90,
         "first_seen": "2026-10-06 06:47:00 UTC"
-      },
-      {
-        "ioc": "fca1b25147be9671daeb060decc08637ddae8a11ae9554ea7d155bbf9312e8c7",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-10-06 06:46:59 UTC"
       }
     ]
   }

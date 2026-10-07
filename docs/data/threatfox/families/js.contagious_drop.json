@@ -1,33 +1,34 @@
 {
   "malware_id": "js.contagious_drop",
   "family": "ContagiousDrop",
-  "generated": "2026-10-06T19:01:45.720360+00:00",
-  "recent_window_ioc_count": 42,
+  "generated": "2026-10-07T19:28:31.044375+00:00",
+  "recent_window_ioc_count": 65,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.contagious_drop",
   "description": "According to SentinelOne, these applications, typically implemented in app.js files, are deployed on ClickFix malware distribution servers. These applications run servers that listen on configured ports to handle incoming HTTP GET and POST requests, executing different functions based on the specific request path.\r\nThe ContagiousDrop applications deliver malware disguised as software updates or essential utilities. They distribute a tailored payload based on the victim\u2019s operating system (Windows, macOS, or Linux), system architecture, and method of interaction with the server, such as the use of the curl command.\r\nIn addition to delivering malware, the ContagiousDrop applications feature an integrated email notification system. These notifications, sent from a configured email address, provide the Contagious Interview threat actors with insights into victim engagement and interaction patterns and are delivered to their configured recipient addresses.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 76,
+    "total_iocs": 111,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-10-06"
+      "latest": "2026-10-07"
     },
     "ioc_type_breakdown": {
-      "domain": 46,
+      "domain": 73,
       "sha256_hash": 21,
-      "url": 8,
+      "url": 16,
       "ip:port": 1
     },
     "confidence_distribution": {
-      "high": 76,
-      "medium": 0,
+      "high": 110,
+      "medium": 1,
       "low": 0
     },
     "activity_timeline": {
       "2026-04-29": 34,
       "2026-09-30": 12,
-      "2026-10-06": 30
+      "2026-10-06": 30,
+      "2026-10-07": 35
     },
     "top_ports": [
       {
@@ -37,94 +38,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "trickgs-demo.vercel.app",
+        "ioc": "260120.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:44 UTC"
+        "first_seen": "2026-10-07 10:38:36 UTC"
       },
       {
-        "ioc": "earniverse-mvp.vercel.app",
+        "ioc": "ext-checkedin.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:43 UTC"
+        "first_seen": "2026-10-07 10:38:35 UTC"
       },
       {
-        "ioc": "everplay-mvp.vercel.app",
+        "ioc": "coreviewer.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:42 UTC"
+        "first_seen": "2026-10-07 10:38:35 UTC"
       },
       {
-        "ioc": "apigoogle-ashen.vercel.app",
+        "ioc": "valid-dep.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:41 UTC"
+        "first_seen": "2026-10-07 10:38:34 UTC"
       },
       {
-        "ioc": "0g-auth-check.vercel.app",
+        "ioc": "thopywork.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:40 UTC"
+        "first_seen": "2026-10-07 10:38:34 UTC"
       },
       {
-        "ioc": "tasksettingsnew.vercel.app",
+        "ioc": "tailwind-version-4.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:40 UTC"
+        "first_seen": "2026-10-07 10:38:34 UTC"
       },
       {
-        "ioc": "vscode-check-mo2.vercel.app",
+        "ioc": "vscode-config-setting.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:39 UTC"
+        "first_seen": "2026-10-07 10:38:33 UTC"
       },
       {
-        "ioc": "virtualpangea-mvp.vercel.app",
+        "ioc": "vscode-bootstrapper.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:38 UTC"
+        "first_seen": "2026-10-07 10:38:33 UTC"
       },
       {
-        "ioc": "vscode-check-mo4-ten.vercel.app",
+        "ioc": "vscode-ext-git.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:38 UTC"
+        "first_seen": "2026-10-07 10:38:32 UTC"
       },
       {
-        "ioc": "vscode-settings-0618.vercel.app",
+        "ioc": "vscode-config.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:37 UTC"
+        "first_seen": "2026-10-07 10:38:32 UTC"
       },
       {
-        "ioc": "vscode-settings-8140-self.vercel.app",
+        "ioc": "vscode-config-settings.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:35 UTC"
+        "first_seen": "2026-10-07 10:38:32 UTC"
       },
       {
-        "ioc": "vscode-load-config.vercel.app",
+        "ioc": "vscode-helper171.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:34 UTC"
+        "first_seen": "2026-10-07 10:38:31 UTC"
       },
       {
-        "ioc": "vscode-settings-bootstrap.vercel.app",
+        "ioc": "vscode-extension-260120.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:31 UTC"
+        "first_seen": "2026-10-07 10:38:31 UTC"
       },
       {
-        "ioc": "vscode-toolkit-settings.vercel.app",
+        "ioc": "vscode-production-setting.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:29 UTC"
+        "first_seen": "2026-10-07 10:38:30 UTC"
       },
       {
-        "ioc": "vscode-toolkit-bootstrap.vercel.app",
+        "ioc": "vscode-helper171-ruby.vercel.app",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-06 12:29:29 UTC"
+        "first_seen": "2026-10-07 10:38:30 UTC"
       }
     ]
   }
