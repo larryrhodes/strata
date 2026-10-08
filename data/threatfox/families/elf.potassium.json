@@ -1,24 +1,24 @@
 {
   "malware_id": "elf.potassium",
   "family": "Potassium",
-  "generated": "2026-10-07T19:28:19.674485+00:00",
-  "recent_window_ioc_count": 119,
+  "generated": "2026-10-08T19:22:26.980138+00:00",
+  "recent_window_ioc_count": 117,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.potassium",
   "description": "Mirai-derived DDoS bot for Android and Linux IoT devices, spread through exposed ADB, telnet, and command injection in router and DVR web interfaces. It stands apart from other Mirai forks through a ChaCha20-encrypted config table whose static key and nonce are shared by every build, and a reverse shell (SHELL/SHOUT) carried over the C2 connection.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 146,
+    "total_iocs": 147,
     "date_range": {
       "earliest": "2026-09-26",
       "latest": "2026-10-07"
     },
     "ioc_type_breakdown": {
-      "ip:port": 145,
+      "ip:port": 146,
       "domain": 1
     },
     "confidence_distribution": {
-      "high": 146,
+      "high": 147,
       "medium": 0,
       "low": 0
     },
@@ -34,7 +34,7 @@
       "2026-10-04": 24,
       "2026-10-05": 8,
       "2026-10-06": 18,
-      "2026-10-07": 28
+      "2026-10-07": 29
     },
     "top_ports": [
       {
@@ -43,7 +43,7 @@
       },
       {
         "port": "15987",
-        "count": 30
+        "count": 31
       },
       {
         "port": "23789",
@@ -79,6 +79,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "31.56.19.75:15987",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-07 19:41:56 UTC"
+      },
       {
         "ioc": "89.32.41.43:15987",
         "type": "ip:port",
@@ -159,12 +165,6 @@
       },
       {
         "ioc": "89.32.41.109:42061",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-07 06:28:52 UTC"
-      },
-      {
-        "ioc": "89.32.41.108:27651",
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-07 06:28:52 UTC"
