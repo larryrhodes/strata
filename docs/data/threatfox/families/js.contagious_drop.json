@@ -1,26 +1,26 @@
 {
   "malware_id": "js.contagious_drop",
   "family": "ContagiousDrop",
-  "generated": "2026-10-08T19:22:35.417753+00:00",
-  "recent_window_ioc_count": 71,
+  "generated": "2026-10-09T18:56:30.369483+00:00",
+  "recent_window_ioc_count": 72,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.contagious_drop",
   "description": "According to SentinelOne, these applications, typically implemented in app.js files, are deployed on ClickFix malware distribution servers. These applications run servers that listen on configured ports to handle incoming HTTP GET and POST requests, executing different functions based on the specific request path.\r\nThe ContagiousDrop applications deliver malware disguised as software updates or essential utilities. They distribute a tailored payload based on the victim\u2019s operating system (Windows, macOS, or Linux), system architecture, and method of interaction with the server, such as the use of the curl command.\r\nIn addition to delivering malware, the ContagiousDrop applications feature an integrated email notification system. These notifications, sent from a configured email address, provide the Contagious Interview threat actors with insights into victim engagement and interaction patterns and are delivered to their configured recipient addresses.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 117,
+    "total_iocs": 118,
     "date_range": {
       "earliest": "2026-04-29",
-      "latest": "2026-10-08"
+      "latest": "2026-10-09"
     },
     "ioc_type_breakdown": {
       "domain": 74,
-      "url": 21,
+      "url": 22,
       "sha256_hash": 21,
       "ip:port": 1
     },
     "confidence_distribution": {
-      "high": 116,
+      "high": 117,
       "medium": 1,
       "low": 0
     },
@@ -29,7 +29,8 @@
       "2026-09-30": 12,
       "2026-10-06": 30,
       "2026-10-07": 35,
-      "2026-10-08": 6
+      "2026-10-08": 6,
+      "2026-10-09": 1
     },
     "top_ports": [
       {
@@ -38,6 +39,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://jsonkeeper.com/b/RRCKG",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-09 08:35:36 UTC"
+      },
       {
         "ioc": "www.regioncheck.xyz",
         "type": "domain",
@@ -121,12 +128,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-10-07 10:38:33 UTC"
-      },
-      {
-        "ioc": "vscode-ext-git.vercel.app",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-07 10:38:32 UTC"
       }
     ]
   }
