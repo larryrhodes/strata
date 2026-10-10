@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown",
   "family": "Unknown malware",
-  "generated": "2026-10-09T18:56:12.409435+00:00",
-  "recent_window_ioc_count": 348,
+  "generated": "2026-10-10T17:57:00.287260+00:00",
+  "recent_window_ioc_count": 408,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown",
   "description": null,
   "alt_names": [],
@@ -11,31 +11,45 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-08",
-      "latest": "2026-10-09"
+      "latest": "2026-10-10"
     },
     "ioc_type_breakdown": {
-      "domain": 330,
-      "url": 116,
-      "sha256_hash": 42,
-      "ip:port": 12
+      "domain": 237,
+      "url": 232,
+      "sha256_hash": 16,
+      "ip:port": 14,
+      "md5_hash": 1
     },
     "confidence_distribution": {
-      "high": 500,
-      "medium": 0,
+      "high": 499,
+      "medium": 1,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-08": 325,
-      "2026-10-09": 175
+      "2026-10-08": 177,
+      "2026-10-09": 223,
+      "2026-10-10": 100
     },
     "top_ports": [
       {
         "port": "7443",
-        "count": 3
+        "count": 5
       },
       {
         "port": "443",
         "count": 2
+      },
+      {
+        "port": "61489",
+        "count": 1
+      },
+      {
+        "port": "9999",
+        "count": 1
+      },
+      {
+        "port": "8082",
+        "count": 1
       },
       {
         "port": "9090",
@@ -52,110 +66,98 @@
       {
         "port": "43592",
         "count": 1
-      },
-      {
-        "port": "4430",
-        "count": 1
-      },
-      {
-        "port": "1998",
-        "count": 1
-      },
-      {
-        "port": "8443",
-        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "https://sanxuatmay.com/",
+        "ioc": "https://pulse-dtc.pages.dev/download/pulse-installer.exe",
         "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-09 18:01:00 UTC"
+        "confidence": 85,
+        "first_seen": "2026-10-10 17:06:31 UTC"
       },
       {
-        "ioc": "https://laurexis.com/",
+        "ioc": "http://91.92.242.236/files-129312398/files/file_a6357da6a05d7266.exe",
         "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-09 18:00:59 UTC"
+        "confidence": 95,
+        "first_seen": "2026-10-10 17:06:06 UTC"
       },
       {
-        "ioc": "https://kaidocafe.com/",
+        "ioc": "http://91.92.242.236/files-129312398/files/file_37b904483beaa60e.exe",
         "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-09 18:00:59 UTC"
+        "confidence": 95,
+        "first_seen": "2026-10-10 17:06:04 UTC"
       },
       {
-        "ioc": "https://komaniboattour.com/",
+        "ioc": "102.117.161.182:7443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-10 16:15:47 UTC"
+      },
+      {
+        "ioc": "63e726bee554a09ad7de1f8303928850b94174a8e8828c224b9d9c54dc1b2656",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-10 14:12:57 UTC"
+      },
+      {
+        "ioc": "165c77e0cb3fc6551babc2de99e0c5182fb86e20ac3354da7ae980b580721049",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-10 14:12:56 UTC"
+      },
+      {
+        "ioc": "6c2446f06869a50df82165dbbc78527186cc70e8ebb50c48634de0ab9057c00a",
+        "type": "sha256_hash",
+        "confidence": 85,
+        "first_seen": "2026-10-10 14:12:54 UTC"
+      },
+      {
+        "ioc": "0a5c86ee3956ef4bf3349adaef85208809b41de2f98aefd7956645e7e9ea5342",
+        "type": "sha256_hash",
+        "confidence": 85,
+        "first_seen": "2026-10-10 14:12:53 UTC"
+      },
+      {
+        "ioc": "6c977cac10245be0d1222fa444aafeed327e840a8864c7a37feb401ed51e7257",
+        "type": "sha256_hash",
+        "confidence": 85,
+        "first_seen": "2026-10-10 14:12:52 UTC"
+      },
+      {
+        "ioc": "d68a9b3dcbe30b391315c02a65821c185280e00892d7e826ef12ffacafb2ee0c",
+        "type": "sha256_hash",
+        "confidence": 85,
+        "first_seen": "2026-10-10 14:12:51 UTC"
+      },
+      {
+        "ioc": "https://mathang.pics/",
         "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-09 18:00:59 UTC"
+        "confidence": 75,
+        "first_seen": "2026-10-10 13:26:23 UTC"
       },
       {
-        "ioc": "whisperingheavens.co.uk",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:45 UTC"
+        "ioc": "https://bm45m70ol5ave2fopggr4q.beer",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-10 13:01:40 UTC"
       },
       {
-        "ioc": "xn--42cga1id4d9c7co1e.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:45 UTC"
+        "ioc": "https://7wm8zvijixjvah2obebyh.beer",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-10 13:01:40 UTC"
       },
       {
-        "ioc": "xn--rotulosydiseo-tkb.es",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:45 UTC"
+        "ioc": "https://2ti34h1lzcapw2f3rt8mfs.beer",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-10 13:01:39 UTC"
       },
       {
-        "ioc": "zainyapparels.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:45 UTC"
-      },
-      {
-        "ioc": "szklarka.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
-      },
-      {
-        "ioc": "tattonhallhomes.co.uk",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
-      },
-      {
-        "ioc": "techcom.cz",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
-      },
-      {
-        "ioc": "testmipagina.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
-      },
-      {
-        "ioc": "tezanholidays.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
-      },
-      {
-        "ioc": "tothgeorgina.hu",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
-      },
-      {
-        "ioc": "ultrasound-probe-repair.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-09 17:11:44 UTC"
+        "ioc": "https://rur3c58hk2l6b4wspfaewp.beer",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-10 13:01:39 UTC"
       }
     ]
   }

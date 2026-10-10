@@ -1,7 +1,7 @@
 {
   "malware_id": "win.coinminer",
   "family": "Coinminer",
-  "generated": "2026-10-09T18:56:36.248145+00:00",
+  "generated": "2026-10-10T17:57:29.315010+00:00",
   "recent_window_ioc_count": 54,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.coinminer",
   "description": "Coinminer is an unwanted malicious software which uses the victim's computational power (CPU and RAM mostly) to mine for coins (for example Monero or Zcash). The malware achieves persistence by adding one of the opensource miners on startup without the victim's consensus. Most sophisticated coin miners use timer settings or cap the CPU usage in order to remain stealthy.",
@@ -11,15 +11,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-25",
-      "latest": "2026-10-09"
+      "latest": "2026-10-10"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 190,
-      "md5_hash": 138,
-      "sha1_hash": 138,
-      "url": 32,
-      "ip:port": 1,
-      "domain": 1
+      "sha256_hash": 191,
+      "md5_hash": 136,
+      "sha1_hash": 136,
+      "url": 33,
+      "domain": 3,
+      "ip:port": 1
     },
     "confidence_distribution": {
       "high": 500,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-25": 44,
+      "2026-06-25": 39,
       "2026-06-29": 3,
       "2026-07-01": 3,
       "2026-07-02": 6,
@@ -92,7 +92,8 @@
       "2026-10-05": 18,
       "2026-10-06": 14,
       "2026-10-08": 1,
-      "2026-10-09": 5
+      "2026-10-09": 5,
+      "2026-10-10": 5
     },
     "top_ports": [
       {
@@ -101,6 +102,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "www.osmb.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-10 06:02:08 UTC"
+      },
+      {
+        "ioc": "https://www.osmb.net/OSMB.jar",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-10 06:02:08 UTC"
+      },
+      {
+        "ioc": "osbot.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-10 06:02:07 UTC"
+      },
+      {
+        "ioc": "385c518f5251712671b029d3e862a4d4ce25dea3c4d578c6512f1d4d911cf14d",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-10 01:12:59 UTC"
+      },
+      {
+        "ioc": "528458c9d7ac88959d2d83aecd0544bf75727d34795deaf658ff3b82000a9e44",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-10 01:12:49 UTC"
+      },
       {
         "ioc": "6e7fb5ed733aedc9943cc4eb2ce744f5",
         "type": "md5_hash",
@@ -160,36 +191,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-10-06 19:25:08 UTC"
-      },
-      {
-        "ioc": "37eb569f7ec3502a1013e8c554864024a25489a1",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-06 19:25:07 UTC"
-      },
-      {
-        "ioc": "b4359324e3cffb3dc521a808dfa0b5d7bd92dc6e08eb7527da41e1e1312d3265",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-06 19:25:07 UTC"
-      },
-      {
-        "ioc": "cfcc97cb95e356ac0cd2e295c025dd25",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-06 19:24:55 UTC"
-      },
-      {
-        "ioc": "48ff4494c64d8a4480ff4b22ea71d3e79a6e799f",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-06 19:24:55 UTC"
-      },
-      {
-        "ioc": "e740b087ea540c1fabcb0623399c7142aa6dd68fd9b4a4cadd7521170c332935",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-06 19:24:55 UTC"
       }
     ]
   }
