@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.aisuru",
   "family": "Aisuru",
-  "generated": "2026-10-10T17:57:22.778388+00:00",
-  "recent_window_ioc_count": 71,
+  "generated": "2026-10-11T18:21:04.175263+00:00",
+  "recent_window_ioc_count": 74,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.aisuru",
   "description": "Honeypot-aware variant of Mirai.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-26",
-      "latest": "2026-10-10"
+      "earliest": "2026-08-27",
+      "latest": "2026-10-11"
     },
     "ioc_type_breakdown": {
       "ip:port": 495,
@@ -24,8 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-26": 1,
-      "2026-08-27": 12,
+      "2026-08-27": 7,
       "2026-08-28": 9,
       "2026-08-29": 3,
       "2026-08-30": 24,
@@ -69,7 +68,8 @@
       "2026-10-07": 14,
       "2026-10-08": 15,
       "2026-10-09": 12,
-      "2026-10-10": 2
+      "2026-10-10": 5,
+      "2026-10-11": 3
     },
     "top_ports": [
       {
@@ -78,11 +78,11 @@
       },
       {
         "port": "8443",
-        "count": 113
+        "count": 112
       },
       {
         "port": "8080",
-        "count": 106
+        "count": 108
       },
       {
         "port": "9034",
@@ -101,15 +101,51 @@
         "count": 11
       },
       {
-        "port": "37215",
-        "count": 9
+        "port": "5555",
+        "count": 8
       },
       {
-        "port": "5555",
+        "port": "37215",
         "count": 8
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "217.60.242.27:8443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-11 14:27:42 UTC"
+      },
+      {
+        "ioc": "165.245.250.162:9034",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-11 08:17:05 UTC"
+      },
+      {
+        "ioc": "178.16.53.59:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-11 07:02:53 UTC"
+      },
+      {
+        "ioc": "138.197.128.142:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-10 22:36:57 UTC"
+      },
+      {
+        "ioc": "188.166.229.242:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-10 20:32:51 UTC"
+      },
+      {
+        "ioc": "159.89.196.255:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-10 18:32:06 UTC"
+      },
       {
         "ioc": "139.59.101.166:34567",
         "type": "ip:port",
@@ -163,42 +199,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-09 10:52:10 UTC"
-      },
-      {
-        "ioc": "feds.iphaven.qzz.io",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-09 10:20:15 UTC"
-      },
-      {
-        "ioc": "xya.supercrone.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-09 10:20:15 UTC"
-      },
-      {
-        "ioc": "130.12.180.212:8001",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-09 08:53:51 UTC"
-      },
-      {
-        "ioc": "165.22.244.100:8443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-09 06:04:55 UTC"
-      },
-      {
-        "ioc": "46.101.164.65:8443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-09 06:04:39 UTC"
-      },
-      {
-        "ioc": "134.122.91.85:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-08 21:54:21 UTC"
       }
     ]
   }

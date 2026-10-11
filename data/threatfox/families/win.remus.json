@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-10-10T17:57:11.803138+00:00",
-  "recent_window_ioc_count": 93,
+  "generated": "2026-10-11T18:21:07.814339+00:00",
+  "recent_window_ioc_count": 68,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,12 +10,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-18",
-      "latest": "2026-10-10"
+      "earliest": "2026-09-19",
+      "latest": "2026-10-11"
     },
     "ioc_type_breakdown": {
-      "url": 464,
-      "ip:port": 29,
+      "url": 462,
+      "ip:port": 31,
       "domain": 7
     },
     "confidence_distribution": {
@@ -24,8 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-18": 5,
-      "2026-09-19": 8,
+      "2026-09-19": 6,
       "2026-09-20": 3,
       "2026-09-21": 23,
       "2026-09-22": 79,
@@ -46,7 +45,8 @@
       "2026-10-07": 16,
       "2026-10-08": 9,
       "2026-10-09": 9,
-      "2026-10-10": 5
+      "2026-10-10": 6,
+      "2026-10-11": 6
     },
     "top_ports": [
       {
@@ -60,6 +60,14 @@
       {
         "port": "9173",
         "count": 2
+      },
+      {
+        "port": "2905",
+        "count": 1
+      },
+      {
+        "port": "6902",
+        "count": 1
       },
       {
         "port": "8632",
@@ -80,17 +88,51 @@
       {
         "port": "2319",
         "count": 1
-      },
-      {
-        "port": "5203",
-        "count": 1
-      },
-      {
-        "port": "6572",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://crownsquareproductions.com:4219",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-11 12:53:48 UTC"
+      },
+      {
+        "ioc": "http://tyxa.today:4894",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-11 12:48:23 UTC"
+      },
+      {
+        "ioc": "64.91.238.87:2905",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-11 07:02:53 UTC"
+      },
+      {
+        "ioc": "187.77.136.206:6902",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-11 07:02:29 UTC"
+      },
+      {
+        "ioc": "http://saganlive.com:5747",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-11 06:31:23 UTC"
+      },
+      {
+        "ioc": "http://arqtsop.shop:9932/reviews",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-11 06:00:07 UTC"
+      },
+      {
+        "ioc": "http://hkealop.shop:9932/sessions",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-10 22:35:23 UTC"
+      },
       {
         "ioc": "http://phetsre.shop:3452/teams",
         "type": "url",
@@ -138,48 +180,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-10-09 18:17:03 UTC"
-      },
-      {
-        "ioc": "104.248.144.172:6738",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-09 13:05:07 UTC"
-      },
-      {
-        "ioc": "http://homecor.click:6527/imports",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-09 11:12:13 UTC"
-      },
-      {
-        "ioc": "http://assetvs.biz:4529/videos",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-09 04:31:23 UTC"
-      },
-      {
-        "ioc": "http://synerfy.biz:6627/messages",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-09 04:31:23 UTC"
-      },
-      {
-        "ioc": "http://gerzone.click:4262/settings",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-09 04:31:23 UTC"
-      },
-      {
-        "ioc": "http://caxools.click:7728/reports",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-09 04:31:23 UTC"
-      },
-      {
-        "ioc": "http://caxools.click:7728/collections",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-08 15:24:26 UTC"
       }
     ]
   }
