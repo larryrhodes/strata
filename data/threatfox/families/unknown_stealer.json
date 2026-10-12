@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-10-11T18:20:46.417153+00:00",
-  "recent_window_ioc_count": 300,
+  "generated": "2026-10-12T21:49:43.111567+00:00",
+  "recent_window_ioc_count": 298,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-07",
-      "latest": "2026-10-11"
+      "latest": "2026-10-12"
     },
     "ioc_type_breakdown": {
       "domain": 257,
-      "url": 190,
-      "sha256_hash": 43,
-      "ip:port": 9,
+      "url": 188,
+      "sha256_hash": 44,
+      "ip:port": 10,
       "md5_hash": 1
     },
     "confidence_distribution": {
@@ -26,7 +26,7 @@
       "low": 24
     },
     "activity_timeline": {
-      "2026-09-07": 12,
+      "2026-09-07": 9,
       "2026-09-08": 1,
       "2026-09-09": 101,
       "2026-09-10": 13,
@@ -52,12 +52,17 @@
       "2026-10-08": 19,
       "2026-10-09": 96,
       "2026-10-10": 11,
-      "2026-10-11": 4
+      "2026-10-11": 6,
+      "2026-10-12": 1
     },
     "top_ports": [
       {
         "port": "443",
         "count": 3
+      },
+      {
+        "port": "1901",
+        "count": 1
       },
       {
         "port": "8093",
@@ -85,6 +90,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://new-mexico.club",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-12 06:11:03 UTC"
+      },
+      {
+        "ioc": "4fe508025770c53e0717b524175f079ee23443a4ed909a36be04ee7522e7e055",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-11 22:12:49 UTC"
+      },
+      {
+        "ioc": "172.111.138.100:1901",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-11 18:27:41 UTC"
+      },
       {
         "ioc": "https://terrabound.site",
         "type": "url",
@@ -156,24 +179,6 @@
         "type": "sha256_hash",
         "confidence": 100,
         "first_seen": "2026-10-10 06:02:10 UTC"
-      },
-      {
-        "ioc": "ad0c08a40934df311ba55d4cf17747cd748b6ac565d156e99c0f785b0388d19c",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-10 06:02:10 UTC"
-      },
-      {
-        "ioc": "49b5021a4be924b200b7049a77e78081d986362f571c0c30ec9eebd95bd14483",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-10 06:02:10 UTC"
-      },
-      {
-        "ioc": "https://dupe.dupe543.workers.dev/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-10 06:02:09 UTC"
       }
     ]
   }

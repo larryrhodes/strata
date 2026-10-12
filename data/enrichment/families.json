@@ -975,6 +975,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "js.peacenotwar": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "PeaceNotWar",
+    "description": "PeaceNotWar was integrated into the nodejs module node-ipc as a piece of malware/protestware with wiper characteristics. It targets machines with a public IP address located in Russia and Belarus (using geolocation) and overwrites files recursively using a heart emoji.",
+    "enriched_at": "2026-10-12T21:49:21.551526+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "js.shai_hulud": {
     "alt_names": [],
     "associated_groups": [],
@@ -1036,7 +1045,7 @@
     "associated_groups": [],
     "common_name": "AMOS",
     "description": null,
-    "enriched_at": "2026-07-14T15:09:01.007695+00:00",
+    "enriched_at": "2026-10-12T21:49:17.560201+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1477,6 +1486,17 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.atlas_rat": {
+    "alt_names": [],
+    "associated_groups": [
+      "TA4922"
+    ],
+    "common_name": "Atlas RAT",
+    "description": "According to Proofpoint, Atlas RAT is a modular backdoor used by the TA4922 actor, delivered in multiple stages with a core module and optional plugins. It can gather system information, enumerate and exfiltrate files, and perform surveillance such as audio/video capture, along with the ability to download and run additional payloads. The loader uses anti-analysis techniques and loads the core module through a shellcode-based process, with capabilities to inject into other processes as part of its operation. The overall toolset is aligned with a Chinese-speaking actor and is designed to be extended through modular plugins fetched from the C2.",
+    "enriched_at": "2026-10-12T21:49:18.865666+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.attor": {
     "alt_names": [],
     "associated_groups": [],
@@ -1559,7 +1579,7 @@
     "associated_groups": [],
     "common_name": "BianLian",
     "description": "BianLian is a GoLang-based ransomware that continues to breach several industries and demand large ransom amounts. The threat actors also use the double extortion method by stealing an affected organization\u2019s files and leaking them online if the ransom is not paid on time. BianLian gains access to victim systems through valid Remote Desktop Protocol (RDP) credentials, uses open-source tools and command-line scripting for discovery and credential harvesting, and exfiltrates victim data via File Transfer Protocol (FTP), Rclone, or Mega. BianLian originally employed a double-extortion model in which they encrypted victims\u2019 systems after exfiltrating the data; however, around January 2023, they shifted to primarily exfiltration-based extortion. The BianLian ransomware uses goroutines and encrypts files in chunks to quickly hijack an infected system. The ransomware adds its own extension to each encrypted file.",
-    "enriched_at": "2026-07-10T15:57:01.251342+00:00",
+    "enriched_at": "2026-10-12T21:49:30.543343+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1853,6 +1873,15 @@
     "common_name": "DarkVision RAT",
     "description": "DarkVision_RAT is a highly customizable Remote Access Trojan (RAT) first identified in 2020. Written in C/C++ and assembler, it has gained popularity due to its low cost and broad range of functionalities, including keylogging, screenshot capture, file manipulation, process injection, remote code execution, and password theft. In July 2024, a malware campaign was observed distributing DarkVision_RAT using PureCrypter as a loader. This RAT communicates with its command and control server through a custom network protocol via sockets. It also employs evasion and privilege escalation techniques such as DLL hijacking, self-elevation, and process injection. DarkVision_RAT supports a wide array of commands and plugins, enabling additional capabilities like keylogging, remote access, password theft, audio recording, and screenshot capture.",
     "enriched_at": "2026-08-26T14:12:04.804662+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.darkvnc": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "DarkVNC",
+    "description": "According to Enigmasoft, DarkVNC malware is a hacking tool that is available for purchase online. it is can be used as a Virtual Network Computing service, which means that the attackers can get full access to the targeted system via this malware. However, unlike a genuine Virtual Network Computing utility, the DarkVNC threat operates in the background silently. Therefore, it is highly likely that the victims may not notice that their systems have been compromised.",
+    "enriched_at": "2026-10-12T21:49:23.502444+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2333,6 +2362,17 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.konni": {
+    "alt_names": [],
+    "associated_groups": [
+      "APT37"
+    ],
+    "common_name": "Konni",
+    "description": "Konni is a remote administration tool, observed in the wild since early 2014. The Konni malware family is potentially linked to APT37, a North-Korean cyber espionage group active since 2012. The group primary victims are South-Korean political organizations, as well as Japan, Vietnam, Russia, Nepal, China, India, Romania, Kuwait, and other parts of the Middle East.",
+    "enriched_at": "2026-10-12T21:49:29.457404+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.krakenkeylogger": {
     "alt_names": [],
     "associated_groups": [],
@@ -2503,7 +2543,7 @@
     "associated_groups": [],
     "common_name": "MASS Logger",
     "description": "MassLogger is a .NET credential stealer. It starts with a launcher that uses simple anti-debugging techniques which can be easily bypassed when identified. This first stage loader eventually XOR-decrypts the second stage assembly which then decrypts, loads and executes the final MassLogger payload.",
-    "enriched_at": "2026-07-14T15:09:05.448189+00:00",
+    "enriched_at": "2026-10-12T21:49:20.325790+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2766,7 +2806,7 @@
     "associated_groups": [],
     "common_name": "Phantom Stealer",
     "description": "According to Proofpoint, this is a fork of Stealerium that has high overlap with its originating codebase.",
-    "enriched_at": "2026-07-14T15:09:04.290097+00:00",
+    "enriched_at": "2026-10-12T21:49:25.349477+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -3141,7 +3181,7 @@
     "associated_groups": [],
     "common_name": "RevStealer",
     "description": null,
-    "enriched_at": "2026-07-14T15:09:02.160827+00:00",
+    "enriched_at": "2026-10-12T21:49:27.286076+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -3816,6 +3856,17 @@
     "common_name": "YiBackdoor",
     "description": null,
     "enriched_at": "2026-08-03T16:03:19.556531+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.younglotus": {
+    "alt_names": [
+      "DarkShare"
+    ],
+    "associated_groups": [],
+    "common_name": "YoungLotus",
+    "description": "Simple malware with proxy/RDP and download capabilities. It often comes bundled with installers, in particular in the Chinese realm.\r\n\r\nPE timestamps suggest that it came into existence in the second half of 2014.\r\n\r\nSome versions perform checks of the status of the internet connection (InternetGetConnectedState: MODEM, LAN, PROXY), some versions perform simple AV process-checks (CreateToolhelp32Snapshot).",
+    "enriched_at": "2026-10-12T21:49:28.373368+00:00",
     "source": "malpedia",
     "status": "ok"
   },
