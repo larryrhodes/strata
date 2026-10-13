@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-10-12T21:50:01.824900+00:00",
-  "recent_window_ioc_count": 63,
+  "generated": "2026-10-13T19:56:28.042939+00:00",
+  "recent_window_ioc_count": 59,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-19",
-      "latest": "2026-10-12"
+      "earliest": "2026-09-21",
+      "latest": "2026-10-13"
     },
     "ioc_type_breakdown": {
       "url": 460,
@@ -24,9 +24,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-19": 1,
-      "2026-09-20": 3,
-      "2026-09-21": 23,
+      "2026-09-21": 19,
       "2026-09-22": 79,
       "2026-09-23": 45,
       "2026-09-24": 20,
@@ -47,7 +45,8 @@
       "2026-10-09": 9,
       "2026-10-10": 6,
       "2026-10-11": 7,
-      "2026-10-12": 4
+      "2026-10-12": 4,
+      "2026-10-13": 8
     },
     "top_ports": [
       {
@@ -61,6 +60,10 @@
       {
         "port": "9173",
         "count": 2
+      },
+      {
+        "port": "7713",
+        "count": 1
       },
       {
         "port": "8620",
@@ -85,13 +88,57 @@
       {
         "port": "9932",
         "count": 1
-      },
-      {
-        "port": "4326",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "159.65.136.5:7713",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-13 16:14:47 UTC"
+      },
+      {
+        "ioc": "http://glolsbs.top:5621/articles",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 07:26:03 UTC"
+      },
+      {
+        "ioc": "http://straely.biz:8531/reports",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 07:26:03 UTC"
+      },
+      {
+        "ioc": "http://spiohop.shop:9932/reviews",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 07:10:53 UTC"
+      },
+      {
+        "ioc": "http://cruahop.shop:8213/contacts",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 07:10:53 UTC"
+      },
+      {
+        "ioc": "http://it-solutions-bayern.com:6431",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 04:52:49 UTC"
+      },
+      {
+        "ioc": "http://acefotos.com:6431",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 04:47:42 UTC"
+      },
+      {
+        "ioc": "http://genuskox.biz:4378",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-13 04:17:23 UTC"
+      },
       {
         "ioc": "2.27.17.150:8620",
         "type": "ip:port",
@@ -133,54 +180,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-10-11 12:48:23 UTC"
-      },
-      {
-        "ioc": "64.91.238.87:2905",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-11 07:02:53 UTC"
-      },
-      {
-        "ioc": "187.77.136.206:6902",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-11 07:02:29 UTC"
-      },
-      {
-        "ioc": "http://saganlive.com:5747",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-11 06:31:23 UTC"
-      },
-      {
-        "ioc": "http://arqtsop.shop:9932/reviews",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-11 06:00:07 UTC"
-      },
-      {
-        "ioc": "http://hkealop.shop:9932/sessions",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-10 22:35:23 UTC"
-      },
-      {
-        "ioc": "http://phetsre.shop:3452/teams",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-10 14:22:54 UTC"
-      },
-      {
-        "ioc": "http://fgashub.shop:9932/addresses",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-10 14:22:54 UTC"
-      },
-      {
-        "ioc": "http://homecor.click:6527/documents",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-10 14:22:54 UTC"
       }
     ]
   }

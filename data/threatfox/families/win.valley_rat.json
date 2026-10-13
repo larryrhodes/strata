@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-10-12T21:50:00.396387+00:00",
-  "recent_window_ioc_count": 65,
+  "generated": "2026-10-13T19:56:24.569557+00:00",
+  "recent_window_ioc_count": 64,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,16 +12,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-16",
-      "latest": "2026-10-12"
+      "earliest": "2026-08-17",
+      "latest": "2026-10-13"
     },
     "ioc_type_breakdown": {
-      "ip:port": 190,
-      "md5_hash": 98,
-      "sha1_hash": 95,
-      "sha256_hash": 94,
-      "domain": 12,
-      "url": 11
+      "ip:port": 180,
+      "md5_hash": 101,
+      "sha1_hash": 98,
+      "sha256_hash": 97,
+      "url": 12,
+      "domain": 12
     },
     "confidence_distribution": {
       "high": 482,
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-16": 10,
-      "2026-08-17": 9,
+      "2026-08-17": 8,
       "2026-08-18": 7,
       "2026-08-19": 14,
       "2026-08-20": 6,
@@ -75,20 +74,21 @@
       "2026-10-08": 8,
       "2026-10-09": 23,
       "2026-10-10": 3,
-      "2026-10-12": 14
+      "2026-10-12": 23,
+      "2026-10-13": 2
     },
     "top_ports": [
       {
+        "port": "443",
+        "count": 24
+      },
+      {
         "port": "7800",
-        "count": 27
+        "count": 24
       },
       {
         "port": "7811",
-        "count": 27
-      },
-      {
-        "port": "443",
-        "count": 23
+        "count": 24
       },
       {
         "port": "8443",
@@ -99,16 +99,16 @@
         "count": 9
       },
       {
-        "port": "6666",
-        "count": 8
-      },
-      {
         "port": "8383",
         "count": 8
       },
       {
-        "port": "8888",
+        "port": "6666",
         "count": 7
+      },
+      {
+        "port": "8888",
+        "count": 6
       },
       {
         "port": "449",
@@ -120,6 +120,72 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "205.186.112.235:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-13 18:45:10 UTC"
+      },
+      {
+        "ioc": "http://ruihankj.top/getinstall64",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-13 04:15:39 UTC"
+      },
+      {
+        "ioc": "c3c71ee043ad639c27f25cd1310c3447",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:55:14 UTC"
+      },
+      {
+        "ioc": "bdae024fe44c0abbb4b82205d39a1d2849047de5",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:55:14 UTC"
+      },
+      {
+        "ioc": "dab0a6c146124f13beed19f191702c28bd474903c7d0fe556feacad48da9a2c5",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:55:13 UTC"
+      },
+      {
+        "ioc": "6e7911309cdb3451407a336a12498902",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:54:55 UTC"
+      },
+      {
+        "ioc": "9a43985f549b81c290a1e46a7af5fe34926e2e55",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:54:55 UTC"
+      },
+      {
+        "ioc": "74f12dc04e545b8a5963ba813fa53535ff74282ec19a44f8190d0f8c148860c0",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:54:55 UTC"
+      },
+      {
+        "ioc": "cfa6d68a1f11511effebcff35bd8c82e",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:54:04 UTC"
+      },
+      {
+        "ioc": "c74bae2070684873c2a879a6d0b48e869045c595",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:54:04 UTC"
+      },
+      {
+        "ioc": "98f945051aa92b8dad1a5b5317d7f78528104cf624353f8ca6f2a1f1d2327183",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-12 22:54:03 UTC"
+      },
       {
         "ioc": "223.26.62.199:443",
         "type": "ip:port",
@@ -143,72 +209,6 @@
         "type": "domain",
         "confidence": 75,
         "first_seen": "2026-10-12 08:51:04 UTC"
-      },
-      {
-        "ioc": "taxgg.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-12 08:51:03 UTC"
-      },
-      {
-        "ioc": "taxzz.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-12 08:51:03 UTC"
-      },
-      {
-        "ioc": "taxyy.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-12 08:51:03 UTC"
-      },
-      {
-        "ioc": "202.79.168.151:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-12 08:51:02 UTC"
-      },
-      {
-        "ioc": "202.79.168.132:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-12 08:51:02 UTC"
-      },
-      {
-        "ioc": "186.240.199.212:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-12 08:51:01 UTC"
-      },
-      {
-        "ioc": "186.240.199.179:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-12 08:51:01 UTC"
-      },
-      {
-        "ioc": "https://yu8y1w.oss-cn-beijing.aliyuncs.com/tad",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-12 06:11:35 UTC"
-      },
-      {
-        "ioc": "https://unby6r.oss-cn-beijing.aliyuncs.com/tad",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-12 06:11:35 UTC"
-      },
-      {
-        "ioc": "https://26usdm.oss-cn-beijing.aliyuncs.com/tad",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-10-12 06:11:34 UTC"
-      },
-      {
-        "ioc": "e44a70b628c96e4621411e51691422b1",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-10 21:08:18 UTC"
       }
     ]
   }

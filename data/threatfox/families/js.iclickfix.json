@@ -1,8 +1,8 @@
 {
   "malware_id": "js.iclickfix",
   "family": "IClickFix",
-  "generated": "2026-10-12T21:49:38.441086+00:00",
-  "recent_window_ioc_count": 487,
+  "generated": "2026-10-13T19:56:08.713279+00:00",
+  "recent_window_ioc_count": 464,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/js.iclickfix",
   "description": "IClickFix is a malicious JavaScript framework deployed on compromised WordPress sites to deliver further malware using the ClickFix social engineering tactic and fake Cloudflare Turnstile CAPTCHA challenge.",
   "alt_names": [],
@@ -11,29 +11,30 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-04",
-      "latest": "2026-10-12"
+      "latest": "2026-10-13"
     },
     "ioc_type_breakdown": {
-      "domain": 476,
-      "url": 18,
+      "domain": 474,
+      "url": 21,
       "ip:port": 4,
-      "sha256_hash": 2
+      "sha256_hash": 1
     },
     "confidence_distribution": {
-      "high": 495,
-      "medium": 5,
+      "high": 496,
+      "medium": 4,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-04": 4,
-      "2026-10-05": 11,
+      "2026-10-04": 2,
+      "2026-10-05": 9,
       "2026-10-06": 25,
       "2026-10-07": 4,
       "2026-10-08": 84,
       "2026-10-09": 295,
       "2026-10-10": 45,
       "2026-10-11": 9,
-      "2026-10-12": 23
+      "2026-10-12": 23,
+      "2026-10-13": 4
     },
     "top_ports": [
       {
@@ -46,6 +47,30 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://id-dns.net/",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-13 05:21:25 UTC"
+      },
+      {
+        "ioc": "https://stat.bestcompliance.net/s",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-13 05:21:11 UTC"
+      },
+      {
+        "ioc": "https://vine-reserve-club-bakup-prod.s3.us-east-1.amazonaws.com/p.ps1",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-13 05:21:10 UTC"
+      },
+      {
+        "ioc": "https://stat.bestcompliance.net/p",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-13 05:21:09 UTC"
+      },
       {
         "ioc": "seo.codesmithsystems.com",
         "type": "domain",
@@ -111,30 +136,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-10-12 11:30:22 UTC"
-      },
-      {
-        "ioc": "ingestwebneo.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-12 11:30:22 UTC"
-      },
-      {
-        "ioc": "209.74.76.3:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-12 11:03:46 UTC"
-      },
-      {
-        "ioc": "smdh7.surf",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-12 11:03:05 UTC"
-      },
-      {
-        "ioc": "sj98xe4.xyz",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-12 11:03:05 UTC"
       }
     ]
   }
