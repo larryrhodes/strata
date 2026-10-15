@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mozi",
   "family": "Mozi",
-  "generated": "2026-10-14T18:08:24.635898+00:00",
-  "recent_window_ioc_count": 64,
+  "generated": "2026-10-15T17:51:14.399316+00:00",
+  "recent_window_ioc_count": 52,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mozi",
   "description": "Mozi is a IoT botnet, that makes use of P2P for communication and reuses source code of other well-known malware families, including Gafgyt, Mirai, and IoT Reaper.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-16",
-      "latest": "2026-10-14"
+      "latest": "2026-10-15"
     },
     "ioc_type_breakdown": {
       "url": 500
@@ -22,7 +22,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-16": 11,
+      "2026-08-16": 8,
       "2026-08-17": 7,
       "2026-08-18": 7,
       "2026-08-19": 4,
@@ -80,10 +80,29 @@
       "2026-10-11": 5,
       "2026-10-12": 10,
       "2026-10-13": 11,
-      "2026-10-14": 5
+      "2026-10-14": 5,
+      "2026-10-15": 3
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "http://45.171.124.23:48370/Mozi.a",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-15 12:19:34 UTC"
+      },
+      {
+        "ioc": "http://182.190.212.190:50454/Mozi.m",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-15 00:20:41 UTC"
+      },
+      {
+        "ioc": "http://190.196.253.64:11610/Mozi.m",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-15 00:20:41 UTC"
+      },
       {
         "ioc": "http://196.190.157.180:57531/Mozi.m",
         "type": "url",
@@ -155,24 +174,6 @@
         "type": "url",
         "confidence": 75,
         "first_seen": "2026-10-13 06:19:39 UTC"
-      },
-      {
-        "ioc": "http://103.203.88.64:59446/Mozi.m",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 06:19:39 UTC"
-      },
-      {
-        "ioc": "http://153.117.13.103:45177/Mozi.m",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 00:18:33 UTC"
-      },
-      {
-        "ioc": "http://175.153.133.229:44327/Mozi.m",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 00:18:32 UTC"
       }
     ]
   }

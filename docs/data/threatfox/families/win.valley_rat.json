@@ -1,8 +1,8 @@
 {
   "malware_id": "win.valley_rat",
   "family": "ValleyRAT",
-  "generated": "2026-10-14T18:08:23.113071+00:00",
-  "recent_window_ioc_count": 69,
+  "generated": "2026-10-15T17:51:12.385121+00:00",
+  "recent_window_ioc_count": 68,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.valley_rat",
   "description": null,
   "alt_names": [
@@ -12,15 +12,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-18",
-      "latest": "2026-10-14"
+      "earliest": "2026-08-19",
+      "latest": "2026-10-15"
     },
     "ioc_type_breakdown": {
-      "ip:port": 171,
-      "md5_hash": 104,
-      "sha1_hash": 101,
-      "sha256_hash": 100,
-      "url": 12,
+      "ip:port": 167,
+      "md5_hash": 105,
+      "sha1_hash": 102,
+      "sha256_hash": 101,
+      "url": 13,
       "domain": 12
     },
     "confidence_distribution": {
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-18": 5,
-      "2026-08-19": 14,
+      "2026-08-19": 12,
       "2026-08-20": 6,
       "2026-08-21": 20,
       "2026-08-22": 29,
@@ -75,7 +74,8 @@
       "2026-10-10": 3,
       "2026-10-12": 23,
       "2026-10-13": 11,
-      "2026-10-14": 1
+      "2026-10-14": 1,
+      "2026-10-15": 7
     },
     "top_ports": [
       {
@@ -83,16 +83,16 @@
         "count": 23
       },
       {
+        "port": "8443",
+        "count": 19
+      },
+      {
         "port": "7800",
-        "count": 21
+        "count": 18
       },
       {
         "port": "7811",
-        "count": 21
-      },
-      {
-        "port": "8443",
-        "count": 19
+        "count": 17
       },
       {
         "port": "8080",
@@ -120,6 +120,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "14.128.53.155:21132",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-15 06:15:35 UTC"
+      },
+      {
+        "ioc": "http://ruimukj.top/getinstall64",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-10-15 06:10:53 UTC"
+      },
+      {
+        "ioc": "202.61.157.33:21357",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-15 06:10:44 UTC"
+      },
+      {
+        "ioc": "14.128.53.155:21131",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-15 06:10:39 UTC"
+      },
+      {
+        "ioc": "51b6ee98d8b8110b9a2217bdfa96cbe8",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-15 00:46:23 UTC"
+      },
+      {
+        "ioc": "8a105a97290b60596a221eb6b92e781e37aa5dbc",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-15 00:46:22 UTC"
+      },
+      {
+        "ioc": "9ca054500391ec34c4e8aefb113549979921266bfb794a56ce83db130d158a27",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-15 00:46:22 UTC"
+      },
       {
         "ioc": "204.194.49.108:21107",
         "type": "ip:port",
@@ -167,48 +209,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-10-13 22:40:16 UTC"
-      },
-      {
-        "ioc": "78d29304c58d04aa81b02734efe16236ad474b82",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-13 22:40:16 UTC"
-      },
-      {
-        "ioc": "1a9a6cef63b3fd86c2465e0bc21398842e9931b661a63e6496a5ed70591aaa21",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-13 22:40:16 UTC"
-      },
-      {
-        "ioc": "205.186.112.235:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-13 18:45:10 UTC"
-      },
-      {
-        "ioc": "http://ruihankj.top/getinstall64",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-13 04:15:39 UTC"
-      },
-      {
-        "ioc": "c3c71ee043ad639c27f25cd1310c3447",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-12 22:55:14 UTC"
-      },
-      {
-        "ioc": "bdae024fe44c0abbb4b82205d39a1d2849047de5",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-12 22:55:14 UTC"
-      },
-      {
-        "ioc": "dab0a6c146124f13beed19f191702c28bd474903c7d0fe556feacad48da9a2c5",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-12 22:55:13 UTC"
       }
     ]
   }
