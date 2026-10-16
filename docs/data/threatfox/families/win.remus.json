@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-10-14T18:08:32.012588+00:00",
-  "recent_window_ioc_count": 48,
+  "generated": "2026-10-16T17:38:32.566452+00:00",
+  "recent_window_ioc_count": 87,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,13 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-21",
-      "latest": "2026-10-14"
+      "earliest": "2026-09-22",
+      "latest": "2026-10-16"
     },
     "ioc_type_breakdown": {
-      "url": 456,
-      "ip:port": 37,
-      "domain": 7
+      "url": 405,
+      "domain": 55,
+      "ip:port": 38,
+      "sha256_hash": 2
     },
     "confidence_distribution": {
       "high": 500,
@@ -24,9 +25,8 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-21": 14,
-      "2026-09-22": 79,
-      "2026-09-23": 45,
+      "2026-09-22": 40,
+      "2026-09-23": 44,
       "2026-09-24": 20,
       "2026-09-25": 11,
       "2026-09-26": 3,
@@ -47,15 +47,21 @@
       "2026-10-11": 7,
       "2026-10-12": 4,
       "2026-10-13": 9,
-      "2026-10-14": 4
+      "2026-10-14": 4,
+      "2026-10-15": 49,
+      "2026-10-16": 5
     },
     "top_ports": [
       {
-        "port": "5890",
+        "port": "6738",
+        "count": 3
+      },
+      {
+        "port": "7713",
         "count": 2
       },
       {
-        "port": "6738",
+        "port": "5890",
         "count": 2
       },
       {
@@ -65,6 +71,10 @@
       {
         "port": "9173",
         "count": 2
+      },
+      {
+        "port": "2525",
+        "count": 1
       },
       {
         "port": "3849",
@@ -79,108 +89,100 @@
         "count": 1
       },
       {
-        "port": "7713",
-        "count": 1
-      },
-      {
         "port": "8620",
-        "count": 1
-      },
-      {
-        "port": "2905",
         "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "157.173.126.174:3849",
+        "ioc": "88aa8f801f7d3d108b371a131ded3e3d0375b2d87e5c428746f578d58b3f3456",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-16 16:54:07 UTC"
+      },
+      {
+        "ioc": "54.215.31.113:7713",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-14 16:10:10 UTC"
+        "first_seen": "2026-10-16 15:15:02 UTC"
       },
       {
-        "ioc": "http://sunderani.com:6589",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-14 14:58:27 UTC"
+        "ioc": "c302d091a1d13d1599df882ca1fbd86c6d2dc6bb284075439310c89c444e90de",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-16 14:54:18 UTC"
       },
       {
-        "ioc": "186.194.50.58:5890",
+        "ioc": "46.249.101.141:2525",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-14 11:54:05 UTC"
+        "first_seen": "2026-10-16 04:17:38 UTC"
       },
       {
-        "ioc": "134.122.94.188:8312",
+        "ioc": "217.160.53.33:6738",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-14 01:13:39 UTC"
+        "first_seen": "2026-10-16 00:16:08 UTC"
       },
       {
-        "ioc": "178.105.61.106:7682",
-        "type": "ip:port",
+        "ioc": "zsfith.biz",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-13 21:10:09 UTC"
+        "first_seen": "2026-10-15 19:00:48 UTC"
       },
       {
-        "ioc": "159.65.136.5:7713",
-        "type": "ip:port",
+        "ioc": "yielxgd.biz",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-13 16:14:47 UTC"
+        "first_seen": "2026-10-15 19:00:48 UTC"
       },
       {
-        "ioc": "http://glolsbs.top:5621/articles",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 07:26:03 UTC"
-      },
-      {
-        "ioc": "http://straely.biz:8531/reports",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 07:26:03 UTC"
-      },
-      {
-        "ioc": "http://spiohop.shop:9932/reviews",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 07:10:53 UTC"
-      },
-      {
-        "ioc": "http://cruahop.shop:8213/contacts",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 07:10:53 UTC"
-      },
-      {
-        "ioc": "http://it-solutions-bayern.com:6431",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 04:52:49 UTC"
-      },
-      {
-        "ioc": "http://acefotos.com:6431",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 04:47:42 UTC"
-      },
-      {
-        "ioc": "http://genuskox.biz:4378",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-13 04:17:23 UTC"
-      },
-      {
-        "ioc": "2.27.17.150:8620",
-        "type": "ip:port",
+        "ioc": "wavhfe.biz",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-12 18:16:46 UTC"
+        "first_seen": "2026-10-15 19:00:48 UTC"
       },
       {
-        "ioc": "89.116.149.92:5890",
-        "type": "ip:port",
+        "ioc": "vtoodor.biz",
+        "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-12 14:10:17 UTC"
+        "first_seen": "2026-10-15 19:00:48 UTC"
+      },
+      {
+        "ioc": "vistda.biz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-15 19:00:48 UTC"
+      },
+      {
+        "ioc": "vfrtegx.biz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-15 19:00:48 UTC"
+      },
+      {
+        "ioc": "veldty.biz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-15 19:00:48 UTC"
+      },
+      {
+        "ioc": "vedfex.biz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-15 19:00:48 UTC"
+      },
+      {
+        "ioc": "vangrd.biz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-15 19:00:48 UTC"
+      },
+      {
+        "ioc": "trexnd.biz",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-15 19:00:48 UTC"
       }
     ]
   }
