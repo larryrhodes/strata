@@ -1351,6 +1351,17 @@
     "enriched_at": "2026-10-09T18:56:04.301937+00:00",
     "status": "not_found"
   },
+  "vbs.gammaload": {
+    "alt_names": [],
+    "associated_groups": [
+      "Gamaredon Group"
+    ],
+    "common_name": "GammaLoad",
+    "description": "According to HarfangLab, GammaLoad is a second-stage VBScript/HTA payload that serves as a persistent beacon and downloader for the next payload. It runs in a two-layer VBScript framework, with an outer installer enabling RunOnce-style persistence and the inner layer using MSXML2.XMLHTTP to beacon to its C2 over Cloudflare-proxied infrastructure.",
+    "enriched_at": "2026-10-17T16:35:28.494300+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "vbs.lampion": {
     "alt_names": [],
     "associated_groups": [],
@@ -1737,6 +1748,17 @@
     "common_name": "CloudEyE",
     "description": "CloudEyE (initially named GuLoader) is a small VB5/6 downloader. It typically downloads RATs/Stealers, such as Agent Tesla, Arkei/Vidar, Formbook, Lokibot, Netwire and Remcos, often but not always from Google Drive. The downloaded payload is xored.",
     "enriched_at": "2026-10-09T18:55:59.195869+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.cloudhaze": {
+    "alt_names": [
+      "zenith"
+    ],
+    "associated_groups": [],
+    "common_name": "CLOUDHAZE",
+    "description": "According to Rogue Authority, CLOUDHAZE is a backdoor written in Rust that is compiled into a working, EV-signed PDF viewer, which serves as the lure while the backdoor module, named \"zenith\" by its authors, runs alongside it. On start it writes a persistent machine identifier to a file disguised as viewer settings and checks in with its C2 server over HTTPS, using a geology-themed protocol in which messages are additionally gzip-compressed, XOR-chained with a fixed key and per-message seed, bit-rotated and shuffled with a seeded Fisher-Yates permutation before base64 encoding. Its tasking allows execution of arbitrary commands in a hidden command shell with the output returned, as well as reading and replacing files in a Chromium-family browser profile and restarting the browser with that profile, apparently to change browser settings or extensions without the user's involvement. It polls the C2 server very rarely, and one-character edits to embedded Rust source paths may be intended to defeat string-based detection and code similarity matching.",
+    "enriched_at": "2026-10-17T16:35:27.228581+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2322,6 +2344,17 @@
     "common_name": "Havoc",
     "description": "First released in October 2022, the Havoc C2 Framework is a flexible post-exploitation framework written in Golang, C++, and Qt, with agents called 'Demons' written in C and ASM, created by @C5pider. Designed to support red team engagements and adversary emulation, it offers a robust set of capabilities tailored for offensive security operations. The framework, which is under active development, utilizes HTTP(s) and SMB as communication protocols for its implants. Havoc can generate implants, known as Demons, in several formats including EXE, DLL, and Shellcode. A notable feature of Havoc is its ability to bypass EDR by employing advanced evasion techniques such as sleep obfuscation, return address stack spoofing, and indirect syscalls. This capability enhances its effectiveness in evading detection and circumventing security measures.",
     "enriched_at": "2026-10-06T19:00:17.026952+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.hermes": {
+    "alt_names": [],
+    "associated_groups": [
+      "Lazarus Group"
+    ],
+    "common_name": "Hermes",
+    "description": null,
+    "enriched_at": "2026-10-17T16:35:25.862147+00:00",
     "source": "malpedia",
     "status": "ok"
   },
