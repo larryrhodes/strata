@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-10-17T16:35:55.761449+00:00",
-  "recent_window_ioc_count": 87,
+  "generated": "2026-10-18T16:44:29.567323+00:00",
+  "recent_window_ioc_count": 85,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,12 +11,12 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-22",
-      "latest": "2026-10-17"
+      "latest": "2026-10-18"
     },
     "ioc_type_breakdown": {
-      "url": 401,
+      "url": 400,
       "domain": 55,
-      "ip:port": 41,
+      "ip:port": 42,
       "sha256_hash": 3
     },
     "confidence_distribution": {
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-22": 32,
+      "2026-09-22": 27,
       "2026-09-23": 44,
       "2026-09-24": 20,
       "2026-09-25": 11,
@@ -50,7 +50,8 @@
       "2026-10-14": 4,
       "2026-10-15": 49,
       "2026-10-16": 9,
-      "2026-10-17": 4
+      "2026-10-17": 7,
+      "2026-10-18": 2
     },
     "top_ports": [
       {
@@ -82,19 +83,49 @@
         "count": 2
       },
       {
+        "port": "3859",
+        "count": 1
+      },
+      {
         "port": "2525",
         "count": 1
       },
       {
         "port": "3849",
         "count": 1
-      },
-      {
-        "port": "7682",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://jxewele.shop:4262/folders",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-18 06:52:23 UTC"
+      },
+      {
+        "ioc": "157.173.126.174:3859",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-18 04:10:13 UTC"
+      },
+      {
+        "ioc": "http://booohop.shop:5627/teams",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-17 22:56:13 UTC"
+      },
+      {
+        "ioc": "http://spiohop.shop:9932/workspaces",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-17 22:56:13 UTC"
+      },
+      {
+        "ioc": "http://teculse.click:9210/categories",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-17 22:56:13 UTC"
+      },
       {
         "ioc": "54.215.31.113:8312",
         "type": "ip:port",
@@ -154,36 +185,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-16 15:15:02 UTC"
-      },
-      {
-        "ioc": "c302d091a1d13d1599df882ca1fbd86c6d2dc6bb284075439310c89c444e90de",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-16 14:54:18 UTC"
-      },
-      {
-        "ioc": "46.249.101.141:2525",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-16 04:17:38 UTC"
-      },
-      {
-        "ioc": "217.160.53.33:6738",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-16 00:16:08 UTC"
-      },
-      {
-        "ioc": "zsfith.biz",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-15 19:00:48 UTC"
-      },
-      {
-        "ioc": "yielxgd.biz",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-15 19:00:48 UTC"
       }
     ]
   }
