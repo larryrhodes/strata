@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-10-18T16:44:19.124564+00:00",
-  "recent_window_ioc_count": 144,
+  "generated": "2026-10-19T19:25:39.662404+00:00",
+  "recent_window_ioc_count": 124,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,30 +37,32 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-22",
-      "latest": "2026-10-18"
+      "earliest": "2026-09-20",
+      "latest": "2026-10-19"
     },
     "ioc_type_breakdown": {
-      "ip:port": 471,
-      "domain": 14,
-      "md5_hash": 6,
+      "ip:port": 467,
+      "domain": 15,
+      "md5_hash": 7,
       "url": 5,
-      "sha1_hash": 2,
-      "sha256_hash": 2
+      "sha1_hash": 3,
+      "sha256_hash": 3
     },
     "confidence_distribution": {
-      "high": 408,
-      "medium": 92,
+      "high": 407,
+      "medium": 93,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-22": 10,
+      "2026-09-20": 2,
+      "2026-09-21": 8,
+      "2026-09-22": 18,
       "2026-09-23": 6,
       "2026-09-24": 11,
       "2026-09-25": 13,
       "2026-09-26": 7,
-      "2026-09-27": 93,
-      "2026-09-28": 18,
+      "2026-09-27": 68,
+      "2026-09-28": 16,
       "2026-09-29": 17,
       "2026-09-30": 5,
       "2026-10-01": 12,
@@ -80,12 +82,13 @@
       "2026-10-15": 11,
       "2026-10-16": 24,
       "2026-10-17": 11,
-      "2026-10-18": 28
+      "2026-10-18": 33,
+      "2026-10-19": 4
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 87
+        "count": 85
       },
       {
         "port": "50050",
@@ -93,38 +96,92 @@
       },
       {
         "port": "80",
-        "count": 61
+        "count": 59
       },
       {
         "port": "8080",
-        "count": 51
+        "count": 48
       },
       {
         "port": "22",
-        "count": 28
+        "count": 27
       },
       {
         "port": "8443",
-        "count": 18
-      },
-      {
-        "port": "8082",
-        "count": 9
+        "count": 19
       },
       {
         "port": "8081",
-        "count": 6
+        "count": 7
       },
       {
-        "port": "9999",
-        "count": 4
+        "port": "8082",
+        "count": 7
       },
       {
-        "port": "8888",
+        "port": "81",
+        "count": 5
+      },
+      {
+        "port": "8000",
         "count": 4
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "103.236.84.103:6443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-19 19:05:04 UTC"
+      },
+      {
+        "ioc": "cdn.img.76e1e5fa.PNAlumni.dgitd.anchorbolnorth.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-19 13:01:51 UTC"
+      },
+      {
+        "ioc": "upi.log.30ca777733df8aa6e4404bd8beadb65c36105e9346e15819152e9ecc4.fd746f6f221867dd6d504e00569cc108bbf5c5e0daf7628d26285775.86174a0a1dc3dd1625fc62e486572c26425c95ffef342f6dddb5ffe0.1b1f3f2edc.7605f6.pnalumni.dgitd.anchorbolnorth.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-19 13:01:49 UTC"
+      },
+      {
+        "ioc": "43.136.92.170:8081",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-19 05:05:04 UTC"
+      },
+      {
+        "ioc": "154.12.17.103:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-18 21:05:04 UTC"
+      },
+      {
+        "ioc": "154.12.17.103:8000",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-18 19:05:08 UTC"
+      },
+      {
+        "ioc": "154.12.17.103:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-18 19:05:08 UTC"
+      },
+      {
+        "ioc": "154.12.17.103:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-18 19:05:05 UTC"
+      },
+      {
+        "ioc": "154.12.17.103:22",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-18 19:05:04 UTC"
+      },
       {
         "ioc": "119.45.236.76:8080",
         "type": "ip:port",
@@ -160,60 +217,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-10-18 14:05:05 UTC"
-      },
-      {
-        "ioc": "91.201.115.193:22",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-18 14:05:04 UTC"
-      },
-      {
-        "ioc": "45.87.53.6:8787",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-18 14:05:04 UTC"
-      },
-      {
-        "ioc": "45.153.34.79:8383",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-18 13:45:57 UTC"
-      },
-      {
-        "ioc": "45.153.34.79:8285",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-18 13:45:57 UTC"
-      },
-      {
-        "ioc": "42.193.174.245:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-18 13:45:56 UTC"
-      },
-      {
-        "ioc": "119.45.236.76:8443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-18 13:45:49 UTC"
-      },
-      {
-        "ioc": "103.117.136.32:3388",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-18 13:45:46 UTC"
-      },
-      {
-        "ioc": "185.184.70.41:8080",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-18 13:05:07 UTC"
-      },
-      {
-        "ioc": "185.184.70.41:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-18 13:05:06 UTC"
       }
     ]
   }
