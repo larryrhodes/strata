@@ -198,7 +198,7 @@
     "associated_groups": [],
     "common_name": "Loki",
     "description": null,
-    "enriched_at": "2026-07-10T15:56:54.659348+00:00",
+    "enriched_at": "2026-10-20T18:04:18.414922+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -950,6 +950,15 @@
     "common_name": "GHOSTBLADE",
     "description": "According to Google, GHOSTBLADE is delivered via the DarkSword exploit chain. GHOSTBLADE is a dataminer written in JavaScript that collects and exfiltrates a wide variety of data from a compromised device. Data collected by GHOSTBLADE is exfiltrated to an attacker-controlled server over HTTP(S). Unlike GHOSTKNIFE and GHOSTSABER, GHOSTBLADE is less capable and does not support any additional modules or backdoor-like functionality; it also does not operate continuously. However, similar to GHOSTKNIFE, GHOSTBLADE also contains code to delete crash reports, but targets a different directory where they may be stored.",
     "enriched_at": "2026-09-05T16:11:08.448854+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "js.glassworm": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "GlassWorm",
+    "description": "According to Koi Security, this malware harvests NPM, GitHub, and Git credentials for supply chain propagation. It targets 49 different cryptocurrency wallet extensions to drain funds. It uses stolen credentials to compromise additional packages and extensions, spreading the worm further. Furthermore, it deploys SOCKS proxy servers, turning developer machines into criminal infrastructure and installs hidden VNC servers for complete remote access.",
+    "enriched_at": "2026-10-20T18:04:17.327296+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2445,7 +2454,7 @@
     "associated_groups": [],
     "common_name": "Hupigon",
     "description": null,
-    "enriched_at": "2026-07-08T17:01:40.513874+00:00",
+    "enriched_at": "2026-10-20T18:04:20.076578+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2642,7 +2651,7 @@
     ],
     "common_name": "Loki Password Stealer (PWS)",
     "description": "\"Loki Bot is a commodity malware sold on underground sites which is designed to steal private data from infected machines, and then submit that info to a command and control host via HTTP POST. This private data includes stored passwords, login credential information from Web browsers, and a variety of cryptocurrency wallets.\" - PhishMe\r\n\r\nLoki-Bot employs function hashing to obfuscate the libraries utilized. While not all functions are hashed, a vast majority of them are.\r\n\r\nLoki-Bot accepts a single argument/switch of \u2018-u\u2019 that simply delays execution (sleeps) for 10 seconds. This is used when Loki-Bot is upgrading itself.\r\n\r\nThe Mutex generated is the result of MD5 hashing the Machine GUID and trimming to 24-characters. For example: \u201cB7E1C2CC98066B250DDB2123\u201c.\r\n\r\nLoki-Bot creates a hidden folder within the %APPDATA% directory whose name is supplied by the 8th thru 13th characters of the Mutex. For example: \u201c%APPDATA%\\ C98066\\\u201d.\r\n\r\nThere can be four files within the hidden %APPDATA% directory at any given time: \u201c.exe,\u201d \u201c.lck,\u201d \u201c.hdb\u201d and \u201c.kdb.\u201d They will be named after characters 13 thru 18 of the Mutex. For example: \u201c6B250D.\u201d Below is the explanation of their purpose:\r\n\r\nFILE EXTENSION\tFILE DESCRIPTION\r\n.exe\tA copy of the malware that will execute every time the user account is logged into\r\n.lck\tA lock file created when either decrypting Windows Credentials or Keylogging to prevent resource conflicts\r\n.hdb\tA database of hashes for data that has already been exfiltrated to the C2 server\r\n.kdb\tA database of keylogger data that has yet to be sent to the C2 server\r\n\r\nIf the user is privileged, Loki-Bot sets up persistence within the registry under HKEY_LOCAL_MACHINE. If not, it sets up persistence under HKEY_CURRENT_USER.\r\n\r\nThe first packet transmitted by Loki-Bot contains application data.\r\n\r\nThe second packet transmitted by Loki-Bot contains decrypted Windows credentials.\r\n\r\nThe third packet transmitted by Loki-Bot is the malware requesting C2 commands from the C2 server. By default, Loki-Bot will send this request out every 10 minutes after the initial packet it sent.\r\n\r\nCommunications to the C2 server from the compromised host contain information about the user and system including the username, hostname, domain, screen resolution, privilege level, system architecture, and Operating System.\r\n\r\nThe first WORD of the HTTP Payload represents the Loki-Bot version.\r\n\r\nThe second WORD of the HTTP Payload is the Payload Type. Below is the table of identified payload types:\r\n\r\nBYTE\tPAYLOAD TYPE\r\n0x26\tStolen Cryptocurrency Wallet\r\n0x27\tStolen Application Data\r\n0x28\tGet C2 Commands from C2 Server\r\n0x29\tStolen File\r\n0x2A\tPOS (Point of Sale?)\r\n0x2B\tKeylogger Data\r\n0x2C\tScreenshot\r\n\r\nThe 11th byte of the HTTP Payload begins the Binary ID. This might be useful in tracking campaigns or specific threat actors. This value value is typically \u201cckav.ru\u201d. If you come across a Binary ID that is different from this, take note!\r\n\r\nLoki-Bot encrypts both the URL and the registry key used for persistence using Triple DES encryption.\r\n\r\nThe Content-Key HTTP Header value is the result of hashing the HTTP Header values that precede it. This is likely used as a protection against researchers who wish to poke and prod at Loki-Bot\u2019s C2 infrastructure.\r\n\r\nLoki-Bot can accept the following instructions from the C2 Server:\r\n\r\nBYTE\tINSTRUCTION DESCRIPTION\r\n0x00\tDownload EXE & Execute\r\n0x01\tDownload DLL & Load #1\r\n0x02\tDownload DLL & Load #2\r\n0x08\tDelete HDB File\r\n0x09\tStart Keylogger\r\n0x0A\tMine & Steal Data\r\n0x0E\tExit Loki-Bot\r\n0x0F\tUpgrade Loki-Bot\r\n0x10\tChange C2 Polling Frequency\r\n0x11\tDelete Executables & Exit\r\n\r\nSuricata Signatures\r\nRULE SID\tRULE NAME\r\n2024311\tET TROJAN Loki Bot Cryptocurrency Wallet Exfiltration Detected\r\n2024312\tET TROJAN Loki Bot Application/Credential Data Exfiltration Detected M1\r\n2024313\tET TROJAN Loki Bot Request for C2 Commands Detected M1\r\n2024314\tET TROJAN Loki Bot File Exfiltration Detected\r\n2024315\tET TROJAN Loki Bot Keylogger Data Exfiltration Detected M1\r\n2024316\tET TROJAN Loki Bot Screenshot Exfiltration Detected\r\n2024317\tET TROJAN Loki Bot Application/Credential Data Exfiltration Detected M2\r\n2024318\tET TROJAN Loki Bot Request for C2 Commands Detected M2\r\n2024319\tET TROJAN Loki Bot Keylogger Data Exfiltration Detected M2",
-    "enriched_at": "2026-07-10T15:56:58.057841+00:00",
+    "enriched_at": "2026-10-20T18:04:21.646988+00:00",
     "source": "malpedia",
     "status": "ok"
   },
