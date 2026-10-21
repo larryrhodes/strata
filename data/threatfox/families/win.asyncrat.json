@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-10-20T18:04:40.475751+00:00",
-  "recent_window_ioc_count": 120,
+  "generated": "2026-10-21T18:11:31.827442+00:00",
+  "recent_window_ioc_count": 106,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -11,22 +11,22 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-04",
-      "latest": "2026-10-20"
+      "latest": "2026-10-21"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 256,
-      "ip:port": 157,
+      "sha256_hash": 252,
+      "ip:port": 160,
       "md5_hash": 30,
       "sha1_hash": 30,
-      "domain": 27
+      "domain": 28
     },
     "confidence_distribution": {
-      "high": 263,
-      "medium": 237,
+      "high": 268,
+      "medium": 232,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-04": 224,
+      "2026-10-04": 219,
       "2026-10-05": 22,
       "2026-10-06": 16,
       "2026-10-07": 14,
@@ -42,7 +42,8 @@
       "2026-10-17": 11,
       "2026-10-18": 19,
       "2026-10-19": 5,
-      "2026-10-20": 12
+      "2026-10-20": 12,
+      "2026-10-21": 5
     },
     "top_ports": [
       {
@@ -62,15 +63,15 @@
         "count": 8
       },
       {
+        "port": "8081",
+        "count": 6
+      },
+      {
         "port": "7707",
         "count": 6
       },
       {
         "port": "5064",
-        "count": 5
-      },
-      {
-        "port": "8081",
         "count": 5
       },
       {
@@ -87,6 +88,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "46.246.4.16:3122",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-21 09:45:22 UTC"
+      },
+      {
+        "ioc": "34.51.206.15:4444",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-21 09:44:57 UTC"
+      },
+      {
+        "ioc": "128.90.105.202:8081",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-21 09:43:19 UTC"
+      },
+      {
+        "ioc": "195fec1204186bb02fde9ac09f5a45add84dde09533400a354a2d97fd6b20acd",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-21 08:54:29 UTC"
+      },
+      {
+        "ioc": "astp.africa.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-21 08:10:17 UTC"
+      },
       {
         "ioc": "c2b10b8c0d346d3e1201daea39713fbfaeb410e8b7fee94b0546a3fcdc91573f",
         "type": "sha256_hash",
@@ -146,36 +177,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-10-20 06:54:19 UTC"
-      },
-      {
-        "ioc": "shopvumanhcuong.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-20 06:40:18 UTC"
-      },
-      {
-        "ioc": "41.234.6.114:8808",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-20 05:05:05 UTC"
-      },
-      {
-        "ioc": "slotwallet777.co",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-19 13:00:24 UTC"
-      },
-      {
-        "ioc": "fc255863ceab40f2510ddf29801e583015505861777f1c5d7e72ec164920f075",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-19 12:54:11 UTC"
-      },
-      {
-        "ioc": "91.92.243.15:2004",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-19 09:45:45 UTC"
       }
     ]
   }
