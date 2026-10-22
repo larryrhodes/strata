@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-10-20T18:04:49.409406+00:00",
-  "recent_window_ioc_count": 69,
+  "generated": "2026-10-22T18:07:37.522671+00:00",
+  "recent_window_ioc_count": 60,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-09",
-      "latest": "2026-10-20"
+      "latest": "2026-10-22"
     },
     "ioc_type_breakdown": {
-      "url": 230,
-      "domain": 209,
-      "sha256_hash": 48,
-      "ip:port": 12,
+      "url": 242,
+      "domain": 172,
+      "sha256_hash": 64,
+      "ip:port": 21,
       "md5_hash": 1
     },
     "confidence_distribution": {
@@ -26,7 +26,7 @@
       "low": 24
     },
     "activity_timeline": {
-      "2026-09-09": 64,
+      "2026-09-09": 19,
       "2026-09-10": 13,
       "2026-09-11": 6,
       "2026-09-12": 3,
@@ -40,7 +40,6 @@
       "2026-09-25": 5,
       "2026-09-26": 1,
       "2026-09-27": 1,
-      "2026-09-29": 1,
       "2026-09-30": 3,
       "2026-10-02": 3,
       "2026-10-04": 1,
@@ -57,12 +56,38 @@
       "2026-10-15": 1,
       "2026-10-16": 2,
       "2026-10-19": 6,
-      "2026-10-20": 6
+      "2026-10-20": 6,
+      "2026-10-21": 10,
+      "2026-10-22": 36
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 4
+        "count": 7
+      },
+      {
+        "port": "80",
+        "count": 2
+      },
+      {
+        "port": "5920",
+        "count": 1
+      },
+      {
+        "port": "79",
+        "count": 1
+      },
+      {
+        "port": "7200",
+        "count": 1
+      },
+      {
+        "port": "8133",
+        "count": 1
+      },
+      {
+        "port": "1488",
+        "count": 1
       },
       {
         "port": "8082",
@@ -75,118 +100,98 @@
       {
         "port": "8093",
         "count": 1
-      },
-      {
-        "port": "8787",
-        "count": 1
-      },
-      {
-        "port": "31078",
-        "count": 1
-      },
-      {
-        "port": "3000",
-        "count": 1
-      },
-      {
-        "port": "8080",
-        "count": 1
-      },
-      {
-        "port": "80",
-        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "runelight.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-20 15:53:36 UTC"
+        "ioc": "545dd5cba264bf242bc837330ca34247e202f7ac25f03eec63bf5842357519f1",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-22 16:54:49 UTC"
       },
       {
-        "ioc": "runelite.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-20 15:53:35 UTC"
+        "ioc": "00436a440caaf87f038abf67f023658b8e17be98ded878fe0bc24a5d47bddbd8",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-22 15:54:52 UTC"
       },
       {
-        "ioc": "beenetprotect.com",
-        "type": "domain",
+        "ioc": "https://bugerror.info/",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-10-20 08:27:24 UTC"
+        "first_seen": "2026-10-22 15:43:14 UTC"
       },
       {
-        "ioc": "109.120.179.122:443",
+        "ioc": "176.65.144.99:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-20 08:27:23 UTC"
+        "first_seen": "2026-10-22 15:43:13 UTC"
       },
       {
-        "ioc": "326ee145270d162ef91eb61ad01839c877a56e1b1460324392aa5ced8cdd1963",
-        "type": "sha256_hash",
+        "ioc": "167.235.158.200:5920",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-20 08:27:22 UTC"
+        "first_seen": "2026-10-22 15:43:13 UTC"
       },
       {
-        "ioc": "83da0e8a179cf390198e2576f2c2a0046367e8f5b5bfa02835ba9cdaca50be97",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-20 06:54:22 UTC"
-      },
-      {
-        "ioc": "https://huhowabisi.net/",
+        "ioc": "http://praft3d.click/",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-10-19 11:57:18 UTC"
+        "first_seen": "2026-10-22 15:43:13 UTC"
       },
       {
-        "ioc": "https://forge-ember.pw/",
+        "ioc": "87.199.195.79:80",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-22 12:10:51 UTC"
+      },
+      {
+        "ioc": "87.199.195.79:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-22 12:10:50 UTC"
+      },
+      {
+        "ioc": "38.146.28.245:79",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-22 12:10:16 UTC"
+      },
+      {
+        "ioc": "grillcrafts.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-22 12:10:16 UTC"
+      },
+      {
+        "ioc": "https://elrianda.com/88b7a6d9-65ab-5467-b09e-20193b9ab968",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-10-19 11:57:18 UTC"
+        "first_seen": "2026-10-22 12:10:15 UTC"
       },
       {
-        "ioc": "https://amm-frosty.lol/",
+        "ioc": "https://elrianda.com/b03f2267-bcc3-5374-a99b-a1537a7341f5/v4",
         "type": "url",
         "confidence": 100,
-        "first_seen": "2026-10-19 11:57:18 UTC"
+        "first_seen": "2026-10-22 12:10:15 UTC"
       },
       {
-        "ioc": "huhowabisi.net",
-        "type": "domain",
+        "ioc": "https://elrianda.com/b03f2267-bcc3-5374-a99b-a1537a7341f5/timer4",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-10-19 11:57:17 UTC"
+        "first_seen": "2026-10-22 12:10:15 UTC"
       },
       {
-        "ioc": "forge-ember.pw",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-19 11:57:17 UTC"
-      },
-      {
-        "ioc": "amm-frosty.lol",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-19 11:57:17 UTC"
-      },
-      {
-        "ioc": "bea41ca1327ec0015306cdc058e7c3806803e5447266c84d347aca3732f59982",
+        "ioc": "7be718b07801c99f85020cf39d8c95790dedddeb7b2eb68de12909fc58ac1776",
         "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-16 10:49:15 UTC"
+        "confidence": 90,
+        "first_seen": "2026-10-22 11:54:55 UTC"
       },
       {
-        "ioc": "tribot.co.uk",
-        "type": "domain",
+        "ioc": "185.245.107.8:443",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-16 10:49:14 UTC"
-      },
-      {
-        "ioc": "csgroup.host",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-15 00:52:48 UTC"
+        "first_seen": "2026-10-22 06:50:59 UTC"
       }
     ]
   }

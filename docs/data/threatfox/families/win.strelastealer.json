@@ -1,162 +1,133 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-07-10T16:00:44.587357+00:00",
-  "recent_window_ioc_count": 52,
+  "generated": "2026-10-22T18:07:19.509596+00:00",
+  "recent_window_ioc_count": 220,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 381,
+    "total_iocs": 235,
     "date_range": {
-      "earliest": "2026-01-10",
-      "latest": "2026-07-04"
+      "earliest": "2026-02-23",
+      "latest": "2026-10-22"
     },
     "ioc_type_breakdown": {
-      "domain": 328,
-      "md5_hash": 17,
-      "sha1_hash": 17,
-      "sha256_hash": 17,
-      "ip:port": 1,
-      "url": 1
+      "domain": 229,
+      "url": 3,
+      "md5_hash": 1,
+      "sha1_hash": 1,
+      "sha256_hash": 1
     },
     "confidence_distribution": {
-      "high": 381,
+      "high": 235,
       "medium": 0,
       "low": 0
     },
     "activity_timeline": {
-      "2026-01-10": 3,
-      "2026-01-12": 3,
-      "2026-01-24": 6,
-      "2026-01-28": 3,
-      "2026-02-01": 3,
-      "2026-02-03": 3,
-      "2026-02-07": 6,
-      "2026-02-09": 3,
-      "2026-02-13": 6,
-      "2026-02-15": 3,
-      "2026-02-21": 3,
-      "2026-02-24": 1,
-      "2026-02-26": 1,
-      "2026-02-27": 1,
-      "2026-03-01": 3,
-      "2026-03-02": 1,
-      "2026-03-03": 9,
-      "2026-03-07": 2,
-      "2026-03-11": 1,
-      "2026-03-13": 1,
-      "2026-03-27": 1,
-      "2026-04-09": 1,
-      "2026-04-20": 2,
+      "2026-02-23": 1,
       "2026-04-22": 1,
-      "2026-04-24": 2,
-      "2026-05-17": 4,
-      "2026-06-02": 1,
-      "2026-06-10": 1,
-      "2026-06-11": 4,
-      "2026-06-12": 248,
-      "2026-06-13": 1,
-      "2026-06-15": 1,
-      "2026-07-04": 52
+      "2026-04-23": 1,
+      "2026-04-24": 1,
+      "2026-05-09": 1,
+      "2026-06-11": 3,
+      "2026-06-12": 1,
+      "2026-10-06": 6,
+      "2026-10-21": 64,
+      "2026-10-22": 156
     },
-    "top_ports": [
-      {
-        "port": "80",
-        "count": 1
-      }
-    ],
+    "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "airtech-energie.fr",
+        "ioc": "heptatechbd.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 12:45:17 UTC"
+        "first_seen": "2026-10-22 17:50:31 UTC"
       },
       {
-        "ioc": "www.ardmorehp.org",
+        "ioc": "harmonycarpetcare.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 08:18:18 UTC"
+        "first_seen": "2026-10-22 17:33:48 UTC"
       },
       {
-        "ioc": "realhair.com.tr",
+        "ioc": "hailagradi.ro",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 08:18:17 UTC"
+        "first_seen": "2026-10-22 17:20:02 UTC"
       },
       {
-        "ioc": "adamantgrup.ru",
+        "ioc": "grafirap.com.ar",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:42 UTC"
+        "first_seen": "2026-10-22 16:46:01 UTC"
       },
       {
-        "ioc": "abasket.it",
+        "ioc": "gouano.gr",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:42 UTC"
+        "first_seen": "2026-10-22 16:39:45 UTC"
       },
       {
-        "ioc": "13espacioarte.com",
+        "ioc": "gotasdeagua.org",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:42 UTC"
+        "first_seen": "2026-10-22 16:31:48 UTC"
       },
       {
-        "ioc": "activefoods.no",
+        "ioc": "gluckambiental.com.br",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:41 UTC"
+        "first_seen": "2026-10-22 16:22:05 UTC"
       },
       {
-        "ioc": "abhinavpharmacycollege.org",
+        "ioc": "geopoynt.london",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:41 UTC"
+        "first_seen": "2026-10-22 16:14:41 UTC"
       },
       {
-        "ioc": "amala-sa.com",
+        "ioc": "ginapacelli.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:40 UTC"
+        "first_seen": "2026-10-22 16:08:53 UTC"
       },
       {
-        "ioc": "androscogginpal.com",
+        "ioc": "ghostsmith.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:39 UTC"
+        "first_seen": "2026-10-22 16:00:19 UTC"
       },
       {
-        "ioc": "amigo-canino.pl",
+        "ioc": "geomagnet-io.stango.solutions",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:39 UTC"
+        "first_seen": "2026-10-22 15:57:44 UTC"
       },
       {
-        "ioc": "arizonaplumbingworks.com",
+        "ioc": "gearmonkey.bike",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:38 UTC"
+        "first_seen": "2026-10-22 15:47:25 UTC"
       },
       {
-        "ioc": "annewatson.com",
+        "ioc": "gdvzm.ru",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:38 UTC"
+        "first_seen": "2026-10-22 15:44:03 UTC"
       },
       {
-        "ioc": "archouse.org",
+        "ioc": "gastric.mezmd.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:37 UTC"
+        "first_seen": "2026-10-22 15:34:16 UTC"
       },
       {
-        "ioc": "aristos-limousine.com",
+        "ioc": "garciarico.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-04 07:11:36 UTC"
+        "first_seen": "2026-10-22 15:30:24 UTC"
       }
     ]
   }

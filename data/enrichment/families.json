@@ -1035,6 +1035,20 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "js.ottercandy": {
+    "alt_names": [
+      "HardHatRAT",
+      "UNSEENMINK"
+    ],
+    "associated_groups": [
+      "WageMole"
+    ],
+    "common_name": "OtterCandy",
+    "description": "OtterCandy is a cross-platform JavaScript backdoor targeting Windows, macOS, and Linux that uses the Socket.IO library with WebSocket and HTTP long-polling transports for command and control, connecting to a hardcoded C2 server with unlimited reconnection attempts. It exfiltrates data via HTTP multipart POST and JSON-body requests to the same C2 infrastructure. It focuses on credential theft from Chromium-based browsers (Chrome, Edge, Brave, Opera, Yandex) by decrypting SQLite login and cookie databases using Windows DPAPI on Windows and Keychain-derived PBKDF2+AES-128-CBC on macOS. It targets cryptocurrency wallets through both browser extension LevelDB scanning (MetaMask, Phantom, Coinbase Wallet, Exodus Web3, Keplr, Enkrypt, OKX) and desktop wallet directory collection (Exodus, Guarda, Electrum, Atomic). The malware conducts recursive filesystem searches to gather .env files and files matching sensitive keywords (metamask, phantom, hardhat.config.ts, seed), and separately collects shell history (.bash_history), Google Cloud (~/.config/gcloud), and Azure (~/.azure) credentials. It fingerprints victims by combining hostname with the first six characters of a hardware machine ID to generate a unique victim identifier used on all uploads. The implant forks a secondary Node.js process from a co-located express.js file on startup, indicating a multi-component architecture within the same delivery package.",
+    "enriched_at": "2026-10-22T18:06:58.876549+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "js.parrot_tds": {
     "alt_names": [],
     "associated_groups": [],
@@ -2213,7 +2227,7 @@
     "associated_groups": [],
     "common_name": "Eye Pyramid",
     "description": null,
-    "enriched_at": "2026-07-24T15:13:36.198643+00:00",
+    "enriched_at": "2026-10-22T18:07:00.323240+00:00",
     "source": "malpedia",
     "status": "ok"
   },
