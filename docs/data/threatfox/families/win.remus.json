@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-10-23T17:56:13.643003+00:00",
-  "recent_window_ioc_count": 240,
+  "generated": "2026-10-24T16:50:46.667621+00:00",
+  "recent_window_ioc_count": 247,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-30",
-      "latest": "2026-10-23"
+      "earliest": "2026-10-01",
+      "latest": "2026-10-24"
     },
     "ioc_type_breakdown": {
-      "url": 414,
-      "domain": 53,
-      "ip:port": 30,
+      "url": 402,
+      "domain": 61,
+      "ip:port": 34,
       "sha256_hash": 3
     },
     "confidence_distribution": {
@@ -25,8 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-30": 4,
-      "2026-10-01": 30,
+      "2026-10-01": 19,
       "2026-10-02": 38,
       "2026-10-03": 24,
       "2026-10-04": 26,
@@ -48,12 +47,21 @@
       "2026-10-20": 173,
       "2026-10-21": 28,
       "2026-10-22": 13,
-      "2026-10-23": 3
+      "2026-10-23": 4,
+      "2026-10-24": 14
     },
     "top_ports": [
       {
+        "port": "443",
+        "count": 3
+      },
+      {
         "port": "6738",
         "count": 3
+      },
+      {
+        "port": "3859",
+        "count": 2
       },
       {
         "port": "8312",
@@ -82,106 +90,98 @@
       {
         "port": "9692",
         "count": 1
-      },
-      {
-        "port": "7589",
-        "count": 1
-      },
-      {
-        "port": "3859",
-        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "http://teechop.shop:8213/folders",
+        "ioc": "client.remus.la",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:44:00 UTC"
+      },
+      {
+        "ioc": "remus.la",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:55 UTC"
+      },
+      {
+        "ioc": "remusdownloads.su",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:54 UTC"
+      },
+      {
+        "ioc": "statswarcraft.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:54 UTC"
+      },
+      {
+        "ioc": "107.148.158.243:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:53 UTC"
+      },
+      {
+        "ioc": "remusapi.la",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:53 UTC"
+      },
+      {
+        "ioc": "cdn.remusdownloads.su",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:53 UTC"
+      },
+      {
+        "ioc": "remusdownloads.to",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:52 UTC"
+      },
+      {
+        "ioc": "31.57.201.47:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:52 UTC"
+      },
+      {
+        "ioc": "74.0.32.71:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:51 UTC"
+      },
+      {
+        "ioc": "cdn.remusdownloads.to",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-24 15:43:51 UTC"
+      },
+      {
+        "ioc": "http://excitingmusic.com:5789",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-10-23 11:07:23 UTC"
+        "first_seen": "2026-10-24 07:38:12 UTC"
       },
       {
-        "ioc": "http://teculse.click:9210/reports",
+        "ioc": "http://mjusiop.shop:5627/posts",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-10-23 11:07:23 UTC"
+        "first_seen": "2026-10-24 02:01:23 UTC"
       },
       {
-        "ioc": "http://spiohop.shop:9932/tags",
+        "ioc": "http://fgashub.shop:9932/comments",
         "type": "url",
         "confidence": 75,
-        "first_seen": "2026-10-23 11:02:03 UTC"
+        "first_seen": "2026-10-24 02:01:23 UTC"
       },
       {
-        "ioc": "http://praft3d.click:5920",
-        "type": "url",
+        "ioc": "167.235.158.200:3859",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-22 16:12:45 UTC"
-      },
-      {
-        "ioc": "http://smarkt7.art:8312",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 13:12:57 UTC"
-      },
-      {
-        "ioc": "http://xightne.click:7242/messages",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-22 12:29:23 UTC"
-      },
-      {
-        "ioc": "http://tool01.art:7713/accounts",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 10:17:01 UTC"
-      },
-      {
-        "ioc": "http://retas3.help:7713",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 03:19:32 UTC"
-      },
-      {
-        "ioc": "http://vydga2.xyz:5621/reviews",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 03:17:23 UTC"
-      },
-      {
-        "ioc": "http://vydga2.xyz:5621",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 03:17:17 UTC"
-      },
-      {
-        "ioc": "http://nisan23.click:9583/reviews",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 03:14:54 UTC"
-      },
-      {
-        "ioc": "http://qxada7.click:8039",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 03:14:46 UTC"
-      },
-      {
-        "ioc": "http://retas3.help:7713/videos",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 01:23:14 UTC"
-      },
-      {
-        "ioc": "http://7keyvs.xyz:7713",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 01:18:07 UTC"
-      },
-      {
-        "ioc": "http://1plusx.my:5621",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-22 01:14:01 UTC"
+        "first_seen": "2026-10-23 18:25:09 UTC"
       }
     ]
   }

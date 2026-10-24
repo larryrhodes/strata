@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-10-23T17:56:16.535192+00:00",
-  "recent_window_ioc_count": 131,
+  "generated": "2026-10-24T16:50:52.957536+00:00",
+  "recent_window_ioc_count": 122,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -19,11 +19,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-09-23",
-      "latest": "2026-10-23"
+      "latest": "2026-10-24"
     },
     "ioc_type_breakdown": {
-      "ip:port": 421,
-      "domain": 67,
+      "ip:port": 420,
+      "domain": 68,
       "sha256_hash": 12
     },
     "confidence_distribution": {
@@ -32,7 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-23": 12,
+      "2026-09-23": 11,
       "2026-09-24": 18,
       "2026-09-25": 6,
       "2026-09-26": 6,
@@ -62,12 +62,13 @@
       "2026-10-20": 18,
       "2026-10-21": 29,
       "2026-10-22": 14,
-      "2026-10-23": 4
+      "2026-10-23": 4,
+      "2026-10-24": 1
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 79
+        "count": 78
       },
       {
         "port": "2015",
@@ -107,6 +108,12 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "alpharecoveries001.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-24 08:55:21 UTC"
+      },
       {
         "ioc": "217.60.195.167:2404",
         "type": "ip:port",
@@ -190,12 +197,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-10-22 08:05:22 UTC"
-      },
-      {
-        "ioc": "94.154.40.111:6448",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-22 07:10:07 UTC"
       }
     ]
   }

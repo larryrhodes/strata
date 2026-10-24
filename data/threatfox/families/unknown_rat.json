@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-10-23T17:56:28.110231+00:00",
-  "recent_window_ioc_count": 63,
+  "generated": "2026-10-24T16:51:01.318731+00:00",
+  "recent_window_ioc_count": 65,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-01",
-      "latest": "2026-10-23"
+      "earliest": "2026-08-02",
+      "latest": "2026-10-24"
     },
     "ioc_type_breakdown": {
-      "url": 178,
-      "domain": 165,
-      "ip:port": 119,
-      "sha256_hash": 34,
+      "url": 171,
+      "domain": 164,
+      "ip:port": 125,
+      "sha256_hash": 36,
       "md5_hash": 4
     },
     "confidence_distribution": {
@@ -26,8 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-01": 5,
-      "2026-08-02": 6,
+      "2026-08-02": 1,
       "2026-08-03": 1,
       "2026-08-04": 12,
       "2026-08-05": 12,
@@ -76,7 +75,7 @@
       "2026-10-05": 4,
       "2026-10-06": 28,
       "2026-10-07": 2,
-      "2026-10-08": 1,
+      "2026-10-08": 2,
       "2026-10-09": 1,
       "2026-10-10": 4,
       "2026-10-11": 3,
@@ -89,7 +88,8 @@
       "2026-10-20": 2,
       "2026-10-21": 8,
       "2026-10-22": 15,
-      "2026-10-23": 15
+      "2026-10-23": 15,
+      "2026-10-24": 9
     },
     "top_ports": [
       {
@@ -98,11 +98,15 @@
       },
       {
         "port": "8041",
-        "count": 24
+        "count": 27
       },
       {
         "port": "80",
         "count": 8
+      },
+      {
+        "port": "8443",
+        "count": 3
       },
       {
         "port": "8080",
@@ -127,13 +131,63 @@
       {
         "port": "4502",
         "count": 1
-      },
-      {
-        "port": "35573",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "100.75.200.41:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-24 09:37:10 UTC"
+      },
+      {
+        "ioc": "37.114.55.227:8443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-24 09:21:01 UTC"
+      },
+      {
+        "ioc": "170.39.187.52:8041",
+        "type": "ip:port",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:33 UTC"
+      },
+      {
+        "ioc": "94.26.81.147:8041",
+        "type": "ip:port",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:33 UTC"
+      },
+      {
+        "ioc": "f1796ab495a147c4087baeec5c5eda494c9a4b595a24b78f4737d3ad63743443",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:32 UTC"
+      },
+      {
+        "ioc": "45.87.61.174:8041",
+        "type": "ip:port",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:32 UTC"
+      },
+      {
+        "ioc": "https://invitationfilecard.com/InfiAQ",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:31 UTC"
+      },
+      {
+        "ioc": "homo2workersbase.xyz",
+        "type": "domain",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:31 UTC"
+      },
+      {
+        "ioc": "83049fd42883cfeade40d1c6b511eff326bab7ad3da6388e1f913ac478eab6d7",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-24 07:23:30 UTC"
+      },
       {
         "ioc": "https://cdn.discordapp.com/attachments/1021403023496458291/1562717800135655474/d17dea6a22",
         "type": "url",
@@ -169,60 +223,6 @@
         "type": "sha256_hash",
         "confidence": 100,
         "first_seen": "2026-10-23 07:15:54 UTC"
-      },
-      {
-        "ioc": "5276b7ff478b13fbbf368c234ba662526c53aa2717029c7b0ab5f3da6d53bc3f",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-23 07:15:54 UTC"
-      },
-      {
-        "ioc": "9f9bfa6e0ceaf059405ab5431f7f722b13f2a0d9da1c6d870bacf553ce0d91ae",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-23 07:15:54 UTC"
-      },
-      {
-        "ioc": "b933ce6adc37e47e17406b249d3b16f415cc4a0a9e9dcb8ac7c8cb73d309775a",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-23 07:15:53 UTC"
-      },
-      {
-        "ioc": "909160af016d08313e8d1674794c7b0830a323bfd1c7106cbbb6287c75c03993",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-23 07:15:53 UTC"
-      },
-      {
-        "ioc": "vanta.im",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:31:24 UTC"
-      },
-      {
-        "ioc": "https://zgrongbo.com/nback.php",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:26:24 UTC"
-      },
-      {
-        "ioc": "https://zgrongbo.com/nfront?a=",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:26:23 UTC"
-      },
-      {
-        "ioc": "23.94.252.153:80",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:26:22 UTC"
-      },
-      {
-        "ioc": "zgrongbo.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:26:21 UTC"
       }
     ]
   }
