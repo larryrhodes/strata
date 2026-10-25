@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remus",
   "family": "Remus",
-  "generated": "2026-10-24T16:50:46.667621+00:00",
-  "recent_window_ioc_count": 247,
+  "generated": "2026-10-25T17:11:07.614965+00:00",
+  "recent_window_ioc_count": 251,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus",
   "description": "According to Gen, this is most likely the 64bit evolution of Lumma Stealer. It is capable of stealing stored browser passwords, cookies, cryptocurrency, and much more. It also uses EtherHiding to resolve C2s, replacing the traditional use of Steam and Telegram dead drop resolvers, and has additional anti-analysis checks.",
   "alt_names": [],
@@ -11,12 +11,12 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-01",
-      "latest": "2026-10-24"
+      "latest": "2026-10-25"
     },
     "ioc_type_breakdown": {
-      "url": 402,
-      "domain": 61,
-      "ip:port": 34,
+      "url": 396,
+      "domain": 64,
+      "ip:port": 37,
       "sha256_hash": 3
     },
     "confidence_distribution": {
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-01": 19,
+      "2026-10-01": 11,
       "2026-10-02": 38,
       "2026-10-03": 24,
       "2026-10-04": 26,
@@ -48,12 +48,13 @@
       "2026-10-21": 28,
       "2026-10-22": 13,
       "2026-10-23": 4,
-      "2026-10-24": 14
+      "2026-10-24": 14,
+      "2026-10-25": 8
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 3
+        "count": 6
       },
       {
         "port": "6738",
@@ -93,6 +94,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://coxnext.click:7242/attachments",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-25 12:29:43 UTC"
+      },
+      {
+        "ioc": "apisumer.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-25 07:33:43 UTC"
+      },
+      {
+        "ioc": "lt.remusdownloads.su",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-25 07:33:43 UTC"
+      },
+      {
+        "ioc": "84.32.149.191:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-25 07:33:42 UTC"
+      },
+      {
+        "ioc": "80.253.249.242:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-25 07:33:42 UTC"
+      },
+      {
+        "ioc": "31.77.220.7:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-25 06:21:41 UTC"
+      },
+      {
+        "ioc": "de.remusdownloads.su",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-25 06:21:41 UTC"
+      },
+      {
+        "ioc": "http://aircargowebsites.com:4437",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-10-25 02:58:22 UTC"
+      },
       {
         "ioc": "client.remus.la",
         "type": "domain",
@@ -134,54 +183,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-10-24 15:43:53 UTC"
-      },
-      {
-        "ioc": "remusdownloads.to",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-24 15:43:52 UTC"
-      },
-      {
-        "ioc": "31.57.201.47:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-24 15:43:52 UTC"
-      },
-      {
-        "ioc": "74.0.32.71:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-24 15:43:51 UTC"
-      },
-      {
-        "ioc": "cdn.remusdownloads.to",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-24 15:43:51 UTC"
-      },
-      {
-        "ioc": "http://excitingmusic.com:5789",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-24 07:38:12 UTC"
-      },
-      {
-        "ioc": "http://mjusiop.shop:5627/posts",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-24 02:01:23 UTC"
-      },
-      {
-        "ioc": "http://fgashub.shop:9932/comments",
-        "type": "url",
-        "confidence": 75,
-        "first_seen": "2026-10-24 02:01:23 UTC"
-      },
-      {
-        "ioc": "167.235.158.200:3859",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-23 18:25:09 UTC"
       }
     ]
   }
