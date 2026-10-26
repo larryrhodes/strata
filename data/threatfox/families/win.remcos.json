@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-10-25T17:11:15.651156+00:00",
-  "recent_window_ioc_count": 90,
+  "generated": "2026-10-26T19:30:08.136931+00:00",
+  "recent_window_ioc_count": 84,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-23",
-      "latest": "2026-10-24"
+      "earliest": "2026-09-24",
+      "latest": "2026-10-26"
     },
     "ioc_type_breakdown": {
-      "ip:port": 420,
-      "domain": 68,
+      "ip:port": 412,
+      "domain": 76,
       "sha256_hash": 12
     },
     "confidence_distribution": {
@@ -32,8 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-23": 11,
-      "2026-09-24": 18,
+      "2026-09-24": 12,
       "2026-09-25": 6,
       "2026-09-26": 6,
       "2026-09-27": 4,
@@ -63,16 +62,17 @@
       "2026-10-21": 29,
       "2026-10-22": 14,
       "2026-10-23": 4,
-      "2026-10-24": 1
+      "2026-10-24": 1,
+      "2026-10-26": 17
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 78
+        "count": 79
       },
       {
         "port": "2015",
-        "count": 14
+        "count": 13
       },
       {
         "port": "3000",
@@ -95,108 +95,108 @@
         "count": 9
       },
       {
-        "port": "14646",
-        "count": 9
-      },
-      {
         "port": "14644",
         "count": 9
       },
       {
         "port": "14647",
         "count": 9
+      },
+      {
+        "port": "65070",
+        "count": 9
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "alpharecoveries001.duckdns.org",
+        "ioc": "rawegg123.duckdns.org",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-10-24 08:55:21 UTC"
+        "first_seen": "2026-10-26 17:00:32 UTC"
       },
       {
-        "ioc": "217.60.195.167:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-23 13:30:05 UTC"
-      },
-      {
-        "ioc": "91.92.41.145:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-23 12:35:31 UTC"
-      },
-      {
-        "ioc": "155.103.71.231:4047",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-23 12:35:31 UTC"
-      },
-      {
-        "ioc": "206.123.137.134:56090",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-23 02:20:06 UTC"
-      },
-      {
-        "ioc": "94.156.152.7:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-22 21:45:04 UTC"
-      },
-      {
-        "ioc": "e98d71d4476f4b4b28602b5fde9dc5d493847d07571a97f42d157f5013a99204",
-        "type": "sha256_hash",
-        "confidence": 85,
-        "first_seen": "2026-10-22 19:55:01 UTC"
-      },
-      {
-        "ioc": "45.88.186.145:5220",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-22 15:29:09 UTC"
-      },
-      {
-        "ioc": "128.90.113.30:3000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-22 14:41:26 UTC"
-      },
-      {
-        "ioc": "doublexoxo.duckdns.org",
+        "ioc": "gumduck2.duckdns.org",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-10-22 12:30:24 UTC"
+        "first_seen": "2026-10-26 17:00:32 UTC"
       },
       {
-        "ioc": "192.3.73.139:2404",
+        "ioc": "gumduck1.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 17:00:31 UTC"
+      },
+      {
+        "ioc": "gumduck.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 17:00:31 UTC"
+      },
+      {
+        "ioc": "jaja00.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 13:05:24 UTC"
+      },
+      {
+        "ioc": "38.255.34.171:2404",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-22 12:20:06 UTC"
+        "first_seen": "2026-10-26 11:10:05 UTC"
       },
       {
-        "ioc": "91.92.41.156:2404",
+        "ioc": "38.240.56.216:2404",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-10-22 12:10:35 UTC"
+        "first_seen": "2026-10-26 09:55:04 UTC"
       },
       {
-        "ioc": "193.142.59.34:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-22 10:50:05 UTC"
-      },
-      {
-        "ioc": "172.94.125.5:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-22 08:08:55 UTC"
-      },
-      {
-        "ioc": "74.201.173.193:17509",
+        "ioc": "155.103.71.231:4242",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-22 08:05:22 UTC"
+        "first_seen": "2026-10-26 07:50:26 UTC"
+      },
+      {
+        "ioc": "130.12.182.29:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 07:50:26 UTC"
+      },
+      {
+        "ioc": "212.162.149.90:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 07:50:26 UTC"
+      },
+      {
+        "ioc": "1remz.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 07:40:26 UTC"
+      },
+      {
+        "ioc": "www.valleyintmdbackup2.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 04:45:23 UTC"
+      },
+      {
+        "ioc": "www.valleyintmdbackup1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 04:45:23 UTC"
+      },
+      {
+        "ioc": "www.valleyintmdbackup.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 04:45:23 UTC"
+      },
+      {
+        "ioc": "www.valleyintmd.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-26 04:45:23 UTC"
       }
     ]
   }
