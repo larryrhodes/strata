@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.bashlite",
   "family": "Bashlite",
-  "generated": "2026-10-10T17:57:23.964117+00:00",
-  "recent_window_ioc_count": 62,
+  "generated": "2026-10-27T18:52:23.786053+00:00",
+  "recent_window_ioc_count": 49,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.bashlite",
   "description": "Bashlite is a malware family which infects Linux systems in order to launch distributed denial-of-service attacks (DDoS). Originally it was also known under the name Bashdoor, but this term now refers to the exploit method used by the malware. It has been used to launch attacks of up to 400 Gbps.",
   "alt_names": [
@@ -14,27 +14,23 @@
   ],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 197,
+    "total_iocs": 272,
     "date_range": {
-      "earliest": "2026-04-17",
-      "latest": "2026-10-10"
+      "earliest": "2026-05-01",
+      "latest": "2026-10-27"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 171,
-      "ip:port": 22,
-      "domain": 3,
-      "url": 1
+      "sha256_hash": 222,
+      "url": 26,
+      "ip:port": 23,
+      "domain": 1
     },
     "confidence_distribution": {
-      "high": 197,
+      "high": 272,
       "medium": 0,
       "low": 0
     },
     "activity_timeline": {
-      "2026-04-17": 1,
-      "2026-04-18": 1,
-      "2026-04-20": 1,
-      "2026-04-22": 3,
       "2026-05-01": 1,
       "2026-06-27": 1,
       "2026-07-01": 1,
@@ -62,15 +58,33 @@
       "2026-09-30": 7,
       "2026-10-01": 8,
       "2026-10-02": 4,
-      "2026-10-03": 27,
+      "2026-10-03": 26,
       "2026-10-04": 10,
       "2026-10-05": 33,
       "2026-10-06": 2,
       "2026-10-07": 1,
       "2026-10-09": 5,
-      "2026-10-10": 4
+      "2026-10-10": 4,
+      "2026-10-11": 1,
+      "2026-10-12": 9,
+      "2026-10-13": 3,
+      "2026-10-14": 2,
+      "2026-10-16": 8,
+      "2026-10-17": 5,
+      "2026-10-18": 2,
+      "2026-10-19": 2,
+      "2026-10-20": 1,
+      "2026-10-22": 3,
+      "2026-10-24": 27,
+      "2026-10-25": 2,
+      "2026-10-26": 1,
+      "2026-10-27": 16
     },
     "top_ports": [
+      {
+        "port": "19191",
+        "count": 2
+      },
       {
         "port": "80",
         "count": 2
@@ -80,8 +94,20 @@
         "count": 2
       },
       {
-        "port": "19286",
-        "count": 2
+        "port": "443",
+        "count": 1
+      },
+      {
+        "port": "55487",
+        "count": 1
+      },
+      {
+        "port": "576",
+        "count": 1
+      },
+      {
+        "port": "3778",
+        "count": 1
       },
       {
         "port": "21",
@@ -94,114 +120,98 @@
       {
         "port": "6881",
         "count": 1
-      },
-      {
-        "port": "8088",
-        "count": 1
-      },
-      {
-        "port": "1337",
-        "count": 1
-      },
-      {
-        "port": "8080",
-        "count": 1
-      },
-      {
-        "port": "19191",
-        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "213.232.114.14:21",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-10 06:02:04 UTC"
-      },
-      {
-        "ioc": "213.232.114.14:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-10 06:02:02 UTC"
-      },
-      {
-        "ioc": "b992e0488abed5c19f215626dee38cc4b7b92b918ab194e276924a462aa97c3f",
+        "ioc": "7723fe4b9f33a9e9cf1e7476977ee0e1de56f23a55e83a20678122d0a281332e",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-10 00:12:34 UTC"
+        "first_seen": "2026-10-27 06:55:56 UTC"
       },
       {
-        "ioc": "d59a4194ec66b508697d67d71b69f74f590e8a8bb346507075b3ded56854a374",
+        "ioc": "14de1483c40d257672b0d6e27ee54f40993e4a36ecec6524b4f3f5adf636f477",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-10 00:12:32 UTC"
+        "first_seen": "2026-10-27 06:55:55 UTC"
       },
       {
-        "ioc": "b694d9c69417fe8514f2ab80e7f73af18e0653ca774e4eb14c74a3775d69cc4a",
+        "ioc": "dd61a80a94b53298c128dee18789890100bda578421fe23f338e8c1a5e912623",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-09 23:12:27 UTC"
+        "first_seen": "2026-10-27 06:55:54 UTC"
       },
       {
-        "ioc": "383fde5c88928a74c530f2e1e84007f9a7c70b980a002894b4f2f3b575c3b1db",
+        "ioc": "4396a451ebd0e7ae8eba7f6772dc2db2aba1e3af0ed9391d7910ba2ef3670925",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-09 21:12:14 UTC"
+        "first_seen": "2026-10-27 06:55:53 UTC"
       },
       {
-        "ioc": "32d0ef1342989d373e942d3676ab127942e354a5a7db17c925eb2790c25405e8",
+        "ioc": "2037e7ee9390ba2bf6374abb4cc6566e061bcd6ee5ae1150e04f69780ac8f3e2",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-09 20:10:49 UTC"
+        "first_seen": "2026-10-27 06:55:52 UTC"
       },
       {
-        "ioc": "1fb799ef7061df38c45a23ceac84cdd4c9595ba2be70226fd5e040d6a978d4fa",
+        "ioc": "15594bc2f1025894a2d4c68f3b5ed2b534a68f6432d7e0b7294874dade64d469",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-09 20:10:30 UTC"
+        "first_seen": "2026-10-27 06:55:51 UTC"
       },
       {
-        "ioc": "3a810e0fbee30b2af13c04f12c51f5cba936c64077aea2a334e53b125920fd7f",
+        "ioc": "0cc07de47a1a074ae09fdf70456b64a132c6f1e8e52a1bfdc930c951fa213abe",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-09 07:06:12 UTC"
+        "first_seen": "2026-10-27 06:55:50 UTC"
       },
       {
-        "ioc": "91.92.47.97:23004",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-07 04:37:35 UTC"
-      },
-      {
-        "ioc": "64d8fb286b66082ef57f080e5bfd24f641ca9ab0f16141eb69677207632ac553",
+        "ioc": "3dbe2072303d871e102fcc57a015f88ae766347e743a43ced5f465342f940a18",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-06 06:47:11 UTC"
+        "first_seen": "2026-10-27 06:55:48 UTC"
       },
       {
-        "ioc": "9cefa49238c85632f4de8c3bc682cecb797c6308d76a3206aa8a64ef947c8285",
+        "ioc": "5c0c39f265c03b449feba975f5cb7c11ed989ff367124d5a4d48a9ce3181e55c",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-06 06:47:09 UTC"
+        "first_seen": "2026-10-27 06:55:47 UTC"
       },
       {
-        "ioc": "3ac187f6587892fb72dfada22df5a4a1cef577a247e72c9f39e487418e56ae1e",
+        "ioc": "36745739244692e943a6901ac68125e267e5c850ffd07b216368d8eb652a610b",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-05 23:46:52 UTC"
+        "first_seen": "2026-10-27 06:55:46 UTC"
       },
       {
-        "ioc": "a4e61e06ef73ac181c35774c525cdb8a693b385c7787e3fcf1ed827cc0e96048",
+        "ioc": "f02978fb9ffc83f201f4492816e3208f1b190c89d01e9635ecd69b102825cdd1",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-05 22:46:44 UTC"
+        "first_seen": "2026-10-27 06:55:45 UTC"
       },
       {
-        "ioc": "dbaa24a0ce77ca88132423b569ce6a45ae4a1443ce21e6b94f272aea2fdada63",
+        "ioc": "fbbaf33e8a5539c8842d3e5584a7814eaba87ff7b8ce75f2f04da91269a795f4",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-10-05 22:46:43 UTC"
+        "first_seen": "2026-10-27 05:55:50 UTC"
+      },
+      {
+        "ioc": "72187a9ba1aab85d981b40ba2f9283c39c49de08d4c87a571325220b5c4f6a3c",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-27 05:55:49 UTC"
+      },
+      {
+        "ioc": "ec4ff73358e7bf2430874bd72f6c87f631e3ac4ebe73d39e3ec2f97c11589b06",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-27 05:55:48 UTC"
+      },
+      {
+        "ioc": "ee1d3addb823b8c9f41be9da813465e396e1236d8e2f2d1db5f09c2ea78f47d9",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-10-27 05:55:45 UTC"
       }
     ]
   }

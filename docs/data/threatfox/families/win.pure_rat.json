@@ -1,8 +1,8 @@
 {
   "malware_id": "win.pure_rat",
   "family": "PureRAT",
-  "generated": "2026-10-26T19:30:04.330415+00:00",
-  "recent_window_ioc_count": 117,
+  "generated": "2026-10-27T18:52:10.933578+00:00",
+  "recent_window_ioc_count": 118,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.pure_rat",
   "description": "According to Morphisec, this RAT combines advanced in-memory execution, API and resource resolution at runtime, and layered evasion techniques. They have named it \u2018Resolver\u2019 due to its heavy reliance on runtime resolution mechanisms and dynamic resource handling, which make static and behavioral analysis significantly more difficult.",
   "alt_names": [
@@ -13,8 +13,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-22",
-      "latest": "2026-10-26"
+      "earliest": "2026-09-23",
+      "latest": "2026-10-27"
     },
     "ioc_type_breakdown": {
       "ip:port": 493,
@@ -24,13 +24,12 @@
       "url": 1
     },
     "confidence_distribution": {
-      "high": 487,
-      "medium": 13,
+      "high": 486,
+      "medium": 14,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-22": 5,
-      "2026-09-23": 15,
+      "2026-09-23": 3,
       "2026-09-24": 20,
       "2026-09-25": 8,
       "2026-09-26": 7,
@@ -63,32 +62,29 @@
       "2026-10-23": 15,
       "2026-10-24": 17,
       "2026-10-25": 15,
-      "2026-10-26": 5
+      "2026-10-26": 20,
+      "2026-10-27": 2
     },
     "top_ports": [
       {
         "port": "56003",
-        "count": 120
+        "count": 125
       },
       {
         "port": "443",
-        "count": 113
-      },
-      {
-        "port": "56002",
-        "count": 93
+        "count": 111
       },
       {
         "port": "56001",
-        "count": 93
+        "count": 95
+      },
+      {
+        "port": "56002",
+        "count": 92
       },
       {
         "port": "444",
         "count": 7
-      },
-      {
-        "port": "1996",
-        "count": 5
       },
       {
         "port": "442",
@@ -105,98 +101,102 @@
       {
         "port": "44443",
         "count": 3
+      },
+      {
+        "port": "1996",
+        "count": 3
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "70.36.127.51:56002",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-26 05:31:19 UTC"
-      },
-      {
-        "ioc": "70.36.127.51:56001",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-26 05:31:19 UTC"
-      },
-      {
-        "ioc": "70.36.127.51:56003",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-26 05:31:18 UTC"
-      },
-      {
-        "ioc": "70.36.127.51:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-26 05:29:42 UTC"
-      },
-      {
-        "ioc": "197.147.62.112:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-26 05:28:55 UTC"
-      },
-      {
-        "ioc": "84.200.91.172:56003",
+        "ioc": "45.225.135.240:56003",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-25 19:45:35 UTC"
+        "first_seen": "2026-10-27 09:45:14 UTC"
       },
       {
-        "ioc": "193.142.146.172:56003",
+        "ioc": "157.254.194.69:46903",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-27 06:08:56 UTC"
+      },
+      {
+        "ioc": "80.76.49.156:443",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-25 19:44:07 UTC"
+        "first_seen": "2026-10-26 19:45:20 UTC"
       },
       {
-        "ioc": "195.177.94.182:56003",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 16:21:05 UTC"
-      },
-      {
-        "ioc": "195.177.94.182:56002",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 16:20:55 UTC"
-      },
-      {
-        "ioc": "103.54.153.156:56002",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 16:20:53 UTC"
-      },
-      {
-        "ioc": "207.174.1.23:56002",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 16:20:53 UTC"
-      },
-      {
-        "ioc": "195.177.94.182:56001",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 16:20:36 UTC"
-      },
-      {
-        "ioc": "45.139.104.26:56014",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 13:36:36 UTC"
-      },
-      {
-        "ioc": "50.114.179.6:56903",
+        "ioc": "46.244.96.132:56003",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-25 09:45:24 UTC"
+        "first_seen": "2026-10-26 19:45:04 UTC"
       },
       {
-        "ioc": "5.175.169.209:56003",
+        "ioc": "46.244.96.132:56002",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-25 09:45:22 UTC"
+        "first_seen": "2026-10-26 19:45:04 UTC"
+      },
+      {
+        "ioc": "46.244.96.132:56001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:45:04 UTC"
+      },
+      {
+        "ioc": "45.225.135.227:56001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:44:59 UTC"
+      },
+      {
+        "ioc": "45.225.135.133:56001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:44:58 UTC"
+      },
+      {
+        "ioc": "207.189.18.225:56001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:44:12 UTC"
+      },
+      {
+        "ioc": "185.100.86.161:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:43:54 UTC"
+      },
+      {
+        "ioc": "185.100.84.175:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:43:54 UTC"
+      },
+      {
+        "ioc": "177.201.238.60:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:43:51 UTC"
+      },
+      {
+        "ioc": "177.201.238.47:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:43:51 UTC"
+      },
+      {
+        "ioc": "177.201.238.118:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:43:51 UTC"
+      },
+      {
+        "ioc": "154.29.79.11:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-26 19:43:33 UTC"
       }
     ]
   }

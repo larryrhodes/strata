@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-10-26T19:29:54.912047+00:00",
-  "recent_window_ioc_count": 550,
+  "generated": "2026-10-27T18:52:02.034510+00:00",
+  "recent_window_ioc_count": 601,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-21",
-      "latest": "2026-10-26"
+      "earliest": "2026-10-22",
+      "latest": "2026-10-27"
     },
     "ioc_type_breakdown": {
       "domain": 497,
@@ -23,104 +23,104 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-21": 14,
-      "2026-10-22": 199,
+      "2026-10-22": 162,
       "2026-10-23": 96,
       "2026-10-24": 96,
       "2026-10-25": 62,
-      "2026-10-26": 33
+      "2026-10-26": 41,
+      "2026-10-27": 43
     },
     "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "gventerpriseswork.com",
+        "ioc": "trejosroofing.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 19:05:03 UTC"
+        "first_seen": "2026-10-27 18:46:28 UTC"
       },
       {
-        "ioc": "grant.vandersee.id.au",
+        "ioc": "thecoolwhpos.de",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 18:53:55 UTC"
+        "first_seen": "2026-10-27 17:45:00 UTC"
       },
       {
-        "ioc": "globalintermed.com.br",
+        "ioc": "textilras.com.ar",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 18:22:56 UTC"
+        "first_seen": "2026-10-27 17:43:43 UTC"
       },
       {
-        "ioc": "zz-infratechniek.nl",
+        "ioc": "tetrahedralflowers.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 17:47:28 UTC"
+        "first_seen": "2026-10-27 17:34:32 UTC"
       },
       {
-        "ioc": "galerie-dakoenig.de",
+        "ioc": "teste.atctecnologia.com.br",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 17:44:08 UTC"
+        "first_seen": "2026-10-27 17:21:30 UTC"
       },
       {
-        "ioc": "francescmarcalvaro.cat",
+        "ioc": "test.fbmeliquidation.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 17:05:22 UTC"
+        "first_seen": "2026-10-27 17:16:49 UTC"
       },
       {
-        "ioc": "formazionedocenti.org",
+        "ioc": "telegraphharp.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 16:38:04 UTC"
+        "first_seen": "2026-10-27 17:08:16 UTC"
       },
       {
-        "ioc": "flexyyservices.pt",
+        "ioc": "tailorexecutive.kastner.com.au",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 16:26:10 UTC"
+        "first_seen": "2026-10-27 16:47:16 UTC"
       },
       {
-        "ioc": "familylegacyprotection.com",
+        "ioc": "synchro-vasq.unidermaperu.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 16:13:48 UTC"
+        "first_seen": "2026-10-27 16:26:18 UTC"
       },
       {
-        "ioc": "deesaidesign.com",
+        "ioc": "svpmag.ru",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 09:31:01 UTC"
+        "first_seen": "2026-10-27 16:20:09 UTC"
       },
       {
-        "ioc": "dccidadu.org.pk",
+        "ioc": "fortwayneswoodfloorcleaner.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 09:24:22 UTC"
+        "first_seen": "2026-10-27 16:05:10 UTC"
       },
       {
-        "ioc": "dash.erosteps.in",
+        "ioc": "strangemeteor.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 09:08:52 UTC"
+        "first_seen": "2026-10-27 15:59:58 UTC"
       },
       {
-        "ioc": "dance.pappu.co.in",
+        "ioc": "lekkie.przesuniecie.pl",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 09:00:30 UTC"
+        "first_seen": "2026-10-27 15:53:22 UTC"
       },
       {
-        "ioc": "cy9.narahtech.com",
+        "ioc": "karpikgnc.com.ar",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 08:59:25 UTC"
+        "first_seen": "2026-10-27 15:51:09 UTC"
       },
       {
-        "ioc": "contratotemporario.ammadvocacia.com",
+        "ioc": "staging.lisadegen.de",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-10-26 08:26:51 UTC"
+        "first_seen": "2026-10-27 15:26:27 UTC"
       }
     ]
   }

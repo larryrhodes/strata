@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-10-26T19:30:12.153519+00:00",
-  "recent_window_ioc_count": 68,
+  "generated": "2026-10-27T18:52:16.926687+00:00",
+  "recent_window_ioc_count": 82,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,25 +10,23 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-05",
-      "latest": "2026-10-26"
+      "earliest": "2026-08-07",
+      "latest": "2026-10-27"
     },
     "ioc_type_breakdown": {
       "url": 165,
-      "domain": 164,
-      "ip:port": 131,
+      "domain": 162,
+      "ip:port": 133,
       "sha256_hash": 36,
       "md5_hash": 4
     },
     "confidence_distribution": {
-      "high": 456,
-      "medium": 44,
+      "high": 455,
+      "medium": 45,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-05": 7,
-      "2026-08-06": 4,
-      "2026-08-07": 14,
+      "2026-08-07": 9,
       "2026-08-08": 15,
       "2026-08-09": 2,
       "2026-08-10": 15,
@@ -88,32 +86,33 @@
       "2026-10-23": 15,
       "2026-10-24": 9,
       "2026-10-25": 17,
-      "2026-10-26": 2
+      "2026-10-26": 3,
+      "2026-10-27": 15
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 35
+        "count": 40
       },
       {
         "port": "8041",
-        "count": 27
+        "count": 23
       },
       {
         "port": "80",
-        "count": 10
+        "count": 11
       },
       {
         "port": "7777",
         "count": 6
       },
       {
-        "port": "8080",
+        "port": "8443",
         "count": 4
       },
       {
-        "port": "8443",
-        "count": 3
+        "port": "8080",
+        "count": 4
       },
       {
         "port": "4444",
@@ -134,94 +133,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "217.154.237.212:8081",
+        "ioc": "arvion.network",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-27 15:37:50 UTC"
+      },
+      {
+        "ioc": "185.112.59.239:8443",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-26 09:04:11 UTC"
+        "first_seen": "2026-10-27 15:36:52 UTC"
       },
       {
-        "ioc": "217.154.237.212:4444",
+        "ioc": "62.233.51.71:443",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-26 09:04:11 UTC"
+        "first_seen": "2026-10-27 15:02:35 UTC"
       },
       {
-        "ioc": "185.194.175.177:7777",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:34:04 UTC"
-      },
-      {
-        "ioc": "38.49.217.130:9999",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:33:51 UTC"
-      },
-      {
-        "ioc": "207.241.172.2:7777",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:33:09 UTC"
-      },
-      {
-        "ioc": "154.7.255.190:5607",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:32:59 UTC"
-      },
-      {
-        "ioc": "191.101.172.23:5014",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:32:19 UTC"
-      },
-      {
-        "ioc": "217.113.25.38:80",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:54 UTC"
-      },
-      {
-        "ioc": "217.113.25.38:81",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:54 UTC"
-      },
-      {
-        "ioc": "217.113.25.38:82",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:37 UTC"
-      },
-      {
-        "ioc": "107.149.8.32:7777",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:22 UTC"
-      },
-      {
-        "ioc": "185.157.215.208:5555",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:20 UTC"
-      },
-      {
-        "ioc": "45.74.15.66:7777",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:09 UTC"
-      },
-      {
-        "ioc": "87.58.199.10:7777",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:31:02 UTC"
-      },
-      {
-        "ioc": "192.159.99.12:8080",
+        "ioc": "199.245.176.48:443",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-10-25 07:27:13 UTC"
+        "first_seen": "2026-10-27 15:02:08 UTC"
+      },
+      {
+        "ioc": "157.254.223.2:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 15:01:35 UTC"
+      },
+      {
+        "ioc": "98.142.247.51:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 15:00:40 UTC"
+      },
+      {
+        "ioc": "157.254.223.201:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 13:45:54 UTC"
+      },
+      {
+        "ioc": "199.245.176.23:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 13:45:26 UTC"
+      },
+      {
+        "ioc": "199.245.176.52:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 13:44:39 UTC"
+      },
+      {
+        "ioc": "157.254.223.224:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 13:43:50 UTC"
+      },
+      {
+        "ioc": "157.254.223.89:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-27 13:43:17 UTC"
+      },
+      {
+        "ioc": "157.254.223.56:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 13:41:46 UTC"
+      },
+      {
+        "ioc": "148.135.195.145:80",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 11:59:17 UTC"
+      },
+      {
+        "ioc": "43.156.63.124:7730",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-27 07:25:29 UTC"
+      },
+      {
+        "ioc": "xwszdkj.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-27 07:25:06 UTC"
       }
     ]
   }

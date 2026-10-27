@@ -676,6 +676,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "elf.rekoobe": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Rekoobe",
+    "description": "A Trojan for Linux intended to infect machines with the SPARC architecture and Intel x86, x86-64 computers. The Trojan\u2019s configuration data is stored in a file encrypted with XOR algorithm.\r\n\r\nSome versions have there configuration stored within the .data section using RC4 to encrypt the details.\r\n\r\nConfiguration options include C2 IP and Port, as well as defence evasion details for changing the process name.",
+    "enriched_at": "2026-10-27T18:51:43.184504+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "elf.shadowv2": {
     "alt_names": [],
     "associated_groups": [],
@@ -705,6 +714,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "elf.sustes": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "sustes miner",
+    "description": "Sustes Malware doesn\u2019t infect victims by itself (it\u2019s not a worm) but it is spread over exploitation and brute-force activities with special focus on IoT and Linux servers. The initial infection stage comes from a custom wget directly on the victim machine followed by a simple /bin/bash mr.sh. The script is a simple bash script which drops and executes additional software.",
+    "enriched_at": "2026-10-27T18:51:41.840370+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "elf.tsunami": {
     "alt_names": [
       "Muhstik",
@@ -714,7 +732,7 @@
     "associated_groups": [],
     "common_name": "Tsunami",
     "description": null,
-    "enriched_at": "2026-07-19T14:38:58.296207+00:00",
+    "enriched_at": "2026-10-27T18:51:37.093902+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2173,6 +2191,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.dragonforce": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "DragonForce",
+    "description": "According to Idan Malihi, this ransomware is based on the LockBit builder from 2022, utilizing similar configurations and attack methods. The ransomware\u2019s icon and wallpaper are embedded in the binary\u2019s overlay, compressed with Zlib, and loaded dynamically during execution.",
+    "enriched_at": "2026-10-27T18:51:38.891687+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.dridex": {
     "alt_names": [],
     "associated_groups": [
@@ -3304,6 +3331,19 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.quiterat": {
+    "alt_names": [
+      "Acres"
+    ],
+    "associated_groups": [
+      "Silent Chollima"
+    ],
+    "common_name": "QuiteRAT",
+    "description": "QuiteRAT is a simple remote access trojan written with the help of Qt libraries.\r\n\r\nAfter sending preliminary system information to its C&C server, it expects a response containing either a supported command code or an actual Windows command (like systeminfo or ipconfig with parameters) to execute.\r\n\r\nIt was deployed in a campaign exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966).",
+    "enriched_at": "2026-10-27T18:51:40.740414+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.qvoidstealer": {
     "alt_names": [
       "Qvoid-Token-Grabber"
@@ -3407,8 +3447,8 @@
     ],
     "associated_groups": [],
     "common_name": "RedLine Stealer",
-    "description": "RedLine Stealer is a malware available on underground forums for sale apparently as a standalone ($100/$150 depending on the version) or also on a subscription basis ($100/month). This malware harvests information from browsers such as saved credentials, autocomplete data, and credit card information. A system inventory is also taken when running on a target machine, to include details such as the username, location data, hardware configuration, and information regarding installed security software. More recent versions of RedLine added the ability to steal cryptocurrency. FTP and IM clients are also apparently targeted by this family, and this malware has the ability to upload and download files, execute commands, and periodically send back information about the infected computer.",
-    "enriched_at": "2026-07-08T17:01:34.702734+00:00",
+    "description": "RedLine Stealer is a .NET information stealer first advertised on Russian-language underground forums in early 2020 and sold under a malware-as-a-service model, either as a lifetime license ($100/$150 depending on the version) or as a subscription ($100/month).\r\nIt harvests saved credentials, autocomplete data, cookies and credit card information from browsers, and also targets cryptocurrency wallets, FTP clients, VPN clients and instant messengers.\r\nOn execution it takes a system inventory that includes the username, location data, hardware configuration and installed security software.\r\nBeyond theft, it can upload and download files, execute commands, and periodically send back information about the infected computer.\r\nFor several years RedLine was among the most widely distributed infostealers, spread through malspam, cracked-software and fake-update lures, and malvertising, with its logs fuelling credential markets.\r\n\r\nOn 2024-10-28, the international law enforcement action \"Operation Magnus\", led by the Dutch National Police with partners from the US, the UK, Belgium, Portugal and Australia, disrupted RedLine together with the related META stealer.\r\nThree servers in the Netherlands were taken down and two domains seized, and investigators stated they had obtained full access to the source code, the license servers and the Telegram bots used for customer support.\r\nThe US DoJ unsealed charges against Maxim Rudometov, a Russian national, as one of RedLine's developers and administrators, and the US government has since offered a reward of up to $10 million for information on him.\r\nTwo suspects were arrested in Belgium, and an alleged conspirator, Hambardzum Minasyan, was later extradited to the US.\r\nSamples observed after the takedown should be checked against cracked or leaked builders before being attributed to the original operation.",
+    "enriched_at": "2026-10-27T18:51:47.451672+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -3544,6 +3584,17 @@
     "common_name": "Rhadamanthys",
     "description": "According to PCrisk, Rhadamanthys is a stealer-type malware, and as its name implies - it is designed to extract data from infected machines.\r\n\r\nAt the time of writing, this malware is spread through malicious websites mirroring those of genuine software such as AnyDesk, Zoom, Notepad++, and others. Rhadamanthys is downloaded alongside the real program, thus diminishing immediate user suspicion. These sites were promoted through Google ads, which superseded the legitimate search results on the Google search engine.",
     "enriched_at": "2026-07-20T15:29:38.421883+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.rhysida": {
+    "alt_names": [],
+    "associated_groups": [
+      "Vanilla Tempest"
+    ],
+    "common_name": "Rhysida",
+    "description": null,
+    "enriched_at": "2026-10-27T18:51:46.110331+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -3841,7 +3892,7 @@
     "associated_groups": [],
     "common_name": "SVCStealer",
     "description": "According to Broadcom, SVCStealer is an information stealer written in C++, targeting devices running an windows operating system. It collects sensitive information from the infected device such as system information, credentials, cryptocurrency wallets, data stored in browsers, screenshots, data from messaging applications such as Telegram or VPN apps. The collected information is compressed into a .zip archive and extracted to botnet C2 servers.",
-    "enriched_at": "2026-07-22T15:20:17.810023+00:00",
+    "enriched_at": "2026-10-27T18:51:44.250548+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -4231,7 +4282,7 @@
     "associated_groups": [],
     "common_name": "XoriumStealer",
     "description": null,
-    "enriched_at": "2026-07-26T14:48:52.150102+00:00",
+    "enriched_at": "2026-10-27T18:51:35.235937+00:00",
     "source": "malpedia",
     "status": "ok"
   },
