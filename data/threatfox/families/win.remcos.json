@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-10-28T19:01:10.415753+00:00",
-  "recent_window_ioc_count": 55,
+  "generated": "2026-10-29T19:08:24.708382+00:00",
+  "recent_window_ioc_count": 54,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,12 +18,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-25",
-      "latest": "2026-10-28"
+      "earliest": "2026-09-28",
+      "latest": "2026-10-29"
     },
     "ioc_type_breakdown": {
-      "ip:port": 406,
-      "domain": 81,
+      "ip:port": 399,
+      "domain": 88,
       "sha256_hash": 13
     },
     "confidence_distribution": {
@@ -32,10 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-25": 1,
-      "2026-09-26": 6,
-      "2026-09-27": 4,
-      "2026-09-28": 18,
+      "2026-09-28": 16,
       "2026-09-29": 11,
       "2026-09-30": 20,
       "2026-10-01": 11,
@@ -64,20 +61,17 @@
       "2026-10-24": 1,
       "2026-10-26": 18,
       "2026-10-27": 5,
-      "2026-10-28": 11
+      "2026-10-28": 11,
+      "2026-10-29": 13
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 82
+        "count": 83
       },
       {
         "port": "3000",
         "count": 12
-      },
-      {
-        "port": "2015",
-        "count": 11
       },
       {
         "port": "14641",
@@ -92,7 +86,7 @@
         "count": 10
       },
       {
-        "port": "14644",
+        "port": "2015",
         "count": 9
       },
       {
@@ -106,9 +100,91 @@
       {
         "port": "14642",
         "count": 8
+      },
+      {
+        "port": "14649",
+        "count": 8
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "155.103.71.231:4089",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-29 14:50:33 UTC"
+      },
+      {
+        "ioc": "www.ambiopharmconsultingltdbackup1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-29 13:55:20 UTC"
+      },
+      {
+        "ioc": "217.60.102.45:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-29 13:50:06 UTC"
+      },
+      {
+        "ioc": "102.220.160.203:1989",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-29 09:25:20 UTC"
+      },
+      {
+        "ioc": "196.251.121.247:9090",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-29 09:20:22 UTC"
+      },
+      {
+        "ioc": "31.56.19.237:9090",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-29 09:20:22 UTC"
+      },
+      {
+        "ioc": "worktoday.3utilities.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-29 09:20:21 UTC"
+      },
+      {
+        "ioc": "www.osamaphplogisticesbackup2.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-29 08:10:22 UTC"
+      },
+      {
+        "ioc": "www.osamaphplogisticesbackup1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-29 08:10:21 UTC"
+      },
+      {
+        "ioc": "www.osamaphplogisticesbackup.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-29 08:10:21 UTC"
+      },
+      {
+        "ioc": "www.osamaphplogistices.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-29 08:10:21 UTC"
+      },
+      {
+        "ioc": "45.87.61.137:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-29 08:05:06 UTC"
+      },
+      {
+        "ioc": "magicalplanet.4nmn.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-10-29 06:11:41 UTC"
+      },
       {
         "ioc": "www.godschild20onyimaxduckdnsbackup2.com",
         "type": "domain",
@@ -120,84 +196,6 @@
         "type": "domain",
         "confidence": 75,
         "first_seen": "2026-10-28 13:15:23 UTC"
-      },
-      {
-        "ioc": "www.godschild20onyimaxduckdnsbackup.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-28 13:15:23 UTC"
-      },
-      {
-        "ioc": "godschild20onyimax.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-28 13:15:23 UTC"
-      },
-      {
-        "ioc": "38.255.32.231:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-28 13:10:08 UTC"
-      },
-      {
-        "ioc": "102.220.160.176:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-28 11:00:30 UTC"
-      },
-      {
-        "ioc": "www.phongketaonduchuyclassproject3.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-28 10:55:18 UTC"
-      },
-      {
-        "ioc": "www.phongketaonduchuyclassproject2.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-28 10:55:18 UTC"
-      },
-      {
-        "ioc": "www.phongketaonduchuyclassproject1.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-28 10:55:18 UTC"
-      },
-      {
-        "ioc": "217.60.195.64:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-28 10:50:24 UTC"
-      },
-      {
-        "ioc": "85.17.118.204:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-28 10:40:20 UTC"
-      },
-      {
-        "ioc": "217.60.195.43:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-27 14:45:07 UTC"
-      },
-      {
-        "ioc": "95.211.45.43:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-27 08:25:25 UTC"
-      },
-      {
-        "ioc": "gotomuhammed.hopto.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-27 06:45:30 UTC"
-      },
-      {
-        "ioc": "192.169.69.25:36511",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-27 05:42:09 UTC"
       }
     ]
   }
