@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-10-29T19:08:26.355180+00:00",
-  "recent_window_ioc_count": 52,
+  "generated": "2026-10-30T18:46:38.708880+00:00",
+  "recent_window_ioc_count": 49,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -13,12 +13,12 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-06-08",
-      "latest": "2026-10-29"
+      "latest": "2026-10-30"
     },
     "ioc_type_breakdown": {
-      "ip:port": 248,
-      "domain": 101,
-      "sha256_hash": 59,
+      "ip:port": 242,
+      "domain": 102,
+      "sha256_hash": 64,
       "md5_hash": 43,
       "sha1_hash": 43,
       "url": 6
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-08": 8,
+      "2026-06-08": 1,
       "2026-06-09": 1,
       "2026-06-11": 3,
       "2026-06-12": 1,
@@ -129,7 +129,8 @@
       "2026-10-26": 5,
       "2026-10-27": 15,
       "2026-10-28": 9,
-      "2026-10-29": 13
+      "2026-10-29": 13,
+      "2026-10-30": 7
     },
     "top_ports": [
       {
@@ -138,11 +139,11 @@
       },
       {
         "port": "443",
-        "count": 26
+        "count": 24
       },
       {
         "port": "7007",
-        "count": 21
+        "count": 20
       },
       {
         "port": "6000",
@@ -174,6 +175,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "c24315cfb010c888ebc5cd9cbdf1a2c45b94fb19a0cbc1183a22576c63e21f78",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-30 12:56:19 UTC"
+      },
+      {
+        "ioc": "c68cc737b28013c4f173ec0c92cf338b95d9355e512f7a6af25859ee6f062bff",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-30 12:56:17 UTC"
+      },
+      {
+        "ioc": "d56acf53cf6d4c419dedeef42bb3058afecfc467c60388d8f49505ac17582d31",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-30 12:56:14 UTC"
+      },
+      {
+        "ioc": "56bb65dd4756314a643b270a77fe67f6b44219d7258ef5900fbc01618da3f76a",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-30 12:38:42 UTC"
+      },
+      {
+        "ioc": "1aa3a04af2f1eafa200a9251ce7d22e960b4827e96973d118df702876eb3e893",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-10-30 12:38:42 UTC"
+      },
+      {
+        "ioc": "gozmmmaa.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-30 07:40:20 UTC"
+      },
+      {
+        "ioc": "217.60.195.94:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-30 07:35:18 UTC"
+      },
       {
         "ioc": "371e9978fe623a9ce1ce796a9c530db7",
         "type": "md5_hash",
@@ -221,48 +264,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-10-29 11:55:25 UTC"
-      },
-      {
-        "ioc": "6c9b3dd142a09dc468e23ad39aad6f75a0f2b85125104469f026e52a474e464f",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-10-29 09:24:26 UTC"
-      },
-      {
-        "ioc": "c96f81d0ddbc29f0315c4b0809d97e280051a016b6a6852e5bd88e1a6ec235bc",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-10-29 07:59:47 UTC"
-      },
-      {
-        "ioc": "195.186.4.216:4689",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-29 07:24:05 UTC"
-      },
-      {
-        "ioc": "194.116.236.51:7172",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-29 07:20:18 UTC"
-      },
-      {
-        "ioc": "f0f686989d043a10a7f5ee442fc97877ac52b9baf16b4cdca1191dd9631efc4c",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-10-29 06:12:12 UTC"
-      },
-      {
-        "ioc": "188d8051d942fc5bcda4ffb68d51a2a6",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-28 23:36:19 UTC"
-      },
-      {
-        "ioc": "73c6943711af053b9b834c0b26e186e68ae23e32",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-28 23:36:19 UTC"
       }
     ]
   }

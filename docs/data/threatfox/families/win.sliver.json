@@ -1,8 +1,8 @@
 {
   "malware_id": "win.sliver",
   "family": "Sliver",
-  "generated": "2026-10-29T19:08:12.761558+00:00",
-  "recent_window_ioc_count": 159,
+  "generated": "2026-10-30T18:46:28.526793+00:00",
+  "recent_window_ioc_count": 169,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.sliver",
   "description": "According to VK9 Seecurity, Sliver is a Command and Control (C2) system made for penetration testers, red teams, and advanced persistent threats. It generates implants (slivers) that can run on virtually every architecture out there, and securely manage these connections through a central server. Sliver supports multiple callback protocols including DNS, TCP, and HTTP(S) to make egress simple, even when those pesky blue teams block your domains. You can even have multiple operators (players) simultaneously commanding your sliver army.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-02",
-      "latest": "2026-10-29"
+      "earliest": "2026-09-05",
+      "latest": "2026-10-30"
     },
     "ioc_type_breakdown": {
       "ip:port": 482,
@@ -20,13 +20,12 @@
       "sha1_hash": 5
     },
     "confidence_distribution": {
-      "high": 130,
-      "medium": 370,
+      "high": 132,
+      "medium": 368,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-02": 4,
-      "2026-09-05": 5,
+      "2026-09-05": 3,
       "2026-09-06": 11,
       "2026-09-09": 3,
       "2026-09-11": 2,
@@ -60,12 +59,13 @@
       "2026-10-26": 9,
       "2026-10-27": 9,
       "2026-10-28": 4,
-      "2026-10-29": 21
+      "2026-10-29": 21,
+      "2026-10-30": 6
     },
     "top_ports": [
       {
         "port": "31337",
-        "count": 368
+        "count": 370
       },
       {
         "port": "443",
@@ -100,11 +100,47 @@
         "count": 3
       },
       {
-        "port": "8778",
+        "port": "31366",
         "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "51.83.192.18:31337",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-30 11:50:11 UTC"
+      },
+      {
+        "ioc": "45.32.39.157:31337",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-30 11:50:10 UTC"
+      },
+      {
+        "ioc": "47.102.40.187:31337",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-30 11:50:10 UTC"
+      },
+      {
+        "ioc": "108.61.247.185:31337",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-30 11:50:09 UTC"
+      },
+      {
+        "ioc": "185.220.213.46:31337",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-30 11:50:09 UTC"
+      },
+      {
+        "ioc": "193.17.57.44:31366",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-30 05:08:10 UTC"
+      },
       {
         "ioc": "165.227.210.117:31337",
         "type": "ip:port",
@@ -158,42 +194,6 @@
         "type": "ip:port",
         "confidence": 50,
         "first_seen": "2026-10-29 05:19:27 UTC"
-      },
-      {
-        "ioc": "162.251.93.121:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:19:26 UTC"
-      },
-      {
-        "ioc": "23.155.44.237:39182",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:19:11 UTC"
-      },
-      {
-        "ioc": "23.155.44.237:443",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:18:54 UTC"
-      },
-      {
-        "ioc": "144.208.127.217:13579",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:18:44 UTC"
-      },
-      {
-        "ioc": "43.131.248.19:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:14:45 UTC"
-      },
-      {
-        "ioc": "109.177.219.127:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:14:45 UTC"
       }
     ]
   }
