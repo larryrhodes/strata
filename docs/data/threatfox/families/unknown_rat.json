@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-10-30T18:46:35.187147+00:00",
-  "recent_window_ioc_count": 63,
+  "generated": "2026-10-31T17:52:42.828434+00:00",
+  "recent_window_ioc_count": 56,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -11,22 +11,22 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-08-08",
-      "latest": "2026-10-30"
+      "latest": "2026-10-31"
     },
     "ioc_type_breakdown": {
-      "domain": 169,
+      "domain": 167,
       "url": 156,
-      "ip:port": 135,
+      "ip:port": 137,
       "sha256_hash": 36,
       "md5_hash": 4
     },
     "confidence_distribution": {
-      "high": 453,
-      "medium": 47,
+      "high": 452,
+      "medium": 48,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-08": 6,
+      "2026-08-08": 3,
       "2026-08-09": 2,
       "2026-08-10": 15,
       "2026-08-11": 6,
@@ -89,7 +89,8 @@
       "2026-10-27": 15,
       "2026-10-28": 4,
       "2026-10-29": 8,
-      "2026-10-30": 6
+      "2026-10-30": 8,
+      "2026-10-31": 1
     },
     "top_ports": [
       {
@@ -98,7 +99,7 @@
       },
       {
         "port": "8041",
-        "count": 23
+        "count": 22
       },
       {
         "port": "80",
@@ -109,6 +110,10 @@
         "count": 7
       },
       {
+        "port": "4444",
+        "count": 4
+      },
+      {
         "port": "8443",
         "count": 4
       },
@@ -117,8 +122,8 @@
         "count": 4
       },
       {
-        "port": "4444",
-        "count": 3
+        "port": "8151",
+        "count": 2
       },
       {
         "port": "3001",
@@ -127,13 +132,27 @@
       {
         "port": "8434",
         "count": 2
-      },
-      {
-        "port": "7634",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "94.26.0.28:4444",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:31:47 UTC"
+      },
+      {
+        "ioc": "193.148.56.41:52002",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-30 20:51:42 UTC"
+      },
+      {
+        "ioc": "118.107.44.67:8151",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-10-30 19:03:26 UTC"
+      },
       {
         "ioc": "crackedkrypton.xyz",
         "type": "domain",
@@ -205,24 +224,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-10-29 06:30:16 UTC"
-      },
-      {
-        "ioc": "85.239.149.39:4444",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:19:14 UTC"
-      },
-      {
-        "ioc": "172.94.122.130:7777",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-29 05:19:09 UTC"
-      },
-      {
-        "ioc": "74.207.198.39:8041",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-28 12:32:08 UTC"
       }
     ]
   }

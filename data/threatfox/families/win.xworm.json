@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-10-30T18:46:38.708880+00:00",
-  "recent_window_ioc_count": 49,
+  "generated": "2026-10-31T17:52:44.181470+00:00",
+  "recent_window_ioc_count": 54,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,12 +12,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-08",
+      "earliest": "2026-06-12",
       "latest": "2026-10-30"
     },
     "ioc_type_breakdown": {
-      "ip:port": 242,
-      "domain": 102,
+      "ip:port": 241,
+      "domain": 103,
       "sha256_hash": 64,
       "md5_hash": 43,
       "sha1_hash": 43,
@@ -29,9 +29,6 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-08": 1,
-      "2026-06-09": 1,
-      "2026-06-11": 3,
       "2026-06-12": 1,
       "2026-06-15": 3,
       "2026-06-17": 2,
@@ -130,12 +127,12 @@
       "2026-10-27": 15,
       "2026-10-28": 9,
       "2026-10-29": 13,
-      "2026-10-30": 7
+      "2026-10-30": 12
     },
     "top_ports": [
       {
         "port": "7004",
-        "count": 37
+        "count": 35
       },
       {
         "port": "443",
@@ -147,7 +144,7 @@
       },
       {
         "port": "6000",
-        "count": 11
+        "count": 10
       },
       {
         "port": "7000",
@@ -175,6 +172,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "207.189.8.169:4995",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-30 20:02:46 UTC"
+      },
+      {
+        "ioc": "207.189.27.192:3557",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-30 19:58:43 UTC"
+      },
+      {
+        "ioc": "203.202.232.86:2323",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-10-30 19:25:21 UTC"
+      },
+      {
+        "ioc": "chrissz.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-30 19:25:20 UTC"
+      },
+      {
+        "ioc": "anambra.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-10-30 19:25:19 UTC"
+      },
       {
         "ioc": "c24315cfb010c888ebc5cd9cbdf1a2c45b94fb19a0cbc1183a22576c63e21f78",
         "type": "sha256_hash",
@@ -234,36 +261,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-10-29 18:55:43 UTC"
-      },
-      {
-        "ioc": "6bc569b54b3c98896dd483a054405798",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-29 18:55:28 UTC"
-      },
-      {
-        "ioc": "3b3453a96d205c1357496cbd12f9e8ad82882403",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-29 18:55:28 UTC"
-      },
-      {
-        "ioc": "b14971260697defd274d3f91f4f9b1ad0f1c08dd7760fa712d3e05b26774e826",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-10-29 18:55:28 UTC"
-      },
-      {
-        "ioc": "surfixasa.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-29 12:10:20 UTC"
-      },
-      {
-        "ioc": "109.120.139.126:3008",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-29 11:55:25 UTC"
       }
     ]
   }

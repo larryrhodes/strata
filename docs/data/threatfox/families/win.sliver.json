@@ -1,8 +1,8 @@
 {
   "malware_id": "win.sliver",
   "family": "Sliver",
-  "generated": "2026-10-30T18:46:28.526793+00:00",
-  "recent_window_ioc_count": 169,
+  "generated": "2026-10-31T17:52:34.079322+00:00",
+  "recent_window_ioc_count": 186,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.sliver",
   "description": "According to VK9 Seecurity, Sliver is a Command and Control (C2) system made for penetration testers, red teams, and advanced persistent threats. It generates implants (slivers) that can run on virtually every architecture out there, and securely manage these connections through a central server. Sliver supports multiple callback protocols including DNS, TCP, and HTTP(S) to make egress simple, even when those pesky blue teams block your domains. You can even have multiple operators (players) simultaneously commanding your sliver army.",
   "alt_names": [],
@@ -10,27 +10,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-05",
-      "latest": "2026-10-30"
+      "earliest": "2026-09-14",
+      "latest": "2026-10-31"
     },
     "ioc_type_breakdown": {
-      "ip:port": 482,
-      "sha256_hash": 8,
+      "ip:port": 484,
+      "sha256_hash": 6,
       "md5_hash": 5,
       "sha1_hash": 5
     },
     "confidence_distribution": {
-      "high": 132,
-      "medium": 368,
+      "high": 117,
+      "medium": 383,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-05": 3,
-      "2026-09-06": 11,
-      "2026-09-09": 3,
-      "2026-09-11": 2,
-      "2026-09-12": 2,
-      "2026-09-14": 49,
+      "2026-09-14": 43,
       "2026-09-27": 60,
       "2026-09-28": 1,
       "2026-09-29": 7,
@@ -60,12 +55,13 @@
       "2026-10-27": 9,
       "2026-10-28": 4,
       "2026-10-29": 21,
-      "2026-10-30": 6
+      "2026-10-30": 13,
+      "2026-10-31": 20
     },
     "top_ports": [
       {
         "port": "31337",
-        "count": 370
+        "count": 375
       },
       {
         "port": "443",
@@ -84,15 +80,11 @@
         "count": 4
       },
       {
-        "port": "4443",
-        "count": 4
-      },
-      {
-        "port": "40056",
-        "count": 4
-      },
-      {
         "port": "31338",
+        "count": 3
+      },
+      {
+        "port": "4443",
         "count": 3
       },
       {
@@ -102,98 +94,102 @@
       {
         "port": "31366",
         "count": 2
+      },
+      {
+        "port": "8778",
+        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "51.83.192.18:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-30 11:50:11 UTC"
-      },
-      {
-        "ioc": "45.32.39.157:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-30 11:50:10 UTC"
-      },
-      {
-        "ioc": "47.102.40.187:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-30 11:50:10 UTC"
-      },
-      {
-        "ioc": "108.61.247.185:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-30 11:50:09 UTC"
-      },
-      {
-        "ioc": "185.220.213.46:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-30 11:50:09 UTC"
-      },
-      {
-        "ioc": "193.17.57.44:31366",
+        "ioc": "192.236.217.54:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-30 05:08:10 UTC"
+        "first_seen": "2026-10-31 07:33:20 UTC"
       },
       {
-        "ioc": "165.227.210.117:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-29 11:40:14 UTC"
-      },
-      {
-        "ioc": "45.77.115.234:31337",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-29 11:40:13 UTC"
-      },
-      {
-        "ioc": "94.26.3.106:31337",
+        "ioc": "37.72.140.16:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:20:14 UTC"
+        "first_seen": "2026-10-31 07:32:57 UTC"
       },
       {
-        "ioc": "185.216.68.86:31337",
+        "ioc": "193.124.46.95:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:19:41 UTC"
+        "first_seen": "2026-10-31 07:32:41 UTC"
       },
       {
-        "ioc": "85.121.179.76:31337",
+        "ioc": "38.147.172.65:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:19:32 UTC"
+        "first_seen": "2026-10-31 07:32:40 UTC"
       },
       {
-        "ioc": "176.20.244.160:42069",
+        "ioc": "103.116.246.154:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:19:30 UTC"
+        "first_seen": "2026-10-31 07:32:39 UTC"
       },
       {
-        "ioc": "89.127.233.126:31337",
+        "ioc": "45.61.187.26:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:19:29 UTC"
+        "first_seen": "2026-10-31 07:32:37 UTC"
       },
       {
-        "ioc": "23.94.232.185:31337",
+        "ioc": "94.183.156.29:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:19:29 UTC"
+        "first_seen": "2026-10-31 07:32:36 UTC"
       },
       {
-        "ioc": "161.97.87.221:31337",
+        "ioc": "144.31.223.247:31337",
         "type": "ip:port",
         "confidence": 50,
-        "first_seen": "2026-10-29 05:19:27 UTC"
+        "first_seen": "2026-10-31 07:32:36 UTC"
+      },
+      {
+        "ioc": "38.207.177.71:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:36 UTC"
+      },
+      {
+        "ioc": "94.136.186.182:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:35 UTC"
+      },
+      {
+        "ioc": "186.240.200.67:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:31 UTC"
+      },
+      {
+        "ioc": "172.81.61.139:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:30 UTC"
+      },
+      {
+        "ioc": "82.26.157.26:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:24 UTC"
+      },
+      {
+        "ioc": "179.43.150.26:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:20 UTC"
+      },
+      {
+        "ioc": "154.222.16.250:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-10-31 07:32:18 UTC"
       }
     ]
   }
