@@ -1,8 +1,8 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-11-01T18:29:37.449532+00:00",
-  "recent_window_ioc_count": 93,
+  "generated": "2026-11-02T22:26:36.074961+00:00",
+  "recent_window_ioc_count": 99,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-24",
-      "latest": "2026-11-01"
+      "earliest": "2026-06-25",
+      "latest": "2026-11-02"
     },
     "ioc_type_breakdown": {
-      "url": 139,
+      "url": 142,
       "sha256_hash": 92,
-      "ip:port": 92,
+      "ip:port": 89,
       "md5_hash": 84,
       "sha1_hash": 84,
       "domain": 9
@@ -27,8 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-24": 2,
-      "2026-06-25": 15,
+      "2026-06-25": 11,
       "2026-06-27": 2,
       "2026-06-29": 4,
       "2026-06-30": 3,
@@ -107,12 +106,13 @@
       "2026-10-27": 9,
       "2026-10-28": 58,
       "2026-10-29": 5,
-      "2026-11-01": 21
+      "2026-11-01": 21,
+      "2026-11-02": 6
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 89
+        "count": 86
       },
       {
         "port": "443",
@@ -124,6 +124,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "http://5.149.250.44",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-02 12:13:14 UTC"
+      },
+      {
+        "ioc": "http://162.35.243.151",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-02 12:13:13 UTC"
+      },
+      {
+        "ioc": "http://217.60.151.14/",
+        "type": "url",
+        "confidence": 80,
+        "first_seen": "2026-11-02 12:13:12 UTC"
+      },
+      {
+        "ioc": "http://13.143.132.84/",
+        "type": "url",
+        "confidence": 80,
+        "first_seen": "2026-11-02 12:13:12 UTC"
+      },
+      {
+        "ioc": "http://138.226.237.113",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-02 12:13:11 UTC"
+      },
+      {
+        "ioc": "http://45.139.84.154/",
+        "type": "url",
+        "confidence": 80,
+        "first_seen": "2026-11-02 12:13:11 UTC"
+      },
       {
         "ioc": "277a1d0a5a66b61d096d44a591f1aaf1",
         "type": "md5_hash",
@@ -177,42 +213,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-11-01 16:32:37 UTC"
-      },
-      {
-        "ioc": "e06f68cd2ddc7545c72b824eb09652e6",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-01 16:32:25 UTC"
-      },
-      {
-        "ioc": "d7f3c1468fa22a14f6b748725eacc137e0077125",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-01 16:32:25 UTC"
-      },
-      {
-        "ioc": "dd270d00f3c4abb201f6f36e5440badf4b0dfa1eda4ead4d7e4907c370607fbf",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-01 16:32:25 UTC"
-      },
-      {
-        "ioc": "97f483ee569db1ad1d73d49d40c44675",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-01 16:32:25 UTC"
-      },
-      {
-        "ioc": "9c7d09e188a3fc9bd87ea735d268e09c986e3613",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-01 16:32:24 UTC"
-      },
-      {
-        "ioc": "3bb5bf520eb23961d31d5af97d67bea6fff6e111c96eac490044c5b9720a04af",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-01 16:32:24 UTC"
       }
     ]
   }

@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-11-01T18:29:46.510322+00:00",
-  "recent_window_ioc_count": 58,
+  "generated": "2026-11-02T22:26:51.366287+00:00",
+  "recent_window_ioc_count": 52,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,13 +18,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-28",
-      "latest": "2026-11-01"
+      "earliest": "2026-09-29",
+      "latest": "2026-11-02"
     },
     "ioc_type_breakdown": {
-      "ip:port": 394,
-      "domain": 91,
-      "sha256_hash": 15
+      "ip:port": 387,
+      "domain": 97,
+      "sha256_hash": 16
     },
     "confidence_distribution": {
       "high": 441,
@@ -32,8 +32,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-28": 6,
-      "2026-09-29": 10,
+      "2026-09-29": 4,
       "2026-09-30": 20,
       "2026-10-01": 11,
       "2026-10-02": 9,
@@ -65,12 +64,13 @@
       "2026-10-29": 13,
       "2026-10-30": 8,
       "2026-10-31": 2,
-      "2026-11-01": 1
+      "2026-11-01": 1,
+      "2026-11-02": 12
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 85
+        "count": 87
       },
       {
         "port": "3000",
@@ -78,10 +78,6 @@
       },
       {
         "port": "14641",
-        "count": 11
-      },
-      {
-        "port": "14645",
         "count": 10
       },
       {
@@ -89,7 +85,7 @@
         "count": 9
       },
       {
-        "port": "2424",
+        "port": "14645",
         "count": 9
       },
       {
@@ -97,19 +93,95 @@
         "count": 8
       },
       {
-        "port": "14642",
+        "port": "2424",
         "count": 8
       },
       {
-        "port": "14649",
+        "port": "14647",
         "count": 8
       },
       {
-        "port": "14646",
+        "port": "65070",
+        "count": 8
+      },
+      {
+        "port": "5987",
         "count": 8
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "107.173.62.163:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:45:16 UTC"
+      },
+      {
+        "ioc": "185.161.208.209:7070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:45:16 UTC"
+      },
+      {
+        "ioc": "abigo54343.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:45:14 UTC"
+      },
+      {
+        "ioc": "offset22.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:40:16 UTC"
+      },
+      {
+        "ioc": "offset2.net",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:40:15 UTC"
+      },
+      {
+        "ioc": "www.kingmethodclassprojectnowbackup1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:40:15 UTC"
+      },
+      {
+        "ioc": "www.kingmethodclassprojectnowbackup.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:40:14 UTC"
+      },
+      {
+        "ioc": "www.kingmethodclassprojectnow.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-02 13:40:14 UTC"
+      },
+      {
+        "ioc": "c8ef25d664803cd43b5a877f059b699021215c1226383fb39279f37119434079",
+        "type": "sha256_hash",
+        "confidence": 85,
+        "first_seen": "2026-11-02 09:56:33 UTC"
+      },
+      {
+        "ioc": "5.175.253.126:2404",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-02 08:50:06 UTC"
+      },
+      {
+        "ioc": "217.60.102.209:2020",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-02 08:45:09 UTC"
+      },
+      {
+        "ioc": "209.54.102.139:6040",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-02 07:08:52 UTC"
+      },
       {
         "ioc": "110a0fd7397dedae549da68af48c22e7df730d008723421ba96682ab9a24c407",
         "type": "sha256_hash",
@@ -127,78 +199,6 @@
         "type": "ip:port",
         "confidence": 50,
         "first_seen": "2026-10-31 07:30:45 UTC"
-      },
-      {
-        "ioc": "9f7e58894c613f2f5f837d4d95bd59ea8908714570a039e83be4996d2056571c",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-10-30 12:56:09 UTC"
-      },
-      {
-        "ioc": "www.armyskuriclassproject1.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-30 05:30:13 UTC"
-      },
-      {
-        "ioc": "www.armyskuriclassproject.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-30 05:30:13 UTC"
-      },
-      {
-        "ioc": "armyskuri101.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-30 05:30:13 UTC"
-      },
-      {
-        "ioc": "armyskuri.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-30 05:30:12 UTC"
-      },
-      {
-        "ioc": "104.168.7.227:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-30 05:25:05 UTC"
-      },
-      {
-        "ioc": "91.92.41.166:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-30 02:50:19 UTC"
-      },
-      {
-        "ioc": "91.92.41.197:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-30 00:50:24 UTC"
-      },
-      {
-        "ioc": "155.103.71.231:4089",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-29 14:50:33 UTC"
-      },
-      {
-        "ioc": "www.ambiopharmconsultingltdbackup1.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-10-29 13:55:20 UTC"
-      },
-      {
-        "ioc": "217.60.102.45:2404",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-29 13:50:06 UTC"
-      },
-      {
-        "ioc": "102.220.160.203:1989",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-10-29 09:25:20 UTC"
       }
     ]
   }
