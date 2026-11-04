@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-03T20:14:16.117455+00:00",
-  "recent_window_ioc_count": 352,
+  "generated": "2026-11-04T20:30:13.905884+00:00",
+  "recent_window_ioc_count": 312,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,12 +10,12 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-24",
-      "latest": "2026-11-03"
+      "earliest": "2026-10-25",
+      "latest": "2026-11-04"
     },
     "ioc_type_breakdown": {
-      "domain": 497,
-      "url": 3
+      "domain": 496,
+      "url": 4
     },
     "confidence_distribution": {
       "high": 500,
@@ -23,8 +23,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-24": 2,
-      "2026-10-25": 62,
+      "2026-10-25": 51,
       "2026-10-26": 41,
       "2026-10-27": 53,
       "2026-10-28": 45,
@@ -33,10 +32,89 @@
       "2026-10-31": 31,
       "2026-11-01": 58,
       "2026-11-02": 25,
-      "2026-11-03": 115
+      "2026-11-03": 115,
+      "2026-11-04": 13
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "minchones.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 17:31:09 UTC"
+      },
+      {
+        "ioc": "rabiajamil.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 16:56:27 UTC"
+      },
+      {
+        "ioc": "kingdomcaster.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 10:56:25 UTC"
+      },
+      {
+        "ioc": "kidsmoralstory.in",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 10:51:37 UTC"
+      },
+      {
+        "ioc": "synnfjellporten.no.datasenter.no",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 10:31:01 UTC"
+      },
+      {
+        "ioc": "www.kevinalton.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 07:37:52 UTC"
+      },
+      {
+        "ioc": "www.arta-brasov.ro",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 07:28:22 UTC"
+      },
+      {
+        "ioc": "cr1ymiykt1zwu345wf.pages.dev",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 07:25:38 UTC"
+      },
+      {
+        "ioc": "https://cr1ymiykt1zwu345wf.pages.dev/win/index.php?vq=WJp2R4rq8ulFJ6pLHdRutVREVDZ1aVVwa1AwM2ptd053aGpIZjZ4Y3ZVdjEveW9DcDBCejRKaW4wcEU5a1VVdlUwQTFVVmdxYlBjN21TSFBqZXpPVU8zbWtLcmdCMlVKdG9nOEJmWVp4TzI4T1F6empmdTI3dStTbHUxMmFQZHBLd2E5U2dLVkwzTGpFWTI2L1l4am9TQ0pqVnpFcm5qWURzUEZubDVMNzBMb05aQ1NZbHBNTnJYNlRjblgyTU9ValgrUkxvOHo4Q1JPQXczRg==",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-04 07:25:38 UTC"
+      },
+      {
+        "ioc": "lamborshop.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 04:12:32 UTC"
+      },
+      {
+        "ioc": "12dim-xanth.xan.sch.gr",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 03:08:01 UTC"
+      },
+      {
+        "ioc": "expovirtual2020.upsa.edu.bo",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 02:02:54 UTC"
+      },
+      {
+        "ioc": "www.mwanainchi.co.ke",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-04 01:05:18 UTC"
+      },
       {
         "ioc": "wayho.com",
         "type": "domain",
@@ -48,84 +126,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-03 15:16:05 UTC"
-      },
-      {
-        "ioc": "www.cabsalotti.it",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-03 11:14:56 UTC"
-      },
-      {
-        "ioc": "www.cinzek.hr",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-03 10:59:49 UTC"
-      },
-      {
-        "ioc": "trinacria.hr",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-03 09:18:38 UTC"
-      },
-      {
-        "ioc": "susanne-scholz.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-03 08:57:25 UTC"
-      },
-      {
-        "ioc": "caveat.com.br",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-03 08:33:48 UTC"
-      },
-      {
-        "ioc": "xn----ytblfbf1f.xn--p1ai",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:38 UTC"
-      },
-      {
-        "ioc": "xn----stbeipc1a.xn--p1ai",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:38 UTC"
-      },
-      {
-        "ioc": "www.sina-abruzzo.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:38 UTC"
-      },
-      {
-        "ioc": "www.shenconstruction.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:38 UTC"
-      },
-      {
-        "ioc": "wildroots.co.za",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:38 UTC"
-      },
-      {
-        "ioc": "web.masservices.sk",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:37 UTC"
-      },
-      {
-        "ioc": "torode.co.za",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:37 UTC"
-      },
-      {
-        "ioc": "tintodiario.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-03 08:28:37 UTC"
       }
     ]
   }

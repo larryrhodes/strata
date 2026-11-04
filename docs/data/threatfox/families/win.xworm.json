@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-11-03T20:14:35.061993+00:00",
-  "recent_window_ioc_count": 51,
+  "generated": "2026-11-04T20:30:28.918843+00:00",
+  "recent_window_ioc_count": 60,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,15 +12,15 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-23",
-      "latest": "2026-11-03"
+      "earliest": "2026-07-04",
+      "latest": "2026-11-04"
     },
     "ioc_type_breakdown": {
-      "ip:port": 242,
+      "ip:port": 238,
       "domain": 100,
-      "sha256_hash": 64,
-      "md5_hash": 44,
-      "sha1_hash": 44,
+      "sha256_hash": 65,
+      "md5_hash": 46,
+      "sha1_hash": 45,
       "url": 6
     },
     "confidence_distribution": {
@@ -29,12 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-23": 4,
-      "2026-06-25": 1,
-      "2026-06-26": 1,
-      "2026-07-01": 1,
-      "2026-07-02": 6,
-      "2026-07-04": 3,
+      "2026-07-04": 1,
       "2026-07-05": 3,
       "2026-07-06": 3,
       "2026-07-07": 11,
@@ -123,19 +118,20 @@
       "2026-10-29": 12,
       "2026-10-30": 12,
       "2026-11-02": 8,
-      "2026-11-03": 10
+      "2026-11-03": 10,
+      "2026-11-04": 15
     },
     "top_ports": [
       {
         "port": "7004",
-        "count": 32
-      },
-      {
-        "port": "443",
-        "count": 24
+        "count": 28
       },
       {
         "port": "7007",
+        "count": 25
+      },
+      {
+        "port": "443",
         "count": 23
       },
       {
@@ -156,7 +152,7 @@
       },
       {
         "port": "4445",
-        "count": 5
+        "count": 4
       },
       {
         "port": "5050",
@@ -169,94 +165,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "45.83.31.203:1177",
+        "ioc": "36.255.97.22:7007",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-03 17:42:09 UTC"
+        "confidence": 75,
+        "first_seen": "2026-11-04 18:45:19 UTC"
       },
       {
-        "ioc": "9608bc60e04fe860afb28afb83fbf78f",
+        "ioc": "28474a8e74704e05c1220aeff44cee9b",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-03 16:42:02 UTC"
+        "first_seen": "2026-11-04 14:34:07 UTC"
       },
       {
-        "ioc": "7801c76ded3db7e6478ce5d8a235fe0d6765f180",
+        "ioc": "ad551487384eb1aeabc4371a432a1e5a4944130f",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-03 16:42:02 UTC"
+        "first_seen": "2026-11-04 14:34:07 UTC"
       },
       {
-        "ioc": "9a0313fcdec5fe09a17f161eadab7052d385b8a398a5f64294000c322fd6e7c8",
+        "ioc": "0446aa974dff931e43c2284a74099cd256f3bbd8b7098be489267a6b9d65b4f7",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-03 16:42:02 UTC"
+        "first_seen": "2026-11-04 14:34:07 UTC"
       },
       {
-        "ioc": "df76b17a501829d4756a5ffcdda14ff7",
+        "ioc": "779b81a9bae4b2c8026ed14e591ed722",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-03 16:42:01 UTC"
+        "first_seen": "2026-11-04 14:34:05 UTC"
       },
       {
-        "ioc": "92ecc7e88e1f02dc27ffb2655890b8fc01d703d3",
+        "ioc": "d077c4d32fdfe812a8ca1a7de181b0206a1628c1",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-03 16:42:01 UTC"
+        "first_seen": "2026-11-04 14:34:04 UTC"
       },
       {
-        "ioc": "5bf4a2106babb3131b596686b886bcc0d3abc3067f8b7d48a1e47a31148f167f",
+        "ioc": "3d2aab719bcda98fef5a741571552117ca2b7d705ccb090c0afde2353b462ce3",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-03 16:42:00 UTC"
+        "first_seen": "2026-11-04 14:34:04 UTC"
       },
       {
-        "ioc": "51.222.88.203:65000",
+        "ioc": "bc72e29f0a5622b98fb69251f96157b9",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:02 UTC"
+      },
+      {
+        "ioc": "f7ff14cedaa02df5c2628f21a6c4fe4c7a95fb45",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:02 UTC"
+      },
+      {
+        "ioc": "28329653cb009dceeade90b92866ddd53e31d2e76d6109b5381fcdf379d22509",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:01 UTC"
+      },
+      {
+        "ioc": "217.60.103.38:7007",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-03 16:30:15 UTC"
+        "first_seen": "2026-11-04 11:00:39 UTC"
       },
       {
-        "ioc": "195.186.4.216:7007",
+        "ioc": "36.255.97.226:4445",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-03 07:12:46 UTC"
+        "first_seen": "2026-11-04 10:50:23 UTC"
       },
       {
-        "ioc": "195.186.4.217:4689",
+        "ioc": "45.141.21.235:7575",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-03 07:07:35 UTC"
+        "first_seen": "2026-11-04 08:40:22 UTC"
       },
       {
-        "ioc": "31.57.38.202:7007",
+        "ioc": "5.175.166.90:6604",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-02 21:05:23 UTC"
+        "first_seen": "2026-11-04 08:40:22 UTC"
       },
       {
-        "ioc": "217.60.102.225:443",
-        "type": "ip:port",
+        "ioc": "mrv001.ddns.net",
+        "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-11-02 14:00:38 UTC"
-      },
-      {
-        "ioc": "217.60.195.98:8808",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-02 13:59:04 UTC"
-      },
-      {
-        "ioc": "103.118.252.177:168",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-02 13:49:30 UTC"
-      },
-      {
-        "ioc": "91.210.109.211:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-02 13:40:18 UTC"
+        "first_seen": "2026-11-04 08:40:20 UTC"
       }
     ]
   }

@@ -1228,6 +1228,17 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "osx.cloudsyncd": {
+    "alt_names": [],
+    "associated_groups": [
+      "REF8801"
+    ],
+    "common_name": "CloudSyncD",
+    "description": "According to Elastic Security Labs, CloudSyncD is a two-stage macOS backdoor written in C++ and distributed as a universal Mach-O binary covering both Apple Silicon and Intel slices, named after the daemon it masquerades as. The first stage presents an authorization dialog asking the victim for their account password, validates it against the local directory service, retains it, and uses it to launch the embedded second stage with administrative privileges while a decoy dialog reports a shared library version mismatch. The second stage, which its developer calls the gate, fingerprints the host by collecting the platform hardware identifier it uses as a victim id, the processor model and core count, physical memory, hardware model, kernel version, username, machine name and MAC address, then encrypts that report with ChaCha, Base64-encodes it and posts it to its command-and-control server. The server answers with a task carrying either a raw Mach-O executable or a gzip-compressed archive, which the implant checks, writes out as an anonymous or hidden file and runs with elevated privileges, falling back to a direct launch when elevation fails; strings in both stages are encrypted at compile time by an in-house cipher that XORs each byte against a shared table, a per-string seed and a position-dependent term.",
+    "enriched_at": "2026-11-04T20:29:55.532405+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "osx.electro_rat": {
     "alt_names": [],
     "associated_groups": [],
@@ -1289,6 +1300,17 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "osx.poseidonstealer": {
+    "alt_names": [
+      "Rodrigo Stealer"
+    ],
+    "associated_groups": [],
+    "common_name": "Poseidon Stealer",
+    "description": "macOS infostealer sold by an individual named Rodrigo4, currently consisting of a disk image containing a Mach-O without app bundle, which when executed spawns osascript executing an AppleScript with the actual infostealer payload.  The AppleScript payload will steal files by packing them in a ZIP archive and uploading them to a hardcoded C2 via HTTP.",
+    "enriched_at": "2026-11-04T20:29:57.058537+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "osx.simpletea": {
     "alt_names": [],
     "associated_groups": [
@@ -1318,7 +1340,7 @@
     ],
     "common_name": "X-Agent",
     "description": null,
-    "enriched_at": "2026-07-08T17:01:20.527717+00:00",
+    "enriched_at": "2026-11-04T20:29:58.090004+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2440,6 +2462,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.floxif": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Floxif",
+    "description": null,
+    "enriched_at": "2026-11-04T20:30:01.930864+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.foalshell": {
     "alt_names": [],
     "associated_groups": [
@@ -2754,6 +2785,15 @@
     "common_name": "Katz Stealer",
     "description": null,
     "enriched_at": "2026-10-28T19:00:33.117789+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.keyhole": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Keyhole",
+    "description": "According to Walmart Global Tech, Keyhole is a multi-functional VNC/Backconnect component used extensively by IcedID/Anubis. While the malware contains functionality that has been previously reported on as typical VNC and HDESK capabilities, a general lack of technical information appears to exist around some of the expanded functionality currently present.",
+    "enriched_at": "2026-11-04T20:30:00.624103+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -4067,7 +4107,7 @@
     ],
     "common_name": "Supper",
     "description": "Supper is a 64-bit Windows backdoor and tunnelling utility first observed in the wild in July 2024. This malware operates as both a Remote Access Trojan (RAT) and a SOCKS5 proxy, offering threat actors persistent access to infected systems and the ability to route arbitrary traffic through victim environments.\r\n\r\nOnce executed, it establishes a TCP connection to its primary C2 endpoint, i.e. hardcoded in the file, over port 443. A fallback mechanism allows the malware to retrieve alternate C2 IP addresses from an encoded file, %temp%/s01bafg, ensuring resilience in case the primary server is unavailable. The malware supports up to 16,384 concurrent sessions over a single TCP connection, each uniquely identified via a 16-bit session ID. \r\n\r\nCommunication begins with an unencrypted 300-byte handshake payload that includes a static bot identifier (0x00691155), system metadata (hostname, domain, OS version, integrity level), and a fixed flag. Following this, all network traffic is wrapped in a 12-byte obfuscated header and an encrypted payload (8 bytes) which consists of two encrypted IP addresses. The header is transformed using two hardcoded XOR keys: 0x4d4d4d4d4d4d4d4d and 0x4d4d4d4d. Payload encryption is performed with a non-standard, stateful XOR cipher, where each byte of the message is encrypted based on a calculated offset and a cycling key (xored with 0x4d4d4d4d) derived from the header. \r\n\r\nIt supports a range of C2 commands, including remote shell execution, session teardown, SOCKS5 proxy operations, self-deletion, and dynamic updating of fallback IPs. When executing commands, Supper spawns a hidden cmd.exe instance and forwards command outputs back to the C2 server after encryption. As a proxy, it accepts operator-specified connection requests, establishes TCP sessions to external targets, and forwards data between the target and the attacker, all managed under the session multiplexing framework.\r\n\r\nIf instructed or if a C2 session fails, the malware can delete itself using cmd.exe or schtasks.exe, often masquerading the operation under the guise of a scheduled task named \"GoogleUpdateTask\". The file used to store fallback C2 IPs (%temp%/s01bafg) is updated by the malware using its encryption routine.",
-    "enriched_at": "2026-07-28T15:43:03.435279+00:00",
+    "enriched_at": "2026-11-04T20:29:59.586875+00:00",
     "source": "malpedia",
     "status": "ok"
   },

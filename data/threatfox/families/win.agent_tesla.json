@@ -1,8 +1,8 @@
 {
   "malware_id": "win.agent_tesla",
   "family": "Agent Tesla",
-  "generated": "2026-09-12T16:32:01.048140+00:00",
-  "recent_window_ioc_count": 40,
+  "generated": "2026-11-04T20:30:29.955462+00:00",
+  "recent_window_ioc_count": 55,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
   "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
   "alt_names": [
@@ -14,31 +14,35 @@
     "SWEED"
   ],
   "stats": {
-    "total_iocs": 279,
+    "total_iocs": 436,
     "date_range": {
-      "earliest": "2021-09-27",
-      "latest": "2026-09-12"
+      "earliest": "2021-06-05",
+      "latest": "2026-11-04"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 73,
-      "md5_hash": 72,
-      "sha1_hash": 72,
-      "domain": 56,
-      "url": 4,
-      "ip:port": 2
+      "sha256_hash": 141,
+      "md5_hash": 114,
+      "sha1_hash": 114,
+      "domain": 62,
+      "ip:port": 3,
+      "url": 2
     },
     "confidence_distribution": {
-      "high": 274,
-      "medium": 5,
+      "high": 426,
+      "medium": 10,
       "low": 0
     },
     "activity_timeline": {
-      "2021-09-27": 1,
+      "2021-06-05": 1,
+      "2021-06-23": 1,
+      "2021-09-22": 1,
+      "2021-09-27": 2,
+      "2021-10-21": 1,
+      "2021-12-27": 1,
+      "2022-01-22": 1,
+      "2022-01-25": 1,
       "2025-01-18": 1,
       "2025-05-10": 1,
-      "2026-03-14": 4,
-      "2026-04-01": 2,
-      "2026-04-02": 1,
       "2026-06-11": 3,
       "2026-06-17": 6,
       "2026-06-22": 9,
@@ -82,104 +86,131 @@
       "2026-09-08": 3,
       "2026-09-09": 3,
       "2026-09-11": 11,
-      "2026-09-12": 9
+      "2026-09-12": 9,
+      "2026-09-13": 11,
+      "2026-09-14": 3,
+      "2026-09-17": 2,
+      "2026-09-21": 9,
+      "2026-10-03": 1,
+      "2026-10-04": 1,
+      "2026-10-05": 1,
+      "2026-10-06": 3,
+      "2026-10-07": 3,
+      "2026-10-09": 4,
+      "2026-10-11": 5,
+      "2026-10-12": 1,
+      "2026-10-14": 21,
+      "2026-10-15": 1,
+      "2026-10-16": 1,
+      "2026-10-18": 2,
+      "2026-10-19": 6,
+      "2026-10-20": 4,
+      "2026-10-21": 7,
+      "2026-10-23": 3,
+      "2026-10-26": 2,
+      "2026-10-27": 9,
+      "2026-10-28": 7,
+      "2026-10-30": 1,
+      "2026-11-02": 15,
+      "2026-11-03": 21,
+      "2026-11-04": 12
     },
     "top_ports": [
       {
         "port": "21",
-        "count": 2
+        "count": 3
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "fd5ace68d49a2d5d5663c1c6b134705b",
+        "ioc": "9e1eccf2d525a5f1a36eff822229607e",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:30 UTC"
+        "first_seen": "2026-11-04 14:34:13 UTC"
       },
       {
-        "ioc": "1e1e0c41adfc16eca44a98cef207373e0a86ac5a",
+        "ioc": "1e61f72aa8c48849edd02198aa5d633ba0e16529",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:29 UTC"
+        "first_seen": "2026-11-04 14:34:13 UTC"
       },
       {
-        "ioc": "fab988a0b181785fd70536a3557f3e2d8474fe1f4cdbc2c6138078da5f691f26",
+        "ioc": "5df8d19faea9fab8141875fe86f844291cace363fec5c764e8b5cc11da141b32",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-09-12 15:32:29 UTC"
+        "first_seen": "2026-11-04 14:34:13 UTC"
       },
       {
-        "ioc": "ruuhsuzpanel.cyou",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-12 07:28:36 UTC"
+        "ioc": "9ec8a802fe2a11b72b83fa027fb651ed",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:10 UTC"
       },
       {
-        "ioc": "bedavasorgupaneli.help",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-12 07:27:59 UTC"
+        "ioc": "fc065d658c65adbdbe400f05342bea466853969f",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:10 UTC"
       },
       {
-        "ioc": "rivex.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-12 07:27:58 UTC"
+        "ioc": "ed0f1d1b4673e50dfda972458c7a37b3291086e4f3d72a4464ac92b16b524cf3",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:09 UTC"
       },
       {
-        "ioc": "ruhsuzpanel.top",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-12 07:27:57 UTC"
+        "ioc": "5c8f88f2c20f31ee0c07917580b694c8",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:05 UTC"
       },
       {
-        "ioc": "xyzsystem.xyz",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-12 07:27:52 UTC"
+        "ioc": "ff36d58d3cc33174ba045905f69caff3b32e0f37",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:05 UTC"
       },
       {
-        "ioc": "xyzsource.xyz",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-12 07:27:51 UTC"
+        "ioc": "adfe94a99972c39c3e53cfaa9b92546b9ff5be4e75b20bc4a0c615a88aac74eb",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:34:05 UTC"
       },
       {
-        "ioc": "ruhsuzpanel.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-11 17:30:38 UTC"
+        "ioc": "57519761cd285b232694e5afc4e3c8bf",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:33:48 UTC"
       },
       {
-        "ioc": "avenix.icu",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-11 17:30:37 UTC"
+        "ioc": "4fbf683424a062c27bc2f1a39d8e3d938018d154",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:33:48 UTC"
       },
       {
-        "ioc": "sorgupaneli.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-11 17:30:36 UTC"
+        "ioc": "071e3e45090fd134fad750dff5cfbf2c873ed5c3d1c6826d61bb5ab0bbab1de3",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-04 14:33:47 UTC"
       },
       {
-        "ioc": "avenix.world",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-11 17:30:36 UTC"
+        "ioc": "09720dbddbf811efbaca23fd430b6d84",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-03 16:42:13 UTC"
       },
       {
-        "ioc": "sorgupaneli.life",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-11 17:30:35 UTC"
+        "ioc": "ec481d5bbc4106e59be1a3dc8f46d8aa21aa77cf",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-03 16:42:13 UTC"
       },
       {
-        "ioc": "ruhsuzpanel2.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-09-11 17:30:35 UTC"
+        "ioc": "3330d1dc791dc3f5a53e484ad8c4f3c1738fbd691de5a4e03e86f0e73fed353c",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-03 16:42:13 UTC"
       }
     ]
   }
