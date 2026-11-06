@@ -1,8 +1,8 @@
 {
   "malware_id": "win.agent_tesla",
   "family": "Agent Tesla",
-  "generated": "2026-11-05T20:47:04.660318+00:00",
-  "recent_window_ioc_count": 58,
+  "generated": "2026-11-06T20:02:17.510449+00:00",
+  "recent_window_ioc_count": 60,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
   "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
   "alt_names": [
@@ -14,21 +14,21 @@
     "SWEED"
   ],
   "stats": {
-    "total_iocs": 445,
+    "total_iocs": 448,
     "date_range": {
       "earliest": "2021-06-05",
-      "latest": "2026-11-05"
+      "latest": "2026-11-06"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 144,
-      "md5_hash": 117,
-      "sha1_hash": 117,
+      "sha256_hash": 145,
+      "md5_hash": 118,
+      "sha1_hash": 118,
       "domain": 62,
       "ip:port": 3,
       "url": 2
     },
     "confidence_distribution": {
-      "high": 435,
+      "high": 438,
       "medium": 10,
       "low": 0
     },
@@ -114,7 +114,8 @@
       "2026-11-02": 15,
       "2026-11-03": 21,
       "2026-11-04": 12,
-      "2026-11-05": 9
+      "2026-11-05": 9,
+      "2026-11-06": 3
     },
     "top_ports": [
       {
@@ -123,6 +124,24 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "fe19405f9e6592c56f21e10af8c67511",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-06 14:33:32 UTC"
+      },
+      {
+        "ioc": "838d9438e5498c7d3fa9b15aa39114ad4861a999",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-06 14:33:31 UTC"
+      },
+      {
+        "ioc": "7b6b04cde425ff801a06d7002fe6bd35c3973b4a510e9670d1288805ea4bed80",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-06 14:33:31 UTC"
+      },
       {
         "ioc": "13f9a66a0c3152fd413182a6cf00427a",
         "type": "md5_hash",
@@ -194,24 +213,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-11-04 14:34:13 UTC"
-      },
-      {
-        "ioc": "9ec8a802fe2a11b72b83fa027fb651ed",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-04 14:34:10 UTC"
-      },
-      {
-        "ioc": "fc065d658c65adbdbe400f05342bea466853969f",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-04 14:34:10 UTC"
-      },
-      {
-        "ioc": "ed0f1d1b4673e50dfda972458c7a37b3291086e4f3d72a4464ac92b16b524cf3",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-04 14:34:09 UTC"
       }
     ]
   }

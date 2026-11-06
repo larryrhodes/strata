@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-05T20:46:45.785842+00:00",
-  "recent_window_ioc_count": 301,
+  "generated": "2026-11-06T20:01:58.934569+00:00",
+  "recent_window_ioc_count": 287,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -11,11 +11,11 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-25",
-      "latest": "2026-11-05"
+      "latest": "2026-11-06"
     },
     "ioc_type_breakdown": {
-      "domain": 496,
-      "url": 4
+      "domain": 498,
+      "url": 2
     },
     "confidence_distribution": {
       "high": 500,
@@ -23,7 +23,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-25": 43,
+      "2026-10-25": 22,
       "2026-10-26": 41,
       "2026-10-27": 53,
       "2026-10-28": 45,
@@ -34,99 +34,100 @@
       "2026-11-02": 25,
       "2026-11-03": 115,
       "2026-11-04": 13,
-      "2026-11-05": 8
+      "2026-11-05": 8,
+      "2026-11-06": 21
     },
     "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "apcfacilities.com.br",
+        "ioc": "www.keriani.cz",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 19:28:18 UTC"
+        "first_seen": "2026-11-06 19:17:24 UTC"
       },
       {
-        "ioc": "lesiii.com",
+        "ioc": "totemytaboo.pe",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 18:29:08 UTC"
+        "first_seen": "2026-11-06 18:30:48 UTC"
       },
       {
-        "ioc": "hatolkay.hu",
+        "ioc": "tigerdoor.tigerwoodfloor.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 16:19:18 UTC"
+        "first_seen": "2026-11-06 17:11:53 UTC"
       },
       {
-        "ioc": "entre2mares.com",
+        "ioc": "theworldtales.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 12:55:46 UTC"
+        "first_seen": "2026-11-06 13:18:37 UTC"
       },
       {
-        "ioc": "f-resins.com",
+        "ioc": "thetheaterroom.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 12:38:31 UTC"
+        "first_seen": "2026-11-06 13:09:20 UTC"
       },
       {
-        "ioc": "www.zukistudio.com",
+        "ioc": "themass.in",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 06:46:59 UTC"
+        "first_seen": "2026-11-06 13:01:48 UTC"
       },
       {
-        "ioc": "www.fluffypumpkin.southcastle.com",
+        "ioc": "ramus.com.br",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 05:55:26 UTC"
+        "first_seen": "2026-11-06 11:02:21 UTC"
       },
       {
-        "ioc": "barbuddi.com",
+        "ioc": "rmbikers.lightbox.mx",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-05 04:38:30 UTC"
+        "first_seen": "2026-11-06 10:30:04 UTC"
       },
       {
-        "ioc": "minchones.com",
+        "ioc": "rolex-ankaufen.de",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-04 17:31:09 UTC"
+        "first_seen": "2026-11-06 09:50:22 UTC"
       },
       {
-        "ioc": "rabiajamil.com",
-        "type": "domain",
+        "ioc": "https://blisterup.com/serv.php",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-11-04 16:56:27 UTC"
+        "first_seen": "2026-11-06 08:50:35 UTC"
       },
       {
-        "ioc": "kingdomcaster.com",
+        "ioc": "blisterup.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-04 10:56:25 UTC"
+        "first_seen": "2026-11-06 08:50:18 UTC"
       },
       {
-        "ioc": "kidsmoralstory.in",
+        "ioc": "denertavares.com.br",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-04 10:51:37 UTC"
+        "first_seen": "2026-11-06 06:24:25 UTC"
       },
       {
-        "ioc": "synnfjellporten.no.datasenter.no",
+        "ioc": "navyafinance.in",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-04 10:31:01 UTC"
+        "first_seen": "2026-11-06 06:11:57 UTC"
       },
       {
-        "ioc": "www.kevinalton.com",
+        "ioc": "rudidutoitphotography.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-04 07:37:52 UTC"
+        "first_seen": "2026-11-06 04:46:11 UTC"
       },
       {
-        "ioc": "www.arta-brasov.ro",
+        "ioc": "enjoyourchildren.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-04 07:28:22 UTC"
+        "first_seen": "2026-11-06 04:21:08 UTC"
       }
     ]
   }
