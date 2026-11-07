@@ -1,8 +1,8 @@
 {
   "malware_id": "win.agent_tesla",
   "family": "Agent Tesla",
-  "generated": "2026-11-06T20:02:17.510449+00:00",
-  "recent_window_ioc_count": 60,
+  "generated": "2026-11-07T18:12:10.385816+00:00",
+  "recent_window_ioc_count": 66,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
   "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
   "alt_names": [
@@ -14,21 +14,21 @@
     "SWEED"
   ],
   "stats": {
-    "total_iocs": 448,
+    "total_iocs": 454,
     "date_range": {
       "earliest": "2021-06-05",
-      "latest": "2026-11-06"
+      "latest": "2026-11-07"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 145,
-      "md5_hash": 118,
-      "sha1_hash": 118,
+      "sha256_hash": 147,
+      "md5_hash": 120,
+      "sha1_hash": 120,
       "domain": 62,
       "ip:port": 3,
       "url": 2
     },
     "confidence_distribution": {
-      "high": 438,
+      "high": 444,
       "medium": 10,
       "low": 0
     },
@@ -115,7 +115,8 @@
       "2026-11-03": 21,
       "2026-11-04": 12,
       "2026-11-05": 9,
-      "2026-11-06": 3
+      "2026-11-06": 3,
+      "2026-11-07": 6
     },
     "top_ports": [
       {
@@ -124,6 +125,42 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "bd8293b9572d2442ddc5d2404114ae2a",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-07 16:43:20 UTC"
+      },
+      {
+        "ioc": "ea7938d4fb5a84756e26b9f63fbdca402ee99d21",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-07 16:43:19 UTC"
+      },
+      {
+        "ioc": "f6971c256c7423e40b7e5cf990403c088fe79addd80ceeef28b30d7bdfe86d96",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-07 16:43:18 UTC"
+      },
+      {
+        "ioc": "012a65c50cf1cadafdd3ac7ae3f7a662",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-07 16:41:26 UTC"
+      },
+      {
+        "ioc": "03543a167f5948d6ffaee449ef0beacccafcbef2",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-07 16:41:25 UTC"
+      },
+      {
+        "ioc": "666140cb796c70ba0187af66f33a2b1b6932770a200a4b968288bf795d2a852d",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-07 16:41:24 UTC"
+      },
       {
         "ioc": "fe19405f9e6592c56f21e10af8c67511",
         "type": "md5_hash",
@@ -177,42 +214,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-11-05 14:34:52 UTC"
-      },
-      {
-        "ioc": "58bcfde1949bab06458ec94f1805c25d",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-05 14:34:50 UTC"
-      },
-      {
-        "ioc": "847394b02e770573662ebdd9fa6318b22dfb2d9e",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-05 14:34:50 UTC"
-      },
-      {
-        "ioc": "3dcfb05d99f9c14279392d6ad30ee74d09ccefdacee63047ae24d2932f19ccb8",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-05 14:34:50 UTC"
-      },
-      {
-        "ioc": "9e1eccf2d525a5f1a36eff822229607e",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-04 14:34:13 UTC"
-      },
-      {
-        "ioc": "1e61f72aa8c48849edd02198aa5d633ba0e16529",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-04 14:34:13 UTC"
-      },
-      {
-        "ioc": "5df8d19faea9fab8141875fe86f844291cace363fec5c764e8b5cc11da141b32",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-04 14:34:13 UTC"
       }
     ]
   }
