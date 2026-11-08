@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vshell",
   "family": "VShell",
-  "generated": "2026-11-07T18:11:52.531516+00:00",
-  "recent_window_ioc_count": 369,
+  "generated": "2026-11-08T18:26:12.437964+00:00",
+  "recent_window_ioc_count": 360,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vshell",
   "description": "VShell is an OST framework written in Go, enabling availability of implants for multiple platforms (Windows, Linux, macOS).",
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-30",
-      "latest": "2026-11-07"
+      "latest": "2026-11-08"
     },
     "ioc_type_breakdown": {
-      "ip:port": 259,
-      "sha256_hash": 99,
-      "md5_hash": 71,
-      "sha1_hash": 71
+      "ip:port": 223,
+      "sha256_hash": 111,
+      "md5_hash": 83,
+      "sha1_hash": 83
     },
     "confidence_distribution": {
       "high": 499,
@@ -25,7 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-30": 48,
+      "2026-10-30": 1,
       "2026-10-31": 96,
       "2026-11-01": 46,
       "2026-11-02": 45,
@@ -33,35 +33,40 @@
       "2026-11-04": 61,
       "2026-11-05": 40,
       "2026-11-06": 58,
-      "2026-11-07": 67
+      "2026-11-07": 69,
+      "2026-11-08": 45
     },
     "top_ports": [
       {
         "port": "9097",
-        "count": 159
+        "count": 112
       },
       {
         "port": "8084",
-        "count": 19
+        "count": 21
       },
       {
         "port": "443",
-        "count": 15
+        "count": 16
+      },
+      {
+        "port": "8443",
+        "count": 6
       },
       {
         "port": "8085",
         "count": 6
       },
       {
-        "port": "8443",
+        "port": "8888",
         "count": 5
       },
       {
         "port": "8080",
-        "count": 4
+        "count": 5
       },
       {
-        "port": "8888",
+        "port": "80",
         "count": 3
       },
       {
@@ -69,104 +74,100 @@
         "count": 3
       },
       {
-        "port": "8090",
-        "count": 2
-      },
-      {
-        "port": "80",
+        "port": "8083",
         "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "000875cdc4a19e7a81255255b992b8f5",
+        "ioc": "05770c1322a90c9d90b3afa113124af7",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:43:04 UTC"
+        "first_seen": "2026-11-08 17:44:09 UTC"
       },
       {
-        "ioc": "6ec9f69329c6ee6ba7fb525492e9bbf8949bc4b6",
+        "ioc": "805a91056937a844d0e9f426df3169b16e3ce20b",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:43:04 UTC"
+        "first_seen": "2026-11-08 17:44:09 UTC"
       },
       {
-        "ioc": "0a741290d7823146a2b05a572c8202171ddcaafe5856b52bbaa33cfa7899d40c",
+        "ioc": "a2806ed6ada87b9ae205e046265a4f3652d48c54e4582eb7367237a387ef54f1",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:43:03 UTC"
+        "first_seen": "2026-11-08 17:44:08 UTC"
       },
       {
-        "ioc": "027285d7f294f343400070a561aa2e5e",
+        "ioc": "05d233edd2de6095c7831c82c2033476",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:43:03 UTC"
+        "first_seen": "2026-11-08 17:44:08 UTC"
       },
       {
-        "ioc": "eda967b5331713c7db86b1598ad13ae3411af2b4",
+        "ioc": "31fd01ffe349c01b1b13d29d156e18326305e0ce",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:43:02 UTC"
+        "first_seen": "2026-11-08 17:44:08 UTC"
       },
       {
-        "ioc": "5e5d1eb61ce26c6be530a5bfd28776a8b9e57da73fe01c413925441331b9efff",
+        "ioc": "e6e51ff061c04b656f2d4187e34c95331444a9d28ea585ecd9a576550a2dc4c6",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:43:01 UTC"
+        "first_seen": "2026-11-08 17:44:07 UTC"
       },
       {
-        "ioc": "0aa29ddae63ec70d56fbb8b923a5c2f9",
+        "ioc": "87bd835adfd884e4654418d11567a517",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:57 UTC"
+        "first_seen": "2026-11-08 17:44:07 UTC"
       },
       {
-        "ioc": "b4c6f613a85622a95985275783a14f0ae03656a7",
+        "ioc": "e2ae406d0b31b85f62550020e70118b0c1a72ef2",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:57 UTC"
+        "first_seen": "2026-11-08 17:44:07 UTC"
       },
       {
-        "ioc": "32b637cdb0bd9b456205dea8790f3c46f7572deb0a7a4d5a2a15d5dc093e91ab",
+        "ioc": "699e293d14e8eca923f7086c03fd4ef2f163691d58c7e8a037ade44fd964d089",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:56 UTC"
+        "first_seen": "2026-11-08 17:44:06 UTC"
       },
       {
-        "ioc": "0b7616336d702b8700181b611e09a5ad",
+        "ioc": "4358ab6a2b4c9f252604849eb1aa87b3",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:56 UTC"
+        "first_seen": "2026-11-08 17:44:03 UTC"
       },
       {
-        "ioc": "7849ce32c3b59c6ebcc912be0b7d5637b86994b5",
+        "ioc": "c0ffaedcce68f25ab0b29462875e208dbc01e1ff",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:55 UTC"
+        "first_seen": "2026-11-08 17:44:03 UTC"
       },
       {
-        "ioc": "151754ec3454ca923e1534780d92322a7c34f07f6ea182b8badfa702684fa52b",
+        "ioc": "8bf23c98811ef06032a0a7ebe6c3e5ea0f7de853a2a53dffdd6a1dc48ccaddfc",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:54 UTC"
+        "first_seen": "2026-11-08 17:44:03 UTC"
       },
       {
-        "ioc": "0c4b55459f03f01411195f30f664cfcf",
+        "ioc": "08cb09e9853c8b942ab7edf7543e4287",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:54 UTC"
+        "first_seen": "2026-11-08 17:44:00 UTC"
       },
       {
-        "ioc": "3023002d6f1ac1460083ea061ae096885aeb85d9",
+        "ioc": "bf79c37cb51390d77530105a2e1af324c951526f",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:53 UTC"
+        "first_seen": "2026-11-08 17:44:00 UTC"
       },
       {
-        "ioc": "b40b46d6d21c5b208ea07991acf51a6d7fa1983cd0aec3207b4823871449c240",
+        "ioc": "464890ecf33b1677070fbe681ba551a17bd168610c01828daa6f61a9fa781bc8",
         "type": "sha256_hash",
         "confidence": 95,
-        "first_seen": "2026-11-07 16:42:53 UTC"
+        "first_seen": "2026-11-08 17:44:00 UTC"
       }
     ]
   }

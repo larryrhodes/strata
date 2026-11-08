@@ -1,8 +1,8 @@
 {
   "malware_id": "win.salatstealer",
   "family": "SalatStealer",
-  "generated": "2026-11-07T18:11:53.858114+00:00",
-  "recent_window_ioc_count": 310,
+  "generated": "2026-11-08T18:26:17.167180+00:00",
+  "recent_window_ioc_count": 213,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.salatstealer",
   "description": "Crypto Stealer written in GO. Targets browsers, crypto wallets and telegram clients (Telegram Desktop, Kotatogram). Can capture webcam and microphone and stream it on to c2 server.",
   "alt_names": [],
@@ -11,15 +11,15 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-29",
-      "latest": "2026-11-07"
+      "latest": "2026-11-08"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 207,
-      "md5_hash": 143,
-      "sha1_hash": 142,
+      "sha256_hash": 208,
+      "md5_hash": 141,
+      "sha1_hash": 140,
       "ip:port": 6,
-      "url": 1,
-      "domain": 1
+      "domain": 4,
+      "url": 1
     },
     "confidence_distribution": {
       "high": 496,
@@ -27,7 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-29": 106,
+      "2026-10-29": 99,
       "2026-10-30": 58,
       "2026-10-31": 112,
       "2026-11-01": 18,
@@ -35,7 +35,8 @@
       "2026-11-03": 18,
       "2026-11-04": 73,
       "2026-11-05": 64,
-      "2026-11-07": 13
+      "2026-11-07": 13,
+      "2026-11-08": 7
     },
     "top_ports": [
       {
@@ -48,6 +49,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "d63be4b3a8eca2f7f5d293330eb80886",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-08 17:44:01 UTC"
+      },
+      {
+        "ioc": "cb3b7481aa6a28dc161e6f2afbc9335a5cd333b2",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-08 17:44:01 UTC"
+      },
+      {
+        "ioc": "c287adcf987166fde5653e59c9e9d5144fb710803905d4932f5182942f6cce3b",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-08 17:44:01 UTC"
+      },
+      {
+        "ioc": "a8b36a6d679690f720507f9cd65e92f5d7433e162ecf552139b731ee4fc24e3d",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-08 07:28:11 UTC"
+      },
+      {
+        "ioc": "fsbrf.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-08 07:27:13 UTC"
+      },
+      {
+        "ioc": "cazar.cc",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-08 07:27:12 UTC"
+      },
+      {
+        "ioc": "morkovka.cn",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-08 07:27:12 UTC"
+      },
       {
         "ioc": "5375661283078a1d30c4f7a45afa69fe",
         "type": "md5_hash",
@@ -95,48 +138,6 @@
         "type": "md5_hash",
         "confidence": 95,
         "first_seen": "2026-11-07 16:41:43 UTC"
-      },
-      {
-        "ioc": "ac39d3f636d3cd8cc70b800951097b0ec18c0e34",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-07 16:41:42 UTC"
-      },
-      {
-        "ioc": "db6e10fc0cef5dd1331f3f2b1b8e51e53ce8c5485bf8908ccbd5c7b2046488f7",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-07 16:41:42 UTC"
-      },
-      {
-        "ioc": "138.16.152.26:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-07 10:50:53 UTC"
-      },
-      {
-        "ioc": "a0e992bfeea621b4f6e3d837cd43806f3a9b939f59309d19becae3d4ca6e3afe",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-07 04:57:25 UTC"
-      },
-      {
-        "ioc": "40b1480c14d91afc2d08182ee32570d28492684b5a287a58b87385a8248e9aa1",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-07 00:57:21 UTC"
-      },
-      {
-        "ioc": "3284e96267d4efd14ed43159e9fc5558",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-05 14:35:45 UTC"
-      },
-      {
-        "ioc": "9bef17192ca4d41a878892f96ae2d5f5694ad010",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-05 14:35:44 UTC"
       }
     ]
   }
