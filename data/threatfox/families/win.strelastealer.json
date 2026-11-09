@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-08T18:26:20.084438+00:00",
-  "recent_window_ioc_count": 205,
+  "generated": "2026-11-09T23:06:21.859192+00:00",
+  "recent_window_ioc_count": 186,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-25",
-      "latest": "2026-11-08"
+      "earliest": "2026-10-26",
+      "latest": "2026-11-09"
     },
     "ioc_type_breakdown": {
       "domain": 498,
@@ -23,8 +23,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-25": 1,
-      "2026-10-26": 41,
+      "2026-10-26": 34,
       "2026-10-27": 53,
       "2026-10-28": 45,
       "2026-10-29": 29,
@@ -37,10 +36,59 @@
       "2026-11-05": 8,
       "2026-11-06": 21,
       "2026-11-07": 16,
-      "2026-11-08": 5
+      "2026-11-08": 6,
+      "2026-11-09": 7
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "skullriders.com.br",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 12:13:54 UTC"
+      },
+      {
+        "ioc": "akashbartabd.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 11:36:49 UTC"
+      },
+      {
+        "ioc": "roselinebailly.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 10:42:52 UTC"
+      },
+      {
+        "ioc": "providencefarmltd.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 06:26:07 UTC"
+      },
+      {
+        "ioc": "prodavnica.vraneskadolina.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 05:57:39 UTC"
+      },
+      {
+        "ioc": "clientretention.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 02:00:27 UTC"
+      },
+      {
+        "ioc": "bti.aestheticclinicgroup.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-09 01:35:47 UTC"
+      },
+      {
+        "ioc": "fcrfs.duckdns.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-08 19:21:46 UTC"
+      },
       {
         "ioc": "nuovec.site.tb-hosting.com",
         "type": "domain",
@@ -82,54 +130,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-07 18:24:45 UTC"
-      },
-      {
-        "ioc": "namedida.pt",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 18:24:45 UTC"
-      },
-      {
-        "ioc": "libaneast.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 18:24:44 UTC"
-      },
-      {
-        "ioc": "hakel.info",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 18:24:44 UTC"
-      },
-      {
-        "ioc": "eragam.in",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 18:24:44 UTC"
-      },
-      {
-        "ioc": "www.mobilicassara.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 13:48:37 UTC"
-      },
-      {
-        "ioc": "www.airocide.hr",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 13:39:39 UTC"
-      },
-      {
-        "ioc": "dumpmurphy-us.ctfellowship.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 13:32:34 UTC"
-      },
-      {
-        "ioc": "www.historics.nl",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-07 12:07:23 UTC"
       }
     ]
   }
