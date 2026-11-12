@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-10-28T19:01:07.539011+00:00",
-  "recent_window_ioc_count": 63,
+  "generated": "2026-11-12T21:00:55.679669+00:00",
+  "recent_window_ioc_count": 60,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -10,46 +10,30 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-10",
-      "latest": "2026-10-28"
+      "earliest": "2026-10-06",
+      "latest": "2026-11-12"
     },
     "ioc_type_breakdown": {
-      "url": 243,
-      "domain": 168,
-      "sha256_hash": 67,
-      "ip:port": 21,
+      "url": 241,
+      "domain": 163,
+      "sha256_hash": 68,
+      "ip:port": 27,
       "md5_hash": 1
     },
     "confidence_distribution": {
-      "high": 472,
-      "medium": 4,
-      "low": 24
+      "high": 493,
+      "medium": 7,
+      "low": 0
     },
     "activity_timeline": {
-      "2026-09-10": 10,
-      "2026-09-11": 6,
-      "2026-09-12": 3,
-      "2026-09-13": 1,
-      "2026-09-14": 5,
-      "2026-09-15": 1,
-      "2026-09-17": 11,
-      "2026-09-18": 1,
-      "2026-09-23": 29,
-      "2026-09-24": 3,
-      "2026-09-25": 4,
-      "2026-09-26": 1,
-      "2026-09-27": 1,
-      "2026-09-30": 3,
-      "2026-10-02": 3,
-      "2026-10-05": 4,
-      "2026-10-06": 15,
+      "2026-10-06": 10,
       "2026-10-07": 121,
       "2026-10-08": 19,
-      "2026-10-09": 96,
+      "2026-10-09": 94,
       "2026-10-10": 11,
       "2026-10-11": 6,
       "2026-10-12": 1,
-      "2026-10-13": 57,
+      "2026-10-13": 55,
       "2026-10-14": 3,
       "2026-10-15": 1,
       "2026-10-16": 2,
@@ -62,16 +46,49 @@
       "2026-10-25": 4,
       "2026-10-26": 5,
       "2026-10-27": 1,
-      "2026-10-28": 1
+      "2026-10-28": 1,
+      "2026-10-30": 5,
+      "2026-10-31": 9,
+      "2026-11-01": 2,
+      "2026-11-02": 5,
+      "2026-11-03": 4,
+      "2026-11-04": 6,
+      "2026-11-05": 4,
+      "2026-11-06": 8,
+      "2026-11-08": 3,
+      "2026-11-09": 5,
+      "2026-11-10": 1,
+      "2026-11-11": 3,
+      "2026-11-12": 40
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 8
+        "count": 9
       },
       {
         "port": "8080",
         "count": 2
+      },
+      {
+        "port": "9443",
+        "count": 2
+      },
+      {
+        "port": "7000",
+        "count": 2
+      },
+      {
+        "port": "8093",
+        "count": 2
+      },
+      {
+        "port": "8443",
+        "count": 1
+      },
+      {
+        "port": "5000",
+        "count": 1
       },
       {
         "port": "5920",
@@ -84,118 +101,98 @@
       {
         "port": "79",
         "count": 1
-      },
-      {
-        "port": "7200",
-        "count": 1
-      },
-      {
-        "port": "8133",
-        "count": 1
-      },
-      {
-        "port": "8082",
-        "count": 1
-      },
-      {
-        "port": "1901",
-        "count": 1
-      },
-      {
-        "port": "8093",
-        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "akumaqqq.xyz",
-        "type": "domain",
+        "ioc": "https://wire-pixel.com/api/metrics/run?event=started",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-10-28 07:11:49 UTC"
+        "first_seen": "2026-11-12 10:57:41 UTC"
       },
       {
-        "ioc": "aea291ecbfc916acb6cd8b1d1f9a3671c8782c5bc051098c7ab9d94c786d5dcc",
-        "type": "sha256_hash",
+        "ioc": "https://wire-pixel.com/api/metrics/run?event=pasted",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-12 10:57:40 UTC"
+      },
+      {
+        "ioc": "https://qm.anek4d.org/wc/gate",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-10-27 23:55:43 UTC"
+        "first_seen": "2026-11-12 06:49:46 UTC"
       },
       {
-        "ioc": "zen.ayxandevgang.workers.dev",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-26 06:36:28 UTC"
-      },
-      {
-        "ioc": "https://vitsmare.pages.dev",
+        "ioc": "https://pr.anek4d.org/qx/gate",
         "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-26 06:36:28 UTC"
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:46 UTC"
       },
       {
-        "ioc": "b5906c5780bfb8d8535c2914e6a1029ef4137cd119995bf281058bd06236bbae",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-26 06:36:27 UTC"
-      },
-      {
-        "ioc": "bbf7f1683cf2e27ddd72cc11137a01077294ccc006b3fb701f7dd64fac7221fd",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-10-26 06:36:27 UTC"
-      },
-      {
-        "ioc": "https://zen.ayxandevgang.workers.dev/m/license-20260928125936-24d9",
+        "ioc": "https://qm.anek4d.org/id/gate",
         "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-10-26 06:36:26 UTC"
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:45 UTC"
       },
       {
-        "ioc": "20bet-casino20.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-10-25 17:13:34 UTC"
+        "ioc": "https://ik.angkajitu.org/b38/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:44 UTC"
       },
       {
-        "ioc": "whuskalc.lol",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:34:50 UTC"
+        "ioc": "https://ik.angkajitu.org/xi/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:44 UTC"
       },
       {
-        "ioc": "roblxexecutors.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-10-25 14:34:50 UTC"
+        "ioc": "https://ik.angkajitu.org/w/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:44 UTC"
       },
       {
-        "ioc": "163.176.250.244:8080",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-10-25 13:38:08 UTC"
+        "ioc": "https://c.dr108.org/n/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:43 UTC"
       },
       {
-        "ioc": "179.61.227.71:443",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-10-24 06:08:51 UTC"
+        "ioc": "https://c.dr108.org/x/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:43 UTC"
       },
       {
-        "ioc": "odid-open.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-23 17:55:48 UTC"
+        "ioc": "https://o54.angkajitu.org/mh/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:42 UTC"
       },
       {
-        "ioc": "dtapi.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:31:22 UTC"
+        "ioc": "https://zs.angkajitu.org/rs/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:41 UTC"
       },
       {
-        "ioc": "cfmlapi.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-10-23 05:31:21 UTC"
+        "ioc": "https://xn.amanlay.org/rn/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:40 UTC"
+      },
+      {
+        "ioc": "https://d0.angkajitu.org/qm/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:40 UTC"
+      },
+      {
+        "ioc": "https://ap1.anek4d.org/w/gate",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-12 06:49:39 UTC"
       }
     ]
   }

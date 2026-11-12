@@ -1,8 +1,8 @@
 {
   "malware_id": "win.remcos",
   "family": "Remcos",
-  "generated": "2026-11-10T20:33:47.885838+00:00",
-  "recent_window_ioc_count": 66,
+  "generated": "2026-11-12T21:00:50.759170+00:00",
+  "recent_window_ioc_count": 95,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos",
   "description": "Remcos (acronym of Remote Control & Surveillance Software) is a commercial Remote Access Tool to remotely control computers.\r\n\r\nRemcos is advertised as legitimate software which can be used for surveillance and penetration testing purposes, but has been used in numerous hacking campaigns.\r\nRemcos, once installed, opens a backdoor on the computer, granting full access to the remote user.\r\nRemcos is developed by the cybersecurity company BreakingSecurity.",
   "alt_names": [
@@ -18,13 +18,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-06",
-      "latest": "2026-11-10"
+      "earliest": "2026-10-07",
+      "latest": "2026-11-12"
     },
     "ioc_type_breakdown": {
-      "ip:port": 373,
-      "domain": 113,
-      "sha256_hash": 13,
+      "ip:port": 370,
+      "domain": 115,
+      "sha256_hash": 14,
       "url": 1
     },
     "confidence_distribution": {
@@ -33,8 +33,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-06": 11,
-      "2026-10-07": 14,
+      "2026-10-07": 11,
       "2026-10-08": 13,
       "2026-10-09": 13,
       "2026-10-10": 2,
@@ -67,12 +66,14 @@
       "2026-11-07": 5,
       "2026-11-08": 6,
       "2026-11-09": 9,
-      "2026-11-10": 18
+      "2026-11-10": 18,
+      "2026-11-11": 10,
+      "2026-11-12": 4
     },
     "top_ports": [
       {
         "port": "2404",
-        "count": 106
+        "count": 108
       },
       {
         "port": "14641",
@@ -103,104 +104,104 @@
         "count": 7
       },
       {
-        "port": "2405",
+        "port": "14649",
         "count": 7
       },
       {
-        "port": "14649",
+        "port": "14646",
         "count": 7
       }
     ],
     "sample_iocs": [
       {
+        "ioc": "45.141.148.75:23030",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-12 09:45:20 UTC"
+      },
+      {
+        "ioc": "kingremcos2026duckdns.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-12 09:35:08 UTC"
+      },
+      {
+        "ioc": "www.osamaphplogistices1.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-12 05:50:09 UTC"
+      },
+      {
+        "ioc": "6008e63639c9d09724ea8df3fe28d67d216cdeee07a1be1e833884b55cc1eaba",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-12 00:58:25 UTC"
+      },
+      {
+        "ioc": "23.132.164.124:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:55:37 UTC"
+      },
+      {
+        "ioc": "31.57.184.246:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:54:16 UTC"
+      },
+      {
+        "ioc": "31.57.216.162:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:25:18 UTC"
+      },
+      {
+        "ioc": "141.98.10.201:24041",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:25:17 UTC"
+      },
+      {
+        "ioc": "196.251.102.160:7070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:25:17 UTC"
+      },
+      {
+        "ioc": "t0rm3ntor.kozow.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:25:15 UTC"
+      },
+      {
+        "ioc": "45.141.148.72:14560",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 14:18:02 UTC"
+      },
+      {
+        "ioc": "196.251.102.172:1511",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 07:10:17 UTC"
+      },
+      {
+        "ioc": "102.220.162.170:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 03:25:10 UTC"
+      },
+      {
+        "ioc": "31.57.216.22:2404",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-11 00:10:18 UTC"
+      },
+      {
         "ioc": "141.98.10.188:2409",
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-11-10 17:33:49 UTC"
-      },
-      {
-        "ioc": "31.57.37.31:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 17:30:23 UTC"
-      },
-      {
-        "ioc": "31.57.216.198:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 17:30:23 UTC"
-      },
-      {
-        "ioc": "hopeylp.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:40:18 UTC"
-      },
-      {
-        "ioc": "huhesd.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:40:18 UTC"
-      },
-      {
-        "ioc": "155.103.71.197:14546",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:35:22 UTC"
-      },
-      {
-        "ioc": "196.251.102.59:8080",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:35:22 UTC"
-      },
-      {
-        "ioc": "203.202.232.212:4044",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:35:21 UTC"
-      },
-      {
-        "ioc": "sang01.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:35:16 UTC"
-      },
-      {
-        "ioc": "31.57.37.87:2404",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:30:22 UTC"
-      },
-      {
-        "ioc": "https://essizs.com/img_114506.png",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-10 10:11:13 UTC"
-      },
-      {
-        "ioc": "f166e60347ad5ed13c86c3f0e5bf24a1b7a2e81fdfdb1f76e2c5ae8979a9beca",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-11-10 10:11:12 UTC"
-      },
-      {
-        "ioc": "36.255.97.225:14645",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-10 10:09:28 UTC"
-      },
-      {
-        "ioc": "pleasefinalattachedfinaldocsoriginalseto.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-10 09:50:15 UTC"
-      },
-      {
-        "ioc": "providerss.duckdns.org",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-10 08:25:11 UTC"
       }
     ]
   }

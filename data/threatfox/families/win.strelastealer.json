@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-10T20:33:45.630416+00:00",
-  "recent_window_ioc_count": 77,
+  "generated": "2026-11-12T21:00:43.659631+00:00",
+  "recent_window_ioc_count": 133,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-26",
-      "latest": "2026-11-10"
+      "earliest": "2026-10-27",
+      "latest": "2026-11-11"
     },
     "ioc_type_breakdown": {
       "domain": 498,
@@ -23,8 +23,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-26": 28,
-      "2026-10-27": 53,
+      "2026-10-27": 4,
       "2026-10-28": 45,
       "2026-10-29": 29,
       "2026-10-30": 39,
@@ -38,99 +37,100 @@
       "2026-11-07": 16,
       "2026-11-08": 6,
       "2026-11-09": 7,
-      "2026-11-10": 6
+      "2026-11-10": 6,
+      "2026-11-11": 77
     },
     "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "wp.milanmenezes.me",
+        "ioc": "thinkautomotriz.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-10 08:09:51 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "www.prodel.it",
+        "ioc": "tbull.no",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-10 07:12:49 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "www.kkpsialpha.com",
+        "ioc": "saacha.co.in",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-10 06:57:41 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "xopianoi.com",
+        "ioc": "osarsolutions.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-10 05:22:57 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "ukppolonia.pl",
+        "ioc": "on-the-rooftop.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-10 02:30:05 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "xtremexperience.rwcreativestudio.net",
+        "ioc": "magic-gsm.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-10 01:48:30 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "skullriders.com.br",
+        "ioc": "leozalkidigital.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 12:13:54 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "akashbartabd.com",
+        "ioc": "lamichoacanapremier2x1longbeach.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 11:36:49 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "roselinebailly.com",
+        "ioc": "klaroengenharia.com.br",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 10:42:52 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "providencefarmltd.com",
+        "ioc": "jul.juelenemaerke.dk",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 06:26:07 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "prodavnica.vraneskadolina.com",
+        "ioc": "jssbsurveys.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 05:57:39 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "clientretention.com",
+        "ioc": "jobt5.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 02:00:27 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "bti.aestheticclinicgroup.com",
+        "ioc": "jobsarkari.co",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-09 01:35:47 UTC"
+        "first_seen": "2026-11-11 09:49:20 UTC"
       },
       {
-        "ioc": "fcrfs.duckdns.org",
+        "ioc": "jancorinnecross.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-08 19:21:46 UTC"
+        "first_seen": "2026-11-11 09:49:19 UTC"
       },
       {
-        "ioc": "nuovec.site.tb-hosting.com",
+        "ioc": "iteamchoice.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-08 13:22:56 UTC"
+        "first_seen": "2026-11-11 09:49:19 UTC"
       }
     ]
   }
