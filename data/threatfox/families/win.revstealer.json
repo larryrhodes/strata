@@ -1,23 +1,26 @@
 {
   "malware_id": "win.revstealer",
   "family": "RevStealer",
-  "generated": "2026-08-02T14:50:53.096643+00:00",
-  "recent_window_ioc_count": 70,
+  "generated": "2026-11-13T20:37:03.413942+00:00",
+  "recent_window_ioc_count": 58,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.revstealer",
   "description": null,
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 81,
+    "total_iocs": 208,
     "date_range": {
       "earliest": "2026-07-14",
-      "latest": "2026-08-02"
+      "latest": "2026-11-13"
     },
     "ioc_type_breakdown": {
-      "domain": 81
+      "domain": 151,
+      "sha256_hash": 52,
+      "url": 4,
+      "ip:port": 1
     },
     "confidence_distribution": {
-      "high": 81,
+      "high": 208,
       "medium": 0,
       "low": 0
     },
@@ -29,99 +32,151 @@
       "2026-07-30": 3,
       "2026-07-31": 3,
       "2026-08-01": 3,
-      "2026-08-02": 1
+      "2026-08-02": 2,
+      "2026-08-03": 1,
+      "2026-08-04": 1,
+      "2026-08-05": 1,
+      "2026-08-06": 4,
+      "2026-08-07": 1,
+      "2026-08-08": 2,
+      "2026-08-09": 1,
+      "2026-08-10": 2,
+      "2026-08-12": 4,
+      "2026-08-13": 6,
+      "2026-08-14": 3,
+      "2026-08-15": 1,
+      "2026-08-16": 3,
+      "2026-08-20": 1,
+      "2026-08-22": 1,
+      "2026-08-24": 1,
+      "2026-08-25": 1,
+      "2026-08-26": 1,
+      "2026-08-27": 1,
+      "2026-08-28": 1,
+      "2026-08-29": 1,
+      "2026-09-11": 1,
+      "2026-09-15": 1,
+      "2026-09-21": 1,
+      "2026-10-06": 2,
+      "2026-10-17": 1,
+      "2026-10-18": 2,
+      "2026-10-19": 1,
+      "2026-10-22": 1,
+      "2026-10-23": 2,
+      "2026-10-24": 1,
+      "2026-10-27": 1,
+      "2026-10-28": 3,
+      "2026-10-29": 1,
+      "2026-10-30": 1,
+      "2026-11-01": 2,
+      "2026-11-02": 2,
+      "2026-11-03": 1,
+      "2026-11-05": 2,
+      "2026-11-06": 4,
+      "2026-11-07": 5,
+      "2026-11-08": 3,
+      "2026-11-09": 6,
+      "2026-11-10": 8,
+      "2026-11-11": 9,
+      "2026-11-12": 10,
+      "2026-11-13": 17
     },
-    "top_ports": [],
+    "top_ports": [
+      {
+        "port": "80",
+        "count": 1
+      }
+    ],
     "sample_iocs": [
       {
-        "ioc": "meta2.go-tools.click",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-02 01:39:52 UTC"
+        "ioc": "673feccbcec6008354e4b3b7711de22953445d5314721097b041eb020e6cd231",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 19:45:54 UTC"
       },
       {
-        "ioc": "route.ambergroup.one",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-01 10:37:24 UTC"
+        "ioc": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/2806c0be90c552b60d559642f0c50f098c60ccbb/Installer.zip",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:30 UTC"
       },
       {
-        "ioc": "registry.evercircle.click",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-01 09:56:22 UTC"
+        "ioc": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/b5fe3195445d5de183ee9af3b289eeb0cbd9ffdd/Installer.zip",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:29 UTC"
       },
       {
-        "ioc": "config.cove-post.xyz",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-08-01 09:19:34 UTC"
-      },
-      {
-        "ioc": "scheduler2.travel-scope.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-31 16:00:07 UTC"
-      },
-      {
-        "ioc": "registry.lighttexture18.one",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-31 13:42:42 UTC"
-      },
-      {
-        "ioc": "setup.waveboard.one",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-31 07:22:04 UTC"
-      },
-      {
-        "ioc": "upload.frame-quest.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-30 17:23:12 UTC"
-      },
-      {
-        "ioc": "resolve.mint-screen.xyz",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-30 12:17:03 UTC"
-      },
-      {
-        "ioc": "push.brewtrail.click",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-30 09:28:23 UTC"
-      },
-      {
-        "ioc": "job.coast-space.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-29 18:29:23 UTC"
-      },
-      {
-        "ioc": "serve0.omega-fabric41.lol",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-07-28 21:21:01 UTC"
-      },
-      {
-        "ioc": "sync.northform.click",
+        "ioc": "proxy.proup43.lol",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-27 15:30:09 UTC"
+        "first_seen": "2026-11-13 15:17:29 UTC"
       },
       {
-        "ioc": "stage6.stillpath8.one",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-07-27 15:30:09 UTC"
+        "ioc": "973ad2986d6eda8a8936342ba64fda6e2909cc8527a83bb2f474c13d76c0b6e7",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:28 UTC"
       },
       {
-        "ioc": "status7.skypress.click",
+        "ioc": "https://gitlab.com/ntaylor6960/dwnlnk/-/raw/3df34c7f1f9b30ef97403f50a8da1212cb8b84c6/Installer.zip",
+        "type": "url",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:28 UTC"
+      },
+      {
+        "ioc": "b371d2e01562fc0d29072ac1a56969628b6408f2368c056c3158f4fe0c609960",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:27 UTC"
+      },
+      {
+        "ioc": "2903e5e3363c1c15725a5343d31429490ce662cdc3df3c1f0dbf8ba7863aa4c3",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:27 UTC"
+      },
+      {
+        "ioc": "e472b895f15e4e17d3d35102ac6bc3eba9f707cb1da95df3ac2e7e9113825e81",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:26 UTC"
+      },
+      {
+        "ioc": "c6859833796f682e3598f65865a2853c3ecc118d7f2fb01defc24cf328e3ecad",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:25 UTC"
+      },
+      {
+        "ioc": "2e3bdd68f85755b02caa42ec0228fb8a56c964479c4f085eae67569d67440e49",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-13 15:17:24 UTC"
+      },
+      {
+        "ioc": "queue.prooutlet58.website",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-07-27 15:30:09 UTC"
+        "first_seen": "2026-11-13 10:47:43 UTC"
+      },
+      {
+        "ioc": "prooutlet58.website",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-13 10:47:43 UTC"
+      },
+      {
+        "ioc": "6ace5308f7dbbb74e690461a52045c5b976c811014f33216c9c95e229a571081",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-13 01:58:38 UTC"
+      },
+      {
+        "ioc": "d1f1e7613b9d6e10565cd9736fcfc5631f54291bfca49f011d402c5e394daa3e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-13 01:58:36 UTC"
       }
     ]
   }

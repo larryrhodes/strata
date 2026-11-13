@@ -1,27 +1,27 @@
 {
   "malware_id": "win.acr_stealer",
   "family": "ACR Stealer",
-  "generated": "2026-11-12T21:00:51.965982+00:00",
-  "recent_window_ioc_count": 82,
+  "generated": "2026-11-13T20:36:55.534654+00:00",
+  "recent_window_ioc_count": 88,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.acr_stealer",
   "description": "First introduced in March 2024, ACR Stealer is an information stealer sold as a Malware-as-a-Service (MaaS) on Russian-speaking cybercrime forums by a threat actor named \"SheldIO\". Researchers posit that this malware is an evolved version of the GrMsk Stealer, which likely aligns with the private stealer that SheldIO has been selling since July 2023. The malware, written in C++, is compatible with Windows 7 through 10, and the seller manages all command and control (C2) infrastructure. ACR Stealer can harvest system information, stored credentials, web browser cookies, cryptocurrency wallets, and configuration files for various programs. Additionally, it employs the dead drop resolver (DDR) technique to obfuscate the actual C2 infrastructure.",
   "alt_names": [],
   "associated_groups": [],
   "stats": {
-    "total_iocs": 489,
+    "total_iocs": 495,
     "date_range": {
       "earliest": "2026-04-06",
       "latest": "2026-11-12"
     },
     "ioc_type_breakdown": {
       "domain": 368,
-      "sha256_hash": 44,
-      "md5_hash": 38,
-      "sha1_hash": 37,
+      "sha256_hash": 46,
+      "md5_hash": 40,
+      "sha1_hash": 39,
       "url": 2
     },
     "confidence_distribution": {
-      "high": 488,
+      "high": 494,
       "medium": 1,
       "low": 0
     },
@@ -97,10 +97,46 @@
       "2026-11-09": 6,
       "2026-11-10": 11,
       "2026-11-11": 10,
-      "2026-11-12": 19
+      "2026-11-12": 25
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "2991e31ba14d67d9fdf41557f932742a",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-12 22:31:23 UTC"
+      },
+      {
+        "ioc": "404e8775cd5d42f4b79e5adc917364f30c3b9a17",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-12 22:31:23 UTC"
+      },
+      {
+        "ioc": "ca52a8272ad07c302836fe9c1166d0205ba7eda2da542c2645aa45c137fde2cf",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-12 22:31:23 UTC"
+      },
+      {
+        "ioc": "3e8471c791f6b1154025406361a77810",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-12 22:31:22 UTC"
+      },
+      {
+        "ioc": "a06333cbaa5674e5c99bc20c2f38543a0b440578",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-12 22:31:22 UTC"
+      },
+      {
+        "ioc": "10b84dd212e90e91c34bb62ad2b2e943f2324b5c5d24af767802415c54a56028",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-12 22:31:21 UTC"
+      },
       {
         "ioc": "brunchusher.global",
         "type": "domain",
@@ -154,42 +190,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-12 09:09:19 UTC"
-      },
-      {
-        "ioc": "larkfenway.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-12 09:09:19 UTC"
-      },
-      {
-        "ioc": "hollowfernston.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-12 09:09:19 UTC"
-      },
-      {
-        "ioc": "hazeldriftton.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-12 09:09:19 UTC"
-      },
-      {
-        "ioc": "foxdellway.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-12 09:09:19 UTC"
-      },
-      {
-        "ioc": "duskcroftley.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-12 09:09:19 UTC"
-      },
-      {
-        "ioc": "uncutmaza1.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-12 07:02:16 UTC"
       }
     ]
   }
