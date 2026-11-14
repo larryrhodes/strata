@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-11-13T20:37:00.955783+00:00",
-  "recent_window_ioc_count": 64,
+  "generated": "2026-11-14T18:48:45.245221+00:00",
+  "recent_window_ioc_count": 71,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-07",
-      "latest": "2026-11-13"
+      "latest": "2026-11-14"
     },
     "ioc_type_breakdown": {
-      "url": 240,
-      "domain": 165,
+      "url": 237,
+      "domain": 167,
       "sha256_hash": 67,
-      "ip:port": 27,
+      "ip:port": 28,
       "md5_hash": 1
     },
     "confidence_distribution": {
@@ -26,7 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-07": 120,
+      "2026-10-07": 113,
       "2026-10-08": 19,
       "2026-10-09": 94,
       "2026-10-10": 11,
@@ -40,7 +40,7 @@
       "2026-10-20": 6,
       "2026-10-21": 7,
       "2026-10-22": 37,
-      "2026-10-23": 14,
+      "2026-10-23": 13,
       "2026-10-24": 1,
       "2026-10-25": 4,
       "2026-10-26": 5,
@@ -59,12 +59,13 @@
       "2026-11-10": 1,
       "2026-11-11": 3,
       "2026-11-12": 40,
-      "2026-11-13": 11
+      "2026-11-13": 11,
+      "2026-11-14": 8
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 9
+        "count": 10
       },
       {
         "port": "8080",
@@ -104,6 +105,54 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "ghostnfc.site",
+        "type": "domain",
+        "confidence": 90,
+        "first_seen": "2026-11-14 07:51:37 UTC"
+      },
+      {
+        "ioc": "teste.ghostnfc.site",
+        "type": "domain",
+        "confidence": 90,
+        "first_seen": "2026-11-14 07:51:37 UTC"
+      },
+      {
+        "ioc": "panel.legion-x.tech",
+        "type": "domain",
+        "confidence": 85,
+        "first_seen": "2026-11-14 07:51:34 UTC"
+      },
+      {
+        "ioc": "http://92.118.232.18:443/api/heartbeat",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-14 07:51:26 UTC"
+      },
+      {
+        "ioc": "92.118.232.18:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-14 07:51:26 UTC"
+      },
+      {
+        "ioc": "http://92.118.232.18:443/api/register",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-14 07:51:24 UTC"
+      },
+      {
+        "ioc": "http://92.118.232.18:443/api/loot",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-14 07:51:24 UTC"
+      },
+      {
+        "ioc": "http://92.118.232.18:443/api/trace",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-14 07:51:23 UTC"
+      },
       {
         "ioc": "asyncify.fun",
         "type": "domain",
@@ -145,54 +194,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-13 13:26:29 UTC"
-      },
-      {
-        "ioc": "bedrockcoalition.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-13 13:26:29 UTC"
-      },
-      {
-        "ioc": "api.localhost8000.fun",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-13 08:27:46 UTC"
-      },
-      {
-        "ioc": "solanaboss.fun",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-13 08:27:46 UTC"
-      },
-      {
-        "ioc": "2fb07d96121058a0a1d7d28a950e95246ed82f9d19cd0b112ae43c401aace8b0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 03:58:30 UTC"
-      },
-      {
-        "ioc": "https://wire-pixel.com/api/metrics/run?event=started",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-12 10:57:41 UTC"
-      },
-      {
-        "ioc": "https://wire-pixel.com/api/metrics/run?event=pasted",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-12 10:57:40 UTC"
-      },
-      {
-        "ioc": "https://qm.anek4d.org/wc/gate",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-11-12 06:49:46 UTC"
-      },
-      {
-        "ioc": "https://pr.anek4d.org/qx/gate",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-11-12 06:49:46 UTC"
       }
     ]
   }

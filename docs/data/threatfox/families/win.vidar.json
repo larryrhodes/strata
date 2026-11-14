@@ -1,8 +1,8 @@
 {
   "malware_id": "win.vidar",
   "family": "Vidar",
-  "generated": "2026-11-13T20:36:40.331153+00:00",
-  "recent_window_ioc_count": 354,
+  "generated": "2026-11-14T18:48:24.255484+00:00",
+  "recent_window_ioc_count": 351,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar",
   "description": "Vidar is a forked malware based on Arkei. It seems this stealer is one of the first that is grabbing information on 2FA Software and Tor Browser.",
   "alt_names": [],
@@ -10,16 +10,16 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-11-04",
-      "latest": "2026-11-13"
+      "earliest": "2026-11-05",
+      "latest": "2026-11-14"
     },
     "ioc_type_breakdown": {
-      "domain": 426,
-      "url": 17,
-      "ip:port": 15,
+      "domain": 422,
+      "url": 25,
       "md5_hash": 14,
       "sha1_hash": 14,
-      "sha256_hash": 14
+      "sha256_hash": 14,
+      "ip:port": 11
     },
     "confidence_distribution": {
       "high": 489,
@@ -27,8 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-11-04": 50,
-      "2026-11-05": 50,
+      "2026-11-05": 43,
       "2026-11-06": 48,
       "2026-11-07": 69,
       "2026-11-08": 59,
@@ -36,104 +35,105 @@
       "2026-11-10": 50,
       "2026-11-11": 47,
       "2026-11-12": 35,
-      "2026-11-13": 39
+      "2026-11-13": 40,
+      "2026-11-14": 56
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 15
+        "count": 11
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "cs.apacu500.org",
+        "ioc": "9c6d2bd1beaac1d7e0f67c8680d11df7",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-14 18:11:39 UTC"
+      },
+      {
+        "ioc": "a2cb8a9398e88f4b81dd24a02cd2302aed3cacf5",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-14 18:11:39 UTC"
+      },
+      {
+        "ioc": "7c2c2e9b864f38e2b915cb87250f51b2a88b95b3a8737fd9588107da125e9b7e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-14 18:11:38 UTC"
+      },
+      {
+        "ioc": "7ecfb111f55371639acb3d0bcdd20e01",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-14 18:11:34 UTC"
+      },
+      {
+        "ioc": "2ef352398ec899b418746a002f51fb16ebfc6fe3",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-14 18:11:34 UTC"
+      },
+      {
+        "ioc": "0e5e6d03bf59d4f929b6585e2d284d84d448b946ebe28a0ba6f21d81a25c0bca",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-14 18:11:34 UTC"
+      },
+      {
+        "ioc": "e.appel4d.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-13 19:05:34 UTC"
+        "first_seen": "2026-11-14 18:05:34 UTC"
       },
       {
-        "ioc": "cb7c579ab778ffd1751dcd9b5f036589",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:44 UTC"
-      },
-      {
-        "ioc": "aa3e9d882ac75c22f1843b6e7b2706b1b3fc9829",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:44 UTC"
-      },
-      {
-        "ioc": "50774628062fd31b15c9873660cf033e457d5b88001de1a3a2779f800b6ba16b",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:43 UTC"
-      },
-      {
-        "ioc": "4df68e033eec7ee2ccf8474607ae1f7c",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:43 UTC"
-      },
-      {
-        "ioc": "dba026b327c383284a01e36c955d7c97d4aec6e3",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:43 UTC"
-      },
-      {
-        "ioc": "d45361634083c162b50eca92a50e0410c538e31f51508b74f047415ab8ebb9e1",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:43 UTC"
-      },
-      {
-        "ioc": "15d0b0f44a40bd7fa1b7118ad81d094d",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:16 UTC"
-      },
-      {
-        "ioc": "cd87da979087f12606a1ab99b37f1ab9af0d49fa",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:16 UTC"
-      },
-      {
-        "ioc": "a5aff9204c3ebd5da9ec59ecbb77ef0dd7c479fdfdb951f8bb3cf77038fb8fc5",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:16 UTC"
-      },
-      {
-        "ioc": "22207c8cc9304136a53b1871c3990978",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:09 UTC"
-      },
-      {
-        "ioc": "58f0e102c28d3ebdd5f479b1f38c8a1f389f1ed9",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:09 UTC"
-      },
-      {
-        "ioc": "9e8144a666abd838ab928f8213313c88967e15a3cd9616c8f011964d6feaa08f",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-13 15:28:09 UTC"
-      },
-      {
-        "ioc": "ov.apacu500.org",
+        "ioc": "c.geng7.org",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-13 15:05:34 UTC"
+        "first_seen": "2026-11-14 17:10:34 UTC"
       },
       {
-        "ioc": "g7.anka69.org",
+        "ioc": "l5.appel4d.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-13 15:05:34 UTC"
+        "first_seen": "2026-11-14 17:05:34 UTC"
+      },
+      {
+        "ioc": "z8t.appel4d.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-14 16:05:34 UTC"
+      },
+      {
+        "ioc": "h99.anka69.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-14 15:15:34 UTC"
+      },
+      {
+        "ioc": "appel4d.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-14 15:05:35 UTC"
+      },
+      {
+        "ioc": "kc.appel4d.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-14 15:05:34 UTC"
+      },
+      {
+        "ioc": "jk.apaljitu.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-14 15:05:34 UTC"
+      },
+      {
+        "ioc": "zs.apij4ya.org",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-14 14:05:34 UTC"
       }
     ]
   }

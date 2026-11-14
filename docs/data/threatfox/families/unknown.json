@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown",
   "family": "Unknown malware",
-  "generated": "2026-11-13T20:36:34.844300+00:00",
-  "recent_window_ioc_count": 958,
+  "generated": "2026-11-14T18:48:18.749656+00:00",
+  "recent_window_ioc_count": 1000,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown",
   "description": null,
   "alt_names": [],
@@ -11,146 +11,155 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-11-13",
-      "latest": "2026-11-13"
+      "latest": "2026-11-14"
     },
     "ioc_type_breakdown": {
-      "domain": 471,
-      "url": 18,
-      "ip:port": 10,
-      "sha256_hash": 1
+      "domain": 381,
+      "ip:port": 75,
+      "url": 30,
+      "sha256_hash": 14
     },
     "confidence_distribution": {
-      "high": 500,
-      "medium": 0,
+      "high": 463,
+      "medium": 37,
       "low": 0
     },
     "activity_timeline": {
-      "2026-11-13": 500
+      "2026-11-13": 400,
+      "2026-11-14": 100
     },
     "top_ports": [
+      {
+        "port": "3333",
+        "count": 17
+      },
+      {
+        "port": "443",
+        "count": 5
+      },
+      {
+        "port": "8080",
+        "count": 4
+      },
+      {
+        "port": "8888",
+        "count": 4
+      },
+      {
+        "port": "6667",
+        "count": 4
+      },
+      {
+        "port": "22",
+        "count": 3
+      },
       {
         "port": "65000",
         "count": 3
       },
       {
-        "port": "18084",
-        "count": 1
+        "port": "7443",
+        "count": 2
       },
       {
-        "port": "18082",
-        "count": 1
+        "port": "18083",
+        "count": 2
       },
       {
-        "port": "80",
-        "count": 1
-      },
-      {
-        "port": "22",
-        "count": 1
-      },
-      {
-        "port": "9998",
-        "count": 1
-      },
-      {
-        "port": "8585",
-        "count": 1
-      },
-      {
-        "port": "8081",
-        "count": 1
+        "port": "18080",
+        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "https://3g1ln6r5bajofdx.icu/",
-        "type": "url",
+        "ioc": "pdfdocumentsharepoint.com",
+        "type": "domain",
         "confidence": 90,
-        "first_seen": "2026-11-13 20:30:42 UTC"
+        "first_seen": "2026-11-14 17:01:16 UTC"
       },
       {
-        "ioc": "129.211.183.201:18084",
+        "ioc": "https://metaslate.org/uBF7J3Oasiut/pE7rAq5Rz02L.php",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-14 15:21:38 UTC"
+      },
+      {
+        "ioc": "67.215.228.4:25774",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-14 15:18:54 UTC"
+      },
+      {
+        "ioc": "tz.5671234.xyz",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-14 15:18:54 UTC"
+      },
+      {
+        "ioc": "f61e9548ea915f7d052b1b929bb5ddf597a3fd93ee208b14b0e03553b98f7583",
+        "type": "sha256_hash",
+        "confidence": 80,
+        "first_seen": "2026-11-14 14:58:43 UTC"
+      },
+      {
+        "ioc": "5.188.86.227:7443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-13 20:05:06 UTC"
+        "first_seen": "2026-11-14 13:05:06 UTC"
       },
       {
-        "ioc": "129.211.183.201:18082",
+        "ioc": "47.238.116.190:8011",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-13 20:05:05 UTC"
+        "first_seen": "2026-11-14 13:05:04 UTC"
       },
       {
-        "ioc": "asyncify.fun",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-13 19:50:51 UTC"
-      },
-      {
-        "ioc": "206.189.166.14:65000",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-13 19:44:12 UTC"
-      },
-      {
-        "ioc": "167.99.175.19:65000",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-13 19:43:45 UTC"
-      },
-      {
-        "ioc": "138.68.63.70:65000",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-13 19:43:24 UTC"
-      },
-      {
-        "ioc": "129.211.183.201:80",
+        "ioc": "129.211.183.201:8080",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-13 19:05:08 UTC"
+        "first_seen": "2026-11-14 13:05:04 UTC"
       },
       {
-        "ioc": "103.112.172.143:22",
+        "ioc": "161.248.179.27:8080",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-14 12:40:21 UTC"
+      },
+      {
+        "ioc": "129.211.183.201:18083",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-13 19:05:06 UTC"
+        "first_seen": "2026-11-14 10:05:04 UTC"
       },
       {
-        "ioc": "petalsinplanters.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-13 15:04:23 UTC"
+        "ioc": "9e4d3c1ddd607faa8813efddb0ca71ee81d7ae9a23898eb21f9b100200f2b039",
+        "type": "sha256_hash",
+        "confidence": 80,
+        "first_seen": "2026-11-14 09:58:43 UTC"
       },
       {
-        "ioc": "maggiefrankcarrier.com",
-        "type": "domain",
+        "ioc": "41.232.128.104:8443",
+        "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-13 15:04:23 UTC"
+        "first_seen": "2026-11-14 09:15:40 UTC"
       },
       {
-        "ioc": "mhpfitt.com",
+        "ioc": "lapoire10.hopto.org",
         "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-13 15:04:23 UTC"
+        "confidence": 100,
+        "first_seen": "2026-11-14 09:15:37 UTC"
       },
       {
-        "ioc": "miraslawfirm.com",
-        "type": "domain",
+        "ioc": "http://85.11.167.150/bins/kla.sh",
+        "type": "url",
         "confidence": 75,
-        "first_seen": "2026-11-13 15:04:23 UTC"
+        "first_seen": "2026-11-14 09:14:39 UTC"
       },
       {
-        "ioc": "mopmamasllc.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-13 15:04:23 UTC"
-      },
-      {
-        "ioc": "muyuna-advisory.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-13 15:04:23 UTC"
+        "ioc": "129.211.183.201:18080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-14 09:05:06 UTC"
       }
     ]
   }
