@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-11-15T19:26:51.586109+00:00",
-  "recent_window_ioc_count": 60,
+  "generated": "2026-11-16T22:59:40.662909+00:00",
+  "recent_window_ioc_count": 64,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,13 +12,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-04",
-      "latest": "2026-11-15"
+      "earliest": "2026-08-05",
+      "latest": "2026-11-16"
     },
     "ioc_type_breakdown": {
-      "ip:port": 236,
-      "domain": 115,
-      "sha256_hash": 61,
+      "ip:port": 234,
+      "domain": 116,
+      "sha256_hash": 62,
       "md5_hash": 41,
       "sha1_hash": 41,
       "url": 6
@@ -29,8 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-04": 5,
-      "2026-08-05": 7,
+      "2026-08-05": 3,
       "2026-08-06": 4,
       "2026-08-07": 6,
       "2026-08-10": 9,
@@ -108,7 +107,8 @@
       "2026-11-11": 5,
       "2026-11-12": 11,
       "2026-11-13": 5,
-      "2026-11-15": 1
+      "2026-11-15": 1,
+      "2026-11-16": 9
     },
     "top_ports": [
       {
@@ -121,7 +121,7 @@
       },
       {
         "port": "443",
-        "count": 16
+        "count": 15
       },
       {
         "port": "7000",
@@ -133,7 +133,7 @@
       },
       {
         "port": "8823",
-        "count": 8
+        "count": 6
       },
       {
         "port": "2021",
@@ -153,6 +153,60 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "92d46c4dc526c68e7cb7513a22eb171a",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-16 16:29:24 UTC"
+      },
+      {
+        "ioc": "b26a2ec6234e665bf2bc6c311642e0bfee06558c",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-16 16:29:24 UTC"
+      },
+      {
+        "ioc": "d89e03ca772798f867f08e1c9ce2b322c949d8df9a8fbf069a161fd2004a638e",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-16 16:29:23 UTC"
+      },
+      {
+        "ioc": "930124f5ec42a2b6919414db0b140d81",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-16 16:29:23 UTC"
+      },
+      {
+        "ioc": "02efbad06931df37cc8ad68c93803ed562f5db2c",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-16 16:29:23 UTC"
+      },
+      {
+        "ioc": "668b7f7e3272dc09f221c7635fd1e485cf0b081123338f1475d907088be7f0f0",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-16 16:29:22 UTC"
+      },
+      {
+        "ioc": "155.103.71.13:2556",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-16 16:05:18 UTC"
+      },
+      {
+        "ioc": "bluettoo0123.duckdns.org",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-16 16:05:16 UTC"
+      },
+      {
+        "ioc": "109.248.150.196:3380",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-16 10:50:27 UTC"
+      },
       {
         "ioc": "add68e988346756c2aa0aba09458c2e00415d35a318c2392ad76290907702834",
         "type": "sha256_hash",
@@ -188,60 +242,6 @@
         "type": "ip:port",
         "confidence": 75,
         "first_seen": "2026-11-13 08:50:16 UTC"
-      },
-      {
-        "ioc": "bcead673c59140d3ca10b3e82cf5c1e7",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-12 22:31:10 UTC"
-      },
-      {
-        "ioc": "1aaa1dc4b278bcee5ac65ba3ba6fc6f00d82a96e",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-12 22:31:10 UTC"
-      },
-      {
-        "ioc": "6025cc6c8a9d28d181d85978c7059bce526f25611aa53a63a4f1c1fe386157f4",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-12 22:31:10 UTC"
-      },
-      {
-        "ioc": "0c6fe0739ca6942a806047d5bc9b19bc",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-12 22:30:50 UTC"
-      },
-      {
-        "ioc": "6b259335459c21b23d80648f42f60e0e482217bb",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-12 22:30:50 UTC"
-      },
-      {
-        "ioc": "da46ac18b56b22f59219193edd2c04c91a5a791286926dfd768eda5109ff1c1b",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-12 22:30:49 UTC"
-      },
-      {
-        "ioc": "145.63.138.47:9019",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-12 12:10:18 UTC"
-      },
-      {
-        "ioc": "151.244.228.211:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-12 09:52:59 UTC"
-      },
-      {
-        "ioc": "203.202.232.148:3131",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-12 09:45:20 UTC"
       }
     ]
   }
