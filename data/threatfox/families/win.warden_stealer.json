@@ -1,8 +1,8 @@
 {
   "malware_id": "win.warden_stealer",
   "family": "WARDENStealer",
-  "generated": "2026-11-16T22:59:29.063289+00:00",
-  "recent_window_ioc_count": 101,
+  "generated": "2026-11-17T21:52:10.218573+00:00",
+  "recent_window_ioc_count": 100,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.warden_stealer",
   "description": null,
   "alt_names": [],
@@ -10,13 +10,13 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-21",
-      "latest": "2026-11-16"
+      "earliest": "2026-10-22",
+      "latest": "2026-11-17"
     },
     "ioc_type_breakdown": {
-      "url": 355,
+      "url": 351,
       "domain": 108,
-      "sha256_hash": 36,
+      "sha256_hash": 40,
       "ip:port": 1
     },
     "confidence_distribution": {
@@ -25,8 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-21": 3,
-      "2026-10-22": 9,
+      "2026-10-22": 7,
       "2026-10-23": 13,
       "2026-10-24": 8,
       "2026-10-25": 1,
@@ -51,7 +50,8 @@
       "2026-11-13": 19,
       "2026-11-14": 47,
       "2026-11-15": 17,
-      "2026-11-16": 4
+      "2026-11-16": 4,
+      "2026-11-17": 5
     },
     "top_ports": [
       {
@@ -60,6 +60,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://drovlix.com/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-17 16:00:17 UTC"
+      },
+      {
+        "ioc": "e768f1d3e6388eb82f4d7387850d0b07900c695d8b2ed8d05c42a275ef786c47",
+        "type": "sha256_hash",
+        "confidence": 75,
+        "first_seen": "2026-11-17 04:59:09 UTC"
+      },
+      {
+        "ioc": "dc0092c25a090b3b066be0bfe1c660adf3a09e864ca9c947215c99b743e08ec9",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-17 01:59:26 UTC"
+      },
+      {
+        "ioc": "b0e8793b5c94393b5f3c7a6683d27c19a2b0010f52e4390f059321f8573c2147",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-17 01:59:14 UTC"
+      },
+      {
+        "ioc": "2bea8dc3ce38dcf05b1bc7aa179ecba9596bf25d8e7f2d9ca0e3d27564af1868",
+        "type": "sha256_hash",
+        "confidence": 90,
+        "first_seen": "2026-11-17 00:59:23 UTC"
+      },
       {
         "ioc": "22b3baae233d5ae825d431ecc82502061201cebbffe358ca5585227760509ae0",
         "type": "sha256_hash",
@@ -116,36 +146,6 @@
       },
       {
         "ioc": "seedless-tangem.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-15 07:11:18 UTC"
-      },
-      {
-        "ioc": "nexdova.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-15 07:11:18 UTC"
-      },
-      {
-        "ioc": "fildova.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-15 07:11:18 UTC"
-      },
-      {
-        "ioc": "drovlix.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-15 07:11:18 UTC"
-      },
-      {
-        "ioc": "backup-tangem.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-15 07:11:18 UTC"
-      },
-      {
-        "ioc": "authorize-tangem.com",
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-15 07:11:18 UTC"

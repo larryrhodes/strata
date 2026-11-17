@@ -1,8 +1,8 @@
 {
   "malware_id": "win.cobalt_strike",
   "family": "Cobalt Strike",
-  "generated": "2026-11-16T22:59:22.000919+00:00",
-  "recent_window_ioc_count": 181,
+  "generated": "2026-11-17T21:52:04.778878+00:00",
+  "recent_window_ioc_count": 185,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.cobalt_strike",
   "description": "Cobalt Strike is a paid penetration testing product that allows an attacker to deploy an agent named 'Beacon' on the victim machine. Beacon includes a wealth of functionality to the attacker, including, but not limited to command execution, key logging, file transfer, SOCKS proxying, privilege escalation, mimikatz, port scanning and lateral movement. Beacon is in-memory/file-less, in that it consists of stageless or multi-stage shellcode that once loaded by exploiting a vulnerability or executing a shellcode loader, will reflectively load itself into the memory of a process without touching the disk. It supports C2 and staging over HTTP, HTTPS, DNS, SMB named pipes as well as forward and reverse TCP; Beacons can be daisy-chained. Cobalt Strike comes with a toolkit for developing shellcode loaders, called Artifact Kit.\r\n\r\nThe Beacon implant has become popular amongst targeted attackers and criminal users as it is well written, stable, and highly customizable.",
   "alt_names": [
@@ -37,8 +37,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-29",
-      "latest": "2026-11-16"
+      "earliest": "2026-10-31",
+      "latest": "2026-11-17"
     },
     "ioc_type_breakdown": {
       "ip:port": 487,
@@ -47,14 +47,12 @@
       "sha256_hash": 1
     },
     "confidence_distribution": {
-      "high": 349,
-      "medium": 151,
+      "high": 352,
+      "medium": 148,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-29": 19,
-      "2026-10-30": 3,
-      "2026-10-31": 23,
+      "2026-10-31": 8,
       "2026-11-01": 43,
       "2026-11-02": 25,
       "2026-11-03": 34,
@@ -70,7 +68,8 @@
       "2026-11-13": 14,
       "2026-11-14": 18,
       "2026-11-15": 14,
-      "2026-11-16": 30
+      "2026-11-16": 30,
+      "2026-11-17": 37
     },
     "top_ports": [
       {
@@ -79,7 +78,7 @@
       },
       {
         "port": "8080",
-        "count": 61
+        "count": 62
       },
       {
         "port": "80",
@@ -87,27 +86,27 @@
       },
       {
         "port": "50050",
-        "count": 40
+        "count": 38
       },
       {
         "port": "22",
-        "count": 36
-      },
-      {
-        "port": "8443",
-        "count": 11
+        "count": 37
       },
       {
         "port": "53",
-        "count": 11
+        "count": 13
       },
       {
-        "port": "8888",
+        "port": "8443",
         "count": 10
       },
       {
+        "port": "8888",
+        "count": 9
+      },
+      {
         "port": "9999",
-        "count": 7
+        "count": 6
       },
       {
         "port": "12564",
@@ -116,94 +115,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "62.234.49.223:8888",
+        "ioc": "45.251.240.174:49665",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 20:05:06 UTC"
+        "first_seen": "2026-11-17 19:05:06 UTC"
       },
       {
-        "ioc": "62.234.49.223:22",
+        "ioc": "47.92.212.48:8080",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 19:05:09 UTC"
+        "first_seen": "2026-11-17 17:05:06 UTC"
       },
       {
-        "ioc": "124.71.5.74:8080",
+        "ioc": "47.92.212.48:80",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 19:05:07 UTC"
+        "first_seen": "2026-11-17 16:05:07 UTC"
       },
       {
-        "ioc": "124.71.5.74:80",
+        "ioc": "47.92.212.48:443",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 19:05:07 UTC"
+        "first_seen": "2026-11-17 16:05:06 UTC"
       },
       {
-        "ioc": "124.71.5.74:443",
+        "ioc": "47.92.212.48:22",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 19:05:07 UTC"
+        "first_seen": "2026-11-17 16:05:06 UTC"
       },
       {
-        "ioc": "124.71.5.74:22",
+        "ioc": "45.251.240.174:49668",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 19:05:05 UTC"
+        "first_seen": "2026-11-17 16:05:06 UTC"
       },
       {
-        "ioc": "cdn.cloudfront-assets.online",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-16 13:45:38 UTC"
-      },
-      {
-        "ioc": "5.189.191.124:8080",
+        "ioc": "45.251.240.174:49666",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 09:05:04 UTC"
+        "first_seen": "2026-11-17 16:05:06 UTC"
       },
       {
-        "ioc": "5.189.191.124:80",
+        "ioc": "45.251.240.174:49664",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 08:05:07 UTC"
+        "first_seen": "2026-11-17 15:05:07 UTC"
       },
       {
-        "ioc": "5.189.191.124:443",
+        "ioc": "45.251.240.174:5357",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 08:05:07 UTC"
+        "first_seen": "2026-11-17 15:05:06 UTC"
       },
       {
-        "ioc": "https://bluepeak.normanitavo.workers.dev/watch",
-        "type": "url",
+        "ioc": "45.251.240.174:22",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 06:42:58 UTC"
+        "first_seen": "2026-11-17 15:05:06 UTC"
       },
       {
-        "ioc": "https://common.normanitavo.workers.dev/youtubei/v1/log_event",
-        "type": "url",
+        "ioc": "101.42.255.92:9100",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 06:42:58 UTC"
+        "first_seen": "2026-11-17 15:05:05 UTC"
       },
       {
-        "ioc": "https://wisp.vincc9.workers.dev",
-        "type": "url",
+        "ioc": "1.15.82.253:22",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 06:40:03 UTC"
+        "first_seen": "2026-11-17 14:05:07 UTC"
       },
       {
-        "ioc": "https://cedar-stone.normanitavo.workers.dev/watch",
-        "type": "url",
+        "ioc": "162.14.122.146:8083",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 06:40:03 UTC"
+        "first_seen": "2026-11-17 14:05:07 UTC"
       },
       {
-        "ioc": "https://bluepeak.normanitavo.workers.dev/youtubei/v1/like/like",
-        "type": "url",
+        "ioc": "45.251.240.174:49667",
+        "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-16 06:40:03 UTC"
+        "first_seen": "2026-11-17 13:05:05 UTC"
+      },
+      {
+        "ioc": "45.251.240.174:5986",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-17 13:05:05 UTC"
       }
     ]
   }

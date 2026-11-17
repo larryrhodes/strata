@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-16T22:59:32.225810+00:00",
-  "recent_window_ioc_count": 85,
+  "generated": "2026-11-17T21:52:14.842868+00:00",
+  "recent_window_ioc_count": 82,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-27",
-      "latest": "2026-11-13"
+      "earliest": "2026-10-28",
+      "latest": "2026-11-17"
     },
     "ioc_type_breakdown": {
       "domain": 498,
@@ -23,8 +23,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-27": 2,
-      "2026-10-28": 45,
+      "2026-10-28": 44,
       "2026-10-29": 29,
       "2026-10-30": 39,
       "2026-10-31": 31,
@@ -39,10 +38,29 @@
       "2026-11-09": 7,
       "2026-11-10": 6,
       "2026-11-11": 77,
-      "2026-11-13": 2
+      "2026-11-13": 2,
+      "2026-11-17": 3
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "aah.celikit.my",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-17 12:31:58 UTC"
+      },
+      {
+        "ioc": "marvel.neverlandpodcast.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-17 10:40:06 UTC"
+      },
+      {
+        "ioc": "ro.devotions.eu",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-17 08:42:26 UTC"
+      },
       {
         "ioc": "vbnbuildings.ro",
         "type": "domain",
@@ -111,24 +129,6 @@
       },
       {
         "ioc": "jul.juelenemaerke.dk",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
-      },
-      {
-        "ioc": "jssbsurveys.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
-      },
-      {
-        "ioc": "jobt5.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
-      },
-      {
-        "ioc": "jobsarkari.co",
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-11 09:49:20 UTC"

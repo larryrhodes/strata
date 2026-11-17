@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-11-16T22:59:30.746681+00:00",
-  "recent_window_ioc_count": 94,
+  "generated": "2026-11-17T21:52:11.728634+00:00",
+  "recent_window_ioc_count": 98,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -11,13 +11,13 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-07",
-      "latest": "2026-11-16"
+      "latest": "2026-11-17"
     },
     "ioc_type_breakdown": {
-      "url": 243,
-      "domain": 144,
-      "sha256_hash": 79,
-      "ip:port": 33,
+      "url": 244,
+      "domain": 140,
+      "sha256_hash": 80,
+      "ip:port": 35,
       "md5_hash": 1
     },
     "confidence_distribution": {
@@ -26,7 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-07": 82,
+      "2026-10-07": 77,
       "2026-10-08": 19,
       "2026-10-09": 94,
       "2026-10-10": 11,
@@ -62,12 +62,13 @@
       "2026-11-13": 11,
       "2026-11-14": 9,
       "2026-11-15": 2,
-      "2026-11-16": 28
+      "2026-11-16": 28,
+      "2026-11-17": 5
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 14
+        "count": 15
       },
       {
         "port": "80",
@@ -90,6 +91,10 @@
         "count": 2
       },
       {
+        "port": "5010",
+        "count": 1
+      },
+      {
         "port": "8443",
         "count": 1
       },
@@ -100,13 +105,39 @@
       {
         "port": "5920",
         "count": 1
-      },
-      {
-        "port": "79",
-        "count": 1
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "hyperbeamtw.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-17 19:40:37 UTC"
+      },
+      {
+        "ioc": "1701ba4ead980ff9188ec6f9f27a555c3dfb4ef8bf3b3570008848620b65c137",
+        "type": "sha256_hash",
+        "confidence": 75,
+        "first_seen": "2026-11-17 15:27:25 UTC"
+      },
+      {
+        "ioc": "95.182.116.32:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-17 15:27:25 UTC"
+      },
+      {
+        "ioc": "https://xeffstealer.xyz/api/ingest",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-17 13:30:39 UTC"
+      },
+      {
+        "ioc": "192.162.199.242:5010",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-17 13:16:06 UTC"
+      },
       {
         "ioc": "https://cloudvault-app.com/api/bootstrap",
         "type": "url",
@@ -166,36 +197,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-11-16 06:52:50 UTC"
-      },
-      {
-        "ioc": "horizonlauncher.net",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-16 06:52:49 UTC"
-      },
-      {
-        "ioc": "93.190.247.190:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-16 06:52:48 UTC"
-      },
-      {
-        "ioc": "45.153.219.218:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-16 06:52:48 UTC"
-      },
-      {
-        "ioc": "93.190.247.190:80",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-16 06:52:47 UTC"
-      },
-      {
-        "ioc": "64facbab4ac0136dbaeb3f8b902c2e4788450c264a9aaf253f7b3dcbbd966606",
-        "type": "sha256_hash",
-        "confidence": 100,
-        "first_seen": "2026-11-16 06:52:44 UTC"
       }
     ]
   }
