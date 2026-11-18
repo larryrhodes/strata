@@ -1,8 +1,8 @@
 {
   "malware_id": "win.sliver",
   "family": "Sliver",
-  "generated": "2026-11-16T22:59:39.217666+00:00",
-  "recent_window_ioc_count": 65,
+  "generated": "2026-11-18T21:31:20.294092+00:00",
+  "recent_window_ioc_count": 75,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.sliver",
   "description": "According to VK9 Seecurity, Sliver is a Command and Control (C2) system made for penetration testers, red teams, and advanced persistent threats. It generates implants (slivers) that can run on virtually every architecture out there, and securely manage these connections through a central server. Sliver supports multiple callback protocols including DNS, TCP, and HTTP(S) to make egress simple, even when those pesky blue teams block your domains. You can even have multiple operators (players) simultaneously commanding your sliver army.",
   "alt_names": [],
@@ -10,26 +10,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-11",
-      "latest": "2026-11-16"
+      "earliest": "2026-10-14",
+      "latest": "2026-11-18"
     },
     "ioc_type_breakdown": {
-      "ip:port": 487,
+      "ip:port": 474,
+      "url": 13,
       "md5_hash": 4,
       "sha1_hash": 4,
       "sha256_hash": 4,
       "domain": 1
     },
     "confidence_distribution": {
-      "high": 149,
-      "medium": 351,
+      "high": 150,
+      "medium": 350,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-11": 14,
-      "2026-10-12": 15,
-      "2026-10-13": 3,
-      "2026-10-14": 13,
+      "2026-10-14": 12,
       "2026-10-15": 13,
       "2026-10-16": 11,
       "2026-10-17": 5,
@@ -62,12 +60,14 @@
       "2026-11-13": 6,
       "2026-11-14": 4,
       "2026-11-15": 9,
-      "2026-11-16": 3
+      "2026-11-16": 3,
+      "2026-11-17": 7,
+      "2026-11-18": 26
     },
     "top_ports": [
       {
         "port": "31337",
-        "count": 363
+        "count": 351
       },
       {
         "port": "443",
@@ -79,7 +79,7 @@
       },
       {
         "port": "8443",
-        "count": 5
+        "count": 4
       },
       {
         "port": "39182",
@@ -108,94 +108,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "43.251.224.222:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-16 05:11:19 UTC"
+        "ioc": "92607ed1a04e3dd3f5a3c6eab8da4fdf",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-18 14:33:22 UTC"
       },
       {
-        "ioc": "45.116.78.205:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-16 05:11:07 UTC"
+        "ioc": "cbdd818e1481f7ac32b875924e8a10a2568da948",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-18 14:33:22 UTC"
       },
       {
-        "ioc": "23.168.152.35:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-16 05:04:46 UTC"
+        "ioc": "31f7eb59929b8135cf054058b73483b5d520fdd89ebb8326792eb8e624edda00",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-18 14:33:22 UTC"
       },
       {
-        "ioc": "167.172.167.65:8443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-15 19:43:40 UTC"
-      },
-      {
-        "ioc": "121.89.84.167:31337",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-15 06:56:17 UTC"
-      },
-      {
-        "ioc": "39.108.102.94:31337",
+        "ioc": "85.239.231.39:31337",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-15 06:56:15 UTC"
+        "first_seen": "2026-11-18 13:22:57 UTC"
       },
       {
-        "ioc": "124.156.204.199:31337",
-        "type": "ip:port",
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/b.gif",
+        "type": "url",
         "confidence": 100,
-        "first_seen": "2026-11-15 06:56:15 UTC"
+        "first_seen": "2026-11-18 13:22:47 UTC"
       },
       {
-        "ioc": "103.236.55.218:31337",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-15 06:56:15 UTC"
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/a.gif",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:47 UTC"
       },
       {
-        "ioc": "38.114.90.236:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-15 05:30:05 UTC"
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/tad",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:47 UTC"
       },
       {
-        "ioc": "89.82.48.41:41423",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-15 05:10:17 UTC"
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/d.gif",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:46 UTC"
       },
       {
-        "ioc": "150.40.98.62:40040",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-15 05:08:42 UTC"
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/c.gif",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:46 UTC"
       },
       {
-        "ioc": "178.18.241.48:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-15 05:04:11 UTC"
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/s.dat",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:45 UTC"
       },
       {
-        "ioc": "189.105.68.230:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-14 05:30:32 UTC"
+        "ioc": "https://mm2027.oss-cn-hangzhou.aliyuncs.com/drops.jpg",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:44 UTC"
       },
       {
-        "ioc": "45.61.161.134:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-14 05:30:21 UTC"
+        "ioc": "https://3byy0j.oss-cn-beijing.aliyuncs.com/s.jpg",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:44 UTC"
       },
       {
-        "ioc": "45.63.123.166:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-14 05:29:52 UTC"
+        "ioc": "https://mm2027.oss-cn-hangzhou.aliyuncs.com/ooo.jpg",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:43 UTC"
+      },
+      {
+        "ioc": "https://mm2027.oss-cn-hangzhou.aliyuncs.com/f.dat",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:43 UTC"
+      },
+      {
+        "ioc": "https://mm2027.oss-cn-hangzhou.aliyuncs.com/t3t.jpg",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-18 13:22:42 UTC"
       }
     ]
   }

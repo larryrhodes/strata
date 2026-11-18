@@ -1,8 +1,8 @@
 {
   "malware_id": "win.pure_rat",
   "family": "PureRAT",
-  "generated": "2026-11-17T21:52:16.335363+00:00",
-  "recent_window_ioc_count": 81,
+  "generated": "2026-11-18T21:31:21.422295+00:00",
+  "recent_window_ioc_count": 74,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.pure_rat",
   "description": "According to Morphisec, this RAT combines advanced in-memory execution, API and resource resolution at runtime, and layered evasion techniques. They have named it \u2018Resolver\u2019 due to its heavy reliance on runtime resolution mechanisms and dynamic resource handling, which make static and behavioral analysis significantly more difficult.",
   "alt_names": [
@@ -14,7 +14,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-21",
-      "latest": "2026-11-17"
+      "latest": "2026-11-18"
     },
     "ioc_type_breakdown": {
       "ip:port": 429,
@@ -29,7 +29,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-21": 19,
+      "2026-10-21": 13,
       "2026-10-22": 20,
       "2026-10-23": 15,
       "2026-10-24": 17,
@@ -56,12 +56,13 @@
       "2026-11-14": 11,
       "2026-11-15": 5,
       "2026-11-16": 8,
-      "2026-11-17": 12
+      "2026-11-17": 12,
+      "2026-11-18": 6
     },
     "top_ports": [
       {
         "port": "56003",
-        "count": 107
+        "count": 110
       },
       {
         "port": "443",
@@ -69,11 +70,11 @@
       },
       {
         "port": "56002",
-        "count": 88
+        "count": 87
       },
       {
         "port": "56001",
-        "count": 82
+        "count": 80
       },
       {
         "port": "6767",
@@ -82,6 +83,10 @@
       {
         "port": "442",
         "count": 4
+      },
+      {
+        "port": "7222",
+        "count": 3
       },
       {
         "port": "444",
@@ -94,13 +99,45 @@
       {
         "port": "5000",
         "count": 2
-      },
-      {
-        "port": "7222",
-        "count": 2
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "84.200.33.11:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-18 19:45:23 UTC"
+      },
+      {
+        "ioc": "65.20.104.68:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-18 19:45:15 UTC"
+      },
+      {
+        "ioc": "62.233.51.61:7222",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-18 19:45:13 UTC"
+      },
+      {
+        "ioc": "45.192.211.53:56002",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-18 19:44:56 UTC"
+      },
+      {
+        "ioc": "192.71.247.110:56003",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-18 19:44:01 UTC"
+      },
+      {
+        "ioc": "102.165.46.97:443",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-18 19:43:04 UTC"
+      },
       {
         "ioc": "93.152.214.52:443",
         "type": "ip:port",
@@ -154,42 +191,6 @@
         "type": "ip:port",
         "confidence": 50,
         "first_seen": "2026-11-17 05:10:31 UTC"
-      },
-      {
-        "ioc": "64.224.17.240:56003",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-17 05:10:25 UTC"
-      },
-      {
-        "ioc": "199.104.63.156:56003",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-17 05:10:21 UTC"
-      },
-      {
-        "ioc": "dbfbcd1295035ca4e7b4d04efd518092932a630e9c18dec26f1dd503b0badfa7",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-17 00:59:18 UTC"
-      },
-      {
-        "ioc": "95.155.151.159:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-16 19:45:25 UTC"
-      },
-      {
-        "ioc": "151.242.97.168:56002",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-16 19:43:29 UTC"
-      },
-      {
-        "ioc": "151.247.112.169:56002",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-16 05:11:20 UTC"
       }
     ]
   }
