@@ -1,8 +1,8 @@
 {
   "malware_id": "elf.mirai",
   "family": "Mirai",
-  "generated": "2026-11-18T21:31:05.647797+00:00",
-  "recent_window_ioc_count": 726,
+  "generated": "2026-11-19T21:43:42.225614+00:00",
+  "recent_window_ioc_count": 781,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai",
   "description": "Mirai is one of the first significant botnets targeting exposed networking devices running Linux. Found in August 2016 by MalwareMustDie, its name means \"future\" in Japanese. Nowadays it targets a wide range of networked embedded devices such as IP cameras, home routers (many vendors involved), and other IoT devices. Since the source code was published on \"Hack Forums\" many variants of the Mirai family appeared, infecting mostly home networks all around the world.",
   "alt_names": [
@@ -12,39 +12,43 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-11-14",
-      "latest": "2026-11-18"
+      "earliest": "2026-11-15",
+      "latest": "2026-11-19"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 468,
-      "ip:port": 27,
-      "domain": 3,
-      "url": 2
+      "sha256_hash": 469,
+      "ip:port": 20,
+      "url": 9,
+      "domain": 2
     },
     "confidence_distribution": {
-      "high": 490,
-      "medium": 10,
+      "high": 494,
+      "medium": 6,
       "low": 0
     },
     "activity_timeline": {
-      "2026-11-14": 64,
-      "2026-11-15": 190,
+      "2026-11-15": 83,
       "2026-11-16": 67,
       "2026-11-17": 67,
-      "2026-11-18": 112
+      "2026-11-18": 113,
+      "2026-11-19": 170
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 6
+        "count": 7
       },
       {
         "port": "8081",
         "count": 2
       },
       {
-        "port": "18129",
-        "count": 2
+        "port": "6543",
+        "count": 1
+      },
+      {
+        "port": "8000",
+        "count": 1
       },
       {
         "port": "22",
@@ -69,102 +73,98 @@
       {
         "port": "60195",
         "count": 1
-      },
-      {
-        "port": "3778",
-        "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "9c883ac7e0bfa1c10480f8da05c6ec5760dc1ab16c806bd673857d1b9bd67690",
+        "ioc": "81cb70cc47fba5216f1a9119c1ec91bb0bc1f4c75cc795df909258d3dc1ddd02",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-11-18 20:59:28 UTC"
+        "first_seen": "2026-11-19 20:59:39 UTC"
       },
       {
-        "ioc": "08f89526ec8c544440711218429db9a1734bfd38167b6e4f8aeb9221effa055b",
+        "ioc": "4b943d7b1abf6e24865cfaccc659ad44c952b2cfec0d15ea6317e8ebc6d3fa1a",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-11-18 18:59:27 UTC"
+        "first_seen": "2026-11-19 18:59:39 UTC"
       },
       {
-        "ioc": "298f151b3ec98f8e55154b4d51c5c4ab8150a00582fe7a484a9c3630d2da0a08",
+        "ioc": "17626fae39d3f0dceea3800198d946dae46784cfe393deef4ea0035e53021cf3",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-11-18 17:59:27 UTC"
+        "first_seen": "2026-11-19 15:59:36 UTC"
       },
       {
-        "ioc": "54e83b62acba5dc73beb55160f4c7f4388bc8f01d03588e76c7a3b5e783e7c04",
+        "ioc": "82d6ed15674fee74f5d2a4692d8f89f2ba896e42dbfc9aa538b1c4960f11f70d",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-11-18 16:59:26 UTC"
+        "first_seen": "2026-11-19 14:59:37 UTC"
       },
       {
-        "ioc": "478397a59db3b36385a34008f1ce6f7129f5acea129b6e7997665351fed97010",
+        "ioc": "4a08fda83246cc1c4ba7c3b20a719ac5c4f41cb12796f0237136af498f856d60",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-11-18 14:59:26 UTC"
+        "first_seen": "2026-11-19 13:59:36 UTC"
       },
       {
-        "ioc": "efe6e5613e0cc059a6f237570299386586df27185e5583930008aadd59a2a944",
+        "ioc": "fc553c354611467b5183782c336606b9bfb6255bb0a216e3392f86c1b8cbde39",
         "type": "sha256_hash",
         "confidence": 90,
-        "first_seen": "2026-11-18 12:59:25 UTC"
+        "first_seen": "2026-11-19 13:59:35 UTC"
       },
       {
-        "ioc": "d1ee38c18698117002a232be2055dca71475bb4fd4399a6ab50d25c4c363625d",
+        "ioc": "d976deeb42a212838b5cb88aaf32ef10e1427225e530b5d87e9ff04827bcd25d",
         "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-11-18 12:19:38 UTC"
-      },
-      {
-        "ioc": "http://45.150.195.130:80/jklx86",
-        "type": "url",
         "confidence": 75,
-        "first_seen": "2026-11-18 12:19:37 UTC"
+        "first_seen": "2026-11-19 12:45:26 UTC"
       },
       {
-        "ioc": "2159a1f3f052d536881558ebb95448e26bd30d819eff75819a6dfe2a43bec925",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/android-root.sh",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 11:59:29 UTC"
+        "first_seen": "2026-11-19 12:44:11 UTC"
       },
       {
-        "ioc": "641c73f07f42839ae364f07deac9c9a54f55ffc35f5e69838c3e8c8cd1d38057",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/android-noroot.sh",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 11:59:28 UTC"
+        "first_seen": "2026-11-19 12:44:10 UTC"
       },
       {
-        "ioc": "3963d08f543b3b4b9cf8c230746bab6bc597fba4ccb71f6da04edf0c16ab5fe7",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/j.apk",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 11:59:27 UTC"
+        "first_seen": "2026-11-19 12:44:09 UTC"
       },
       {
-        "ioc": "f9bc8847c6fca49b32704062817a88b64e991fbe0236b8fc9b5e5216d045068a",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/sag.apk",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 11:59:26 UTC"
+        "first_seen": "2026-11-19 12:44:09 UTC"
       },
       {
-        "ioc": "98925f2d1761ffbf3f47d05365e9b6bd711477b032df684a353cab16c2893e30",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/cat.sh",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 11:59:25 UTC"
+        "first_seen": "2026-11-19 12:44:08 UTC"
       },
       {
-        "ioc": "c93e31ecf1e7ebc4ce5ca63681e89adee4a89d7007ab306a90e94fc2f1890145",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/telnet.sh",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 10:59:25 UTC"
+        "first_seen": "2026-11-19 12:44:08 UTC"
       },
       {
-        "ioc": "9de665b04b141c1bd6c2f41e6062ca934b71b681383ab5d1d00b1a823843dfdc",
-        "type": "sha256_hash",
+        "ioc": "http://play.nopixel-rp.ir/adbpersist.arm7",
+        "type": "url",
         "confidence": 90,
-        "first_seen": "2026-11-18 08:59:36 UTC"
+        "first_seen": "2026-11-19 12:44:08 UTC"
+      },
+      {
+        "ioc": "196.251.121.142:6543",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-19 12:44:00 UTC"
       }
     ]
   }

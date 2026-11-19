@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-11-16T22:59:44.480898+00:00",
-  "recent_window_ioc_count": 52,
+  "generated": "2026-11-19T21:44:08.722377+00:00",
+  "recent_window_ioc_count": 71,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,25 +10,22 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-19",
-      "latest": "2026-11-16"
+      "earliest": "2026-08-22",
+      "latest": "2026-11-19"
     },
     "ioc_type_breakdown": {
-      "domain": 182,
-      "ip:port": 143,
-      "url": 130,
-      "sha256_hash": 41,
-      "md5_hash": 4
+      "domain": 181,
+      "ip:port": 137,
+      "url": 133,
+      "sha256_hash": 49
     },
     "confidence_distribution": {
-      "high": 467,
-      "medium": 33,
+      "high": 469,
+      "medium": 31,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-19": 13,
-      "2026-08-21": 12,
-      "2026-08-22": 6,
+      "2026-08-22": 3,
       "2026-08-23": 6,
       "2026-08-24": 6,
       "2026-08-25": 8,
@@ -94,16 +91,19 @@
       "2026-11-13": 10,
       "2026-11-14": 9,
       "2026-11-15": 10,
-      "2026-11-16": 11
+      "2026-11-16": 11,
+      "2026-11-17": 8,
+      "2026-11-18": 4,
+      "2026-11-19": 16
     },
     "top_ports": [
       {
-        "port": "443",
-        "count": 34
+        "port": "8041",
+        "count": 26
       },
       {
-        "port": "8041",
-        "count": 24
+        "port": "443",
+        "count": 22
       },
       {
         "port": "80",
@@ -115,11 +115,15 @@
       },
       {
         "port": "43592",
-        "count": 5
+        "count": 6
       },
       {
         "port": "8443",
         "count": 4
+      },
+      {
+        "port": "9000",
+        "count": 2
       },
       {
         "port": "15152",
@@ -132,102 +136,98 @@
       {
         "port": "4444",
         "count": 2
-      },
-      {
-        "port": "3001",
-        "count": 2
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "063b5fd7ec235067d12b1d5d59e82c7917c945de48495878da92b9be176346ab",
+        "ioc": "2.27.160.45:43592",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-19 16:37:33 UTC"
+      },
+      {
+        "ioc": "remoto.painelst.com",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:20 UTC"
+      },
+      {
+        "ioc": "72.167.150.114:9002",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-19 10:45:19 UTC"
+      },
+      {
+        "ioc": "72.167.150.114:9000",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-19 10:45:18 UTC"
+      },
+      {
+        "ioc": "https://remoto.painelst.com/api/source-file.php?f=d3dx9_43.bin",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:18 UTC"
+      },
+      {
+        "ioc": "72.167.47.112:9000",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-19 10:45:17 UTC"
+      },
+      {
+        "ioc": "nota-fical-online.lat",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:16 UTC"
+      },
+      {
+        "ioc": "taguje.com.br",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-19 10:45:16 UTC"
+      },
+      {
+        "ioc": "7040370d8d09dc735d3ae9a77fe4b4c8e3f97c64efb60d4a962337fd6b16b114",
         "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-11-16 08:59:12 UTC"
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:14 UTC"
       },
       {
-        "ioc": "e450ab25fe7da47c99ecf4627cc6d908e61515dd52642f71a917cdcda2415ee9",
+        "ioc": "dc60f22fc59a7c3cb51b97661ad69f42d3028538c0044b248fc9681487c0b433",
         "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-11-16 08:59:10 UTC"
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:14 UTC"
       },
       {
-        "ioc": "104.168.145.245:43592",
-        "type": "ip:port",
+        "ioc": "01af2f7049e1562023835ddcbffea76e265ed2906e140ba8a200eb41d37ebf8d",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:12 UTC"
+      },
+      {
+        "ioc": "6a9ded132c050747ae5f233a91fc84c6bbee4e91950636f5fe077bf48acdca30",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:12 UTC"
+      },
+      {
+        "ioc": "c424a715e3861bc18e0c8223f3dfd909dc4a77a82b9c5a5a135b8d49bac7e8c6",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-19 10:45:11 UTC"
+      },
+      {
+        "ioc": "6e6d4084c6c2f3035c2fbda4daf4b705a06938d73bf91f402552b6d4ab522d9b",
+        "type": "sha256_hash",
         "confidence": 75,
-        "first_seen": "2026-11-16 07:56:50 UTC"
+        "first_seen": "2026-11-19 10:45:10 UTC"
       },
       {
-        "ioc": "192.238.176.121:9999",
-        "type": "ip:port",
-        "confidence": 85,
-        "first_seen": "2026-11-16 06:52:57 UTC"
-      },
-      {
-        "ioc": "donations.receiver.st",
-        "type": "domain",
+        "ioc": "d88135613cd2cd09dbb6646d9e4a18b968cfb39a3ac5769dca751af7687bff41",
+        "type": "sha256_hash",
         "confidence": 75,
-        "first_seen": "2026-11-16 06:48:48 UTC"
-      },
-      {
-        "ioc": "receiver.st",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-16 06:48:48 UTC"
-      },
-      {
-        "ioc": "tufuttudytdtdydtdtutdutud.pages.dev",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-16 06:48:48 UTC"
-      },
-      {
-        "ioc": "https://thisisafalsepositive.st/cdn/",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 06:47:43 UTC"
-      },
-      {
-        "ioc": "http://stromrechnung.receiver.st:8080/api/updates/current",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 06:47:43 UTC"
-      },
-      {
-        "ioc": "http://stromrechnung.receiver.st:8080/api/miners/submit",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 06:47:43 UTC"
-      },
-      {
-        "ioc": "https://services.supplementaryart.top/api/v1/agents/register",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 06:37:05 UTC"
-      },
-      {
-        "ioc": "47.85.171.251:8888",
-        "type": "ip:port",
-        "confidence": 90,
-        "first_seen": "2026-11-15 15:38:18 UTC"
-      },
-      {
-        "ioc": "xiongying990kk099.com",
-        "type": "domain",
-        "confidence": 85,
-        "first_seen": "2026-11-15 14:31:46 UTC"
-      },
-      {
-        "ioc": "https://lafrancefabrics.screenconnect.com/Bin/ScreenConnect.ClientSetup.exe?e=Access&y=Guest&c=PRACTICE%20MANAGER",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-11-15 06:56:10 UTC"
-      },
-      {
-        "ioc": "sibel.sbs",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-15 06:56:09 UTC"
+        "first_seen": "2026-11-19 10:45:10 UTC"
       }
     ]
   }

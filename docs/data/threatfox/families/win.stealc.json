@@ -1,8 +1,8 @@
 {
   "malware_id": "win.stealc",
   "family": "Stealc",
-  "generated": "2026-11-18T21:31:27.936723+00:00",
-  "recent_window_ioc_count": 62,
+  "generated": "2026-11-19T21:44:12.825373+00:00",
+  "recent_window_ioc_count": 67,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.stealc",
   "description": "Stealc is an information stealer advertised by its presumed developer Plymouth on Russian-speaking underground forums and sold as a Malware-as-a-Service since January 9, 2023. According to Plymouth's statement, stealc is a non-resident stealer with flexible data collection settings and its development is relied on other prominent stealers: Vidar, Raccoon, Mars and Redline.\r\n\r\nStealc is written in C and uses WinAPI functions. It mainly targets data from web browsers, extensions and Desktop application of cryptocurrency wallets, and from other applications (messengers, email clients, etc.). The malware downloads 7 legitimate third-party DLLs to collect sensitive data from web browsers, including sqlite3.dll, nss3.dll, vcruntime140.dll, mozglue.dll, freebl3.dll, softokn3.dll and msvcp140.dll. It then exfiltrates the collected information file by file to its C2 server using HTTP POST requests.",
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-07-09",
-      "latest": "2026-11-18"
+      "earliest": "2026-07-12",
+      "latest": "2026-11-19"
     },
     "ioc_type_breakdown": {
-      "url": 177,
-      "ip:port": 91,
+      "url": 182,
+      "ip:port": 87,
       "sha256_hash": 80,
-      "md5_hash": 72,
+      "md5_hash": 71,
       "sha1_hash": 71,
       "domain": 9
     },
@@ -27,8 +27,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-09": 1,
-      "2026-07-12": 9,
+      "2026-07-12": 5,
       "2026-07-13": 4,
       "2026-07-16": 1,
       "2026-07-17": 4,
@@ -101,12 +100,13 @@
       "2026-11-08": 3,
       "2026-11-15": 1,
       "2026-11-16": 55,
-      "2026-11-18": 6
+      "2026-11-18": 6,
+      "2026-11-19": 5
     },
     "top_ports": [
       {
         "port": "80",
-        "count": 87
+        "count": 83
       },
       {
         "port": "443",
@@ -122,6 +122,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "https://sdnrlre.com/nfront.php",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-19 06:47:01 UTC"
+      },
+      {
+        "ioc": "http://85.234.100.32/164?YFUyVq",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-19 06:47:00 UTC"
+      },
+      {
+        "ioc": "https://sdnrlre.com/nback.php",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-19 06:47:00 UTC"
+      },
+      {
+        "ioc": "http://85.234.100.32/165?YFUyVq",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-19 06:46:59 UTC"
+      },
+      {
+        "ioc": "http://85.234.100.32/yrjrs/ge.vv",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-19 06:46:58 UTC"
+      },
       {
         "ioc": "http://93.152.217.16/348",
         "type": "url",
@@ -181,36 +211,6 @@
         "type": "url",
         "confidence": 100,
         "first_seen": "2026-11-16 15:17:08 UTC"
-      },
-      {
-        "ioc": "http://62.60.226.22",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 15:17:08 UTC"
-      },
-      {
-        "ioc": "http://94.26.0.33",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 15:17:07 UTC"
-      },
-      {
-        "ioc": "http://191.217.210.215",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 15:17:07 UTC"
-      },
-      {
-        "ioc": "http://150.241.66.89",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 15:17:07 UTC"
-      },
-      {
-        "ioc": "http://62.60.226.231",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-16 15:17:06 UTC"
       }
     ]
   }

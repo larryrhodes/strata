@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-17T21:52:14.842868+00:00",
-  "recent_window_ioc_count": 82,
+  "generated": "2026-11-19T21:44:11.481015+00:00",
+  "recent_window_ioc_count": 67,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-28",
-      "latest": "2026-11-17"
+      "earliest": "2026-10-29",
+      "latest": "2026-11-19"
     },
     "ioc_type_breakdown": {
       "domain": 498,
@@ -23,8 +23,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-28": 44,
-      "2026-10-29": 29,
+      "2026-10-29": 11,
       "2026-10-30": 39,
       "2026-10-31": 31,
       "2026-11-01": 58,
@@ -39,99 +38,101 @@
       "2026-11-10": 6,
       "2026-11-11": 77,
       "2026-11-13": 2,
-      "2026-11-17": 3
+      "2026-11-17": 56,
+      "2026-11-18": 3,
+      "2026-11-19": 6
     },
     "top_ports": [],
     "sample_iocs": [
       {
-        "ioc": "aah.celikit.my",
+        "ioc": "www.nue-immobilien.de",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-17 12:31:58 UTC"
+        "first_seen": "2026-11-19 14:01:38 UTC"
       },
       {
-        "ioc": "marvel.neverlandpodcast.com",
+        "ioc": "www.formulario.inpulsestore.com.br",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-17 10:40:06 UTC"
+        "first_seen": "2026-11-19 13:11:39 UTC"
       },
       {
-        "ioc": "ro.devotions.eu",
+        "ioc": "www.bytecraftid.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-17 08:42:26 UTC"
+        "first_seen": "2026-11-19 07:42:26 UTC"
       },
       {
-        "ioc": "vbnbuildings.ro",
+        "ioc": "www.braddugdalejr.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-13 09:39:41 UTC"
+        "first_seen": "2026-11-19 07:21:45 UTC"
       },
       {
-        "ioc": "www.social.pureweb.com.ng",
+        "ioc": "agentinternational.org",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-13 09:09:52 UTC"
+        "first_seen": "2026-11-19 05:19:34 UTC"
       },
       {
-        "ioc": "thinkautomotriz.com",
+        "ioc": "szyby.oskar-info.pl",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-19 02:34:06 UTC"
       },
       {
-        "ioc": "tbull.no",
+        "ioc": "psychologue-nawel-hannachi.lu",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-18 15:41:16 UTC"
       },
       {
-        "ioc": "saacha.co.in",
+        "ioc": "herbomix.ir",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-18 13:20:51 UTC"
       },
       {
-        "ioc": "osarsolutions.com",
+        "ioc": "franzlery.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-18 05:55:53 UTC"
       },
       {
-        "ioc": "on-the-rooftop.com",
+        "ioc": "zinmoto.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-17 22:46:35 UTC"
       },
       {
-        "ioc": "magic-gsm.com",
+        "ioc": "www.natureorganicbeauty.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-17 22:46:35 UTC"
       },
       {
-        "ioc": "leozalkidigital.com",
+        "ioc": "techcontrol-lg.ru",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-17 22:46:35 UTC"
       },
       {
-        "ioc": "lamichoacanapremier2x1longbeach.com",
+        "ioc": "slabonstudio.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-17 22:46:35 UTC"
       },
       {
-        "ioc": "klaroengenharia.com.br",
+        "ioc": "secretsdecleopatre.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-17 22:46:35 UTC"
       },
       {
-        "ioc": "jul.juelenemaerke.dk",
+        "ioc": "sdvfinconsulting.com",
         "type": "domain",
         "confidence": 100,
-        "first_seen": "2026-11-11 09:49:20 UTC"
+        "first_seen": "2026-11-17 22:46:35 UTC"
       }
     ]
   }

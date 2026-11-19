@@ -1,8 +1,8 @@
 {
   "malware_id": "win.agent_tesla",
   "family": "Agent Tesla",
-  "generated": "2026-11-18T21:31:25.740262+00:00",
-  "recent_window_ioc_count": 67,
+  "generated": "2026-11-19T21:44:07.208798+00:00",
+  "recent_window_ioc_count": 73,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
   "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
   "alt_names": [
@@ -16,26 +16,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-06-23",
-      "latest": "2026-11-18"
+      "earliest": "2026-06-26",
+      "latest": "2026-11-19"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 167,
-      "md5_hash": 133,
-      "sha1_hash": 133,
-      "domain": 61,
-      "url": 3,
+      "sha256_hash": 165,
+      "md5_hash": 132,
+      "sha1_hash": 132,
+      "domain": 63,
+      "url": 5,
       "ip:port": 3
     },
     "confidence_distribution": {
-      "high": 498,
-      "medium": 2,
+      "high": 494,
+      "medium": 6,
       "low": 0
     },
     "activity_timeline": {
-      "2026-06-23": 3,
-      "2026-06-25": 3,
-      "2026-06-26": 6,
+      "2026-06-26": 5,
       "2026-07-02": 3,
       "2026-07-04": 6,
       "2026-07-06": 12,
@@ -110,7 +108,8 @@
       "2026-11-15": 1,
       "2026-11-16": 5,
       "2026-11-17": 27,
-      "2026-11-18": 14
+      "2026-11-18": 14,
+      "2026-11-19": 7
     },
     "top_ports": [
       {
@@ -119,6 +118,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "6d84af335ec57b66fd7832ab3d94e95d",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-19 14:33:03 UTC"
+      },
+      {
+        "ioc": "b50006f55f537d39bdb9fefb5670b8f6ae6bad2c",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-19 14:33:02 UTC"
+      },
+      {
+        "ioc": "1437dfd933a2f32e9ff6155db6f8bd68c2280fb6565d1de29d12637a9ccb0ce8",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-19 14:33:02 UTC"
+      },
+      {
+        "ioc": "ftp://ftp.verisimilitude.cam",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-11-19 06:52:54 UTC"
+      },
+      {
+        "ioc": "ftp.verisimilitude.cam",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-19 06:52:53 UTC"
+      },
+      {
+        "ioc": "ftp://ftp.foodchopson.com",
+        "type": "url",
+        "confidence": 50,
+        "first_seen": "2026-11-19 06:52:53 UTC"
+      },
+      {
+        "ioc": "ftp.foodchopson.com",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-19 06:52:53 UTC"
+      },
       {
         "ioc": "12a01af30b218f3b19fe18e82b82fbbc",
         "type": "md5_hash",
@@ -166,48 +207,6 @@
         "type": "sha1_hash",
         "confidence": 95,
         "first_seen": "2026-11-18 14:33:04 UTC"
-      },
-      {
-        "ioc": "268ec511e2d7782050b9d93bb88a924acf7f67ceb94acc66e57721ad1dfb90da",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:03 UTC"
-      },
-      {
-        "ioc": "cf1a243511e36ab408bdded3cb8127a1",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:01 UTC"
-      },
-      {
-        "ioc": "c81aef20d1d80b5c94760925de47e4fec7d3abd6",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:01 UTC"
-      },
-      {
-        "ioc": "f8af734395e2b9cfc714b25cf5a6246a25701274cba351535ab7d2f704376476",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:01 UTC"
-      },
-      {
-        "ioc": "ftp://ftp.fundacionpiaz.org",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-18 11:37:28 UTC"
-      },
-      {
-        "ioc": "7006f1de4a2c355cd4255e58df89accb487c2ea8fa61c894ae7f42057da06e51",
-        "type": "sha256_hash",
-        "confidence": 80,
-        "first_seen": "2026-11-18 10:59:24 UTC"
-      },
-      {
-        "ioc": "3e708184eeb2369e72120e4407298cc0",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-17 15:33:10 UTC"
       }
     ]
   }
