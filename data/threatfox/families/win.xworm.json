@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-11-18T21:31:26.865321+00:00",
-  "recent_window_ioc_count": 64,
+  "generated": "2026-11-20T21:26:53.370184+00:00",
+  "recent_window_ioc_count": 65,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,28 +12,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-13",
-      "latest": "2026-11-18"
+      "earliest": "2026-08-21",
+      "latest": "2026-11-20"
     },
     "ioc_type_breakdown": {
-      "ip:port": 214,
-      "domain": 106,
+      "ip:port": 207,
+      "domain": 113,
       "sha256_hash": 72,
       "md5_hash": 51,
       "sha1_hash": 51,
       "url": 6
     },
     "confidence_distribution": {
-      "high": 476,
-      "medium": 24,
+      "high": 466,
+      "medium": 34,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-13": 3,
-      "2026-08-18": 3,
-      "2026-08-19": 3,
-      "2026-08-20": 7,
-      "2026-08-21": 2,
+      "2026-08-21": 1,
       "2026-08-24": 1,
       "2026-08-25": 1,
       "2026-08-26": 6,
@@ -104,7 +100,9 @@
       "2026-11-15": 1,
       "2026-11-16": 9,
       "2026-11-17": 13,
-      "2026-11-18": 25
+      "2026-11-18": 25,
+      "2026-11-19": 5,
+      "2026-11-20": 12
     },
     "top_ports": [
       {
@@ -113,23 +111,19 @@
       },
       {
         "port": "7004",
-        "count": 22
+        "count": 19
       },
       {
         "port": "443",
-        "count": 13
+        "count": 12
       },
       {
         "port": "7000",
-        "count": 9
+        "count": 7
       },
       {
         "port": "6000",
         "count": 7
-      },
-      {
-        "port": "2021",
-        "count": 5
       },
       {
         "port": "8823",
@@ -144,100 +138,104 @@
         "count": 4
       },
       {
-        "port": "7005",
+        "port": "2021",
+        "count": 4
+      },
+      {
+        "port": "7707",
         "count": 3
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "1d8c69d30f0abebb9f67f9cd6f03118f",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:19 UTC"
+        "ioc": "194.180.157.11:7707",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-20 15:05:54 UTC"
       },
       {
-        "ioc": "aace49cc1dfa3d4a11c988d5dcd6d60e89376ab0",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:19 UTC"
+        "ioc": "nurfbwrufbrwf-39793.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:22:57 UTC"
       },
       {
-        "ioc": "6b6d1feb22b89f7c188f7ec7fed0b3fb48299119228b516379b6f4bbc3fec336",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:18 UTC"
+        "ioc": "systemexe444-48662.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:22:57 UTC"
       },
       {
-        "ioc": "1f0e7d7767c19247fe18c5c164e6d48f",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:18 UTC"
+        "ioc": "hjwix773-61426.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:10 UTC"
       },
       {
-        "ioc": "d31376b38cf002be76af54c3f03a0185513139f9",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:17 UTC"
+        "ioc": "gmbjv-169-148-15-193.run.pinggy-free.link",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:09 UTC"
       },
       {
-        "ioc": "e6ff71e8dcd5b81016287a4e601a6bed569e256e179c17e32182e08f4ce234d0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:17 UTC"
+        "ioc": "193.161.193.99:57587",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:09 UTC"
       },
       {
-        "ioc": "32245e93897d2dffe35d1a487192bda3",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:16 UTC"
+        "ioc": "impairment-carole.tun.ply.gg",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:09 UTC"
       },
       {
-        "ioc": "f6a4d0e73e2b449157157ff1b7348decfdb7b3fe",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:16 UTC"
+        "ioc": "ddsdfdsfsd-56363.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:07 UTC"
       },
       {
-        "ioc": "8fef53474f80898c6f6aefa627af7d7241484cfac19e8ae80c5a6c939b0a727e",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:15 UTC"
+        "ioc": "rivat-47332.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:06 UTC"
       },
       {
-        "ioc": "84088a22dabaa7822192979b5cc075dc",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:13 UTC"
+        "ioc": "105.103.167.134:4070",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:14:06 UTC"
       },
       {
-        "ioc": "01538778c3a0ea9369aa3809e048711b21ce1d86",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:13 UTC"
+        "ioc": "xaj3wrcu4f.localto.net",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-20 13:13:56 UTC"
       },
       {
-        "ioc": "0c88759246530f189e87fa23a593084b7cc29a389b7a8df08f1413dc731f4ad0",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:13 UTC"
+        "ioc": "gatlex.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-20 07:24:13 UTC"
       },
       {
-        "ioc": "c0cc2616b97756ed461236da3e812f47",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:12 UTC"
+        "ioc": "103.83.87.3:2423",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-19 17:20:19 UTC"
       },
       {
-        "ioc": "ed188c2b78bbbb4a08e08b725c4442038d451570",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:11 UTC"
+        "ioc": "217.69.174.52:7001",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-19 16:00:23 UTC"
       },
       {
-        "ioc": "c4c84f595ae9260f703dadae2379d47591dd92d1b85802105798ab5de2aa1bf4",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-18 14:33:11 UTC"
+        "ioc": "pitobi.ddns.net",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-19 15:20:17 UTC"
       }
     ]
   }
