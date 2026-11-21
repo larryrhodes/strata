@@ -258,6 +258,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "apk.koktevrat": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Koktevrat",
+    "description": "Koktevrat is an Android malware family identified in a fake government application campaign targeting users in Poland. The malware was distributed as MandatGo, an application impersonating a non-existent Polish government service for paying fines and promoted through Facebook advertisements offering discounts on parking fees. The initial APK acts as a dropper: after installation, it decrypts and dynamically loads embedded DEX code and retrieves an additional payload, which is subsequently installed as the second stage. The malware uses obfuscation and dynamic class loading to hinder static analysis.\r\n\r\nThe second stage is a fully featured Android RAT that abuses the Accessibility Service to control the infected device and interact with applications. Its capabilities include screen capture and continuous screen streaming, UI-tree collection, simulated clicks and text input, clipboard access, keylogging, SMS collection, application enumeration, HTML overlays, and execution of remote commands. Overlays can be selectively displayed over targeted applications, including banking applications, enabling credential and sensitive-data theft. The malware also implements anti-uninstallation functionality and can attempt to disable Google Play Protect.\r\n\r\nKoktevrat maintains persistent communication with its C2 infrastructure through a background service and uses Firebase Cloud Messaging (FCM) to obtain a device token and signal connectivity. It periodically performs a four-hour heartbeat and can establish TCP proxy tunnels through the C2. The analyzed samples contain two hard-coded WebSocket C2 domains, streams-tv[.]lol and stream-plus[.]lat; the malware also implements dynamically generated C2 domains.\r\n\r\nThe family name Koktevrat is a working designation derived from the notification channel identifier koktevran_channel. No reliable attribution to an existing Android malware family was established during the analysis.",
+    "enriched_at": "2026-11-21T20:11:48.041150+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "apk.loki": {
     "alt_names": [],
     "associated_groups": [],
@@ -2585,6 +2594,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.doubleloader": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "DOUBLELOADER",
+    "description": null,
+    "enriched_at": "2026-11-21T20:11:46.725188+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.dragonforce": {
     "alt_names": [],
     "associated_groups": [],
@@ -3412,6 +3430,15 @@
     "common_name": "Medusa",
     "description": "According to Unit 42, Medusa surfaced as a ransomware-as-a-service (RaaS) platform in late 2022 and gained notoriety in early 2023, primarily targeting Windows environments. Medusa should not be confused with a similarly named RaaS, MedusaLocker, which has been available since 2019.",
     "enriched_at": "2026-09-02T17:15:16.727132+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.merdoor": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Merdoor",
+    "description": null,
+    "enriched_at": "2026-11-21T20:11:45.801796+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -4456,6 +4483,15 @@
     "common_name": "SigLoader",
     "description": null,
     "enriched_at": "2026-09-14T18:49:30.413602+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.skimer": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "Skimer",
+    "description": null,
+    "enriched_at": "2026-11-21T20:11:44.276190+00:00",
     "source": "malpedia",
     "status": "ok"
   },

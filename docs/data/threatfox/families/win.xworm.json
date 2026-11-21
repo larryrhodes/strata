@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-11-20T21:26:53.370184+00:00",
-  "recent_window_ioc_count": 65,
+  "generated": "2026-11-21T20:12:11.963805+00:00",
+  "recent_window_ioc_count": 72,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,27 +12,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-21",
-      "latest": "2026-11-20"
+      "earliest": "2026-08-26",
+      "latest": "2026-11-21"
     },
     "ioc_type_breakdown": {
-      "ip:port": 207,
-      "domain": 113,
+      "ip:port": 203,
+      "domain": 117,
       "sha256_hash": 72,
       "md5_hash": 51,
       "sha1_hash": 51,
       "url": 6
     },
     "confidence_distribution": {
-      "high": 466,
-      "medium": 34,
+      "high": 459,
+      "medium": 41,
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-21": 1,
-      "2026-08-24": 1,
-      "2026-08-25": 1,
-      "2026-08-26": 6,
+      "2026-08-26": 2,
       "2026-08-27": 4,
       "2026-08-28": 2,
       "2026-08-30": 1,
@@ -102,7 +99,8 @@
       "2026-11-17": 13,
       "2026-11-18": 25,
       "2026-11-19": 5,
-      "2026-11-20": 12
+      "2026-11-20": 12,
+      "2026-11-21": 7
     },
     "top_ports": [
       {
@@ -111,7 +109,7 @@
       },
       {
         "port": "7004",
-        "count": 19
+        "count": 18
       },
       {
         "port": "443",
@@ -138,15 +136,57 @@
         "count": 4
       },
       {
-        "port": "2021",
-        "count": 4
+        "port": "7707",
+        "count": 3
       },
       {
-        "port": "7707",
+        "port": "7005",
         "count": 3
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "shga3-gnp3x.159-223-110-159.sslip.io",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:53 UTC"
+      },
+      {
+        "ioc": "sads-55367.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:53 UTC"
+      },
+      {
+        "ioc": "0daygeh6c4.localto.net",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:52 UTC"
+      },
+      {
+        "ioc": "shga3-4y4q8.159-223-110-159.sslip.io",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:51 UTC"
+      },
+      {
+        "ioc": "159.223.110.159:4479",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:50 UTC"
+      },
+      {
+        "ioc": "fosop81709-32207.portmap.host",
+        "type": "domain",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:49 UTC"
+      },
+      {
+        "ioc": "62.41.26.42:15351",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-21 16:40:49 UTC"
+      },
       {
         "ioc": "194.180.157.11:7707",
         "type": "ip:port",
@@ -194,48 +234,6 @@
         "type": "domain",
         "confidence": 50,
         "first_seen": "2026-11-20 13:14:07 UTC"
-      },
-      {
-        "ioc": "rivat-47332.portmap.host",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:14:06 UTC"
-      },
-      {
-        "ioc": "105.103.167.134:4070",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:14:06 UTC"
-      },
-      {
-        "ioc": "xaj3wrcu4f.localto.net",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:13:56 UTC"
-      },
-      {
-        "ioc": "gatlex.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-20 07:24:13 UTC"
-      },
-      {
-        "ioc": "103.83.87.3:2423",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-19 17:20:19 UTC"
-      },
-      {
-        "ioc": "217.69.174.52:7001",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-19 16:00:23 UTC"
-      },
-      {
-        "ioc": "pitobi.ddns.net",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-19 15:20:17 UTC"
       }
     ]
   }

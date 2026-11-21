@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_rat",
   "family": "Unknown RAT",
-  "generated": "2026-11-20T21:26:47.386292+00:00",
-  "recent_window_ioc_count": 72,
+  "generated": "2026-11-21T20:12:15.355309+00:00",
+  "recent_window_ioc_count": 68,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_rat",
   "description": null,
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-08-24",
-      "latest": "2026-11-20"
+      "earliest": "2026-08-25",
+      "latest": "2026-11-21"
     },
     "ioc_type_breakdown": {
       "domain": 179,
-      "ip:port": 139,
-      "url": 132,
-      "sha256_hash": 50
+      "ip:port": 141,
+      "url": 128,
+      "sha256_hash": 52
     },
     "confidence_distribution": {
       "high": 465,
@@ -25,8 +25,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-08-24": 1,
-      "2026-08-25": 8,
+      "2026-08-25": 4,
       "2026-08-26": 18,
       "2026-08-27": 32,
       "2026-08-30": 2,
@@ -93,12 +92,13 @@
       "2026-11-17": 8,
       "2026-11-18": 4,
       "2026-11-19": 16,
-      "2026-11-20": 14
+      "2026-11-20": 14,
+      "2026-11-21": 5
     },
     "top_ports": [
       {
         "port": "8041",
-        "count": 26
+        "count": 28
       },
       {
         "port": "443",
@@ -138,6 +138,36 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "bnaksm25rk.anondns.net",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-21 07:59:51 UTC"
+      },
+      {
+        "ioc": "79.110.49.63:8041",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-21 07:59:50 UTC"
+      },
+      {
+        "ioc": "23.94.82.9:8041",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-21 07:50:31 UTC"
+      },
+      {
+        "ioc": "add93044eaa6e3c2817cfdc53afc94812abd1bca1c99477211bc58ddd94443f3",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 07:46:42 UTC"
+      },
+      {
+        "ioc": "b4a6c2cb9da0d98129ea463b377028adfcc0fbd1f3ca9a3fef19e387b95aa177",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 07:46:41 UTC"
+      },
       {
         "ioc": "https://www.dropbox.com/scl/fi/5f9qmzjfv0h5e1rqteufy/31.zip?rlkey=0ksy687dpqhjblsocxo5xpdtw&st=qhgqyd1q&dl=1",
         "type": "url",
@@ -197,36 +227,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-20 07:41:00 UTC"
-      },
-      {
-        "ioc": "74.0.42.199:8041",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-20 07:40:59 UTC"
-      },
-      {
-        "ioc": "f8813823c64b6221268a2a8941523a9809172a926126136248c5d4bc726e7274",
-        "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-11-20 07:28:23 UTC"
-      },
-      {
-        "ioc": "102.220.160.24:443",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-20 07:28:22 UTC"
-      },
-      {
-        "ioc": "https://www.dropbox.com/scl/fi/u1gx3ts243xxoya048jbr/bundle.zip?rlkey=3ronxf88is6brzcriugpat5ld&st=7wz97uxi&dl=1",
-        "type": "url",
-        "confidence": 90,
-        "first_seen": "2026-11-20 07:28:10 UTC"
-      },
-      {
-        "ioc": "2.27.160.45:43592",
-        "type": "ip:port",
-        "confidence": 75,
-        "first_seen": "2026-11-19 16:37:33 UTC"
       }
     ]
   }

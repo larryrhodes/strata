@@ -1,8 +1,8 @@
 {
   "malware_id": "unknown_stealer",
   "family": "Unknown Stealer",
-  "generated": "2026-11-20T21:26:38.564674+00:00",
-  "recent_window_ioc_count": 99,
+  "generated": "2026-11-21T20:12:00.692636+00:00",
+  "recent_window_ioc_count": 174,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/unknown_stealer",
   "description": null,
   "alt_names": [],
@@ -10,14 +10,14 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-07",
-      "latest": "2026-11-20"
+      "earliest": "2026-10-09",
+      "latest": "2026-11-21"
     },
     "ioc_type_breakdown": {
-      "url": 246,
-      "domain": 126,
-      "sha256_hash": 83,
-      "ip:port": 44,
+      "url": 220,
+      "domain": 138,
+      "sha256_hash": 80,
+      "ip:port": 61,
       "md5_hash": 1
     },
     "confidence_distribution": {
@@ -26,9 +26,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-07": 22,
-      "2026-10-08": 19,
-      "2026-10-09": 94,
+      "2026-10-09": 51,
       "2026-10-10": 11,
       "2026-10-11": 6,
       "2026-10-12": 1,
@@ -66,12 +64,13 @@
       "2026-11-17": 5,
       "2026-11-18": 16,
       "2026-11-19": 24,
-      "2026-11-20": 15
+      "2026-11-20": 15,
+      "2026-11-21": 84
     },
     "top_ports": [
       {
         "port": "443",
-        "count": 20
+        "count": 33
       },
       {
         "port": "80",
@@ -82,6 +81,14 @@
         "count": 3
       },
       {
+        "port": "8443",
+        "count": 2
+      },
+      {
+        "port": "9800",
+        "count": 2
+      },
+      {
         "port": "9443",
         "count": 2
       },
@@ -90,116 +97,108 @@
         "count": 2
       },
       {
-        "port": "8093",
-        "count": 2
-      },
-      {
-        "port": "2362",
+        "port": "3001",
         "count": 1
       },
       {
-        "port": "5010",
+        "port": "2052",
         "count": 1
       },
       {
-        "port": "8443",
-        "count": 1
-      },
-      {
-        "port": "5000",
+        "port": "53946",
         "count": 1
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "abosdro-minimum.info",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 16:06:52 UTC"
-      },
-      {
-        "ioc": "https://activation-tunnel.cc/b/clickfix",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-20 16:06:51 UTC"
-      },
-      {
-        "ioc": "https://activation-tunnel.cc/i/clickfix/a9381c2cd21f99cb.png",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-20 16:06:50 UTC"
-      },
-      {
-        "ioc": "secure-verify.sonic-c2-front.workers.dev",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 12:02:29 UTC"
-      },
-      {
-        "ioc": "fallback-c2.rplix.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 12:02:29 UTC"
-      },
-      {
-        "ioc": "c2.rplix.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 12:02:29 UTC"
-      },
-      {
-        "ioc": "rplix.cc",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 12:02:29 UTC"
-      },
-      {
-        "ioc": "nakiam.com",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:42 UTC"
-      },
-      {
-        "ioc": "gdedengiskatinaufa.shop",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:41 UTC"
-      },
-      {
-        "ioc": "https://nakiam.com/webview/loading?buildVersion=UZ__Qaytarish",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:40 UTC"
-      },
-      {
-        "ioc": "mysoliq.lat",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:39 UTC"
-      },
-      {
-        "ioc": "https://nakiam.com/webview/loading?buildVersion=Soliq-UZ",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:38 UTC"
-      },
-      {
-        "ioc": "soliq-qaytarish.pro",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:37 UTC"
-      },
-      {
-        "ioc": "https://gdedengiskatinaufa.shop/webview/loading?buildVersion=marioshdjdjdn",
-        "type": "url",
-        "confidence": 100,
-        "first_seen": "2026-11-20 11:34:37 UTC"
-      },
-      {
-        "ioc": "2.26.55.223:8080",
+        "ioc": "52.186.171.181:3001",
         "type": "ip:port",
-        "confidence": 70,
-        "first_seen": "2026-11-20 07:24:07 UTC"
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:46 UTC"
+      },
+      {
+        "ioc": "4d719c725eb40615ab16a956d9a1958d833bd8bd1510281aaf36aa2f90b9f7ea",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:44 UTC"
+      },
+      {
+        "ioc": "2fbf71321acb092a17f31527ac1a04c48fe9704d87eaeab5a5bdbc8afe46ec92",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:44 UTC"
+      },
+      {
+        "ioc": "23020d80d7410e07752d4c2707680fd85557ae8e2214ccda8ab46e3c2e173b1c",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:43 UTC"
+      },
+      {
+        "ioc": "14fbd521db526e8ee8294325699a5195af4aee0d233a2f046ef8bcf53b12f2cb",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:43 UTC"
+      },
+      {
+        "ioc": "c45e3742a886edde9b32ac67c4f7a0388e2c24ef1948971b75bfa254229b3050",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:42 UTC"
+      },
+      {
+        "ioc": "38c74c3b28a001f1db194d18044596f22ad5bd5d714f46fea97dd52bfc1676f3",
+        "type": "sha256_hash",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:41 UTC"
+      },
+      {
+        "ioc": "papawork.lol",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:39 UTC"
+      },
+      {
+        "ioc": "https://papawork.lol/bot",
+        "type": "url",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:39 UTC"
+      },
+      {
+        "ioc": "petrofant.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:38 UTC"
+      },
+      {
+        "ioc": "189.74.124.138:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:38 UTC"
+      },
+      {
+        "ioc": "fantvk.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:37 UTC"
+      },
+      {
+        "ioc": "vkfanta.top",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:37 UTC"
+      },
+      {
+        "ioc": "83.136.208.40:443",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:36 UTC"
+      },
+      {
+        "ioc": "ruyan.sbs",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-21 15:52:36 UTC"
       }
     ]
   }
