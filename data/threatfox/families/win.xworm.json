@@ -1,8 +1,8 @@
 {
   "malware_id": "win.xworm",
   "family": "XWorm",
-  "generated": "2026-11-24T01:08:43.880269+00:00",
-  "recent_window_ioc_count": 127,
+  "generated": "2026-11-24T23:13:10.585112+00:00",
+  "recent_window_ioc_count": 121,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.xworm",
   "description": "Malware with wide range of capabilities ranging from RAT to ransomware.",
   "alt_names": [],
@@ -12,25 +12,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-09-13",
-      "latest": "2026-11-23"
+      "earliest": "2026-09-14",
+      "latest": "2026-11-24"
     },
     "ioc_type_breakdown": {
-      "ip:port": 192,
-      "domain": 147,
+      "ip:port": 195,
+      "domain": 145,
       "sha256_hash": 62,
       "md5_hash": 47,
       "sha1_hash": 47,
-      "url": 5
+      "url": 4
     },
     "confidence_distribution": {
-      "high": 461,
-      "medium": 39,
+      "high": 465,
+      "medium": 35,
       "low": 0
     },
     "activity_timeline": {
-      "2026-09-13": 3,
-      "2026-09-14": 22,
+      "2026-09-14": 18,
       "2026-09-15": 17,
       "2026-09-16": 2,
       "2026-09-17": 13,
@@ -88,19 +87,20 @@
       "2026-11-20": 12,
       "2026-11-21": 7,
       "2026-11-22": 3,
-      "2026-11-23": 62
+      "2026-11-23": 62,
+      "2026-11-24": 7
     },
     "top_ports": [
       {
         "port": "7007",
-        "count": 28
-      },
-      {
-        "port": "443",
-        "count": 10
+        "count": 29
       },
       {
         "port": "7004",
+        "count": 11
+      },
+      {
+        "port": "443",
         "count": 10
       },
       {
@@ -116,6 +116,10 @@
         "count": 5
       },
       {
+        "port": "8823",
+        "count": 4
+      },
+      {
         "port": "7005",
         "count": 4
       },
@@ -126,13 +130,51 @@
       {
         "port": "7777",
         "count": 3
-      },
-      {
-        "port": "7707",
-        "count": 3
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "944bad91812d7ec1f7ed619a3c45b147",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-24 17:38:35 UTC"
+      },
+      {
+        "ioc": "cbaa66a5b91ac33abed96de10745208363e2881e",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-24 17:38:34 UTC"
+      },
+      {
+        "ioc": "50dc0865fbb61bb7b51562185731d1447154d3ca53efe82ceb29bde633d89038",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-24 17:38:34 UTC"
+      },
+      {
+        "ioc": "5.230.201.82:8823",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-24 10:40:20 UTC"
+      },
+      {
+        "ioc": "185.29.10.15:7007",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-24 09:56:09 UTC"
+      },
+      {
+        "ioc": "jomro.ooguy.com",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-24 09:35:13 UTC"
+      },
+      {
+        "ioc": "203.202.232.29:7004",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-24 09:30:14 UTC"
+      },
       {
         "ioc": "314cca5888a960ee7c3210e89eb3bc38",
         "type": "md5_hash",
@@ -180,48 +222,6 @@
         "type": "ip:port",
         "confidence": 100,
         "first_seen": "2026-11-23 06:45:46 UTC"
-      },
-      {
-        "ioc": "124.122.121.218:7777",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:46 UTC"
-      },
-      {
-        "ioc": "185.227.69.17:505",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:46 UTC"
-      },
-      {
-        "ioc": "31.6.50.248:476",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:45 UTC"
-      },
-      {
-        "ioc": "31.6.50.248:4444",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:45 UTC"
-      },
-      {
-        "ioc": "82.22.62.189:4050",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:44 UTC"
-      },
-      {
-        "ioc": "45.141.26.96:6875",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:44 UTC"
-      },
-      {
-        "ioc": "93.168.202.174:7000",
-        "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-23 06:45:44 UTC"
       }
     ]
   }
