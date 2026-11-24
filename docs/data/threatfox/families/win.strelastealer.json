@@ -1,8 +1,8 @@
 {
   "malware_id": "win.strelastealer",
   "family": "StrelaStealer",
-  "generated": "2026-11-21T20:12:10.850352+00:00",
-  "recent_window_ioc_count": 73,
+  "generated": "2026-11-24T01:08:55.990048+00:00",
+  "recent_window_ioc_count": 74,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.strelastealer",
   "description": "According to PCRisk, StrelaStealer seeks to extract email account log-in credentials. At the time of writing, this program targets Microsoft Outlook and Mozilla Thunderbird email clients.\r\n\r\nFollowing successful infiltration, StrelaStealer searches for \"logins.json\" (account/password) and \"key4.db\" (password database) within the \"%APPDATA%\\Thunderbird\\Profiles\\\" directory - by doing so, it can acquire the credentials for Thunderbird.\r\n\r\nAlternatively, if Outlook credentials are targeted - StrelaStealer seeks out the Windows Registry from where it can retrieve the program's key and \"IMAP User\", \"IMAP Server\", as well as the \"IMAP Password\" values. Since the latter is kept in an encrypted form, the malicious program employs the Windows CryptUnprotectData feature to decrypt it prior to exfiltration.",
   "alt_names": [],
@@ -10,8 +10,8 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-29",
-      "latest": "2026-11-21"
+      "earliest": "2026-10-28",
+      "latest": "2026-11-23"
     },
     "ioc_type_breakdown": {
       "domain": 498,
@@ -23,10 +23,11 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-29": 7,
-      "2026-10-30": 35,
-      "2026-10-31": 31,
-      "2026-11-01": 58,
+      "2026-10-28": 19,
+      "2026-10-29": 27,
+      "2026-10-30": 36,
+      "2026-10-31": 28,
+      "2026-11-01": 20,
       "2026-11-02": 25,
       "2026-11-03": 115,
       "2026-11-04": 13,
@@ -42,10 +43,17 @@
       "2026-11-18": 3,
       "2026-11-19": 6,
       "2026-11-20": 1,
-      "2026-11-21": 7
+      "2026-11-21": 7,
+      "2026-11-23": 1
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "www.torfi.djammari.is",
+        "type": "domain",
+        "confidence": 100,
+        "first_seen": "2026-11-23 18:07:25 UTC"
+      },
       {
         "ioc": "www.beerstreetfest.it",
         "type": "domain",
@@ -129,12 +137,6 @@
         "type": "domain",
         "confidence": 100,
         "first_seen": "2026-11-19 02:34:06 UTC"
-      },
-      {
-        "ioc": "psychologue-nawel-hannachi.lu",
-        "type": "domain",
-        "confidence": 100,
-        "first_seen": "2026-11-18 15:41:16 UTC"
       }
     ]
   }

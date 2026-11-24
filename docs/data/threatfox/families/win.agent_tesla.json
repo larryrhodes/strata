@@ -1,8 +1,8 @@
 {
   "malware_id": "win.agent_tesla",
   "family": "Agent Tesla",
-  "generated": "2026-11-21T20:12:09.730144+00:00",
-  "recent_window_ioc_count": 79,
+  "generated": "2026-11-24T01:08:47.823215+00:00",
+  "recent_window_ioc_count": 102,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.agent_tesla",
   "description": "According to Palo Alto Networks Unit 42, Agent Tesla is a widely used .NET-based (C#) commercial keylogger and information stealer whose leaked builders have made it easily obtainable for many threat actors. It can log keystrokes, capture clipboard contents, take screenshots, and harvest credentials or other valuable data from browsers, email clients and local files, then exfiltrate this information via HTTP(S), SMTP, FTP or Telegram channels. Unit 42\u2019s analysis shows that OriginLogger is a direct evolution and variant of Agent Tesla, heavily reusing its code and configuration-handling techniques so that many Agent Tesla-focused detection rules still catch OriginLogger. This tight relationship positions Agent Tesla as the predecessor in a closely related family of .NET stealers, with OriginLogger continuing and expanding its functionality.",
   "alt_names": [
@@ -16,30 +16,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-07-06",
-      "latest": "2026-11-21"
+      "earliest": "2026-07-14",
+      "latest": "2026-11-23"
     },
     "ioc_type_breakdown": {
-      "sha256_hash": 157,
-      "md5_hash": 124,
-      "sha1_hash": 123,
-      "domain": 76,
-      "url": 17,
+      "sha256_hash": 162,
+      "md5_hash": 128,
+      "sha1_hash": 128,
+      "domain": 61,
+      "url": 18,
       "ip:port": 3
     },
     "confidence_distribution": {
-      "high": 472,
-      "medium": 28,
+      "high": 470,
+      "medium": 30,
       "low": 0
     },
     "activity_timeline": {
-      "2026-07-06": 1,
-      "2026-07-07": 9,
-      "2026-07-08": 3,
-      "2026-07-09": 7,
-      "2026-07-11": 1,
-      "2026-07-13": 7,
-      "2026-07-14": 45,
+      "2026-07-14": 44,
       "2026-07-15": 1,
       "2026-07-20": 12,
       "2026-07-23": 15,
@@ -108,7 +102,9 @@
       "2026-11-18": 14,
       "2026-11-19": 7,
       "2026-11-20": 23,
-      "2026-11-21": 2
+      "2026-11-21": 2,
+      "2026-11-22": 2,
+      "2026-11-23": 27
     },
     "top_ports": [
       {
@@ -118,94 +114,94 @@
     ],
     "sample_iocs": [
       {
-        "ioc": "ftp://ftp.hitpluscoy.org",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-21 16:40:49 UTC"
+        "ioc": "6c6d103cbff38afea4a50901d2cc206d",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:21 UTC"
       },
       {
-        "ioc": "ftp.hitpluscoy.org",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-21 16:40:48 UTC"
+        "ioc": "b1d4ea64cdca0f0ab4f0a8dc863414460b2e7e2c",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:21 UTC"
       },
       {
-        "ioc": "ftp.hngandpartners.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:23:00 UTC"
+        "ioc": "b8ca5f05d259f13d9e97d7ec6c6a2581643754659753950b3db245c35104a2ab",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:20 UTC"
       },
       {
-        "ioc": "ftp://ftp.hngandpartners.com",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:23:00 UTC"
+        "ioc": "5010b8399509839408562b25414645bc",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:17 UTC"
       },
       {
-        "ioc": "ftp.brightlearning.com.my",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:23:00 UTC"
+        "ioc": "678c208a9fc9a174127dac6f2a2393aa88011ba7",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:17 UTC"
       },
       {
-        "ioc": "ftp://ftp.brightlearning.com.my",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:59 UTC"
+        "ioc": "30eed7cc22eca8d8e9bdbc77413b05a1a3b5f18426c153f084981fde111bd4cc",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:16 UTC"
       },
       {
-        "ioc": "ftp://ftp.dankely.org",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:59 UTC"
+        "ioc": "d7d2b76435100c62c868bcd69c281493",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:16 UTC"
       },
       {
-        "ioc": "ftp.mukosin.cam",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:59 UTC"
+        "ioc": "2f771bf108af3eaeb416c3bc29b0158b9c8ca928",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:16 UTC"
       },
       {
-        "ioc": "ftp://ftp.mukosin.cam",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:59 UTC"
+        "ioc": "ae13ad5af2a360daabb7c59240dce2b4f520d504554a29c90e09041a4f5610b6",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:15 UTC"
       },
       {
-        "ioc": "ftp://ftp.siyakhulaadministrators.co.za",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:58 UTC"
+        "ioc": "1c3e42684ef72737b1e02f7d9b981ad5",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:15 UTC"
       },
       {
-        "ioc": "ftp.siyakhulaadministrators.co.za",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:58 UTC"
+        "ioc": "c92f6d66d3096094e6dd9fd4d97adc3433996824",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:15 UTC"
       },
       {
-        "ioc": "ftp.inductusqroup.com",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:58 UTC"
+        "ioc": "8afcbbb902156ab2799ce737bbca03b24c4ae9f9e6e302fb98e2d35079d17d13",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:14 UTC"
       },
       {
-        "ioc": "ftp://ftp.inductusqroup.com",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:58 UTC"
+        "ioc": "d0e3ab24e3c5af5b8cd0a3587a203f89",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:09 UTC"
       },
       {
-        "ioc": "ftp.viatic.pro",
-        "type": "domain",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:55 UTC"
+        "ioc": "1dd9d3b91dbe4c8782525ecf33af13ffed930f34",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:08 UTC"
       },
       {
-        "ioc": "ftp://ftp.viatic.pro",
-        "type": "url",
-        "confidence": 50,
-        "first_seen": "2026-11-20 13:22:55 UTC"
+        "ioc": "56229e76cc911e5648da9583b7bbb8d70fb5fe768c8604c40d4ab85ca0e06d19",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-23 15:30:08 UTC"
       }
     ]
   }

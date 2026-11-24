@@ -1,8 +1,8 @@
 {
   "malware_id": "win.sliver",
   "family": "Sliver",
-  "generated": "2026-11-21T20:12:06.313515+00:00",
-  "recent_window_ioc_count": 99,
+  "generated": "2026-11-24T01:08:49.270631+00:00",
+  "recent_window_ioc_count": 94,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.sliver",
   "description": "According to VK9 Seecurity, Sliver is a Command and Control (C2) system made for penetration testers, red teams, and advanced persistent threats. It generates implants (slivers) that can run on virtually every architecture out there, and securely manage these connections through a central server. Sliver supports multiple callback protocols including DNS, TCP, and HTTP(S) to make egress simple, even when those pesky blue teams block your domains. You can even have multiple operators (players) simultaneously commanding your sliver army.",
   "alt_names": [],
@@ -11,7 +11,7 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-18",
-      "latest": "2026-11-21"
+      "latest": "2026-11-22"
     },
     "ioc_type_breakdown": {
       "ip:port": 474,
@@ -22,12 +22,12 @@
       "domain": 1
     },
     "confidence_distribution": {
-      "high": 126,
-      "medium": 374,
+      "high": 127,
+      "medium": 373,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-18": 35,
+      "2026-10-18": 28,
       "2026-10-19": 11,
       "2026-10-20": 5,
       "2026-10-21": 6,
@@ -61,12 +61,13 @@
       "2026-11-18": 26,
       "2026-11-19": 5,
       "2026-11-20": 30,
-      "2026-11-21": 19
+      "2026-11-21": 19,
+      "2026-11-22": 7
     },
     "top_ports": [
       {
         "port": "31337",
-        "count": 354
+        "count": 353
       },
       {
         "port": "443",
@@ -106,6 +107,48 @@
       }
     ],
     "sample_iocs": [
+      {
+        "ioc": "178.63.18.231:31337",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-22 15:02:10 UTC"
+      },
+      {
+        "ioc": "103.194.106.205:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-22 08:49:03 UTC"
+      },
+      {
+        "ioc": "144.208.126.118:13458",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-22 05:26:10 UTC"
+      },
+      {
+        "ioc": "193.26.115.159:59412",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-22 05:22:21 UTC"
+      },
+      {
+        "ioc": "154.12.85.96:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-22 05:16:58 UTC"
+      },
+      {
+        "ioc": "187.53.82.104:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-22 05:16:58 UTC"
+      },
+      {
+        "ioc": "194.87.206.149:31337",
+        "type": "ip:port",
+        "confidence": 50,
+        "first_seen": "2026-11-22 05:15:30 UTC"
+      },
       {
         "ioc": "45.156.87.227:31337",
         "type": "ip:port",
@@ -153,48 +196,6 @@
         "type": "ip:port",
         "confidence": 50,
         "first_seen": "2026-11-21 05:11:51 UTC"
-      },
-      {
-        "ioc": "194.37.97.175:55483",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:11:30 UTC"
-      },
-      {
-        "ioc": "43.167.222.169:28105",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:10:13 UTC"
-      },
-      {
-        "ioc": "169.58.41.197:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:09:12 UTC"
-      },
-      {
-        "ioc": "45.204.71.227:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:09:11 UTC"
-      },
-      {
-        "ioc": "103.72.56.236:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:09:11 UTC"
-      },
-      {
-        "ioc": "152.234.244.64:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:09:11 UTC"
-      },
-      {
-        "ioc": "103.149.93.32:31337",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-21 05:09:09 UTC"
       }
     ]
   }

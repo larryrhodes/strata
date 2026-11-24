@@ -399,7 +399,7 @@
     "associated_groups": [],
     "common_name": "Unidentified APK 001",
     "description": null,
-    "enriched_at": "2026-08-25T14:20:42.641438+00:00",
+    "enriched_at": "2026-11-24T01:08:14.705080+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -427,6 +427,17 @@
     "common_name": "WolfRAT",
     "description": null,
     "enriched_at": "2026-09-22T17:42:08.920866+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "elf.abyss": {
+    "alt_names": [
+      "elf.hellokitty"
+    ],
+    "associated_groups": [],
+    "common_name": "Abyss Locker",
+    "description": "Family based on HelloKitty Ransomware. Encryption algorithm changed from AES to ChaCha. Sample seems to be unpacked.",
+    "enriched_at": "2026-11-24T01:08:06.620691+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -1569,7 +1580,7 @@
     "associated_groups": [],
     "common_name": "Akira Stealer",
     "description": null,
-    "enriched_at": "2026-08-23T13:55:15.478521+00:00",
+    "enriched_at": "2026-11-24T01:08:12.057665+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2068,6 +2079,20 @@
     "common_name": "Bahamut",
     "description": null,
     "enriched_at": "2026-07-08T17:01:39.538862+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.bankshot": {
+    "alt_names": [
+      "COPPERHEDGE",
+      "FoggyBrass"
+    ],
+    "associated_groups": [
+      "Lazarus Group"
+    ],
+    "common_name": "Bankshot",
+    "description": null,
+    "enriched_at": "2026-11-24T01:08:10.794075+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -2743,6 +2768,15 @@
     "source": "malpedia",
     "status": "ok"
   },
+  "win.fengine": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "fengine",
+    "description": null,
+    "enriched_at": "2026-11-24T01:08:13.527890+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
   "win.fickerstealer": {
     "alt_names": [],
     "associated_groups": [],
@@ -3135,6 +3169,17 @@
     "common_name": "Katz Stealer",
     "description": null,
     "enriched_at": "2026-10-28T19:00:33.117789+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.kazuar": {
+    "alt_names": [],
+    "associated_groups": [
+      "Turla"
+    ],
+    "common_name": "Kazuar",
+    "description": null,
+    "enriched_at": "2026-11-24T01:08:09.532596+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -3582,7 +3627,7 @@
     "associated_groups": [],
     "common_name": "MyDoom",
     "description": "When executed, the worm opens up Windows' Notepad with garbage data in it. When spreading, the infectious email used to distribute the worm copies use variable subjects, bodies and attachment names.\r\n\r\nThe worm encrypts most of the strings in it's UPX-packed body with ROT13 method, i.e. the characters are rotated 13 locations to the right in the abecedary, starting from the beginning if the position is beyond the last letter.\r\n\r\nMydoom also performs a Distributed Denial-of-Service attack on www.sco.com. This attack starts on 1st of February.\r\n\r\nThe worm opens up a backdoor to infected computers. This is done by planting a new SHIMGAPI.DLL file to system32 directory and launching it as a child process of EXPLORER.EXE.\r\n\r\nMydoom is programmed to stop spreading on February 12th.",
-    "enriched_at": "2026-07-24T15:13:31.278322+00:00",
+    "enriched_at": "2026-11-24T01:08:08.082211+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -3836,6 +3881,43 @@
     "common_name": "Phorpiex",
     "description": "Proofpoint describes Phorpiex/Trik as a SDBot fork (thus IRC-based) that has been used to distribute GandCrab, Pushdo, Pony, and coinminers. The name Trik is derived from PDB strings.",
     "enriched_at": "2026-10-13T19:55:52.581749+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.plugx": {
+    "alt_names": [
+      "Destroy RAT",
+      "Kaba",
+      "Korplug",
+      "Sogu",
+      "TIGERPLUG",
+      "RedDelta"
+    ],
+    "associated_groups": [
+      "APT 22",
+      "APT 26",
+      "APT31",
+      "APT41",
+      "Aurora Panda",
+      "Calypso group",
+      "DragonOK",
+      "EMISSARY PANDA",
+      "Hellsing",
+      "Hurricane Panda",
+      "Leviathan",
+      "Mirage",
+      "Mustang Panda",
+      "NetTraveler",
+      "Nightshade Panda",
+      "SLIME29",
+      "Samurai Panda",
+      "Stone Panda",
+      "UPS",
+      "Violin Panda"
+    ],
+    "common_name": "PlugX",
+    "description": "RSA describes PlugX as a RAT (Remote Access Trojan) malware family that is around since 2008 and is used as a backdoor to control the victim's machine fully. Once the device is infected, an attacker can remotely execute several kinds of commands on the affected system.\r\n\r\nNotable features of this malware family are the ability to execute commands on the affected machine to retrieve:\r\nmachine information\r\ncapture the screen\r\nsend keyboard and mouse events\r\nkeylogging\r\nreboot the system\r\nmanage processes (create, kill and enumerate)\r\nmanage services (create, start, stop, etc.); and\r\nmanage Windows registry entries, open a shell, etc.\r\n\r\nThe malware also logs its events in a text log file.",
+    "enriched_at": "2026-11-24T01:08:18.456599+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -4450,7 +4532,16 @@
     ],
     "common_name": "ShadowPad",
     "description": null,
-    "enriched_at": "2026-08-18T14:06:49.090976+00:00",
+    "enriched_at": "2026-11-24T01:08:16.149105+00:00",
+    "source": "malpedia",
+    "status": "ok"
+  },
+  "win.sheetcreep": {
+    "alt_names": [],
+    "associated_groups": [],
+    "common_name": "SHEETCREEP",
+    "description": "According to Zscaler, SHEETCREEP is a lightweight backdoor written in C# that uses Google Sheets for C2 communication.",
+    "enriched_at": "2026-11-24T01:08:17.231899+00:00",
     "source": "malpedia",
     "status": "ok"
   },
@@ -4680,7 +4771,7 @@
     ],
     "common_name": "SystemBC",
     "description": "SystemBC is a multiplatform proxy malware active since August 2019. It creates SOCKS5 network tunnels in the victim\u2019s network and connects to its C2 server using a custom, RC4-encrypted protocol. It can also download and execute additional malware, with payloads either written to disk or mapped into memory. The SystemBC kit, including the C2 panel, server, and malware executables, is sold in underground forums.",
-    "enriched_at": "2026-08-24T14:11:20.265584+00:00",
+    "enriched_at": "2026-11-24T01:08:19.541275+00:00",
     "source": "malpedia",
     "status": "ok"
   },
