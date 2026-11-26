@@ -1,8 +1,8 @@
 {
   "malware_id": "win.asyncrat",
   "family": "AsyncRAT",
-  "generated": "2026-11-24T23:13:09.237869+00:00",
-  "recent_window_ioc_count": 135,
+  "generated": "2026-11-26T22:30:48.292520+00:00",
+  "recent_window_ioc_count": 96,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.asyncrat",
   "description": "AsyncRAT is a Remote Access Tool (RAT) designed to remotely monitor and control other computers through a secure encrypted connection. It is an open source remote administration tool, however, it could also be used maliciously because it provides functionality such as keylogger, remote desktop control, and many other functions that may cause harm to the victim\u2019s computer. In addition, AsyncRAT can be delivered via various methods such as spear-phishing, malvertising, exploit kit and other techniques.",
   "alt_names": [],
@@ -10,27 +10,24 @@
   "stats": {
     "total_iocs": 500,
     "date_range": {
-      "earliest": "2026-10-20",
-      "latest": "2026-11-24"
+      "earliest": "2026-10-23",
+      "latest": "2026-11-26"
     },
     "ioc_type_breakdown": {
-      "ip:port": 321,
+      "ip:port": 320,
       "sha256_hash": 67,
-      "md5_hash": 39,
-      "sha1_hash": 38,
-      "domain": 34,
+      "md5_hash": 40,
+      "sha1_hash": 40,
+      "domain": 32,
       "url": 1
     },
     "confidence_distribution": {
-      "high": 302,
-      "medium": 198,
+      "high": 306,
+      "medium": 194,
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-20": 8,
-      "2026-10-21": 11,
-      "2026-10-22": 3,
-      "2026-10-23": 13,
+      "2026-10-23": 11,
       "2026-10-24": 16,
       "2026-10-25": 16,
       "2026-10-26": 19,
@@ -41,7 +38,7 @@
       "2026-10-31": 12,
       "2026-11-01": 6,
       "2026-11-02": 24,
-      "2026-11-03": 11,
+      "2026-11-03": 10,
       "2026-11-04": 14,
       "2026-11-05": 4,
       "2026-11-06": 8,
@@ -62,12 +59,14 @@
       "2026-11-21": 3,
       "2026-11-22": 9,
       "2026-11-23": 15,
-      "2026-11-24": 14
+      "2026-11-24": 14,
+      "2026-11-25": 12,
+      "2026-11-26": 13
     },
     "top_ports": [
       {
         "port": "6606",
-        "count": 26
+        "count": 28
       },
       {
         "port": "7707",
@@ -75,23 +74,23 @@
       },
       {
         "port": "8808",
-        "count": 22
+        "count": 23
       },
       {
         "port": "443",
-        "count": 15
+        "count": 11
       },
       {
         "port": "8081",
-        "count": 8
-      },
-      {
-        "port": "6666",
-        "count": 5
+        "count": 6
       },
       {
         "port": "80",
         "count": 5
+      },
+      {
+        "port": "8080",
+        "count": 4
       },
       {
         "port": "51123",
@@ -102,100 +101,100 @@
         "count": 4
       },
       {
-        "port": "5064",
+        "port": "6666",
         "count": 4
       }
     ],
     "sample_iocs": [
       {
-        "ioc": "84.247.187.47:8881",
+        "ioc": "84.247.187.47:9909",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-24 19:45:25 UTC"
+        "first_seen": "2026-11-26 19:45:19 UTC"
       },
       {
-        "ioc": "5.175.253.41:1178",
+        "ioc": "198.147.203.22:8816",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-24 19:45:11 UTC"
+        "first_seen": "2026-11-26 19:44:05 UTC"
       },
       {
-        "ioc": "185.129.86.71:8443",
+        "ioc": "198.147.203.21:1338",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-24 19:43:55 UTC"
+        "first_seen": "2026-11-26 19:44:05 UTC"
       },
       {
-        "ioc": "107.173.59.121:8580",
+        "ioc": "198.147.203.21:1337",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-24 19:43:13 UTC"
+        "first_seen": "2026-11-26 19:44:05 UTC"
       },
       {
-        "ioc": "95.163.242.120:59438",
+        "ioc": "156.228.4.157:6606",
         "type": "ip:port",
-        "confidence": 100,
-        "first_seen": "2026-11-24 17:49:40 UTC"
+        "confidence": 75,
+        "first_seen": "2026-11-26 19:43:34 UTC"
       },
       {
-        "ioc": "0f890ad52e90e120290d7caabec32027",
+        "ioc": "200ae945e6d154ce322c04d480aba416",
         "type": "md5_hash",
         "confidence": 95,
-        "first_seen": "2026-11-24 17:36:56 UTC"
+        "first_seen": "2026-11-26 18:39:21 UTC"
       },
       {
-        "ioc": "0960307450e5d8743c757340eb8542de1d50ccc1",
+        "ioc": "6089f5d97eb2d0a3e6ca4d19ce43dc0756d5cf86",
         "type": "sha1_hash",
         "confidence": 95,
-        "first_seen": "2026-11-24 17:36:56 UTC"
+        "first_seen": "2026-11-26 18:39:21 UTC"
       },
       {
-        "ioc": "7ef46ec27e5874d4e7c50fb1af113361f7b9b9675b7bc2a4ab4d5c8235e669e1",
+        "ioc": "ecc6e9348321bf0b5ca399a93791af5d67e719968de70f8dbe37f07eecb95390",
         "type": "sha256_hash",
-        "confidence": 90,
-        "first_seen": "2026-11-24 13:00:33 UTC"
+        "confidence": 95,
+        "first_seen": "2026-11-26 18:39:21 UTC"
       },
       {
-        "ioc": "185.167.60.68:5437",
+        "ioc": "84.247.187.47:9090",
         "type": "ip:port",
         "confidence": 100,
-        "first_seen": "2026-11-24 12:20:04 UTC"
+        "first_seen": "2026-11-26 13:05:07 UTC"
       },
       {
-        "ioc": "gortyfivev.crabdance.com",
+        "ioc": "84.247.187.47:8080",
+        "type": "ip:port",
+        "confidence": 100,
+        "first_seen": "2026-11-26 13:05:06 UTC"
+      },
+      {
+        "ioc": "167.86.126.87:6066",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-26 09:43:45 UTC"
+      },
+      {
+        "ioc": "128.90.59.106:7070",
+        "type": "ip:port",
+        "confidence": 75,
+        "first_seen": "2026-11-26 09:43:19 UTC"
+      },
+      {
+        "ioc": "shaloogermngerm.duckdns.org",
         "type": "domain",
         "confidence": 75,
-        "first_seen": "2026-11-24 10:45:11 UTC"
+        "first_seen": "2026-11-26 06:50:22 UTC"
       },
       {
-        "ioc": "rortyfivev.chickenkiller.com",
-        "type": "domain",
-        "confidence": 75,
-        "first_seen": "2026-11-24 10:45:10 UTC"
-      },
-      {
-        "ioc": "93.233.100.42:51123",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-24 05:14:21 UTC"
-      },
-      {
-        "ioc": "93.233.100.42:51124",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-24 05:13:45 UTC"
-      },
-      {
-        "ioc": "93.233.100.42:51125",
-        "type": "ip:port",
-        "confidence": 50,
-        "first_seen": "2026-11-24 05:13:06 UTC"
-      },
-      {
-        "ioc": "82.47.102.197:511",
+        "ioc": "128.90.59.106:6161",
         "type": "ip:port",
         "confidence": 75,
-        "first_seen": "2026-11-23 19:45:32 UTC"
+        "first_seen": "2026-11-25 19:43:25 UTC"
+      },
+      {
+        "ioc": "ba6a8d4d553e78a318964267b829e236",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-25 17:36:49 UTC"
       }
     ]
   }
