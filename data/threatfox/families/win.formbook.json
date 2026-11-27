@@ -1,8 +1,8 @@
 {
   "malware_id": "win.formbook",
   "family": "Formbook",
-  "generated": "2026-11-26T22:30:55.271454+00:00",
-  "recent_window_ioc_count": 76,
+  "generated": "2026-11-27T22:15:15.302227+00:00",
+  "recent_window_ioc_count": 78,
   "malpedia_url": "https://malpedia.caad.fkie.fraunhofer.de/details/win.formbook",
   "description": "FormBook contains a unique crypter RunPE that has unique behavioral patterns subject to detection. It was initially called \"Babushka Crypter\" by Insidemalware.",
   "alt_names": [
@@ -16,14 +16,14 @@
     "total_iocs": 500,
     "date_range": {
       "earliest": "2026-10-06",
-      "latest": "2026-11-26"
+      "latest": "2026-11-27"
     },
     "ioc_type_breakdown": {
       "sha256_hash": 187,
-      "md5_hash": 153,
-      "sha1_hash": 153,
-      "url": 6,
-      "domain": 1
+      "md5_hash": 152,
+      "sha1_hash": 152,
+      "url": 7,
+      "domain": 2
     },
     "confidence_distribution": {
       "high": 500,
@@ -31,7 +31,7 @@
       "low": 0
     },
     "activity_timeline": {
-      "2026-10-06": 23,
+      "2026-10-06": 18,
       "2026-10-07": 9,
       "2026-10-08": 15,
       "2026-10-09": 13,
@@ -70,10 +70,41 @@
       "2026-11-23": 15,
       "2026-11-24": 6,
       "2026-11-25": 9,
-      "2026-11-26": 40
+      "2026-11-26": 40,
+      "2026-11-27": 5
     },
     "top_ports": [],
     "sample_iocs": [
+      {
+        "ioc": "598ef9ed968b43a98214763b7b7cf3fa",
+        "type": "md5_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-27 14:29:00 UTC"
+      },
+      {
+        "ioc": "4a4f49a0f6df4d4d4682ab744103a77c8a4e0ecc",
+        "type": "sha1_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-27 14:28:59 UTC"
+      },
+      {
+        "ioc": "2a98bc5226dd3087a58ce7e8be2e9e5c29f090ccbd9187248137deffecaf9436",
+        "type": "sha256_hash",
+        "confidence": 95,
+        "first_seen": "2026-11-27 14:28:59 UTC"
+      },
+      {
+        "ioc": "www.jts6831897.casa",
+        "type": "domain",
+        "confidence": 75,
+        "first_seen": "2026-11-27 06:52:08 UTC"
+      },
+      {
+        "ioc": "http://www.jts6831897.casa/jarc/",
+        "type": "url",
+        "confidence": 75,
+        "first_seen": "2026-11-27 06:52:07 UTC"
+      },
       {
         "ioc": "03b0275d0211c33e3ef57e799c2e8f5b09cae55a060f98691ea0db0933db362f",
         "type": "sha256_hash",
@@ -133,36 +164,6 @@
         "type": "sha256_hash",
         "confidence": 95,
         "first_seen": "2026-11-26 18:39:31 UTC"
-      },
-      {
-        "ioc": "cd2eaf17e423ea65e211fb360870bf91",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-26 18:39:26 UTC"
-      },
-      {
-        "ioc": "bb74f9f347c7259b4ba46836c1517ce5630957c1",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-26 18:39:25 UTC"
-      },
-      {
-        "ioc": "cfcbccc833f403ea88d41787306e263b7fdbe7f45f00f913378d0cb30c227e9d",
-        "type": "sha256_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-26 18:39:25 UTC"
-      },
-      {
-        "ioc": "3451c48e4374f04d7a900b9cdb615541",
-        "type": "md5_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-26 18:39:10 UTC"
-      },
-      {
-        "ioc": "11021723cfaf4f628a8869c255afb6caae25047a",
-        "type": "sha1_hash",
-        "confidence": 95,
-        "first_seen": "2026-11-26 18:39:09 UTC"
       }
     ]
   }
